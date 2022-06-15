@@ -1,12 +1,11 @@
 ---
 layout: default
-title: Installing Windows 10
-excerpt: How to clean install Windows 10 using USB install media
+title: Getting started and creating boot media
 nav_exclude: false
 has_children: true
 parent:live-sessions
 search_exclude: false
-last_modified_date: 2022-06-14
+last_modified_date: 2022-06-15
 ---
 # Getting started and creating boot media
 ### What is a Linux Live Session
