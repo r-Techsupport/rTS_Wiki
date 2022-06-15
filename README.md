@@ -4,7 +4,7 @@
 2. Nothing should be placed in root. A
 3. All wiki pages that are to be processed need to have the extension `.md`. 
   * The files are written in markdown. Make a PR with any changes that you have.
-4. All pages need a FrontMatter header. A basic example of one would be
+4. All pages need a FrontMatter header. A inclusive example of one would be
   ```
   ---
   layout: default
