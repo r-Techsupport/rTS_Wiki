@@ -59,6 +59,3 @@ This will require a USB that is at least the size of the ISO you downloaded.
 	* You may need to go through BIOS and change boot priority if you cannot find or hit the boot options key during boot.
 2. Choose your USB
 3. Once it boots select 'Try' or 'Live'
-
-### What is next
-Continue onto the next page for [things-to-do-in-a-live-session](https://rtech.support/books/troubleshooting-with-a-live-session/chapter/linux-live-environment)
