@@ -17,3 +17,8 @@ last_edit_timestamp: true
 gh_edit_link: false
 
 color_scheme: light
+
+# This helps with local development
+plugins:
+  - jekyll-remote-theme
+
