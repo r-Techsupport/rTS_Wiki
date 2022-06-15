@@ -2,7 +2,6 @@
 layout: default
 title: Installing Windows 10
 excerpt: How to clean install Windows 10 using USB install media
-nav_order: 0
 nav_exclude: false
 search_exclude: false
 last_modified_date: 2022-06-14
