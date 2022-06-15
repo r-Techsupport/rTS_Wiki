@@ -21,5 +21,5 @@
  Parent, and Grandparent are optional based on use case
 
 
-## [Theme docs](https://just-the-docs.github.io/just-the-docs/docs/customization/)
+## [Theme docs](https://just-the-docs.github.io/just-the-docs/)
 * [Children and grandchildren](https://just-the-docs.github.io/just-the-docs/docs/navigation-structure/#pages-with-children)
