@@ -12,12 +12,13 @@
   nav_exclude: false
   has_children: false
   parent: Live Sessions
+  grand_parent: Live Sessions
   has_toc: true
   search_exclude: false
   last_modified_date: 2022-06-15
   ---
   ```
-
+ Parent, and Grandparent are optional based on use case
 
 
 ## [Theme docs](https://just-the-docs.github.io/just-the-docs/docs/customization/)
