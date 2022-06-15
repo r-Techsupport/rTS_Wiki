@@ -1,4 +1,4 @@
-remote_theme: carlosperate/jekyll-theme-rtd
+remote_theme: just-the-docs/just-the-docs
 
 site_author: PipeItToDevNull
 repo_url: 'https://github.com/PipeItToDevNull/rTS_Wiki'
