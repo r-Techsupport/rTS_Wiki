@@ -4,7 +4,7 @@ site_author: PipeItToDevNull
 repo_url: 'https://github.com/PipeItToDevNull/rTS_Wiki'
 edit_on_github: true
 github_docs_folder: true
-logo: ''
+logo: '/assets/rTS.png'
 site_favicon: ''
 sticky_navigation: true
 prev_next_buttons_location: None
