@@ -1,14 +1,19 @@
 remote_theme: just-the-docs/just-the-docs
 
-site_author: PipeItToDevNull
-repo_url: 'https://github.com/PipeItToDevNull/rTS_Wiki'
-edit_on_github: true
-github_docs_folder: true
+title: rTechsupport Wiki
+description: An opensource wiki for the community
+url: 'https://wiki.rtech.support'
+
 logo: '/assets/rTS.png'
 site_favicon: '/assets/rTS.ico'
+
 sticky_navigation: true
-prev_next_buttons_location: None
-prev_next_buttons_location: top
-prev_next_buttons_location: bottom
-prev_next_buttons_location: both
+
+back_to_top: true
+back_to_top_text: "Back to top"
+
+last_edit_timestamp: true
+
+gh_edit_link: false
+
 color_scheme: dark
