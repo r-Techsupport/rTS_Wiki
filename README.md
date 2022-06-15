@@ -19,4 +19,5 @@
 
 
 
-[Theme docs](https://just-the-docs.github.io/just-the-docs/docs/customization/)
+## [Theme docs](https://just-the-docs.github.io/just-the-docs/docs/customization/)
+* [Children and grandchildren](https://just-the-docs.github.io/just-the-docs/docs/navigation-structure/#pages-with-children)
