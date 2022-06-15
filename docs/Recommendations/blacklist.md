@@ -1,0 +1,114 @@
+---
+layout: default
+title: Blacklist
+nav_exclude: false
+nav_order: 2
+has_children: false
+parent: Software We Recommend
+search_exclude: false
+last_modified_date: 2022-06-15
+---
+
+# Blacklist
+
+This serves as a master list of banned software that we do not permit in the community.
+
+### EOL OS 
+Any EOL OS is unsupported, it does not need to be listed here.
+
+| Name | Notes |
+| --- | --- |
+| Windows XP | 
+| Windows Vista |
+| Windows 7 |
+| Ubuntu 12.04 |
+| Windows 10 | [See here](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro) to check if you are running a compatable verion. You can type "Winver" on the start menu to see your current version.
+| ETC |
+
+### Unsupported OS
+
+| Name | Notes |
+| --- | --- |
+| ReviOS | Due to ReviOS TOS this is considered to have malware included such as keyloggers. The vendor also provides 0 support to users.
+
+### Debloaters
+These break machines and are black boxes for troubleshooting. If you have an issue with an OS don't use it. Do not break it then expect help.
+
+| Name | Notes |
+| --- | --- | 
+| Win10Debloater | Sycnex |
+| Win10Script | ChrisTitusTech |
+| Debloat-Windows-10 | W4RH4WK |
+| Tron Script | bmrf |
+
+### Utilities
+
+| Name | Notes |
+| --- | --- |
+| Winrar | Use 7zip as a free alternative |
+
+### Benchmark tools
+
+| Name | Notes |
+| --- | --- |
+| UserBenchMark | UserBenchMark is biased and untrusted |
+
+### Driver finders
+[See here](https://rtech.support/books/software-we-recommend/page/windows-maintenance#bkmrk-driver-finders) for our stance and instructions on drivers. All driver finders are blacklisted, it doesn't have to be listed here.
+
+| Name | Notes |
+| --- | --- |
+| SnappyDriver Installer |
+| DriverBooster |
+| DriverEasy |
+
+### System cleaners/optimizers
+Cleaners have a long record of use in the Windows community but often times are abused, leading to broken systems and many wasted writes on an SSD. 
+
+System cleaners or optimizers often do more harm then good, and don't solve issues. Always determine your real issue and solve it with a more direct method.
+
+All cleaners/optimizers are blacklisted, it doesn't have to be listed here.
+
+| Name | Notes |
+| --- | --- | 
+| Advanced SystemCare | IOBit |
+| Ccleaner | Piriform |
+| iolo System Mechanic | iolo |
+| Outbyte PC Repair | Outbyte |
+
+### Audio manipulation programs
+Programs that use virtual cables often permanently damage Windows audio systems.
+
+| Name | Notes |
+| --- | --- | 
+| Voicemod |
+| Voicemeeter |
+| Clownfish |
+
+### Third-party AVs
+See [here](https://rtech.support/books/software-we-recommend/page/anti-virus-and-malware-tools) for our stance on AV Tools. It doesn't have to be listed here to be blacklisted.
+
+| Name | Notes |
+| --- | --- | 
+| Avast |
+| AVG |
+| Comodo |
+| Kaspersky |
+| McAfee |
+| Norton |
+| Webroot |
+
+### Precompiled Windows PE
+The distribution of pre-compiled PE is illegal under Microsoft TOS.
+
+| Name | Notes |
+| --- | --- | 
+| Hirens |
+| Gandalf |
+
+### Vendors
+This list of vendors offer nothing to the community or make multiple products that are considerd PUPs/Malware.
+
+| Name | Notes |
+| --- | --- |
+| IOBit | All products |
