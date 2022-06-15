@@ -7,7 +7,6 @@ nav_exclude: false
 search_exclude: false
 ---
 # Installing Windows 10
-## Second level
 **Warning**: All files on the drive you plan to install Windows to will be **deleted** if you follow this guide - this is intended. Please ensure you have an adequate [backup policy](https://rtech.support/books/backups) in place before proceeding if you have files of value.
 
 1. Using a USB flash drive **at least 8 gigabytes in size**, create a bootable USB flash drive using the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/windows10) from Microsoft. This will also wipe any data stored on the USB flash drive.
@@ -25,7 +24,7 @@ search_exclude: false
  
 4. Click Install now
  	
-	 [![zwn_SnFw-AgUteUzrV5kBkkjZBLKGUdyjd-SVYqrdnQ.png](https://rtech.support/uploads/images/gallery/2020-11/scaled-1680-/zwn-snfw-aguteuzrv5kbkkjzblkgudyjd-svyqrdnq.png)](https://rtech.support/uploads/images/gallery/2020-11/zwn-snfw-aguteuzrv5kbkkjzblkgudyjd-svyqrdnq.png)
+	 [![10-0.png](/_assets/install-10/10-0.png)
 
 <br>
 
