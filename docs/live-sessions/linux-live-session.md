@@ -59,3 +59,6 @@ This will require a USB that is at least the size of the ISO you downloaded.
 	* You may need to go through BIOS and change boot priority if you cannot find or hit the boot options key during boot.
 2. Choose your USB
 3. Once it boots select 'Try' or 'Live'
+
+## Things to do
+* [Wipe disks](/docs/disks/wipe.md)
