@@ -1,6 +1,6 @@
 # rTS_Wiki
 
-Pages go into their respective directory, nothing should be placed in root.
+Pages go into their respective directory under `/docs`, nothing should be placed in root.
 
 The template page to run off is `template`, all wiki pages that are to be processed need to have the extension `.md`. 
 
