@@ -3,9 +3,8 @@ layout: default
 title: Disk/Partition Management
 nav_exclude: false
 has_children: false
-nav_order: one
+nav_order: 1
 parent: Disks
-grand_parent: Software We Recommend
 search_exclude: false
 last_modified_date: 2022-06-15
 ---

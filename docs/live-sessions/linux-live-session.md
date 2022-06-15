@@ -2,7 +2,7 @@
 layout: default
 title: Linux Live Session
 nav_exclude: false
-has_children: true
+has_children: false
 parent: Live Sessions
 search_exclude: false
 last_modified_date: 2022-06-15

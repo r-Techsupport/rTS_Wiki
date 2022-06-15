@@ -2,13 +2,15 @@
 layout: default
 title: Wiping Disks
 nav_exclude: false
+nav_order: 2
 has_children: false
-parent: Linux Live Session
-grand_parent: Live Sessions
+parent: Disks
 search_exclude: false
 last_modified_date: 2022-06-15
 ---
+
 # Wiping Disks
+This guide uses the [Linux live session](/docs/LiveSessions/linux/linux-live-session.md).
 ## HDD
 `nwipe` is a fork of `dwipe` which is the utility used in the popular [DBAN](https://dban.org/) solution.
 
