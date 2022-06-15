@@ -4,7 +4,7 @@ title: rTechsupport Wiki
 description: An opensource wiki for the community
 url: 'https://wiki.rtech.support'
 
-logo: '/assets/rTS.png'
+#logo: '/assets/rTS.png'
 site_favicon: '/assets/rTS.ico'
 
 sticky_navigation: true
