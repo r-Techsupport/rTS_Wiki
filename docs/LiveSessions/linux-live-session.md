@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Getting started and creating boot media
+title: Linux Live Session
 nav_exclude: false
 has_children: true
 parent: Live Sessions
 search_exclude: false
 last_modified_date: 2022-06-15
 ---
-# Getting started and creating boot media
+# Linux Live Session
 ### What is a Linux Live Session
 
 Linux is a great OS that has a major advantage when it comes to troubleshooting, it can be run from a USB flashdrive in a 'live' state without installing to a hard disk. This allows you to use a wide range of tools to manipulate the disks, data, and hardware of your computer/OS without worrying about anything running on it.
