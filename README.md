@@ -21,7 +21,7 @@
  Parent, and Grandparent are optional based on use case
 
 ## Images
-Images should be put in `/assets/<page_name>` and are referenced like so `![Windows install image](/assets/install-10/10-0.png)`
+Images should be put in `/assets/<page_name>/<image.png>` and are referenced like so `![Windows install image](/assets/install-10/10-0.png)`
 
 ## [Theme docs](https://just-the-docs.github.io/just-the-docs/)
 * [Children and grandchildren](https://just-the-docs.github.io/just-the-docs/docs/navigation-structure/#pages-with-children)
