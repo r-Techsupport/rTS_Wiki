@@ -2,7 +2,8 @@
 
 $body-background-color: $nord1;
 $link-color: $nord8;
-$button-primary-color: $nord8;
+$btn-primary-color: $nord8;
+$base-button-color: $nord3;
 $sidebar-color: $nord0;
 $code-background-color: $nord2;
 $search-background-color: $nord2;
@@ -13,13 +14,4 @@ $nav-child-link-color: $nord7;
 $feedback-color: $nord3;
 $border-color: $nord3;
 
-#search-input {
-  color: $link-color;
-}
-
-blockquote {
-  padding: 12px 16px 12px 32px;
-  border-left: 4px solid $link-color;
-  background-color: $table-background-color;
-  margin: 0.5em;
-}
+@import "../support/common.scss";
