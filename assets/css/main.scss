@@ -1,0 +1,15 @@
+---
+---
+
+blockquote {
+  padding: 12px 16px 12px 24px;
+  margin: 0.5em;
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
