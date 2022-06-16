@@ -20,7 +20,7 @@ This serves as a master list of recommended and permitted software that we permi
 || [Rufus](https://rufus.ie/en_US/) | A portable program used to flash ISOs onto USB flash drives.|
 || [Ventoy](https://rtech.support/books/how-to-and-guides/page/how-to-install-and-use-ventoy) | A multiboot solution for USBs.|
 | Other / Utilities | [Treesize Free](https://customers.jam-software.de/downloadTrial.php?language=EN&article_no=80) | This software is used to view all of the files on your computer. You can use it to locate files you may otherwise not be aware of, and see a map of how full your drive is based on what you have downloaded.
-|| [SpaceSniffer](https://www.fosshub.com/SpaceSniffer) | This is another software similar to Treesize Free, and can be used to find what is taking up storage on your drives.
+|| [SpaceSniffer](https://www.fosshub.com/SpaceSniffer.html) | This is another software similar to Treesize Free, and can be used to find what is taking up storage on your drives.
 || [Display Driver Uninstaller (DDU)](https://goo.gl/KSoEbJ) | Use this program to cleanly uninstall your display drivers.
 || [CpuZ](https://www.cpuid.com/downloads/cpu-z/cpu-z_1.98-en.exe) | Use this software to see advanced system information.
 || [Stress Test](https://rtech.support/books/how-to-and-guides/page/hwinfo-full-guide) | We have a complete guide for stress testing found [here](https://rtech.support/books/how-to-and-guides/page/hwinfo-full-guide).

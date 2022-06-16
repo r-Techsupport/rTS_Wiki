@@ -11,9 +11,9 @@ last_modified_date: 2022-06-15
 
 # Rules of the /r/TechSupport
 
-> Any and all rules are subject to /r/TechSupport Moderators discretion, any and all rules could be punished by a temporary or permanent ban.
->
-> How our bans work: Almost all our bans are permanent which can be appealed after two weeks. A permanent ban is only truly permanent if we explicitly state that you do not have a right or chance to appeal. Bans can be appealed after two weeks after the the date of the ban. 
+Any and all rules are subject to /r/TechSupport Moderators discretion, any and all rules could be punished by a temporary or permanent ban.
+
+How our bans work: Almost all our bans are permanent which can be appealed after two weeks. A permanent ban is only truly permanent if we explicitly state that you do not have a right or chance to appeal. Bans can be appealed after two weeks after the the date of the ban. 
  
 ## 1. Read all the Rules 
  
