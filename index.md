@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Index
+title: Homepage
 nav_exclude: true
 ---
-# rTechsupport Wiki
+# rTechSupport Wiki
 Why move the wiki?
 * Fewer permissions to manage
   * Anyone can PR changes while BookStack relies on an admin granting proper permissions that may be too limiting for testing purposes 
