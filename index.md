@@ -2,6 +2,7 @@
 layout: default
 title: Homepage
 nav_exclude: true
+last_modified: 2020-06-16
 ---
 # rTechSupport Wiki
 ## Highlighted Content
@@ -9,6 +10,7 @@ How to clean install [Windows 10]() and [Windows 11]()
 
 Believe you are infected? View our recomendations for dealing with [Malware Removal]()
 
+---
 #### Who is writing this wiki? The contributors!
 
 <ul class="list-style-none">

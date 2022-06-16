@@ -3,9 +3,9 @@ layout: default
 title: Installing Windows 10
 nav_exclude: false
 has_children: false
-parent: How To's
+parent: General Guides
 search_exclude: false
-last_modified_date: 2022-06-15
+last_modified_date: 2022-06-16
 ---
 # Installing Windows 10
 **Warning**: All files on the drive you plan to install Windows to will be **deleted** if you follow this guide - this is intended. Please ensure you have an adequate [backup policy](https://rtech.support/books/backups) in place before proceeding if you have files of value.
