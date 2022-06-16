@@ -5,7 +5,7 @@ nav_exclude: false
 has_children: false
 parent: Networking
 search_exclude: false
-last_modified_date: 2022-06-15
+last_modified_date: 2022-06-16
 ---
 # Troubleshooting Port Forwards
 This is not a guide on *how* to port forward, it is only made to address issues once your forward is made.
@@ -19,6 +19,7 @@ This is not a guide on *how* to port forward, it is only made to address issues 
     * 192.168.0.0 - 192.168.255.255 (most common)
     * 172.16.0.0 – 172.31.255.255
     * 10.0.0.0 - 10.255.255.255
+    * 10.64.0.0 - 10.127.255.255 ([CGNAT](#cgnat))
 
 * Public IP
 	
@@ -34,7 +35,7 @@ To determine that you are not subject to CGNAT check your router admin panel to 
 
 If your IP is private, or does not match what online tools state then you may be subject to CGNAT. Verify that you are not dealing with [multiple routing devices](https://rtech.support/books/networking/page/troubleshooting-port-forwards#bkmrk-multiple-routing-dev), if you are not using multiple routing devices then you need to call your ISP to request a public IP to be assigned to your router (this may have a fee associated).
 
-#### Multiple routing devices
+### Multiple routing devices
 A network should only have 1 routing device (typically a router). Every routing device will create its own network, leading to 'double-nat' meaning you will need to port forward twice. This is complex solution and we suggest eliminating the double-nat.
 
 If you are using an ISP provided modem/router combo and a personal router then you must place the modem/router into 'passthrough' mode (not bridged mode).

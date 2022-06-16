@@ -25,3 +25,10 @@ Images should be put in `/assets/<page_name>/<image.png>` and are referenced lik
 
 ## [Theme docs](https://just-the-docs.github.io/just-the-docs/)
 * [Children and grandchildren](https://just-the-docs.github.io/just-the-docs/docs/navigation-structure/#pages-with-children)
+
+## Testing Locally
+1. Ensure you have `ruby` and `gem` installed.
+2. `gem install jekyll bundler`
+3. `bundle install`
+4. `bundle exec jekyll serve`
+5. Open http://localhost:4000/
