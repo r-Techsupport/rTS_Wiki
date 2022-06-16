@@ -28,7 +28,7 @@ but that is very unlikely. The 3-2-1 rule covers drives dying and accidental del
 ## Create a plan
 
 ### What needs to be backed up?
-Go back to the [previous page](https://rtech.support/books/backups/page/everyone-needs-backups) to see the scary list of things that people have lost over the years, and think about what you have that you care about.
+Go back to the [previous page](/docs/backups/everyone-needs-backups) to see the scary list of things that people have lost over the years, and think about what you have that you care about.
 
 Generally bulky things like games and the OS itself do not need to be backed up, redownload/reinstall these things after recovering your environment. 
 

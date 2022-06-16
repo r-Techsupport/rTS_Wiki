@@ -2,6 +2,7 @@
 layout: default
 title: Installing Windows 10
 nav_exclude: false
+nav_order: 1
 has_children: false
 parent: General Guides
 search_exclude: false
