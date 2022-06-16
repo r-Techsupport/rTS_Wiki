@@ -10,7 +10,7 @@ last_modified_date: 2022-06-15
 ---
 
 # Wiping Disks
-This guide uses the [Linux live session](/docs/LiveSessions/linux/linux-live-session).
+This guide uses the [Linux live session](/docs/live-sessions/linux-live-session).
 ## HDD
 `nwipe` is a fork of `dwipe` which is the utility used in the popular [DBAN](https://dban.org/) solution.
 
