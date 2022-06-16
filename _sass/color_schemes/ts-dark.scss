@@ -1,15 +1,17 @@
-$body-background-color: #5c5962;
-$link-color: #C2D7FF;
-$button-primary-color: #C2D7FF;
-$sidebar-color: #454249;
-$code-background-color: #454249;
-$search-background-color: #454249;
-$table-background-color: #454249;
-$body-text-color: $grey-lt-200;
-$body-heading-color: $white;
-$nav-child-link-color: $link-color;
-$feedback-color: darken($sidebar-color, 3%);
-$border-color: lighten($body-background-color, 10%);
+@import "../support/nord.scss";
+
+$body-background-color: $nord1;
+$link-color: $nord8;
+$button-primary-color: $nord8;
+$sidebar-color: $nord0;
+$code-background-color: $nord2;
+$search-background-color: $nord2;
+$table-background-color: $nord2;
+$body-text-color: $nord4;
+$body-heading-color: $nord6;
+$nav-child-link-color: $nord7;
+$feedback-color: $nord3;
+$border-color: $nord3;
 
 #search-input {
   color: $link-color;

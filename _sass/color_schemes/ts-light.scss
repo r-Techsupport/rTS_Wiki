@@ -1,5 +1,8 @@
-$link-color: #264caf;
-$btn-primary-color: #264caf;
-$body-background-color: $white;
-$sidebar-color: #f5f5f5;
-$nav-child-link-color: #264caf;
+@import "../support/nord.scss";
+
+$link-color: $nord10;
+$btn-primary-color: $nord10;
+$body-background-color: $nord5;
+$body-text-color: $nord0;
+$sidebar-color: $nord4;
+$nav-child-link-color: $nord9;
