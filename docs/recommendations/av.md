@@ -17,7 +17,7 @@ last_modified_date: 2022-06-15
 
 | Antivirus (AV) | runs constantly in the background, scanning files on download, on access, or on a schedule |
 | Anti-malware (AM) | runs on demand to check for residual PUPs or other issues. |
-| Potentially Unwanted Program (PUP) | a generic term for 'shitware' |
+| Potentially Unwanted Program (PUP) | a generic term for an application that may not be malicious but is not wanted regardless |
 
 ## Windows Defender
 
@@ -25,7 +25,7 @@ The built in solution for AV in Windows 10 is more than adequate for consumers. 
 
 ## Free Alternatives
 
-All free alternatives are considered shitware. They will sell you as their product and provide more a more troublesome experience. We do not recommend Avast, AVG, Kaspersky, McAfee or any other alternative AV.
+All free alternatives are considered PUPs. They will sell you as their product and provide more a more troublesome experience. We do not recommend Avast, AVG, Kaspersky, McAfee or any other alternative AV.
 
 ## Paid AV Suites
 
