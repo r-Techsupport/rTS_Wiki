@@ -6,7 +6,7 @@ last_modified: 2020-06-16
 ---
 # rTechSupport Wiki
 ## Highlighted Content
-How to clean install [Windows 10]() and [Windows 11]()
+How to clean install [Windows 10](/docs/how-to/install-10) and [Windows 11](/docs/how-to/install-11)
 
 Believe you are infected? View our recomendations for dealing with [Malware Removal]()
 
