@@ -17,7 +17,7 @@ last_edit_timestamp: true
 
 gh_edit_link: false
 
-color_scheme: ts-light
+color_scheme: ts-dark
 
 # This helps with local development
 plugins:
