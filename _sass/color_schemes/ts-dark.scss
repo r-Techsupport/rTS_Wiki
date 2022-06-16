@@ -1,0 +1,16 @@
+$body-background-color: #5c5962;
+$link-color: #C2D7FF;
+$button-primary-color: #C2D7FF;
+$sidebar-color: #454249;
+$code-background-color: #454249;
+$search-background-color: #454249;
+$table-background-color: #454249;
+$body-text-color: $grey-lt-200;
+$body-heading-color: $white;
+$nav-child-link-color: $link-color;
+$feedback-color: darken($sidebar-color, 3%);
+$border-color: lighten($body-background-color, 10%);
+
+#search-input {
+  color: $link-color;
+}
