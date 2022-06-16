@@ -17,7 +17,7 @@ Windows PE is small bootable Windows environment made for r/Techsupport. This PE
 
 [Download](https://rtech.support/uploads/rTS_WinPE.iso)
 
-[Source files for rTS_PE](https://github.com/PipeItToDevNull/rTS_WinPe)
+[Source files for rTS_WinPE](https://github.com/PipeItToDevNull/rTS_WinPe)
 
 ## Creating bootable media
 This will require a USB that is at least the size of the ISO you downloaded.
