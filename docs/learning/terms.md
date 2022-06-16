@@ -12,6 +12,8 @@ last_modified_date: 2022-06-16
 
 ## Abbreviations
 
+### Hardware
+
 | Abbreviation | Definition |
 | ----------- | ----------- |
 | OS | Operating System |
@@ -19,11 +21,16 @@ last_modified_date: 2022-06-16
 | GPU | Graphics Processing unit |
 | RAM | Random Access Memory |
 | PSU | Power Supply Unit |
-| HDD | Hard Disk Drive, a storage device with spinning platters that is very cheap |
-| SSD | Solid State Drive, a storage device with no moving parts that is very fast |
-| RAID | Redundant Array of Inexpensive Disks, allows you to combine multiple storage drives |
 | PCI | Peripheral Component Interconnect |
 | PCIe | PCI Express (also written as PCI-e), used for graphics cards |
+| NavKeys | Navigation keys: Ins, Del, Home, End, Page Up, Page Down |
+| KB/M | Keyboard and Mouse |
+| Hz | Hertz, the frequency at which something operates (cycles per second)  |
+
+### Software
+
+| Abbreviation | Definition |
+| ----------- | ----------- |
 | PC | Personal Computer |
 | WINE | A tool for running some Windows applications on Linux/Mac/BSD |
 | PoL | PlayOnLinux, a tool that makes WINE easy to use |
@@ -33,6 +40,14 @@ last_modified_date: 2022-06-16
 | TTY | Terminal / console / text-only session |
 | BIOS | Basic Input Output System, motherboard firmware that describes how the hardware should function and which operating system to boot |
 | (U)EFI | (Unified) Extensible Firmware Interface, a type of BIOS used on newer computers |
+
+## Disks/Storage
+
+| Abbreviation | Definition |
+| ----------- | ----------- |
+| HDD | Hard Disk Drive, a storage device with spinning platters that is very cheap |
+| SSD | Solid State Drive, a storage device with no moving parts that is very fast |
+| RAID | Redundant Array of Inexpensive Disks, allows you to combine multiple storage drives |
 | MBR |  Master Boot Record, the partition table format that precedes GPT |
 | GPT | GUID Partition Table, used on UEFI systems |
 | b | Bit, a single 1 or 0 used by your computer |
@@ -45,11 +60,13 @@ last_modified_date: 2022-06-16
 | MiB | Mebibyte, which is 1024 Kibibytes |
 | GiB | Gibibyte, which is 1024 Mebibytes |
 | TiB | Tebibyte, which is 1024 Gibibytes |
+
+### Other
+
+| Abbreviation | Definition |
+| ----------- | ----------- |
 | DNS | Domain Name System |
-| NavKeys | Navigation keys: Ins, Del, Home, End, Page Up, Page Down |
-| KB/M | Keyboard and Mouse |
 | MS | Microsoft |
-| Hz | Hertz, the frequency at which something operates  |
 
 <!-- Note: It is debated whether kilobytes/megabytes//gigabytes/terabytes should be in multiples of 1000 or 1024. You should use context to decide which application uses which multiple.-->
 
