@@ -9,9 +9,9 @@ search_exclude: false
 last_modified_date: 2022-06-15
 ---
 
-# Rules of the /r/TechSupport
+# Rules of the r/TechSupport
 
-Any and all rules are subject to /r/TechSupport Moderators discretion, any and all rules could be punished by a temporary or permanent ban.
+Any and all rules are subject to r/TechSupport Moderators discretion, any and all rules could be punished by a temporary or permanent ban.
 
 How our bans work: Almost all our bans are permanent which can be appealed after two weeks. A permanent ban is only truly permanent if we explicitly state that you do not have a right or chance to appeal. Bans can be appealed after two weeks after the the date of the ban. 
  
@@ -62,7 +62,7 @@ Such as "I have a interview help me" or "I want a product that can do XYZ" or "H
 ## 7. No Private Messages or Moving to Another Service
 Any and all communication not kept public and is moved away from the subreddit or [Discord](https://discord.gg/2EDwzWa)/IRC channel is prohibited. 
 
-Do not suggest or ask to move to another service or to private message. Private messages and other services are unsafe as they cannot be monitored. Doing so will cause you to be permanently banned from /r/TechSupport.
+Do not suggest or ask to move to another service or to private message. Private messages and other services are unsafe as they cannot be monitored. Doing so will cause you to be permanently banned from r/TechSupport.
 
 You may advise them of other relevant subreddits if their question would break our rules such as asking how to build a PC.. go to /r/BuildAPC
 
