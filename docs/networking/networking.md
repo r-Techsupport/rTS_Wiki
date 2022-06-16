@@ -1,9 +1,10 @@
 ---
 layout: default
-title: Disks
+title: Networking
 nav_exclude: false
-nav_order: 5
+nav_order: 4
 has_children: true
 search_exclude: false
 last_modified_date: 2022-06-15
 ---
+
