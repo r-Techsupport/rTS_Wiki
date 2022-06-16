@@ -4,12 +4,17 @@ title: Homepage
 nav_exclude: true
 ---
 # rTechSupport Wiki
-Why move the wiki?
-* Fewer permissions to manage
-  * Anyone can PR changes while BookStack relies on an admin granting proper permissions that may be too limiting for testing purposes 
-* Increasing the bus factor from 1 
-  * The VPS that runs BookStack is controlled by and visible to one user
-  * GH can be forked, the data is plain text
-* Better article formatting
-  * BookStack has comically bad markdown support as evident by the many dozens of spaces, `<br>`s, and other hacks required for formatting some articles
-* Possibly a better layout
+## Highlighted Content
+How to clean install [Windows 10]() and [Windows 11]()
+
+Believe you are infected? View our recomendations for dealing with [Malware Removal]()
+
+#### Who is writing this wiki? The contributors!
+
+<ul class="list-style-none">
+{% for contributor in site.github.contributors %}
+  <li class="d-inline-block mr-1">
+     <a href="{{ contributor.html_url }}"><img src="{{ contributor.avatar_url }}" width="32" height="32" alt="{{ contributor.login }}"/></a>
+  </li>
+{% endfor %}
+</ul>
