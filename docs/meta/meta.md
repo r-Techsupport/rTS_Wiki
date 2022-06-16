@@ -1,10 +1,9 @@
 ---
 layout: default
-title: How To's
+title: Information
 nav_exclude: false
-nav_order: 3
+nav_order: 1
 has_children: true
-has_toc: true
 search_exclude: false
+last_modified_date: 2022-06-15
 ---
-# How To's
