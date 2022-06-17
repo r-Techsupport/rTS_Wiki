@@ -15,9 +15,17 @@ last_modified_date: 2022-06-15
 
 ## Definitions
 
-| Antivirus (AV) | runs constantly in the background, scanning files on download, on access, or on a schedule |
-| Anti-malware (AM) | runs on demand to check for residual PUPs or other issues. |
-| Potentially Unwanted Program (PUP) | a generic term for an application that may not be malicious but is not wanted regardless |
+| Term | Definition |
+| ---- | ---------- |
+| Malware | Malicious software. |
+| Virus | A type of malware that spreads itself to infect more computers. |
+| Trojan | A type of malware that misleads users into thinking that it is a legitimate program. Named after the Greek Trojan horse. |
+| Worm | A type of malware that spreads itself. The difference between a worm and a virus is that a virus needs to be run on a host computer to spread, while a worm is independent. |
+| Antivirus (AV) | A program that runs constantly in the background, scanning files on download, on access, or on a schedule |
+| Anti-malware (AM) | A program that runs on demand to check for residual PUPs or other issues. |
+| Potentially Unwanted Program (PUP) | A generic term for an application that may not be malicious but is not wanted/intended regardless. |
+
+View more definitions [here](/docs/learning/terms).
 
 ## Windows Defender
 

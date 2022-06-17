@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Abbreviations/Commands
+title: Terms & Commands
 nav_exclude: false
 has_children: false
 parent: Learning
@@ -8,65 +8,85 @@ search_exclude: false
 last_modified_date: 2022-06-16
 ---
 
-# Abbreviations & Commands
+# Terms & Commands
 
-## Abbreviations
-
+## Terms
 ### Hardware
 
-| Abbreviation | Definition |
-| ----------- | ----------- |
-| OS | Operating System |
-| CPU | Central Processing Unit |
-| GPU | Graphics Processing unit |
-| RAM | Random Access Memory |
-| PSU | Power Supply Unit |
-| PCI | Peripheral Component Interconnect |
-| PCIe | PCI Express (also written as PCI-e), used for graphics cards |
-| NavKeys | Navigation keys: Ins, Del, Home, End, Page Up, Page Down |
-| KB/M | Keyboard and Mouse |
-| Hz | Hertz, the frequency at which something operates (cycles per second)  |
+| Term | Definition |
+| ---- | ---------- |
+| Operating System (OS) | The piece of software which controls your CPU, and which you run applications on (e.g. Windows). |
+| Central Processing Unit (CPU) | The brain of the computer, which controls other components. |
+| Graphics Processing Unit (GPU) | Controls graphics (what you see). Can be integrated into the CPU, or on a seperate card |
+| Random Access Memory (RAM) | Temporary storage for the CPU. |
+| Power Supply Unit (PSU) | Converts the electricity from the wall into the right form, to be used in the computer. |
+| Peripheral Component Interconnect (PCI) | A connector for expansion cards and more. |
+| PCI Express (PCIe) | The successor of PCI, used on modern systems. |
+| (Navigation keys) NavKeys | Ins, Del, Home, End, Page Up, Page Down |
+| Keyboard and Mouse (KB/M) | The device which you type on, and the device which you move the cursor with. |
+| Hz | The frequency at which something operates (cycles per second).  |
 
 ### Software
 
-| Abbreviation | Definition |
-| ----------- | ----------- |
-| PC | Personal Computer |
-| WINE | A tool for running some Windows applications on Linux/Mac/BSD |
-| PoL | PlayOnLinux, a tool that makes WINE easy to use |
-| Distro | Linux Distribution |
-| DE | Linux Desktop Environment |
-| Super | "The Windows Key" but in Linux-speak |
-| TTY | Terminal / console / text-only session |
-| BIOS | Basic Input Output System, motherboard firmware that describes how the hardware should function and which operating system to boot |
-| (U)EFI | (Unified) Extensible Firmware Interface, a type of BIOS used on newer computers |
+| Term | Definition |
+| ---- | ---------- |
+| Personal Computer (PC) | A computer used for personal use. |
+| WINE | A tool for running Windows applications on Linux/MacOS/BSD. |
+| PlayOnLinux (PoL) | A tool that makes WINE easier to use. |
+| Linux Distribution (Distro) | A version of the Linux operating system that is packaged with other components (e.g. Ubuntu). |
+| Linux Desktop Environment (DE) | A collection of components which make up the GUI for Linux operating systems. |
+| Super Key | The "Windows Key" but in Linux-speak |
+| Teletype (TTY) | Terminal / console / text-only session |
+| Basic Input Output System (BIOS) | Motherboard firmware that describes how the hardware should function and which operating system to boot. |
+| [Unified] Extensible Firmware Interface ([U]EFI) | A type of BIOS used on newer computers. |
+
+### Malware
+
+| Term | Definition |
+| ---- | ---------- |
+| Malware | Malicious software. |
+| Virus | A type of malware that spreads itself to infect more computers. |
+| Trojan | A type of malware that misleads users into thinking that it is a legitimate program. Named after the Greek Trojan horse. |
+| Worm | A type of malware that spreads itself. The difference between a worm and a virus is that a virus needs to be run on a host computer to spread, while a worm is independent. |
+| Antivirus (AV) | A program that runs constantly in the background, scanning files on download, on access, or on a schedule |
+| Anti-malware (AM) | A program that runs on demand to check for residual PUPs or other issues. |
+| Potentially Unwanted Program (PUP) | A generic term for an application that may not be malicious but is not wanted/intended regardless. |
 
 ## Disks/Storage
 
-| Abbreviation | Definition |
-| ----------- | ----------- |
-| HDD | Hard Disk Drive, a storage device with spinning platters that is very cheap |
-| SSD | Solid State Drive, a storage device with no moving parts that is very fast |
-| RAID | Redundant Array of Inexpensive Disks, allows you to combine multiple storage drives |
-| MBR |  Master Boot Record, the partition table format that precedes GPT |
-| GPT | GUID Partition Table, used on UEFI systems |
-| b | Bit, a single 1 or 0 used by your computer |
-| B | Byte, which is 8 bits |
-| KB  | Kilobyte, which is 1000 Bytes |
-| MB | Megabyte, which is 1000 Kilobytes |
-| GB | Gigabyte, which is 1000 Megabytes |
-| TB | Terabyte, which is 1000 Gigabytes |
-| KiB | Kibibyte, which is 1024 Bytes |
-| MiB | Mebibyte, which is 1024 Kibibytes |
-| GiB | Gibibyte, which is 1024 Mebibytes |
-| TiB | Tebibyte, which is 1024 Gibibytes |
+| Term | Definition |
+| ---- | ---------- |
+| Hard Disk Drive (HDD) | A storage device with spinning platters that is very cheap. |
+| Solid State Drive (SSD) | A storage device with no moving parts that is very fast. |
+| Redundant Array of Inexpensive Disks (RAID) | A set of storage drives which are combined to make them larger, moroe reliable, or faster. |
+| Master Boot Record (MBR) | The partition table format that precedes GPT. Also called the DOS/MSDOS partition table. |
+| GUID Partition Table (GPT) | A newer (better) partition table. |
+| Bit (b) | A single 1 or 0 used by your computer. |
+| Byte (B) | 8 Bits |
+| Kilobyte (KB) | 1000 Bytes |
+| Megabyte (MB) | 1000 Kilobytes |
+| Gigabyte (GB) | 1000 Megabytes |
+| Terabyte (TB) | 1000 Gigabytes |
+| Kibibyte (KiB) | 1024 Bytes |
+| Mebibyte (MiB) | 1024 Kibibytes |
+| Gibibyte (GiB) | 1024 Mebibytes |
+| Tebibyte (TiB) | 1024 Gibibytes |
 
+### Networking
+
+| Term | Definition |
+| ---- | ---------- |
+| Internet Protocol (IP) | The primary protocol used to transfer data over the internet. |
+| IP address | A series of numbers that identifies a computer on the internet. |
+| IPv4 address | A format of IP addresses, consisting of 4 sets numbers from 0-255 (e.g. 10.15.1.58) |
+| IPv6 address | A format of IP addresses, consisting of 8 sets of hexadecimal numbers from 0-FFFF (e.g. fe80:3b71:ed9b:924e:f925:dfad:964a:5d26). |
+| Domain Name System (DNS) | The protocol that maps domains to IP addresses. |
 ### Other
 
-| Abbreviation | Definition |
-| ----------- | ----------- |
-| DNS | Domain Name System |
-| MS | Microsoft |
+| Term | Definition |
+| ---- | ---------- |
+| Hexadecimal (hex) | Base-16 numbers, consisting of digits 0-F. |
+| Microsoft (MS/MSFT) | The company that makes Windows and other products. |
 
 <!-- Note: It is debated whether kilobytes/megabytes//gigabytes/terabytes should be in multiples of 1000 or 1024. You should use context to decide which application uses which multiple.-->
 
