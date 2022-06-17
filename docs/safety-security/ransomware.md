@@ -26,7 +26,7 @@ Crypto-ransomware is a large threat today and is only expected to get worse. The
 4. If no decryptor currently exists for your strain you can either set the drive aside or make an image of it to hopefully have a chance at recovering the data at a later date.
 5. These are the only options, there is no magic way to solve this and there is no way to crack the encryption yourself.
 
-#### What do I do next?
+## What do I do next?
 * [Backup your stuff immediately](/docs/backups/backups). Preferably, do this to multiple locations.
 * Enable file extensions. 
     * Many forms of ransomware use social-engineering to exploit the user, a popular method is a script that an email claims is a invoice, this is actually a javascript file but without file extensions on you will not see the .js extension on the file, as opposed to the .docx that should be on a document.
