@@ -13,16 +13,13 @@ MFA, also called 2FA, means using 2 or more forms of authentication to gain acce
 
 The method to obtain this code can vary, in most cases the code is coming from a text message (SMS), an application on your phone or computer, or a hardware token.
 
-As the world moves to be more secure more and more responsibility is being put on the user. When setting up MFA most sites will give you 10 backup codes. **These must be retained**. In a perfect world you **will lose** all access to your account should your MFA be lost.
+As the world moves to be more secure more and more responsibility is being put on the user. When setting up MFA most sites will give you 10 backup codes. **These must be retained**. In a perfect world you **will** lose all access to your account should your MFA and backup tokens be lost.
 
 ## SMS
-SMS MFA is considered insecure, it is vulnerable to [SIM Jacking](https://nakedsecurity.sophos.com/2020/03/17/europol-busts-up-two-sim-swapping-hacking-rings/).
-
-### Issues
-SMS MFA is also the least portable solution, requiring you to keep the same phone number forever and having cell reception whenever you want to use it.
+SMS MFA is considered insecure, since it is vulnerable to [SIM Jacking](https://nakedsecurity.sophos.com/2020/03/17/europol-busts-up-two-sim-swapping-hacking-rings/). It is also the least portable solution, requiring you to keep the same phone number forever and having cell reception whenever you want to use it.
 
 ## TOTP
-TOTP, Time based One Time Password, is the most recommended method of MFA. The most prevalent example of MFA in a standard users life is using Google Authenticator, Steam Authenticator or Blizzzard Authenticator.
+Time based One Time Password (TOTP) is the most recommended method of MFA. The most prevalent example of MFA in a standard user's life is using Google Authenticator, Steam Authenticator or Blizzzard Authenticator.
 
 These apps make a 6 digit code every 30 seconds. This code is being generated with a "seed", generally from a QR code, and the current time. 
 
@@ -42,8 +39,8 @@ We recommend using something that can be backed up or synchronized instead of a 
     * Under the Pro plan you can keep TOTP seeds in your manager.
 
 ## Hardware tokens
-Hardware tokens are typically keyfobs, USB devices, or  smartcards, for the purpose of this guide we will only talk about fobs and USB devices. 
+Hardware tokens are typically keyfobs, USB devices, or smartcards. For the purpose of this guide we will only talk about keyfobs and USB devices, since smartcards almost never are used by consumers. 
 
-In the keyfob form a hardware token is typically generating a 6 digit code, much like a TOTP application. The most popular consumer application of these would be DUO.
+In the keyfob form, a hardware token is typically generating a 6 digit code, much like a TOTP application. The most popular consumer application of these would be DUO.
 
 Advanced users will be most familiar with USB devices such as Yubi or the generic U2F/FIDO devices. These are typically inserted into a machine for authentication.
