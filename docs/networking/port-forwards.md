@@ -18,7 +18,7 @@ A private IP is used within your house or any other contained environment
   * 10.0.0.0 - 10.255.255.255
 
 ### CGNAT 
-CGNAT is used by ISPs to create smaller internal networks out of building, neighborhoods etc. This is done to preserve public IPv4 space.
+CGNAT is used by ISPs to create smaller networks out of buildings, neighborhoods etc. This is done to preserve public IPv4 space.
   * 10.64.0.0 - 10.127.255.255 ([CGNAT](#cgnat))
 
 ### Public IP
