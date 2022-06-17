@@ -5,7 +5,7 @@ nav_exclude: false
 has_children: false
 parent: Learning
 search_exclude: false
-last_modified_date: 2022-06-16
+last_modified_date: 2022-06-17
 ---
 
 # Terms & Commands
@@ -81,6 +81,7 @@ last_modified_date: 2022-06-16
 | IPv4 address | A format of IP addresses, consisting of 4 sets numbers from 0-255 (e.g. 10.15.1.58) |
 | IPv6 address | A format of IP addresses, consisting of 8 sets of hexadecimal numbers from 0-FFFF (e.g. fe80:3b71:ed9b:924e:f925:dfad:964a:5d26). |
 | Domain Name System (DNS) | The protocol that maps domains to IP addresses. |
+
 ### Other
 
 | Term | Definition |
