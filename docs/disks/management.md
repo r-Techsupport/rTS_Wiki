@@ -10,7 +10,7 @@ last_modified_date: 2022-06-15
 ---
 
 # Disk & Partition Management
-
+{:toc}
 ## Disk Managment
 You can open disk managment by pressing Win+R and typing `diskmgmt.msc`.
 
@@ -105,7 +105,7 @@ This guide will walk you through wiping a disk and creating a single empty parti
 8. To assign a drive letter to the new partition, run `assign letter=X` where X is the letter you choose.
 9. Type `exit` to close diskpart. Your drive is formatted.
 
-### GParted
+## GParted
 This is used via a Linux live environment. 
 
 Gparted has the advantage of working on almost any disk, when in Windows you cannot operate extensively on your main `C:\` drive but Gparted is booted from its own media and not running on `C:\` so it does not have this restriction. 
