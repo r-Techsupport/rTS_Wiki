@@ -6,11 +6,14 @@ has_children: false
 nav_order: 1
 parent: Disks
 search_exclude: false
-last_modified_date: 2022-06-15
+last_modified_date: 2022-06-17
 ---
 
 # Disk & Partition Management
-{:toc}
+{: .no_toc}
+
+{% include toc.md %}
+
 ## Disk Managment
 You can open disk managment by pressing Win+R and typing `diskmgmt.msc`.
 
@@ -59,7 +62,7 @@ New partitions can only be created from unallocated space.
 
 [![FormatDrive.png](/assets/disk-management/formatdrive.png)](/assets/disk-management/formatdrive.png)
 
-### Changing drive label.
+### Changing drive label
 1. Right click on an existing partition and choose "Properties".
 2. From this menu, you can change your drive label to anything you would like
 
