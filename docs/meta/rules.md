@@ -124,14 +124,12 @@ body {
 }
 
 h4::before {
-  content: counter(headlist);
+  content: counter(headlist) ".";
   counter-increment: headlist;
-  padding-right: 0.5ch;
 }
 
 h5::before {
-    content: counter(headlist) "." counter(subheadlist);
+    content: counter(headlist) counter(subheadlist, lower-alpha) ".";
     counter-increment: subheadlist;
-    padding-right: 0.5ch;
 }
 </style>
