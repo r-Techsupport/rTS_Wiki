@@ -28,7 +28,7 @@ last_edit_time_format: "%Y-%m-%d" # uses ruby's time format: https://ruby-doc.or
 
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
-gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_link_text: "View this page on GitHub"
 gh_edit_repository: "https://github.com/PipeItToDevNull/rTS_Wiki" # the github URL for your repo
 gh_edit_branch: "dev" # the branch that your docs is served from
 # gh_edit_source: docs # the source that your files originate from
