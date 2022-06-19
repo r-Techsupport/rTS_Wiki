@@ -1,6 +1,3 @@
-{% if include.nonumber %}
-{: .toc-nonumber }
-{% endif %}
 <details open markdown="block">
   <summary>
     Table of Contents
