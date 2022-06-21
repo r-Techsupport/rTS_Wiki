@@ -4,7 +4,7 @@ title: Installing Windows 11
 nav_exclude: false
 nav_order: 2
 has_children: false
-parent: Install Guides
+parent: OS Install Guides
 search_exclude: false
 last_modified_date: 2022-06-16
 ---
