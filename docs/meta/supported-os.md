@@ -24,7 +24,7 @@ last_modified_date: 2022-06-17
     * Windows XP
     * Windows Vista
     * Windows 7
-    * Windows 10/11 versions that have lost support ([(1507-20H2 at time of writing)](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro))
+    * Windows 10/11 versions that have lost support [(1507-20H2 at time of writing)](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro)
 <!--    * Standard versions of Ubuntu 21.04 and older, and LTS versions of Ubuntu 12.04 and older -->
 * Enterprise/LTSC/LTSB versions of Windows
 * Hackintosh
