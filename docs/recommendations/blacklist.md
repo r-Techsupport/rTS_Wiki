@@ -22,7 +22,7 @@ Any EOL OS is unsupported, it does not need to be listed here.
 | Windows Vista |
 | Windows 7 |
 | Ubuntu 12.04 |
-| Windows 10 | [See here](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro) to check if you are running a compatable verion. You can type "Winver" on the start menu to see your current version.
+| Windows 10 | [See here](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro) to check if you are running a compatible version. You can type "Winver" on the start menu to see your current version.
 | ETC |
 
 ### Unsupported OS
@@ -30,6 +30,7 @@ Any EOL OS is unsupported, it does not need to be listed here.
 | Name | Notes |
 | --- | --- |
 | ReviOS | Due to ReviOS TOS this is considered to have malware included such as keyloggers. The vendor also provides 0 support to users.
+| AtlasOS | The AtlasOS developer has admitted to purposely removing security mechanisms and protections from his build, he actively refuses to disclose this information to users choosing to cause great harm to the community rather than learn to deal with the security introduced by Microsoft and required for use by regular citizens in the modern world. |
 
 ### Debloaters
 These break machines and are black boxes for troubleshooting. If you have an issue with an OS don't use it. Do not break it then expect help.
@@ -54,7 +55,7 @@ These break machines and are black boxes for troubleshooting. If you have an iss
 | UserBenchMark | UserBenchMark is biased and untrusted |
 
 ### Driver finders
-[See here](https://rtech.support/books/software-we-recommend/page/windows-maintenance#bkmrk-driver-finders) for our stance and instructions on drivers. All driver finders are blacklisted, it doesn't have to be listed here.
+[See here](/docs/recommendations/maintenance) for our stance and instructions on drivers. All driver finders are blacklisted, it doesn't have to be listed here.
 
 | Name | Notes |
 | --- | --- |
@@ -86,7 +87,7 @@ Programs that use virtual cables often permanently damage Windows audio systems.
 | Clownfish |
 
 ### Third-party AVs
-See [here](https://rtech.support/books/software-we-recommend/page/anti-virus-and-malware-tools) for our stance on AV Tools. It doesn't have to be listed here to be blacklisted.
+See [here](/docs/recommendations/av) for our stance on AV Tools. It doesn't have to be listed here to be blacklisted.
 
 | Name | Notes |
 | --- | --- | 
@@ -99,7 +100,7 @@ See [here](https://rtech.support/books/software-we-recommend/page/anti-virus-and
 | Webroot |
 
 ### Precompiled Windows PE
-The distribution of pre-compiled PE is illegal under Microsoft TOS.
+Various PE distributions are illegal for various reasons such as distributing pirated/TOS breaking applications or requiring defacto payment prior to download.
 
 | Name | Notes |
 | --- | --- | 
