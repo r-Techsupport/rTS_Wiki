@@ -3,6 +3,6 @@
     Table of Contents
   </summary>
   {: .text-delta }
-> 1. TOC
+> * TOC
 > {:toc}
 </details>
