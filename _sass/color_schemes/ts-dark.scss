@@ -14,4 +14,8 @@ $nav-child-link-color: $nord7;
 $feedback-color: $nord3;
 $border-color: $nord3;
 
+li::before, h4::before {
+  color: darken($nord5, 10%) !important;
+}
+
 @import "support/common.scss";

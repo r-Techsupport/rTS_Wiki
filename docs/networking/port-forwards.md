@@ -5,25 +5,24 @@ nav_exclude: false
 has_children: false
 parent: Networking
 search_exclude: false
-last_modified_date: 2022-06-16
+last_modified_date: 2022-06-17
 ---
 # Troubleshooting Port Forwards
 This is not a guide on *how* to port forward, it is only made to address issues once your forward is made.
 
 ## Definitions
+### Private IP
+A private IP is used within your house or any other contained environment
+  * 192.168.0.0 - 192.168.255.255 (most common)
+  * 172.16.0.0 – 172.31.255.255
+  * 10.0.0.0 - 10.255.255.255
 
-* Private IP
-	
-	A private IP is used within your house or by ISPs with CGNAT and is in the following ranges 
-    
-    * 192.168.0.0 - 192.168.255.255 (most common)
-    * 172.16.0.0 – 172.31.255.255
-    * 10.0.0.0 - 10.255.255.255
-    * 10.64.0.0 - 10.127.255.255 ([CGNAT](#cgnat))
+### CGNAT 
+CGNAT is used by ISPs to create smaller networks out of buildings, neighborhoods etc. This is done to preserve public IPv4 space.
+  * 10.64.0.0 - 10.127.255.255 ([CGNAT](#cgnat))
 
-* Public IP
-	
-    Any other IP
+### Public IP
+Any other IP
 
 ## Common issues
 

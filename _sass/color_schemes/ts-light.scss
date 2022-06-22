@@ -13,4 +13,8 @@ $table-background-color: $nord6;
 $feedback-color: $nord5;
 $border-color: $nord5;
 
+li::before, h4::before {
+  color: $nord2 !important;
+}
+
 @import "support/common.scss";

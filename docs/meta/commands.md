@@ -2,7 +2,7 @@
 layout: default
 title: Subreddit Commands
 nav_exclude: false
-nav_order: 2
+nav_order: 4
 has_children: false
 parent: Information
 search_exclude: false
