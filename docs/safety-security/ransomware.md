@@ -28,7 +28,9 @@ Crypto-ransomware is a large threat today and is only expected to get worse. The
 
 ## What do I do next?
 * [Backup your stuff immediately](/docs/backups/backups), preferably to multiple locations.
-* Enable file extensions. Many forms of ransomware use social-engineering to exploit the user, and a popular method is a script that an email claims is a invoice. This is actually a JavaScript file, but without file extensions on, you will not see the .js extension on the file, as opposed to the .docx that should be on a document.
-* Disable macros in Microsoft Office. Much like the previous point, ransomware can also exploit macros in Office to run their malicious payloads.
+* Enable file extensions. 
+    * Many forms of ransomware use social-engineering to exploit the user, and a popular method is a script that an email claims is a invoice. This is actually a JavaScript file, but without file extensions on, you will not see the .js extension on the file, as opposed to the .docx that should be on a document.
+* Disable macros in Microsoft Office. 
+    * Much like the previous point, ransomware can also exploit macros in Office to run their malicious payloads.
 * Do not open attachments in emails that you are not expecting, see the above two points for why.
 * Stay up to date on all OS and application updates. **An unpatched system is a vulnerable system.**
