@@ -10,7 +10,7 @@ last_modified_date: 2022-06-23
 
 # How to resolve an EOL OS
 
-> We do not recommend in place upgrades from one OS to another, therefore in this guide we only link guides for clean installs
+> We do not recommend in place upgrades from one OS to another, therefore in this guide we only link guides for clean installs.
 
 An OS can be EOL for a number of reasons as outlined [here](/docs/meta/supported-os#no-support), how to deal with that EOL OS depends on the specifics of the OS in use.
 
