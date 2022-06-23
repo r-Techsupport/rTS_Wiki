@@ -41,4 +41,4 @@ Some are lucky enough to be able to recover themselves, others have to spend hun
 
 Hopefully, you are interested in creating a backup plan now. If so keep reading as backups are not simply drag-dropping your files once and forgetting about them. It is an ongoing process that requires at least a little bit of planning.
 
-[Creating a backup process](/docs/backups/creating)
+[Creating a backup process](/docs/backups/creating-backups)
