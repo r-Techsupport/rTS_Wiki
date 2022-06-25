@@ -18,9 +18,9 @@ Linux is a great OS that has a major advantage when it comes to troubleshooting,
 ### r/Techsupport Rescue Media
 A Linux ISO has been made for r/Techsupport that has many of the proper tools pre-installed to make rescuing a system easier. If you are unfamiliar with Linux we recommend that you use this version. 
 
-[Download](https://github.com/PipeItToDevNull/rTS_Debian/releases/latest/download/rTS_RescueMedia.iso)
+[Download](https://github.com/r-Techsupport/rTS_Debian/releases/latest/download/rTS_RescueMedia.iso)
 
-[Source files for Debian live-build](https://github.com/PipeItToDevNull/rTS_Debian)
+[Source files for Debian live-build](https://github.com/r-Techsupport/rTS_Debian)
 
 ### Official Xubuntu Media
 You may also use the official Xubuntu ISO and load your own tools as needed.
