@@ -259,6 +259,7 @@ DEPENDENCIES
   github-pages
   http_parser.rb (~> 0.6.0)
   jekyll-feed (~> 0.12)
+  jekyll-redirect-from
   jekyll-remote-theme
   jekyll-sitemap
   minima (~> 2.5)

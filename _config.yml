@@ -19,6 +19,7 @@ color_scheme: ts-dark
 plugins:
     - jekyll-remote-theme
     - jekyll-sitemap
+    - jekyll-redirect-from
 
 footer_content: "Copyright &copy; 2022 rTS_Wiki contributors. Distributed by an <a href=\"https://github.com/PipeItToDevNull/rTS_Wiki/blob/master/LICENSE\">GPLv3 license.</a>"
 
