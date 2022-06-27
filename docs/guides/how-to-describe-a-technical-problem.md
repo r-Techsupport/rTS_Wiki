@@ -11,11 +11,11 @@ last_modified_date: 2022-06-27
 
 # How to Describe a Technical Problem
 
-You are facing a technical problem and want to resolve it. That’s why you went on /r/Techsupport in the first place.
+You are facing a technical problem and want to resolve it. That’s why you went on r/Techsupport in the first place.
 
 If the AutoModerator redirected you here, that would mean your post may lack sufficient information techs need to know.
 
-Follow the four steps shown here for a successful /r/Techsupport post:
+Follow the four steps shown here for a successful r/Techsupport post:
 
 ## Step 1: Think About Your Problem
 You may know what your problem is, but you need to think about it carefully. These questions will help you:
