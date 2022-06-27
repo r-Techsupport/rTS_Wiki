@@ -19,7 +19,7 @@ Crypto-ransomware is a large threat today and is only expected to get worse. The
 2. Try a decryptor, several exist and can be found below:
     * [Kapersky](https://noransom.kaspersky.com/) 
     * [Avast](https://www.avast.com/en-gb/ransomware-decryption-tools)
-    * [Emisonft](https://www.emsisoft.com/ransomware-decryption-tools/) 
+    * [Emisoft](https://www.emsisoft.com/ransomware-decryption-tools/) 
     * [NoMoreRansom](https://www.nomoreransom.org/en/decryption-tools.html)
 
 3. Pay a company to attempt recovery of your data or pay the ransomer. You need to assess the worth of your data and decide if this option is viable. This is not guaranteed to work, as the ransomer might not give out the decryption key at all.
