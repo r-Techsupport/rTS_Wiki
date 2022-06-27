@@ -16,7 +16,7 @@ Any and all rules are subject to r/TechSupport Moderators discretion, any and al
 
 How our bans work: Almost all our bans are permanent which can be appealed after two weeks. A permanent ban is only truly permanent if we explicitly state that you do not have a right or chance to appeal. Bans can be appealed after two weeks after the the date of the ban. 
 
-{% include toc.md %}
+{% include toc_numbered.md %}
 
 ---
 
