@@ -1,11 +1,11 @@
 ---
 layout: default
-title: HWinfo - Full Guide
+title: HWiNFO - Full Guide
 nav_exclude: false
 has_children: false
 parent: General Guides
 search_exclude: false
-last_modified_date: 2022-06-27
+last_modified_date: 2022-06-28
 ---
 
 # HWiNFO - Full Guide
@@ -13,12 +13,8 @@ last_modified_date: 2022-06-27
 To start troubleshooting using HWiNFO, follow this guide. It will walk you though how to setup logging and stress testing.
 
 > All 3 programs are required for this test. None are optional.
-> 
-> Read the entire step 1 and 2 before saying a download does not work
-> 
-> Read the entire step 1 and 2 before saying a download does not work
-> 
-> Read the entire step 1 and 2 before saying a download does not work
+>
+> ***<u>Read the entirety of step 1 and 2 before complaining that downloads aren't working.</u>***
 
 1. Download HWiNFO from [here](https://www.fosshub.com/HWiNFO.html)
 

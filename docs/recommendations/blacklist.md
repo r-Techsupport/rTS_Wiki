@@ -46,7 +46,7 @@ These break machines and are black boxes for troubleshooting. If you have an iss
 
 | Name | Notes |
 | --- | --- |
-| Winrar | Use 7zip as a free alternative |
+| WinRAR | Use 7-Zip as a free alternative |
 
 ### Benchmark tools
 

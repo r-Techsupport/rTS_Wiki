@@ -4,8 +4,7 @@ title: Process for Advancement
 nav_exclude: true
 has_children: false
 parent: Information
-search_exclude: true
-last_modified_date: 2022-06-26
+last_modified_date: 2022-06-28
 ---
 
 # Processes for Advancement
