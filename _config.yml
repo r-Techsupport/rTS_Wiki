@@ -6,7 +6,7 @@ url: 'https://wiki.rtech.support'
 
 aux_links:
     "Join our Discord!":
-        - "https://discord.com/invite/2EDwzWa"
+        - "/discord"
 
 sticky_navigation: true
 
