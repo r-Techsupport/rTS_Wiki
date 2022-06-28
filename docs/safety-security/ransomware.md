@@ -5,7 +5,7 @@ nav_exclude: false
 has_children: false
 parent: Safety & Security
 search_exclude: false
-last_modified_date: 2022-06-17
+last_modified_date: 2022-06-28
 ---
 # Ransomware
 Crypto-ransomware is a large threat today and is only expected to get worse. The key to its success is the business model employed by many strains and the method of deployment used.
@@ -27,10 +27,10 @@ Crypto-ransomware is a large threat today and is only expected to get worse. The
 5. These are the only options. There is no magic way to solve this, and there is no way to crack the encryption yourself.
 
 ## What do I do next?
-* [Backup your stuff immediately](/docs/backups/backups), preferably to multiple locations.
-* Enable file extensions. 
-    * Many forms of ransomware use social-engineering to exploit the user, and a popular method is a script that an email claims is a invoice. This is actually a JavaScript file, but without file extensions on, you will not see the .js extension on the file, as opposed to the .docx that should be on a document.
-* Disable macros in Microsoft Office. 
-    * Much like the previous point, ransomware can also exploit macros in Office to run their malicious payloads.
-* Do not open attachments in emails that you are not expecting, see the above two points for why.
-* Stay up to date on all OS and application updates. **An unpatched system is a vulnerable system.**
+1. [Backup your stuff immediately](/docs/backups/backups), preferably to multiple locations.
+2. Enable file extensions. 
+    * File extensions show what type of file you are opening. Many malicious programs disguise themselves as relatively harmless files. For example, a malicious program could show up as `invoice.docx`, but will show up as `invoice.docx.exe` with file extensions enabled.
+3. Disable macros in Microsoft Office. 
+    * Ransomware can also exploit macros in Office to run their malicious payloads.
+4. Do not open attachments in emails that you are not expecting, see the above two points for why.
+5. Stay up to date on all OS and application updates. **An unpatched system is a vulnerable system.**
