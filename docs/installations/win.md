@@ -3,8 +3,7 @@ layout: default
 title: Installing Windows
 nav_exclude: true
 has_children: false
-parent: OS Install Guides
-search_exclude: false
+search_exclude: true
 last_modified_date: 2022-06-28
 ---
 
