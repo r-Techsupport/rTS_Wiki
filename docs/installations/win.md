@@ -5,6 +5,7 @@ nav_exclude: true
 has_children: false
 search_exclude: true
 last_modified_date: 2022-06-28
+permalink: /windows
 ---
 
 # Installing Windows

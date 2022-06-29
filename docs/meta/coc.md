@@ -3,9 +3,9 @@ layout: default
 title: Code of Conduct
 nav_exclude: true
 has_children: false
-parent: Information
+#parent: Information
 search_exclude: true
-last_modified_date: 2022-06-26
+last_modified_date: 2022-06-28
 ---
 
 # Code of Conduct
