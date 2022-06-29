@@ -22,15 +22,19 @@ Crypto-ransomware is a large threat today and is only expected to get worse. The
     * [Emisoft](https://www.emsisoft.com/ransomware-decryption-tools/) 
     * [NoMoreRansom](https://www.nomoreransom.org/en/decryption-tools.html)
 
-3. Pay a company to attempt recovery of your data or pay the ransomer. You need to assess the worth of your data and decide if this option is viable. This is not guaranteed to work, as the ransomer might not give out the decryption key at all.
+3. Pay a company to attempt recovery of your data. You need to assess the worth of your data and decide if this option is viable.
 4. If no decryptor currently exists for your strain, you can either set the drive aside or make an image of it, to hopefully have a chance at recovering the data at a later date.
-5. These are the only options. There is no magic way to solve this, and there is no way to crack the encryption yourself.
+5. Pay the ransomer. This is not guaranteed, since the ransomer might not give away the decryption key at all.
+
+These are the only options. There is no magic way to solve this, and there is no way to crack the encryption yourself.
 
 ## What do I do next?
 1. [Backup your stuff immediately](/docs/backups/backups), preferably to multiple locations.
-2. Enable file extensions. 
+2. [Reinstall windows](/docs/installations/win) to make sure the ransomer doesn't still have access to your system.
+6. Change all your passwords that are stored locally or were entered while the PC was infected. Since the device was infected, the ransomer could have also taken those passwords
+4. Enable file extensions. 
     * File extensions show what type of file you are opening. Many malicious programs disguise themselves as relatively harmless files. For example, a malicious program could show up as `invoice.docx`, but will show up as `invoice.docx.exe` with file extensions enabled.
-3. Disable macros in Microsoft Office. 
+5. Disable macros in Microsoft Office. 
     * Ransomware can also exploit macros in Office to run their malicious payloads.
-4. Do not open attachments in emails that you are not expecting, see the above two points for why.
-5. Stay up to date on all OS and application updates. **An unpatched system is a vulnerable system.**
+6. Do not open attachments in emails that you are not expecting, see the above two points for why.
+7. Stay up to date on all OS and application updates. **An unpatched system is a vulnerable system.**
