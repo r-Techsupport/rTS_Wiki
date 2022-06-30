@@ -11,9 +11,15 @@ redirect_from: /books/troubleshooting-with-a-live-session/chapter/linux-live-env
 # Linux Live Session
 ## What is a Linux Live Session
 
-Linux is a great OS that has a major advantage when it comes to troubleshooting, it can be run from a USB flashdrive in a 'live' state without installing to a hard disk. This allows you to use a wide range of tools to manipulate the disks, data, and hardware of your computer/OS without worrying about anything running on it.
+Linux is a great tool for troubleshooting. It can run off a USB drive and run in a live session. This allows you to use a wide range of tools to manipulate the disks, data, and hardware of your computer/OS without worrying about anything running on it.
 
-**The username and password for the media is `user` and `live`**
+## Frequently Asked Questions
+### But I use Windows!
+That's fine, a Linux live session can be used regardless of your operating system.
+### I don't want to install Linux!
+The live session does not install Linux onto your main disk, the computer just boots into a USB drive containing Linux. Your main disk won't be touched at all unless you choose to.
+### I don't know Linux!
+Our live session is designed to be very easy to use for Windows users to understannd, so Windows users should find it pretty straightforward.
 
 ## 1. Obtaining media
 ### r/Techsupport Rescue Media
@@ -22,6 +28,8 @@ A Linux ISO has been made for r/Techsupport that has many of the proper tools pr
 [Download](https://github.com/r-Techsupport/rTS_Debian/releases/latest/download/rTS_RescueMedia.iso)
 
 [Source files for Debian live-build](https://github.com/r-Techsupport/rTS_Debian)
+
+**The username and password for the media is `user` and `live`**
 
 ### Official Xubuntu Media
 You may also use the official Xubuntu ISO and load your own tools as needed.
