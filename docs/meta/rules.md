@@ -59,7 +59,7 @@ How our bans work: Almost all our bans are permanent which can be appealed after
 
 > #### No [Meta] Posts About Tech/Jobs
 > No [Meta] posts about jobs (tech support related or not) or technology in general.
-> Such as "I have a interview help me" or "I want a product that can do XYZ" or "How does the internet work"
+> Such as "I have a interview help me" or "I want a product that can do XYZ" or "How does the Internet work"
 > 
 > *Google is your friend*
 

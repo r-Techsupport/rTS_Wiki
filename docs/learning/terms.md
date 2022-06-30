@@ -76,8 +76,8 @@ last_modified_date: 2022-06-17
 
 | Term | Definition |
 | ---- | ---------- |
-| Internet Protocol (IP) | The primary protocol used to transfer data over the internet. |
-| IP address | A series of numbers that identifies a computer on the internet. |
+| Internet Protocol (IP) | The primary protocol used to transfer data over the Internet. |
+| IP address | A series of numbers that identifies a computer on the Internet. |
 | IPv4 address | A format of IP addresses, consisting of 4 sets numbers from 0-255 (e.g. 10.15.1.58) |
 | IPv6 address | A format of IP addresses, consisting of 8 sets of hexadecimal numbers from 0-FFFF (e.g. fe80:3b71:ed9b:924e:f925:dfad:964a:5d26). |
 | Domain Name System (DNS) | The protocol that maps domains to IP addresses. |
