@@ -9,7 +9,6 @@ last_modified_date: 2022-06-29
 ---
 
 # Making a System Dossier
-
 {: .no_toc}
 
 {% include toc.md %}
@@ -19,12 +18,12 @@ A system dossier is a great way to provide needed information about your compute
 
 ## General System Information
 None of the tools here do everything, but oftentimes all of them don't need to be run.
-### Speccy
-Speccy is a small tool made by Piriform that gets a bunch of info about your hardware, software, and OS, and allows convenient ways to save and share it. You can [download it here](https://www.ccleaner.com/speccy/download/standard).
+### Specs (Get-Specs)
+Specs is a small tool made by us that gets a bunch of info about your hardware, software, and OS, and allows convenient ways to save and share it. You can download it [here](https://github.com/PipeItToDevNull/Get-Specs/releases/latest/download/Get-Specs.zip).
 
-After installing, let it analyze your system for a moment, then you can either save or publish your snapshot. These are under the file menu
-* Saving your snapshot will save a .speccy file. This will give a bit more information which might be helpful, but some of this information may be sensitive. This also relies on the person reading the file to also have Speccy.
-* Publishing your snapshot will provide you with a link to speccy.piriform.com. This link will strip all information that may be sensitive and can be read without Speccy. These links will eventually expire, so if your information gets too old you will have to publish another snapshot.
+Once downloaded, extract the zip file and run `Specs.exe`. Follow the prompts, and it will eventually give you an option to upload the snapshot to our pastebin or to view the file on your computer. Uploading the file will last for 24 hours. Either way, the file will be saved in `TechSupport_Specs.html`.
+
+Alternatively, you can use [Speccy](https://www.ccleaner.com/speccy/download/standard) to get similar information.
 
 ### msinfo32
 msinfo32 is built into Windows. It will provide some of the same information Speccy does. This is more focused on hardware and OS than installed software.
