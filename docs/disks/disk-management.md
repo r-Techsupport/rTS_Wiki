@@ -114,4 +114,4 @@ This is used via a Linux live environment.
 
 Gparted has the advantage of working on almost any disk, when in Windows you cannot operate extensively on your main `C:\` drive but Gparted is booted from its own media and not running on `C:\` so it does not have this restriction. 
 
-Gparted can be downloaded from [here](https://gparted.org/livecd.php). Read how to use GParted [here](https://rtech.support/books/troubleshooting-with-a-linux-live-session/page/manipulating-partitions-and-disks-with-gparted).
+Check the [Gparted guide here.](/docs/disks/gparted)

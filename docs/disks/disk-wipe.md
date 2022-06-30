@@ -2,7 +2,6 @@
 layout: default
 title: Wiping Disks
 nav_exclude: false
-nav_order: 2
 has_children: false
 parent: Disks
 search_exclude: false
