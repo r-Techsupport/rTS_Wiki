@@ -21,7 +21,7 @@ This is an all around system reporting tool. We use this actively in [the Discor
 
 <!--Speccy can have some issues reading Ryzen, if you temps are incredibly high please check with a Ryzen specific tool.-->
 
-[Download](https://github.com/PipeItToDevNull/Get-Specs/releases/latest/download/Get-Specs.zip)
+[Download](https://github.com/r-Techsupport/Get-Specs/releases/latest/download/Get-Specs.zip)
 
 Alternatively, you can use [Speccy](https://www.ccleaner.com/speccy/download/standard) to get similar information.
 
