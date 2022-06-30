@@ -62,3 +62,4 @@ This will require a USB that is at least the size of the ISO you downloaded.
 
 ## Things to do
 * [Wipe disks](/docs/disks/disk-wipe)
+* [Data Recovery](/docs/guides/data-recovery)
