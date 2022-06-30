@@ -25,6 +25,7 @@ last_modified_date: 2022-06-17
 | (Navigation keys) NavKeys | Ins, Del, Home, End, Page Up, Page Down |
 | Keyboard and Mouse (KB/M) | The device which you type on, and the device which you move the cursor with. |
 | Hz | The frequency at which something operates (cycles per second).  |
+| Uninterruptible Power Supply (UPS) | A battery backup system that allows a system to run for a period of time after main power loss. These also "clean" power preventing damage from unstable or dirty power. They are highly recommended for anyone who experiences frequent brown outs.|
 
 ### Software
 
@@ -88,6 +89,7 @@ last_modified_date: 2022-06-17
 | ---- | ---------- |
 | Hexadecimal (hex) | Base-16 numbers, consisting of digits 0-F. |
 | Microsoft (MS/MSFT) | The company that makes Windows and other products. |
+| Return Merchandise Authorization (RMA) | A return merchandise authorization (RMA), return authorization (RA) or return goods authorization (RGA) is a part of the process of returning a product to receive a refund, replacement, or repair during the product's warranty period. Both parties can decide how to deal with it, which could be refund, replacement or repair. |
 
 <!-- Note: It is debated whether kilobytes/megabytes//gigabytes/terabytes should be in multiples of 1000 or 1024. You should use context to decide which application uses which multiple.-->
 
