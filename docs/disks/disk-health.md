@@ -62,8 +62,6 @@ If a disk shows up as Yellow 'Caution' or Red 'Bad' we recommend replacing it.
 
 ## SmartmonTools
 
-For a GUI solution [see here](https://rtech.support/books/troubleshooting-with-a-live-session/page/checking-the-health-of-disks)
-
 You can check SMART in Linux using smartmonTools. The quick steps to get a report in Ubuntu are: (replace X with your desired disk)
 
 ```
@@ -72,3 +70,16 @@ sudo smartctl -a -d ata /dev/sdX
 ```
 
 [More Info](https://help.ubuntu.com/community/Smartmontools)
+
+### GSmartControl (GUI method)
+
+```
+sudo apt install gsmartcontrol
+```
+
+1. Open `gsmartcontrol` from the application menu
+2. Select your disk once the application is opened
+
+    *If your disk is anything but 'passed' then your disk is dying and needs to be replaced.*
+
+3. To share your results choose 'View output' then 'Save as' and upload that file to a helper for review.
