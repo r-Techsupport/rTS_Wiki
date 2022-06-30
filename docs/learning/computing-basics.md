@@ -78,7 +78,7 @@ last_modified_date: 2022-06-30
 
 * Don't save your passwords on unknown computers either.
 
-* Enable 2-factor authentication on your accounts (where possible) to improve security.
+* Enable [2-factor authentication](/docs/safety-security/mfa) on your accounts (where possible) to improve security.
 
 * Don't include personal information in your passwords (date of birth, your name, etc).
 
@@ -100,13 +100,13 @@ last_modified_date: 2022-06-30
 
 ### Software, maintenance & malware prevention
 
-* Using auto driver updaters can cause damage to your operating system and is not recommended. [See here](https://rtech.support/books/software-we-recommend/page/windows-maintenance#bkmrk-driver-finders) for our stance and instructions on drivers
+* Using auto driver updaters can cause damage to your operating system and is not recommended. We talk about our stance and instructions on drivers [here](/docs/recommendations/maintenance)
 
 * Office and Windows versions do not have to match.
 
 * Format and reload is always more thorough and often faster than manually trying to clean up a messy infection.
 
-* The built-in reset tools are not a full reinstall of Windows. [See here](https://rtech.support/books/how-to-and-guides/page/clean-installing-windows-10) for a guide to do a proper clean install.
+* The built-in reset tools are not a full reinstall of Windows. See our [disambiguation page](/windows) for a guide on doing a proper clean install.
 
 * Defragging your drive is an outdated and unnecessary ritual. Modern operating systems will avoid disk fragmentation automatically.
 
@@ -118,7 +118,7 @@ last_modified_date: 2022-06-30
 
 * If you don't know what a setting does, you likely shouldn't be touching it.
 
-* `Treesize Free` is a good way to see which files are filling up your hard drive.
+* [Treesize Free](https://customers.jam-software.de/downloadTrial.php?language=EN&article_no=80) is a good way to see which files are filling up your hard drive.
 
 * You shouldn't touch anything in the C:\Windows folder unless you know what you're doing.
 
@@ -146,7 +146,7 @@ last_modified_date: 2022-06-30
 
 ### Data security
 
-* You should backup your data. [Here](https://rtech.support/books/backups) is our backup guide.
+* You should backup your data. Checkout [our backup guide.](/docs/backups/backups)
 
 * A backup stored on the same drive doesn't count as a backup! Upload them to a cloud service or on an external HDD/network drive.
 
