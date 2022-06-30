@@ -35,6 +35,11 @@ When detected as bad your disk will attempt to move a sector. If it is moved suc
 
 This count goes up when the disk is not able to recover and move a sector. This indicates lost data.
 
+## Pending Sector Count
+
+This count goes up when the disk is being read with unstable sectors on the disk. They are a precursor to Reallocated Sectors which cause lost of date.
+[More info](https://harddrivegeek.com/current-pending-sector-count/)
+
 ## Crystal Disk Info
 
 Crystal disk is the simplest way to get a reading on SMART within Windows. Download the application then run it to view every disk in the machine.
