@@ -7,7 +7,7 @@ has_children: false
 parent: Information
 search_exclude: false
 last_modified_date: 2022-06-15
-permalink: /rules
+redirect_from: /rules
 ---
 
 # Rules of the r/TechSupport
