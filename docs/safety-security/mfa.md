@@ -9,8 +9,8 @@ last_modified_date: 2022-06-17
 redirect_from: /books/safety-and-security/page/mfa
 ---
 # MFA
-## What is MFA
-MFA, also called 2FA, means using 2 or more forms of authentication to gain access to an account or resource. In most cases the 1st form of authentication is your password, we then add a second in the form of a one time code.
+
+Multi-Factor Authentication (MFA), also called Two-Factor Authentication (2FA), is using 2 or more forms of authentication to gain access to an account or resource. In most cases the 1st form of authentication is your password, we then add a second in the form of a one time code.
 
 The method to obtain this code can vary, in most cases the code is coming from a text message (SMS), an application on your phone or computer, or a hardware token.
 
