@@ -17,7 +17,7 @@ This article relies on the live media [created here](/docs/live-sessions/linux-l
 {% include toc.md %}
 
 ## Overview
-Gparted is a Linux/gnu front-end to the `parted` tool. It is the recommended method for manipulating disks when using a [Linux live session]().
+Gparted is a Linux/gnu front-end to the `parted` tool. It is the recommended method for manipulating disks when using a Linux live session.
 
 ## Working with a new disk
 ### Create partition table
