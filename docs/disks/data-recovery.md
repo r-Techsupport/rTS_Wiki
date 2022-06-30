@@ -3,7 +3,7 @@ layout: default
 title: Data Recovery
 nav_exclude: false
 has_children: false
-parent: General Guides
+parent: Disks
 search_exclude: false
 last_modified_date: 2022-06-28
 ---
