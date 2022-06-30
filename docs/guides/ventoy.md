@@ -40,7 +40,7 @@ Ventoy is an useful tool that can create USB drives which can have more than one
 
 Once you have installed ventoy, you can put any amount of ISO's onto the newly created "Ventoy" volume, as long as it fits into the USB. **Do not mess with the `VTOYEFI` volume, as it holds Ventoy's boot data.**
 
-A few notable ISOs to download are: [Windows 10 Installation ISO](https://www.microsoft.com/en-gb/software-download/windows10), [our Linux rescue media](https://github.com/r-Techsupport/rTS_Debian/releases/latest/download/rTS_RescueMedia.iso), and [Our WinPE](https://rtech.support/uploads/rTS_WinPE.iso).
+A few notable ISOs to download are: [Windows 10 Installation ISO](https://www.microsoft.com/en-gb/software-download/windows10), [our Linux rescue media](https://github.com/r-Techsupport/rTS_Debian/releases/latest/download/rTS_RescueMedia.iso), and [Our WinPE](https://github.com/r-Techsupport/rTS_WinPe/releases/latest/download/rTS_WinPE.iso).
 
 <!--
 In Windows, you can drag & drop ISOs to the "Ventoy" partition.
