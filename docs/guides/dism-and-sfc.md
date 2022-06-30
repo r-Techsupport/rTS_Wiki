@@ -6,6 +6,8 @@ has_children: false
 parent: General Guides
 search_exclude: false
 last_modified_date: 2022-06-29
+redirect_from: 
+    - /books/how-to-and-guides/page/dism-and-sfc
 ---
 
 # DISM and SFC
@@ -35,7 +37,6 @@ The DISM commands below check if the OS image is broken, but do not attempt to f
 2. Deeper issues
 
 	`DISM /Online /Cleanup-Image /ScanHealth`
-
 
 ---
 ## Using SFC
