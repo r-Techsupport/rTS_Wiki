@@ -23,7 +23,7 @@ Anyone is free to assist in our community and each may maintain their own standa
 1. You must understand [all of our rules](/docs/meta/rules). Please review them and ask for clarification if needed. 
 2. We discourage helpers from seeking the source of licensing. While we do prohibit piracy and black-market keys and cracks, we believe that seeking the source of a key can detract from the real issue at hand, and is almost never the true cause of an issue. *Malicious cracks are detected in our standard system diagnostic tools, so don't go witch-hunting for pirated Windows.*
 3. We are all here because we like helping people, even when we should be sleeping, eating, or doing something we important. The "just need to solve this issue" drive is real, but that can get grating. Remember, the channel will always be here. Take a break when need be. 
-4. Users are users, be them at work or a stranger on the internet. Users can be panicky and not know what they are doing. Take a step away from the machine, close the tab for a few minutes, take a breath. Someone else can help them when they get to be a bit too much. If you believe a user is beyond difficult, please let a Trusted/Moderator know so we can handle them as needed.
+4. Users are users, be them at work or a stranger on the Internet. Users can be panicky and not know what they are doing. Take a step away from the machine, close the tab for a few minutes, take a breath. Someone else can help them when they get to be a bit too much. If you believe a user is beyond difficult, please let a Trusted/Moderator know so we can handle them as needed.
 5. No one here is entitled to yours or anyone else's help. 
 
 ### Attitudes
