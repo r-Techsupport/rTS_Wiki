@@ -19,7 +19,7 @@ A system dossier is a great way to provide needed information about your compute
 ## General System Information
 None of the tools here do everything, but oftentimes all of them don't need to be run.
 ### Specs (Get-Specs)
-Specs is a small tool made by us that gets a bunch of info about your hardware, software, and OS, and allows convenient ways to save and share it. You can download it [here](https://github.com/PipeItToDevNull/Get-Specs/releases/latest/download/Get-Specs.zip).
+Specs is a small tool made by us that gets a bunch of info about your hardware, software, and OS, and allows convenient ways to save and share it. You can download it [here](https://github.com/r-Techsupport/Get-Specs/releases/latest/download/Get-Specs.zip).
 
 Once downloaded, extract the zip file and run `Specs.exe`. Follow the prompts, and it will eventually give you an option to upload the snapshot to our pastebin or to view the file on your computer. Uploading the file will last for 24 hours. Either way, the file will be saved in `TechSupport_Specs.html`.
 
@@ -49,7 +49,7 @@ There is only one way to save the information from dxdiag, which is the "Save Al
 These are not a replacement for general system information tools, these should only be an additional tool you use.
 
 ### HWiNFO stress tests and logging
-[Link to separate guide](https://rtech.support/books/how-to-and-guides/page/hwinfo-full-guide)
+[Link to separate guide](/docs/guides/hwinfo)
 
 This provides a view of how your system runs under load. This is useful to determine hardware faults or overheating issues.
 
