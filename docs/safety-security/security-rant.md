@@ -6,6 +6,7 @@ has_children: false
 parent: Safety & Security
 search_exclude: false
 last_modified_date: 2022-06-17
+redirect_from: /books/safety-and-security/page/security-rant
 ---
 # Security Rant
 This has been placed here for the sake of being easier to find. This occured in #general-help on 2021-01-26.

@@ -7,6 +7,7 @@ has_children: false
 parent: OS Install Guides
 search_exclude: false
 last_modified_date: 2022-06-29
+redirect_from: /books/how-to-and-guides/page/linux-installation-guide
 ---
 
 # Linux installation guide

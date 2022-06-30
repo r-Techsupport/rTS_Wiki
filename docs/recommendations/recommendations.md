@@ -6,6 +6,7 @@ nav_order: 2
 has_children: true
 search_exclude: false
 last_modified_date: 2022-06-15
+redirect_from: /books/software-we-recommend
 ---
 
 # Software We Recommend

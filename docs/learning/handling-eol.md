@@ -6,6 +6,7 @@ has_children: false
 parent: Learning
 search_exclude: false
 last_modified_date: 2022-06-23
+redirect_from: /books/how-to-and-guides/page/eol-software
 ---
 
 # How to resolve an EOL OS

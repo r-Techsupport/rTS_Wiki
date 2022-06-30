@@ -6,6 +6,7 @@ has_children: false
 parent: Safety & Security
 search_exclude: false
 last_modified_date: 2022-06-28
+redirect_from: /books/safety-and-security/page/ransomware
 ---
 # Ransomware
 Crypto-ransomware is a large threat today and is only expected to get worse. The key to its success is the business model employed by many strains and the method of deployment used.

@@ -6,6 +6,7 @@ has_children: false
 search_exclude: true
 last_modified_date: 2022-06-28
 permalink: /windows
+redirect_from: /books/how-to-and-guides/page/clean-installing-windows
 ---
 
 # Installing Windows

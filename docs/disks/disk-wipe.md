@@ -7,6 +7,7 @@ has_children: false
 parent: Disks
 search_exclude: false
 last_modified_date: 2022-06-15
+redirect_from: /books/troubleshooting-with-a-linux-live-session/page/wiping-disks
 ---
 
 # Wiping Disks

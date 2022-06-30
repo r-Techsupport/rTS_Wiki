@@ -7,6 +7,7 @@ has_children: false
 parent: Software We Recommend
 search_exclude: false
 last_modified_date: 2022-06-15
+redirect_from: /books/software-we-recommend/page/anti-virus-and-malware-tools
 ---
 
 # Antivirus and Malware tools

@@ -6,6 +6,7 @@ has_children: false
 parent: Live Sessions
 search_exclude: false
 last_modified_date: 2022-06-15
+redirect_from: /books/troubleshooting-with-a-live-session/chapter/linux-live-environment
 ---
 # Linux Live Session
 ## What is a Linux Live Session

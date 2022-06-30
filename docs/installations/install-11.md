@@ -7,6 +7,7 @@ has_children: false
 parent: OS Install Guides
 search_exclude: false
 last_modified_date: 2022-06-16
+redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 ---
 # Installing Windows 11
 
