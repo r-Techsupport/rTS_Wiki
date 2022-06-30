@@ -16,7 +16,7 @@ Windows PE is small bootable Windows environment made for r/Techsupport. This PE
 ## Obtaining media
 ### r/Techsupport Windows PE
 
-[Download](https://rtech.support/uploads/rTS_WinPE.iso)
+[Download](https://github.com/r-Techsupport/rTS_WinPe/releases/latest/download/rTS_WinPE.iso)
 
 [Source files for rTS_WinPE](https://github.com/r-Techsupport/rTS_WinPe)
 
