@@ -7,6 +7,7 @@ has_children: false
 parent: Information
 search_exclude: false
 last_modified_date: 2022-06-17
+redirect_from: /books/rules/page/helper-guidelines-and-orientation
 ---
 
 # Helper Guidelines and Orientation
