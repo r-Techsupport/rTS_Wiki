@@ -9,7 +9,7 @@ search_exclude: false
 last_modified_date: 2022-06-15
 redirect_from: 
     - /rules
-    - books/rules/page/rules-of-the-rtechsupport
+    - /books/rules/page/rules-of-the-rtechsupport
 ---
 
 # Rules of the r/TechSupport
