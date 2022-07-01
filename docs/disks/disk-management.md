@@ -6,7 +6,7 @@ has_children: false
 nav_order: 1
 parent: Disks
 search_exclude: false
-last_modified_date: 2022-06-17
+last_modified_date: 2022-06-30
 redirect_from: /books/software-we-recommend/page/disk-partition-management
 ---
 
@@ -82,7 +82,7 @@ This guide will walk you through wiping a disk and creating a single empty parti
     [![ListDisk.png](/assets/disk-management/listdisk.png)](/assets/disk-management/listdisk.png)
 
 3. To wipe all partitions from your disk, type `clean`
-4. For disk type and partition structure, most cases will want basic and GPT. If this disk needs to be read on older systems, use MBR instead of GPT. Run `convert basic` and `convert gpt`.
+4. For disk type and partition structure, most cases will want basic and GPT. If this disk needs to be read on older systems, use MBR instead of GPT. Run `convert basic` or `convert gpt` based on what you need.
 5. To create the raw partition, run `create primary partition`. If you picked MBR, run `active` after creating the partition.
 6. Run `detail disk` and `list partition` to ensure that your disk looks correct and you have both the partition and volume selected. You should have a star next to the volume and partition.
 
