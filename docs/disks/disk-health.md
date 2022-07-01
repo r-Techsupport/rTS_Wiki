@@ -38,6 +38,7 @@ This count goes up when the disk is not able to recover and move a sector. This 
 ## Pending Sector Count
 
 This count goes up when the disk is being read with unstable sectors on the disk. They are a precursor to Reallocated Sectors which cause lost of date.
+
 [More info](https://harddrivegeek.com/current-pending-sector-count/)
 
 ## Crystal Disk Info
