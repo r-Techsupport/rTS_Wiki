@@ -5,7 +5,7 @@ nav_exclude: false
 has_children: false
 parent: General Guides
 search_exclude: false
-last_modified_date: 2022-06-29
+last_modified_date: 2022-07-01
 ---
 
 # Making a System Dossier
@@ -103,4 +103,4 @@ Crystal disk info (CDI) is a tool for obtaining the SMART status of all attached
 
 You can download it [here](https://osdn.net/projects/crystaldiskinfo/downloads/73319/CrystalDiskInfo8_7_0.exe).
 
-For saving information, `edit`->`copy` then either save it to a text file or use [pastebin](https://www.pastebin.com)
+For saving information, `Edit` -> `Copy` then either save it to a text file or use [Pastebin](https://www.pastebin.com)
