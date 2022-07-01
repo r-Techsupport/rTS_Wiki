@@ -45,7 +45,7 @@ This count goes up when the disk is being read with unstable sectors on the disk
 
 Crystal disk is the simplest way to get a reading on SMART within Windows. Download the application then run it to view every disk in the machine.
 
-If a disk shows up as Yellow 'Caution' or Red 'Bad' we recommend replacing it.
+If a disk shows up as Yellow/'Caution' or Red/'Bad' we recommend replacing it.
 
 [Download](https://osdn.net/frs/redir.php?m=acc&f=crystaldiskinfo%2F74490%2FCrystalDiskInfo8_10_0.zip)
 
