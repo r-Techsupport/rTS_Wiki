@@ -5,7 +5,7 @@ nav_exclude: false
 has_children: false
 parent: General Guides
 search_exclude: false
-last_modified_date: 2022-06-29
+last_modified_date: 2022-07-01
 ---
 
 # Making a System Dossier
@@ -99,8 +99,8 @@ You can open the tool by typing `slmgr /dli` into a command line, or you can ope
 Most of this information can be useful, it is recommended that you take a screenshot of the window that pops up.
 
 ### Crystal disk info
-Crystal disk info (CDI) is a tool for obtaining the smart status of all attached drives.
+Crystal disk info (CDI) is a tool for obtaining the SMART status of all attached drives.
 
 You can download it [here](https://osdn.net/projects/crystaldiskinfo/downloads/73319/CrystalDiskInfo8_7_0.exe).
 
-For saving information, `edit`->`copy` then either save it to a text file or use [pastebin](https://www.pastebin.com)
+For saving information, `Edit` -> `Copy` then either save it to a text file or use [Pastebin](https://www.pastebin.com)
