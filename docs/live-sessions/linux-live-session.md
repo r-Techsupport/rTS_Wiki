@@ -11,7 +11,7 @@ redirect_from: /books/troubleshooting-with-a-live-session/chapter/linux-live-env
 # Linux Live Session
 ## What is a Linux Live Session
 
-Linux is a great tool for troubleshooting. It can run off a USB drive and run in a live session. This allows you to use a wide range of tools to manipulate the disks, data, and hardware of your computer/OS without worrying about anything running on it.
+Linux is a great tool for troubleshooting. It can run off a USB drive in a live session. This allows you to use a wide range of tools to manipulate the disks, data, and hardware of your computer/OS without worrying about anything running on it.
 
 ## Frequently Asked Questions
 ### But I use Windows!
