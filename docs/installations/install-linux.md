@@ -19,7 +19,7 @@ This Linux installation guide may seem long, but it’s not very difficult. It c
 
 ## Step 0: Pre-installation
 
-You should **ALWAYS** [backup](/docs/backups/backups) your important files before installing a new operating system, regardless of the OS. In the rare case that the installer messes up, you will lose your data if you don’t back it up.
+You should **ALWAYS** [backup](/docs/backups) your important files before installing a new operating system, regardless of the OS. In the rare case that the installer messes up, you will lose your data if you don’t back it up.
 
 Figuring out if your system supports GPT/UEFI, as Legacy/BIOS/MBR systems can't boot from GPT/UEFI installation media. The best way to check is on your motherboard's specifications. An alternative solution (albeit not as effective) for Windows, is to check what your **current** partition table is by running `$env:firmware_type` in powershell. 
 

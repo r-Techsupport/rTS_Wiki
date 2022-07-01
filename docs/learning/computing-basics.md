@@ -146,7 +146,7 @@ last_modified_date: 2022-06-30
 
 ### Data security
 
-* You should backup your data. Checkout [our backup guide.](/docs/backups/backups)
+* You should backup your data. Checkout [our backup guide.](/docs/backups)
 
 * A backup stored on the same drive doesn't count as a backup! Upload them to a cloud service or on an external HDD/network drive.
 
