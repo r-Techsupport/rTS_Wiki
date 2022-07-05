@@ -15,7 +15,7 @@ To start troubleshooting using HWiNFO, follow this guide. It will walk you thoug
 
 > All 3 programs are required for this test. None are optional.
 >
-> ***<u>Read the entirety of step 1 and 2 before complaining that downloads aren't working.</u>***
+> ***<u class="blink">Read the entirety of step 1 and 2 before complaining that downloads aren't working.</u>***
 
 1. Download HWiNFO from [here](https://www.fosshub.com/HWiNFO.html)
 
