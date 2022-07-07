@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Data Recovery
+title: Data Retrieval
 nav_exclude: false
 has_children: false
 parent: Disks
