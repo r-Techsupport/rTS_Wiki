@@ -74,7 +74,7 @@ This will require a USB that is at least the size of the ISO you downloaded.
 
 ## Things to do
 * [Wipe disks](/docs/disks/disk-wipe)
-* [Data Retrieval/Recovery](/docs/disks/data-recovery)
+* [Data Retrieval](/docs/disks/data-retrieval)
 * [Disk Manipulation with Gparted](/docs/disks/gparted)
 * [Verify Disk Heath](/docs/disks/disk-health#smartmontools)
 * [Stressful Application Test](/docs/guides/memtest/stressapptest)
