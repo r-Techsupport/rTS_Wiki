@@ -17,31 +17,23 @@ Clearing Windows update cache is used when some updates will not complete. This 
 
     **Windows key + R, type "cmd" into the box, ctrl + shift + enter**
 
-2. These next steps will stopp the update services you need to type them line by line into the command prompt:
-    
-    `net stop wuauserv`
-    
-    `net stop cryptSvc`
-    
-    `net stop bits`
-    
-    `>net stop msiserver`
-    
+2. These steps will stop the update services, type them line by line into the command prompt:
+    ```
+    net stop wuauserv
+    net stop cryptSvc
+    net stop bits
+    net stop msiserver
+    ```
 3. Now we have to remove the updated cache:
-    
-	`ren C:\Windows\SoftwareDistribution SoftwareDistribution.old`
-
-	`ren C:\Windows\System32\catroot2 catroot2.old`
-          
+    ```
+	ren C:\Windows\SoftwareDistribution SoftwareDistribution.old
+	ren C:\Windows\System32\catroot2 catroot2.old
+    ```
 4. Now we must restart the update services:
-    
-	`net start wuauserv`
-
-	`net start cryptSvc`
-
-	`net start bits`
-
-	`net start msiserver`
-    
+    ```
+	net start wuauserv
+	net start cryptSvc
+	net start bits
+	net start msiserver
+    ```
  
-   
