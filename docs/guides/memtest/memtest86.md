@@ -3,8 +3,8 @@ layout: default
 title:  Memtest86+
 nav_exclude: false
 has_children: false
-grand_parent: General Guides
-parent: Memory Testing
+#grand_parent: General Guides
+parent: General Guides
 search_exclude: false
 last_modified_date: 2022-06-27
 redirect_from: /books/how-to-and-guides/page/running-memtest86

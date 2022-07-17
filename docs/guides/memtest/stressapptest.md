@@ -5,7 +5,7 @@ nav_exclude: true
 has_children: false
 grand_parent: General Guides
 parent: Memory Testing
-search_exclude: false
+search_exclude: true
 last_modified_date: 2022-07-16
 ---
 
