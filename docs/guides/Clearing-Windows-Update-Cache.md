@@ -13,34 +13,35 @@ last_modified_date: 2022-07-17
 
 Clearing Windows update cache is used when some updates will not complete. This could help Windows to update automatically. 
 
-Open administrator command prompt
+1. Open administrator command prompt
 
-   1. Windows key + R, type "cmd" into the box, ctrl + shift + enter
+    **Windows key + R, type "cmd" into the box, ctrl + shift + enter**
 
-These next steps will stopp the update services you need to type them line by line into the command prompt:
+2. These next steps will stopp the update services you need to type them line by line into the command prompt:
+    
+    `net stop wuauserv`
+    
+    `net stop cryptSvc`
+    
+    `net stop bits`
+    
+    `>net stop msiserver`
+    
+3. Now we have to remove the updated cache:
+    
+	`ren C:\Windows\SoftwareDistribution SoftwareDistribution.old`
 
-   2. `net stop wuauserv`
+	`ren C:\Windows\System32\catroot2 catroot2.old`
+          
+4. Now we must restart the update services:
+    
+	`net start wuauserv`
 
-   3. `net stop cryptSvc`
+	`net start cryptSvc`
 
-   4. `net stop bits`
-   
-   5. `net stop msiserver`
+	`net start bits`
 
-Now we have to remove the updated cache:
-
-   6. `ren C:\Windows\SoftwareDistribution SoftwareDistribution.old`
-
-   7. `ren C:\Windows\System32\catroot2 catroot2.old`
-
-Now we must restart the update services:
-
-   8. `net start wuauserv`
-
-   9. `net start cryptSvc`
-
-   10. `net start bits`
-
-   11. `net start msiserver`
-   
+	`net start msiserver`
+    
+ 
    
