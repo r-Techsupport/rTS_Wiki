@@ -10,6 +10,10 @@ last_modified_date: 2022-06-30
 ---
 
 # Verifying Disk Health
+{: .no_toc}
+
+{% include toc.md %}
+
 ## Definitions
 
 S.M.A.R.T. - this is a monitoring system included in disk drives(HDDs and SSDs). Its primary function is to detect and report various indicators of drive reliability and health.

@@ -11,6 +11,9 @@ redirect_from: /books/rules/page/helper-guidelines-and-orientation
 ---
 
 # Helper Guidelines and Orientation
+{: .no_toc}
+
+{% include toc.md %}
 
 ## What is the Discord invite?
 

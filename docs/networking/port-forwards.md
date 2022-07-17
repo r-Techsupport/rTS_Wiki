@@ -8,6 +8,10 @@ search_exclude: false
 last_modified_date: 2022-06-17
 ---
 # Troubleshooting Port Forwards
+{: .no_toc}
+
+{% include toc.md %}
+
 This is not a guide on *how* to port forward, it is only made to address issues once your forward is made.
 
 ## Definitions

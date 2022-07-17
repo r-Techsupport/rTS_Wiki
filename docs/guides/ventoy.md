@@ -10,6 +10,9 @@ redirect_from: /books/how-to-and-guides/page/how-to-install-and-use-ventoy
 ---
 
 # Ventoy
+{: .no_toc}
+
+{% include toc.md %}
 
 Ventoy is an useful tool that can create USB drives which can have more than one ISO at once, rather than traditional ISO writers, which can only use one ISO at a time. You need Windows or Linux to create a Ventoy drive initially, but you can add/remove ISO files to it on any system that supports exFAT.
 

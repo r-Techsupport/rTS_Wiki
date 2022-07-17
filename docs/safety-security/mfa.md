@@ -9,6 +9,9 @@ last_modified_date: 2022-06-17
 redirect_from: /books/safety-and-security/page/mfa
 ---
 # MFA
+{: .no_toc}
+
+{% include toc.md %}
 
 Multi-Factor Authentication (MFA), also called Two-Factor Authentication (2FA), is using 2 or more forms of authentication to gain access to an account or resource. In most cases the 1st form of authentication is your password, we then add a second in the form of a one time code.
 
