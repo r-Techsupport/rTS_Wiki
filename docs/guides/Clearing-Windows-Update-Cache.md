@@ -13,7 +13,7 @@ last_modified_date: 2022-07-17
 
 Clearing Windows update cache is used when some updates will not complete. This could help Windows to update automatically. 
 
-1. Open administrator command prompt
+1. Open administrator command prompt:
 
     **Windows key + R, type "cmd" into the box, ctrl + shift + enter**
 
