@@ -1,12 +1,12 @@
 ---
 layout: default
 title: Stressful App Test
-nav_exclude: false
+nav_exclude: true
 has_children: false
 grand_parent: General Guides
 parent: Memory Testing
 search_exclude: false
-last_modified_date: 2022-07-05
+last_modified_date: 2022-07-16
 ---
 
 # Stressful App Test

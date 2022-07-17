@@ -5,7 +5,7 @@ nav_exclude: false
 has_children: false
 parent: General Guides
 search_exclude: false
-last_modified_date: 2022-06-28
+last_modified_date: 2022-07-16
 ---
 
 # How to know if you need more RAM

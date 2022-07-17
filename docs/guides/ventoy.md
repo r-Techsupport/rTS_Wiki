@@ -5,7 +5,7 @@ nav_exclude: false
 has_children: false
 parent: General Guides
 search_exclude: false
-last_modified_date: 2022-06-29
+last_modified_date: 2022-07-16
 redirect_from: /books/how-to-and-guides/page/how-to-install-and-use-ventoy
 ---
 

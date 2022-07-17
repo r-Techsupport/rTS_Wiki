@@ -6,7 +6,7 @@ nav_order: 2
 has_children: false
 parent: Software We Recommend
 search_exclude: false
-last_modified_date: 2022-06-15
+last_modified_date: 2022-07-16
 redirect_from: /books/software-we-recommend/page/blacklist
 ---
 
