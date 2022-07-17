@@ -15,7 +15,7 @@ Clearing Windows update cache is used when some updates will not complete. This 
 
 Open administrator command prompt
 
-**1. Windows key + R, type "cmd" into the box, ctrl + shift + enter**
+   **1. Windows key + R, type "cmd" into the box, ctrl + shift + enter**
 
 These next steps will stopp the update services you need to type them line by line into the command prompt:
 
