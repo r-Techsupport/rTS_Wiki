@@ -5,9 +5,9 @@ nav_exclude: true
 last_modified: 2022-06-25
 ---
 # Highlighted Content
-How to clean install [Windows 10](/docs/how-to/install-10) and [Windows 11](/docs/how-to/install-11)
-
-Believe you are infected? View our recommendations for dealing with [Malware Removal](/docs/safety-security/malware-guide)
+* How to clean install [Windows](/windows)
+* Believe you are infected? View our recommendations for dealing with [Malware Removal](/docs/safety-security/malware-guide)
+* Looking to improve your cyber hygiene with [MFA](/docs/safety-security/mfa.html) and a [personal backup plan](/docs/backups)?
 
 ---
 ## Who is writing this wiki? The contributors!
