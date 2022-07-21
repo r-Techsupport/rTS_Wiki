@@ -6,6 +6,7 @@ has_children: false
 parent: General Guides
 search_exclude: false
 last_modified_date: 2022-07-01
+redirect_from: /books/how-to-and-guides/page/making-a-system-dossier
 ---
 
 # Making a System Dossier
