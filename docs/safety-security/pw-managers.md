@@ -41,5 +41,12 @@ A password manager is a piece of software that holds all your other credentials 
 
 These all will have browser extensions and mobile apps, they auto fill everything and make life so much easier. I never have to remember, or type out long passwords.
 
+| Product | Online/Offline | |
+| --- | --- | --- |
+| Bitwarden/Vaultwarden | Online | |
+| Lastpass | Online | |
+| Myki | Hybrid | |
+| Keepass/KeepassXC | Offline | |
+
 ### MFA
 Check out our article on [MFA](/docs/safety-security/mfa) for the next steps you can take in securing your accounts.
