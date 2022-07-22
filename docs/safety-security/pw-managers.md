@@ -30,7 +30,7 @@ In February 2019, an email validation service called verifications.io suffered a
 ## What can you do?
 **Unique passwords, every site, every time.**
 
-The first step is minimising the impact of an account that has the password stolen, that event is inevitable, and you can do this by ensuring that all sites use unique passwords.
+The first step is minimizing the impact of an account that has the password stolen, that event is inevitable, and you can do this by ensuring that all sites use unique passwords.
 
 “*But I will never remember that many passwords!*" - you don't need to.
 
