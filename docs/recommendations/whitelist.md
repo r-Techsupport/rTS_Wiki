@@ -6,7 +6,7 @@ nav_order: 1
 has_children: false
 parent: Software We Recommend
 search_exclude: false
-last_modified_date: 2022-06-15
+last_modified_date: 2022-07-22
 ---
 
 # Whitelist
@@ -15,7 +15,7 @@ This serves as a master list of recommended and permitted software that we permi
 
 | Type | Name | Notes |
 | -- | -- | -- |
-| Disk Manipulation | [gparted](https://rtech.support/books/troubleshooting-with-a-linux-live-session/page/manipulating-partitions-and-disks-with-gparted) | Gparted is a Linux/GNU front-end to the parted tool. It is the recommended method for manipulating disks when using a Linux live session. [How To Set Up](https://rtech.support/books/troubleshooting-with-a-linux-live-session/page/manipulating-partitions-and-disks-with-gparted) |
+| Disk Manipulation | [gparted](https://rtech.support/docs/disks/gparted) | Gparted is a Linux/GNU front-end to the parted tool. It is the recommended method for manipulating disks when using a Linux live session. [How To Set Up](https://rtech.support/books/troubleshooting-with-a-linux-live-session/page/manipulating-partitions-and-disks-with-gparted) |
 | Bootable USB Solutions | [Windows Media Creation Tool](https://www.microsoft.com/nb-no/software-download/windows10) | Microsoft's official tool used to do a clean install of Windows 10 and 11. |
 || [Rufus](https://rufus.ie/en_US/) | A portable program used to flash ISOs onto USB flash drives.|
 || [Ventoy](https://rtech.support/books/how-to-and-guides/page/how-to-install-and-use-ventoy) | A multiboot solution for USBs.|
