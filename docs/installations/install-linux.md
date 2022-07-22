@@ -19,7 +19,7 @@ This Linux installation guide may seem long, but it’s not very difficult. It c
 
 ## Step 0: Pre-installation
 
-You should **ALWAYS** [backup](/docs/backups/backups) your important files before installing a new operating system, regardless of the OS. In the rare case that the installer messes up, you will lose your data if you don’t back it up.
+You should **ALWAYS** [backup](/docs/backups) your important files before installing a new operating system, regardless of the OS. In the rare case that the installer messes up, you will lose your data if you don’t back it up.
 
 Figuring out if your system supports GPT/UEFI, as Legacy/BIOS/MBR systems can't boot from GPT/UEFI installation media. The best way to check is on your motherboard's specifications. An alternative solution (albeit not as effective) for Windows, is to check what your **current** partition table is by running `$env:firmware_type` in powershell. 
 
@@ -53,7 +53,7 @@ After you’ve downloaded the distro of your choice, you should have an ISO file
 
 **Warning: This will wipe all existing data on the USB drive.**
 
-Windows:
+### Windows
 
 1. Download and run [Rufus](https://rufus.ie/).
 2. Select “ISO Image” and then browse for the ISO image.
@@ -62,18 +62,26 @@ Windows:
 5. Click “Start” and wait for it to finish.
 6. Eject the USB flash drive.
 
-macOS:
+### macOS
 
-1. Open the Terminal.
-2. First, without the flash drive inserted, run `diskutil list` in the Terminal.
-3. Plug in the flash drive and run `diskutil list` again. You can do this to identify the drive device path. The device path is in the form of `/dev/diskN`, where N is a number (example: `/dev/disk1`).
-4. Unmount the flash drive you have identified. `diskutil unmountdisk /dev/diskN`.
-5. Convert the ISO image. `hdiutil convert /path/to/image.iso -format UDRW -o /path/to/ubuntu.img`
-6. Write the image to the flash drive. `dd if=/path/to/image.img of=/dev/rdiskN`. Using `/dev/rdiskN` instead of `/dev/diskN` usually results in faster media creation.
-7. Wait until dd finishes. It will not display progress, but the terminal will display the next prompt when it's done.
-8. Eject the USB flash drive: `diskutil eject /dev/diskN`.
+1. Download and run [Etcher](https://www.balena.io/etcher/)
+2. Select your downloaded ISO
+3. Select your target drive
+4. Click "Flash" and wait for it to finish.
 
-Linux:
+<details markdown="1">
+<summary>Alternative steps, without using Etcher</summary>
+> 1. Open the Terminal.
+> 2. First, without the flash drive inserted, run `diskutil list` in the Terminal.
+> 3. Plug in the flash drive and run `diskutil list` again. You can do this to identify the drive device path. The device path is in the form of `/dev/diskN`, where N is a number (example: `/dev/disk1`).
+> 4. Unmount the flash drive you have identified. `diskutil unmountdisk /dev/diskN`.
+> 5. Convert the ISO image. `hdiutil convert /path/to/image.iso -format UDRW -o /path/to/ubuntu.img`
+> 6. Write the image to the flash drive. `dd if=/path/to/image.img of=/dev/rdiskN`. Using `/dev/rdiskN` instead of `/dev/diskN` usually results in faster media creation.
+> 7. Wait until dd finishes. It will not display progress, but the terminal will display the next prompt when it's done.
+> 8. Eject the USB flash drive: `diskutil eject /dev/diskN`.
+</details>
+
+### Linux
 
 1. First, without the flash drive inserted, run `lsblk` in the Terminal.
 2. Plug in the flash drive and run `lsblk` again. You can do this to identify the drive device path. The device path is usually in the form of `/dev/sdX`, where X is a letter (example: `/dev/sdb`).

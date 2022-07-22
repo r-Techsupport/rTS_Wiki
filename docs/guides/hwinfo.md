@@ -15,7 +15,7 @@ To start troubleshooting using HWiNFO, follow this guide. It will walk you thoug
 
 > All 3 programs are required for this test. None are optional.
 >
-> ***<u>Read the entirety of step 1 and 2 before complaining that downloads aren't working.</u>***
+> ***<u class="blink">Read the entirety of step 1 and 2 before complaining that downloads aren't working.</u>***
 
 1. Download HWiNFO from [here](https://www.fosshub.com/HWiNFO.html)
 
@@ -59,7 +59,7 @@ To start troubleshooting using HWiNFO, follow this guide. It will walk you thoug
  
 10. After you get prime95 running, install and launch furmark. In the first menu, change the resolution to match your monitor. If you don't see your resolution listed, you can use custom resolution. Set the Anti-aliasing selection box to 8X MSAA.
 
-    ![fuarmark-settings.png](/assets/hwinfo/fur1.jpeg)
+    ![fuarmark-settings.png](/assets/hwinfo/fur1.png)
 
 11. Read the warning and press "GO!"
 

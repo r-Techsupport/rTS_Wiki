@@ -6,10 +6,14 @@ nav_order: 2
 has_children: false
 parent: Disks
 search_exclude: false
-last_modified_date: 2022-06-23
+last_modified_date: 2022-07-16
 ---
 
 # Verifying Disk Health
+{: .no_toc}
+
+{% include toc.md %}
+
 ## Definitions
 
 S.M.A.R.T. - this is a monitoring system included in disk drives(HDDs and SSDs). Its primary function is to detect and report various indicators of drive reliability and health.
@@ -35,11 +39,17 @@ When detected as bad your disk will attempt to move a sector. If it is moved suc
 
 This count goes up when the disk is not able to recover and move a sector. This indicates lost data.
 
+## Pending Sector Count
+
+This count goes up when the disk is being read with unstable sectors on the disk. They are a precursor to Reallocated Sectors which cause lost of date.
+
+[More info](https://harddrivegeek.com/current-pending-sector-count/)
+
 ## Crystal Disk Info
 
 Crystal disk is the simplest way to get a reading on SMART within Windows. Download the application then run it to view every disk in the machine.
 
-If a disk shows up as Yellow 'Caution' or Red 'Bad' we recommend replacing it.
+If a disk shows up as Yellow/'Caution' or Red/'Bad' we recommend replacing it.
 
 [Download](https://osdn.net/frs/redir.php?m=acc&f=crystaldiskinfo%2F74490%2FCrystalDiskInfo8_10_0.zip)
 

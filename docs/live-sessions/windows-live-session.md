@@ -5,10 +5,13 @@ nav_exclude: false
 has_children: false
 parent: Live Sessions
 search_exclude: false
-last_modified_date: 2022-06-15
+last_modified_date: 2022-07-16
 redirect_from: /books/troubleshooting-with-a-live-session/chapter/windows-pe
 ---
 # Windows Live Session
+{: .no_toc}
+
+{% include toc.md %}
 ## What is Windows PE
 
 Windows PE is small bootable Windows environment made for r/Techsupport. This PE has a full GUI and select tools for basic troubleshooting or data recovery in a UI more familiar to users than Linux.
@@ -16,7 +19,7 @@ Windows PE is small bootable Windows environment made for r/Techsupport. This PE
 ## Obtaining media
 ### r/Techsupport Windows PE
 
-[Download](https://rtech.support/uploads/rTS_WinPE.iso)
+[Download](https://github.com/r-Techsupport/rTS_WinPe/releases/latest/download/rTS_WinPE.iso)
 
 [Source files for rTS_WinPE](https://github.com/r-Techsupport/rTS_WinPe)
 

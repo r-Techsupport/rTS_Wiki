@@ -5,13 +5,16 @@ nav_exclude: false
 has_children: false
 parent: Live Sessions
 search_exclude: false
-last_modified_date: 2022-06-15
+last_modified_date: 2022-07-16
 redirect_from: /books/troubleshooting-with-a-live-session/chapter/linux-live-environment
 ---
 # Linux Live Session
+{: .no_toc}
+
+{% include toc.md %}
 ## What is a Linux Live Session
 
-Linux is a great tool for troubleshooting. It can run off a USB drive and run in a live session. This allows you to use a wide range of tools to manipulate the disks, data, and hardware of your computer/OS without worrying about anything running on it.
+Linux is a great tool for troubleshooting. It can run off a USB drive in a live session. This allows you to use a wide range of tools to manipulate the disks, data, and hardware of your computer/OS without worrying about anything running on it.
 
 ## Frequently Asked Questions
 ### But I use Windows!
@@ -19,7 +22,7 @@ That's fine, a Linux live session can be used regardless of your operating syste
 ### I don't want to install Linux!
 The live session does not install Linux onto your main disk, the computer just boots into a USB drive containing Linux. Your main disk won't be touched at all unless you choose to.
 ### I don't know Linux!
-Our live session is designed to be very easy to use for Windows users to understannd, so Windows users should find it pretty straightforward.
+Our live session is designed to be very easy to use for Windows users to understand, so Windows users should find it pretty straightforward.
 
 ## 1. Obtaining media
 ### r/Techsupport Rescue Media
@@ -71,6 +74,7 @@ This will require a USB that is at least the size of the ISO you downloaded.
 
 ## Things to do
 * [Wipe disks](/docs/disks/disk-wipe)
-* [Data Recovery](/docs/guides/data-recovery)
+* [Data Retrieval/Recovery](/docs/disks/data-retrieval)
 * [Disk Manipulation with Gparted](/docs/disks/gparted)
 * [Verify Disk Heath](/docs/disks/disk-health#smartmontools)
+* [Stressful Application Test](/docs/guides/memtest/stressapptest)

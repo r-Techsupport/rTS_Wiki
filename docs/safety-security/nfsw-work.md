@@ -5,11 +5,11 @@ nav_exclude: false
 has_children: false
 parent: Safety & Security
 search_exclude: false
-last_modified_date: 2022-06-17
+last_modified_date: 2022-07-01
 ---
 # NSFW at Work
-## Clicked on a NSFW Link or 'accidentally' watched porn for 15 minutes at the cubicle at work? 
-It happens.. more than you think, and we dont care unless you give us a reason to. The rule of thumb here is, do we need an excuse to look in to your Internet and office PC usage? 
+## Clicked on a NSFW Link or 'accidentally' watched porn for 15 minutes in the cubicle at work? 
+It happens.. more than you think, and we don't care unless you give us a reason to. The rule of thumb here is, do we need an excuse to look in to your Internet and office PC usage? 
 
 We only care if it is illegal or causing issues on the network like bandwidth hogging. Most companies will have a firewall and block anything malicious or sites employees should not be visiting. 
 

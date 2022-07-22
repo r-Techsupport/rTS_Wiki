@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Data Recovery
+title: Data Retrieval
 nav_exclude: false
 has_children: false
 parent: Disks
@@ -8,7 +8,7 @@ search_exclude: false
 last_modified_date: 2022-06-28
 ---
 
-# Data Recovery
+# Data Retrieval
 
 This article relies on the live media [created here](/docs/live-sessions/linux-live-session)
 

@@ -30,7 +30,7 @@ Crypto-ransomware is a large threat today and is only expected to get worse. The
 These are the only options. There is no magic way to solve this, and there is no way to crack the encryption yourself.
 
 ## What do I do next?
-1. [Backup your stuff immediately](/docs/backups/backups), preferably to multiple locations.
+1. [Backup your stuff immediately](/docs/backups), preferably to multiple locations.
 2. [Reinstall windows](/docs/installations/win) to make sure the ransomer doesn't still have access to your system.
 6. Change all your passwords that are stored locally or were entered while the PC was infected. Since the device was infected, the ransomer could have also taken those passwords
 4. Enable file extensions. 

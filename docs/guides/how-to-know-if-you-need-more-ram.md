@@ -5,10 +5,13 @@ nav_exclude: false
 has_children: false
 parent: General Guides
 search_exclude: false
-last_modified_date: 2022-06-28
+last_modified_date: 2022-07-16
 ---
 
 # How to know if you need more RAM
+{: .no_toc}
+
+{% include toc.md %}
 
 There is a very simple & quick way of seeing if you actually are running low on RAM before buying extra. There’s a misconception that adding RAM makes a machine faster. This is not true UNLESS the machine can use more RAM than is already installed. Adding RAM to a machine that isn’t already using it all does nothing whatsoever.
 

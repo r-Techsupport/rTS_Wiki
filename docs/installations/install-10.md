@@ -6,11 +6,11 @@ nav_order: 1
 has_children: false
 parent: OS Install Guides
 search_exclude: false
-last_modified_date: 2022-06-16
+last_modified_date: 2022-06-30
 redirect_from: /books/how-to-and-guides/page/clean-installing-windows-10
 ---
 # Installing Windows 10
-**Warning**: All files on the drive you plan to install Windows to will be **deleted** if you follow this guide - this is intended. Please ensure you have an adequate [backup policy](https://rtech.support/books/backups) in place before proceeding if you have files of value.
+**Warning**: All files on the drive you plan to install Windows to will be **deleted** if you follow this guide - this is intended. Please ensure you have an adequate [backup policy](/docs/backups) in place before proceeding if you have files of value.
 
 1. Using a USB flash drive **at least 8 gigabytes in size**, create a bootable USB flash drive using the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/windows10) from Microsoft. This will also wipe any data stored on the USB flash drive.
 

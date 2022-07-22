@@ -11,7 +11,7 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 ---
 # Installing Windows 11
 
-**Warning**: All files on the drive you plan to install Windows to will be **deleted** if you follow this guide - this is intended. Please ensure you have an adequate [backup policy](/docs/backups/backups) in place before proceeding if you have files of value.
+**Warning**: All files on the drive you plan to install Windows to will be **deleted** if you follow this guide - this is intended. Please ensure you have an adequate [backup policy](/docs/backups) in place before proceeding if you have files of value.
 
 > Please make sure to disable CSM, enable Secure Boot, and enable TPM prior to installation of Windows 11.
 
