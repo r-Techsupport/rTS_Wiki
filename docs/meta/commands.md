@@ -6,7 +6,7 @@ nav_order: 4
 has_children: false
 parent: Information
 search_exclude: false
-last_modified_date: 2022-06-15
+last_modified_date: 2022-07-22
 ---
 
 # Subreddit Commands
@@ -22,7 +22,7 @@ Comment any of the below commands to have automod print the relevant message as 
 3. Publish the results in a [Pastebin](https://pastebin.com/)
 
 ### ?win10
-To reinstall Windows 10, follow [this guide](/docs/how-to/install-10)
+To reinstall Windows 10, follow [this guide](/docs/installations/install-10)
 
 ### ?speccy
 
