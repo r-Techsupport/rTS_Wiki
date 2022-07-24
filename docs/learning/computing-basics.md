@@ -64,15 +64,15 @@ last_modified_date: 2022-06-30
 
 * Don't allow remote connection to your computer to anyone you don't know or trust.
 
-* Always use an adblocker like ublock origin, it may save you from accidentally installing malicious software.
+* Always use an adblocker like UBlock Origin, it may save you from accidentally installing malicious software.
 
-* Alt-F4 is the shortcut to close a window - useful for unwanted pop-ups.
+* Alt-F4 is the shortcut to close a window on Windows -- useful for unwanted pop-ups.
 
 * Clicking unknown links during a google search is a very common way of being infected with malware.
 
-* Never reuse passwords -- consider using a password manager.
+* Never reuse passwords -- consider using a [password manager](/docs/safety-security/pw-managers).
 
-* There are 8 bits to a byte. Therefore, 100 Megabit per second (Mb) equals to 12.5 Megabyte (MB).
+* There are 8 bits in a byte. Therefore, 100 Megabit per second (Mb) equals to 12.5 Megabyte (MB).
 
 * Don't log into accounts on computers you don't trust as they may be infected and steal your account details. Think about PCs in internet cafes and other public locations.
 
