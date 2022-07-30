@@ -36,7 +36,7 @@ CGNAT is 'Carrier Grade NAT', it means that your router is given a private IP by
 
 To determine that you are not subject to CGNAT check your router admin panel to verify that the IP on the WAN interface is a public IP. It should match what online tools say your public IP is. 
 
-If your IP is private, or does not match what online tools state then you may be subject to CGNAT. Verify that you are not dealing with [multiple routing devices](https://rtech.support/books/networking/page/troubleshooting-port-forwards#bkmrk-multiple-routing-dev), if you are not using multiple routing devices then you need to call your ISP to request a public IP to be assigned to your router (this may have a fee associated).
+If your IP is private, or does not match what online tools state then you may be subject to CGNAT. Verify that you are not dealing with [multiple routing devices](#Multiple routing devices), if you are not using multiple routing devices then you need to call your ISP to request a public IP to be assigned to your router (this may have a fee associated).
 
 ### Multiple routing devices
 A network should only have 1 routing device (typically a router). Every routing device will create its own network, leading to 'double-nat' meaning you will need to port forward twice. This is complex solution and we suggest eliminating the double-nat.
