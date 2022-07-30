@@ -36,4 +36,5 @@ Clearing Windows update cache is used when some updates will not complete. This 
 	net start bits
 	net start msiserver
     ```
+5. Now you should reboot and try windows updates again.
  
