@@ -23,7 +23,7 @@ A private IP is used within your house or any other contained environment
 
 ### CGNAT 
 CGNAT is used by ISPs to create smaller networks out of buildings, neighborhoods etc. This is done to preserve public IPv4 space.
-  * 10.64.0.0 - 10.127.255.255 ([CGNAT](#cgnat))
+  * 100.64.0.0 - 100.127.255.255 ([CGNAT](#cgnat))
 
 ### Public IP
 Any other IP
@@ -41,9 +41,13 @@ If your IP is private, or does not match what online tools state then you may be
 ### Multiple routing devices
 A network should only have 1 routing device (typically a router). Every routing device will create its own network, leading to 'double-nat' meaning you will need to port forward twice. This is complex solution and we suggest eliminating the double-nat.
 
-If you are using an ISP provided modem/router combo and a personal router then you must place the modem/router into 'passthrough' mode (not bridged mode).
+If you are using an ISP provided modem/router combo and a personal router then you must place the modem/router into 'passthrough' or 'bridge' mode.
+
+> Passthrough and Bridge are different processes but essentially achieve the same thing. Passthrough or IP Passthrough usually has a relatively significant hit on performance, but Bridge mode will also disable the NAT/routing feature of the device. It depends on the type of service and the equipment provided by the ISP.
 
 This issue can also arise when using a second router as a wireless access point. If you are using a second router only to create wifi then you should plug it into the network via a LAN port or force the device into AP mode if it does not want to function with only the LAN port in use. Ensure the WAN port on the router is left empty for this to work with most devices. Using only the LAN port should stop the unit from routing and creating a new network.
+
+> ❗ If your router doesn't support AP Mode then you also have to ensure the LAN DHCP Service is disabled on the router to avoid competing DHCP Servers. Additionally, some devices simply WILL NOT FUNCTION in this manner and will fail to provide any connectivity if the WAN Port is left disconnected.
 
 ## Firewalls/VPNs
 ### Firewalls
