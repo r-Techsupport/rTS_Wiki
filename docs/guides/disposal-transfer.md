@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Securing data before device disposal or transfer
+title: Securing Data Before Device Disposal or Transfer
 nav_exclude: false
 has_children: false
 parent: General Guides
