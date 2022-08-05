@@ -8,7 +8,7 @@ search_exclude: false
 last_modified_date: 2022-08-05
 ---
 
-# Securing data before device disposal or transfer
+# Securing Data Before Device Disposal or Transfer
 When getting rid of a device not everyone thinks about the data that exists on their device or how to properly secure it. When you are throwing a device away, selling it, passing it down to a sibling or child there are certain steps you should take to ensure your private and financial data cannot be retrieved. 
 
 ## Computers
