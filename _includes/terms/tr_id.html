@@ -1,0 +1,4 @@
+<tr id="{{ include.name | slugify }}">
+<td>{{ include.name | markdownify | remove: '<p>' | remove: '</p>' }}</td>
+<td>{{ include.value | markdownify | remove: '<p>' | remove: '</p>' }}</td>
+</tr>
