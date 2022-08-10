@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Troubleshooting Network Issues with Pingplotter
+title: Troubleshooting with Pingplotter
 nav_exclude: false
 has_children: false
 parent: Networking
