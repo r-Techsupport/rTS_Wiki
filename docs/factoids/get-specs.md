@@ -12,7 +12,7 @@ Please download and run this tool, it will allow you to share a snapshot of your
 This tool is open-source and powershell based.
 1. Download Get-Specs from [our github](https://github.com/r-Techsupport/Get-Specs/releases/latest/download/Get-Specs.zip).
 2. Extract this file to your desktop.
-3. Run the file named "Specs" and follow the prompts.
+3. Run the shortcut named "Specs" and follow the prompts.
 4. Choose to 'upload' the file, it will put a link into your clipboard automatically. You can paste it directly into this channel.
 
 > There is nothing sensitive in the published snapshot, we will not ask you to share private information.
