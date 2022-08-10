@@ -11,7 +11,9 @@ last_modified_date: 2022-08-09
 
 1. Download Pingplotter 14 day trial from [here](https://www.pingplotter.com/download)
 2. Right click on the column named Avg and add the Maximum Latency field
-See image
+
+    ![pingplotter column](/assets/factoids/pingplotter.png)
+
 3. Run Pingplotter
 Enter either the server IP of the service you are having an issue with or use 8.8.8.8 if you don't have the IP and press Start
 4. Screenshot after about two minutes of running
