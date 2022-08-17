@@ -9,6 +9,25 @@ last_modified_date: 2022-08-17
 ---
 
 # How to use multiple disks in Windows
+## Advantages
+Many people leverage multiplle disks in their systems to expand their storage capabiltiies, parition data way from their OS, maximize cost-performance savings, or a combination of these and other goals. The most basic and common setup seen will be a small OS SSD and a larger HDD used for storage mounted at a single drive letter. 
+
+For the purpose of this guide we will only cover using supplementary disks with a single partition each. We do not recommend breaking disks down into partitions for organization, use folders for that.
+
+## Disk setup
+### Adding a disk to an existing OS
+Most users reading this guide will already have an OS installed so we will start there. 
+
+### Getting started on a new computer (no OS) with multiple disks
+
+
+### Spanning partitions 
+
+
+### RAID
+
+
+## Using another disk for storage
 Always install your applications onto your primary drive. You can not install applications onto your second drive because you think it means you won't have to reinstall them next time you clean install windows. Everything will have to be installed again, but you can install the application data and games onto the secondary drive.
 
 When you install applications, the data and files get stored in multiple locations and the registry (which you should never mess around with). Because of this, this is why every application has to be re-installed when you get a new operating system installed.
