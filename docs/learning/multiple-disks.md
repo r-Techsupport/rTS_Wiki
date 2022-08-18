@@ -15,15 +15,16 @@ Many people leverage multiplle disks in their systems to expand their storage ca
 For the purpose of this guide we will only cover using supplementary disks with a single partition each. We do not recommend breaking disks down into partitions for organization, use folders for that.
 
 ## Disk setup
-### Adding a disk to an existing OS
-Most users reading this guide will already have an OS installed so we will start there. 
-
-The first step when setting up a new storage device is to install it physically into the computer. This can be done be using a drive bay to store the drive that you are installing, then hooking up the power and sata cables need to use the drive. For M.2 drives there is a slot on the motherboard to put it in, and then screw it down to hold the drive in place. From there you close up the computer, and  boot into the operating system as normal. Follow [our gudie](/docs/diks/disk-management) to set the new storage device up.
-
 ### Getting started on a new computer (no OS) with multiple disks
-To get started on a brand new computer with no operating system, we suggest you removing all the drives that the operating system(OS) are not being installed on. Then you will need a flash drive with a bootable OS installed on it. You can follow our guide for creating that usb, and fully installing the OS [here](/docs/installations).
+To get started on a brand new computer with no operating system, we suggest you removing all the drives that the operating system(OS) are not being installed on. Then you will need a flash drive with a bootable OS installed on it. You can follow [our guide](/docs/installations) for creating that usb, and fully installing the OS. After the OS is installed you can follow the section below on [Adding a disk to an existing OS](#adding-a-disk-to-an-existing-os).
 
-### Spanning partitions 
+### Adding a disk to an existing OS
+The first step when setting up a new storage device is to install it physically into the computer. This can be done be using a drive bay to store the drive that you are installing, then hooking up the power and sata cables need to use the drive. For M.2 drives there is a slot on the motherboard to put it in, and then screw it down to hold the drive in place. From there you close up the computer, and  boot into the operating system as normal. Follow [our guide](/docs/disks/disk-management) to set the new storage device up.
+
+### Spanning partitions
+
+> ❗ Spanning data across multiple disks increases your risk of data loss by 100% for every disk in the pool.
+
 Spanning partitions are created out of multiple disks to look as one. Combining multiple disks into one allows you more space on a single letter, and if need to upgrade storage it is easy to add another disk without much trouble. To do this open up disk management by pressing Win+R and typing `diskmgmt.msc` and make sure the disks you want to span are unallocated space and they are a dynamic volume. To make the disk dynamic you have to right click in the box on the left by where it says basic. Then you can select Convert to Dynamic Disk, and a dialog box will pop up asking you which disks you would like to convert to dynamic, select all the disks that you would like to span. After that right click on the first disk that you want to span in the area with a black bar, and select New Spanned Volume then when prompted you can add the other disks that you want to be sanned with by selecting it on the left, and hitting the add button. At the bottom you can modify the size of the volume you would like to create on each disk by selecting them on the right. Once you are done with adding the disks you want to span you can continue forward in the process to format them. 
 
 ### RAID
