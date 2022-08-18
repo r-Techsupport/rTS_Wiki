@@ -10,7 +10,7 @@ last_modified_date: 2022-08-18
 
 # Getting Started With a Computer
 
-This article is to go over some of the basics with using a computer. During this article will cover topics such as installing drivers and programs, uninstlling programs, ending processes, and rebooitng. 
+This article is to go over some of the basics with using a computer. This article will cover topics such as installing drivers and programs, uninstlling programs, ending processes, and rebooitng. 
 
 ### Installing Drivers
 Installing drivers is usually straight forward, you let windows update install the drivers for you. You can also install the optional drivers that windows provides. There might be a couple drivers windows does not provide on their own. These can be found at your motherboard website for your specific model motherboard, or they can be found at the company that makes the products websites. For example, the GPU or graphic processing unit you have to travel to the manafacture's website for those drivers. [AMD](https://www.amd.com/en/support) or [Nvidia](https://www.nvidia.com/download/index.aspx) are the majors ones. Make sure to follow the prompts, and put in your exact GPU.
