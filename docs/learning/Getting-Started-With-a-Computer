@@ -1,0 +1,29 @@
+---
+layout: default
+title: Getting Started With a Computer
+nav_exclude: false
+has_children: false
+parent: Learning
+search_exclude: false
+last_modified_date: 2022-08-18
+---
+
+# Getting Started With a Computer
+
+This article is to go over some of the basics with using a computer. During this article will cover topics such as installing drivers and programs, uninstlling programs, ending processes, and rebooitng. 
+
+### Installing Drivers
+Installing drivers is usually straight forward, you let windows update install the drivers for you. You can also install the optional drivers that windows provides. There might be a couple drivers windows does not provide on their own. These can be found at your motherboard website for your specific model motherboard, or they can be found at the company that makes the products websites. For example, the GPU or graphic processing unit you have to travel to the manafacture's website for those drivers. [AMD](https://www.amd.com/en/support) or [Nvidia](https://www.nvidia.com/download/index.aspx) are the majors ones. Make sure to follow the prompts, and put in your exact GPU.
+
+### Installing Programs
+Installing programs is a little bit more work. Navigate to the website of the program you would like to install, and download the lastest version from there. Then once you download a program you will have to run the setup or .exe for the program to install. Afterwards you are free to use that program. For example, a program that you might want to install would be discord which you can find [here](https://discord.com/). You would click the download button, and run the exe to install. You would do this with any program that you wanted to install. 
+
+### Uninstalling Programs
+To uninstll programs you simply do not want to delete the files associated with the program, but instead you want to full uninstll which would remove the associated files for you. There are a few ways to do this, but we will provide only an examples. The first example is to click on the start menu, find the program you want to uninstll then right click on their icon. From there you can select uninstll. This should bring up a new window the a huge list of programs. In that window you highlight the program you want to uninstll, and at the top of the list you can click on Uninstall. Then you can follow the prompts to remove the program from the computer. You can do this with any unwanted program.
+
+### Ending Processes
+Ending a process that might not be responding is a task everyone should know. To do this you open Task Manager, you can do this by hitting the ctrl + shift + esc keys on your keyboard at once. This should open task manager to the processes tab which is where to be to end a process. Then from there you highligh the process you wish to end, or is not responding. Afterwards in the bottom right corner of the window you will hit the end task button. Be careful when you are in here ending some background processes could cause more issues, and would require a reboot to fix. 
+
+### Rebooting
+Sometimes you will run into an issue, and a program might not work for you, or something does not work right. Before reaching out for help try a reboot to see if that fixes the issue. You can do this hitting the start button, from there hit the power icon and select restart. This is a common first step to troubleshooting, and will fix some problems that you are experiencing. Otherwise you can veiw our other guide that goes into a little more details about problems [here](/docs/learning/computing-basics) or check out some [general guides](/docs/guides).
+
