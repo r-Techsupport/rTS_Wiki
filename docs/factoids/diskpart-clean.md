@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Cleaning a Disk in Dispark
+title: Cleaning a Disk in Dispart
 nav_exclude: false
 parent: Factoids
 has_children: false
