@@ -8,9 +8,11 @@ search_exclude: false
 last_modified_date: 2022-08-18
 ---
 
-# How to use multiple disks in Windows
+# How to Use Multiple Disks in Windows
 
-> ❗ All 
+> ❗ All guides here are supplied for the purpose of offering safe methods to accomplish each goal. That does not mean the goal is safe for all users. All disks fail, we encourage users to be proactive with protecting their data by creating a [personal backup strategy](/docs/backups) no matter what disk layout is chosen.
+
+> ❗ Any method to accomplish these tasks without data-loss are not supported. The lazy "safe" is never safe.
 
 ## Advantages
 Many people leverage multiple disks in their systems to expand their storage capabilities, partition data way from their OS, maximize cost-performance savings, or a combination of these and other goals. The most basic and common setup seen will be a small OS SSD and a larger HDD used for storage mounted at a single drive letter. 
@@ -30,15 +32,49 @@ The first step when setting up a new storage device is to install it physically 
 
 Spanning partitions are created out of multiple disks to look as one. Combining multiple disks into one allows you more space on a single letter, and if need to upgrade storage it is easy to add another disk without much trouble. 
 
-1. To do this open up disk management by pressing Win+R and typing `diskmgmt.msc` and make sure the disks you want to span are unallocated space and they are a dynamic volume. 
+1. Hit Win+R to open the run dialog and type "diskmgmt.msc"
 
-2. To make the disk dynamic you have to right click in the box on the left by where it says basic. 
+    > You may be asked to initialize the disk. choose GPT.
+ 
+    ![[assets/multiple-disks/diskmgmt.png]] 
 
-3. Then you can select Convert to Dynamic Disk, and a dialog box will pop up asking you which disks you would like to convert to dynamic, select all the disks that you would like to span. 
+2. By default disks are Basic, we need to change it to Dynamic. Right click the left side where it says "Basic", choose "Convert to Dynamic Disk..."
 
-4. After that right click on the first disk that you want to span in the area with a black bar, and select New Spanned Volume then when prompted you can add the other disks that you want to be spanned with by selecting it on the left, and hitting the add button. 
+    ![[assets/multiple-disks/dynamic0.png]]
 
-5. At the bottom you can modify the size of the volume you would like to create on each disk by selecting them on the right. Once you are done with adding the disks you want to span you can continue forward in the process to format them. 
+3. A dialog box will pop up asking you which disks you would like to convert to dynamic, select all the disks that you would like to span. 
+
+    > ❗ Do not convert the disk containing C:\  
+
+    > ❗ Converting a disk to dynamic will wipe it
+
+    ![[assets/multiple-disks/dynamic1.png]]
+
+4.  Right click the left box again, where it now says "Dynamic". You can choose [Spanned](), [Striped](), or [Mirrored](). Find out about each below before selecting.
+
+    ![[assets/multiple-disks/dymanic-sel.png]]
+
+    > All three options follow the same configuration manager. You can follow the following steps regardless of your chosen layout.
+
+    > An array of disks are also called a "volume"
+
+5. A new wizard will appear, press "next". Two boxes are presented, one disk is in the right box. Every disk that you want added to your volume will need to be moved from the left to the right. Select each disk and choose "Add >".
+
+    ![[assets/multiple-disks/volume-creation0.png]]
+
+    ![[assets/multiple-disks/volume-creation1.png]]
+
+6. Select a drive letter for your volume.
+
+    ![[assets/multiple-disks/volume-creation2.png]]
+
+7. For your format, you most likely want to use NTFS. Tick "Perform a quick format" to avoid (possible hours) of downtime. You can also name the volume, for example "Game Data".
+
+    ![[assets/multiple-disks/volume-creation3.png]]
+
+8. Conclude by pressing "Finish". Your volume should now appear in "This PC"
+
+    ![[assets/multiple-disks/file-explorer-thispc.png]]
 
 ### RAID
 
