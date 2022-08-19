@@ -33,7 +33,7 @@ When multiple disks are combined into one it can be called an "array" or "volume
 
     > You may be asked to initialize the disk. choose GPT.
  
-    ![assets/multiple-disks/diskmgmt.png](assets/multiple-disks/diskmgmt.png) 
+    ![assets/multiple-disks/diskmgmt.png](/assets/multiple-disks/diskmgmt.png) 
 
 2. By default disks are Basic, we need to change it to Dynamic. Right click the left side where it says "Basic", choose "Convert to Dynamic Disk..."
 
