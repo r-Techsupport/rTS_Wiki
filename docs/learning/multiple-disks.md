@@ -26,55 +26,8 @@ To get started on a brand new computer with no operating system, we suggest you 
 ### Adding a disk to an existing OS
 The first step when setting up a new storage device is to install it physically into the computer. This can be done be using a drive bay to store the drive that you are installing, then hooking up the power and SATA cables need to use the drive. For M.2 drives there is a slot on the motherboard to put it in, and then screw it down to hold the drive in place. From there you close up the computer, and  boot into the operating system as normal. Follow [our guide](/docs/disks/disk-management) to set the new storage device up.
 
-### Spanning partitions
-
-> ❗ Spanning data across multiple disks increases your risk of data loss by 100% for every disk in the pool.
-
-Spanning partitions are created out of multiple disks to look as one. Combining multiple disks into one allows you more space on a single letter, and if need to upgrade storage it is easy to add another disk without much trouble. 
-
-1. Hit Win+R to open the run dialog and type "diskmgmt.msc"
-
-    > You may be asked to initialize the disk. choose GPT.
- 
-    ![assets/multiple-disks/diskmgmt.png](assets/multiple-disks/diskmgmt.png) 
-
-2. By default disks are Basic, we need to change it to Dynamic. Right click the left side where it says "Basic", choose "Convert to Dynamic Disk..."
-
-    ![assets/multiple-disks/dynamic0.png](/assets/multiple-disks/dynamic0.png)
-
-3. A dialog box will pop up asking you which disks you would like to convert to dynamic, select all the disks that you would like to span. 
-
-    > ❗ Do not convert the disk containing C:\  
-
-    > ❗ Converting a disk to dynamic will wipe it
-
-    ![assets/multiple-disks/dynamic1.png](/assets/multiple-disks/dynamic1.png)
-
-4.  Right click the left box again, where it now says "Dynamic". You can choose [Spanned](), [Striped](), or [Mirrored](). Find out about each below before selecting.
-
-    ![assets/multiple-disks/dymanic-sel.png](/assets/multiple-disks/dymanic-sel.png)
-
-    > All three options follow the same configuration manager. You can follow the following steps regardless of your chosen layout.
-
-    > An array of disks are also called a "volume"
-
-5. A new wizard will appear, press "next". Two boxes are presented, one disk is in the right box. Every disk that you want added to your volume will need to be moved from the left to the right. Select each disk and choose "Add >".
-
-    ![assets/multiple-disks/volume-creation0.png](/assets/multiple-disks/volume-creation0.png)
-
-    ![assets/multiple-disks/volume-creation1.png](/assets/multiple-disks/volume-creation1.png)
-
-6. Select a drive letter for your volume.
-
-    ![assets/multiple-disks/volume-creation2.png](/assets/multiple-disks/volume-creation2.png)
-
-7. For your format, you most likely want to use NTFS. Tick "Perform a quick format" to avoid (possible hours) of downtime. You can also name the volume, for example "Game Data".
-
-    ![assets/multiple-disks/volume-creation3.png](/assets/multiple-disks/volume-creation3.png)
-
-8. Conclude by pressing "Finish". Your volume should now appear in "This PC"
-
-    ![file-explorer-thispc](/assets/multiple-disks/file-explorer-thispc.png)
+### Dynamic disks
+Dynamic disks allows you to combine multiple disks into one, allowing you more space on a single drive letter. If you need to upgrade storage it is easy to add another disk without much trouble. See [our guide](/docs/disks/dynamic-disks) on how to setup dynamic disks.
 
 ### RAID
 
