@@ -75,7 +75,7 @@ For exFAT, use to mount:
 sudo mount -t exFAT-fuse -o loop /media/decrypt/dislocker-file /media/windows-mount
 ```
 
-##Unmount the Windows Partition
+## Unmount the Windows Partition
 Once finished you can unmount the partition from file manager. By either clicking the unmount symbol beside the partition name or entering each command one by one.
 ```
 sudo umount /media/decrypt
