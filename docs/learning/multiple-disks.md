@@ -30,7 +30,7 @@ The first step when setting up a new storage device is to install it physically 
 Dynamic disks allows you to combine multiple disks into one, allowing you more space on a single drive letter. If you need to upgrade storage it is easy to add another disk without much trouble. See [our guide](/docs/disks/dynamic-disks) on how to setup dynamic disks.
 
 ### RAID
-
+RAID (redundant array of independent disks) will work one of two ways. First, a set of RAID disks will back up the data present on them by using muliple disks to store the same data. This will protect the data stored on them therefore the data will be there even if one drive fails. The second form of RAID will allow you to expand storage, or make input/output faster by allowing these operations to overlap on multiple disks. The second method however will not backup your data, and if one drive fails all the data will be lost. There are multiple RAID levels that cover each of these and some that will cover both. 
 
 ## Using another disk for storage
 Always install your applications onto your primary drive. You can not install applications onto your second drive because you think it means you won't have to reinstall them next time you clean install windows. Everything will have to be installed again, but you can install the application data and games onto the secondary drive.
