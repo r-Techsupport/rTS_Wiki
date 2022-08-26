@@ -56,7 +56,7 @@ last_modified_date: 2022-08-02
 {%endcapture%}
 {% include terms/table.html content=malware_terms %}
 
-## Disks/Storage
+<h3>Disks/Storage</h3>
 
 {%capture disks_terms %}
 {%include terms/tr_id.html name='Hard Disk Drive (HDD)' value='A storage device with spinning platters that is very cheap.' %}
@@ -82,8 +82,8 @@ last_modified_date: 2022-08-02
 {%capture networking_terms %}
 {%include terms/tr_id.html name='Internet Protocol (IP)' value='The primary protocol used to transfer data over the Internet.' %}
 {%include terms/tr_id.html name='IP address' value='A series of numbers that identifies a computer on the Internet.' %}
-{%include terms/tr_id.html name='IPv4 address' value='A format of IP addresses, consisting of 4 sets numbers from 0-255 (e.g. 10.15.1.58)' %}
-{%include terms/tr_id.html name='IPv6 address' value='A format of IP addresses, consisting of 8 sets of hexadecimal numbers from 0-FFFF (e.g. fe80:3b71:ed9b:924e:f925:dfad:964a:5d26).' %}
+{%include terms/tr_id.html name='IPv4' value='The most common Internet Protocol version, with addresses consisting of 4 sets numbers from 0-255 (e.g. 10.15.1.58)' %}
+{%include terms/tr_id.html name='IPv6' value='A new Internet Protocol version designed to replace IPv4. Addresses are 8 sets of hexadecimal numbers from 0-FFFF (e.g. fe80:3b71:ed9b:924e:f925:dfad:964a:5d26).' %}
 {%include terms/tr_id.html name='Domain Name System (DNS)' value='The protocol that maps domains to IP addresses.' %}
 {%endcapture%}
 {% include terms/table.html content=networking_terms %}
@@ -99,7 +99,7 @@ last_modified_date: 2022-08-02
 
 <!-- Note: It is debated whether kilobytes/megabytes//gigabytes/terabytes should be in multiples of 1000 or 1024. You should use context to decide which application uses which multiple.-->
 
-## Commands
+<h2>Commands</h2>
 
 <h3>Universal</h3>
 
@@ -138,7 +138,7 @@ last_modified_date: 2022-08-02
 {%endcapture%}
 {%include terms/ctable.html content=windows_commands %}
 
-These are just the major ones, [more here](https://support.microsoft.com/en-us/help/12445/windows-keyboard-shortcuts).
+These are just the major ones, <a href="https://support.microsoft.com/en-us/help/12445/windows-keyboard-shortcuts">more here</a>.
 
 <h3>Linux-specific</h3>
 
