@@ -26,6 +26,6 @@ If detailed SMART data is unavailable (*as is the case with most NVMe drives, fo
 
 ### **A drive can indicate as being "healthy" and still fail _without any warning_, regardless of SMART data**
 
-> For more information on analyzing disk health, please read the following article: https://rtech.support/docs/disks/disk-health.html
+> Please see our guide on [**disk health**](/docs/disk/disk-health) for more information
 
 
