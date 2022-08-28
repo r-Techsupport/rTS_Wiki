@@ -1,16 +1,15 @@
 ---
 layout: default
-title: 
+title: Dynamic Disks
 nav_exclude: false
 has_children: false
-parent: 
-grand_parent: 
+parent: Disks
 has_toc: false
 search_exclude: false
-last_modified_date: 20:37
+last_modified_date: 2022-08-27
 ---
 
-# Dynamic Partitions
+# Dynamic Disks
 
 > ❗ Any method to accomplish these tasks without data-loss are not supported. The lazy "safe" is never safe.
 
@@ -20,13 +19,15 @@ When multiple disks are combined into one it can be called an "array" or "volume
 
 ## Types of dynamic volumes
 ### Spanned
+Also called `JBOD` this is several disks laid side by side with data written randomly across them. When using '2' 1TB disks, you will have a total of 2TB of space. This is not fault tolerant, losing either disk will result in a loss of all data.
 
+> 📝  Data is written sequentially, starting at the head of one disk and moving through each disk as they fill
 
 ### Striped
-
+Data will be broken in to equal parts and written to every disk in the group. By splitting the data across several disks you improve the read speeds back off the disk. This is typically used for performance gains on HDDs. Like spanning, losing any one disk results in a loss of all data.
 
 ### Mirrored
-
+A fault tolerant solution where data is duplicated (mirrored) between disks. This is used to protect against disk failure in a data set but is NOT a backup method by itself. Losing any disk in this array will result in NO data loss, but a new disk must replace the bad.
 
 ##  Creating a dynamic disk volume
 1. Hit Win+R to open the run dialog and type "diskmgmt.msc"
@@ -70,3 +71,6 @@ When multiple disks are combined into one it can be called an "array" or "volume
 8. Conclude by pressing "Finish". Your volume should now appear in "This PC"
 
     ![file-explorer-thispc](/assets/multiple-disks/file-explorer-thispc.png)
+
+### References
+[Breakdown of dynamic volumes](https://www.linkedin.com/pulse/whats-dynamic-disk-storage-simple-spanned-striped-jasmin-kahriman)

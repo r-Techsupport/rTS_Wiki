@@ -12,7 +12,7 @@ last_modified_date: 2022-08-18
 
 > ❗ All guides here are supplied for the purpose of offering safe methods to accomplish each goal. That does not mean the goal is safe for all users. All disks fail, we encourage users to be proactive with protecting their data by creating a [personal backup strategy](/docs/backups) no matter what disk layout is chosen.
 
-> ❗ Any method to accomplish these tasks without data-loss are not supported. The lazy "safe" is never safe.
+> ❗ Any method to accomplish these tasks without data-loss are not supported. The lazy "safe" method is never safe.
 
 ## Advantages
 Many people leverage multiple disks in their systems to expand their storage capabilities, partition data way from their OS, maximize cost-performance savings, or a combination of these and other goals. The most basic and common setup seen will be a small OS SSD and a larger HDD used for storage mounted at a single drive letter. 
