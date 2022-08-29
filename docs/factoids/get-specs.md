@@ -18,3 +18,5 @@ This tool is open-source and powershell based.
 > There is nothing sensitive in the published snapshot, we will not ask you to share private information.
 
 For machines without internet access you can upload the Techsupport_Specs.html file that appeared next to the other files.
+
+> ❗ If you have issues with the .cmd file, try our older [exe method](https://github.com/r-Techsupport/Get-Specs/releases/download/v1.8.0/Get-Specs.zip)
