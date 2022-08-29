@@ -26,11 +26,3 @@ Turning off [IPv6](/docs/learning/terms#ipv6) can help troubleshoot internet iss
     ![internetProperties.png](/assets/factoids/internetProperties.png)
     
 5. Test to see if the issue continues. 
-
-
-## Turning off IPv6 (Powershell)
-1. Right click on the start menu and run Powershell (Windows Terminal) as admin.
-
-2. Enter this command: `Disable-NetAdapterBinding -Name "*" -ComponentID 'ms_tcpip6'`
-
-3. Test to see if the issue continues.
