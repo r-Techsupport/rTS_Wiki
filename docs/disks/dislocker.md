@@ -29,12 +29,12 @@ Use these commands one by one:
 sudo mkdir -p /media/decrypt
 sudo mkdir -p /media/windows-mount
 ```
-![mount-points.png](/assets/Dislocker/creating-mount-points-for-dislocker.png)
+![mount-points.png](/assets/Dislocker/ScreenShot2.png)
 
 ## Get Partition Name
 To decrypt the Windows partition we need to get the name of the partition. To get the name there is another program on the Linux Live session called Gparted. We can use this tool to get the name of the partition we need.
 
-![Device-name.png](/assets/Dislocker/show-device-name-gparted.png)
+![Device-name.png](/assets/Dislocker/ScreenShot3.png)
 
 *This is just an exmaple, your partition name will be different*
 
@@ -55,9 +55,11 @@ After decrypting the file, now is the time to mount it that way it is accessable
 ```
 sudo mount -o loop /media/decrypt/dislocker-file /media/windows-mount
 ```
-![Mount.png](/assets/Dislocker/mount-dislocker-decrypted-windows-partition.png)
+![Mount.png](/assets/Dislocker/ScreenShot4_1.png)
 
 The BitLocker encrypted Windows partition is now decrypted and mounted in Linux. You can now access it from file explorer.
+  
+![DriveInExplorer.png](/assets/Dislocker/ScreenShot5.png)
 
 ## Troubleshooting Tips
 If you get an error for wrong fs type then need to include the file type.
