@@ -14,7 +14,7 @@ Dislocker process will work in two different parts. For the first pear we will d
 To do this you will need the BitLocker password, or the recovery password to decrypt the drive. If you need help finding your BitLocker key, follow this [guide](https://support.microsoft.com/en-us/windows/finding-your-bitlocker-recovery-key-in-windows-6b71ad27-0b89-ea08-f143-056f5ab347d6).
 
 ## Install Dislocker
-The first step is to install Dislocker, this is already included in our [Linux Live session](/docs/live-sessions/linux-live-session)
+The first step is to install Dislocker, this is already included in our [Linux Live session](/docs/live-sessions/linux-live-session). Therefore, you can skip this step.
 If you did not have it installed already you can use the following command to install dislocker for Ubuntu and Debian:
 ```
 sudo apt install dislocker
