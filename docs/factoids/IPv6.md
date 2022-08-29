@@ -24,7 +24,7 @@ Turning off [IPv6](/docs/learning/terms#ipv6) can help troubleshoot internet iss
 4. Uncheck the box for Internet Protocol Version 6 (TCP/IPv6)
 
     ![internetProperties.png](/assets/factoids/internetProperties.png)
-    
+ 
 5. Test to see if the issue continues. 
 
 ## Turning Off IPv6 (Powershell)

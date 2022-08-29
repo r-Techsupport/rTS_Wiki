@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Cleaning a Disk in Dispark
+title: Cleaning a Disk in Dispart
 nav_exclude: false
 parent: Factoids
 has_children: false
@@ -35,4 +35,4 @@ Cleaning the disk will lose any data.
 
 You can change the file type to a different one if so chooses, FAT32 or exFAT are examples.
 
-You can also change the letter to any letter that is no in use. 
+You can also change the letter to any letter that is not in use. 
