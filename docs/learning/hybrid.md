@@ -5,7 +5,7 @@ nav_exclude: false
 has_children: false
 parent: Learning
 search_exclude: false
-last_modified_date: 2022-08-27
+last_modified_date: 2022-08-29
 ---
 
 # Hybrid Graphics on Laptops
