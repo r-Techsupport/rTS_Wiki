@@ -26,8 +26,8 @@ A new folder containing _Display Driver Uninstaller.exe_ will be created
 ### **3.** [**Boot in safe mode**](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode) 
  **Open _Display Driver Uninstaller.exe_ from the newly created folder in the previous step**
 
-## Using Display Driver Uninstaller (DDU)
-
+## Wiping Display Drivers
+![ddunvidia.png](/assets/factoids/ddunvidia.png)
 
   
 3. Open DDU and select the Clean and DO NOT restart option for the first driver then the Clean and Restart option for the second driver. The order is irrelevant. Please see the image below.
