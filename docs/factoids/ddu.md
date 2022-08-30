@@ -13,7 +13,7 @@ Display Driver Uninstaller (DDU) is a program that can fully wipe display/audio 
 
 <sup> **Display Driver Uninstaller does not erase any personal files, it only wipes the selected driver(s)**
 
-## Installing Display Driver Uninstaller (DDU)
+## Installing Display Driver Uninstaller (DDU):
 
 ### **1.** [**Download DDU**](https://www.guru3d.com/files-get/display-driver-uninstaller-download,19.html) **and _extract_ the .zip**:
 
@@ -26,10 +26,26 @@ A new folder containing _Display Driver Uninstaller.exe_ will be created
 ### **3.** [**Boot in safe mode**](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode) 
  **Open _Display Driver Uninstaller.exe_ from the newly created folder in the previous step**
 
-## Wiping Display Drivers
-![ddunvidia.png](/assets/factoids/ddunvidia.png)
+## Wiping Display Drivers:
+![ddunvidia.png](/assets/factoids/dduvideo.png)
 
+###### **Make sure you are in _Safe Mode_ for the following steps:**
+
+1. Select the "GPU" device type from the drop-down list on the right, select the desired GPU driver you wish to uninstall, and click `Clean and restart`
+  
+    **To wipe display drivers for laptops/devices with onboard graphics: Select the `Clean and do NOT restart` option for the first driver, then the `Clean    and   restart` option for the second driver. The order is irrelevant**
+
+## Wiping Audio Drivers:
+![dduaudio.png](/assets/factoids/dduaudio.png)
+1. Select the "Audio" device type from the drop-down list on the right, select the desired Audio driver you wish to uninstall, and click `Clean and restart`
   
 3. Open DDU and select the Clean and DO NOT restart option for the first driver then the Clean and Restart option for the second driver. The order is irrelevant. Please see the image below.
 4. Reinstall your drivers; go to the laptop manufacturer's support section for that laptop and download the latest drivers. Both for the integrated GPU and dedicated GPU. First install the driver for the integrated GPU then for the dedicated.
 ![ddu.png](/assets/factoids/ddu.png)
+
+## Reinstalling Display Drivers
+### For Desktops/Pre-built Desktops without onboard graphics:
+Go to the site of the GPU's manufacturer ([NVIDIA](https://www.nvidia.com/Download/index.aspx), [AMD](https://www.amd.com/en/support), [Intel](https://www.intel.com/content/www/us/en/download-center/home.html)) 
+
+
+
