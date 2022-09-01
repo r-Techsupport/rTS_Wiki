@@ -38,14 +38,19 @@ A new folder containing _Display Driver Uninstaller.exe_ will be created
 ## Wiping Audio Drivers:
 ![dduaudio.png](/assets/factoids/dduaudio.png)
 1. Select the "Audio" device type from the drop-down list on the right, select the desired Audio driver you wish to uninstall, and click `Clean and restart`
+
+
   
-3. Open DDU and select the Clean and DO NOT restart option for the first driver then the Clean and Restart option for the second driver. The order is irrelevant. Please see the image below.
-4. Reinstall your drivers; go to the laptop manufacturer's support section for that laptop and download the latest drivers. Both for the integrated GPU and dedicated GPU. First install the driver for the integrated GPU then for the dedicated.
-![ddu.png](/assets/factoids/ddu.png)
 
 ## Reinstalling Display Drivers
 ### For Desktops/Pre-built Desktops without onboard graphics:
 Go to the site of the GPU's manufacturer ([NVIDIA](https://www.nvidia.com/Download/index.aspx), [AMD](https://www.amd.com/en/support), [Intel](https://www.intel.com/content/www/us/en/download-center/home.html)) 
 
+--- 
+OLD
+
+3. Open DDU and select the Clean and DO NOT restart option for the first driver then the Clean and Restart option for the second driver. The order is irrelevant. Please see the image below.
+4. Reinstall your drivers; go to the laptop manufacturer's support section for that laptop and download the latest drivers. Both for the integrated GPU and dedicated GPU. First install the driver for the integrated GPU then for the dedicated.
+![ddu.png](/assets/factoids/ddu.png)
 
 
