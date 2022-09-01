@@ -13,3 +13,4 @@ last_modified_date: 2022-08-13
 2. [Boot in safe mode](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode)
 3. Open DDU and select the Clean and DO NOT restart option for the first driver then the Clean and Restart option for the second driver. The order is irrelevant. Please see the image below.
 4. Reinstall your drivers; go to the laptop manufacturer's support section for that laptop and download the latest drivers. Both for the integrated GPU and dedicated GPU. First install the driver for the integrated GPU then for the dedicated.
+![ddu.png](/assets/factoids/ddu.png)
