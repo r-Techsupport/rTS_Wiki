@@ -29,33 +29,36 @@ A new folder containing _Display Driver Uninstaller.exe_ will be created
 ## Wiping Display Drivers:
 ![ddunvidia.png](/assets/factoids/dduvideo.png)
 
-###### **Make sure you are in _Safe Mode_ for the following steps:**
+##### **Make sure you are in _Safe Mode_ for the following steps:**
 
-1. Select the "GPU" device type from the drop-down list on the right, select the desired GPU driver you wish to uninstall, and click `Clean and restart`
+1. Select the "GPU" device type from the drop-down list on the right, select the GPU driver you wish to uninstall, and click `Clean and restart`
   
-    **To wipe display drivers for laptops/devices with onboard graphics: Select the `Clean and do NOT restart` option for the first driver, then the `Clean    and   restart` option for the second driver. The order is irrelevant**
+    **To wipe display drivers for laptops/devices with onboard graphics: Select the `Clean and do NOT restart` option for the first driver, then the `Clean    and   restart` option for the second driver. Any GPU driver can be wiped, the order is irrelevant.
+
+
+## Reinstalling Display Drivers:
+  
+#### For Desktops/Pre-built Desktops:
+Go to the site of the GPU's manufacturer(s) ([NVIDIA](https://www.nvidia.com/Download/index.aspx), [AMD](https://www.amd.com/en/support), [Intel](https://www.intel.com/content/www/us/en/download-center/home.html)) and download the latest available drivers.
+
+#### For Laptops:
+Go to the laptop's support page on the manufacturer's site, and download the latest available drivers.
+
+##### **For devices with multiple GPUs, download both the integrated and dedicated GPU drivers, install the integrated GPU drivers first, followed by the dedicated GPU drivers**
+  
+  
+---
+  
 
 ## Wiping Audio Drivers:
 ![dduaudio.png](/assets/factoids/dduaudio.png)
-1. Select the "Audio" device type from the drop-down list on the right, select the desired Audio driver you wish to uninstall, and click `Clean and restart`
-
-
-  
-
-## Reinstalling Display Drivers
-### For Desktops/Pre-built Desktops
-Go to the site of the GPU's manufacturer(s) ([NVIDIA](https://www.nvidia.com/Download/index.aspx), [AMD](https://www.amd.com/en/support), [Intel](https://www.intel.com/content/www/us/en/download-center/home.html)) and download the latest available drivers.
-
-### For Laptops
-Go to the laptop's support page on the manufacturer's site, and download the latest available drivers.
-
-###### **For devices with multiple GPUs, download both the integrated and dedicated GPU drivers, install the integrated GPU drivers first, followed by the dedicated GPU drivers**
+1. Select the "Audio" device type from the drop-down list on the right, select the Audio driver you wish to uninstall, and click `Clean and restart`
 
 ## Reinstalling Audio Drivers
-### For custom-built desktops
+#### For custom-built desktops:
 Go to your motherboards support page on the manufacturer's page, and download the latest available audio drivers
 
-### For laptops/pre-built desktops
+#### For laptops/pre-built desktops:
 Go to the laptop's/pre-built's support page on the manufacturer's site, and download the latest available audio drivers.
 
 
