@@ -29,6 +29,7 @@ If unable to delete the iconcache files under the Explorer folder then close all
 cd /d %userprofile%\AppData\Local\Microsoft\Windows\Explorer
 attrib –h iconcache_*.db
 del iconcache_*.db
+start explorer
 ```
 
 After this reboot the computer, and your icon cache should be fully restored.
@@ -39,6 +40,7 @@ This is the following the same procedure as mentioned above only this time typin
 cd /d %userprofile%\AppData\Local\Microsoft\Windows\Explorer
 attrib –h thumbcache_*.db 
 del thumbcache_*.db 
+start explorer
 ```
 
 Reboot the computer as a final step, and everything should be resolved.
