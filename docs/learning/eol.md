@@ -5,7 +5,7 @@ nav_exclude: false
 has_children: false
 parent: Learning
 search_exclude: false
-last_modified_date: 2022-06-23
+last_modified_date: 2022-09-02
 redirect_from: /books/how-to-and-guides/page/eol-software
 ---
 
@@ -43,15 +43,15 @@ For versions not listed here, check out the lifecycle information from Microsoft
 If you need help installing a newer version of Windows, check out [our guide](/windows).
 ## Switch to a Linux distro
 
-These days, Linux distros are truly a great alternative to Windows. Linux is very stable and secure, and does everything an average user wants, whether that be Facebook or writing essays. If you are a gamer, Linux has thousands of native games and many more are available via Steam's [ProtonDB](https://www.protondb.com/). Proton's support is getting expanded daily, Battleye and EAC support has been released  recently, meaning you will soon be able to play almost all of the current AAA games natively. However, you can play the majority of games on Steam on Linux with no hassle by just switching on ProtonDB.
+These days, Linux distros are truly a great alternative to Windows. Linux is very stable and secure, and does everything an average user wants, whether that be Facebook or writing essays. If you are a gamer, Linux has thousands of native games and many more are available via Steam's [ProtonDB](https://www.protondb.com/). Proton's support is getting expanded daily. Support for Battleye and Easy Anti-Cheat (EAC) has been released recently, meaning that you will soon be able to play almost all of the current AAA games natively. However, you can play the majority of Steam games on Linux with no hassle by just switching on ProtonDB.
 
-If you play games with heavy DRM, or play VR games, or frequently use Adobe products, Linux may not be a good option for you. But even if you do play those games or use those products, you also have the option of dual-booting, so that you can have both Windows and Linux installed at the same time. This post doesn't go too much into detail on Linux, since the below links are already great resources.
+If you play games with heavy DRM or anti-cheat, play VR games, or frequently use Adobe products, Linux may not be a good option for you. But even if you do play those games or use those products, you also have the option of dual-booting, so that you can have both Windows and Linux installed at the same time. This post doesn't go too much into detail on Linux, since the below links are already great resources.
 
 Most importantly, Linux is 100% free, so you can give it a try without any risks, and switch back to Windows whenever you wish.
 
-For more information about switching to Linux, see [this post](https://www.reddit.com/r/linux_gaming/comments/edaq0s/guide_migrating_to_linux_in_2020/) on the Linux gaming subreddit
+For more information about switching to Linux, see [this post](https://www.reddit.com/r/linux_gaming/comments/edaq0s/guide_migrating_to_linux_in_2020/) on the Linux gaming subreddit.
 
-When you are ready to install Linux, you can check out [our guide](/docs/installations/install-linux)
+When you are ready to install Linux, you can check out [our guide](/docs/installations/install-linux).
 
 If you'd like a more concrete guide, [this PDF](https://github.com/aaronfranke/Linux-tools/raw/master/ubuntu-only/qsg.pdf) focuses specifically on setting up Ubuntu for gaming, including setting up drivers, Steam, and more, with a focus on dual-booting
 ## Switch to a Mac
@@ -69,7 +69,6 @@ This is a fairly simple option that doesn't need too much explanation. If you un
 If you don't like newer versions of Windows, or Linux distros, or Mac, you need to be on the Internet, and you don't want to be insecure, then the only option left is to stop using traditional computers entirely. For a lot of people, this is an unacceptable option, but many people can get away with living in the modern world only using phones and tablets, so it's worth mentioning.
 
 Also, Chromebooks are great if you don't need to do anything on your computer except for browsing the web.
-How to stay secure on any system
 
 ## Other security tips
 No matter what option you choose, there are plenty of ways to stay secure online.
