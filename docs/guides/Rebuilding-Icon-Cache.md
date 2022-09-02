@@ -14,13 +14,17 @@ Are your icons blank or do they not refresh correctly, then your icon database h
 ### Deleting Icon Cache
 1. The first step is to open file explorer > Folder Options > View > show Hidden System Files
 
-![ShowHiddenFIles.png](/assets/Icon Cache/ShowHiddenFIles.png)
+![ShowHiddenFiles.png](/assets/Icon-Cache/ShowHiddenFiles.png)
 
 2. Then nagivate to the folder located in C:\Users\\%username%\AppData\Local
+
+![FileLocation.png](/assets/Icon-Cache/FileLocation.png)
 
 3. Scroll down until you find a file called `IconCache.db`, delete that file
 
 4. After deleting the file nagivate to the folder Microsoft > Windows > Explorer
+
+![ExplorerFolder.png](/assets/Icon-Cache/ExplorerFolder.png)
 
 5. Delete the rest of the iconcache_ files in there.
 
