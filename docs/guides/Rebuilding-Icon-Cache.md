@@ -14,7 +14,7 @@ Are your icons blank or do they not refresh correctly, then your icon database h
 ### Deleting Icon Cache
 1. The first step is to open file explorer > Folder Options > View > show Hidden System Files
 
-![ShowHiddenFiles.png](/assets/Icon Cache/ShowHiddenFIles.png)
+![ShowHiddenFiles.png](/assets/Icon Cache/ShowHiddenFiles.png)
 
 2. Then nagivate to the folder located in C:\Users\\%username%\AppData\Local
 
