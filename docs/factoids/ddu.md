@@ -43,14 +43,21 @@ A new folder containing _Display Driver Uninstaller.exe_ will be created
   
 
 ## Reinstalling Display Drivers
-### For Desktops/Pre-built Desktops without onboard graphics:
-Go to the site of the GPU's manufacturer ([NVIDIA](https://www.nvidia.com/Download/index.aspx), [AMD](https://www.amd.com/en/support), [Intel](https://www.intel.com/content/www/us/en/download-center/home.html)) 
+### For Desktops/Pre-built Desktops
+Go to the site of the GPU's manufacturer(s) ([NVIDIA](https://www.nvidia.com/Download/index.aspx), [AMD](https://www.amd.com/en/support), [Intel](https://www.intel.com/content/www/us/en/download-center/home.html)) and download the latest available drivers.
 
---- 
-OLD
+### For Laptops
+Go to the laptop's support page on the manufacturer's site, and download the latest available drivers.
 
-3. Open DDU and select the Clean and DO NOT restart option for the first driver then the Clean and Restart option for the second driver. The order is irrelevant. Please see the image below.
-4. Reinstall your drivers; go to the laptop manufacturer's support section for that laptop and download the latest drivers. Both for the integrated GPU and dedicated GPU. First install the driver for the integrated GPU then for the dedicated.
-![ddu.png](/assets/factoids/ddu.png)
+###### **For devices with multiple GPUs, download both the integrated and dedicated GPU drivers, install the integrated GPU drivers first, followed by the dedicated GPU drivers**
+
+## Reinstalling Audio Drivers
+### For custom-built desktops
+Go to your motherboards support page on the manufacturer's page, and download the latest available audio drivers
+
+### For laptops/pre-built desktops
+Go to the laptop's/pre-built's support page on the manufacturer's site, and download the latest available audio drivers.
+
+
 
 
