@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Getting Started With a Computer
+title: Super Basic Computing
 nav_exclude: false
 has_children: false
 parent: Learning
 search_exclude: false
-last_modified_date: 2022-08-18
+last_modified_date: 2022-09-04
 ---
 
 # Getting Started With a Computer
@@ -66,3 +66,13 @@ Ending a process that might not be responding is a task everyone should know. To
 ## Rebooting
 Sometimes as the user you will run into an issue with your computer. Before reaching out for help try a reboot to see if that fixes the issue. You can do this hitting the start button, from there hit the power icon and select restart. Another way is hitting the reboot button on your computer. This is a common first step to troubleshooting and will fix some problems that you are experiencing. Otherwise you can view our other guide that goes into a little more details about problems [here](/docs/learning/computing-basics) or check out some [general guides](/docs/guides).
 
+## Unziping a Folder
+1. Navigate to the spot where the zip folder is located. 
+
+![zipFolder.png](/assets/Basic-Computing/zipFolder.png)
+
+2. Right click on the name of the folder then hit `Extract All`.
+
+![Extract.png](/assets/Basic-Computing/Extract.png)
+
+3. Now you have a new folder with the unzipped contents. 
