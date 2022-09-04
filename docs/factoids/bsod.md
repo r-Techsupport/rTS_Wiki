@@ -50,6 +50,6 @@ b. If no corresponding error 41 exists, or the error 41 recorded a bugcheck code
 
 4. The file will not upload to Discord.
 
-If your file is stuck on `Processing...` when uploading it to Discord, you are attemping to upload a dump file directly from the Minidump folder. Depending on your account's permissions, Windows prevents this but does not provide any sort of notification. Please follow the steps above to copy the entire Minidump folder and upload the folder rather than the individual dump files.
+If your file is stuck on `Processing...` when uploading it to Discord, you are attemping to upload a dump file directly from the Minidump folder. Depending on your account's permissions, Windows prevents this but does not provide any sort of notification. Please follow the steps above to copy and upload the entire Minidump folder rather than the individual dump files.
 
 If you're curious, we use [WinDbg](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools) to analyze the dump.
