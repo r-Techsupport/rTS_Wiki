@@ -30,25 +30,25 @@ Blue Screen of Death (BSOD) memory dumps allow us to further analyze a BSOD and 
 
 # Common Issues
 
-1. Access is Denied
+## Access is Denied
 
 If you are receiving an error that access is denied when opening the Windows Directory, your account does not have the permissions required to view system files. You will need to have access to an administrator account before we can help you further.
 
 If you are receiving an Access is Denied error when creating the .zip file in step 4, you most likely did not copy the Minidump folder to the desktop. Windows will not allow you to modify the Minidump folder inside the Windows directory. It must be copied elsewhere.
 
-2. No Minidump folder exists
+## No Minidump folder exists
 
 In the event no Minidump folder is present in the Windows directory, it's likely that your system is not properly configured to create dump files in the event of a BSOD. Please follow the guide [here](https://www.tenforums.com/tutorials/5560-configure-windows-10-create-minidump-bsod.html) to properly configure your system.
 
-3. The Minidump folder is empty.
+## The Minidump folder is empty.
 
 First, double check the dump configuration settings following the guide [here](https://www.tenforums.com/tutorials/5560-configure-windows-10-create-minidump-bsod.html). Provided your settings are correct, Windows failed to create a minidump. This can occur for a few reasons:
 
-a. The failure was so sudden that windows did not have enough time to create a dump before the system shut down. In this case, your event viewer will have logged an Error 41 with partial information about the crash. You can open your Event Viewer through the start menu, or with the Run dialog (Win+R -> `eventvwr.exe`). The log will be under Windows Logs->System. The details tab (Not the general tab) may have partial error information in the form of a bugcheck code.
+1. The failure was so sudden that windows did not have enough time to create a dump before the system shut down. In this case, your event viewer will have logged an Error 41 with partial information about the crash. You can open your Event Viewer through the start menu, or with the Run dialog (Win+R -> `eventvwr.exe`). The log will be under Windows Logs->System. The details tab (Not the general tab) may have partial error information in the form of a bugcheck code.
 
-b. If no corresponding error 41 exists, or the error 41 recorded a bugcheck code of `0`, your pagefile was either corrupted or for some reason inaccessible at the time of the BSOD. This is indicative of Operating System corruption or drive failure. This can sometimes be corrected through [DISM or the System File Checker (SFC)](https://rtech.support/docs/guides/dism-sfc.html).
+2. If no corresponding error 41 exists, or the error 41 recorded a bugcheck code of `0`, your pagefile was either corrupted or for some reason inaccessible at the time of the BSOD. This is indicative of Operating System corruption or drive failure. This can sometimes be corrected through [DISM or the System File Checker (SFC)](/docs/guides/dism-sfc.md).
 
-4. The file will not upload to Discord.
+## The file will not upload to Discord.
 
 If your file is stuck on `Processing...` when uploading it to Discord, you are attemping to upload a dump file directly from the Minidump folder. Depending on your account's permissions, Windows prevents this but does not provide any sort of notification. Please follow the steps above to copy and upload the entire Minidump folder rather than the individual dump files.
 
