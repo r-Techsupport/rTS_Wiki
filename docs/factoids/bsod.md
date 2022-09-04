@@ -10,7 +10,7 @@ last_modified_date: 2022-08-13
 
 # Obtaining BSOD Dumps
 
-BSOD dumps allow us to further analyze a BSOD and potentially find the issue.
+Blue Screen of Death (BSOD) memory dumps allow us to further analyze a BSOD and potentially find the issue.
 
 1. Navigate to your Windows directory by opening the Run dialog (Win+R) and typing `%WINDIR%`. You can also do this from any folder by clicking in the navigation bar.
 
