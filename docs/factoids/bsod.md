@@ -15,6 +15,7 @@ BSOD dumps allow us to further analyze a BSOD and potentially find the issue.
 1. Navigate to your Windows directory by opening the Run dialog (Win+R) and typing `%WINDIR%`. You can also do this from any folder by clicking in the navigation bar.
 
 ![](https://user-images.githubusercontent.com/8887005/188329591-fb107638-78f9-4875-b09b-e9835b43407d.PNG)
+
 ![](https://user-images.githubusercontent.com/8887005/188329596-8b426f05-7225-4ccf-a4a0-8b8dfbbbc744.PNG)
 
 2. Find the folder named `Minidump` and open it to double check to see if you have any `.dmp` files.
