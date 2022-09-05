@@ -11,7 +11,7 @@ last_modified_date: 2022-08-29
 
 Display Driver Uninstaller (DDU) is a program that can fully wipe display/audio drivers, to troubleshoot various issues.
 
-<sup> **Display Driver Uninstaller does not erase any personal files, it only wipes the selected driver(s)**
+###### **Display Driver Uninstaller does not erase any personal files, it only wipes the selected driver(s) (Plus any associated info, such as display color profiles, settings, etc)**
 
 ## Installing Display Driver Uninstaller (DDU):
 
@@ -33,7 +33,7 @@ A new folder containing _Display Driver Uninstaller.exe_ will be created
 
 1. Select the "GPU" device type from the drop-down list on the right, select the GPU driver you wish to uninstall, and click `Clean and restart`
   
-    **To wipe display drivers for laptops/devices with onboard graphics: Select the `Clean and do NOT restart` option for the first driver, then the `Clean and restart` option for the second driver. Any GPU driver can be wiped first, the order is irrelevant.**
+   ##### **To wipe display drivers for laptops/devices with onboard graphics: Select the** `Clean and do NOT restart` **option for the first driver, _then_ the** `Clean and restart` **option for the second driver. Any GPU driver can be wiped first, the order is irrelevant.**
 
 
 ## Reinstalling Display Drivers:
@@ -54,6 +54,9 @@ Go to the laptop's support page on the manufacturer's site, and download the lat
 
 ## Wiping Audio Drivers:
 ![dduaudio.png](/assets/factoids/dduaudio.png)
+  
+##### **Make sure you are in _Safe Mode_ for the following step:**
+
 1. Select the "Audio" device type from the drop-down list on the right, select the Audio driver you wish to uninstall, and click `Clean and restart`
 
 ## Reinstalling Audio Drivers
