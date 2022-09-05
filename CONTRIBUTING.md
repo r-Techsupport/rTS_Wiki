@@ -1,6 +1,6 @@
 # CONTRIBUTING
 ## Getting Started
-To get started contributing fork this repo then make any changes you desire following the below guidelines. Once your changes are complete you can [open a pull request (PR)](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) to a branch. Use Dev if one has not been created for an issue (or ask for one to be created for the issue you are working on).
+To get started contributing fork this repo then make any changes you desire following the below guidelines. Once your changes are complete you can [open a pull request (PR)](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) to a branch. Use Master if one has not been created for an issue (or ask for one to be created for the issue you are working on).
 
 
 ## Article Creation
