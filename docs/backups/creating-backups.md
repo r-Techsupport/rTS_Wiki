@@ -51,3 +51,8 @@ Large amounts of cloud storage are normally never free, and require a subscripti
 More comprehensive backup procedures should be automatic. These can use network attached storage (NAS) solutions, scripts or applications to manage the backup creation, frequency, and version control. "Personal Cloud" based solutions such as Nextcloud can check most of these boxes.
 
 To gain a full 3-2-1 scope, you can push backups of your NAS to an offsite solution such as AWS S3 or Backblaze.
+
+### For Mac Users
+Apple has conveniently created a built-in backup and versions software known as "Time Machine".
+
+You can set up an external drive as a Time Machine disk via system preferences, and MacOS will sync all your data and any changes you make to them, to this disk(There is an option to exclude certain folders if they are unnecessary), which will effectively be your backup. The best part about Time Machine is, it can also be used as a recovery disk to completely reinstall to a previous state, even if you wipe the Macs original disk. 
