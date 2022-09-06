@@ -32,7 +32,7 @@ A new folder containing _Display Driver Uninstaller.exe_ will be created
 ## Wiping Display Drivers:
 ![ddunvidia.png](/assets/factoids/dduvideo.png)
 
-**Make sure you are in _Safe Mode_ for the following steps:**
+**Make sure you are in [Safe Mode](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode) for the following steps:**
 
 1. Select the "GPU" device type from the drop-down list on the right, select the GPU driver you wish to uninstall, and click `Clean and restart`
   
