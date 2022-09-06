@@ -11,7 +11,7 @@ last_modified_date: 2022-08-29
 
 Display Driver Uninstaller (DDU) is a program that can fully wipe display/audio drivers, to troubleshoot various issues.
 
-###### **Display Driver Uninstaller does not erase any personal files, it only wipes the selected driver(s) (Plus any associated info, such as display color profiles, settings, etc)**
+> **Display Driver Uninstaller does not erase any personal files, it only wipes the selected driver(s) (Plus any associated info, such as display color profiles, settings, etc)**
 
 ## Installing Display Driver Uninstaller (DDU):
 
@@ -22,14 +22,17 @@ Display Driver Uninstaller (DDU) is a program that can fully wipe display/audio 
 ### **2. Click on the .exe in the newly extracted folder, click "Extract"**
 A new folder containing _Display Driver Uninstaller.exe_ will be created
 
+> **Do _not_ move, modify, or delete any files associated with DDU**
+
+
 ![dduextract.png](/assets/factoids/dduextract.png)
 ### **3.** [**Boot in safe mode**](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode) 
- **Open _Display Driver Uninstaller.exe_ from the newly created folder in the previous step**
+ Open _Display Driver Uninstaller.exe_ from the newly created folder in the previous step
 
 ## Wiping Display Drivers:
 ![ddunvidia.png](/assets/factoids/dduvideo.png)
 
-##### **Make sure you are in _Safe Mode_ for the following steps:**
+**Make sure you are in _Safe Mode_ for the following steps:**
 
 1. Select the "GPU" device type from the drop-down list on the right, select the GPU driver you wish to uninstall, and click `Clean and restart`
   
@@ -38,15 +41,13 @@ A new folder containing _Display Driver Uninstaller.exe_ will be created
 
 ## Reinstalling Display Drivers:
   
-#### For Desktops/Pre-built Desktops:
-Go to the site of the GPU's manufacturer(s) ([NVIDIA](https://www.nvidia.com/Download/index.aspx), [AMD](https://www.amd.com/en/support), [Intel](https://www.intel.com/content/www/us/en/download-center/home.html)) and download the latest available drivers.
+#### For custom-built desktops:
+Go to the site of the GPU's manufacturer(s) ([NVIDIA](https://www.nvidia.com/Download/index.aspx), [AMD](https://www.amd.com/en/support), [Intel](https://www.intel.com/content/www/us/en/download-center/home.html)) and download the latest available display drivers.
 
-##### For Pre-built desktops, it may be best to get the GPU drivers from the prebuilt's support page on the manufacturer's site.
+#### For laptops/pre-built desktops:
+Go to the laptop's/pre-builts support page on the manufacturer's site, and download the latest available display drivers.
 
-#### For Laptops:
-Go to the laptop's support page on the manufacturer's site, and download the latest available drivers.
-
-##### **For devices with multiple GPUs, download both the integrated and dedicated GPU drivers, install the integrated GPU drivers first, followed by the dedicated GPU drivers**
+> **For devices with multiple GPUs, download both the integrated and dedicated GPU drivers, install the integrated GPU drivers first, followed by the dedicated GPU drivers**
   
   
 ---
@@ -55,13 +56,13 @@ Go to the laptop's support page on the manufacturer's site, and download the lat
 ## Wiping Audio Drivers:
 ![dduaudio.png](/assets/factoids/dduaudio.png)
   
-##### **Make sure you are in _Safe Mode_ for the following step:**
+**Make sure you are in _Safe Mode_ for the following step:**
 
 1. Select the "Audio" device type from the drop-down list on the right, select the Audio driver you wish to uninstall, and click `Clean and restart`
 
 ## Reinstalling Audio Drivers
 #### For custom-built desktops:
-Go to your motherboards support page on the manufacturer's page, and download the latest available audio drivers
+Go to your motherboards support page on the manufacturer's site, and download the latest available audio drivers
 
 #### For laptops/pre-built desktops:
 Go to the laptop's/pre-built's support page on the manufacturer's site, and download the latest available audio drivers.
