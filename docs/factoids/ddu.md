@@ -36,7 +36,7 @@ A new folder containing _Display Driver Uninstaller.exe_ will be created
 
 1. Select the "GPU" device type from the drop-down list on the right, select the GPU driver you wish to uninstall, and click `Clean and restart`
   
-   * **To wipe display drivers for laptops/devices with onboard graphics: Select the** `Clean and do NOT restart` **option for the first driver, _then_ the** `Clean and restart` **option for the second driver. Any GPU driver can be wiped first, the order is irrelevant.**
+   * To wipe display drivers for laptops/devices with onboard graphics: Select the `Clean and do NOT restart` option for the first driver, _then_ the `Clean and restart` option for the second driver. Any GPU driver can be wiped first, the order is irrelevant.
 
 
 ## Reinstalling Display Drivers:
