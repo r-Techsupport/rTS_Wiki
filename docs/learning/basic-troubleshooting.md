@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Computing Basics
+title: Basic Troubleshooting
 nav_exclude: false
 has_children: false
 parent: Learning
@@ -8,7 +8,7 @@ search_exclude: false
 last_modified_date: 2022-06-30
 ---
 
-# Computing Basics
+# Basic Troubleshooting
 {: .no_toc}
 
 {% include toc.md %}
