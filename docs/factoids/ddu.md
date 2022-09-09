@@ -8,36 +8,42 @@ search_exclude: false
 last_modified_date: 2022-08-29
 ---
 # Display Driver Uninstaller (DDU)
+{: .no_toc}
 
 Display Driver Uninstaller (DDU) is a program that can fully wipe display/audio drivers, to troubleshoot various issues.
 
-> **Display Driver Uninstaller does not erase any personal files, it only wipes the selected driver(s) (Plus any associated info, such as display color profiles, settings, etc)**
+> ❗ Display Driver Uninstaller does not erase any personal files. It only wipes the selected driver(s), and any associated info, such as display color profiles, settings, etc
+
+{% include toc.md %}
 
 ## Installing Display Driver Uninstaller (DDU):
 
-### **1.** [**Download DDU**](https://www.guru3d.com/files-get/display-driver-uninstaller-download,19.html) **and _extract_ the .zip**:
+1. [Download DDU](https://www.guru3d.com/files-get/display-driver-uninstaller-download,19.html) and _extract_ the .zip:
 
-![dduzip.png](/assets/factoids/dduzip.png)
+	![dduzip.png](/assets/factoids/dduzip.png)
 
-### **2. Click on the .exe in the newly extracted folder, click "Extract"**
+2. Click on the .exe in the newly extracted folder, click "Extract"
 A new folder containing _Display Driver Uninstaller.exe_ will be created
 
-> **Do _not_ move, modify, or delete any files associated with DDU**
+	> ❗ Do _not_ move, modify, or delete any files associated with DDU
+	> 
+	> ![dduextract.png](/assets/factoids/dduextract.png)
 
+3. [Boot in safe mode](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode) 
 
-![dduextract.png](/assets/factoids/dduextract.png)
-### **3.** [**Boot in safe mode**](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode) 
- Open _Display Driver Uninstaller.exe_ from the newly created folder in the previous step
+4. Open _Display Driver Uninstaller.exe_ from the newly created folder in the previous step
 
 ## Wiping Display Drivers:
+
+> ❗ Make sure you are in [Safe Mode](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode) for the following steps:
+
+### Laptops or integrated graphics
+To wipe display drivers for laptops/devices with onboard graphics: Select the `Clean and do NOT restart` option for the first driver, _then_ the `Clean and restart` option for the second driver. Any GPU driver can be wiped first, the order is irrelevant.
+
+### Desktops with a dedicated GPU
+To wipe display drivers from a dedicated GPU select the "GPU" device type from the drop-down list on the right, select the GPU driver you wish to uninstall, and click `Clean and restart`
+
 ![ddunvidia.png](/assets/factoids/dduvideo.png)
-
-**Make sure you are in [Safe Mode](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode) for the following steps:**
-
-1. Select the "GPU" device type from the drop-down list on the right, select the GPU driver you wish to uninstall, and click `Clean and restart`
-  
-   * To wipe display drivers for laptops/devices with onboard graphics: Select the `Clean and do NOT restart` option for the first driver, _then_ the `Clean and restart` option for the second driver. Any GPU driver can be wiped first, the order is irrelevant.
-
 
 ## Reinstalling Display Drivers:
   
