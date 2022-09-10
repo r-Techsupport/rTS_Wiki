@@ -17,9 +17,9 @@ When the system is first powered on, the UEFI/BIOS preforms basic integrity chec
 ### Troubleshooting
 Try a live environment.
 
-##### If the live environment boots successfully:
+#### If the live environment boots successfully:
 It indicates the bootloader is not functioning correctly. You can attempt to fix the bootloader by `chroot`ing in:
-**On non Arch based distributions:**
+##### On non Arch based distributions:
 Mount the root filesystem, where `sdXY` is your root partition, or `/`. You can find it by running `lsblk`, and looking at the size, or using `sudo fdisk -l`, and looking at the partition size and type.
 ```
 mount /dev/sdXY /mnt
@@ -56,7 +56,7 @@ Chroot into `/mnt` using a bash shell:
 chroot /mnt /bin/bash
 ```
 
-**On Arch based distributions:**
+##### On Arch based distributions:
 Chroot into the system using arch's `arch-chroot` script:
 ```
 arch-chroot /dev/sdXY
@@ -80,7 +80,7 @@ If the system is MBR:
 ```
 grub-install --target=i386-pc /dev/sdXY
 ```
-##### If the live environment does *not* boot successfully:
+#### If the live environment does *not* boot successfully:
 See if Secure Boot is enabled:
 	Check your UEFI/BIOS and ensure Secure Boot is disabled, or enabled if you are using a linux distro that supports secure boot.
 Try Ventoy, if it boots to the Ventoy menu without issue, try redownloading/burning your Linux ISO. You can ensure the checksum matches:
