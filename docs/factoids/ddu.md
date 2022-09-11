@@ -7,16 +7,16 @@ has_children: false
 search_exclude: false
 last_modified_date: 2022-08-29
 ---
-# Using DDU
+# Display Driver Uninstaller (DDU)
 {: .no_toc}
 
 Display Driver Uninstaller (DDU) is a program that can fully wipe display/audio drivers, to troubleshoot various issues.
 
-> ❗ Display Driver Uninstaller does not erase any personal files. It only wipes the selected driver(s), and any associated info, such as display color profiles, settings, etc
+> Display Driver Uninstaller does not erase any personal files. It only wipes the selected driver(s), and any associated info, such as display color profiles, settings, etc
 
 {% include toc.md %}
 
-## Installing
+## Installing DDU
 
 1. [Download DDU](https://www.guru3d.com/files-get/display-driver-uninstaller-download,19.html) and _extract_ the .zip:
 
@@ -53,6 +53,8 @@ Go to the site of the GPU's manufacturer(s) ([NVIDIA](https://www.nvidia.com/Dow
 Go to the model's support page on your manufacturer's site, and download the latest available display drivers.
 
 > ❗ For devices with multiple GPUs, download both the integrated and dedicated GPU drivers. Install the integrated GPU drivers _first_, followed by the dedicated GPU drivers.
+
+---
 
 ## Wiping Audio Drivers
 ![dduaudio.png](/assets/factoids/dduaudio.png)
