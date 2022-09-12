@@ -81,9 +81,12 @@ If the system is MBR:
 grub-install --target=i386-pc /dev/sdXY
 ```
 #### If the live environment does *not* boot successfully:
-See if Secure Boot is enabled:
-	Check your UEFI/BIOS and ensure Secure Boot is disabled, or enabled if you are using a linux distro that supports secure boot.
-Try Ventoy, if it boots to the Ventoy menu without issue, try redownloading/burning your Linux ISO. You can ensure the checksum matches:
+- See if Secure Boot is enabled:
+
+Check your UEFI/BIOS and ensure Secure Boot is disabled for most Linux distros, or enabled if you are using a Linux distro that supports secure boot.
+
+- Try Ventoy, if it boots to the Ventoy menu without issue, try redownloading/burning your Linux ISO. You can ensure the ISO checksum matches:
+
 From Linux(this utility is included in most distros):
 ```
 sha256sum [file]
@@ -105,6 +108,7 @@ If the checksum matches and the ISO *still* isn't booting:
 
 ## GRUB/Bootloader
 *Note: this section assumes you use GRUB*
+
 At this point, your UEFI/BIOS has passed control over to GRUB, by default, it presents a menu similar to the one shown below, although the appearence may vary.
 ![grub menu](/assets/fixing-linux-boot/GRUB_screenshot.png)
 
