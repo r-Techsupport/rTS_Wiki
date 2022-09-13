@@ -21,6 +21,15 @@ If multiple devices are affected, the cause is probably among the resources they
 ## Software problem
 If one device is affected, check if it is a software problem, be it an OS setting or a program.
 
+### Network reset
+Various connectivity problems are fixed with the following 3 commands. To run them seach "cmd.exe" in the start menu, right click "Command Prompt" and click on "Run as administrator".
+```
+ipconfig /flushdns
+netsh interface ip reset
+netsh winsock reset
+```
+After you have run them, reboot your computer and check.
+
 ### TCP Global Parameters
 A common problem in Windows is when an application changes the TCP Global Parameters. To check these seach "cmd.exe" in the start menu, right click "Command Prompt" and click on "Run as administrator". Once opened, type `netsh interface tcp show global`. Everything should like in the following image:  
 ![tcp-global.png](/assets/internet-not-working/tcp-global.png)  
@@ -53,5 +62,5 @@ Right click on your Ethernet adapter and "Status".
 ![change-adapter-settings.png](/assets/internet-not-working/network-status.png)  
 The "Speed" property is what your computer negotiates at with the upstream device. Most devices nowadays support 1 Gigabit, but for that all 8 connectors and contacts must work on both sides. If only one is faulty, the speed will default to 100 Mbps (only 4 connections need to work for this speed). If both devices you connect support Gigabit and you only see 100 Mbps here, the cable is faulty or slightly loose. There is a slim chance that the port on the computer or the upstream device is at fault, but that is by far less common.  
 ![negotiated-speed.png](/assets/internet-not-working/negotiated-speed.png)
-### Connection not working
+### Connection not working at all
 `ipconfig /all`
