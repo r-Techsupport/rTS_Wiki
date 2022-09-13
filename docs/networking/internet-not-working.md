@@ -62,5 +62,7 @@ Right click on your Ethernet adapter and "Status".
 ![change-adapter-settings.png](/assets/internet-not-working/network-status.png)  
 The "Speed" property is what your computer negotiates at with the upstream device. Most devices nowadays support 1 Gigabit, but for that all 8 connectors and contacts must work on both sides. If only one is faulty, the speed will default to 100 Mbps (only 4 connections need to work for this speed). If both devices you connect support Gigabit and you only see 100 Mbps here, the cable is faulty or slightly loose. There is a slim chance that the port on the computer or the upstream device is at fault, but that is by far less common.  
 ![negotiated-speed.png](/assets/internet-not-working/negotiated-speed.png)
+
 ### Connection not working at all
-`ipconfig /all`
+To be added 
+`ipconfig /all` used to check if you get a DHCP assigned IP or APIPA.
