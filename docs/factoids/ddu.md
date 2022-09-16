@@ -5,7 +5,7 @@ nav_exclude: false
 parent: Factoids
 has_children: false
 search_exclude: false
-last_modified_date: 2022-09-11
+last_modified_date: 2022-09-16
 ---
 # Display Driver Uninstaller (DDU)
 Display Driver Uninstaller is a program that can fully wipe display/audio drivers, to troubleshoot various issues.
