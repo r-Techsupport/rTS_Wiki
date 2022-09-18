@@ -5,7 +5,7 @@ nav_exclude: false
 has_children: false
 parent: Disks
 search_exclude: false
-last_modified_date: 2022-08-25
+last_modified_date: 2022-09-17
 ---
 
 # BitLocker in Linux with Dislocker
