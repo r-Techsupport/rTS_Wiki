@@ -5,7 +5,7 @@ nav_exclude: false
 parent: Factoids
 has_children: false
 search_exclude: false
-last_modified_date: 2022-09-16
+last_modified_date: 2022-09-17
 ---
 
 # Obtaining BSOD Dumps
