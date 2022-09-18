@@ -6,7 +6,7 @@ nav_order: 2
 has_children: false
 parent: Disks
 search_exclude: false
-last_modified_date: 2022-07-16
+last_modified_date: 2022-08-13
 ---
 
 # Verifying Disk Health
@@ -49,9 +49,10 @@ This count goes up when the disk is being read with unstable sectors on the disk
 
 Crystal disk is the simplest way to get a reading on SMART within Windows. Download the application then run it to view every disk in the machine.
 
-If a disk shows up as Yellow/'Caution' or Red/'Bad' we recommend replacing it.
+For directions on using CDI please see [our factoid](/docs/factoids/cdi) about it.
 
-[Download](https://osdn.net/frs/redir.php?m=acc&f=crystaldiskinfo%2F74490%2FCrystalDiskInfo8_10_0.zip)
+### Reading CDI
+The basics are color coded; if a disk shows up as Yellow/'Caution' or Red/'Bad' we recommend replacing it. 
 
 ## Hard Disk Sentinel
 
