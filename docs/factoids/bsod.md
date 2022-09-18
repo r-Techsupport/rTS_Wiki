@@ -22,8 +22,6 @@ Blue Screen of Death (BSOD) memory dumps allow us to further analyze a BSOD and 
 
 3. If you have dump files, copy the entire folder (*not just the files in the folder*) to the Downloads folder. This will require administrator permissions.
 
-![CopyMinidump.png](/assets/factoids/CopyMinidump.png)
-
 4. Create a .zip file of the whole folder by right clicking the folder -> `Send to` -> `Compressed (zip) folder`
 
 ![CompressDump.png](/assets/factoids/CompressDump.png)
