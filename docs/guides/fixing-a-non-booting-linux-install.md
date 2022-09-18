@@ -9,8 +9,9 @@ last_modified_date: 2022-09-15
 ---
 
 # Fixing a non-booting linux install
-Because of the length and variety of troubleshooting methods, the following article will be segmented by each step of the boot process.
 {: .no_toc}
+
+Because of the length and variety of troubleshooting methods, the following article will be segmented by each step of the boot process.
 
 {% include toc.md %}
 
