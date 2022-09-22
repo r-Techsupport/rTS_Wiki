@@ -16,16 +16,16 @@ last_modified_date: 2022-09-21
 |Term|Definition|
 |-|-|
 |Operating System (OS)|The piece of software which controls your CPU, and which you run applications on (e.g. Windows).|
-|Central Processing Unit (CPU)|The brain of the computer, which controls other components.|
-|Graphics Processing Unit (GPU)|Controls graphics (what you see). Can be integrated into the CPU, or on a seperate card.|
-|Random Access Memory (RAM)|Temporary storage for the CPU.|
-|Power Supply Unit (PSU)|Converts the electricity from the wall into the right form, to be used in the computer.|
+|<span id="CPU">Central Processing Unit (CPU)</span>|The brain of the computer, which controls other components.|
+|<span id="GPU">Graphics Processing Unit (GPU)</span>|Controls graphics (what you see). Can be integrated into the CPU, or on a seperate card.|
+|<span id="RAM">Random Access Memory (RAM)</span>|Temporary storage for the CPU.|
+|<span id="PSU">Power Supply Unit (PSU)</span>|Converts the electricity from the wall into the right form, to be used in the computer.|
 |Peripheral Component Interconnect (PCIe)|The successor of PCI, used on modern systems.|
 |Navigation keys (NavKeys)|Ins, Del, Home, End, Page Up, Page Down|
 |Keyboard and Mouse (KB/M)|The device which you type on, and the device which you move the cursor with.|
 |Hertz (Hz)|The frequency at which something operates (cycles per second).|
-|Uninterruptible Power Supply (UPS)|A battery backup system that allows a system to run for a period of time after main power loss. These also provide \"clean\" power, preventing damage from unstable or dirty power. They are highly recommended for anyone who experiences frequent brown outs.|
-|Return Merchandise Authorization (RMA)|A return merchandise authorization (RMA), return authorization (RA) or return goods authorization (RGA) is a part of the process of returning a product to receive a refund, replacement, or repair during the product’s warranty period. Both parties can decide how to deal with it, which could be refund, replacement or repair.|
+|<span id="UPS">Uninterruptible Power Supply (UPS)</span>|A battery backup system that allows a system to run for a period of time after main power loss. These also provide \"clean\" power, preventing damage from unstable or dirty power. They are highly recommended for anyone who experiences frequent brown outs.|
+|<span id="RMA">Return Merchandise Authorization (RMA)</span>|A return merchandise authorization (RMA), return authorization (RA) or return goods authorization (RGA) is a part of the process of returning a product to receive a refund, replacement, or repair during the product’s warranty period. Both parties can decide how to deal with it, which could be refund, replacement or repair.|
 |Qualified Vendor List (QVL)|List supplied by a system or motherboard manufacturer of parts tested and confirmed by that manufacturer to work in their hardware.|
 
 
@@ -51,20 +51,20 @@ last_modified_date: 2022-09-21
 |Virus|A type of malware that spreads itself to infect more computers.|
 |Trojan|A type of malware that misleads users into thinking that it is a legitimate program. Named after the Greek Trojan horse.|
 |Worm|A type of malware that spreads itself. The difference between a worm and a virus is that a virus needs to be run on a host computer to spread, while a worm is independent.|
-|Antivirus (AV)|A program that runs constantly in the background, scanning files on download, on access, or on a schedule|
-|Anti-malware (AM)|A program that runs on demand to check for residual PUPs or other issues.|
-|Potentially Unwanted Program (PUP)|A generic term for an application that may not be malicious but is not wanted/intended regardless.|
+|<span id="AV">Antivirus (AV)</span>|A program that runs constantly in the background, scanning files on download, on access, or on a schedule|
+|<span id="AM">Anti-malware (AM)</span>|A program that runs on demand to check for residual PUPs or other issues.|
+|<span id="PUP">Potentially Unwanted Program (PUP)</span>|A generic term for an application that may not be malicious but is not wanted/intended regardless.|
 
 
 ### Disks/Storage
 
 |Term|Definition|
 |-|-|
-|Hard Disk Drive (HDD)|A storage device with spinning platters that is very cheap.|
-|Solid State Drive (SSD)|A storage device with no moving parts that is very fast.|
-|Redundant Array of Inexpensive Disks (RAID)|A set of storage drives which are combined to make them larger, more reliable, or faster.|
-|Master Boot Record (MBR)|The partition table format that precedes GPT. Also called the DOS/MSDOS partition table.|
-|GUID Partition Table (GPT)|A newer (better) partition table.|
+|<span id="HDD">Hard Disk Drive (HDD)</span>|A storage device with spinning platters that is very cheap.|
+|<span id="SSD">Solid State Drive (SSD)</span>|A storage device with no moving parts that is very fast.|
+|<span id="RAID">Redundant Array of Inexpensive Disks (RAID)</span>|A set of storage drives which are combined to make them larger, more reliable, or faster.|
+|<span id="MBR">Master Boot Record (MBR)</span>|The partition table format that precedes GPT. Also called the DOS/MSDOS partition table.|
+|<span id="GPT">GUID Partition Table (GPT)</span>|A newer (better) partition table.|
 |Bit (b)|A single 1 or 0 used by your computer.|
 |Byte (B)|8 Bits|
 |Kilobyte (KB)|1000 Bytes|
@@ -82,10 +82,10 @@ last_modified_date: 2022-09-21
 |Term|Definition|
 |-|-|
 |Internet Protocol (IP)|The primary protocol used to transfer data over the Internet.|
-|IPv4 address|A format of IP addresses, consisting of 4 sets numbers from 0-255 (e.g. 10.15.1.58).|
-|IPv6 address|A format of IP addresses, consisting of 8 sets of hexadecimal numbers from 0-FFFF (e.g. fe80:3b71:ed9b:924e:f925:dfad:964a:5d26).|
-|Media Access Control (MAC) address|A MAC address (hardware or physical address) is a unique, 12-character alhanumeric attribute that is used to identify individual electronic devices on a network.|
-|Domain Name System (DNS)|The protocol that maps domains to IP addresses.|
+|<span id="IPv4">IPv4 address</span>|A format of IP addresses, consisting of 4 sets numbers from 0-255 (e.g. 10.15.1.58).|
+|<span id="IPv6">IPv6 address</span>|A format of IP addresses, consisting of 8 sets of hexadecimal numbers from 0-FFFF (e.g. fe80:3b71:ed9b:924e:f925:dfad:964a:5d26).|
+|<span id="MAC">Media Access Control (MAC) address</span>|A MAC address (hardware or physical address) is a unique, 12-character alhanumeric attribute that is used to identify individual electronic devices on a network.|
+|<span id="DNS">Domain Name System (DNS)</span>|The protocol that maps domains to IP addresses.|
 |Hub|A hub is a repeater and is one of the simplest ways to create a network. A message sent by one host is sent to all other hosts. It operates at Layer 1 of the OSI model.|
 |Bridge|A bridge is more intelligent than a hub. Packets sent are processed based on the MAC address (Hardware Address) inside them. They are forwarded only to their addressed destinations. It operates at Layer 2 of the OSI model.|
 |Switch|A switch is similar to a bridge, the biggest difference between them being that bridges use software for their forwarding, while switches use hardware (lower latency in processing). Bridges only forward using one method (store and forward) while switches have multiple options.|
@@ -96,7 +96,7 @@ last_modified_date: 2022-09-21
 
 |Term|Definition|
 |-|-|
-|Hexadecimal (hex)|Base-16 numbers, consisting of digits 0-F.|
+|<span id="HEX">Hexadecimal (hex)</span>|Base-16 numbers, consisting of digits 0-F.|
 |Microsoft (MS/MSFT)|The company that makes Windows and other products.|
 
 <!-- Note: It is debated whether kilobytes/megabytes//gigabytes/terabytes should be in multiples of 1000 or 1024. You should use context to decide which application uses which multiple.-->
