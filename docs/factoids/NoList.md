@@ -9,7 +9,7 @@ last_modified_date: 2022-09-22
 ---
 
 # The List of Bad Ideas
- Since Windows was last **clean installed** (using a USB and wiping everything), have you done any of the following:
+****Since Windows was last **clean installed** (using a USB and wiping everything), have you done any of the following:****
 ## Hardware:
 
 1. Had any major **hardware changes** (Replace / addition / upgrade / removal)
@@ -33,5 +33,5 @@ last_modified_date: 2022-09-22
 13. Installed any **voice changer**/audio editor type programs (Voicemod, Voicemeeter, Clownfish, etc) (Even if removed)
 14. **Pirated** any Games/Software/Content/or the OS itself (Even if removed)
 15. Ran any dedicated [driver updaters](docs/recommendations/maintenance#driver-finders) or finders on the system (Even if removed)
-16. Ran any kind of [system cleaner/optimizer](docs/recommendations/blacklist#system-cleanersoptimizers) (Even if removed)
+16. Ran any kind of [system cleaner/optimizer](docs/recommendations/maintenance#Cleaners) (Even if removed)
 17. Used or installed a **custom theme** (Even if removed)
