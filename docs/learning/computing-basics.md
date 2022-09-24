@@ -18,7 +18,7 @@ last_modified_date: 2022-06-30
 
 * Having monitor issues? Change cable, use monitor on different computer. (Actually many hardware components should be tested first on other computers before reporting)
 
-* If you bought a new device and it's not working properly, [RMA](/docs/learning/terms#random-access-memory-ram) the defective product.
+* If you bought a new device and it's not working properly, [RMA](/docs/learning/terms#return-merchandise-authorization-rma) the defective product.
 
 * Max supported RAM for a 32 bit windows installation is 4gb
 
