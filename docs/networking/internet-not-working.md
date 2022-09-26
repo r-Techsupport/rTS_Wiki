@@ -54,10 +54,9 @@ When you find the first device where the problem is present (or reached the main
 
 ## Finding the cause
 ### Speed problem
-Ideally now you have your computer connected to the first device that the problem is happening on. Right click on the Ethernet icon from the taskbar and click "Open Network & Internet settings".  
-![open-network-internet-settings.png](/assets/internet-not-working/open-network-internet-settings.png)  
-Click "Change adapter settings".  
-![change-adapter-settings.png](/assets/internet-not-working/change-adapter-settings.png)  
+Ideally now you have your computer connected to the first device that the problem is happening on.  
+Press Win + R and type `ncpa.cpl`. Press enter/ click "OK" to open "Network Connections".
+![run-ncpa.png](/assets/internet-not-working/run-ncpa.png)  
 Right click on your Ethernet adapter and "Status".  
 ![change-adapter-settings.png](/assets/internet-not-working/network-status.png)  
 The "Speed" property is what your computer negotiates at with the upstream device. Most devices nowadays support 1 Gigabit, but for that all 8 connectors and contacts must work on both sides. If only one is faulty, the speed will default to 100 Mbps (only 4 connections need to work for this speed). If both devices you connect support Gigabit and you only see 100 Mbps here, the cable is faulty or slightly loose. There is a slim chance that the port on the computer or the upstream device is at fault, but that is by far less common.  
