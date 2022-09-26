@@ -27,11 +27,11 @@ Place the motherboard on a piece of cardboard along with everything else in the 
 
 A single #2 Phillips head screwdriver would be ideal for this but the closest you have will be fine for a one-off build.
 
-Before installing the [CPU](/docs/learning/terms), now is the time to inspect the board's CPU socket for any obvious damage or any tiny debris that might have fallen in at the factory during packaging. Also inspect the [RAM](/docs/learning/terms) and [PCIe](/docs/learning/terms). Install the CPU and HSF applying a thin coat of thermal paste between the two with the edge of a credit card (never use a razor blade). Connect the HSF fan wires to the correct board socket. Plug in the main 24 pin ATX 12volt power connector and the 4 or 8 pin EPS 12 volt power connector into the motherboard.
+Before installing the [CPU](/docs/learning/terms#central-processing-unit-cpu), now is the time to inspect the board's CPU socket for any obvious damage or any tiny debris that might have fallen in at the factory during packaging. Also inspect the [RAM](/docs/learning/terms#random-access-memory-ram) and [PCIe](/docs/learning/terms#pci-express-pcie). Install the CPU and HSF applying a thin coat of thermal paste between the two with the edge of a credit card (never use a razor blade). Connect the HSF fan wires to the correct board socket. Plug in the main 24 pin ATX 12volt power connector and the 4 or 8 pin EPS 12 volt power connector into the motherboard.
 
 ![CPUinstalled.png](/assets/Breadboarding/CPUinstalled.png)
 
-Plug-in and turn on the [PSU's](/docs/learning/terms) power and then the board's power. A board and CPU that works should now give you a RAM failure beep code. If the CPU is faulty, you may or may not get a CPU failure beep code (depending on the board's bios). If you do get a faulty CPU beep code, you have a faulty or incorrectly installed CPU.
+Plug-in and turn on the [PSU's](/docs/learning/terms#power-supply-unit-psu) power and then the board's power. A board and CPU that works should now give you a RAM failure beep code. If the CPU is faulty, you may or may not get a CPU failure beep code (depending on the board's bios). If you do get a faulty CPU beep code, you have a faulty or incorrectly installed CPU.
 
 If you get no codes and the HSF fan doesn't rotate (nothing works) and you have checked that your CPU is installed correctly, your motherboard, CPU and PSU all need proper testing to determine which one of them is faulty.
 
