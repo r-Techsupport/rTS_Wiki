@@ -12,7 +12,7 @@ last_modified_date: 2022-09-26
 
 > *This information was obtained from the Suggest a Laptop discord, check them out [here](https://discord.com/invite/pes68JM)*
 
-CPU throttling occurs when the CPU is under enough load and unable to keep maximum turbo for the number of utilized cores (usually all cores). 
+[CPU](/docs/learning/terms#central-processing-unit-cpu) throttling occurs when the CPU is under enough load and unable to keep maximum turbo for the number of utilized cores (usually all cores). 
 
 *Throttling happens in one of four ways:*
 
