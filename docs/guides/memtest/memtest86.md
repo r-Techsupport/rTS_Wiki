@@ -24,7 +24,7 @@ Our rescue media has Memtest86+ built in, as a boot option.
 [Source files for Debian build](https://github.com/r-Techsupport/rTS_Debian)
 
 ### Official media
-You may also use the [official Memtest86+ ISO](http://www.memtest.org/download/5.31b/memtest86+-5.31b.iso.zip), or the [install tool for Windows](http://memtest.org/download/5.31b/memtest86+-5.31b.usb.installer.zip).
+You may also use the [official Memtest86+ ISO](https://www.memtest.org/download/v6.00b3/mt86plus_6.00b3_32.iso.zip), or the [install tool for Windows](https://www.memtest.org/download/v6.00b3/mt86plus_6.00b3_USB_Installer.exe).
 
 ## 2. Creating bootable media
 This will require a USB that is at least the size of the ISO you downloaded.
