@@ -5,14 +5,14 @@ nav_exclude: false
 has_children: false
 parent: Learning
 search_exclude: false
-last_modified_date: 2022-09-26
+last_modified_date: 2022-10-02
 ---
 
 # Throttling
 
-> *This information was obtained from the Suggest a Laptop discord, check them out [here](https://discord.com/invite/pes68JM)*
+> This information was obtained from the (Suggest a Laptop discord)https://discord.com/invite/pes68JM)
 
-[CPU](/docs/learning/terms#central-processing-unit-cpu) throttling occurs when the CPU is under enough load and unable to keep maximum turbo for the number of utilized cores (usually all cores). 
+CPU throttling occurs when the [CPU](/docs/learning/terms#central-processing-unit-cpu) is under enough load and unable to keep maximum turbo for the number of utilized cores (usually all cores). 
 
 *Throttling happens in one of four ways:*
 
@@ -38,4 +38,5 @@ It is difficult to diagnose, and usually **unfixable** even if diagnosed without
 
 ## Idle Throttling
 
-This is the only throttle that happens **under ideal conditions.** This means the CPU underclocks when not stressed to reduce power draw and thermals. This is the only throttle reported to the operating system as throttling by the cpu.
+This is the only throttle that happens **under ideal conditions.** This means the CPU underclocks when not stressed to reduce power draw and thermals. This is the only throttle reported to the operating system as throttling by the cpu. This typically isn't an issue.
+
