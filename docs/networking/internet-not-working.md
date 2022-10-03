@@ -31,9 +31,7 @@ netsh winsock reset
 After you have run them, reboot your computer and check.
 
 ### TCP Global Parameters
-A common problem in Windows is when an application changes the TCP Global Parameters. 
-
-To check these search "cmd.exe" in the start menu, right click "Command Prompt" and click on "Run as administrator". Once opened, type `netsh interface tcp show global`. Everything should like in the following image:  
+A common problem in Windows is when an application changes the TCP Global Parameters. To check these search "cmd.exe" in the start menu, right click "Command Prompt" and click on "Run as administrator". Once opened, type `netsh interface tcp show global`. Everything should like in the following image:  
 
 ![tcp-global.png](/assets/internet-not-working/tcp-global.png)  
 
@@ -57,22 +55,18 @@ If you there are other devices between you and your main router/ gateway such as
 When you find the first device where the problem is present (or reached the main router/ gateway/ modem) try different cables between that and the computer you are testing on (desktop/ laptop). Alternatively, try different ports on the switch/ router if present.
 
 ## Finding the cause
+Ideally now you have your computer connected to the first device that the problem is happening on.  
 ### Speed problem
-Ideally now you have your computer connected to the first device that the problem is happening on. 
-
-1. Right click on the Ethernet icon from the taskbar and click "Open Network & Internet settings".  
-	![open-network-internet-settings.png](/assets/internet-not-working/open-network-internet-settings.png)  
-
-2. Click "Change adapter settings".  
-	![change-adapter-settings.png](/assets/internet-not-working/change-adapter-settings.png)  
-
-3. Right click on your Ethernet adapter and "Status".  
-	![change-adapter-settings.png](/assets/internet-not-working/network-status.png)  
-
-The "Speed" property is what your computer negotiates at with the upstream device. Most devices nowadays support 1 Gigabit, but for that all 8 wire connectors and contacts must work on both sides. If only one is faulty, the speed will default to 100 Mbps (only 4 connections need to work for this speed). If both devices you connect support Gigabit and you only see 100 Mbps here, the cable is faulty or slightly loose. There is a slim chance that the port on the computer or the upstream device is at fault, but that is by far less common.  
-
+Press Win + R and type "ncpa.cpl". Press enter/ click "OK" to open "Network Connections".
+![run-ncpa.png](/assets/internet-not-working/run-ncpa.png)  
+Right click on your Ethernet adapter and "Status".  
+![change-adapter-settings.png](/assets/internet-not-working/network-status.png)  
+The "Speed" property is what your computer negotiates at with the upstream device. Most devices nowadays support 1 Gigabit, but for that all 8 connectors and contacts must work on both sides. If only one is faulty, the speed will default to 100 Mbps (only 4 connections need to work for this speed). If both devices you connect support Gigabit and you only see 100 Mbps here, the cable is faulty or slightly loose. There is a slim chance that the port on the computer or the upstream device is at fault, but that is by far less common.  
 ![negotiated-speed.png](/assets/internet-not-working/negotiated-speed.png)
 
 ### Connection not working at all
-To be added 
-`ipconfig /all` used to check if you get a DHCP assigned IP or APIPA.
+Search "cmd.exe" in the start menu and click "Command Prompt". Type `ipconfig /all` and check "IPv4 Address" under "Ethernet adapter Ethernet".
+
+If the address is between 169.254.0.1 to 169.254.255.254 then your computer does not get assigned an IP address by the DHCP server (usually the router) thus the connection is faulty.
+
+From a software standpoint, there migth be bad drivers installed on the computer. From a hardware standpoint, a number of things can be faulty: the port on either device, the cable, computer's NIC or the router itself.

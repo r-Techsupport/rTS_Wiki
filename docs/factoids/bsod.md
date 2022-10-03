@@ -5,7 +5,7 @@ nav_exclude: false
 parent: Factoids
 has_children: false
 search_exclude: false
-last_modified_date: 2022-08-13
+last_modified_date: 2022-09-17
 ---
 
 # Obtaining BSOD Dumps
@@ -20,11 +20,11 @@ Blue Screen of Death (BSOD) memory dumps allow us to further analyze a BSOD and 
 
 2. Find the folder named `Minidump` and open it to double check to see if you have any `.dmp` files.
 
-3. If you have dump files, copy the entire folder (*not just the files in the folder*) to the desktop. This will require administrator permissions.
+3. If you have dump files, copy the entire folder (*not just the files in the folder*) to the Downloads folder. This will require administrator permissions.
 
 4. Create a .zip file of the whole folder by right clicking the folder -> `Send to` -> `Compressed (zip) folder`
 
-![](https://user-images.githubusercontent.com/8887005/188329574-e3b8084d-7879-4d21-8da3-21db76c418dc.PNG)
+![CompressDump.png](/assets/factoids/CompressDump.png)
 
 5. Drop the .zip file into the chat for the tech support team to analyze.
 
