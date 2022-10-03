@@ -6,9 +6,9 @@ has_children: false
 parent: Networking
 has_toc: true
 search_exclude: false
-last_modified_date: 2022-09-12
+last_modified_date: 2022-09-15
 ---
-# Basic troubleshooting steps when your Internet is not working
+# Basic Network Troubleshooting
 {: .no_toc}
 
 {% include toc.md %}
@@ -32,8 +32,10 @@ After you have run them, reboot your computer and check.
 
 ### TCP Global Parameters
 A common problem in Windows is when an application changes the TCP Global Parameters. To check these search "cmd.exe" in the start menu, right click "Command Prompt" and click on "Run as administrator". Once opened, type `netsh interface tcp show global`. Everything should like in the following image:  
+
 ![tcp-global.png](/assets/internet-not-working/tcp-global.png)  
-Usually the "Receive-Side Scaling State" and "Receive Window Auto-Tuning Level" are the changed parameters. If that is the case, run `netsh interface tcp set global rss=enabled` and `netsh interface tcp set global autotuninglevel=normal`.
+
+Usually the "Receive-Side Scaling State" and "Receive Window Auto-Tuning Level" are the changed parameters. If that is the case, run `netsh interface tcp set global rss=enabled` and `netsh interface tcp set global autotuninglevel=normal` in your same Command Prompt.
 
 ### Programs interfering
 If you know you have VPNs or third-party Antivirus/ Antimalware applications installed, keep in mind that any of those might cause the problem. To stop those from interfering try a speedtest/ check the connection on a [Linux Live Session](/docs/live-sessions/linux-live-session.html). If the problem is not present here, there is a very high chance that a program is the source.
@@ -48,7 +50,7 @@ After you find what devices are affected and eliminate software from the equatio
 
 If there are powerline adapters involved, bypass those and connect directly to the upstream device (switch, router etc.).
 
-If you there are other devices between you and your main router/ gateway such as switches/ aditional routers/ acces points eliminate those one by one. This is done by connecting directly to the device supstream from the last.
+If you there are other devices between you and your main router/ gateway such as switches/ additional routers/ access points eliminate those one by one. This is done by connecting directly to the device upstream from the last.
 
 When you find the first device where the problem is present (or reached the main router/ gateway/ modem) try different cables between that and the computer you are testing on (desktop/ laptop). Alternatively, try different ports on the switch/ router if present.
 
