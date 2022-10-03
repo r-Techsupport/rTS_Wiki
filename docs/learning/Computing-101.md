@@ -15,7 +15,9 @@ This article will be going over some of the basics with using a computer. In thi
 ## Shutting down your computer
 You've had a nice game with your friends and want to go to bed, so *you shut down your computer*
 
-You can do this by hitting the start button, from there hit the power icon and select *shut down*.
+You can do this by hitting the start button, from there hit the power icon and press the *shut down option*. 
+
+Alternatively, you can shut down through CMD by typing and entering `shutdown /s`. This will act as if you pressed the shut down option.
 
 ## Rebooting 
 Sometimes as the user you will run into an issue with your computer. Before reaching out for help try a reboot to see if that fixes the issue. 
