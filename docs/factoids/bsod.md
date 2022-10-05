@@ -26,7 +26,7 @@ Blue Screen of Death (BSOD) memory dumps allow us to further analyze a BSOD and 
 
 ![CompressDump.png](/assets/factoids/CompressDump.png)
 
-5. Drop the .zip file into the chat for the tech support team to analyze.
+5.  Drop the .zip file into the chat for the tech support team to analyze.
 
 # Common Issues
 
