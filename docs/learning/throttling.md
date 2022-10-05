@@ -10,7 +10,7 @@ last_modified_date: 2022-10-02
 
 # Throttling
 
-> This information was obtained from the (Suggest a Laptop discord)https://discord.com/invite/pes68JM)
+> This information was obtained from the [Suggest a Laptop discord](https://discord.com/invite/pes68JM)
 
 CPU throttling occurs when the [CPU](/docs/learning/terms#central-processing-unit-cpu) is under enough load and unable to keep maximum turbo for the number of utilized cores (usually all cores). 
 
