@@ -5,18 +5,29 @@ nav_exclude: false
 parent: Factoids
 has_children: false
 search_exclude: false
-last_modified_date: 2022-08-09
+last_modified_date: 2022-10-05
 ---
-# Using Get-Specs to Gather System Information
-Please download and run this tool, it will allow you to share a snapshot of your OS and hardware with us to aid troubleshooting.
-This tool is open-source and powershell based.
-1. Download Get-Specs from [our github](https://github.com/r-Techsupport/Get-Specs/releases/latest/download/Get-Specs.zip).
-2. Extract this file to your desktop.
-3. Run the command named "Specs" and follow the prompts.
-4. Choose to 'upload' the file, it will put a link into your clipboard automatically. You can paste it directly into this channel.
 
-> There is nothing sensitive in the published snapshot, we will not ask you to share private information.
+# Using Get-Specs
 
-For machines without internet access you can upload the Techsupport_Specs.html file that appeared next to the other files.
+## What is Get-Specs?
 
-> ❗ If you have issues with the .cmd file, try our older [exe method](https://github.com/r-Techsupport/Get-Specs/releases/download/v1.8.0/Get-Specs.zip)
+**Get-Specs** is a custom made, [open-source](https://github.com/r-Techsupport/Get-Specs) program that gathers system information like OS, Hardware, and Software that helps us troubleshoot your computer.
+
+> ❗ Nothing sensitive is included in the report, we will not ask you to share private information.
+
+## How to use Get-Specs
+
+1. **Download** the [Get-Specs](https://github.com/r-Techsupport/Get-Specs/releases/latest/download/Get-Specs.zip) program.
+
+2. [Extract](/docs/learning/computing-101#unzipping-a-folder) the zip file to **your desktop**.
+
+3. **Run** the file named "Specs.cmd", if a User Account Control window pops up, press Yes.
+
+4. Click **"Start"**, the powershell window should be displaying each step.
+
+5. Click **"Upload"**, a link should be copied to your clipboard. You can then paste it in the channel.
+
+> If the link does not appear in your clipboard, **upload the Techsupport_Specs.html file** that appeared next to the other extracted files.
+
+> If you have issues with the .cmd file, you can try our older [exe method](https://github.com/r-Techsupport/Get-Specs/releases/download/v1.8.0/Get-Specs.zip)
