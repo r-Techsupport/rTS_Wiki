@@ -14,9 +14,9 @@ Blue Screen of Death (BSOD) memory dumps allow us to further analyze a BSOD and 
 
 1. Navigate to your Windows directory by opening the Run dialog (Win+R) and typing `%WINDIR%`. You can also do this from any folder by clicking in the navigation bar.
 
-![](https://user-images.githubusercontent.com/8887005/188329591-fb107638-78f9-4875-b09b-e9835b43407d.PNG)
+  ![](https://user-images.githubusercontent.com/8887005/188329591-fb107638-78f9-4875-b09b-e9835b43407d.PNG)
 
-![](https://user-images.githubusercontent.com/8887005/188329596-8b426f05-7225-4ccf-a4a0-8b8dfbbbc744.PNG)
+  ![](https://user-images.githubusercontent.com/8887005/188329596-8b426f05-7225-4ccf-a4a0-8b8dfbbbc744.PNG)
 
 2. Find the folder named `Minidump` and open it to double check to see if you have any `.dmp` files.
 
@@ -24,9 +24,9 @@ Blue Screen of Death (BSOD) memory dumps allow us to further analyze a BSOD and 
 
 4. Create a .zip file of the whole folder by right clicking the folder -> `Send to` -> `Compressed (zip) folder`
 
-![CompressDump.png](/assets/factoids/CompressDump.png)
+  ![CompressDump.png](/assets/factoids/CompressDump.png)
 
-5. Drop the .zip file into the chat for the tech support team to analyze.
+5.  Drop the .zip file into the chat for the tech support team to analyze.
 
 # Common Issues
 
