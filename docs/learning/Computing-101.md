@@ -5,7 +5,7 @@ nav_exclude: false
 has_children: false
 parent: Learning
 search_exclude: false
-last_modified_date: 2022-10-02
+last_modified_date: 2022-10-12
 ---
 
 # Getting Started With a Computer
@@ -24,7 +24,7 @@ Sometimes as the user you will run into an issue with your computer. Before reac
 
 Similarly to shutting down your computer, you can do this by hitting the start button, from there hit the power icon and select *restart*. Another way is hitting the reboot button on your computer. 
 
-This is a common first step to troubleshooting and will fix some problems that you are experiencing. Otherwise you can view our other guide that goes into a little more details about problems [here](basic-troubleshooting.md) or check out some [general guides](/docs/guides).
+This is a common first step to troubleshooting and will fix some problems that you are experiencing. Otherwise you can view our other guide that goes into a little more details about problems [here](/docs/learning/basic-troubleshooting.md) or check out some [general guides](/docs/guides).
 
 ## Installing Programs
 Installing programs is a little bit more work. Navigate to the website of the program you would like to install and download the latest version from there. Then once you download the program you will have to run the setup or .exe for the program to install. Afterwards you are free to use that program. 
@@ -64,9 +64,11 @@ This should bring up a new window that has a huge list of programs. In here, hig
 You can follow the prompts to remove the program from the computer. You can do this with any unwanted program.
 
 ## Installing Drivers
-Installing drivers is usually straight forward, you let windows update install the drivers for you. You can also install the optional drivers that windows provides, to check for optional drivers open Windows Update in your Settings and click < name of button >
+Installing drivers is usually straight forward, you let Windows update install the drivers for you. 
 
-< image here >
+You can also install the optional drivers that Windows provides, to check for optional drivers open Windows Update in your Settings and click Advanced Options, then Optional Updates.
+
+![optdriv.gif](/assets/Basic-Computing/optdriv.gif)
 
 There might be a couple drivers Windows does not provide on their own, these can be found on their respective support sites. 
 
