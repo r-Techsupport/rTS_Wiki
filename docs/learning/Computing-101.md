@@ -5,7 +5,7 @@ nav_exclude: false
 has_children: false
 parent: Learning
 search_exclude: false
-last_modified_date: 2022-10-04
+last_modified_date: 2022-10-12
 ---
 
 # Getting Started With a Computer
@@ -64,9 +64,11 @@ This should bring up a new window that has a huge list of programs. In here, hig
 You can follow the prompts to remove the program from the computer. You can do this with any unwanted program.
 
 ## Installing Drivers
-Installing drivers is usually straight forward, you let windows update install the drivers for you. You can also install the optional drivers that windows provides, to check for optional drivers open Windows Update in your Settings and click < name of button >
+Installing drivers is usually straight forward, you let Windows update install the drivers for you. 
 
-< image here >
+You can also install the optional drivers that Windows provides, to check for optional drivers open Windows Update in your Settings and click Advanced Options, then Optional Updates.
+
+![optdriv.gif](/assets/Basic-Computing/optdriv.gif)
 
 There might be a couple drivers Windows does not provide on their own, these can be found on their respective support sites. 
 
