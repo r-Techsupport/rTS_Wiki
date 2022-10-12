@@ -5,7 +5,7 @@ nav_exclude: false
 has_children: false
 parent: Learning
 search_exclude: false
-last_modified_date: 2022-08-02
+last_modified_date: 2022-09-02
 ---
 
 <h1>Terms & Commands</h1>
@@ -25,6 +25,8 @@ last_modified_date: 2022-08-02
 {%include terms/tr_id.html name="Keyboard and Mouse (KB/M)" value="The device which you type on, and the device which you move the cursor with." %}
 {%include terms/tr_id.html name="Hertz (Hz)" value="The frequency at which something operates (cycles per second). " %}
 {%include terms/tr_id.html name="Uninterruptible Power Supply (UPS)" value="A battery backup system that allows a system to run for a period of time after main power loss. These also provide \"clean\" power, preventing damage from unstable or dirty power. They are highly recommended for anyone who experiences frequent brown outs." %}
+{%include terms/tr_id.html name="Return Merchandise Authorization (RMA)" value="A return merchandise authorization (RMA), return authorization (RA) or return goods authorization (RGA) is a part of the process of returning a product to receive a refund, replacement, or repair during the product\'s warranty period. Both parties can decide how to deal with it, which could be refund, replacement or repair." %}
+{%include terms/tr_id.html name="Qualified Vendor List (QVL)" value="List supplied by a system or motherboard manufacturer of parts tested and confirmed by that manufacturer to work in their hardware. " %}
 {%endcapture%}
 {% include terms/table.html content=hardware_terms %}
 
@@ -56,12 +58,12 @@ last_modified_date: 2022-08-02
 {%endcapture%}
 {% include terms/table.html content=malware_terms %}
 
-## Disks/Storage
+<h3>Disks/Storage</h3>
 
 {%capture disks_terms %}
 {%include terms/tr_id.html name='Hard Disk Drive (HDD)' value='A storage device with spinning platters that is very cheap.' %}
 {%include terms/tr_id.html name='Solid State Drive (SSD)' value='A storage device with no moving parts that is very fast.' %}
-{%include terms/tr_id.html name='Redundant Array of Inexpensive Disks (RAID)' value='A set of storage drives which are combined to make them larger, moroe reliable, or faster.' %}
+{%include terms/tr_id.html name='Redundant Array of Inexpensive Disks (RAID)' value='A set of storage drives which are combined to make them larger, more reliable, or faster.' %}
 {%include terms/tr_id.html name='Master Boot Record (MBR)' value='The partition table format that precedes GPT. Also called the DOS/MSDOS partition table.' %}
 {%include terms/tr_id.html name='GUID Partition Table (GPT)' value='A newer (better) partition table.' %}
 {%include terms/tr_id.html name='Bit (b)' value='A single 1 or 0 used by your computer.' %}
@@ -81,10 +83,14 @@ last_modified_date: 2022-08-02
 
 {%capture networking_terms %}
 {%include terms/tr_id.html name='Internet Protocol (IP)' value='The primary protocol used to transfer data over the Internet.' %}
-{%include terms/tr_id.html name='IP address' value='A series of numbers that identifies a computer on the Internet.' %}
 {%include terms/tr_id.html name='IPv4 address' value='A format of IP addresses, consisting of 4 sets numbers from 0-255 (e.g. 10.15.1.58)' %}
 {%include terms/tr_id.html name='IPv6 address' value='A format of IP addresses, consisting of 8 sets of hexadecimal numbers from 0-FFFF (e.g. fe80:3b71:ed9b:924e:f925:dfad:964a:5d26).' %}
+{%include terms/tr_id.html name='Media Access Control (MAC) address' value='A MAC address (hardware or physical address) is a unique, 12-character alhanumeric attribute that is used to identify individual electronic devices on a network.' %}
 {%include terms/tr_id.html name='Domain Name System (DNS)' value='The protocol that maps domains to IP addresses.' %}
+{%include terms/tr_id.html name='Hub' value='A hub is a repeater and is one of the simplest ways to create a network. A message sent by one host is sent to all other hosts. It operates at Layer 1 of the OSI model.' %}
+{%include terms/tr_id.html name='Bridge' value='A bridge is more intelligent than a hub. Packets sent are processed based on the MAC address (Hardware Address) inside them. They are forwarded only to their addressed destinations. It operates at Layer 2 of the OSI model.' %}
+{%include terms/tr_id.html name='Switch' value='A switch is similar to a bridge, the biggest difference between them being that bridges use software for their forwarding, while switches use hardware (lower latency in processing). Bridges only forward using one method (store and forward) while switches have multiple options.' %}
+{%include terms/tr_id.html name='Router' value='A router is a device that connects two or more networks or subnetworks. It serves two primary functions: managing traffic between networks by forwarding data packets to their intended IP addresses and allowing multiple devices to use the same Internet connection. It operates at Layer 3 of the OSI model.' %}
 {%endcapture%}
 {% include terms/table.html content=networking_terms %}
 
@@ -93,13 +99,12 @@ last_modified_date: 2022-08-02
 {%capture other_terms %}
 {%include terms/tr_id.html name='Hexadecimal (hex)' value='Base-16 numbers, consisting of digits 0-F.' %}
 {%include terms/tr_id.html name='Microsoft (MS/MSFT)' value='The company that makes Windows and other products.' %}
-{%include terms/tr_id.html name='Return Merchandise Authorization (RMA)' value='A return merchandise authorization (RMA), return authorization (RA) or return goods authorization (RGA) is a part of the process of returning a product to receive a refund, replacement, or repair during the product\'s warranty period. Both parties can decide how to deal with it, which could be refund, replacement or repair.' %}
 {%endcapture%}
 {% include terms/table.html content=other_terms %}
 
 <!-- Note: It is debated whether kilobytes/megabytes//gigabytes/terabytes should be in multiples of 1000 or 1024. You should use context to decide which application uses which multiple.-->
 
-## Commands
+<h2>Commands</h2>
 
 <h3>Universal</h3>
 
@@ -138,7 +143,7 @@ last_modified_date: 2022-08-02
 {%endcapture%}
 {%include terms/ctable.html content=windows_commands %}
 
-These are just the major ones, [more here](https://support.microsoft.com/en-us/help/12445/windows-keyboard-shortcuts).
+These are just the major ones, <a href="https://support.microsoft.com/en-us/help/12445/windows-keyboard-shortcuts">more here</a>.
 
 <h3>Linux-specific</h3>
 

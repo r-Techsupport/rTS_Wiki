@@ -24,7 +24,7 @@ Sometimes as the user you will run into an issue with your computer. Before reac
 
 Similarly to shutting down your computer, you can do this by hitting the start button, from there hit the power icon and select *restart*. Another way is hitting the reboot button on your computer. 
 
-This is a common first step to troubleshooting and will fix some problems that you are experiencing. Otherwise you can view our other guide that goes into a little more details about problems [here](/basic-troubleshooting.md) or check out some [general guides](/docs/guides).
+This is a common first step to troubleshooting and will fix some problems that you are experiencing. Otherwise you can view our other guide that goes into a little more details about problems [here](/docs/learning/basic-troubleshooting.md) or check out some [general guides](/docs/guides).
 
 ## Installing Programs
 Installing programs is a little bit more work. Navigate to the website of the program you would like to install and download the latest version from there. Then once you download the program you will have to run the setup or .exe for the program to install. Afterwards you are free to use that program. 

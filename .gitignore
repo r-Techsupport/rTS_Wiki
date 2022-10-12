@@ -4,3 +4,5 @@ _site/
 .jekyll-metadata
 .DS_STORE
 *.swp
+.obsidian/
+.trash/
