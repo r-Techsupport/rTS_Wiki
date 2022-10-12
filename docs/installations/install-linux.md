@@ -83,10 +83,18 @@ After you’ve downloaded the distro of your choice, you should have an ISO file
 
 ### Linux
 
+1. Download and run [Etcher](https://www.balena.io/etcher/)
+2. Select your downloaded ISO
+3. Select your target drive
+4. Click "Flash" and wait for it to finish.
+
+<details markdown="1">
+<summary>Alternative steps, without using Etcher</summary>
 1. First, without the flash drive inserted, run `lsblk` in the Terminal.
 2. Plug in the flash drive and run `lsblk` again. You can do this to identify the drive device path. The device path is usually in the form of `/dev/sdX`, where X is a letter (example: `/dev/sdb`).
 4. Use `dd if=/path/to/image.iso of=/dev/sdX` to create a bootable drive from the ISO.
 5. Wait until dd finishes. dd does not display progress, but the terminal will display the next prompt when it's done.
+</details>
 
 Alternatively, you can follow our [Ventoy guide](/docs/guides/ventoy) to make one flash drive that can boot multiple ISO files.
 
