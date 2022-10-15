@@ -9,7 +9,7 @@ last_modified_date: 2022-10-04
 ---
 
 # The List of Bad Ideas
-****Since Windows was last **clean installed** (using a USB and wiping everything), have you done any of the following:****
+**Since Windows was last clean installed (using a USB and wiping everything), have you done any of the following:**
 ## Hardware:
 
 1. Had any major **hardware changes** (Replace / addition / upgrade / removal)
