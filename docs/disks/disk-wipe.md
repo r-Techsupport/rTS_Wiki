@@ -39,7 +39,7 @@ This relies on the application `nvme-cli`. It might not be included on all Linux
 	* Example: `sudo nvme format -s2 /dev/nvme0n1` **Choosing the wrong disk will cause data loss**
     * Some manufacturers lock their drives. If you get an invalid field error, you will have to use a tool from your SSDs manufacturer. When doing this, make sure you do a secure erase.
 
-## Physcial destruction
+## Physical destruction
 Physical destruction is a perfectly acceptable method to ensure data cannot be read from a disk. This can be accomplished by either smashing the disk with a hammer or opening it and placing it in salt water to rust.
 
 > DO NOT SMASH AN OPEN DISK.
