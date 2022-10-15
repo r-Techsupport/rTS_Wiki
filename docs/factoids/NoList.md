@@ -5,10 +5,13 @@ nav_exclude: false
 has_children: false
 parent: Factoids
 search_exclude: false
-last_modified_date: 2022-10-04
+last_modified_date: 2022-10-14
 ---
 
 # The List of Bad Ideas
+
+> ❗Please notify the channel you were sent this on which of the ones listed you have done. This will further assist on identifying the root cause of your problem.
+
 **Since Windows was last clean installed (using a USB and wiping everything), have you done any of the following:**
 ## Hardware:
 
