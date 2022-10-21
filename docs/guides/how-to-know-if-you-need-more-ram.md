@@ -49,3 +49,6 @@ If both the Free and Standby sections are small, then your computer is running v
 If someone were to show this display and ask if they need more RAM then the answer would be no. The person has more installed than the machine is using. In this example the machine is only actively using ~3 GB with another ~3 GB on cache/standby, and ~2 GB doing nothing at all. Having 4 GB in the machine would be acceptable, and having 6 GB would be just enough for this session to run at its optimal speed. It’s got 8 GB installed (see the line highlighted in yellow), so ~2 GB is ‘wasted’ because Windows simply has no use for it when running only these programs. Adding more RAM to this machine, for this workload, would be nothing but a waste of money.
 
 A well-optimized computer will have a large amount of “Standby” and a decent amount of “Free” when running its typical workload.
+
+
+*This guide is copied from [SlickDeals](https://slickdeals.net/e/4922990-how-to-know-if-you-need-more-ram) and was originally written by /u/jeffbx*
