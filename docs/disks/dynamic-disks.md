@@ -6,12 +6,12 @@ has_children: false
 parent: Disks
 has_toc: false
 search_exclude: false
-last_modified_date: 2022-08-27
+last_modified_date: 2022-10-23
 ---
 
 # Dynamic Disks
 
-> ❗ Any method to accomplish these tasks without data-loss are not supported. The lazy "safe" is never safe.
+> ❗ Any method to accomplish these tasks without data-loss are not supported. The lazy "safe" method is never safe.
 
 Dynamic disks allows you to combine multiple disks into one, allowing you more space on a single drive letter. If you need to upgrade storage it is easy to add another disk without much trouble. 
 

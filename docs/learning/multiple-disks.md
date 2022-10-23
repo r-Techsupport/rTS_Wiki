@@ -5,9 +5,8 @@ nav_exclude: false
 has_children: false
 parent: Learning
 search_exclude: false
-last_modified_date: 2022-10-11
+last_modified_date: 2022-10-23
 ---
-
 # How to Use Multiple Disks in Windows
 
 > ❗ All guides here are supplied for the purpose of offering safe methods to accomplish each goal. That does not mean the goal is safe for all users. All disks fail, we encourage users to be proactive with protecting their data by creating a [personal backup strategy](/docs/backups) no matter what disk layout is chosen.
@@ -25,7 +24,7 @@ To get started on a brand new computer with no operating system, we suggest **re
 
 Then, you will need a flash drive with a bootable OS installed on it. You can follow [our guide](/docs/installations) for creating that USB, and fully installing the OS. After installing the OS to the correct disk, you can now plug back in the other disks.
 
-fter the OS is installed you can follow the section below on [Adding a disk to an existing OS](#adding-a-disk-to-an-existing-os).
+After the OS is installed you can follow the section below on [Adding a disk to an existing OS](#adding-a-disk-to-an-existing-os).
 
 ### Adding a disk to an existing OS
 The first step when setting up a new storage device is to install it physically into the computer. 
