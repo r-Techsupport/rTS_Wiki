@@ -34,6 +34,7 @@ Windows used to perform two annual updates before 2022, named accordingly `2xHx`
 |Win10|~~20H2~~|2022-05-10|
 |Win10|21H1|2022-12-13|
 |Win10|21H2|2023-06-13|
+|Win10|22h2|2024-05-14|
 |Win11|21H2|2023-10-10|
 |Win11|22h2|2024-10-14|
 
