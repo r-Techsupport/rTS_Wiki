@@ -40,23 +40,9 @@ You may also use the official Xubuntu ISO and load your own tools as needed.
 [Download](https://xubuntu.org/download/)
 
 ## 2. Creating bootable media
-This will require a USB that is at least the size of the ISO you downloaded.
+This will require a USB drive that is at least the size of the ISO you downloaded.
 
-**All methods of creating boot media are destructive and will WIPE the USB flasdrive or external disk.**
-
-### Windows
-1. Download and run [Rufus](https://rufus.ie/)
-2. Select “ISO Image” and then browse for the ISO image.
-3. Select which flash drive you want to put the installer on.
-4. Select the target system type, `GPT/UEFI` or `MBR/BIOS` 
-	* For modern systems `GPT/UEFI` is preferred. For legacy systems use `MBR/BIOS`
-5. Click “Start” and wait for it to finish.
-
-### MacOS
-1. Download and run [Etcher](https://www.balena.io/etcher/)
-2. Select your downloaded ISO
-3. Select your target drive
-4. Click "Flash" and wait for it to finish.
+{% include embeds/create-linux-install-media.md %}
 
 ### Linux
 1. Run `lsblk` to list all disks in your system, identify your flash drive by size. It will look something like `/dev/sd[letter]`
