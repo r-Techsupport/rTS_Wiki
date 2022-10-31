@@ -5,7 +5,7 @@ nav_exclude: false
 has_children: false
 parent: Learning
 search_exclude: false
-last_modified_date: 2022-10-12
+last_modified_date: 2022-10-30
 ---
 
 # Getting Started With a Computer
@@ -15,21 +15,21 @@ This article will be going over some of the basics with using a computer. In thi
 ## Shutting down your computer
 You've had a nice game with your friends and want to go to bed, so *you shut down your computer*
 
-You can do this by hitting the start button, from there hit the power icon and press the *shut down option*. 
+You can do this by hitting the start button. From there, hit the power icon and press the *shut down option*. 
 
-Alternatively, you can shut down through CMD by typing and entering `shutdown /s`. This will act as if you pressed the shut down option.
+Alternatively, you can shut down through CMD by typing and entering `shutdown /s`. Running this command will make your computer act as if you pressed the shut down option.
 
 ## Rebooting 
-Sometimes as the user you will run into an issue with your computer. Before reaching out for help try a reboot to see if that fixes the issue. 
+Sometimes as the user you will run into an issue with your computer. Before reaching out for help, try a reboot to see if that fixes the issue. 
 
-Similarly to shutting down your computer, you can do this by hitting the start button, from there hit the power icon and select *restart*. Another way is hitting the reboot button on your computer. 
+Similarly to shutting down your computer, you can do this by hitting the start button. From there, hit the power icon and select *restart*. Another way is hitting the reboot button on your computer. 
 
-This is a common first step to troubleshooting and will fix some problems that you are experiencing. Otherwise you can view our other guide that goes into a little more details about problems [here](/docs/learning/basic-troubleshooting.md) or check out some [general guides](/docs/guides).
+This is a common first step to troubleshooting and will fix some problems that you are experiencing. Otherwise you can view our other guide that goes into a little more details about problems [here](/docs/learning/basic-troubleshooting) or check out some [general guides](/docs/guides).
 
 ## Installing Programs
 Installing programs is a little bit more work. Navigate to the website of the program you would like to install and download the latest version from there. Then once you download the program you will have to run the setup or .exe for the program to install. Afterwards you are free to use that program. 
 
-For example, a program that you might want to install would be Discord which you can find [here](https://discord.com/). You would click the download button and run the .exe file you just downloaded to install. You would do this with any program that you wanted to install. 
+For example, a program that you might want to install would be *Discord* which you can find [here](https://discord.com/). You would click the download button and run the .exe file you just downloaded to install. You would do this with any program that you wanted to install.
 
 > ❗Avoid downloading software from file sharing sites like Softpedia. Their releases are rarely official and often harbor **malicious software** instead of a clean legitamate product.
 
@@ -112,6 +112,10 @@ Refer to the matrix below to identifier what product you need the drivers for, t
 ## Ending Processes
 Ending a process that might not be responding is a task everyone should know. 
 
-Open Task Manager by pressing the `ctrl + shift + esc` keys on your keyboard at once. This should open task manager to the processes tab which is where to be to end a process. 
+Open Task Manager by pressing the `ctrl + shift + esc` keys on your keyboard at once. This should open Task Manager.
 
-From there, click on the process you want to end. Afterwards, in the bottom right corner of the window, hit the end task button. Be careful when you are in here. Ending background processes could cause more issues and would require a reboot to fix. 
+Next, go to the *processes* tab on Task Manager. It should already be on the tab, if not, move over to it. This is where we will end a process.
+
+From there, select the process you want to end by left clicking on it. Afterwards, hit the *end task* button. 
+
+**Be careful when you are in here.** Ending background processes could cause more issues and would require a reboot to fix. 
