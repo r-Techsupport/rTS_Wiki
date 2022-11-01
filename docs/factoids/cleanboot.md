@@ -17,7 +17,7 @@ This step identifies if the issue is with Windows itself, or a third-party progr
 
 ## How to Cleanboot
 
-1. Open the run window with Windows Key + R
+1. Open the run window with Windows Key + R.
 
 2. Type `msconfig` and press Enter.
 

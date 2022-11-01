@@ -13,7 +13,7 @@ last_modified_date: 2022-10-31
 ## What is DDU?
 Display Driver Uninstaller is a program that can fully wipe display/audio drivers, to troubleshoot various issues.
 
-> DDU does not erase any personal files. It only wipes the selected driver(s), and any associated info, such as display color profiles, settings, etc
+> DDU does not erase any personal files. It only wipes the selected driver(s), and any associated info, such as display color profiles, settings, etc.
 
 ## Installing DDU
 {% include embeds/ddu_install.md %}
