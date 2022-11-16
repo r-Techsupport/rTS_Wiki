@@ -21,7 +21,7 @@ To start troubleshooting using HWiNFO, follow this guide. It will walk you thoug
 
     **All versions will work the same. You won't have to install the portable version.**
 
-2. Download Prime95 from [here (64-bit)](http://www.mersenne.org/ftp_root/gimps/p95v308b9.win64.zip) or [here (32-bit)](http://www.mersenne.org/ftp_root/gimps/p95v307b9.win32.zip)
+2. Download Prime95 from [here (64-bit)](https://www.mersenne.org/ftp_root/gimps/p95v308b9.win64.zip) or [here (32-bit)](https://www.mersenne.org/ftp_root/gimps/p95v307b9.win32.zip)
 
     **If you are using chrome, you may need to copy-paste these links into a new tab, or right click and "save link as".**
 
