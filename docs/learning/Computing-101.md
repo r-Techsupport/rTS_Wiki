@@ -40,14 +40,14 @@ For example, a program that you might want to install would be *Discord* which y
 - CNET
 - Softonic
 
-## Unziping a Folder
+## Unziping/extracting a Folder
 1. Navigate to the spot where the zip folder is located. 
 
-![zipFolder.png](/assets/Basic-Computing/zipFolder.png)
+    ![zipFolder.png](/assets/Basic-Computing/zipFolder.png)
 
 2. Right click on the name of the folder then hit `Extract All`.
 
-![Extract.png](/assets/Basic-Computing/Extract.png)
+    ![Extract.png](/assets/Basic-Computing/Extract.png)
 
 3. Now you have a new folder with the unzipped contents. 
 
