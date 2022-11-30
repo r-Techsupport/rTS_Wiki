@@ -44,14 +44,6 @@ This will require a USB drive that is at least the size of the ISO you downloade
 
 {% include embeds/create-linux-install-media.md %}
 
-### Linux
-1. Run `lsblk` to list all disks in your system, identify your flash drive by size. It will look something like `/dev/sd[letter]`
-
-**The following command is dangerous. Ensure it is run against the correct disk**
-
-2. Use `dd if=/path/to/image.iso of=/dev/sd[letter]` to create a bootable drive from the ISO.
-3. Wait until dd finishes. dd does not display progress, but when it finishes, the terminal will display the next prompt.
-
 ## 3. Boot the live media
 1. Press your 'Boot menu' key when you power on the machine to access your boot options.
 	* You may need to go through BIOS and change boot priority if you cannot find or hit the boot options key during boot.
