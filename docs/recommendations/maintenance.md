@@ -29,6 +29,8 @@ Windows can natively handle most drivers during install, or directly from Device
 ## Defrag
 **Only use Windows built-in tools.** All third party tools, such as defraggler, are considered PUPs.
 
+> ❗ Do not use defragmenting tools on SSDs. This will cause excessive wear and reduce their life.
+
 ## Advanced Uninstallers
 #### Revo Uninstaller
 This is one of the few maintenance tools we can recommend, and it is for a specific need. If you ever have an app break and continue to misbehave after a reinstall you may need to clear out more items than Windows natively does. 
