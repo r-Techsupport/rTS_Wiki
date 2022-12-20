@@ -45,8 +45,14 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 	[![Windows 11-2021-10-05-15-20-37.png](/assets/install-11/windows-11-2021-10-05-15-20-37.png)](/assets/install-11/windows-11-2021-10-05-15-20-37.png)
     
 	[![Windows 11-2021-10-05-15-11-30.png](/assets/install-11/windows-11-2021-10-05-15-11-30.png)](/assets/install-11/windows-11-2021-10-05-15-11-30.png)
+	
+    <details markdown="1">
+    <summary markdown=span>
+    
+    **Error: Windows cannot be installed on this disk. The selected disk has an MBR partition table.**
+    
+    </summary>
 
-    > #### MBR Issues
     > If you receive an error about your disk being MBR like this:
     >
     > [![the-selected-disk-has-an-mbr-partition-table-01.png](/assets/install-11/the-selected-disk-has-an-mbr-partition-table-01.png)](/assets/install-11/the-selected-disk-has-an-mbr-partition-table-01.png)
@@ -79,6 +85,8 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
     > 
     > You can exit the CMD and click `next` again.
     > [![Windows 11-2021-10-05-15-09-40.png](/assets/install-11/windows-11-2021-10-05-15-09-40.png)](/assets/install-11/windows-11-2021-10-05-15-09-40.png)
+
+    </details>
 
 ## Finishing up
 

@@ -40,6 +40,21 @@ Images should be put in `/assets/<page_name>/<image.png>` and are referenced lik
 ## Disk Managment
 ```
 
+## Embeds
+```
+## Installing DDU
+{% include embeds/ddu_install.md %}
+```
+
+## Collapsible section 
+<details markdown="1">
+<summary>Caption that will be written</summary>
+
+Everything in here will be collapsed
+
+</details>
+
+
 ## Testing Locally
 1. Ensure you have `ruby` and `gem` installed.
 2. `gem install jekyll bundler`
