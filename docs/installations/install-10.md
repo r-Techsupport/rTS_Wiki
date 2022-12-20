@@ -41,7 +41,8 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-10
     ![10-4.png](/assets/install-10/10-4.png)
 
     <details markdown="1">
-    <summary markdown=span>**Error: Windows cannot be installed on this disk. The selected disk has an MBR partition table.**
+    <summary markdown=span>
+    **Error: Windows cannot be installed on this disk. The selected disk has an MBR partition table.**
     
     </summary>
 
