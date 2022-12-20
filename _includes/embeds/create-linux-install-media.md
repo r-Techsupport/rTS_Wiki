@@ -1,3 +1,4 @@
+{% include embeds/rufus.md %}
 
 ### macOS
 {: .no_toc}
