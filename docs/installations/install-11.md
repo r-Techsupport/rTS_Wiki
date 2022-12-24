@@ -48,7 +48,6 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 	
     <details markdown="1">
     <summary markdown=span>
-    
     **Error: Windows cannot be installed on this disk. The selected disk has an MBR partition table.**
     
     </summary>
