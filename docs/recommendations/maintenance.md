@@ -6,7 +6,7 @@ nav_order: 4
 has_children: false
 parent: Software We Recommend
 search_exclude: false
-last_modified_date: 2022-06-15
+last_modified_date: 2022-12-15
 redirect_from: /books/software-we-recommend/page/windows-maintenance
 ---
 # Windows Maintenance
@@ -28,6 +28,8 @@ Windows can natively handle most drivers during install, or directly from Device
 
 ## Defrag
 **Only use Windows built-in tools.** All third party tools, such as defraggler, are considered PUPs.
+
+> ❗ Do not use defragmenting tools on SSDs. This will cause excessive wear and reduce their life.
 
 ## Advanced Uninstallers
 #### Revo Uninstaller

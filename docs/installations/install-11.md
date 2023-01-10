@@ -47,7 +47,10 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 	[![Windows 11-2021-10-05-15-11-30.png](/assets/install-11/windows-11-2021-10-05-15-11-30.png)](/assets/install-11/windows-11-2021-10-05-15-11-30.png)
 	
     <details markdown="1">
-    <summary>Error: Windows cannot be installed on this disk. The selected disk has an MBR partition table.</summary>
+    <summary markdown=span>
+    **Error: Windows cannot be installed on this disk. The selected disk has an MBR partition table.**
+    
+    </summary>
 
     > If you receive an error about your disk being MBR like this:
     >
