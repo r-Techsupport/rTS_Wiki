@@ -29,7 +29,7 @@ Windows used to perform two annual updates before 2022, named accordingly `2xHx`
 
 |OS|Name|Date EOL|
 |-|-|-|
-|Win8.1|8.1*|2023-1-10|
+|Win8.1|~~8.1*~~|2023-1-10|
 |Win10|~~2004~~|2021-12-14|
 |Win10|~~20H2~~|2022-05-10|
 |Win10|~~21H1~~|2022-12-13|
