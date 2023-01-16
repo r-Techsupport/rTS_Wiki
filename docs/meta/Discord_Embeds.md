@@ -4,7 +4,6 @@ title: Enabling Discord Embeds
 nav_exclude: false
 has_children: false
 parent: Meta
-grand_parent: Docs
 has_toc: true
 search_exclude: false
 last_modified_date: 2023-01-16
