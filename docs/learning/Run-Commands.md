@@ -1,3 +1,13 @@
+---
+layout: default
+title: Windows Run Dialog Commands
+nav_exclude: false
+has_children: false
+parent: Learning
+search_exclude: false
+last_modified_date: 2023-01-17
+---
+
 | Accessibility Options                                            | utilman or control access.cpl              |
 | ---------------------------------------------------------------- | ------------------------------------------ |
 | Add Hardware Wizard                                              | hdwwiz                                     |
