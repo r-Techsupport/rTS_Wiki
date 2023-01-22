@@ -15,15 +15,6 @@ redirect_from: /books/how-to-and-guides/page/running-memtest86
 Memtest86+ is a small tool that allows you to test memory for issues.
 
 ## 1. Obtaining media
-
-### rTechSupport Rescue Media
-Our rescue media has Memtest86+ built in, as a boot option.
-
-[Download](https://github.com/r-Techsupport/rTS_Debian/releases/latest/download/rTS_RescueMedia.iso)
-
-[Source files for Debian build](https://github.com/r-Techsupport/rTS_Debian)
-
-### Official media
 You may also use the [official Memtest86+ ISO](https://memtest.org/download/v6.00/mt86plus_6.00_32.iso.zip), or the [install tool for Windows](https://memtest.org/download/v6.00/mt86plus_6.00_USB_Installer.exe).
 
 ## 2. Creating bootable media
