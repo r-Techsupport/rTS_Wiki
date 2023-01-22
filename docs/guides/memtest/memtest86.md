@@ -24,14 +24,7 @@ Follow the [Linux media guide](/docs/installations/install-linux#step-2-creating
 
 ## Run Memtest86+
 
-**Both of these media need to be booted in Legacy/CSM mode. They will not work when loaded in UEFI mode**
-
-### rTechsupport Rescue Media
-If you booted the rTechSupport Rescue Media then you will be able to choose Memtest86+ on the welcome screen.
-
-![memtest.png](/assets/memtest/rts_memtest.png)
-
-### Official Memtest86+ media
+**This media needs to be booted in Legacy/CSM mode. They will not work when loaded in UEFI mode**
 If you used the official Memtest86+ media, it will boot straight into the test.
 
 ## 3. Results
