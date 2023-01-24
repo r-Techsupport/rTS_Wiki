@@ -1,10 +1,10 @@
 ---
 layout: default
 title: The List of Bad Ideas
-nav_exclude: false
+nav_exclude: true
 has_children: false
 parent: Factoids
-search_exclude: false
+search_exclude: true
 last_modified_date: 2022-10-14
 ---
 
