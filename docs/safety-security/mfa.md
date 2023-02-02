@@ -41,6 +41,8 @@ We recommend using something that can be backed up or synchronized instead of a 
     * Plugins are available for this manager to also store MFA.
 * Bitwarden
     * Under the Pro plan you can keep TOTP seeds in your manager.
+* Your password manager
+    * Check if your choice of password manager supports TOTP out of the box. Typically this can be a field you can add to your entry, and sometimes named "One-Time Password" or something else.
 
 ## Hardware tokens
 Hardware tokens are typically keyfobs, USB devices, or smartcards. For the purpose of this guide we will only talk about keyfobs and USB devices, since smartcards almost never are used by consumers. 
