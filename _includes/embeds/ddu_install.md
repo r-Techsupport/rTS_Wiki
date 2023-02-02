@@ -11,4 +11,4 @@ A new folder containing `Display Driver Uninstaller.exe` will be created.
 
 3. [**Boot in safe mode**](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode) 
 
-4. Open `Display Driver Uninstaller.exe` from the newly created folder in the previous step.
+4. Open `Display Driver Uninstaller.exe` from the newly created folder in Step 2.
