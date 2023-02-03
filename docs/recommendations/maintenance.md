@@ -33,7 +33,7 @@ Defragging, or defragmenting, is only relevant on spinning platter disks, colloq
 
 > ❗ **Do not use defragmenting tools on SSDs.** An SSD has near-instant seek times regardless of underlying fragmentation, so forcing a defragement in third-party programs will cause excessive wear and reduce their life by needlessly rewriting data.
 
-Trim, or trimming, is a SSD's alternative to defragmentation and is only used to help inform the SDD which blocks that the filesystem has freed and aid the wear-leveling, extending the life of the SSD. The OS typically handles issuing trim commands, but can be inspected and manually invoked on Windows with the built in Drive Optimizer utility.
+Trim, or trimming, is a SSD's alternative to defragmentation and is only used to help inform the SDD which blocks that the filesystem has freed and aid the wear-leveling, extending the life of the SSD. The OS typically handles issuing trim commands, but can be inspected and manually invoked on Windows with the built-in Drive Optimizer utility.
 
 On Windows specifically, you do not need to ritually run Drive Optimizer as Windows will schedule periodic defragging and trims (or "optimizing" in Microsoft's vocabulary) when your computer is idle.
 
