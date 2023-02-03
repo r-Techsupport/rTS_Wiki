@@ -1,5 +1,14 @@
 # Understanding DNS and How to Revert to Standard DNS Providers
-
+---
+layout: default
+title: "Domain Name System"
+nav_exclude: false
+has_children: false
+parent: Networking
+has_toc: true
+search_exclude: false
+last_modified_date: 2023-02-03
+---
 ## What is DNS?
 
 DNS, or the Domain Name System, is the system that translates human-readable domain names (e.g. www.google.com) into machine-readable IP addresses (e.g. 216.58.194.174). It acts as a sort of phonebook for the internet, allowing users to access websites and other online resources using easy-to-remember names instead of difficult-to-remember numerical addresses.
@@ -40,4 +49,3 @@ The process of reverting to a standard DNS provider varies depending on the oper
 ### Linux
 
 The specific steps to change the DNS server in Linux depend on the distribution you are using. For most distributions, you can change the DNS server by editing the `/etc/resolv.conf` file and adding the preferred DNS server addresses for the provider you want to use (e.g. Google's DNS servers are 8.8.8.8 and 8.8.4.4, Cloudflare's are 1.1.1.1 and 1.0.0.1, and OpenDNS's are 208.67.222.222 and 208.67.220.220).
-
