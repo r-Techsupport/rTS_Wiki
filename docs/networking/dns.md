@@ -1,4 +1,3 @@
-# Understanding DNS and How to Revert to Standard DNS Providers
 ---
 layout: default
 title: "Domain Name System"
@@ -9,6 +8,8 @@ has_toc: true
 search_exclude: false
 last_modified_date: 2023-02-03
 ---
+# Understanding DNS and How to Revert to Standard DNS Providers
+
 ## What is DNS?
 
 DNS, or the Domain Name System, is the system that translates human-readable domain names (e.g. www.google.com) into machine-readable IP addresses (e.g. 216.58.194.174). It acts as a sort of phonebook for the internet, allowing users to access websites and other online resources using easy-to-remember names instead of difficult-to-remember numerical addresses.
