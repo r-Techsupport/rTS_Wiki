@@ -1,5 +1,16 @@
-| Accessibility Options                                            | utilman or control access.cpl              |
+---
+layout: default
+title: Windows Run Dialog Commands
+nav_exclude: false
+has_children: false
+parent: Learning
+search_exclude: false
+last_modified_date: 2023-01-17
+---
+
+| Application or panel to be accessed                              | Command to run in Windows+R                |
 | ---------------------------------------------------------------- | ------------------------------------------ |
+| Accessibility Options                                            | utilman or control access.cpl              |
 | Add Hardware Wizard                                              | hdwwiz                                     |
 | Programs and Features                                            | appwiz.cpl                                 |
 | Administrative Tools                                             | control admintools                         |
