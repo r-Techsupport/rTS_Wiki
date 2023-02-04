@@ -20,7 +20,7 @@ last_modified_date: 2022-10-09
 
 1. **Download** the [Get-Specs](https://github.com/r-Techsupport/Get-Specs/releases/latest/download/Get-Specs.zip) program.
 
-2. [Extract](/docs/learning/Computing-101#unziping-a-folder) the zip file to **your desktop**.
+2. [Extract](/docs/learning/Computing-101#unzipingextracting-a-folder) the zip file to **your desktop**.
 
 3. **Run** the file named "Specs.cmd", if a User Account Control window pops up, press Yes.
 
