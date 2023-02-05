@@ -33,7 +33,7 @@ Create your Markdown file (`.md`) in the respective category in `docs/`.
 
 ## FrontMatter Header
 
-**The FrontMatter Header contains all of the metadata of the page**, including title, parent category, and date of last modification. This should always be placed at the **first line**.
+**The FrontMatter Header contains all of the metadata of the page**, including title, parent category, and date of last modification. **This is required** and should always be placed on the **first line of the file**.
 
 Here is the header for this specific page:
 
@@ -133,3 +133,25 @@ and to other pages with
 `[bsod](/docs/factoids/bsod)`
 
 [bsod](/docs/factoids/bsod)
+
+### Collapsible Sections
+
+If you want the content to be collapsible, add:
+
+```
+<details markdown="1">
+
+    <summary>Caption that will be written</summary>
+
+    Everything in here will be collapsed
+
+</details>
+```
+
+<details markdown="1">
+
+    <summary>Caption that will be written</summary>
+
+    Everything in here will be collapsed
+
+</details>
