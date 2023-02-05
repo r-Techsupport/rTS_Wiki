@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Domain Name System"
+title: Domain Name System
 nav_exclude: false
 has_children: false
 parent: Networking
@@ -19,17 +19,16 @@ last_modified_date: 2023-02-03
 
 ## List of DNS Providers
 
-### You can use any of these depending on your Personal Preference.  
+*You can use any of the following depending on your Personal Preference.*
 
-* Google Public DNS: 8.8.8.8 and 8.8.4.4
-* Cloudflare: 1.1.1.1 and 1.0.0.1
-* OpenDNS: 208.67.222.222 and 208.67.220.220
-* Quad9: 9.9.9.9 and 149.112.112.112
+* **Google Public DNS:** 8.8.8.8 and 8.8.4.4
+* **Cloudflare:** 1.1.1.1 and 1.0.0.1
+* **OpenDNS:** 208.67.222.222 and 208.67.220.220
+* **Quad9:** 9.9.9.9 and 149.112.112.112
 
 ## How to Revert to Standard DNS Providers
 
 The process of reverting to a standard DNS provider varies depending on the operating system you are using. Here are the steps for some common operating systems:
-
 
 ### Windows
 
