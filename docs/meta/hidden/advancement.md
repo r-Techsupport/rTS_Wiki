@@ -116,7 +116,7 @@ The bare minimum requirements for becoming trusted are:
 
 Voting can occur before the 30-day mark, but the role cannot be given until on or after the 30-day mark.
 
-A vote must be conducted before advancement.
+A vote must be conducted before advancement. <br>
 For this vote, the requirements for passing are:
 * Agreement by at least 40% of all moderators **OR**
 * Agreement by at least 40%, but no less than 4, of all voting moderators **OR**
@@ -162,7 +162,7 @@ The bare minimum requirements for becoming moderator are:
 
 Voting can occur prior to these requirements being met, but the role cannot be given until the requirements are met.
 
-A vote must be conducted prior to advancement.
+A vote must be conducted prior to advancement. <br>
 For this vote, the requirements for passing are:
 * Agreement by at least 65% of all moderators **OR**
 * Agreement by at least 65%, but no less than 6, of all voting moderators
@@ -189,7 +189,7 @@ If this person is an active moderator and has been a moderator for at least 2 mo
 * Agreement by at least 90% of all moderators **OR**
 * Agreement by at least 90%, but no less than 8, of all voting moderators
 
-In this vote, the initiating moderator can choose one of two cases:
+In this vote, the initiating moderator can choose one of two cases: <br>
 1) They select what action should happen when the vote finishes (Demote, remove all roles, kick, ban, etc)
 2) They have people vote on what action should happen
 
@@ -258,7 +258,7 @@ Any formal vote is rejected if the following conditions are met, regardless of i
 If the initiating moderator leaves prior to the vote being concluded, it is the responsibility of anyone with the "super op" role to claim the initiating role, or assign someone else to be the initiator for the purposes of this vote
 
 ### What happens during a tie
-If a perfect tie occurs, a run off election between the top two choices must occur. This election lasts for 24 hours, and everyone who didn't vote for the top two options should be notified they need to make a new selection.
+If a perfect tie occurs, a run off election between the top two choices must occur. This election lasts for 24 hours, and everyone who didn't vote for the top two options should be notified they need to make a new selection. <br>
 People who did not vote initially are welcome to vote at this stage.
 
 If after that runoff, there is still a perfect tie, the initiating moderators choice is the winner. <br>
@@ -284,7 +284,7 @@ The following roles must be granted back only with a passing informal vote: <br>
 "Trusted" **if** "Trusted" was NOT previously the hightest ranking staff role <br>
 "Regular" **AND** "Helper" **if** "Helper" **OR** "Regular" was previously the highest-ranking staff role
 
-The following roles may be granted back without any voting:
+The following roles may be granted back without any voting: <br>
 "Regular" **AND** "Helper" **if** "Helper" was lower than the previously highest-ranking staff role
 
 ### People deciding they don't want the promotion
