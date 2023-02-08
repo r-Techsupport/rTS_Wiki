@@ -271,7 +271,7 @@ Should they come back, a new vote must be started.
 ### People leaving on their own and asking for roles back
 In the event an individual leaves on their own and asks for roles back, the following roles may be granted without a vote:
 
-The following roles cannot be granted back immediately, and must have a waiting period of 30 days:v
+The following roles cannot be granted back immediately, and must have a waiting period of 30 days
 "super op"
 
 The following roles must be granted back only with a passing formal vote: <br>
