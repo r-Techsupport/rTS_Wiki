@@ -5,7 +5,7 @@ nav_exclude: false
 nav_order: 8
 has_children: false
 parent: Information
-search_exclude: true
+search_exclude: false 
 last_modified_date: 2023-02-09
 ---
 
