@@ -2,7 +2,6 @@
 layout: default
 title: Sharing a Directory
 nav_exclude: false
-nav_order: false
 has_children: false
 parent: General Guides
 search_exclude: false
