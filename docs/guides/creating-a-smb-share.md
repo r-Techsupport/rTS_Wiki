@@ -2,9 +2,8 @@
 layout: default
 title: Sharing a Directory
 nav_exclude: false
-nav_order: false
 has_children: false
-parent: Guides
+parent: General Guides
 search_exclude: false
 last_modified_date: 2023-02-03
 ---
@@ -35,7 +34,7 @@ If you are using Microsoft accounts, you can share a directory with other Micros
 7. Click Permissions.
 8. Add the Microsoft account users that you want to share with, and set their permissions as desired.
 
-## The Network Centere
+## The Network Center
 
 The network center can sometimes be unreliable, especially when sharing a directory over a local network. If possible avoid it altogether.
 
