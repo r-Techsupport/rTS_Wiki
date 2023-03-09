@@ -3,7 +3,7 @@ layout: default
 title: Sharing a Directory
 nav_exclude: false
 has_children: false
-parent: Guides
+parent: General Guides
 search_exclude: false
 last_modified_date: 2023-02-03
 ---
