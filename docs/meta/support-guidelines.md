@@ -21,6 +21,8 @@ These are the guidelines when providing support to users on Discord.
 
 ## General Guidelines
 
+> Summary: You are not obligated to help anyone and can stop helping for any reason without judgment. Notify a moderator if you encounter problem users. Only offer advice in areas you are knowledgeable and comfortable in, as giving bad advice is worse than giving no advice. Your interactions with users reflect on the community, so be respectful and create a safe space for all.
+
 You are never required to help anybody. You are more than welcome to not help or stop helping anybody at any time for any reason, and 
 nobody here will think worse of you for it.
 
@@ -33,6 +35,8 @@ We want to ensure a safe space for even the simplest of questions. Nobody should
 because of the questions they ask. 
 
 ## Attitudes
+
+> Summary: The channels are SFW and professionalism is important, especially in public channels. It's okay to make mistakes, but be polite when correcting others. Report malicious advice to mods privately. Users can be difficult, so take a break if needed or let a moderator know. Avoid leaving the server if possible. Remember there are real people on the other end of the screen and take a break if you are feeling frustrated.
 
 Remember that all of the channels are SFW. Keep all crude and dark jokes out of the channels, don't link inappropriate content, and try to keep 
 some form of professionalism, especially in the public channels.
@@ -58,6 +62,8 @@ nearly the same thing to one person. This can cause confusion or frustration and
 ## What We Support
 
 Remember that we are here to help others, not argue and enforce arbitrary rules.
+
+> Summary: "We" in factoids usually means the majority of staff, but personal opinions can be a reason to not support an individual, not the whole server, with a few exceptions. Recommendations for hardware, software, or services are not allowed. PUPs do not necessarily warrant a reinstall of the OS, but you can advise users to remove them. Piracy is not supported, but a "Don't ask, Don't Tell" model should be used.
 
 There is a difference between "we don't support something" and "I don't support something". A large portion of our factoids says
 "we"; however, this really means "the majority of the staff on the server". In most cases, a factoid saying "we" is not ground for
