@@ -36,6 +36,7 @@ BitLocker is a built-in disk encryption feature in Windows that provides full di
 
 Here's how to set up BitLocker on Windows:
 
+
 1. Go to Control Panel and select System and Security.
 2. Select BitLocker Drive Encryption.
 3. Select the drive that you want to encrypt and click on "Turn on BitLocker."
