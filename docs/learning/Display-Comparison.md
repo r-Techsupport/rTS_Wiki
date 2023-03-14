@@ -40,7 +40,7 @@ Both TV and monitor are electronic display devices that show images and videos, 
 
 ## issues when using TV as a monitor
 ### Over/under scan
-when you use a TV as a monitor for pc, you may notice the edges of the display are hidden beyond the borders of the screen, as if the picture is zoomed in, thats **overscan**. Or you may see black bars serrounding it, which is **underscan**. this can usually solved by adjusting the TV’s display settings or changing resolution and display scaling in PC settings.
+when you use a TV as a monitor for pc, you may notice the edges of the display are hidden beyond the borders of the screen, as if the picture is zoomed in, thats **overscan**. Or you may see black bars serrounding it, which is **underscan**. this can usually solved by adjusting the TV’s display settings, changing resolution and display scaling in PC settings or GPU control panel.
 ![overscan](/assets/Display-Comparison/desktop-overscan.jpg)
 ![underscan](/assets/Display-Comparison/desktop-underscan.jpg)
 
