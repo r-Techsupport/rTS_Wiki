@@ -21,13 +21,13 @@ These are the guidelines when providing support to users on Discord.
 
 ## General Guidelines
 
-> Summary: You are not obligated to help anyone and can stop helping for any reason without judgment. Notify a moderator if you encounter problem users. Only offer advice in areas you are knowledgeable and comfortable in, as giving bad advice is worse than giving no advice. Your interactions with users reflect on the community, so be respectful and create a safe space for all.
+> Summary: You are not obligated to help anyone and can stop helping for any reason without judgment. Notify a Moderator or Trusted if you encounter problem users. Only offer advice in areas you are knowledgeable and comfortable in, as giving bad advice is worse than giving no advice. Your interactions with users reflect on the community, so be respectful and create a safe space for all. 
 
 You are never required to help anybody. You are more than welcome to not help or stop helping anybody at any time for any reason, and 
-nobody here will think worse of you for it.
+nobody here will think worse of you for it. You are fully allowed to refuse to help someone because it's "rainy on a Tuesday." However, if you are going to stop helping someone suddenly, avoid ghosting them and instead respectfully let them know you are no longer helping (this is not always possible, of course, but do it when you can).
 
 Let us know if you have any questions. We're all a team here, and we're all here to help each other, and others. You will absolutely run 
-into problem users. Let a trusted or moderator know or message ModMail if you need help with someone.
+into problem users. Let a Trusted/Moderator know or message ModMail if you need help with someone.
 
 Please avoid attempting to assist users in areas where you are not knowledgeable and comfortable. Giving bad advice is ALWAYS worse than 
 giving no advice at all. Please be aware that how you interact with users when they come here for support reflects on the community. 
@@ -83,7 +83,7 @@ it's likely that it is not a server wide ban.
 ### Recommendations
 We have rather strict rules on what can and cannot be done, the most complicated rule revolves around recommendations. We do not permit 
 recommendations for hardware, software, or services, **nor do we send people somewhere that does**. This includes "Go to PCMR, they can 
-help pick a headset."
+help pick a headset." Instead of that, you could say "Please seek out a PC building community," which doesn't point to a specific place but still informs the user how to get the help they need.
 
 The tools we do have users run are vetted, trusted, and get us information required to diagnose a users existing issues.
 
