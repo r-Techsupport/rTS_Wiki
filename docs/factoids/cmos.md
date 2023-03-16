@@ -24,7 +24,7 @@ The CMOS battery is present in all laptops and desktops, and is the failsafe opt
 4. Reinsert the CMOS battery, reconnect power and try starting the machine.
 
 ## Method 2: Using the CMOS Clear pins
-Many desktop and even some laptop motherboards. If you can locate the CMOS clear pins (Note: Different motherboards label the CMOS clear pins differently, ASUS lables it as CLRTC, Gigabyte labels it CMOS_CLEAR, etc.)
+The CMOS Clear pins are present on many desktop and even some laptop motherboards. If you can locate the CMOS clear pins (Note: Different motherboards label the CMOS clear pins differently, ASUS lables it as CLRTC, Gigabyte labels it CMOS_CLEAR, etc.)
 
 1. Unplug PSU power cable from wall, this ensures no power is going to the PC. If on laptop, disconnect the battery from the motherboard as well.
 
