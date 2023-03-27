@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Using Hardware-Photos
+title: Taking good Hardware photos
 nav_exclude: false
 parent: Factoids
 has_children: false
