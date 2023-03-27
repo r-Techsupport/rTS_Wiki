@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Using Get-Specs
+title: Using Hardware-Photos
 nav_exclude: false
 parent: Factoids
 has_children: false
