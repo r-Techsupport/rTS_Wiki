@@ -36,14 +36,27 @@ Both TVs and monitors are electronic display devices that show images and videos
 | Refresh Rate | Comes with higher rates such as 60, 144, 165, 240 and 360Hz | Commonly between 60-165Hz. |
 | Input Ports | Fewer ports than TVs, being HDMI and DP (modern) or VGA and DVI (legacy) | More ports including HDMI, VGA, RCA connectors, YPbPr component video, DIN connector, S-Video, and RF connector (Coaxial connector). |
 
+
  Due to the various factors mentioned above, Monitors are preferred over TVs for tasks that require high levels of detail, like photo and video editing, or fast-paced activities, like gaming.
 
 
 ## Issues When Using a TV with a Computer
 ### Over/Underscan
 When you use a TV as a monitor for PC, you may notice the edges of the display are hidden beyond the borders of the screen, as if the picture is zoomed in. That is because of **overscan**. The opposite of which, where you see black bars surrounding the display is called **underscan**. This can usually solved by adjusting the TV’s display settings, or changing resolution/display scaling in the computer settings or GPU control panel.
+=======
+Due to the various factors mentioned above, Monitors are preferred over TVs for tasks that require high levels of detail, like photo and video editing, or fast-paced activities, like gaming.
+
+## Issues When Using a TV with a Computer
+### Over/Underscan
+When you use a TV as a monitor for pc, you may notice the edges of the display are hidden beyond the borders of the screen, as if the picture is zoomed in. That is because of **overscan**. Or you may see black bars serrounding it, which is **underscan**. This can usually solved by adjusting the TV’s display settings,  or changing resolution/display scaling in the computer settings or GPU control panel.
+
+
 ![overscan](/assets/Display-Comparison/desktop-overscan.jpg)
 ![underscan](/assets/Display-Comparison/desktop-underscan.jpg)
 
 ### Lag and Scaling Resolution Issues
+<<<<<<< HEAD
 TVs tend to have a higher noticeable latency than monitors, and having limited supported scaling resolutions compared to monitors.
+=======
+TVs tend to have a higher noticeable latency than monitors, and having limited supported scaling resolutions compared to monitors.
+
