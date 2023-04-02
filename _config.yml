@@ -13,7 +13,7 @@ sticky_navigation: true
 back_to_top: true
 back_to_top_text: "Back to top"
 
-color_scheme: ts-light
+color_scheme: ts-dark
 
 # This helps with local development
 plugins:
