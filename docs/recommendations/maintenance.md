@@ -24,7 +24,7 @@ We do not recommend any driver finder applications, this list includes but is no
 * IObit DriverBooster
 * Driver Easy
 
-Windows can natively handle most drivers during install, or directly from Device Manager. If you are seeking to update drivers outside of Windows Device Manager only seek them online from the [motherboard / manufacturers website](/docs/learning/Computing-101.html#support-sites), [GPU manufacturers support page](/docs/learning/Computing-101.html#gpu-driver-downloads) or [Windows Update](/docs/learning/Computing-101.html#installing-drivers)
+Windows can natively handle most drivers during install, or directly from Device Manager. If you are seeking to update drivers outside of Windows Device Manager only seek them online from the [motherboard / manufacturers website](/docs/learning/Computing-101.html#support-sites), [GPU manufacturers support page](/docs/learning/Computing-101.html#gpu-driver-downloads) or [Windows Update](/docs/learning/Computing-101.html#installing-drivers) 
 
 ## Defrag
 **Only use Windows built-in tools such as Drive Optimizer.** All third party tools, such as defraggler, are considered PUPs.
@@ -46,3 +46,4 @@ This is one of the few maintenance tools we can recommend, and it is for a speci
 Running this tool can clear residual configuration files and registry entries. The registry cleanup on this application has the same warning as ccleaner, it can break the OS if something goes wrong.
 
 [Download](https://www.revouninstaller.com/start-freeware-download-portable)
+ 
