@@ -36,7 +36,7 @@ BIOS updates generally does not improve performance (and even when it states it 
 
 Sometimes there are multiple ways to update the BIOS, all dependant on the motherboard and system you have set up. Please follow the general guide below to understand how to update the BIOS.
 
-#
+# Steps to Updating the BIOS:
 
 ## 1. Checking which BIOS version you have before updating the BIOS
 This is the most general step and is necessary for all methods. It is important to know what BIOS version you are running before updating, because some manufacturers may require you to **update the BIOS incrementally** (download the subsequent update to your version instead of downloading the latest one immediately). This is the most general and safe method to update BIOS.
