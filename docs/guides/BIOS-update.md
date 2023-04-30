@@ -14,19 +14,25 @@ last_modified_date: 2023-04-28
 
 {% include toc.md %}
 
-BIOS updates generally does not improve performance (and even when it states it does, usually its to a minimal degree.) Most BIOS updates are generally recommended to fix specific hardware bugs or add compatibility for new devices (for example, CPU or RAM). Without these updates, specific devices may not be able to run.
-
-> ! Note that manufacturers warn against updating BIOS unless you have a specific problem. If you are not doing an upgrade or do not have any issues, then it is best to leave the BIOS version as is, as it typically is a last resort for most troubleshooting, as updating the BIOS can be a risky process. A failure of flashing may result in a bricked motherboard.
-
 ## What is BIOS? How do I update it?
 
 BIOS stands for Basic Input Output System. It is the firmware of the motherboard that allows the control of inputs and outputs of the system, and is necessary to boot into any OS. It provides runtime services for operating systems and programs to perform hardware initialization during the boot process, so it is a necessary feature in any and all PCs.
+
+> Do note that sometimes BIOS can be referred to as UEFI instead. UEFI is the same as BIOS, but is a more modern standard, strictly speaking. Most of the time, what you actually be updating here is the UEFI, but both terms are used interchangeably. 
+
+> For the purposes of this guide, we will refer to both as BIOS. For more advanced booting, if both the OS and your system support UEFI, it might be a better idea to install using UEFI mode (disabling CSM).
+
+> CSM, or Compatibility Support Module, is a sub system in the BIOS which appears on the BIOS/UEFI options, and is used for OS that do not support UEFI, i.e. Legacy BIOS (Note that Windows 10 support both UEFI and legacy, but Windows 11 will only boot with UEFI). For more information, you can refer to here: https://en.wikipedia.org/wiki/UEFI and head to the CSM section.
 
 Different BIOS versions support different CPUs, so if you are doing a CPU upgrade, a BIOS update may be necessary to ensure the CPU will work properly. Without it, the PC will not even boot.
 
 > ! Note: Not all CPUs need a BIOS update. Please check what BIOS version you are running, and what version is supported by the CPU, before doing the upgrade to ensure no problems will occur down the line. More information on this will be discussed below in `Common Issues and Information` under the `BIOS support for CPU` section.
 
 > Also note that these steps are not always valid for all computers and laptops. While the following is true for most desktop models, some OEM or prebuilt systems, including laptops, may have a different way to update the BIOS, sometimes by installing an application from the manufacturer website. Please refer to the `For Laptops or OEM Prebuilts` section for this under `Common Issues and Information`.
+
+BIOS updates generally does not improve performance (and even when it states it does, usually its to a minimal degree.) Most BIOS updates are generally recommended to fix specific hardware bugs or add compatibility for new devices (for example, CPU or RAM). Without these updates, specific devices may not be able to run.
+
+> ! Note that manufacturers warn against updating BIOS unless you have a specific problem. If you are not doing an upgrade or do not have any issues, then it is best to leave the BIOS version as is, as it typically is a last resort for most troubleshooting, as updating the BIOS can be a risky process. A failure of flashing may result in a bricked motherboard.
 
 Sometimes there are multiple ways to update the BIOS, all dependant on the motherboard and system you have set up. Please follow the general guide below to understand how to update the BIOS.
 
@@ -77,9 +83,14 @@ With the update file on the USB, you can now commit to actually updating the BIO
 
     Some motherboards will have the option to update the BIOS directly without even booting into the BIOS. This method of updating the BIOS will be called differently depending on the motherboard model (EZ-flash or Q-flash for example) For this, you will need to refer to your motherboard manual to exactly see how to utilize this option.
 
+    
     The general idea to utilize this option will need you to turn on your PC, plugging in the USB to a dedicated port on the motherboard (refer to manual to exactly see where this port will be located), and pressing a dedicated button for BIOS flashing (again, refer to the manual to know where this button is located).
 
     Do note that this option is not available on all motherboards, so you will need to rely on the motherboard manual to reconfirm if you do even have this option of updating the BIOS. Otherwise, you may have to rely on Method 1 for a BIOS update.
+
+    > ! This method is especially important for updating a BIOS without a CPU, or have an unsupported CPU. So if you were to buy a motherboard whose BIOS version currently does not support the CPU, you may have to utilize this method to update it.
+
+    > In the event you have a motherboard without this feature, and the BIOS version does not support the CPU you are trying to use, then you may have to go to a repair shop or ask a friend to borrow a CPU which the BIOs supports and updating the BIOS through that (or letting them do it for you), or doing an RMA for the board and buying a motherboard with a onboard BIOS flash feature or has a supported BIOS out of the box.
 
 # Common Issues and Information:
 
@@ -89,7 +100,7 @@ Some prebuilt computers from OEMs, especially laptops, often will require a diff
 
 Note that these may need a dedicated OS to update the BIOS, mostly Windows in this case, as the software they tend to use only work in Windows (they are windows executable files, `.exe`).
 
-Examples of such prebuilts and laptops that may need this method are: Dell XPS and Vostro series Laptops, Microsoft Surface laptops, Acer Nitro desktops and laptops, HP Omen laptops and desktops, etc.
+Examples of such prebuilts and laptops that may need this method are: Dell XPS and Vostro series Laptops, Microsoft Surface laptops, Acer Nitro desktops and laptops, HP laptops and desktops, etc.
 
 ## Computer is not booting after BIOS update
 
