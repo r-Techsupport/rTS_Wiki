@@ -57,7 +57,7 @@ OneDrive is built in to some versions of Windows and can't be uninstalled. But y
 10. One more time, select ![settingsicon.png](/assets/One-Drive/settingsicon.png) and select Quit OneDrive. This removes the OneDrive icon from the Notifications area.
 
 ## Uninstalling OneDrive
-You won't lose files or data by uninstalling OneDrive from your computer. You can always access your files by signing in to [onedrivelink](onedrive.com)
+You won't lose files or data by uninstalling OneDrive from your computer. You can always access your files by signing in to [onedrivelink](https://onedrive.com/)
 ### Windows 10
 1. Select the Start button, type Programs in the search box, and then select Add or remove programs in the list of results.
 2. Under Apps & features, find and select Microsoft OneDrive, and then select Uninstall. If you're prompted for an administrator password or confirmation, type the password or provide confirmation.
