@@ -57,11 +57,39 @@ For example, a program that you might want to install would be *Discord* which y
 
 You want to fully uninstall which would remove the associated files, settings, registry keys, etc. There are a few ways to do this. 
 
-Click on the start menu, find the program you want to uninstall and right click on their icon. From there, click on the uninstall option. 
+### Uninstall program from Settings
 
-This should bring up a new window that has a huge list of programs. In here, highlight the program you want to uninstall, and at the top of the list, click on Uninstall. 
+Go to settings on your PC. Click *Apps*.
 
-You can follow the prompts to remove the program from the computer. You can do this with any unwanted program.
+![settingsApps.png](/assets/Basic-Computing/settingsApps.png)
+
+Click on *Installed Apps*.
+
+![installedApps.png](/assets/Basic-Computing/installedApps.png)
+
+Click on the three dots for the program you want to uninstall.
+
+![threeDots.png](/assets/Basic-Computing/threeDots.png)
+
+Click *Uninstall* and then click it again to confirm.
+
+![uninstallApp.png](/assets/Basic-Computing/uninstallApp.png)
+
+![uninstallAppConfirm.png](/assets/Basic-Computing/uninstallAppConfirm.png)
+
+Either the program will uninstall right away and be removed from the list of your installed apps or the program may launch a uninstall prompt from where you finish the uninstallation process. 
+
+### Uninstall program from Control Panel
+
+Open *Control Panel* and click *Uninstall a program*.
+
+![controlpanelPrograms.png](/assets/Basic-Computing/controlpanelPrograms.png)
+
+This will launch a list of installed apps where you can simply double click the desired entry which will uninstall the app. 
+
+As before, either the program will uninstall right away and be removed from the list of your installed apps or the program may launch a uninstall prompt from where you finish the uninstallation process. 
+
+If you have trouble uninstalling a program, or if the program is not properly uninstalling and leaving behind remnants of itself, you can try and use an advanced uninstall program such as Revo Uninstaller.
 
 ## Installing Drivers
 Installing drivers is usually straight forward, you let Windows update install the drivers for you. 
