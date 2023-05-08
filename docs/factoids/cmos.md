@@ -34,4 +34,4 @@ The CMOS Clear pins are present on many desktop and even some laptop motherboard
 
 ![cmos reset using screwdriver](/assets/factoids/cmos_screwdriver.png)
 
-4. Hold the screwdriver in place four roughly 20-30 seconds. Once the time expires, remove the screwdriver, reconnect power, and try restarting the machine.
+4. Hold the screwdriver in place four roughly 20-30 seconds. Press the power button multiple times while holding the screwdriver in place. Once the time expires, remove the screwdriver, reconnect power, and try restarting the machine.
