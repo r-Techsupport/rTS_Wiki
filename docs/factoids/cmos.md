@@ -5,7 +5,7 @@ nav_exclude: false
 parent: Factoids
 has_children: false
 search_exclude: false
-last_modified_date: 2022-10-31
+last_modified_date: 2023-05-08
 ---
 
 # Resetting the CMOS

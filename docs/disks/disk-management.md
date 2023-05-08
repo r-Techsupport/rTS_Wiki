@@ -6,7 +6,7 @@ has_children: false
 nav_order: 1
 parent: Disks
 search_exclude: false
-last_modified_date: 2022-06-30
+last_modified_date: 2023-05-08
 redirect_from: /books/software-we-recommend/page/disk-partition-management
 ---
 
@@ -50,7 +50,7 @@ New partitions can only be created from unallocated space.
     [![NewDriveLetter.png](/assets/disk-management/newdriveletter.png)](/assets/disk-management/newdriveletter.png)
 
 ### Change file system
-> ❗ This is a destructive action, and all data on the drive will be deleted.
+> ❗ This is a destructive action, all data on the drive will be deleted.
 
 1. Right click on an existing partition and choose "Format...".
 2. Leaving allocation unit size at default and quick format selected will usually work.

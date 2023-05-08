@@ -5,7 +5,7 @@ nav_exclude: false
 has_children: false
 parent: General Guides
 search_exclude: false
-last_modified_date: 2023-04-10
+last_modified_date: 2023-05-08
 ---
 
 # Using Resource Monitor To Find A Locked File
@@ -14,7 +14,7 @@ If you see a popup like this telling you that you cant modify a file because it 
 
 ![folderInUse.png](/assets/resource-monitor/folderInUse.png)
 
-you can find out which process is locking or using the file with Resource Monitor. To do so follow these steps:
+You can find out which process is locking or using the file with Resource Monitor. To do so follow these steps:
 
 1. Open Resource Monitor and go to the CPU tab.
 

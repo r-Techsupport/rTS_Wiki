@@ -13,6 +13,6 @@ A new folder containing `Display Driver Uninstaller.exe` will be created.
 
 4. Open `Display Driver Uninstaller.exe` from the newly created folder in Step 2.
 
-	> ❗ Do note that some applications are inaccessible from the desktop. So if you get an "File Inaccessible" in Safe mode, try moving the extracted folder in Normal boot to a more direct folder, for example directly in the C drive.
+	> ❗ Some applications are inaccessible from the desktop. So if you get an "File Inaccessible" in Safe mode, try moving the extracted folder in Normal boot to a more direct folder, for example directly in the C drive.
 
 	![dduextract_Cdrive.png](/assets/factoids/dduextract_Cdrive.png)

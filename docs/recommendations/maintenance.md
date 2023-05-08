@@ -6,7 +6,7 @@ nav_order: 4
 has_children: false
 parent: Software We Recommend
 search_exclude: false
-last_modified_date: 2022-12-15
+last_modified_date: 2023-05-08
 redirect_from: /books/software-we-recommend/page/windows-maintenance
 ---
 # Windows Maintenance
@@ -46,4 +46,3 @@ This is one of the few maintenance tools we can recommend, and it is for a speci
 Running this tool can clear residual configuration files and registry entries. The registry cleanup on this application has the same warning as ccleaner, it can break the OS if something goes wrong.
 
 [Download](https://www.revouninstaller.com/start-freeware-download-portable)
- 
