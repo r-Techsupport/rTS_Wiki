@@ -5,16 +5,36 @@ nav_exclude: false
 has_children: false
 parent: Learning
 search_exclude: false
-last_modified_date: 2023-05-08
+last_modified_date: 2023-05-09
 ---
 
-# The Blue Screen of Death
+# Table of Contents
+1. [The Blue Screen of Death](#The Blue Screen of Death)
+2. [What is a BSOD?](#What is a BSOD?)
+3. [What causes a BSOD?](#What causes a BSOD?)
+   1. [First Part](#First Part)
+   2. [Second Part](#Second Part)
+   3. [Third Part](#Third Part)
+   4. [Fourth Part](#Fourth Part)
+4. [Troubleshooting/Analysis](#Troubleshooting/Analysis)
+   1. [Opening](#Opening)
+   2. [Deciphering](#Deciphering)
+   3. [Hardware](#Hardware)
+   4. [Pattern Recognition](#Pattern Recognition)
+5. [Reading the Stack](#Reading the Stack)
+6. [The Usual Suspects](#The Usual Suspects)
+   1. [DRIVER_IRQL_NOT_LESS_OR_EQUAL](#DRIVER_IRQL_NOT_LESS_OR_EQUAL)
+   2. [SYSTEM_THREAD_EXCEPTION_NOT_HANDLED_M](#SYSTEM_THREAD_EXCEPTION_NOT_HANDLED_M)
+   3. [DRIVER_POWER_STATE_FAILURE](#DRIVER_POWER_STATE_FAILURE)
+   4. [WHEA_UNCORRECTABLE_ERROR](#WHEA_UNCORRECTABLE_ERROR)
+
+# The Blue Screen of Death <a name="The Blue Screen of Death"></a>
 
 Everyone who has used a computer for more than a brief period of time has experienced what is known as the Blue Screen of Death (BSOD). The computer suddenly stops working, and you are met with an ominous :( "Something went wrong!" and a vague few words that do not actually make sense. "DRIVER_IRQL_NOT_LESS_OR_EQUAL" Huh?? What does that mean, and why do I care? Hopefully, reading this article will shed some light on what a BSOD is, why it happens, and help you figure out why your computer is crashing.
 
 We will first start off with the very basics, so if you are just here to learn how to understand the cause of a BSOD, feel free to skip ahead. The advanced stuff comes later.
 
-## What is a BSOD?
+## What is a BSOD? <a name="What is a BSOD?"></a>
 
 So what *is* the blue screen of death? Well, let's start simple.
 
@@ -26,7 +46,7 @@ These exceptions happen all the time. If you have any experience in software dev
 
 In many cases, a BSOD is a more serious form of Unhandled Exception, but instead of a program doing something it should  not and crashing back to Windows, it is Windows doing something it should  not. Unlike a game, which has Windows to fall back on when it crashes, Windows has no fallback. There is nowhere to crash to, and the only option is to crash the computer completely. While these errors are very frustrating and can often seem random or pointless, it is very important to note that BSOD's do not occur for no reason. Windows, for all its faults, handles errors very effectively. If an error happens in such a way that Windows cannot handle it, Windows forces itself to enter a Blue Screen of Death to avoid sending improper instructions to hardware and potentially damage the physical components of the computer.
 
-## What causes a BSOD?
+## What causes a BSOD? <a name="What causes a BSOD?"></a>
 
 Before we can get into identification and troubleshooting, we first need to understand what causes Windows to enter a blue screen of death. As mentioned before, unhandled exceptions are a major cause of BSODs, but that does not help with figuring them out, and that is not the only cause of them. It may be important to know that Windows is telling itself to BSOD, it is not another part of the computer ordering Windows to crash. Windows understands that what it is attempting to do can compromise the computer either by corrupting data, breaching the security of the computer, or damaging the hardware itself, and forces itself to stop before damage can occur.
 
@@ -44,7 +64,7 @@ The remaining causes are split between hardware failure and indeterminate reason
 
 But how can we know what is causing this particular BSOD?
 
-## Using the Debugger
+## Using the Debugger <a name="What causes a BSOD?"></a>
 
 We have covered what a BSOD is and why they happen, now let's get into the tricky stuff! What is causing your computer to crash? Note that the information from here on out may be very technical. If at any point you find yourself unsure of something, or your eyes glaze over in confusion, I would highly recommend seeking the advice of a professional rather than attempting to diagnose the issue yourself. You are not stupid if it does  not make sense, this is not easy stuff.
 Feel free to upload the dumps to our discord with [this guide](/docs/factoids/bsod)
@@ -55,11 +75,13 @@ When you have WinDbg Preview installed, find your minidump folder in C:\Windows\
 
 When you first open a dump file, you will be greeted with a screen like this:
 
+![StartScreen](/assets/BSOD-Guide/StartScreen.png)
+
 Nothing in here is particularly important, but go ahead and click on the blue `!analyze -v -` Now you get a whole lot of scary-looking information that makes no sense. If your immediate reaction is, "Is this just the matrix?" I again advise you to seek advice from a professional rather than continue on.
 
 If you are still with me, lets break this down. I am only going to briefly explain the different sections of the analysis first and go over them in more detail later. 
 
-### The first thing you see is something that looks like this:
+### The first thing you see is something that looks like this: <a name="First Part"></a>
 
 ```
 DRIVER_POWER_STATE_FAILURE (9f)
@@ -75,7 +97,7 @@ Okay, some of this is English, but The Numbers? What do they mean?! That is a gr
 
 All this section shows you is an overview of the error. You have your error on top, a brief description of the error, and the four parameters, which give more information about the error. These parameters vary in importance from being completely meaningless to being the most important information in the dump, depending on the specific error and parameter.
 
-### Following the overview you have a list of Key Values. I ignore these.
+### Following the overview you have a list of Key Values. I ignore these. <a name="Second Part"></a>
 
 
 After the key values are the bugcheck code and parameters again. There is no new information here; you can skip over them.
@@ -95,7 +117,7 @@ Attempt to read from address 00000000046dc232
 ```
 More scary numbers, but again, recognize that these are just numbers describing the error. The exception code is the main error, in this case a memory access violation, and the parameters are details about the error. WinDbg then attempts to describe the exception beneath it, if possible. The "(.exr 0xfffff904f6c8a128)" is WinDbg telling you the command it ran to get this information. If you want, you can run this command yourself by clicking on that or by typing the command in the box beneath the analysis labeled "kd>" However, running the command now will garner no further information than what has already been given.
 
-### You may also see a CONTEXT or TRAP_FRAME with even more numbers:
+### You may also see a CONTEXT or TRAP_FRAME with even more numbers: <a name="Third Part"></a>
 
 ```
 TRAP_FRAME:  ffffdb809cf9bf20 -- (.trap 0xffffdb809cf9bf20)
@@ -113,7 +135,7 @@ You have the familiar blue "(.trap 0xffffdb809cf9bf20)" which, again, is simply 
 
 After the context record, we have the PROCESS_NAME. This will almost always blame an application, and it will almost never be useful. "System" is not helpful. "steam.exe" does not cause blue screens. It is simply the program running on the thread that ran into the error. While this is very rarely the cause, it is still worth looking at. Occasionally software will interact with drivers in a way that causes a blue screen. Most notably, anticheats, 3rd-party RGB controllers, and occasionally overclocking tools.
 
-### In most BSODs, the next section is the most important: 
+### In most BSODs, the next section is the most important: <a name="Fourth Part"></a>
 
 
 The stack trace. You have seen a fair few scary numbers; now we get a lot more. Most dumps have small stack traces with only a few lines, but these can be massive walls of text. When troubleshooting, it is critically important that you have an understanding of what you are looking at here:
@@ -187,7 +209,7 @@ FAILURE_BUCKET_ID:  0x9F_3_amdi2c_DEV_AMDI0010_IMAGE_ACPI.sys
 
 This particular line starts with 0x9F, referring to DRIVER_POWER_STATE_FAILURE, then the 3 is the first parameter. amdi2c is the I2C controller driver, and the rest relates to the device node for AMD's ACPI driver. In other bugchecks, you may see AV, or Access Violation, IP_MISALIGNED, indicating a misaligned instruction packet, or other failures. It is worth at least taking a glance here.
 
-## Troubleshooting/Analysis
+## Troubleshooting/Analysis <a name="Troubleshooting/Analysis"></a>
 
 
 Now that you have some understanding of what you are looking at, we can go over how to analyze the dump file. As with any investigation, you should do your best to always maintain an open mind. Every human being is vulnerable to confirmation bias, If you have an idea in your head as to what the problem is, you will subconsciously focus on any evidence that helps confirm that theory and put less weight on evidence that contradicts it. This intrinsic bias is especially troublesome when working with minidumps as the differences between the actual causes of errors can be extremely subtle. If you are focused on proving ram to be the issue, you might overlook signs of drive failure, as the two issues appear virtually identical in dumps.
@@ -196,12 +218,12 @@ Second, in almost all cases, if you are diagnosing off of a single dump file, **
 
 The two exceptions to the previous statement are 0x124 WHEA_UNCORRECTABLE_ERROR crashes, and when WinDbg blames "hardware" as the faulting module. WHEA errors are always hardware errors, and it is relatively straightforward to track down the cause. When WinDbg blames hardware as the faulting module, you can be confident it is a hardware failure, but you will still need more dumps to correctly determine which piece of hardware is failing.
 
-### Troubleshooting Part 1 - Opening
+### Troubleshooting Part 1 - Opening <a name="Opening"></a>
 
 
 Okay. You have a folder with a bunch of dumps in it, you have a cup of coffee and a snack, and it is time to get to work. Open every dump in the folder, run kb first, then click the !analyze -v link. Do not read the analysis yet, just open each one. Pressing analyze first before running kb can change the thread context, and it is possible the stack changes from when you first open the dump to when you click analyze. This is not common, but typing kb takes less than a second.
 
-### Troubleshooting Part 2 - Deciphering
+### Troubleshooting Part 2 - Deciphering <a name="Deciphering"></a>
 
 
 With every dump open, you can start deciphering. Do not go looking for the exact cause immediately, you will see something that looks like one failure and tune out the possibility of it being something else. Instead, start by determining if it is a hardware or software problem. In many cases, this is very easily accomplished by simply finding the pattern. If every error you have is the same and blames the same module at the same function/offset, you can be very confident the problem is software related and caused by that module. On the other hand, if every error is different, with the only similarity being that two of the five dumps have the same stop code, your issue is almost certainly hardware related.
@@ -217,7 +239,7 @@ It is important to keep in mind that the module WinDbg blames in MODULE_NAME may
 
 A way to be certain the error is software-related and not hardware-related would be to simply reinstall windows. If you continue getting BSODs on a clean installation of Windows, having not done something idiotic like use the built-in factory reset, or run [CCleaner](/docs/recommendations/maintenance.html#cleaners) or [DriverEasy](/docs/recommendations/maintenance#driver-finders), you have a hardware problem.
 
-### Troubleshooting Part 3 - Hardware
+### Troubleshooting Part 3 - Hardware <a name="Hardware"></a>
 
 
 Now that we know how to handle software-caused bugchecks, let's get into the truly complicated stuff.  A BSOD is determined to be a hardware error if the errors seem to be completely random. If you have five dumps with three different bugcheck codes and the faulting function/offset is always different, there is virtually no pattern at all, it simply happens: Sorry to be the bearer of bad news, but that is hardware failure. The goal now becomes what hardware to replace.
@@ -244,7 +266,7 @@ There can be more components here, such as a Wi-Fi card or other various PCIe de
 
 I will not spend too much time talking about what GPU failure looks like. It is by far the easiest fault to spot. If you have a group of dumps all blaming various video issues; VIDEO_TDR_FAILURE, VIDEO_DXGKRNL_FATAL_ERROR, etc. blaming amdkmdag.sys, nvlddmkm.sys or directx, and drivers have already been reinstalled, it is probably a failing GPU. This same idea works for other expansion devices; for instance, a Wi-Fi card will have BSODs calling out network-related modules in the stack. Keep in mind if it always blames the same function/offset, it is virtually guaranteed to be a software problem. Also keep in mind that a GPU failure can mean a failure of the slot it is in, a riser cable if used, or a power supply.
 
-### Troubleshooting Part 4 - Pattern Recognition
+### Troubleshooting Part 4 - Pattern Recognition <a name="Pattern Recognition"></a>
 
 
 Now, I have mentioned finding a pattern a few times, but what does that actually mean? Like all patterns, you are looking for what is common between the dumps you have. In a hardware-related set of dumps, the stack is your most valuable resource here, as it determines when the computer actually fails during operation. The important thing you are looking for is the modules involved. If most of them are network-related, you might be seeing a failure in the network card or motherboard. If most are GPU related, it follows that you are looking at a problem with the GPU. If all the modules are Windows system modules, you will have symbols and can read the function names. These are not always helpful, but if you see a lot of mention of the processor, you can point to that as your suspect. "Mm" is a common phrase you might see, which stands for Memory Manager. If the memory manager is involved, consider the RAM or drive as main suspects. While searching for your pattern, it is critical to remain open to new information. If the first dump seems to blame RAM and you read the following dumps trying to convince yourself of a RAM problem, you will miss signs that it is a CPU or drive issue. Always consider every possibility until you have all the information and can make a judgement call accordingly.
@@ -291,7 +313,7 @@ When looking at exceptions in a BSOD dump, you are only interested in ntstatus c
 
 Lastly, the Microsoft documentation on a specific BSOD can be useful to understand why that BSOD happens. The best way I have found to find the documentation is to search the stop code (the hex number) and add "bugcheck" to the query. Without this, you will find a lot of tech blogs with very generic fixes that simply farm clicks and do not solve the issue.
 
-## Reading the Stack
+## Reading the Stack <a name="Reading the Stack"></a>
 
 Being able to correctly read and understand the stack trace is crucial to understanding what is happening in many dumps. There are some bugchecks in which the stack is not important, and it helps to understand when a stack is simply "An error happened" with no other real information, so let's review a few.
 
@@ -426,11 +448,11 @@ IMAGE_NAME:  nvlddmkm.sys
 ```
 Luckily, the SYMBOL_NAME on this one actually steers you in the right direction, though a lot of times it will blame directX on stacks like these. From the stop code alone, you know this is an issue with the GPU or GPU driver, so it is not that surprising to see the nvidia driver being blamed here, but this is a section about stacks, so let's talk about the stack. It is a very straightforward stack that says nothing. You take a thread start, attach a worker to it, and immediately attempt to handle a TDR. The first function after the worker's set is already working on a failure, and that failure transitions into a bugcheck. Nothing in the stack shows anything relating to what happened before the error, and there is no indication as to why the failure happened. You see this a lot in timeout-related stop codes, as the bsod is caused by Windows checking a timer and deciding the timer is too high. The threads involved with that timer are not present in the dump.
 
-## The Usual Suspects
+## The Usual Suspects <a name="The Usual Suspects"></a>
 
 Let's review a few of the most common BSOD codes you will see. If you are normal, and you have a normal computer problem, the following section will further guide you to discovering the problem and replacing the correct part. If you are weird and are getting something crazy like INSTRUCTION_COHERENCY_EXCEPTION, god rest your soul.
 
-### DRIVER_IRQL_NOT_LESS_OR_EQUAL (0xD1) and IRQL_NOT_LESS_OR_EQUAL (0xA)
+### DRIVER_IRQL_NOT_LESS_OR_EQUAL (0xD1) and IRQL_NOT_LESS_OR_EQUAL (0xA) <a name="DRIVER_IRQL_NOT_LESS_OR_EQUAL"></a>
 
 In my experience, D1 is the most common bugcheck you will see, as it can be caused by every single error imaginable. Any failure in the computer, including faulty drivers, can cause a D1, but luckily, it can be very helpful in figuring out the issue. Everything mentioned in this section relates to both 0xD1 and 0xA stop codes.
 
@@ -545,7 +567,7 @@ MEMORY_MANAGEMENT
 
 --
 
-### SYSTEM_THREAD_EXCEPTION_NOT_HANDLED_M (0x1000007e)
+### SYSTEM_THREAD_EXCEPTION_NOT_HANDLED_M (0x1000007e) <a name="SYSTEM_THREAD_EXCEPTION_NOT_HANDLED_M"></a>
 
 Here we see the actually useful cousin of SYSTEM_SERVICE_EXCEPTION (0x3B). Both the 0x1000007e and 0x3B bugchecks are very common, and 0x3B dumps will give you virtually nothing to work off of aside from maybe getting an informative stack. The 0x1000007e bugcheck is much more informative; let's take a look:
 ```
@@ -634,7 +656,7 @@ A stack like this screams drive failure. We were already considering either the 
 
 You can find more details about determining between ram and drive failure along with understanding invalid memory addresses in the IRQL_NOT_LESS_OR_EQUAL article.
 
-### DRIVER_POWER_STATE_FAILURE (0x9F)
+### DRIVER_POWER_STATE_FAILURE (0x9F) <a name="DRIVER_POWER_STATE_FAILURE"></a>
 
 DRIVER_POWER_STATE_FAILURE occurs for several different reasons, most of which are software-related and generally have to do with things happening too slowly. When first analyzing a dump, Arg1 is the most important place to start. Of the seven possibilities, 0x1, 0x2, and 0x500 are virtually guaranteed to be a poorly written or corrupted driver. 0x3 through 0x5 are timeouts and tend to be hardware related, though drivers can affect them similar to how drivers cause DPC_WATCHDOG_VIOLATION. 0x6 is hardware-related.
 
@@ -753,7 +775,7 @@ When you are analyzing these on your own, you should be focused on first identif
 
 Unfortunately, the 0x3 flavor is the only example I have on hand, but luckily, they are the most prominent versions of the 0x9F BugCheck. I will update this section as I come across other variations.
 
-### WHEA_UNCORRECTABLE_ERROR (0x124)
+### WHEA_UNCORRECTABLE_ERROR (0x124) <a name="WHEA_UNCORRECTABLE_ERROR"></a>
 
 0x124 is one bugcheck you never want to see. You never want to see any of them, really, but WHEA is practically a 100% guarantee of hardware failure. People keep insisting it can be software-related; however, I have never once seen that be the case.
 
@@ -802,23 +824,26 @@ IMAGE_NAME:  GenuineIntel.sys
 This stack does tell you the brand of processor without having to skim the SMBios dump, which is helpful for decoding the MCi_STATUS code. To decode the error, you will need to look up the manual for the brand of processor you are looking at. AMD has MCE information in the AMD64 Architecture Programmer's Manual, Volume 2: System Programming. Intel has theirs in the Intel® 64 and IA-32 Architectures Software Developer’s Manual, Combined Volumes.
 
 Once you have found your manual and located the documentation for MCEs, you can begin decoding by converting the hex code into binary. There are plenty of free converters online to do this for you, or you can do it yourself. Each number in a hex code is four bits, with 0xF being 15, or 1111 in binary. In our example, 0xbe000000000c117a would translate to the following:
-
-1011 (b) 1110 (e) 0000 (0) 0000 (0) 0000 (0) 0000 (0) 0000 (0) 0000 (0) 0000 (0) 0000 (0) 0000 (0) 1100 (c) 0001 (1) 0001 (1) 0111 (7) 1010 (a)
-63       59       55       51       47       43       39       35       31       27       23       19       15       11       7        3
-
+```
+1011 (b) 1110 (e) 0000 (0) 0000 (0) 0000 (0) 0000 (0) 0000 (0) 0000 (0) 
+63       59       55       51       47       43       39       35 
+0000 (0) 0000 (0) 0000 (0) 1100 (c) 0001 (1) 0001 (1) 0111 (7) 1010 (a)
+31       27       23       19       15       11       7        3
+```
 We can find out what most of these bits mean from the intel manual:
 
-63 - MCi_STATUS register valid - This is set to 1, meaning the cpu is confident the code it is provided is a valid error code.  
-62 - Error Overflow - This is set to 0, meaning that when the error occurred, the CPU was not in the process of handling another error. Had this been 1, that would mean there were multiple simultaneous errors happening.  
-61 - Uncorrected error - This is set to 1, meaning the error was fatal and forced the computer to shut down. I have seen this set to 0 and Windows will still BSOD with an Arg1 of 0x1, Corrected Machine Check Exception. I  do not know why Windows does this.  
-60 - Error reporting enabled - This is set to 1, and it should always be set to 1, otherwise the error would not be reported.  
-59 and 58 are marking the validity of other error information which we will not be covering in this overview.  
-57 - Processor context corrupted. This is set to 1, which is indicative of a severe error. The processor thinks it is incapable of being restarted in its current state and must be shut down.  
-43 - Poison. If 43 is set, the error is caused by the CPU attempting to execute an instruction which it knows is invalid. This is often still a CPU error as the CPU is potentially decoding an instruction improperly, however it can indicate an error outside the CPU.  
-56 through 44 and 42 through 32 are not particularly important for our purposes, but you can read up on what they mean in the aforementioned manuals.  
-31 through 16 are an extended error code and their definition varies wildly between AMD and Intel, varies between different models in those brands, and varies based on the specific error code. This needs to be decoded with the manual.
-
-15 through 0 are the meaningful bits, as they make up the error code. The provided example error code, 0001 0001 0111 1010 can be found in the Compound Error Code table, 000F 0001 RRRR TTLL = Cache Heirarchy Error. The RRRR, TT and LL translate to Request, Transaction Type and Level respectively. An RRRR of 0111 is the "Eviction" request, a TT of 10 is a Generic Transaction Type (Generic implies the CPU could not determine the real type), and an LL of 10 shows an error in the L2 cache. All combined, you have a single fatal error caused by the CPU failing to evict memory from its L2 cache due to a heirarchy error.
+| Bit Number | Description |
+|-------|-------------------|
+|63 | MCi_STATUS register valid - This is set to 1, meaning the cpu is confident the code it is provided is a valid error code.|
+|62 | Error Overflow - This is set to 0, meaning that when the error occurred, the CPU was not in the process of handling another error. Had this been 1, that would mean there were multiple simultaneous errors happening.|
+|61 | Uncorrected error - This is set to 1, meaning the error was fatal and forced the computer to shut down. I have seen this set to 0 and Windows will still BSOD with an Arg1 of 0x1, Corrected Machine Check Exception. I  do not know why Windows does this.|
+|60 | Error reporting enabled - This is set to 1, and it should always be set to 1, otherwise the error would not be reported.|
+|59 and 58| Marking the validity of other error information which we will not be covering in this overview.|
+|57 | Processor context corrupted. This is set to 1, which is indicative of a severe error. The processor thinks it is incapable of being restarted in its current state and must be shut down.|
+|43 | Poison. If 43 is set, the error is caused by the CPU attempting to execute an instruction which it knows is invalid. This is often still a CPU error as the CPU is potentially decoding an instruction improperly, however it can indicate an error outside the CPU.|
+|56 through 44 and 42 through 32 | Are not particularly important for our purposes, but you can read up on what they mean in the aforementioned manuals.|
+|31 through 16 | Are an extended error code and their definition varies wildly between AMD and Intel, varies between different models in those brands, and varies based on the specific error code. This needs to be decoded with the manual.|
+|15 through 0 are the meaningful bits | As they make up the error code. The provided example error code, 0001 0001 0111 1010 can be found in the Compound Error Code table, 000F 0001 RRRR TTLL = Cache Heirarchy Error. The RRRR, TT and LL translate to Request, Transaction Type and Level respectively. An RRRR of 0111 is the "Eviction" request, a TT of 10 is a Generic Transaction Type (Generic implies the CPU could not determine the real type), and an LL of 10 shows an error in the L2 cache. All combined, you have a single fatal error caused by the CPU failing to evict memory from its L2 cache due to a heirarchy error.|
 
 The code to look out for in Machine Check Exceptions to rule out the CPU is Bus Error for AMD and Bus/Interconnect Error for Intel. For AMD, the bitfield is 0000 1XXT RRRR XXLL. For intel, the bitfield is 000F 1PPT RRRR IILL. When translated to hex, this will mean the third number of the MCi_STATUS code is 8 or larger for both CPU brands. Bus/Interconnect errors are caused by another device sending a signal to a pin on the CPU telling it to interrupt execution immediately and shut down. Occasionally, the event viewer will have information about which device triggered this interrupt; otherwise, you will need to explore the manual of your CPU for more information on identifying the faulting component. A Bus/Interconnect error does not mean the error is not internal to the CPU. The CPU has a few components that will cause the error; it simply allows the possibility that it is not a CPU issue. If your error is not a Bus/Interconnect error, you are guaranteed to have a CPU problem.
 
