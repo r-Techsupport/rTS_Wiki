@@ -12,7 +12,7 @@ last_modified_date: 2023-02-27
 # Supported Operating Systems
 
 ## Full Support:
-* Windows 10/11 only
+* Non-EOL, consumer versions of Windows 10/11 only:
     * Home
     * Pro
     * Pro for Workstations
