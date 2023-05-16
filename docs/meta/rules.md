@@ -90,12 +90,11 @@ How our bans work: Almost all our bans are permanent which can be appealed after
 > * kinguin
 > * r/microsoftsoftwareswap
 
-> #### No EOL Software
+> #### No Unsupported/EOL Systems
+> See our [Supported Operating Systems page](/docs/meta/supported-os#no-support) for a list of operating systems that we do not support.
+> 
 > We do not provide support for EOL (end of life) software. Software that is EOL has lost all support from the developer and therefore all consumer communities as well.
-> 
-> These operating systems and various softwares are no longer receiving security patches. Running them is unsafe and we recommend users install a supported version as soon as possible.
-> 
-> This list includes Windows XP, Vista, and 7.
+> These operating systems and various softwares are no longer receiving security patches. Running them is unsafe and we recommend users install a supported version as soon as possible. 
 
 > #### No Public Service Announcements
 > No public service announcements unless relevant to an issue (it must be a comment). 
