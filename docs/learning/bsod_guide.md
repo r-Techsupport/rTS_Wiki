@@ -2,6 +2,7 @@
 layout: default
 title: BSOD Guide
 nav_exclude: false
+nav_order: 20
 has_children: false
 parent: Learning
 search_exclude: false
