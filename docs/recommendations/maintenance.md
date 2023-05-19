@@ -6,7 +6,7 @@ nav_order: 4
 has_children: false
 parent: Software We Recommend
 search_exclude: false
-last_modified_date: 2022-12-15
+last_modified_date: 2023-05-08
 redirect_from: /books/software-we-recommend/page/windows-maintenance
 ---
 # Windows Maintenance
@@ -24,7 +24,7 @@ We do not recommend any driver finder applications, this list includes but is no
 * IObit DriverBooster
 * Driver Easy
 
-Windows can natively handle most drivers during install, or directly from Device Manager. If you are seeking to update drivers outside of Windows Device Manager only seek them online from the motherboard, laptop, or GPU manufacturers support page.
+Windows can natively handle most drivers during install, or directly from Device Manager. If you are seeking to update drivers outside of Windows Device Manager only seek them online from the [motherboard / manufacturers website](/docs/learning/Computing-101.html#support-sites), [GPU manufacturers support page](/docs/learning/Computing-101.html#gpu-driver-downloads) or [Windows Update](/docs/learning/Computing-101.html#installing-drivers) 
 
 ## Defrag
 **Only use Windows built-in tools such as Drive Optimizer.** All third party tools, such as defraggler, are considered PUPs.

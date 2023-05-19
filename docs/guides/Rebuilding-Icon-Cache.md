@@ -5,16 +5,16 @@ nav_exclude: false
 has_children: false
 parent: General Guides
 search_exclude: false
-last_modified_date: 2022-09-17
+last_modified_date: 2023-05-08
 ---
 
 # Rebuilding Icon Cache
 Are your icons blank or do they not refresh correctly? Your icon database has probably corrupt, and we need to rebuild it. The same thing can happen with thumbnails too if they do not display correctly. In this case we need to delete the corrupt cache files, and rebuild the icon cache and clear the thumbnail cache.
 
 ### Deleting Icon Cache
-1. Open Task Manager > Find the process "Windows Explorer" > right click and "End process" on it
-2. Hit "win + r" key combo > type `cmd` > hit "CTRL + SHIFT + ENTER" key combination to open command prompt as an admin. 
-3. Type in the following commands in order.
+1. Hit "win + r" key combo > type `cmd` > hit "CTRL + SHIFT + ENTER" key combination to open command prompt as an admin.
+2. Open Task Manager > Find the process "Windows Explorer" > right click and "End process" on it 
+3. In the admin Command Prompt, type the following commands in order.
 	```
 	cd /d %userprofile%\AppData\Local\Microsoft\Windows\Explorer
 	attrib –h iconcache_*.db
@@ -25,9 +25,9 @@ Are your icons blank or do they not refresh correctly? Your icon database has pr
 4. Reboot the computer, and your icon cache should be fully restored.
 
 ### Clear Thumbnail Cache
-1. Open Task Manager > Find the process "Windows Explorer" > right click and "End process" on it
-2. Hit "win + r" key combo > type `cmd` > hit "CTRL + SHIFT + ENTER" key combination to open command prompt as an admin. 
-3. Type in the following commands in order.
+1. Hit "win + r" key combo > type `cmd` > hit "CTRL + SHIFT + ENTER" key combination to open command prompt as an admin.
+2. Open Task Manager > Find the process "Windows Explorer" > right click and "End process" on it
+3. In the admin Command Prompt, type the following commands in order.
 	```
 	cd /d %userprofile%\AppData\Local\Microsoft\Windows\Explorer
 	attrib –h thumbcache_*.db 
