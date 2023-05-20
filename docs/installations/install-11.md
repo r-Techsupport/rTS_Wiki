@@ -6,7 +6,7 @@ nav_order: 2
 has_children: false
 parent: OS Install Guides
 search_exclude: false
-last_modified_date: 2022-06-16
+last_modified_date: 2023-05-20
 redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 ---
 # Installing Windows 11
@@ -17,7 +17,9 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 
 1. Create a bootable USB flash drive using the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/windows11) from Microsoft. This will also wipe any data stored on the USB flash drive.
 
-    > It is best to disconnect all storage disks except from the main (C Drive) disk from the computer before installing Windows 11.
+   > ❗ MCT must be be saved and run from outside the USB flash drive.
+
+   > It is best to disconnect all storage disks except from the main (C Drive) disk from the computer before installing Windows 10.
 
 2. Boot into your USB that has the Windows 11 Media on it. 
 	
