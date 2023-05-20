@@ -14,7 +14,7 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-10
 
 1. Using a USB flash drive **at least 8 gigabytes in size**, create a bootable USB flash drive using the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/windows10) from Microsoft. This will also wipe any data stored on the USB flash drive.
 
-   > ❗ MCT must be be saved and run from outside the USB flash drive.
+   > ❗ MCT must be saved and run from outside the USB flash drive.
 
    > It is best to disconnect all storage disks except from the main (C Drive) disk from the computer before installing Windows 10.
 
