@@ -25,4 +25,4 @@ This step identifies if the issue is with Windows itself, or a third-party progr
 
 ![cleanboot](/assets/factoids/cleanboot.gif)
 
-> ❗ WARNING: Ensure to hide ALL Microsoft services as depicted by the GIF, as disabling Microsoft services may prevent you from logging back into Windows or type a PIN or Password, effectively locking you out of the OS.
+> ❗ WARNING: Please ensure that "Hide all Microsoft services" is ticked on as seen in the GIF. Accidentally disabling microsoft services will prevent you from typing in your password or PIN during login, locking you out of your OS. 
