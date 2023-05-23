@@ -24,3 +24,5 @@ This step identifies if the issue is with Windows itself, or a third-party progr
 3. Enable clean boot by following the GIF below.
 
 ![cleanboot](/assets/factoids/cleanboot.gif)
+
+> ❗ WARNING: Ensure to hide ALL Microsoft services as depicted by the GIF, as disabling Microsoft services may prevent you from logging back into Windows or type a PIN or Password, effectively locking you out of the OS.
