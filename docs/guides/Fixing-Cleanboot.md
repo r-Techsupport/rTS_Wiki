@@ -11,8 +11,6 @@ last_modified_date: 2023-05-22
 
 If by accident you have disabled microsoft services when performing a Cleanboot, __**which is something you should never do**__, this guide will detail how to attempt to fix the failed Cleanboot.
 
-### Insert image for failed cleanboot
-
 > Note that we will only cover how to fix cleanboot. For information on how to do a cleanboot, please refer to the "[How to Cleanboot Windows](/docs/factoids/cleanboot)" guide.
 
 > Another point to mention is that all the screenshots depict Windows 10, but Windows 11 will operate the same way.
@@ -86,22 +84,3 @@ In all 4, you will have to look for the "Start" key, double click it, and set th
 Restart the PC now, and boot into normal windows. If the login page shows up, the fixes have worked and you can carry on with a cleanbooted PC.
 
 Otherwise, you may have to [reinstall windows](/docs/installations/win.md), as a broken registry is not simple to fix.
-
-
-# Take this for notes:
-If someone fucks up cleanboot and it won't let them login anymore or type a pin/password
-
-Windows RE
-
-regedit
-
-Load SERVICES hive from c:\windows\system32\config as test
-
-HKEY_LOCAL_MACHINE\test\CurrentControlSet001\Services
-
-KeyIso
-VaultSvc
-Netlogon
-seclogon
-
-Set start to 3 for all
