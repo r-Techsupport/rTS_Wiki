@@ -59,13 +59,13 @@ This will bring lots of folders up. These are the Microsoft Services Hive essent
 
 > Note that different regedit folders may look differently from one another depending on the applications installed. However, the services hive will be identical in all Windows 10 and Windows 11 version.
 
-If the services hive opens up, then that means that your OS is working. **If the services hive here is missing, then your Windows install may be corrupted**, and you may have to reinstall windows, following this guide [here](/docs/installations/win.md).
+If the services hive opens up, then that means that your OS is working. **If the services hive here is missing, then your Windows install may be corrupted**, and you may have to reinstall windows, following this guide [here](/docs/installations/win).
 
 ## 3. Fixing the broken logins
 
 Here we will look for 4 different registry hives and keys to fix.
 
-> ❗ Depending on the type of login you utilize, not all keys may be present! If 1 or 2 of these keys are missing, there is no need to worry. If all 4 are missing, you will have to resort to [reinstalling windows](/docs/installations/win.md).
+> ❗ Depending on the type of login you utilize, not all keys may be present! If 1 or 2 of these keys are missing, there is no need to worry. If all 4 are missing, you will have to resort to [reinstalling windows](/docs/installations/win).
 
 You will have to look for the following folders:
 - `KeyIso`
@@ -83,4 +83,4 @@ In all 4, you will have to look for the "Start" key, double click it, and set th
 
 Restart the PC now, and boot into normal windows. If the login page shows up, the fixes have worked and you can carry on with a cleanbooted PC.
 
-Otherwise, you may have to [reinstall windows](/docs/installations/win.md), as a broken registry is not simple to fix.
+Otherwise, you may have to [reinstall windows](/docs/installations/win), as a broken registry is not simple to fix.
