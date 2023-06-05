@@ -29,15 +29,15 @@ This will cause the PC to restart into Windows Recovery Environment, where all f
 
 Open up the terminal by selecting `Troubleshoot` -> `Advanced Options` -> `Command Prompt` as depicted below:
 
-#### Step 1: Troubleshoot
+### Step 1: Troubleshoot
 
 ![get_into_regedit_1.png](/assets/fixing-cleanboot/get_into_regedit_1.png)
 
-#### Step 2: Advanced Options
+### Step 2: Advanced Options
 
 ![get_into_regedit_2.png](/assets/fixing-cleanboot/get_into_regedit_2.png)
 
-#### Step 3: Command Prompt
+### Step 3: Command Prompt
 
 ![get_into_regedit_3.png](/assets/fixing-cleanboot/get_into_regedit_3.png)
 
