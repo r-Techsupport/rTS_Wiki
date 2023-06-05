@@ -27,4 +27,4 @@ This step identifies if the issue is with Windows itself, or a third-party progr
 
 > ❗ WARNING: Please ensure that "Hide all Microsoft services" is ticked on as seen in the GIF. Accidentally disabling microsoft services will prevent you from typing in your password or PIN during login, locking you out of your OS. 
 
-In the event of a failed Cleanboot, where you may have disabled all microsoft services, please refer to this guide [here to fixing it](/docs/guides/fixing-cleanboot).
+In the event of a failed Cleanboot, where you may have disabled all Microsoft services, follow [this guide](/docs/guides/fixing-cleanboot) to fix it.
