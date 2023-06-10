@@ -193,6 +193,9 @@ ___
   - [CEO spez AMA Overview](https://www.reddit.com/r/ModCoord/comments/145bzus/ceo_spez_ama_overview/)
   - [Today's AMA With Spez Did Nothing to Alleviate Concerns: An Open Response](https://www.reddit.com/r/ModCoord/comments/145l7wp/todays_ama_with_spez_did_nothing_to_alleviate/)
 
+### Thoughts from Other Subreddit Moderators
+- [AskHistorians and uncertainty surrounding the future of API access](https://www.reddit.com/r/AskHistorians/comments/142w159/askhistorians_and_uncertainty_surrounding_the/)
+
 ### 3PA Developer Announcements on the Situation
 - [Apollo](https://www.reddit.com/r/apolloapp/comments/144f6xm/apollo_will_close_down_on_june_30th_reddits/)
 - [Sync](https://www.reddit.com/r/redditsync/comments/144jp3w/sync_will_shut_down_on_june_30_2023/)
