@@ -195,6 +195,7 @@ ___
 
 ### Thoughts from Other Subreddit Moderators
 - [AskHistorians and uncertainty surrounding the future of API access](https://www.reddit.com/r/AskHistorians/comments/142w159/askhistorians_and_uncertainty_surrounding_the/)
+- [The future of /r/videos.](https://www.reddit.com/r/videos/comments/145vns0/the_future_of_rvideos/)
 
 ### 3PA Developer Announcements on the Situation
 - [Apollo](https://www.reddit.com/r/apolloapp/comments/144f6xm/apollo_will_close_down_on_june_30th_reddits/)
