@@ -11,7 +11,7 @@ discord: '[Discord Server](/discord)'
 
 # r/TechSupport has Gone Dark
 {: .no_toc }
-If you found your way to this page then r/TechSupport has been marked as private. You probably have a lot of questions. We will try our best to answer them all here.
+If you found your way to this page, then r/TechSupport has been marked as private. You probably have a lot of questions. We will try our best to answer them all here.
 
 <details markdown="block">
   <summary>
@@ -28,7 +28,7 @@ As the moderators of a technical support subreddit, we could not agree more. Cur
 
 So then what's the big deal? We agree with Reddit for the most part, right? Well, that's where things get tricky. Reddit's changes to their API when it comes to cost and usage to help combat this free unlimited use of OUR data introduced several issues that would drastically change how most users use Reddit. They have stated their goal is to make these updates with little disruption as possible, however, if the past few days have given any indication, this will not be the case.
 
-Over the years Reddit has picked up the particularly annoying habit of not really following through with their promises. From [promises of building new tools for moderators](https://www.reddit.com/r/announcements/comments/3cbo4m/we_apologize/) to [promsing to give more visibility when users follow you](https://www.reddit.com/r/announcements/comments/cevm31/update_regarding_user_profile_transparency), Reddit has either, at best, barely followed through with their promise or, at worst, completely missed the mark on what they promised. 
+Over the years Reddit has picked up the particularly annoying habit of not really following through with their promises. From [promises of building new tools for moderators](https://www.reddit.com/r/announcements/comments/3cbo4m/we_apologize/) to [promising to give more visibility when users follow you](https://www.reddit.com/r/announcements/comments/cevm31/update_regarding_user_profile_transparency), Reddit has either, at best, barely followed through with their promise or, at worst, completely missed the mark on what they promised. 
 
 ## What does this have to do with third-party reddit applications and why is everyone screaming about them dying because of Reddit?
 I'm sure you all have heard of the various third-party mobile applications. To name a few...
@@ -48,9 +48,9 @@ I'm sure you all have heard of the various third-party mobile applications. To n
 
 Maybe you use one of them daily. Perhaps it is the only way you browse Reddit. Many of them offer insane customization to tailor your Reddit experience to exactly what you want.
 
-These third party applications, which will be referred to as 3PAs from here on, heavily rely on Reddit's API. Many of the developers work alone on their applications as a labor of love to the Reddit community. Most only charge a small fee for pro versions of their application. 
+These third-party applications, which will be referred to as 3PAs from here on, heavily rely on Reddit's API. Many of the developers work alone on their applications as a labor of love to the Reddit community. Most only charge a small fee for pro versions of their application. 
 
-To put it simply, Reddit gave developers of these applications very little time to prepare. Most developers learned around the end of May what the cost would be. Considering the changes would go into effect on July 19th, giving approximately 30 days to prepare by optimizing the applications to possibly minimize costs and setting up models for possible subscriptions to help with costs is ridiculous.
+To put it simply, Reddit gave developers of these applications very little time to prepare. Most developers learned around the end of May what the cost would be. Considering the changes to cost would go into effect on July 1st, giving approximately 30 days to prepare by optimizing the applications to possibly minimize costs and setting up models for possible subscriptions to help with costs is ridiculous.
 
 And what was Reddit's response? 
 
@@ -59,17 +59,17 @@ In his recent disaster of an AMA when asked [why the timeline of charging for th
 
 They do not care if they made it difficult for 3PAs. They have no desire to remedy the situation to allow 3PAs to properly prepare nor to lower costs. Unfortunately, this means it has put several developers in a rough spot. Many have already announced they will be shutting down their applications come June 30th. 
 
-We can go on an on about this, but we are not the developers and cannot give the proper perspective on the issue. So, [we have compiled a list of developers describing the issue from their perspectives](/blackout#3pa-developer-announcements-on-the-situation). We urge you to take the time to read through their posts, once their subreddits are up if they are participating in the blackout. 
+We can go on and on about this, but we are not the developers and cannot give the proper perspective on the issue. So, [we have compiled a list of developers describing the issue from their perspectives](/blackout#3pa-developer-announcements-on-the-situation). We urge you to take the time to read through their posts, once their subreddits are up if they are participating in the blackout. 
 
-If anything please read through the post made by Apollo's developer, Christian, as he gives a very well thought out and detailed explanation on why he has been forced to shut down Apollo.
+If anything, please read through the post made by Apollo's developer, Christian, as he gives a very well thought out and detailed explanation on why he has been forced to shut down Apollo.
 
 ## Why are people mentioning that it will harm those that require accessible websites?
-There is no way to put this mildly, so we'll just come out with it. Reddit's lack of accessiblity on their almost 18 year old website is disgraceful. The fact that they have not implemented anything for accessibility in their official mobile app is inexcusable. Their lack of care towards the concerns raised by the [r/blind](https://www.reddit.com/r/Blind/) moderators and community is disgusting.
+There is no way to put this mildly, so we'll just come out with it. Reddit's lack of accessibility on their almost 18 year old website is disgraceful. The fact that they have not implemented anything for accessibility in their official mobile app is inexcusable. Their lack of care towards the concerns raised by the [r/blind](https://www.reddit.com/r/Blind/) moderators and community is disgusting.
 
 [u/spez](https://reddit.com/user/spez) stated in his recent AMA, 
 > [We are working with RedReader and Dystopia to make sure they have access and will continue to work with others. We’ll review requests to ensure that the app is non-commercial and focused on accessibility needs. Approved apps can use the Data API for free. For our own apps, there is no excuse. We will do better](https://reddit.com/r/reddit/comments/145bram/addressing_the_community_about_changes_to_our_api/jnkccq7/).
 
-Reddit is very aware of how awful their site is for those requiring accessibility. It took outrage from the Reddit community for them to admit they were wrong. And now, as we see from his statement, they are offloading the responsibility to 3PAs, while giving very little guidence on how a 3PA will qualify for free usage of the API.
+Reddit is very aware of how awful their site is for those requiring accessibility. It took outrage from the Reddit community for them to admit they were wrong. And now, as we see from his statement, they are offloading the responsibility to 3PAs, while giving very little guidance on how a 3PA will qualify for free usage of the API.
 
 We will have to keep our fingers crossed that Reddit will follow through with creating a more accessible site as the free API for accessible 3PAs to use might only be temporary.
 
@@ -83,7 +83,7 @@ NSFW content is available everywhere on the internet. Reddit has opted to remove
 - While the stated reasons for these restrictions include legal compliance and enhancing content creator control, we argue that third-party apps could implement similar measures for content display.
 
 ## Why would the moderators of a subreddit for tech support care about all of this? How does this affect you?
-As moderators we strive to make our subreddit a welcoming, safe, and helpful place for our users. Over the years we have had to supplment our community with external sources maintained by our moderator team and a group of other volunteers. Simply put, Reddit does not offer the resources necessary for us to fully support our community.
+As moderators we strive to make our subreddit a welcoming, safe, and helpful place for our users. Over the years we have had to supplement our community with external sources maintained by our moderator team and a group of other volunteers. Simply put, Reddit does not offer the resources necessary for us to fully support our community.
 
 [Since 2015 Reddit admins have been promising to build and improve tools for moderators](https://www.reddit.com/r/announcements/comments/3cbo4m/we_apologize/). Though Reddit has made [some improvements over the years](https://reddit.com/r/reddit/comments/107orxe/ringing_in_2023_with_a_2022_reflection_on_mod/), it is far from the features offered by popular moderation tools such as [toolbox](https://reddit.com/r/toolbox/).
 
@@ -96,22 +96,22 @@ Moderators heavily rely on 3PAs to help with everyday moderation. Frankly, it is
 
 This is a sentiment shared by most, if not all, moderators with subreddits participating in the blackout. Reddit's changes to their API affects everyone. Users and moderators. Developers and their 3PAs. 
 
-On June 6th [we announced we would, along with over 3000 subreddits, go dark starting June 12th](https://www.reddit.com/r/techsupport/comments/142ox2a/rtechsupport_will_be_going_dark_on_june_12_in/) in order to protest against the changes to the API. After [u/spez](https://reddit.com/user/spez)'s AMA on June 9, 2023 we decided to private the subreddit until Reddit makes a concerted effort to reevaluate and reverse their decisions on the API changes.
+On June 6th [we announced we would, along with over 3000 subreddits, go dark starting June 12th](https://www.reddit.com/r/techsupport/comments/142ox2a/rtechsupport_will_be_going_dark_on_june_12_in/) in order to protest against the changes to the API. After [u/spez](https://reddit.com/user/spez)'s AMA on June 9, 2023, we decided to private the subreddit until Reddit makes a concerted effort to reevaluate and reverse their decisions on the API changes.
 
 ## Why would you do this to us?
 We know this decision affects our users heavily. We understand this may anger some of you. We did not make this decision easily. As we said in our original post on the blackout, we truly believe this is in the best interest of the community.
 
 We want to show Reddit there is power in numbers. Our moderators matter. Our users matter. Our communities matter. We have a voice. Reddit cannot continue to grow without all of us.
 
-We want our users to know they wont be left hanging, however. Though our subreddit will be closed, we will have our live chat open in our {{page.discord}}, 24/7, as it always has been. Our wiki will also be available to everyone. We ask our users to please spread the word to others requiring tech support about these resources.
+We want our users to know they won't be left hanging, however. Though our subreddit will be closed, we will have our live chat open in our {{page.discord}}, 24/7, as it always has been. Our wiki will also be available to everyone. We ask our users to please spread the word to others requiring tech support about these resources.
 
 ## How can we, the users, help?
-Starting June 12th we ask if everyone can limit or completely stop their use of Reddit until the protest is over. This will help us with our protest. We want to limit traffic to the site as much as possible.
+Starting June 12th, we ask if everyone can limit or completely stop their use of Reddit until the protest is over. This will help us with our protest. We want to limit traffic to the site as much as possible.
 
 ___
 
 ## YOU are important to r/TechSupport and we couldn't do this without YOU
-We want to thank you all for supporting our subreddit everyday. From the users that volunteer their time to help someone with an issue to the users asking questions for others to find the answer to in the future, we appreciate you all immensely.
+We want to thank you all for supporting our subreddit every day. From the users that volunteer their time to help someone with an issue to the users asking questions for others to find the answer to in the future, we appreciate you all immensely.
 
 -- r/TechSupport Moderators
 
@@ -153,7 +153,7 @@ June 7, 2023
 : - [[Article, English] The Verge, By Jay Peters - Reddit will exempt accessibility-focused apps from its unpopular API pricing changes](https://www.theverge.com/2023/6/7/23752804/reddit-exempt-accessibility-apps-api-pricing-changes)
 
 June 8, 2023
-: - [[Article, English] TechCrunch, By Sarash Perez - Reddit makes an exception for accessibility apps under new API terms](https://techcrunch.com/2023/06/08/reddit-makes-an-exception-for-accessibility-apps-under-new-api-terms/)
+: - [[Article, English] TechCrunch, By Sarah Perez - Reddit makes an exception for accessibility apps under new API terms](https://techcrunch.com/2023/06/08/reddit-makes-an-exception-for-accessibility-apps-under-new-api-terms/)
 : - [[Article, English] The Verge, By Jay Peters - Apollo for Reddit is shutting down](https://www.theverge.com/2023/6/8/23754183/apollo-reddit-app-shutting-down-api)
 : - [[Article, English] MacRumors, By Juli Clover - Popular Reddit App Apollo Shutting Down on June 30](https://www.macrumors.com/2023/06/08/apollo-shutting-down-june-30/)
 : - [[Article, English] 9To5Mac, By Zac Hall - Apollo shutting down due to Reddit’s unaffordable API](https://9to5mac.com/2023/06/08/apollo-app-shutting-down/)
@@ -197,7 +197,7 @@ ___
 - [Sync](https://www.reddit.com/r/redditsync/comments/144jp3w/sync_will_shut_down_on_june_30_2023/)
 - [Reddit is Fun](https://www.reddit.com/r/redditisfun/comments/144gmfq/rif_will_shut_down_on_june_30_2023_in_response_to/)
 - [Narwhal](https://www.reddit.com/r/getnarwhal/comments/144pdom/update_on_narwhal_w_the_upcoming_reddit_api/)
-- [ReadReader](https://www.reddit.com/r/RedReader/comments/145du4j/update_4_redreader_granted_noncommercial/)
+- [RedReader](https://www.reddit.com/r/RedReader/comments/145du4j/update_4_redreader_granted_noncommercial/)
 - [Boost (A small response to a question)](https://www.reddit.com/r/BoostForReddit/comments/145cdmg/comment/jnmvllu)
 - [ReddPlanet](https://www.reddit.com/r/ReddPlanet/comments/145pf4e/reddit_finally_responded_to_me_unfortunately/)
 - [Pager](https://www.reddit.com/r/pager/comments/144hc20/pager_will_shutdown_on_june_30th_the_api_changes/)
