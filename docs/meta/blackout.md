@@ -2,24 +2,16 @@
 layout: default
 title: Blackout
 nav_exclude: true
-search_exclude: false
-last_modified_date: 2023-06-09
-permalink: /blackout
-
-discord: '[Discord Server](/discord)'
+search_exclude: true
+last_modified_date: 2023-06-10
+redirect_from: /blackout
 ---
 
 # r/TechSupport has Gone Dark
 {: .no_toc }
 If you found your way to this page, then r/TechSupport has been or will soon be marked as private. You probably have a lot of questions. We will try our best to answer them all here.
 
-<details markdown="block">
-  <summary>
-    Contents
-  </summary>
-1. TOC
-{:toc}
-</details>
+{% include toc_numbered.md %}
 
 ## What is going on?
 On April 8, 2023 [Reddit announced they would begin charging for usage of their API effective June 19, 2023](https://www.reddit.com/r/reddit/comments/12qwagm/an_update_regarding_reddits_api/). In the announcement, Reddit expressed their concern with the "expansive access to data" acquired through their API and how they "have an obligation to [their] communities to be responsible stewards of this content." 
