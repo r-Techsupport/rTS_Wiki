@@ -125,7 +125,7 @@ ___
 
 ### Live Counter of Subreddits Going Dark, Twitch [reddark_247](https://www.twitch.tv/reddark_247)
 
-<iframe src="https://player.twitch.tv/?channel=reddark_247&parent=rtech.support" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+<iframe src="https://player.twitch.tv/?channel=reddark_247&parent=localhost&muted=true" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620" id="twitch_reddark"></iframe>
 
 ___
 
