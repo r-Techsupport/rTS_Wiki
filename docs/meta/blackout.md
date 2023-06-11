@@ -15,8 +15,8 @@ If you found your way to this page, then r/TechSupport has been or will soon be 
 
 ___
 
-{: .note-title }
-> Live Chat on Discord
+{: .info }
+> **Live Chat on Discord**
 >
 > Our Live Chat will be open during the Reddit Blackout Protest. You can join by clicking [here](/discord).
 
