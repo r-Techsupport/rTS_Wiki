@@ -1,0 +1,45 @@
+#search-input {
+  color: $link-color;
+}
+
+blockquote {
+  background-color: $table-background-color;
+}
+
+h5,
+h6 {
+  color: $body-heading-color !important;
+}
+
+blockquote {
+  // without important, these are overriden by callouts
+  padding: 12px 16px 12px 24px !important;
+  margin: 0.5em !important;
+  border-radius: 0 !important;
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+footer > div > p {
+  margin-top: 0;
+}
+
+h4 {
+  font-size: 14px !important;
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
