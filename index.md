@@ -6,11 +6,11 @@ last_modified: 2022-06-25
 ---
 
 {: .warning }
-> <i class="fa-solid fa-circle-info fa-lg" style="margin-right:10px"></i> **[Reddit Blackout 2023 Protest](/blackout)**
+> <i class="fa-solid fa-circle-info fa-lg" style="margin-right:10px"></i> **Reddit Blackout 2023 Protest**
 > 
-> Our subreddit is currently participating in the protest against Reddit's API changes. We have marked it private. 
+> Our subreddit is currently participating in the protest against Reddit's API changes.
 > 
-> For more information click [here](/blackout) 
+> For more information on the protest and how it impacts you [click here](/blackout) 
 
 # Highlighted Content
 * How to clean install [Windows](/windows)
