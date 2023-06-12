@@ -43,3 +43,25 @@ h4 {
     opacity: 0;
   }
 }
+
+.btn {
+  border-radius: 0;
+}
+
+$btn-colors: (
+  "purple": darken($nord15, 10%),
+  "blue": $nord10,
+  "green": darken($nord14, 10%),
+);
+
+@each $color, $val in $btn-colors {
+  .btn-#{$color} {
+    background-image: none;
+    background-color: $val;
+  }
+
+  .btn-#{$color}:hover {
+    background-image: none;
+    background-color: darken($val, 10%);
+  }
+}
