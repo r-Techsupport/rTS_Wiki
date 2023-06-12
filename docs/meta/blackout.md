@@ -3,7 +3,7 @@ layout: default
 title: Blackout
 nav_exclude: true
 search_exclude: true
-last_modified_date: 2023-06-11
+last_modified_date: 2023-06-12
 redirect_from: /blackout
 ---
 
@@ -119,9 +119,12 @@ We want to thank you all for supporting our subreddit every day. From the users 
 ___
 
 ## Participating Subreddits
+7047 Subreddits Participating as of 12-06-2023 at 6 UTC
+{: .label .label-green }
 
-[r/ModCoord, Plain Text List](https://www.reddit.com/r/ModCoord/wiki/index/){: .btn .btn-purple }
-[Reddark, Visualized List](https://reddark.untone.uk/){: .btn .btn-green }
+[Plain Text List](https://www.reddit.com/r/ModCoord/wiki/index/){: .btn .btn-purple .mr-2 }
+[Pretty List](https://reddark.untone.uk/){: .btn .btn-green .mr-2 }
+[Top Subs](https://save3rdpartyapps.com/){: .btn .btn-blue}
 
 ### Live Counter of Subreddits Going Dark, Twitch [reddark_247](https://www.twitch.tv/reddark_247)
 
@@ -193,6 +196,13 @@ June 11, 2023
 : - [[Article, English] Insider, By Jyoti Mann - Reddit users are planning a 48-hour blackout to protest its new pricing policy](https://www.businessinsider.com/reddit-users-plan-blackout-protest-new-pricing-policy-2023-6)
 : - [[Article, English] Yahoo News, By Anna Bernardo - Dota 2, VALORANT, other gaming subreddits to join Reddit Blackout](https://sg.news.yahoo.com/dota-2-valorant-other-gaming-subreddits-to-join-reddit-blackout-061138639.html)
 : - [[Article, English] Tech Times, By John Lopez - Gaming Subreddits Join Reddit Blackout Against Drastic API Pricing Hike](https://www.techtimes.com/articles/292488/20230611/gaming-subreddits-join-reddit-blackout-against-drastic-api-pricing-hike.htm)
+: - [[Article, English] Mac Rumors, By Joe Rossignol - Apple Subreddit Goes Dark in Protest of Reddit's API Pricing Changes](https://www.macrumors.com/2023/06/11/apple-subreddit-goes-dark/)
+: - [[Article, English] Apple Insider, By Malcolm Owen - All the Apple subreddits set to go dark in protest of Reddit's API charges](https://appleinsider.com/articles/23/06/11/apple-subreddits-set-to-go-dark-to-protest-reddit-api-charges)
+: - [[Article, English] The Guardian, By Alex Hern - Reddit communities to ‘go dark’ in protest over third-party app charges](https://www.theguardian.com/technology/2023/jun/11/reddit-communities-to-go-dark-in-protest-over-third-party-app-charges)
+
+June 12, 2023
+: - [[Article, English] Sky News, By Tom Acres - Reddit blackout: Thousands of communities are doing dark today - here's why](https://news.sky.com/story/reddit-blackout-thousands-of-communities-are-doing-dark-today-heres-why-12899280)
+: - [[Article, English] Aljazeera, By Mohammed Haddad - Why are thousands of Reddit pages going dark for 48 hours?](https://www.aljazeera.com/news/2023/6/12/why-are-thousands-of-reddit-pages-going-dark-for-48-hours)
 
 ___
 
