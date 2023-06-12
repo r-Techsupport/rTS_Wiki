@@ -3,7 +3,7 @@ layout: default
 title: Blackout
 nav_exclude: true
 search_exclude: true
-last_modified_date: 2023-06-11
+last_modified_date: 2023-06-12
 redirect_from: /blackout
 ---
 
@@ -119,9 +119,12 @@ We want to thank you all for supporting our subreddit every day. From the users 
 ___
 
 ## Participating Subreddits
+7265 Subreddits Participating as of 12-06-2023 at 9 UTC
+{: .label .label-green }
 
-[r/ModCoord, Plain Text List](https://www.reddit.com/r/ModCoord/wiki/index/){: .btn .btn-purple }
-[Reddark, Visualized List](https://reddark.untone.uk/){: .btn .btn-green }
+[Plain Text List](https://www.reddit.com/r/ModCoord/wiki/index/){: .btn .btn-purple .mr-2 }
+[Pretty List](https://reddark.untone.uk/){: .btn .btn-green .mr-2 }
+[Top Subs](https://save3rdpartyapps.com/){: .btn .btn-blue}
 
 ### Live Counter of Subreddits Going Dark, Twitch [reddark_247](https://www.twitch.tv/reddark_247)
 
@@ -130,6 +133,9 @@ ___
 ___
 
 ## Blackout and Reddit API in the Media
+April 18, 2023
+: - [[Article, English, Paywall] New York Times, By Mike Isaac - Reddit Wants to Get Paid for Helping to Teach Big A.I. Systems](https://www.nytimes.com/2023/04/18/technology/reddit-ai-openai-google.html)
+
 June 1, 2023
 : - [[Article, English] CNN Business, By Brian Fung - Reddit sparks outrage after a popular app developer said it wants him to pay $20 million a year for data access](https://edition.cnn.com/2023/06/01/tech/reddit-outrage-data-access-charge/index.html)
 : - [[Article, English] IGN, By Ryan Leston - New Reddit API Pricing Strategy Could Mean Big Trouble for Popular Third-Party Apps](https://www.ign.com/articles/new-reddit-api-pricing-strategy-could-mean-big-trouble-for-popular-third-party-apps)
@@ -190,9 +196,21 @@ June 10, 2023
 : - [[Article, English] The Scotsman, By Charlotte Hawes - Reddit blackout: Subreddits to be made private in huge protest - here’s why](https://www.scotsman.com/read-this/reddit-blackout-subreddits-to-be-made-private-in-huge-protest-heres-why-4177985)
 
 June 11, 2023
+: - [[Video, English] NBC Bay Area - Reddit communities to go dark Monday to protest third-party app changes](https://www.nbcbayarea.com/news/local/reddit-communities-to-go-dark-monday-to-protest-third-party-app-changes/3249862/)
 : - [[Article, English] Insider, By Jyoti Mann - Reddit users are planning a 48-hour blackout to protest its new pricing policy](https://www.businessinsider.com/reddit-users-plan-blackout-protest-new-pricing-policy-2023-6)
 : - [[Article, English] Yahoo News, By Anna Bernardo - Dota 2, VALORANT, other gaming subreddits to join Reddit Blackout](https://sg.news.yahoo.com/dota-2-valorant-other-gaming-subreddits-to-join-reddit-blackout-061138639.html)
 : - [[Article, English] Tech Times, By John Lopez - Gaming Subreddits Join Reddit Blackout Against Drastic API Pricing Hike](https://www.techtimes.com/articles/292488/20230611/gaming-subreddits-join-reddit-blackout-against-drastic-api-pricing-hike.htm)
+: - [[Article, English] Mac Rumors, By Joe Rossignol - Apple Subreddit Goes Dark in Protest of Reddit's API Pricing Changes](https://www.macrumors.com/2023/06/11/apple-subreddit-goes-dark/)
+: - [[Article, English] Apple Insider, By Malcolm Owen - All the Apple subreddits set to go dark in protest of Reddit's API charges](https://appleinsider.com/articles/23/06/11/apple-subreddits-set-to-go-dark-to-protest-reddit-api-charges)
+: - [[Article, English] The Guardian, By Alex Hern - Reddit communities to ‘go dark’ in protest over third-party app charges](https://www.theguardian.com/technology/2023/jun/11/reddit-communities-to-go-dark-in-protest-over-third-party-app-charges)
+
+June 12, 2023
+: - [[Article, English] Sky News, By Tom Acres - Reddit blackout: Thousands of communities are doing dark today - here's why](https://news.sky.com/story/reddit-blackout-thousands-of-communities-are-doing-dark-today-heres-why-12899280)
+: - [[Article, English] Aljazeera, By Mohammed Haddad - Why are thousands of Reddit pages going dark for 48 hours?](https://www.aljazeera.com/news/2023/6/12/why-are-thousands-of-reddit-pages-going-dark-for-48-hours)
+: - [[Article, English, Paywall] Bloomberg, By Alex Millson - Reddit Blackout Begins as Forums Protest Charges for Developers](https://www.bloomberg.com/news/articles/2023-06-12/why-are-reddit-pages-private-subreddits-go-dark-to-protest-third-party-charges?leadSource=uverify%20wall#xj4y7vzkg)
+: - [[Article, English] Independent, By Anthony Cuthbertson, Vishwam Sankaran - Reddit blackout: More than 3,000 subreddits to go dark in protest to new changes](https://www.independent.co.uk/tech/reddit-blackout-date-protest-subreddits-b2352492.html)
+: - [[Article, English] Insider, By Lina Batarags - Reddit users are going on a 48-hour blackout. Here are the biggest subreddits that won't be available during this time.](https://www.businessinsider.com/biggest-subreddits-affected-by-48-hour-blackout-list-private-2023-6)
+: - [[Article, Japanese] Soft Antenna - Redditの大規模ストライキが始まる。API利用料金の大幅値上げに多くのユーザーが反発](https://softantenna.com/blog/reddit-blackout/)
 
 ___
 
