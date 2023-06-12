@@ -3,9 +3,10 @@ layout: default
 title: How to Use Multiple Disks in Windows
 nav_exclude: false
 has_children: false
-parent: Learning
+parent: General Guides
 search_exclude: false
 last_modified_date: 2022-10-23
+redirect_from: /docs/learning/multiple-disks
 ---
 # How to Use Multiple Disks in Windows
 
