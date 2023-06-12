@@ -6,9 +6,9 @@ last_modified: 2022-06-25
 ---
 
 {: .warning }
-> **Reddit Blackout 2023 Protest**
+> <i class="fa-solid fa-circle-info fa-lg" style="margin-right:10px"></i> **[Reddit Blackout 2023 Protest](/blackout)**
 > 
-> Our subreddit is currently participating in the blackout protest. We have marked it private. 
+> Our subreddit is currently participating in the protest against Reddit's API changes. We have marked it private. 
 > 
 > For more information click [here](/blackout) 
 
