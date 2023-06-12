@@ -215,6 +215,7 @@ ___
   - [Reddit held a call today with some developers regarding the API changes. Here are some thoughts along with the call notes.](https://www.reddit.com/r/ModCoord/comments/143rk5p/reddit_held_a_call_today_with_some_developers/)
   - [CEO spez AMA Overview](https://www.reddit.com/r/ModCoord/comments/145bzus/ceo_spez_ama_overview/)
   - [Today's AMA With Spez Did Nothing to Alleviate Concerns: An Open Response](https://www.reddit.com/r/ModCoord/comments/145l7wp/todays_ama_with_spez_did_nothing_to_alleviate/)
+  - [Reddit Blackout 2023 - Save 3rd Party Apps](https://www.reddit.com/r/ModCoord/comments/1476fkn/reddit_blackout_2023_save_3rd_party_apps/)
 
 ### Thoughts from Other Subreddit Moderators
 - [AskHistorians and uncertainty surrounding the future of API access](https://www.reddit.com/r/AskHistorians/comments/142w159/askhistorians_and_uncertainty_surrounding_the/)
