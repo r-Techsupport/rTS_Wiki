@@ -119,7 +119,7 @@ We want to thank you all for supporting our subreddit every day. From the users 
 ___
 
 ## Participating Subreddits
-7047 Subreddits Participating as of 12-06-2023 at 6 UTC
+7265 Subreddits Participating as of 12-06-2023 at 9 UTC
 {: .label .label-green }
 
 [Plain Text List](https://www.reddit.com/r/ModCoord/wiki/index/){: .btn .btn-purple .mr-2 }
