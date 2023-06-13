@@ -5,8 +5,8 @@ nav_exclude: true
 last_modified: 2022-06-25
 ---
 
-{: .warning }
-> <i class="fa-solid fa-circle-info fa-lg" style="margin-right:10px"></i> **Reddit Blackout 2023 Protest**
+{: .warning .info-icon }
+> **Reddit Blackout 2023 Protest**
 > 
 > Our subreddit is currently participating in the protest against Reddit's API changes.
 > 

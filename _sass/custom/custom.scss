@@ -66,6 +66,8 @@ $btn-colors: (
   }
 }
 
+/* Labels */
+
 .label {
   border-radius: 0 !important;
   background-color: $nord10;
@@ -91,4 +93,30 @@ $btn-colors: (
 
 .label-red {
   background-color: $nord11;
+}
+
+$callout-icons: (
+  /* fa-circle-exclamation */ "caution": "\f06a",
+  /* fa-warning */ "warning": "\f071",
+  /* fa-circle-xmark */ "danger": "\f057",
+  /* fa-circle-info */ "info": "\f05a",
+  /* fa-sticky-note */ "note": "\f249"
+);
+
+@each $name, $val in $callout-icons {
+  .#{$name}-icon > p:first-child::before {
+    // fa-solid, fa-lg
+    font-family: "Font Awesome 6 Free";
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-size: 1.25em;
+    font-weight: 900;
+    display: inline-block;
+    line-height: 0.5em;
+    vertical-align: -0.075em;
+
+    margin-right: 10px;
+    content: $val;
+  }
 }
