@@ -134,7 +134,7 @@ ___
 
 ## Blackout and Reddit API in the Media
 April 18, 2023
-: - [[Article, English, Paywall] New York Times, By Mike Isaac - Reddit Wants to Get Paid for Helping to Teach Big A.I. Systems](https://www.nytimes.com/2023/04/18/technology/reddit-ai-openai-google.html)
+: - [[Article, English, Paywall] The New York Times, By Mike Isaac - Reddit Wants to Get Paid for Helping to Teach Big A.I. Systems](https://www.nytimes.com/2023/04/18/technology/reddit-ai-openai-google.html)
 
 June 1, 2023
 : - [[Article, English] CNN Business, By Brian Fung - Reddit sparks outrage after a popular app developer said it wants him to pay $20 million a year for data access](https://edition.cnn.com/2023/06/01/tech/reddit-outrage-data-access-charge/index.html)
@@ -150,7 +150,7 @@ June 5, 2023
 : - [[Article, English] Vice Motherboard, By Jason Koebler - Reddit in Mass Revolt Over Astronomical API Fees That Would Kill Third Party Apps](https://www.vice.com/en/article/5d99pn/reddit-api-apollo-app-controversy-explained)
 : - [[Article, German] Heise Online - Protest gegen API-Preise: Große Subreddits werden tagelang stillgelegt](https://www.heise.de/news/Protest-gegen-API-Preise-Grosse-Subreddits-werden-tagelang-stillgelegt-9164783.html)
 : - [[Article, English] PC Gamer, By Andy Chalk - Major subreddit admins are going to war with Reddit over monetization changes that will kill many third-party apps](https://www.pcgamer.com/major-subreddit-admins-are-going-to-war-with-reddit-over-monetization-changes-that-will-kill-many-third-party-apps/)
-: - [[Article, English] ArsTechnica, By Ron Amadeo - Reddit’s plan to kill third-party apps sparks widespread protests](https://arstechnica.com/gadgets/2023/06/reddits-plan-to-kill-third-party-apps-sparks-widespread-protests/?utm_brand=arstechnica&utm_social-type=owned&utm_source=mastodon&utm_medium=social)
+: - [[Article, English] Ars Technica, By Ron Amadeo - Reddit’s plan to kill third-party apps sparks widespread protests](https://arstechnica.com/gadgets/2023/06/reddits-plan-to-kill-third-party-apps-sparks-widespread-protests/?utm_brand=arstechnica&utm_social-type=owned&utm_source=mastodon&utm_medium=social)
 : - [[Article, English] The Register, By Brandon Vigiarolo - Reddit blackout planned over app-killing API prices](https://www.theregister.com/2023/06/05/reddit_blackout_planned_over_appkilling/)
 : - [[Article, English] Dexerto, By Brad Norton - Why is there a Reddit blackout? June 12 revolt planned amid backlash over API changes](https://www.dexerto.com/tech/reddit-blackout-june-12-revolt-planned-amid-backlash-api-changes-2167318/)
 
@@ -205,8 +205,9 @@ June 11, 2023
 : - [[Article, English] The Guardian, By Alex Hern - Reddit communities to ‘go dark’ in protest over third-party app charges](https://www.theguardian.com/technology/2023/jun/11/reddit-communities-to-go-dark-in-protest-over-third-party-app-charges)
 
 June 12, 2023
+: - [[Video, English] Youtube, Philip DeFranco - This Pride Controversy Has Gotten Out of Control, Reddit Blackout, & Cracker Barrel Has Fallen…](https://youtu.be/IlqB6zfEAFU?t=547)
 : - [[Video, English] Youtube, Fireship - Reddit's API rug pull](https://www.youtube.com/watch?v=Ch6zNEq9fwM)
-: - [[Article, English, Paywall] Washington Post, By Shera Avi-Yonah, Annabelle Timsit - Why have many Reddit communities gone private? The blackout, explained.](https://www.washingtonpost.com/technology/2023/06/12/reddit-blackout-begins/)
+: - [[Article, English] Washington Post, By Shera Avi-Yonah, Annabelle Timsit - Why have many Reddit communities gone private? The blackout, explained.](https://www.washingtonpost.com/technology/2023/06/12/reddit-blackout-begins/)
 : - [[Article, English] Sky News, By Tom Acres - Reddit blackout: Thousands of communities are doing dark today - here's why](https://news.sky.com/story/reddit-blackout-thousands-of-communities-are-doing-dark-today-heres-why-12899280)
 : - [[Article, English] Aljazeera, By Mohammed Haddad - Why are thousands of Reddit pages going dark for 48 hours?](https://www.aljazeera.com/news/2023/6/12/why-are-thousands-of-reddit-pages-going-dark-for-48-hours)
 : - [[Article, English, Paywall] Bloomberg, By Alex Millson - Reddit Blackout Begins as Forums Protest Charges for Developers](https://www.bloomberg.com/news/articles/2023-06-12/why-are-reddit-pages-private-subreddits-go-dark-to-protest-third-party-charges?leadSource=uverify%20wall#xj4y7vzkg)
@@ -217,6 +218,11 @@ June 12, 2023
 : - [[Article, English] Reuters - Explainer: Reddit protest: Why are thousands of subreddits going dark?](https://www.reuters.com/technology/reddit-protest-why-are-thousands-subreddits-going-dark-2023-06-12/)
 : - [[Article, English] Yahoo Finance, By Karissa Bell - Reddit sees more than 6,000 communities 'go dark' in protest over API changes](https://finance.yahoo.com/news/reddit-sees-more-than-6000-communities-go-dark-in-protest-over-api-changes-095311637.html)
 : - [[Article, English] NBC News, By David Ingram - Reddit communities go private to protest pricing plan for apps](https://www.nbcnews.com/tech/social-media/reddit-private-subreddit-blackout-protest-message-rcna88457)
+: - [[Article, English] Ars Technica, By Scharon Harding - API pricing protests caused Reddit to crash for 3 hours](https://arstechnica.com/gadgets/2023/06/api-pricing-protests-caused-reddit-to-crash-for-3-hours/)
+: - [[Article, English, Paywall] The New York Times, By Michael Levenson - Reddit Communities Go Dark to Protest New App Policy](https://www.nytimes.com/2023/06/12/business/media/reddit-subreddit-blackout-protest.html)
+: - [[Article, English] Android Police, By Manuel Vonau - Reddit blackout explained: Why subreddits have gone dark](https://www.androidpolice.com/reddit-blackout-why-subreddits-dark/)
+: - [[Article, English] CBC, By Aloysius Wong - What's going on with Reddit today?](https://www.cbc.ca/news/business/reddit-blackout-1.6873756)
+: - [[Article, Portuguese] Expresso 50, By Hugo Séneca - Mais de 6500 grupos de debate do Reddit estão em greve. Será que o Reddit cede?](https://expresso.pt/sociedade/tecnologia/2023-06-12-Mais-de-6500-grupos-de-debate-do-Reddit-estao-em-greve.-Sera-que-o-Reddit-cede--60805545)
 
 ___
 
