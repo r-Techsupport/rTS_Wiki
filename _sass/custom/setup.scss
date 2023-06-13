@@ -1,5 +1,8 @@
 @import "support/nord.scss";
 
+$darker-purple: darken($nord15, 10%);
+$darker-green: darken($nord14, 10%);
+
 $danger-300: $nord11;
 $warning-300: $nord12;
 $caution-300: $nord13;

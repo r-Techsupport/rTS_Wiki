@@ -49,9 +49,9 @@ h4 {
 }
 
 $btn-colors: (
-  "purple": darken($nord15, 10%),
+  "purple": $darker-purple,
   "blue": $nord10,
-  "green": darken($nord14, 10%),
+  "green": $darker-green,
 );
 
 @each $color, $val in $btn-colors {
@@ -64,4 +64,31 @@ $btn-colors: (
     background-image: none;
     background-color: darken($val, 10%);
   }
+}
+
+.label {
+  border-radius: 0 !important;
+  background-color: $nord10;
+}
+
+.label,
+.label-blue {
+  background-color: $nord10;
+}
+
+.label-green {
+  background-color: $darker-green;
+}
+
+.label-purple {
+  background-color: $darker-purple;
+}
+
+.label-yellow {
+  background-color: $nord13;
+  color: darken($nord0, 10%);
+}
+
+.label-red {
+  background-color: $nord11;
 }
