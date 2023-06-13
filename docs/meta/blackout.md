@@ -119,7 +119,7 @@ We want to thank you all for supporting our subreddit every day. From the users 
 ___
 
 ## Participating Subreddits
-8733 Subreddits Participating as of 13-06-2023 at 6 UTC
+8838 Subreddits Participating as of 13-06-2023 at 22 UTC
 {: .label .label-green }
 
 [Plain Text List](https://www.reddit.com/r/ModCoord/wiki/index/){: .btn .btn-purple .mr-2 }
@@ -129,6 +129,224 @@ ___
 ### Live Counter of Subreddits Going Dark, Twitch [reddark_247](https://www.twitch.tv/reddark_247)
 
 <iframe src="https://player.twitch.tv/?channel=reddark_247&parent=rtech.support&muted=true" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620" id="twitch_reddark"></iframe>
+
+___
+
+## Protest Information
+
+[r/ModCoord](https://www.reddit.com/r/ModCoord){: .btn .btn-blue .mt-2 .mr-2 }
+[r/Save3rdPartyApps](https://www.reddit.com/r/Save3rdPartyApps){: .btn .btn-purple .mt-2}
+
+### Announcements
+
+{: .mb-4 .mt-3 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 1, 2023</summary>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  r/ModCoord
+  {: .label .mr-0 .ml-0 }
+
+  Official
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [What is this subreddit? What is happening here?](https://www.reddit.com/r/ModCoord/comments/13xmmuo/what_is_this_subreddit_what_is_happening_here/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  r/ModCoord
+  {: .label .mr-0 .ml-0 }
+
+  Official
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [An open letter on the state of affairs regarding the API pricing and third party apps and how that will impact moderators and communities.](https://www.reddit.com/r/ModCoord/comments/13xh1e7/an_open_letter_on_the_state_of_affairs_regarding/)
+  {: .d-inline }
+  </div>
+
+</details>
+
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 2, 2023</summary>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  r/Save3rdPartyApps
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  Official
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [What We Want](https://www.reddit.com/r/Save3rdPartyApps/comments/13yh2te/what_we_want/)
+  {: .d-inline }
+  </div>
+  
+{: .ml-5 }
+
+  <div markdown="block">
+  r/Save3rdPartyApps
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  Official
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Don't Let Reddit Kill 3rd Party Apps!](https://www.reddit.com/r/Save3rdPartyApps/comments/13yh0jf/dont_let_reddit_kill_3rd_party_apps/)
+  {: .d-inline }
+  </div>
+
+</details>
+
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 6, 2023</summary>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  r/ModCoord
+  {: .label .mr-0 .ml-0 }
+
+  Official
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [These API changes are spreading the cracks in our already overtaxed community teams](https://www.reddit.com/r/ModCoord/comments/142z08m/these_api_changes_are_spreading_the_cracks_in_our/)
+  {: .d-inline }
+  </div>
+
+</details>
+
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 7, 2023</summary>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  r/ModCoord
+  {: .label .mr-0 .ml-0 }
+
+  Official
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Reddit held a call today with some developers regarding the API changes. Here are some thoughts along with the call notes.](https://www.reddit.com/r/ModCoord/comments/143rk5p/reddit_held_a_call_today_with_some_developers/)
+  {: .d-inline }
+  </div>
+  
+</details>
+
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 9, 2023</summary>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  r/ModCoord
+  {: .label .mr-0 .ml-0 }
+
+  Official
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Today's AMA With Spez Did Nothing to Alleviate Concerns: An Open Response](https://www.reddit.com/r/ModCoord/comments/145l7wp/todays_ama_with_spez_did_nothing_to_alleviate/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  r/ModCoord
+  {: .label .mr-0 .ml-0 }
+
+  [CEO spez AMA Overview](https://www.reddit.com/r/ModCoord/comments/145bzus/ceo_spez_ama_overview/)
+  {: .d-inline }
+  </div>
+
+</details>
+
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 11, 2023</summary>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  r/ModCoord
+  {: .label .mr-0 .ml-0 }
+
+  Official
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Reddit Blackout 2023 - Save 3rd Party Apps](https://www.reddit.com/r/ModCoord/comments/1476fkn/reddit_blackout_2023_save_3rd_party_apps/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  r/Save3rdPartyApps
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  Official
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Reddit Blackout 2023 - Save 3rd Party Apps!](https://www.reddit.com/r/Save3rdPartyApps/comments/1476ioa/reddit_blackout_2023_save_3rd_party_apps/)
+  {: .d-inline }
+  </div>
+
+</details>
+
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 13, 2023</summary>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  r/ModCoord
+  {: .label .mr-0 .ml-0 }
+
+  Official
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Indefinite Blackout: Next Steps, Polling Your Community, and Where We Go From Here](https://www.reddit.com/r/ModCoord/comments/148ks6u/indefinite_blackout_next_steps_polling_your/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  r/Save3rdPartyApps
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  Official
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [The Fight Continues](https://reddit.com/r/Save3rdPartyApps/comments/148m42t/the_fight_continues/)
+  {: .d-inline }
+  </div>
+
+</details>
 
 ___
 
@@ -1147,6 +1365,92 @@ ___
 
 </details>
 
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 13, 2023</summary>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [NPR, By Bobby Allyn - Online messaging boards are protesting Reddit's controversial new fees](https://www.npr.org/2023/06/13/1181868228/online-messaging-boards-are-protesting-reddits-controversial-new-fees)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Electronic Frontier Foundation (EFF), By Rory Mir - What Reddit Got Wrong](https://www.eff.org/deeplinks/2023/06/what-reddit-got-wrong)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [The Verge, By David Pierce and Nilay Patel - Apollo’s Christian Selig explains his fight with Reddit — and why users revolted](https://www.theverge.com/2023/6/13/23759180/reddit-protest-private-apollo-christian-selig-subreddit)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [The Verge, By Casey Newton - How Reddit set itself up for a fall](https://www.theverge.com/2023/6/13/23759130/reddit-protests-history-community-growth-moderation)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [The Verge, By Jay Peters - Reddit communities with millions of followers plan to extend the blackout indefinitely](https://www.theverge.com/2023/6/13/23759674/reddit-mods-blackout-protest-extended-indefinitely)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [The Verge, By Mia Sato and Jay Peters - Reddit CEO tells employees that subreddit blackout ‘will pass’](https://www.theverge.com/2023/6/13/23759559/reddit-internal-memo-api-pricing-changes-steve-huffman)
+  {: .d-inline }
+  </div>
+
+</details>
+
 ___
 
 ## Resources and Further Reading
@@ -1155,21 +1459,6 @@ ___
 - [Addressing the community about changes to our API](https://www.reddit.com/r/reddit/comments/145bram/addressing_the_community_about_changes_to_our_api/)
 - [Data API Terms](https://www.redditinc.com/policies/data-api-terms)
 - [Developer Terms](https://www.redditinc.com/policies/developer-terms)
-
-### Official Protest Subreddits
-- [r/Save3rdPartyApps](https://www.reddit.com/r/Save3rdPartyApps)
-  - [What We Want](https://www.reddit.com/r/Save3rdPartyApps/comments/13yh2te/what_we_want/)
-  - [Don't Let Reddit Kill 3rd Party Apps!](https://www.reddit.com/r/Save3rdPartyApps/comments/13yh0jf/dont_let_reddit_kill_3rd_party_apps/)
-  - [Reddit is killing 3rd-party Apps (infographic)](https://preview.redd.it/91zby5ht044b1.jpg?width=1116&format=pjpg&auto=webp&v=enabled&s=746417bbd904506fc8c7b9c702c16b7fbb47bf06)
-  - [Reddit Blackout 2023 - Save 3rd Party Apps!](https://www.reddit.com/r/Save3rdPartyApps/comments/1476ioa/reddit_blackout_2023_save_3rd_party_apps/)
-- [r/ModCoord](https://www.reddit.com/r/ModCoord)
-  - [What is this subreddit? What is happening here?](https://www.reddit.com/r/ModCoord/comments/13xmmuo/what_is_this_subreddit_what_is_happening_here/)
-  - [An open letter on the state of affairs regarding the API pricing and third party apps and how that will impact moderators and communities.](https://www.reddit.com/r/ModCoord/comments/13xh1e7/an_open_letter_on_the_state_of_affairs_regarding/)
-  - [These API changes are spreading the cracks in our already overtaxed community teams](https://www.reddit.com/r/ModCoord/comments/142z08m/these_api_changes_are_spreading_the_cracks_in_our/)
-  - [Reddit held a call today with some developers regarding the API changes. Here are some thoughts along with the call notes.](https://www.reddit.com/r/ModCoord/comments/143rk5p/reddit_held_a_call_today_with_some_developers/)
-  - [CEO spez AMA Overview](https://www.reddit.com/r/ModCoord/comments/145bzus/ceo_spez_ama_overview/)
-  - [Today's AMA With Spez Did Nothing to Alleviate Concerns: An Open Response](https://www.reddit.com/r/ModCoord/comments/145l7wp/todays_ama_with_spez_did_nothing_to_alleviate/)
-  - [Reddit Blackout 2023 - Save 3rd Party Apps](https://www.reddit.com/r/ModCoord/comments/1476fkn/reddit_blackout_2023_save_3rd_party_apps/)
 
 ### Thoughts from Other Subreddit Moderators
 - [AskHistorians and uncertainty surrounding the future of API access](https://www.reddit.com/r/AskHistorians/comments/142w159/askhistorians_and_uncertainty_surrounding_the/)
