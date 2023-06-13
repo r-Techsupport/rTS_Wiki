@@ -3,7 +3,7 @@ layout: default
 title: Blackout
 nav_exclude: true
 search_exclude: true
-last_modified_date: 2023-06-12
+last_modified_date: 2023-06-13
 redirect_from: /blackout
 ---
 
