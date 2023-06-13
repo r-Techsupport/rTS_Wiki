@@ -119,11 +119,11 @@ We want to thank you all for supporting our subreddit every day. From the users 
 ___
 
 ## Participating Subreddits
-8304 Subreddits Participating as of 13-06-2023 at 2:20 UTC
+8733 Subreddits Participating as of 13-06-2023 at 6 UTC
 {: .label .label-green }
 
 [Plain Text List](https://www.reddit.com/r/ModCoord/wiki/index/){: .btn .btn-purple .mr-2 }
-[Pretty List](https://reddark.untone.uk/){: .btn .btn-green .mr-2 }
+[Pretty List](https://reddark.rewby.archivete.am/){: .btn .btn-green .mr-2 }
 [Top Subs](https://save3rdpartyapps.com/){: .btn .btn-blue}
 
 ### Live Counter of Subreddits Going Dark, Twitch [reddark_247](https://www.twitch.tv/reddark_247)
@@ -133,96 +133,1019 @@ ___
 ___
 
 ## Blackout and Reddit API in the Media
-April 18, 2023
-: - [[Article, English, Paywall] The New York Times, By Mike Isaac - Reddit Wants to Get Paid for Helping to Teach Big A.I. Systems](https://www.nytimes.com/2023/04/18/technology/reddit-ai-openai-google.html)
 
-June 1, 2023
-: - [[Article, English] CNN Business, By Brian Fung - Reddit sparks outrage after a popular app developer said it wants him to pay $20 million a year for data access](https://edition.cnn.com/2023/06/01/tech/reddit-outrage-data-access-charge/index.html)
-: - [[Article, English] IGN, By Ryan Leston - New Reddit API Pricing Strategy Could Mean Big Trouble for Popular Third-Party Apps](https://www.ign.com/articles/new-reddit-api-pricing-strategy-could-mean-big-trouble-for-popular-third-party-apps)
-: - [[Article, English] CNBC, By Rohan Goswami - Reddit will charge hefty fees to the many third-party apps that access its data](https://www.cnbc.com/2023/06/01/reddit-eyeing-ipo-charge-millions-in-fees-for-third-party-api-access.html)
+{: .mb-4 .mt-3 .ml-3 }
 
-June 3, 2023
-: - [[Video, English] Youtube, Snazzy Labs - How Reddit Became the Enemy - w/ Apollo Developer Christian Selig](https://www.youtube.com/watch?v=Ypwgu1BpaO0)
+<details markdown="block">
 
-June 5, 2023
-: - [[Video, English] Youtube, Louis Rossmann - Reddit is killing their brand in the worst possible way](https://www.youtube.com/watch?v=JqL-G3GFqRU)
-: - [[Article, English] The Verge, By Jon Porter - Major Reddit communities will go dark to protest threat to third-party apps](https://www.theverge.com/2023/6/5/23749188/reddit-subreddit-private-protest-api-changes-apollo-charges)
-: - [[Article, English] Vice Motherboard, By Jason Koebler - Reddit in Mass Revolt Over Astronomical API Fees That Would Kill Third Party Apps](https://www.vice.com/en/article/5d99pn/reddit-api-apollo-app-controversy-explained)
-: - [[Article, German] Heise Online - Protest gegen API-Preise: Große Subreddits werden tagelang stillgelegt](https://www.heise.de/news/Protest-gegen-API-Preise-Grosse-Subreddits-werden-tagelang-stillgelegt-9164783.html)
-: - [[Article, English] PC Gamer, By Andy Chalk - Major subreddit admins are going to war with Reddit over monetization changes that will kill many third-party apps](https://www.pcgamer.com/major-subreddit-admins-are-going-to-war-with-reddit-over-monetization-changes-that-will-kill-many-third-party-apps/)
-: - [[Article, English] Ars Technica, By Ron Amadeo - Reddit’s plan to kill third-party apps sparks widespread protests](https://arstechnica.com/gadgets/2023/06/reddits-plan-to-kill-third-party-apps-sparks-widespread-protests/?utm_brand=arstechnica&utm_social-type=owned&utm_source=mastodon&utm_medium=social)
-: - [[Article, English] The Register, By Brandon Vigiarolo - Reddit blackout planned over app-killing API prices](https://www.theregister.com/2023/06/05/reddit_blackout_planned_over_appkilling/)
-: - [[Article, English] Dexerto, By Brad Norton - Why is there a Reddit blackout? June 12 revolt planned amid backlash over API changes](https://www.dexerto.com/tech/reddit-blackout-june-12-revolt-planned-amid-backlash-api-changes-2167318/)
+  <summary>April 18, 2023</summary>
 
-June 6, 2023
-: - [[Article, Dutch] Tweakers, By Rard van der Hoeven, Vijf vragen over het protest tegen de geplande api-aanpassingen van Reddit](https://tweakers.net/nieuws/210552/vijf-vragen-over-het-protest-tegen-de-geplande-api-aanpassingen-van-reddit.html)
-: - [[Article, English, Paywall] Bloomberg, By Priya Anand - Reddit on New Pricing Plan: Company ‘Needs to Be Fairly Paid’](https://www.bloomberg.com/news/articles/2023-06-06/reddit-on-new-pricing-plan-company-needs-to-be-fairly-paid?leadSource=uverify%20wall#xj4y7vzkg)
-: - [[Article, English] Windows Central, By Cole Martin - Top Reddit communities going dark to protest third-party API charges](https://www.windowscentral.com/software-apps/reddit-going-dark-to-protest-third-party-api-charges)
-: - [[Article, English] Independent, By Anthony Cuthbertson - Reddit blackout: More than 1,000 subreddits to go dark in protest to new changes](https://www.independent.co.uk/tech/reddit-blackout-date-protest-subreddits-b2352492.html)
-: - [[Article, English] Kotaku, By Luke Plunkett - Reddit Communities Are 'Going Dark' To Protest Wildly Unpopular App Changes](https://kotaku.com/reddit-blackout-going-dark-protest-apollo-apps-api-ios-1850512837)
-: - [[Article, English] PCMag, By Marco Marcelline - Popular Subreddits Going Dark to Protest Reddit Charging for API Access](https://www.pcmag.com/news/popular-subreddits-going-dark-to-protest-reddit-charging-for-api-access)
+{: .ml-5 }
 
-June 7, 2023
-: - [[Video, English] Youtube, LMG Clips - Reddit Hates Their Users](https://www.youtube.com/watch?v=LEGCHnoEsLM)
-: - [[Article, English] SFGATE, By Stephen Council - Reddit announces plan to lay off 90 workers as subreddits plan mass protest](https://www.sfgate.com/tech/article/reddit-layoffs-90-protest-plan-18140277.php)
-: - [[Article, English] Techinnowire - Reddit’s New API Pricing: A Boon or Bane for User Experience?](https://www.techinnowire.com/reddit-api-pricing-a-boon-or-bane-for-user-experience/)
-: - [[Article, English] Engadget, By Karissa Bell - Reddit says some accessibility apps won’t have to pay for its API](https://www.engadget.com/reddit-says-some-accessibility-apps-wont-have-to-pay-for-its-api-213401412.html)
-: - [[Article, English] Adnroid Authority, By C. Scott Brown - https://www.engadget.com/reddit-says-some-accessibility-apps-wont-have-to-pay-for-its-api-213401412.html](https://www.androidauthority.com/reddit-third-party-apps-accessibility-3332934/)
-: - [[Article, English] The Verge, By Jay Peters - Reddit will exempt accessibility-focused apps from its unpopular API pricing changes](https://www.theverge.com/2023/6/7/23752804/reddit-exempt-accessibility-apps-api-pricing-changes)
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
 
-June 8, 2023
-: - [[Article, English] TechCrunch, By Sarah Perez - Reddit makes an exception for accessibility apps under new API terms](https://techcrunch.com/2023/06/08/reddit-makes-an-exception-for-accessibility-apps-under-new-api-terms/)
-: - [[Article, English] The Verge, By Jay Peters - Apollo for Reddit is shutting down](https://www.theverge.com/2023/6/8/23754183/apollo-reddit-app-shutting-down-api)
-: - [[Article, English] MacRumors, By Juli Clover - Popular Reddit App Apollo Shutting Down on June 30](https://www.macrumors.com/2023/06/08/apollo-shutting-down-june-30/)
-: - [[Article, English] 9To5Mac, By Zac Hall - Apollo shutting down due to Reddit’s unaffordable API](https://9to5mac.com/2023/06/08/apollo-app-shutting-down/)
-: - [[Article, English] Engadget, By Karissa Bell - Reddit CEO will host an AMA on API changes as thousands of subreddits plan to 'go dark'](https://www.engadget.com/reddit-ceo-will-host-an-ama-on-api-changes-as-thousands-of-subreddits-plan-to-go-dark-193423226.html)
+  English
+  {: .label .label-green .mr-0 .ml-0 }
 
-June 9, 2023
-: - [[Video, English] Youtube, Linus Tech Tips - Ban me, Twitch! - WAN Show June 9, 2023](https://www.youtube.com/watch?v=Rt78MqJDozY&t=5050s)
-: - [[Video, English] Youtube, SomeOrdinaryGamers - We Have To Talk About The Reddit Blackout](https://www.youtube.com/watch?v=fBruoybHryU)
-: - [[Article, English] Evening Standard, By Saqib Shah - Reddit blackout: Why subreddits are protesting to save third-party apps](https://www.standard.co.uk/tech/reddit-third-party-apps-blackout-movement-b1085610.html)
-: - [[Article, German] Heise Online, By Martin Holland - Teure API-Preise bei Reddit: Beliebte Dritt-Anwendung Apollo wird eingestellt](https://www.heise.de/news/Kosten-fuer-Reddit-API-Beliebte-Dritt-Anwendung-Apollo-wird-eingestellt-9181977.html)
-: - [[Article, English] TechCrunch, By Sarah Perez - Reddit CEO doubles down on attack on Apollo developer in drama-filled AMA](https://techcrunch.com/2023/06/09/reddit-ceo-doubles-down-on-attack-on-apollo-developer-in-drama-filled-ama/)
-: - [[Article, English] BBC, By Tom Gerken - Reddit blackout: Subreddits to go private on Monday](https://www.bbc.com/news/technology-65855608)
-: - [[Article, English] Android Authority, By C. Scott Brown - Reddit CEO does AMA, doesn't address or even mention upcoming subreddit protests](https://www.androidauthority.com/reddit-ceo-ama-2023-3333702/)
-: - [[Article, English] Tech Monitor, By Ryan Morrison - Reddit apps to shut down over API pricing hike which could see bills hit $20m a year](https://techmonitor.ai/technology/software/reddit-api-blackout-price-hike)
-: - [[Article, English] University of Minnesota Twin Cities - Upcoming Reddit blackout and the future of third-party applications](https://twin-cities.umn.edu/news-events/upcoming-reddit-blackout-and-future-third-party-applications)
-: - [[Article, English] LifeHacker, By Beth Skwarecki - Why Your Favorite Subreddits Are Going Dark on June 12](https://lifehacker.com/why-your-favorite-subreddits-are-going-dark-on-june-12-1850521188)
+  Paywall
+  {: .label .label-yellow .mr-0 .ml-0 }
 
-June 10, 2023
-: - [[Video, English] Youtube, Louis Rossmann - A word on reddit, blackouts, & effective protesting](https://www.youtube.com/watch?v=U06rCBIKM5M)
-: - [[Article, English] Wired, By Boone Ashworth - The Reddit App War Is Getting Messy](https://www.wired.com/story/the-reddit-app-war-is-getting-messy/)
-: - [[Article, English] Sportskeeda, By Aniket Srivastava - Why are NFL communities joining Reddit blackout? Exploring issues around API changes](https://www.sportskeeda.com/nfl/why-nfl-communities-joining-reddit-blackout-exploring-issues-around-api-changes)
-: - [[Article, English] The Scotsman, By Charlotte Hawes - Reddit blackout: Subreddits to be made private in huge protest - here’s why](https://www.scotsman.com/read-this/reddit-blackout-subreddits-to-be-made-private-in-huge-protest-heres-why-4177985)
+  [The New York Times, By Mike Isaac - Reddit Wants to Get Paid for Helping to Teach Big A.I. Systems](https://www.nytimes.com/2023/04/18/technology/reddit-ai-openai-google.html)
+  {: .d-inline }
+  </div>
 
-June 11, 2023
-: - [[Video, English] NBC Bay Area - Reddit communities to go dark Monday to protest third-party app changes](https://www.nbcbayarea.com/news/local/reddit-communities-to-go-dark-monday-to-protest-third-party-app-changes/3249862/)
-: - [[Article, English] Insider, By Jyoti Mann - Reddit users are planning a 48-hour blackout to protest its new pricing policy](https://www.businessinsider.com/reddit-users-plan-blackout-protest-new-pricing-policy-2023-6)
-: - [[Article, English] Yahoo News, By Anna Bernardo - Dota 2, VALORANT, other gaming subreddits to join Reddit Blackout](https://sg.news.yahoo.com/dota-2-valorant-other-gaming-subreddits-to-join-reddit-blackout-061138639.html)
-: - [[Article, English] Tech Times, By John Lopez - Gaming Subreddits Join Reddit Blackout Against Drastic API Pricing Hike](https://www.techtimes.com/articles/292488/20230611/gaming-subreddits-join-reddit-blackout-against-drastic-api-pricing-hike.htm)
-: - [[Article, English] Mac Rumors, By Joe Rossignol - Apple Subreddit Goes Dark in Protest of Reddit's API Pricing Changes](https://www.macrumors.com/2023/06/11/apple-subreddit-goes-dark/)
-: - [[Article, English] Apple Insider, By Malcolm Owen - All the Apple subreddits set to go dark in protest of Reddit's API charges](https://appleinsider.com/articles/23/06/11/apple-subreddits-set-to-go-dark-to-protest-reddit-api-charges)
-: - [[Article, English] The Guardian, By Alex Hern - Reddit communities to ‘go dark’ in protest over third-party app charges](https://www.theguardian.com/technology/2023/jun/11/reddit-communities-to-go-dark-in-protest-over-third-party-app-charges)
+</details>
 
-June 12, 2023
-: - [[Video, English] Youtube, Philip DeFranco - This Pride Controversy Has Gotten Out of Control, Reddit Blackout, & Cracker Barrel Has Fallen…](https://youtu.be/IlqB6zfEAFU?t=547)
-: - [[Video, English] Youtube, Fireship - Reddit's API rug pull](https://www.youtube.com/watch?v=Ch6zNEq9fwM)
-: - [[Article, English] Washington Post, By Shera Avi-Yonah, Annabelle Timsit - Why have many Reddit communities gone private? The blackout, explained.](https://www.washingtonpost.com/technology/2023/06/12/reddit-blackout-begins/)
-: - [[Article, English] Sky News, By Tom Acres - Reddit blackout: Thousands of communities are doing dark today - here's why](https://news.sky.com/story/reddit-blackout-thousands-of-communities-are-doing-dark-today-heres-why-12899280)
-: - [[Article, English] Aljazeera, By Mohammed Haddad - Why are thousands of Reddit pages going dark for 48 hours?](https://www.aljazeera.com/news/2023/6/12/why-are-thousands-of-reddit-pages-going-dark-for-48-hours)
-: - [[Article, English, Paywall] Bloomberg, By Alex Millson - Reddit Blackout Begins as Forums Protest Charges for Developers](https://www.bloomberg.com/news/articles/2023-06-12/why-are-reddit-pages-private-subreddits-go-dark-to-protest-third-party-charges?leadSource=uverify%20wall#xj4y7vzkg)
-: - [[Article, English] Independent, By Anthony Cuthbertson, Vishwam Sankaran - Reddit blackout: More than 3,000 subreddits to go dark in protest to new changes](https://www.independent.co.uk/tech/reddit-blackout-date-protest-subreddits-b2352492.html)
-: - [[Article, English] Insider, By Lina Batarags - Reddit users are going on a 48-hour blackout. Here are the biggest subreddits that won't be available during this time.](https://www.businessinsider.com/biggest-subreddits-affected-by-48-hour-blackout-list-private-2023-6)
-: - [[Article, Japanese] Soft Antenna - Redditの大規模ストライキが始まる。API利用料金の大幅値上げに多くのユーザーが反発](https://softantenna.com/blog/reddit-blackout/)
-: - [[Article, English, Paywall] Los Angeles Times, By Helen Li - Thousands of Reddit communities go dark to protest new data fees](https://www.latimes.com/business/story/2023-06-12/subreddits-go-dark-as-users-protest-reddits-new-developer-fees)
-: - [[Article, English] Reuters - Explainer: Reddit protest: Why are thousands of subreddits going dark?](https://www.reuters.com/technology/reddit-protest-why-are-thousands-subreddits-going-dark-2023-06-12/)
-: - [[Article, English] Yahoo Finance, By Karissa Bell - Reddit sees more than 6,000 communities 'go dark' in protest over API changes](https://finance.yahoo.com/news/reddit-sees-more-than-6000-communities-go-dark-in-protest-over-api-changes-095311637.html)
-: - [[Article, English] NBC News, By David Ingram - Reddit communities go private to protest pricing plan for apps](https://www.nbcnews.com/tech/social-media/reddit-private-subreddit-blackout-protest-message-rcna88457)
-: - [[Article, English] Ars Technica, By Scharon Harding - API pricing protests caused Reddit to crash for 3 hours](https://arstechnica.com/gadgets/2023/06/api-pricing-protests-caused-reddit-to-crash-for-3-hours/)
-: - [[Article, English, Paywall] The New York Times, By Michael Levenson - Reddit Communities Go Dark to Protest New App Policy](https://www.nytimes.com/2023/06/12/business/media/reddit-subreddit-blackout-protest.html)
-: - [[Article, English] Android Police, By Manuel Vonau - Reddit blackout explained: Why subreddits have gone dark](https://www.androidpolice.com/reddit-blackout-why-subreddits-dark/)
-: - [[Article, English] CBC, By Aloysius Wong - What's going on with Reddit today?](https://www.cbc.ca/news/business/reddit-blackout-1.6873756)
-: - [[Article, Portuguese] Expresso 50, By Hugo Séneca - Mais de 6500 grupos de debate do Reddit estão em greve. Será que o Reddit cede?](https://expresso.pt/sociedade/tecnologia/2023-06-12-Mais-de-6500-grupos-de-debate-do-Reddit-estao-em-greve.-Sera-que-o-Reddit-cede--60805545)
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 1, 2023</summary>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [CNN Business, By Brian Fung - Reddit sparks outrage after a popular app developer said it wants him to pay $20 million a year for data access](https://edition.cnn.com/2023/06/01/tech/reddit-outrage-data-access-charge/index.html)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [IGN, By Ryan Leston - New Reddit API Pricing Strategy Could Mean Big Trouble for Popular Third-Party Apps](https://www.ign.com/articles/new-reddit-api-pricing-strategy-could-mean-big-trouble-for-popular-third-party-apps)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [CNBC, By Rohan Goswami - Reddit will charge hefty fees to the many third-party apps that access its data](https://www.cnbc.com/2023/06/01/reddit-eyeing-ipo-charge-millions-in-fees-for-third-party-api-access.html)
+  {: .d-inline }
+  </div>
+
+</details>
+
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 3, 2023</summary>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, Snazzy Labs - How Reddit Became the Enemy - w/ Apollo Developer Christian Selig](https://www.youtube.com/watch?v=Ypwgu1BpaO0)
+  {: .d-inline }
+  </div>
+
+</details>
+
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 5, 2023</summary>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, Louis Rossmann - Reddit is killing their brand in the worst possible way](https://www.youtube.com/watch?v=JqL-G3GFqRU)
+  {: .d-inline }
+  </div>
+  
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [The Verge, By Jon Porter - Major Reddit communities will go dark to protest threat to third-party apps](https://www.theverge.com/2023/6/5/23749188/reddit-subreddit-private-protest-api-changes-apollo-charges)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Vice Motherboard, By Jason Koebler - Reddit in Mass Revolt Over Astronomical API Fees That Would Kill Third Party Apps](https://www.vice.com/en/article/5d99pn/reddit-api-apollo-app-controversy-explained)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  German
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Heise Online - Protest gegen API-Preise: Große Subreddits werden tagelang stillgelegt](https://www.heise.de/news/Protest-gegen-API-Preise-Grosse-Subreddits-werden-tagelang-stillgelegt-9164783.html)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [PC Gamer, By Andy Chalk - Major subreddit admins are going to war with Reddit over monetization changes that will kill many third-party apps](https://www.pcgamer.com/major-subreddit-admins-are-going-to-war-with-reddit-over-monetization-changes-that-will-kill-many-third-party-apps/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Ars Technica, By Ron Amadeo - Reddit’s plan to kill third-party apps sparks widespread protests](https://arstechnica.com/gadgets/2023/06/reddits-plan-to-kill-third-party-apps-sparks-widespread-protests/?utm_brand=arstechnica&utm_social-type=owned&utm_source=mastodon&utm_medium=social)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [The Register, By Brandon Vigiarolo - Reddit blackout planned over app-killing API prices](https://www.theregister.com/2023/06/05/reddit_blackout_planned_over_appkilling/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Dexerto, By Brad Norton - Why is there a Reddit blackout? June 12 revolt planned amid backlash over API changes](https://www.dexerto.com/tech/reddit-blackout-june-12-revolt-planned-amid-backlash-api-changes-2167318/)
+  {: .d-inline }
+  </div>
+
+</details>
+
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 6, 2023</summary>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  Dutch
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Tweakers, By Rard van der Hoeven, Vijf vragen over het protest tegen de geplande api-aanpassingen van Reddit](https://tweakers.net/nieuws/210552/vijf-vragen-over-het-protest-tegen-de-geplande-api-aanpassingen-van-reddit.html)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  Paywall
+  {: .label .label-yellow .mr-0 .ml-0 }
+
+  [Bloomberg, By Priya Anand - Reddit on New Pricing Plan: Company ‘Needs to Be Fairly Paid’](https://www.bloomberg.com/news/articles/2023-06-06/reddit-on-new-pricing-plan-company-needs-to-be-fairly-paid?leadSource=uverify%20wall#xj4y7vzkg)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Windows Central, By Cole Martin - Top Reddit communities going dark to protest third-party API charges](https://www.windowscentral.com/software-apps/reddit-going-dark-to-protest-third-party-api-charges)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [The Independent, By Anthony Cuthbertson - Reddit blackout: More than 1,000 subreddits to go dark in protest to new changes](https://www.independent.co.uk/tech/reddit-blackout-date-protest-subreddits-b2352492.html)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Kotaku, By Luke Plunkett - Reddit Communities Are 'Going Dark' To Protest Wildly Unpopular App Changes](https://kotaku.com/reddit-blackout-going-dark-protest-apollo-apps-api-ios-1850512837)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [PCMag, By Marco Marcelline - Popular Subreddits Going Dark to Protest Reddit Charging for API Access](https://www.pcmag.com/news/popular-subreddits-going-dark-to-protest-reddit-charging-for-api-access)
+  {: .d-inline }
+  </div>
+
+</details>
+
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 7, 2023</summary>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, LMG Clips - Reddit Hates Their Users](https://www.youtube.com/watch?v=LEGCHnoEsLM)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [SFGATE, By Stephen Council - Reddit announces plan to lay off 90 workers as subreddits plan mass protest](https://www.sfgate.com/tech/article/reddit-layoffs-90-protest-plan-18140277.php)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Techinnowire - Reddit’s New API Pricing: A Boon or Bane for User Experience?](https://www.techinnowire.com/reddit-api-pricing-a-boon-or-bane-for-user-experience/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Engadget, By Karissa Bell - Reddit says some accessibility apps won’t have to pay for its API](https://www.engadget.com/reddit-says-some-accessibility-apps-wont-have-to-pay-for-its-api-213401412.html)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Adnroid Authority, By C. Scott Brown - https://www.engadget.com/reddit-says-some-accessibility-apps-wont-have-to-pay-for-its-api-213401412.html](https://www.androidauthority.com/reddit-third-party-apps-accessibility-3332934/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [The Verge, By Jay Peters - Reddit will exempt accessibility-focused apps from its unpopular API pricing changes](https://www.theverge.com/2023/6/7/23752804/reddit-exempt-accessibility-apps-api-pricing-changes)
+  {: .d-inline }
+  </div>
+
+</details>
+
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 8, 2023</summary>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [TechCrunch, By Sarah Perez - Reddit makes an exception for accessibility apps under new API terms](https://techcrunch.com/2023/06/08/reddit-makes-an-exception-for-accessibility-apps-under-new-api-terms/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [The Verge, By Jay Peters - Apollo for Reddit is shutting down](https://www.theverge.com/2023/6/8/23754183/apollo-reddit-app-shutting-down-api)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [MacRumors, By Juli Clover - Popular Reddit App Apollo Shutting Down on June 30](https://www.macrumors.com/2023/06/08/apollo-shutting-down-june-30/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [9To5Mac, By Zac Hall - Apollo shutting down due to Reddit’s unaffordable API](https://9to5mac.com/2023/06/08/apollo-app-shutting-down/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Engadget, By Karissa Bell - Reddit CEO will host an AMA on API changes as thousands of subreddits plan to 'go dark'](https://www.engadget.com/reddit-ceo-will-host-an-ama-on-api-changes-as-thousands-of-subreddits-plan-to-go-dark-193423226.html)
+  {: .d-inline }
+  </div>
+
+</details>
+
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 9, 2023</summary>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, Linus Tech Tips - Ban me, Twitch! - WAN Show June 9, 2023](https://www.youtube.com/watch?v=Rt78MqJDozY&t=5050s)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, SomeOrdinaryGamers - We Have To Talk About The Reddit Blackout](https://www.youtube.com/watch?v=fBruoybHryU)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Evening Standard, By Saqib Shah - Reddit blackout: Why subreddits are protesting to save third-party apps](https://www.standard.co.uk/tech/reddit-third-party-apps-blackout-movement-b1085610.html)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  German
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Heise Online, By Martin Holland - Teure API-Preise bei Reddit: Beliebte Dritt-Anwendung Apollo wird eingestellt](https://www.heise.de/news/Kosten-fuer-Reddit-API-Beliebte-Dritt-Anwendung-Apollo-wird-eingestellt-9181977.html)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [TechCrunch, By Sarah Perez - Reddit CEO doubles down on attack on Apollo developer in drama-filled AMA](https://techcrunch.com/2023/06/09/reddit-ceo-doubles-down-on-attack-on-apollo-developer-in-drama-filled-ama/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [BBC, By Tom Gerken - Reddit blackout: Subreddits to go private on Monday](https://www.bbc.com/news/technology-65855608)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Android Authority, By C. Scott Brown - Reddit CEO does AMA, doesn't address or even mention upcoming subreddit protests](https://www.androidauthority.com/reddit-ceo-ama-2023-3333702/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Tech Monitor, By Ryan Morrison - Reddit apps to shut down over API pricing hike which could see bills hit $20m a year](https://techmonitor.ai/technology/software/reddit-api-blackout-price-hike)  
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [University of Minnesota Twin Cities - Upcoming Reddit blackout and the future of third-party applications](https://twin-cities.umn.edu/news-events/upcoming-reddit-blackout-and-future-third-party-applications)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [LifeHacker, By Beth Skwarecki - Why Your Favorite Subreddits Are Going Dark on June 12](https://lifehacker.com/why-your-favorite-subreddits-are-going-dark-on-june-12-1850521188)
+  {: .d-inline }
+  </div>
+
+</details>
+
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 10, 2023</summary>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, Louis Rossmann - A word on reddit, blackouts, & effective protesting](https://www.youtube.com/watch?v=U06rCBIKM5M)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Wired, By Boone Ashworth - The Reddit App War Is Getting Messy](https://www.wired.com/story/the-reddit-app-war-is-getting-messy/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Sportskeeda, By Aniket Srivastava - Why are NFL communities joining Reddit blackout? Exploring issues around API changes](https://www.sportskeeda.com/nfl/why-nfl-communities-joining-reddit-blackout-exploring-issues-around-api-changes)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [The Scotsman, By Charlotte Hawes - Reddit blackout: Subreddits to be made private in huge protest - here’s why](https://www.scotsman.com/read-this/reddit-blackout-subreddits-to-be-made-private-in-huge-protest-heres-why-4177985)
+  {: .d-inline }
+  </div>
+
+</details>
+
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 11, 2023</summary>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [NBC Bay Area - Reddit communities to go dark Monday to protest third-party app changes](https://www.nbcbayarea.com/news/local/reddit-communities-to-go-dark-monday-to-protest-third-party-app-changes/3249862/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Insider, By Jyoti Mann - Reddit users are planning a 48-hour blackout to protest its new pricing policy](https://www.businessinsider.com/reddit-users-plan-blackout-protest-new-pricing-policy-2023-6)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Yahoo News, By Anna Bernardo - Dota 2, VALORANT, other gaming subreddits to join Reddit Blackout](https://sg.news.yahoo.com/dota-2-valorant-other-gaming-subreddits-to-join-reddit-blackout-061138639.html)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Tech Times, By John Lopez - Gaming Subreddits Join Reddit Blackout Against Drastic API Pricing Hike](https://www.techtimes.com/articles/292488/20230611/gaming-subreddits-join-reddit-blackout-against-drastic-api-pricing-hike.htm)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Mac Rumors, By Joe Rossignol - Apple Subreddit Goes Dark in Protest of Reddit's API Pricing Changes](https://www.macrumors.com/2023/06/11/apple-subreddit-goes-dark/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Apple Insider, By Malcolm Owen - All the Apple subreddits set to go dark in protest of Reddit's API charges](https://appleinsider.com/articles/23/06/11/apple-subreddits-set-to-go-dark-to-protest-reddit-api-charges)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [The Guardian, By Alex Hern - Reddit communities to ‘go dark’ in protest over third-party app charges](https://www.theguardian.com/technology/2023/jun/11/reddit-communities-to-go-dark-in-protest-over-third-party-app-charges)
+  {: .d-inline }
+  </div>
+
+</details>
+
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 12, 2023</summary>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, penguinz0 - The Death of Reddit](https://www.youtube.com/watch?v=-xGqqR_ewLo)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, Philip DeFranco - This Pride Controversy Has Gotten Out of Control, Reddit Blackout, & Cracker Barrel Has Fallen…](https://youtu.be/IlqB6zfEAFU?t=547)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, Fireship - Reddit's API rug pull](https://www.youtube.com/watch?v=Ch6zNEq9fwM)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Washington Post, By Shera Avi-Yonah, Annabelle Timsit - Why have many Reddit communities gone private? The blackout, explained.](https://www.washingtonpost.com/technology/2023/06/12/reddit-blackout-begins/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Sky News, By Tom Acres - Reddit blackout: Thousands of communities are doing dark today - here's why](https://news.sky.com/story/reddit-blackout-thousands-of-communities-are-doing-dark-today-heres-why-12899280)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Aljazeera, By Mohammed Haddad - Why are thousands of Reddit pages going dark for 48 hours?](https://www.aljazeera.com/news/2023/6/12/why-are-thousands-of-reddit-pages-going-dark-for-48-hours)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  Paywall
+  {: .label .label-yellow .mr-0 .ml-0 }
+
+  [Bloomberg, By Alex Millson - Reddit Blackout Begins as Forums Protest Charges for Developers](https://www.bloomberg.com/news/articles/2023-06-12/why-are-reddit-pages-private-subreddits-go-dark-to-protest-third-party-charges?leadSource=uverify%20wall#xj4y7vzkg)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Independent, By Anthony Cuthbertson, Vishwam Sankaran - Reddit blackout: More than 3,000 subreddits to go dark in protest to new changes](https://www.independent.co.uk/tech/reddit-blackout-date-protest-subreddits-b2352492.html)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Insider, By Lina Batarags - Reddit users are going on a 48-hour blackout. Here are the biggest subreddits that won't be available during this time.](https://www.businessinsider.com/biggest-subreddits-affected-by-48-hour-blackout-list-private-2023-6)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  Japanese
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Soft Antenna - Redditの大規模ストライキが始まる。API利用料金の大幅値上げに多くのユーザーが反発](https://softantenna.com/blog/reddit-blackout/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  Paywall
+  {: .label .label-yellow .mr-0 .ml-0 }
+
+  [Los Angeles Times, By Helen Li - Thousands of Reddit communities go dark to protest new data fees](https://www.latimes.com/business/story/2023-06-12/subreddits-go-dark-as-users-protest-reddits-new-developer-fees)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Reuters - Explainer: Reddit protest: Why are thousands of subreddits going dark?](https://www.reuters.com/technology/reddit-protest-why-are-thousands-subreddits-going-dark-2023-06-12/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Yahoo Finance, By Karissa Bell - Reddit sees more than 6,000 communities 'go dark' in protest over API changes](https://finance.yahoo.com/news/reddit-sees-more-than-6000-communities-go-dark-in-protest-over-api-changes-095311637.html)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [NBC News, By David Ingram - Reddit communities go private to protest pricing plan for apps](https://www.nbcnews.com/tech/social-media/reddit-private-subreddit-blackout-protest-message-rcna88457)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Ars Technica, By Scharon Harding - API pricing protests caused Reddit to crash for 3 hours](https://arstechnica.com/gadgets/2023/06/api-pricing-protests-caused-reddit-to-crash-for-3-hours/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  Paywall
+  {: .label .label-yellow .mr-0 .ml-0 }
+
+  [The New York Times, By Michael Levenson - Reddit Communities Go Dark to Protest New App Policy](https://www.nytimes.com/2023/06/12/business/media/reddit-subreddit-blackout-protest.html)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Android Police, By Manuel Vonau - Reddit blackout explained: Why subreddits have gone dark](https://www.androidpolice.com/reddit-blackout-why-subreddits-dark/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [CBC, By Aloysius Wong - What's going on with Reddit today?](https://www.cbc.ca/news/business/reddit-blackout-1.6873756)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  Portuguese
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Expresso 50, By Hugo Séneca - Mais de 6500 grupos de debate do Reddit estão em greve. Será que o Reddit cede?](https://expresso.pt/sociedade/tecnologia/2023-06-12-Mais-de-6500-grupos-de-debate-do-Reddit-estao-em-greve.-Sera-que-o-Reddit-cede--60805545)
+  {: .d-inline }
+  </div>
+
+</details>
 
 ___
 
@@ -238,6 +1161,7 @@ ___
   - [What We Want](https://www.reddit.com/r/Save3rdPartyApps/comments/13yh2te/what_we_want/)
   - [Don't Let Reddit Kill 3rd Party Apps!](https://www.reddit.com/r/Save3rdPartyApps/comments/13yh0jf/dont_let_reddit_kill_3rd_party_apps/)
   - [Reddit is killing 3rd-party Apps (infographic)](https://preview.redd.it/91zby5ht044b1.jpg?width=1116&format=pjpg&auto=webp&v=enabled&s=746417bbd904506fc8c7b9c702c16b7fbb47bf06)
+  - [Reddit Blackout 2023 - Save 3rd Party Apps!](https://www.reddit.com/r/Save3rdPartyApps/comments/1476ioa/reddit_blackout_2023_save_3rd_party_apps/)
 - [r/ModCoord](https://www.reddit.com/r/ModCoord)
   - [What is this subreddit? What is happening here?](https://www.reddit.com/r/ModCoord/comments/13xmmuo/what_is_this_subreddit_what_is_happening_here/)
   - [An open letter on the state of affairs regarding the API pricing and third party apps and how that will impact moderators and communities.](https://www.reddit.com/r/ModCoord/comments/13xh1e7/an_open_letter_on_the_state_of_affairs_regarding/)
