@@ -15,7 +15,7 @@ If you found your way to this page, then r/TechSupport has been set as private. 
 
 ___
 
-{: .info }
+{: .info .info-icon }
 > **Live Chat on Discord**
 >
 > Our Live Chat will be open during the Reddit Blackout Protest. You can join by clicking [here](/discord).
@@ -111,19 +111,24 @@ We want our users to know they won't be left hanging, however. Though our subred
 ## How can we, the users, help?
 Starting June 12th, we ask if everyone can limit or completely stop their use of Reddit until the protest is over. This will help us with our protest. We want to limit traffic to the site as much as possible.
 
+___
+
 ## YOU are important to r/TechSupport and we couldn't do this without YOU
 We want to thank you all for supporting our subreddit every day. From the users that volunteer their time to help someone with an issue to the users asking questions for others to find the answer to in the future, we appreciate you all immensely.
 
 -- r/TechSupport Moderators
 
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">well im fresh out of ideas <a href="https://t.co/plKChB8J8D">pic.twitter.com/plKChB8J8D</a></p>&mdash; Linus Tech Tips (@LinusTech) <a href="https://twitter.com/LinusTech/status/1668732524162416653?ref_src=twsrc%5Etfw">June 13, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ___
 
 ## Participating Subreddits
-8838 Subreddits Participating as of 13-06-2023 at 22 UTC
-{: .label .label-green }
+
+{: .info .info-icon }
+> 8000 subreddits have gone dark as of 14-06-2023 at 3 UTC
 
 [Plain Text List](https://www.reddit.com/r/ModCoord/wiki/index/){: .btn .btn-purple .mr-2 }
-[Pretty List](https://reddark.rewby.archivete.am/){: .btn .btn-green .mr-2 }
+[Pretty List](https://reddark.untone.uk/){: .btn .btn-green .mr-2 }
 [Top Subs](https://save3rdpartyapps.com/){: .btn .btn-blue}
 
 ### Live Counter of Subreddits Going Dark, Twitch [reddark_247](https://www.twitch.tv/reddark_247)
@@ -1374,6 +1379,19 @@ ___
 {: .ml-5 .mb-2 }
 
   <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, PBS NewsHour - Reddit users go dark in protest of policy that could shut out third-party apps](https://www.youtube.com/watch?v=8E2o1zhy0fU)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
   Article
   {: .label .mr-0 .ml-0 }
 
@@ -1436,7 +1454,7 @@ ___
   {: .d-inline }
   </div>
 
-{: .ml-5 }
+{: .ml-5 .mb-2 }
 
   <div markdown="block">
   Article
@@ -1446,6 +1464,32 @@ ___
   {: .label .label-green .mr-0 .ml-0 }
 
   [The Verge, By Mia Sato and Jay Peters - Reddit CEO tells employees that subreddit blackout ‘will pass’](https://www.theverge.com/2023/6/13/23759559/reddit-internal-memo-api-pricing-changes-steve-huffman)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [r/Android gives statement: It will extend its shutdown, but not indefinitely](https://www.androidauthority.com/r-android-shutdown-3334877/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [We Got This Covered, By Staci White - Reddit reportedly removing moderators and forcing subreddits to reopen to break protest](https://wegotthiscovered.com/social-media/reddit-reportedly-removing-moderators-and-forcing-subreddits-to-reopen-to-break-protest/)
   {: .d-inline }
   </div>
 
