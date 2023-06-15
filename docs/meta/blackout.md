@@ -1604,7 +1604,7 @@ ___
   English
   {: .label .label-green .mr-0 .ml-0 }
 
-  [CBC - ELI5: What's the deal with the Reddit blackout? | About That](https://www.cbc.ca/player/play/2227647043520)
+  [CBC - ELI5: What's the deal with the Reddit blackout? \| About That](https://www.cbc.ca/player/play/2227647043520)
   {: .d-inline }
   </div>
 
