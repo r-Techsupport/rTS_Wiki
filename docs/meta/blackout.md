@@ -3,7 +3,7 @@ layout: default
 title: Blackout
 nav_exclude: true
 search_exclude: true
-last_modified_date: 2023-06-13
+last_modified_date: 2023-06-14
 redirect_from: /blackout
 ---
 
@@ -125,7 +125,7 @@ ___
 ## Participating Subreddits
 
 {: .info .info-icon }
-> 8000 subreddits have gone dark as of 14-06-2023 at 3 UTC
+> 5542 subreddits have gone dark as of 15-06-2023 at 3:30 UTC
 
 [Plain Text List](https://www.reddit.com/r/ModCoord/wiki/index/){: .btn .btn-purple .mr-2 }
 [Pretty List](https://reddark.untone.uk/){: .btn .btn-green .mr-2 }
@@ -1476,7 +1476,59 @@ ___
   English
   {: .label .label-green .mr-0 .ml-0 }
 
-  [r/Android gives statement: It will extend its shutdown, but not indefinitely](https://www.androidauthority.com/r-android-shutdown-3334877/)
+  [Android Authority, By C. Scott Brown - r/Android gives statement: It will extend its shutdown, but not indefinitely](https://www.androidauthority.com/r-android-shutdown-3334877/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, SomeOrdinaryGamers - The Reddit Blackout Got Worse...](https://www.youtube.com/watch?v=1BLMq0o7n-E)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Lifehacker, By Pranay Parab - Three Things You Should Do Before Deleting Your Reddit Account](https://lifehacker.com/three-things-you-should-do-before-deleting-your-reddit-1850534879)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [We Got This Covered, By Staci White - Reddit reportedly removing moderators and forcing subreddits to reopen to break protest](https://wegotthiscovered.com/social-media/reddit-reportedly-removing-moderators-and-forcing-subreddits-to-reopen-to-break-protest/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, LMG Clips - Reddit F***ed Up](https://www.youtube.com/watch?v=-zthI7doQDk)
   {: .d-inline }
   </div>
 
@@ -1489,7 +1541,278 @@ ___
   English
   {: .label .label-green .mr-0 .ml-0 }
 
-  [We Got This Covered, By Staci White - Reddit reportedly removing moderators and forcing subreddits to reopen to break protest](https://wegotthiscovered.com/social-media/reddit-reportedly-removing-moderators-and-forcing-subreddits-to-reopen-to-break-protest/)
+  [The Verge, By Jay Peters - Google is getting a lot worse because of the Reddit blackouts](https://www.theverge.com/2023/6/13/23759942/google-reddit-subreddit-blackout-protests)
+  {: .d-inline }
+  </div>
+
+</details>
+
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 14, 2023</summary>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, TechLinked - “This One Will Pass”](https://www.youtube.com/watch?v=bQ7IAKWno_o)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, Philip DeFranco - He Faked His Death To Teach His Family A Lesson, Book Banning Banned, & Today’s News 6.14.23](https://www.youtube.com/watch?v=RieDjQOx694&t=225s)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  Paywall
+  {: .label .label-yellow .mr-0 .ml-0 }
+
+  [Forbes, By Peter Suciu - Reddit Blackout Casts Spotlight On Its Failure To Turn A Profit](https://www.forbes.com/sites/petersuciu/2023/06/14/reddit-blackout-casts-spotlight-on-its-failure-to-turn-a-profit/?sh=6325540458c3)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [CBC - ELI5: What's the deal with the Reddit blackout? | About That](https://www.cbc.ca/player/play/2227647043520)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [SFGATE, By Stephen Council - Reddit users refuse to back down in blackout after CEO's ‘trivializing’ memo](https://www.sfgate.com/tech/article/reddit-protest-blackout-huffman-ceo-18152414.php)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Breitbart, By Lucas Nolan - Left-Wing Reddit Faces Continuing User Rebellion After CEO Brushes Off Concerns](https://www.breitbart.com/tech/2023/06/14/left-wing-reddit-faces-continuing-user-rebellion-after-ceo-brushes-off-concerns/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Search Engine Journal, By Kristi Hines - Popular Reddit Communities Support These App Developers In Prolonged Protest](https://www.searchenginejournal.com/popular-reddit-communities-extend-protest/489341/#close)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [LifeHacker, By Beth Skwarecki - The Reddit Blackout Is Over, but the Protest Isn’t](https://lifehacker.com/the-reddit-blackout-is-over-but-the-protest-isn-t-1850539204)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Neowin, By John Callaham - Many Reddit subreddits, including popular Windows communities, are still "dark" right now](https://www.neowin.net/news/many-reddit-subreddits-including-popular-windows-communities-are-still-dark-right-now/)
+  {: .d-inline }
+  </div>
+  
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Tech radar, By Muskaan Saxena - The Reddit blackout has left Google barren and full of holes](https://www.techradar.com/opinion/the-reddit-blackout-has-left-google-barren-and-full-of-holes)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Vice, By Jason Koebler - The Reddit Protest Is a Battle for the Soul of the Human Internet](https://www.vice.com/en/article/g5yykm/the-reddit-protest-is-a-battle-for-the-soul-of-the-human-internet)
+  {: .d-inline }
+  </div>
+  
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Tech Dirt, By Mike Masnick - Reddit Blackout Crashes The Site As Reddit Users Realize They’re In The Power Position](https://www.techdirt.com/2023/06/13/reddit-blackout-crashes-the-site-as-reddit-users-realize-theyre-in-the-power-position/)
+  {: .d-inline }
+  </div>
+  
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [The Guardian, By Alex Hern - Reddit moderators vow to continue blackout in API access fees row](https://www.theguardian.com/technology/2023/jun/14/reddit-moderators-vow-to-continue-blackout-in-api-access-fees-row)
+  {: .d-inline }
+  </div>
+  
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Vox, By Sara Morrison - The ongoing Reddit Blackout, explained](https://www.vox.com/technology/2023/6/14/23760738/reddit-blackout-explained-subreddit-apollo-third-party-apps)
+  {: .d-inline }
+  </div>
+  
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Fortune, By Chris Morris - Reddit’s CEO just infuriated his striking moderators by saying ‘this one will pass,’ the way ‘all blowups’ do. They want to keep the site dark indefinitely](https://fortune.com/2023/06/14/reddit-blackout-extended-ceo-leaked-memo-blowup-will-pass-moderators/)
+  {: .d-inline }
+  </div>
+  
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Wired, By Justin Pot - How to Download Your Reddit Data](https://www.wired.com/story/how-to-download-your-reddit-data/)
+  {: .d-inline }
+  </div>
+  
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Gizmodo, By Jody Serrano - Subreddits Are Planning an Indefinite Blackout in Response to Leaked Reddit CEO Memo](https://gizmodo.com/subreddits-are-planning-an-indefinite-blackout-in-respo-1850537972)
+  {: .d-inline }
+  </div>
+  
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [CNN Business, By Brian Fung - The Reddit blackout shows no signs of stopping](https://www.cnn.com/2023/06/14/tech/reddit-blackout)
+  {: .d-inline }
+  </div>
+  
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  Japanese
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Gigazine - RedditのAPI有料化に伴う抗議活動は「収益に悪影響を与えていない」とRedditのCEOが表明、従業員に「身を守るためにReddit関係者であることは隠して」とも通達](https://gigazine.net/news/20230614-reddit-api-ceo-employees/)
+  {: .d-inline }
+  </div>
+  
+{: .ml-5 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Adweek, By Catherine Perloff - Ripples Through Reddit as Advertisers Weather Moderators Strike](https://www.adweek.com/social-marketing/ripples-through-reddit-as-advertisers-weather-moderators-strike/)
   {: .d-inline }
   </div>
 
