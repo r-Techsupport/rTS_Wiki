@@ -124,12 +124,9 @@ ___
 
 ## Participating Subreddits
 
-{: .info .info-icon }
-> 5542 subreddits have gone dark as of 15-06-2023 at 3:30 UTC
-
-[Plain Text List](https://www.reddit.com/r/ModCoord/wiki/index/){: .btn .btn-purple .mr-2 }
-[Pretty List](https://reddark.untone.uk/){: .btn .btn-green .mr-2 }
-[Top Subs](https://save3rdpartyapps.com/){: .btn .btn-blue}
+[Plain Text List](https://www.reddit.com/r/ModCoord/wiki/index/){: .btn .btn-purple .mt-2 .mr-2 }
+[Pretty List](https://reddark.untone.uk/){: .btn .btn-green .mt-2 .mr-2 }
+[Top Subs](https://save3rdpartyapps.com/){: .btn .mt-2 .btn-blue}
 
 ### Live Counter of Subreddits Going Dark, Twitch [reddark_247](https://www.twitch.tv/reddark_247)
 
@@ -348,6 +345,27 @@ ___
   {: .label .label-green .mr-0 .ml-0 }
 
   [The Fight Continues](https://reddit.com/r/Save3rdPartyApps/comments/148m42t/the_fight_continues/)
+  {: .d-inline }
+  </div>
+
+</details>
+
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 15, 2023</summary>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  r/ModCoord
+  {: .label .mr-0 .ml-0 }
+
+  Official
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Mods will be removed one way or another: Spez responds to the API Protest Blackout.](https://www.reddit.com/r/ModCoord/comments/14ahqjo/mods_will_be_removed_one_way_or_another_spez/)
   {: .d-inline }
   </div>
 
@@ -1818,6 +1836,199 @@ ___
 
 </details>
 
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 15, 2023</summary>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, penguinz0 - Is Reddit Actually Dead](https://www.youtube.com/watch?v=OjfoALlRqoo)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, Louis Rossmann - Reddit CEO calls unpaid moderators' concerns "noise" - time to send a message he won't forget.](https://www.youtube.com/watch?v=ZOm_UKGyrZg)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Tweet
+  {: .label .label-red .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Twitter, Dexerto - "Reddit is allegedly threatening to remove moderators of subreddits if they don't reopen"](https://twitter.com/Dexerto/status/1669487450622681089)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Kotaku, By Luke Plunkett - Reddit's CEO Is Just Making Everything Worse](https://kotaku.com/reddit-ceo-steve-huffman-strike-protest-blackout-api-1850545732)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [NBC News, By David Ingram - Reddit CEO slams protest leaders, saying he'll change rules that favor ‘landed gentry’  ](https://www.nbcnews.com/tech/tech-news/reddit-protest-blackout-ceo-steve-huffman-moderators-rcna89544)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Mac Rumors, By Juli Clover - Reddit Threatens to Remove Moderators From Subreddits Continuing Apollo-Related Blackouts](https://www.macrumors.com/2023/06/15/reddit-threatens-to-remove-subreddit-moderators/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [The Verge, By Jay Peters - Reddit CEO Steve Huffman: Reddit ‘was never designed to support third-party apps’](https://www.theverge.com/2023/6/15/23762501/reddit-ceo-steve-huffman-interview-protests-blackout)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [NPR, By Bobby Allyn and Steve Inskeep - Reddit CEO Steve Huffman: 'It's time we grow up and behave like an adult company'](https://www.npr.org/2023/06/15/1182457366/reddit-ceo-steve-huffman-its-time-we-grow-up-and-behave-like-an-adult-company?origin=NOTIFY)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Ars Technica, By Scharon Harding - As the Reddit war rages on, community trust is the casualty](https://arstechnica.com/gadgets/2023/06/the-reddit-protests-are-winding-down-so-whats-next/?utm_brand=arstechnica&utm_social-type=owned&utm_source=mastodon&utm_medium=social)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Mother Jones, By Ali Breland - Why Reddit Is Destined to Turn to Crap](https://www.motherjones.com/politics/2023/06/reddit-blackout/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Inc. Australia, By Jason Aten - Reddit CEO Steve Huffman’s Third-Party API Debacle Is Making Elon Musk Look Like a Strategic Genius](https://www.inc-aus.com/jason-aten/reddit-ceo-steve-huffmans-third-party-api-debacle-is-making-elon-musk-look-like-a-strategic-genius.html)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  Paywall
+  {: .label .label-yellow .mr-0 .ml-0 }
+
+  [The Washington Post, By Megan McArdle - Opinion \| Reddit followed Goodwill's playbook. Now Redditors are on strike.](https://www.washingtonpost.com/opinions/2023/06/15/reddit-profits-goodwill-strike/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Bloomberg, By Dave Lee - Opinion \| Reddit Made the Mistake of Ignoring Its Core Users](https://www.bloomberg.com/opinion/articles/2023-06-15/reddit-should-heed-its-users-as-well-as-investors?leadSource=uverify%20wall)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Defector, By Alex Pareene - The Last Page Of The Internet](https://defector.com/the-last-page-of-the-internet)
+  {: .d-inline }
+  </div>
+
+</details>
+
 ___
 
 ## Resources and Further Reading
@@ -1826,6 +2037,7 @@ ___
 - [Addressing the community about changes to our API](https://www.reddit.com/r/reddit/comments/145bram/addressing_the_community_about_changes_to_our_api/)
 - [Data API Terms](https://www.redditinc.com/policies/data-api-terms)
 - [Developer Terms](https://www.redditinc.com/policies/developer-terms)
+- [Mod Code of Conduct Rule 4 & 2 and Subs Taken Private Indefinitely](https://reddit.com/r/ModSupport/comments/14a5lz5/mod_code_of_conduct_rule_4_2_and_subs_taken/jo9wdol/)
 
 ### Thoughts from Other Subreddit Moderators
 - [AskHistorians and uncertainty surrounding the future of API access](https://www.reddit.com/r/AskHistorians/comments/142w159/askhistorians_and_uncertainty_surrounding_the/)
