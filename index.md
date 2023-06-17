@@ -4,6 +4,14 @@ title: Homepage
 nav_exclude: true
 last_modified: 2022-06-25
 ---
+
+{: .warning .info-icon }
+> **Reddit Blackout 2023 Protest**
+> 
+> Our subreddit is currently participating in the protest against Reddit's API changes.
+> 
+> For more information on the protest and how it impacts you [click here](/blackout) 
+
 # Highlighted Content
 * How to clean install [Windows](/windows)
 * Believe you are infected? View our recommendations for dealing with [malware](/docs/safety-security/malware-guide)
