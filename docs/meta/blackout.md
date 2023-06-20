@@ -11,7 +11,7 @@ redirect_from: /blackout
 {: .no_toc }
 Last Updated {{page.last_modified_date}}
 {: .label }
-If you found your way to this page, then r/TechSupport WAS AT SOME POINT set as private. You probably have a lot questions. We will try our best to answer them all here.
+If you found your way to this page, then r/TechSupport WAS AT SOME POINT set as private. You probably have a lot of questions. We will try our best to answer them all here.
 
 ___
 
