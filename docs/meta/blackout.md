@@ -3,22 +3,22 @@ layout: default
 title: Blackout
 nav_exclude: true
 search_exclude: true
-last_modified_date: 2023-06-14
+last_modified_date: 2023-06-19
 redirect_from: /blackout
 ---
 
-# r/TechSupport has Gone Dark
+# r/TechSupport WAS Dark
 {: .no_toc }
 Last Updated {{page.last_modified_date}}
 {: .label }
-If you found your way to this page, then r/TechSupport has been set as private. You probably have a lot of questions. We will try our best to answer them all here.
+If you found your way to this page, then r/TechSupport WAS AT SOME POINT set as private. You probably have a lot of questions. We will try our best to answer them all here.
 
 ___
 
 {: .info .info-icon }
 > **Live Chat on Discord**
 >
-> Our Live Chat will be open during the Reddit Blackout Protest. You can join by clicking [here](/discord).
+> Our Live Chat is still open! You can join by clicking [here](/discord).
 
 ___
 
@@ -366,6 +366,87 @@ ___
   {: .label .label-green .mr-0 .ml-0 }
 
   [Mods will be removed one way or another: Spez responds to the API Protest Blackout.](https://www.reddit.com/r/ModCoord/comments/14ahqjo/mods_will_be_removed_one_way_or_another_spez/)
+  {: .d-inline }
+  </div>
+
+</details>
+
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 16, 2023</summary>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  r/Save3rdPartyApps
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  Official
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Reddit protest and the next steps](https://www.reddit.com/r/Save3rdPartyApps/comments/14b8i62/reddit_protest_and_the_next_steps/)
+  {: .d-inline }
+  </div>
+
+</details>
+
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 17, 2023</summary>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  r/ModCoord
+  {: .label .mr-0 .ml-0 }
+
+  Official
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Moderators Voice Concerns Over Reddit’s Threatening Behavior](https://www.reddit.com/r/ModCoord/comments/14bwfai/moderators_voice_concerns_over_reddits/)
+  {: .d-inline }
+  </div>
+
+</details>
+
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 18, 2023</summary>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  r/ModCoord
+  {: .label .mr-0 .ml-0 }
+
+  Official
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Alternative forms of protest, in light of admin retaliations](https://www.reddit.com/r/ModCoord/comments/14cr2is/alternative_forms_of_protest_in_light_of_admin/)
+  {: .d-inline }
+  </div>
+
+</details>
+
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 19, 2023</summary>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  r/apolloapp
+  {: .label .label-yellow .mr-0 .ml-0 }
+
+  [I want to debunk Reddit's claims, and talk about their unwillingness to work with developers, moderators, and the larger community, as well as say thank you for all the support](https://www.reddit.com/r/apolloapp/comments/14dkqrw/i_want_to_debunk_reddits_claims_and_talk_about/)
   {: .d-inline }
   </div>
 
@@ -1246,7 +1327,7 @@ ___
   English
   {: .label .label-green .mr-0 .ml-0 }
 
-  [Insider, By Lina Batarags - Reddit users are going on a 48-hour blackout. Here are the biggest subreddits that won't be available during this time.](https://www.businessinsider.com/biggest-subreddits-affected-by-48-hour-blackout-list-private-2023-6)
+  [Business Insider, By Lina Batarags - Reddit users are going on a 48-hour blackout. Here are the biggest subreddits that won't be available during this time.](https://www.businessinsider.com/biggest-subreddits-affected-by-48-hour-blackout-list-private-2023-6)
   {: .d-inline }
   </div>
 
@@ -1373,7 +1454,7 @@ ___
   {: .d-inline }
   </div>
 
-{: .ml-5 }
+{: .ml-5 .mb-2 }
 
   <div markdown="block">
   Article
@@ -1383,6 +1464,19 @@ ___
   {: .label .label-green .mr-0 .ml-0 }
 
   [Expresso 50, By Hugo Séneca - Mais de 6500 grupos de debate do Reddit estão em greve. Será que o Reddit cede?](https://expresso.pt/sociedade/tecnologia/2023-06-12-Mais-de-6500-grupos-de-debate-do-Reddit-estao-em-greve.-Sera-que-o-Reddit-cede--60805545)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [PCMag, By Michael Kan - Quiet Day on Reddit: Major Subreddits Go Dark to Protest API Changes](https://www.pcmag.com/news/quiet-day-on-reddit-major-subreddits-go-dark-to-protest-api-changes)
   {: .d-inline }
   </div>
 
@@ -1404,6 +1498,19 @@ ___
   {: .label .label-green .mr-0 .ml-0 }
 
   [Youtube, PBS NewsHour - Reddit users go dark in protest of policy that could shut out third-party apps](https://www.youtube.com/watch?v=8E2o1zhy0fU)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, Moon - Why Reddit is Collapsing: The Coming Reddit Crisis](https://www.youtube.com/watch?v=zL0yFvkLMQc)
   {: .d-inline }
   </div>
 
@@ -1700,7 +1807,7 @@ ___
   English
   {: .label .label-green .mr-0 .ml-0 }
 
-  [Tech radar, By Muskaan Saxena - The Reddit blackout has left Google barren and full of holes](https://www.techradar.com/opinion/the-reddit-blackout-has-left-google-barren-and-full-of-holes)
+  [TechRadar, By Muskaan Saxena - The Reddit blackout has left Google barren and full of holes](https://www.techradar.com/opinion/the-reddit-blackout-has-left-google-barren-and-full-of-holes)
   {: .d-inline }
   </div>
 
@@ -1726,7 +1833,7 @@ ___
   English
   {: .label .label-green .mr-0 .ml-0 }
 
-  [Tech Dirt, By Mike Masnick - Reddit Blackout Crashes The Site As Reddit Users Realize They’re In The Power Position](https://www.techdirt.com/2023/06/13/reddit-blackout-crashes-the-site-as-reddit-users-realize-theyre-in-the-power-position/)
+  [TechDirt, By Mike Masnick - Reddit Blackout Crashes The Site As Reddit Users Realize They’re In The Power Position](https://www.techdirt.com/2023/06/13/reddit-blackout-crashes-the-site-as-reddit-users-realize-theyre-in-the-power-position/)
   {: .d-inline }
   </div>
   
@@ -1831,6 +1938,32 @@ ___
   {: .label .label-green .mr-0 .ml-0 }
 
   [Adweek, By Catherine Perloff - Ripples Through Reddit as Advertisers Weather Moderators Strike](https://www.adweek.com/social-marketing/ripples-through-reddit-as-advertisers-weather-moderators-strike/)
+  {: .d-inline }
+  </div>
+  
+{: .ml-5 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [PCMag, By Michael Kan - Thousands of Subreddits Pledge to Remain Dark to Protest Reddit API Change](https://www.pcmag.com/news/thousands-of-subreddits-pledge-to-remain-dark-to-protest-reddit-api-change)
+  {: .d-inline }
+  </div>
+  
+{: .ml-5 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Inc., By Jason Aten - Reddit CEO Steve Huffman's Third-Party API Debacle Is Making Elon Musk Look Like a Strategic Genius](https://www.inc.com/jason-aten/reddit-ceo-steve-huffmans-third-party-api-debacle-is-making-elon-musk-look-like-a-strategic-genius.html)
   {: .d-inline }
   </div>
 
@@ -2024,6 +2157,509 @@ ___
   {: .label .label-green .mr-0 .ml-0 }
 
   [Defector, By Alex Pareene - The Last Page Of The Internet](https://defector.com/the-last-page-of-the-internet)
+  {: .d-inline }
+  </div>
+
+</details>
+
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 16, 2023</summary>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, Linus Tech Tips - Oh Twitch...... - WAN Show June 16, 2023](https://www.youtube.com/watch?v=i8qkqfC190s&t=7065s)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, The Damage Report - Reddit Users Turn on CEO Steve Huffman After API Announcement](https://www.youtube.com/watch?v=RWbdtXmpGZs)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, Louis Rossmann - Reddit forcibly breaks strike; this is an UNINVESTABLE company!](https://www.youtube.com/watch?v=JPLbnNDjo5Y)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, Eli the Computer Guy - REDDIT FIRING MODS for PROTESTING - tyrant CEO DEMANDS democracy](https://www.youtube.com/watch?v=6EwSjWIpw-w)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [CNBC, By Hayden Field and Jonathan Vanian - Reddit is in crisis as prominent moderators loudly protest the company’s treatment of developers](https://www.cnbc.com/2023/06/16/reddit-in-crisis-as-prominent-moderators-protest-api-price-increase.html)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  German
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Heise, By Martin Holland - Reddit: Geschäftsführer geht in die Offensive, Drohung an Moderatoren](https://www.heise.de/news/Blackout-Reddits-Geschaeftsfuehrer-geht-in-die-Offensive-Drohung-an-Moderatoren-9189426.html)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Reuters, By Anita Ramaswamy - Reddit’s golden geese foul up its IPO plans](https://www.reuters.com/breakingviews/reddits-golden-geese-foul-up-its-ipo-plans-2023-06-16/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [PCMag, By Michael Kan - Reddit CEO Threatens to Boot Moderators Who Back Blackout Protest](https://www.pcmag.com/news/reddit-ceo-threatens-to-boot-moderators-who-back-blackout-protest)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [The Verge, By Jay Peters - RIF developer counters Reddit CEO’s claims that he didn’t want to work with Reddit](https://www.theverge.com/2023/6/16/23763661/reddit-rif-is-fun-developer-ceo-steve-huffman)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [TechDirt, By Mike Masnick - Reddit CEO Triples Down, Insults Protesters, Whines About Not Making Enough Money From Reddit Users](https://www.techdirt.com/2023/06/16/reddit-ceo-triples-down-insults-protesters-whines-about-not-making-enough-money-from-reddit-users/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Business Insider, By Lindsay Dodgson - Reddit CEO says the mods leading a punishing blackout are too powerful and he will change the site's rules to weaken them](https://www.businessinsider.com/reddit-ceo-will-change-rules-to-make-mods-less-powerful-2023-6)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [CNN Business, By Brian Fung - Reddit’s fight with its most powerful users enters new phase as blackout continues](https://www.cnn.com/2023/06/16/tech/reddit-blackout-fight/index.html)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [NBC News, By David Ingram - Reddit CEO praises Elon Musk’s cost-cutting as protests rock the platform](https://www.nbcnews.com/tech/tech-news/reddit-blackout-protest-private-ceo-elon-musk-huffman-rcna89700)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [The Verge, By Jay Peters and Mia Sato - Here’s the note Reddit sent to moderators threatening them if they don’t reopen](https://www.theverge.com/2023/6/16/23763538/reddit-blackout-api-protest-mod-replacement-threat)
+  {: .d-inline }
+  </div>
+
+</details>
+
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 17, 2023</summary>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, penguinz0 - Redditors Gave Up](https://www.youtube.com/watch?v=sNFkHWsGM4Y)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, TechLinked - Intel, I’m not calling it that.](https://www.youtube.com/watch?v=-zdV-0yL5II&t=370s)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, Louis Rossmann - Reddit CEO learns going to war with the internet is a LOSING battle](https://www.youtube.com/watch?v=Cb458PRJ43s)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Engadget, By Igor Bonifacic - Reddit’s average daily traffic fell during blackout, according to third-party data](https://www.engadget.com/reddits-average-daily-traffic-fell-during-blackout-according-to-third-party-data-194721801.html)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [The Guardian, By John Naughton - There is no moral high ground for Reddit as it seeks to capitalise on user data](https://www.theguardian.com/commentisfree/2023/jun/17/there-is-no-moral-high-ground-for-reddit-as-it-seeks-to-capitalise-on-user-data)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Business Insider, By Kenneth Niemeyer - One of Reddit's largest communities is protesting changes to the platform by posting only photos of John Oliver 'looking sexy'](https://www.businessinsider.com/reddit-community-is-protesting-by-posting-sexy-john-oliver-photos-2023-6)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Wired, By Boone Ashworth - The Reddit Blackout Is Breaking Reddit](https://www.wired.com/story/the-reddit-blackout-is-breaking-reddit/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [New York Magazine, By John Herrman - Reddit and the End of Online ‘Community’](https://nymag.com/intelligencer/2023/06/reddit-and-the-end-of-online-community.html)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Business Insider, By Jyoti Mann - People are starting to place bets on Reddit's civil war](https://www.businessinsider.com/reddit-people-are-starting-to-place-bets-on-civil-war-2023-6)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [CBC, Trans activist celebrates Pride in the face of hate, the White House Gift Shop strikes again, the fight over Reddit's API pricing and more \| Episode 655](https://www.cbc.ca/listen/live-radio/1-14-day-6/clip/15991938-trans-activist-celebrates-pride-face-hate-white-house)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Inc., By Jason Aten - Reddit's CEO Says Third-Party Apps Add 'No Value.' How He Completely Lost the Thread](https://www.inc.com/jason-aten/reddits-ceo-says-third-party-apps-add-no-value-hes-measuring-it-all-wrong.html)
+  {: .d-inline }
+  </div>
+
+</details>
+
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 18, 2023</summary>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, Philip DeFranco - Woman Wakes Up in Coffin At Her Wake, The Growing Problem With “Going Electric”, & More](https://youtu.be/X63LgdlCMZE?t=156)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Bleeping Computer, By Lawrence Abrams - Reddit hackers threaten to leak data stolen in February breach](https://www.bleepingcomputer.com/news/security/reddit-hackers-threaten-to-leak-data-stolen-in-february-breach/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Forbes, By Barry Collins - If Your Reddit Feed Is Full Of John Oliver, Here’s Why](https://www.forbes.com/sites/barrycollins/2023/06/18/if-your-reddit-feed-is-full-of-john-oliver-heres-why)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [TechRadar, By Allisa James - Discord, Twitter, Reddit, and Tumblr have something in common and it's not good](https://www.techradar.com/opinion/discord-twitter-reddit-and-tumblr-have-something-in-common-and-its-not-good)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [The Verge, By Jay Peters - Three of the biggest Reddit communities reopened in the funniest way possible](https://www.theverge.com/2023/6/17/23764729/reddit-users-pics-gifs-subreddits-john-oliver)
+  {: .d-inline }
+  </div>
+
+</details>
+
+{: .mb-4 .ml-3 }
+
+<details markdown="block">
+
+  <summary>June 19, 2023</summary>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Video
+  {: .label .label-purple .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [Youtube, Louis Rossmann - What pisses me off about the failed Reddit protest...](https://www.youtube.com/watch?v=VYij7Ic5p8k)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [BBC News, By Tom Gerken - Why is Reddit full of pictures of John Oliver?](https://www.bbc.com/news/technology-65949412)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [The Verge, By Alex Castro - Reddit hackers demand $4.5 million ransom and API pricing changes](https://www.theverge.com/2023/6/19/23765895/reddit-hack-phishing-leak-api-pricing-steve-huffman)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [TechCrunch, By Ivan Mehta - Reddit communities adopt alternative forms of protest as the company threats action on moderators](https://techcrunch.com/2023/06/19/reddit-communities-adopt-alternative-forms-of-protest-as-the-company-threats-action-on-moderators)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 .mb-2 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  [TechCrunch, By Carly Page - Hackers threaten to leak 80GB of confidential data stolen from Reddit](https://techcrunch.com/2023/06/19/hackers-threaten-to-leak-80gb-of-confidential-data-stolen-from-reddit/)
+  {: .d-inline }
+  </div>
+
+{: .ml-5 }
+
+  <div markdown="block">
+  Article
+  {: .label .mr-0 .ml-0 }
+
+  English
+  {: .label .label-green .mr-0 .ml-0 }
+
+  Paywall
+  {: .label .label-yellow .mr-0 .ml-0 }
+
+  [Financial Times, By Hannah Murphy - Reddit stands firm in clash with users as blackout on forums escalates](https://www.ft.com/content/1d432529-0839-4f73-a1a7-6a8d4497799b)
   {: .d-inline }
   </div>
 
