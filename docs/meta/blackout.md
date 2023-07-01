@@ -76,7 +76,7 @@ Reddit is very aware of how awful their site is for those requiring accessibilit
 
 We will have to keep our fingers crossed that Reddit will follow through with creating a more accessible site as the free API for accessible 3PAs might only be temporary.
 
-We encourage you to please read through [the post by r/blind moderators](https://www.reddit.com/r/Blind/comments/13zr8h2/reddits_recently_announced_api_changes_and_the/) on the issues they face with the possible loss of 3PAs with accessibility features.
+We encourage you to please read through [the post by r/blind moderators](https://www.reddit.com/r/Blind/comments/13zr8h2/reddits_recently_announced_api_changes_and_the/) on the issues they face with the loss of 3PAs with accessibility features, as well as [this recent update from the r/blind moderators](https://www.reddit.com/r/Blind/comments/14nzwkm/they_finally_did_it_reddit_made_it_impossible_for/) where, despite reddit's promise to work with them for accessibility features, reddit instead made it impossible for moderation teams needing accessibility options to moderate their own subreddits.
 
 ## What about NSFW content?
 NSFW content is available everywhere on the internet. Reddit has opted to remove NSFW content from being available through their API. We realize it's not easy to see why this could create issues, however this has caused problems in the past. We will be [quoting the points made in the original post from r/ModCoord](https://www.reddit.com/r/ModCoord/comments/13xmmuo/what_is_this_subreddit_what_is_happening_here/) as we feel they said it best:
