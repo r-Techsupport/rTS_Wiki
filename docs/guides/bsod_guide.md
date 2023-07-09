@@ -1,6 +1,6 @@
 ---
 layout: default
-title: General Guides
+title: Reading and Analyzing BSODs
 nav_exclude: false
 nav_order: 20
 has_children: false
