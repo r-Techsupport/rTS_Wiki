@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Cleaning a Disk in Dispart
+title: Cleaning a Disk in Diskpart
 nav_exclude: false
 parent: Factoids
 has_children: false

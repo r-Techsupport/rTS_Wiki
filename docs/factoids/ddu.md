@@ -34,10 +34,10 @@ To wipe display drivers from a dedicated GPU: Select the "GPU" device type from 
 
 ## Reinstalling Display Drivers
   
-#### For custom-built desktops
+### Custom-built desktops
 Go to the site of the GPU's manufacturer(s) ([NVIDIA](https://www.nvidia.com/Download/index.aspx), [AMD](https://www.amd.com/en/support), [Intel](https://www.intel.com/content/www/us/en/download-center/home.html)) and download the latest available display drivers.
 
-#### For laptops/pre-built desktops:
+### Laptops/pre-built desktops
 Go to the model's support page on your manufacturer's site, and download the latest available display drivers.
 
 > ❗ For devices with multiple GPUs, download both the integrated and dedicated GPU drivers. Install the integrated GPU drivers _first_, followed by the dedicated GPU drivers.

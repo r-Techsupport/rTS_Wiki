@@ -5,7 +5,7 @@ nav_exclude: false
 has_children: false
 parent: Learning
 search_exclude: false
-last_modified_date: 2022-10-30
+last_modified_date: 2023-05-08
 ---
 
 # Getting Started With a Computer
@@ -27,7 +27,7 @@ Similarly to shutting down your computer, you can do this by hitting the start b
 This is a common first step to troubleshooting and will fix some problems that you are experiencing. Otherwise you can view our other guide that goes into a little more details about problems [here](/docs/learning/basic-troubleshooting) or check out some [general guides](/docs/guides).
 
 ## Installing Programs
-Installing programs is a little bit more work. Navigate to the website of the program you would like to install and download the latest version from there. Then once you download the program you will have to run the setup or .exe for the program to install. Afterwards you are free to use that program. 
+Installing programs is a little bit more work, navigate to the website of the program you would like to install and download the latest version from there. Once you have downloaded the program you will have to run the setup or .exe for the program to install, afterwards you are free to use that program. 
 
 For example, a program that you might want to install would be *Discord* which you can find [here](https://discord.com/). You would click the download button and run the .exe file you just downloaded to install. You would do this with any program that you wanted to install.
 
@@ -57,11 +57,39 @@ For example, a program that you might want to install would be *Discord* which y
 
 You want to fully uninstall which would remove the associated files, settings, registry keys, etc. There are a few ways to do this. 
 
-Click on the start menu, find the program you want to uninstall and right click on their icon. From there, click on the uninstall option. 
+### Uninstall program from Settings
 
-This should bring up a new window that has a huge list of programs. In here, highlight the program you want to uninstall, and at the top of the list, click on Uninstall. 
+Go to settings on your PC. Click *Apps*.
 
-You can follow the prompts to remove the program from the computer. You can do this with any unwanted program.
+![settingsApps.png](/assets/Basic-Computing/settingsApps.png)
+
+Click on *Installed Apps*.
+
+![installedApps.png](/assets/Basic-Computing/installedApps.png)
+
+Click on the three dots for the program you want to uninstall.
+
+![threeDots.png](/assets/Basic-Computing/threeDots.png)
+
+Click *Uninstall* and then click it again to confirm.
+
+![uninstallApp.png](/assets/Basic-Computing/uninstallApp.png)
+
+![uninstallAppConfirm.png](/assets/Basic-Computing/uninstallAppConfirm.png)
+
+Either the program will uninstall right away and be removed from the list of your installed apps or the program may launch a uninstall prompt from where you finish the uninstallation process. 
+
+### Uninstall program from Control Panel
+
+Open *Control Panel* and click *Uninstall a program*.
+
+![controlpanelPrograms.png](/assets/Basic-Computing/controlpanelPrograms.png)
+
+This will launch a list of installed apps where you can simply double click the desired entry which will uninstall the app. 
+
+As before, either the program will uninstall right away and be removed from the list of your installed apps or the program may launch a uninstall prompt from where you finish the uninstallation process. 
+
+If you have trouble uninstalling a program, or if the program is not properly uninstalling and leaving behind remnants of itself, you can try and use an advanced uninstall program such as Revo Uninstaller.
 
 ## Installing Drivers
 Installing drivers is usually straight forward, you let Windows update install the drivers for you. 

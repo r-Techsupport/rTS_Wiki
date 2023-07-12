@@ -6,3 +6,4 @@ _site/
 *.swp
 .obsidian/
 .trash/
+Gemfile.lock
