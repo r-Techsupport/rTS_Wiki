@@ -13,62 +13,87 @@ redirect_from: /docs/guides/bsod_guide
 # BSOD Guide
 {: .no_toc }
 
-Everyone who has used a computer for more than a brief period of time has experienced what is known as the Blue Screen of Death (BSOD). The computer suddenly stops working, and you are met with an ominous :( "Something went wrong!" and a vague few words that do not actually make sense. "DRIVER_IRQL_NOT_LESS_OR_EQUAL" Huh?? What does that mean, and why do I care? Hopefully, reading this article will shed some light on what a BSOD is, why it happens, and help you figure out why your computer is crashing.
+Everyone who has used a computer for more than a brief period of time has experienced what is known as the Blue Screen of Death (BSOD). The computer suddenly stops working, and you are met with an ominous `:( "Something went wrong!"` with a few vague words that don't actually make sense to those who don't know how to interpret it. 
 
-We will first start off with the very basics, so if you are just here to learn how to understand the cause of a BSOD, feel free to skip ahead. The advanced stuff comes later.
+What is a "DRIVER_IRQL_NOT_LESS_OR_EQUAL" error? And what does that mean for my computer? Hopefully, reading this article will shed some light on what a BSOD is, why it happens, and help you figure out why your computer is crashing.
+
+We will first start off with the very basics, so if you are just here to learn how to understand the cause of a BSOD, feel free to skip ahead. More advanced topics will only be brought up later.
 
 {%include toc_numbered.md %}
 
 ## What is a BSOD?
 
-So what *is* the blue screen of death? Well, let's start simple.
+Windows is essentially a very complex program that allows you to run other programs inside of it. If you have ever played a buggy game, you have experienced programs crashing or giving you error messages that make no sense, like `0xC0000409`. This error is called an *"unhandled exception."* 
 
-Windows is essentially a very complex program that allows you to run other programs inside of it. If you have ever played a buggy game, you have experienced programs crashing or giving you error messages that make no sense, like 0xC0000409. This error is called an "unhandled exception." 
+Exceptions like this happen when the program is *trying to do something that is impossible*.
 
-Exceptions happen when the software is trying to do something that is impossible, like dividing by zero or trying to deal damage to creature #347 when only 346 creatures exist, or reading data from a file that does not exist without first confirming if the file is there. Computers are stupid and will only do exactly what you tell them to. If you tell a computer to do something impossible, it has to know how to react when that task turns out to be impossible.
+For example: dividing a number by zero, trying to deal damage to creature #347 when only 346 creatures exist, or reading data from a file that does not exist. 
 
-These exceptions happen all the time. If you have any experience in software development, you may know what is called a try-catch block. The code tries to do something, and if an exception occurs inside the try block, the exception is caught. After the catch, some other code is run, usually to log the exception or to simply hide it and keep the program running. An "Unhandled Exception" is when an exception happens in a section of code that is not catching exceptions. The program asks Windows to perform an impossible task, Windows understands that the task is impossible, but because the program has no routines in place for how to continue working after failing the impossible task, the program is forced to crash.
+Computers are stupid and *will only do exactly what you tell them to*. If you tell a computer to do something impossible, it has to know how to react when that task turns out to be impossible.
 
-In many cases, a BSOD is a more serious form of Unhandled Exception, but instead of a program doing something it should  not and crashing back to Windows, it is Windows doing something it should  not. Unlike a game, which has Windows to fall back on when it crashes, Windows has no fallback. There is nowhere to crash to, and the only option is to crash the computer completely. While these errors are very frustrating and can often seem random or pointless, it is very important to note that BSOD's do not occur for no reason. Windows, for all its faults, handles errors very effectively. If an error happens in such a way that Windows cannot handle it, Windows forces itself to enter a Blue Screen of Death to avoid sending improper instructions to hardware and potentially damage the physical components of the computer.
+These exceptions happen all the time. If you have any experience in software development, you may know what is called a `try-catch block`. The code tries to do something, and if an exception occurs inside the try block, the exception is caught. After the catch, some other code is run, usually to log the exception or to simply hide it and keep the program running. 
+
+An *unhandled exception* is when an exception happens in a section of code that is not catching exceptions. The program asks Windows to perform an impossible task, Windows understands that the task is impossible, but because the program has no routines in place for how to continue working after failing the impossible task, the program is forced to crash.
+
+In many cases, a BSOD is a more serious form of an unhandled exception, but instead of a program doing something it should not and crashing back to Windows, it is Windows *itself* doing something it should not. Unlike a game, which has Windows to fall back on when it crashes, Windows has no fallback. There is nowhere to crash to, and the only option is to crash the computer entirely.
+
+While these errors are very frustrating and can often seem random or pointless, it is very important to note that BSOD's do not occur for no reason. Windows, for all its faults, handles errors very effectively. If an error happens in such a way that Windows cannot handle it, Windows forces itself to enter a ***Blue Screen of Death*** to avoid sending improper instructions that may cause damage to any hardware, corrupt data, or breach the system's security measures.
 
 ## What causes a BSOD?
 
-Before we can get into identification and troubleshooting, we first need to understand what causes Windows to enter a blue screen of death. As mentioned before, unhandled exceptions are a major cause of BSODs, but that does not help with figuring them out, and that is not the only cause of them. It may be important to know that Windows is telling itself to BSOD, it is not another part of the computer ordering Windows to crash. Windows understands that what it is attempting to do can compromise the computer either by corrupting data, breaching the security of the computer, or damaging the hardware itself, and forces itself to stop before damage can occur.
+While unhandled exceptions are a *major cause* of BSODs, unhandled exceptions not the sole cause of BSODs, and that piece of information alone does not help with troubleshooting.
+
+It may be important to know that Windows is telling *itself* to BSOD, not another part of the computer. Windows understands that what it is attempting to do can compromise the computer either by corrupting data, breaching the security of the computer, or damaging the hardware itself, and forces itself to stop before damage can occur.
 
 As Windows is simply a complex piece of software, let's start with what causes the software to trigger the error. There are three main causes:
 
-  1. A driver experiences an Unhandled Exception during an operation that Windows can not correct.
+  1. A driver experiences an unhandled exception during an operation that Windows can't correct.
 
   2. A driver has too many instructions waiting to be completed, or has had instructions waiting for too long a time. This typically means a device is not working correctly, or that two drivers are interrupting each other, preventing them from completing their work.
 
   3. A driver tells Windows something is wrong with the hardware it is driving, either because the driver is buggy and is improperly interpreting information or because the hardware itself is sending an error signal. While all three of these causes are not equivalent in severity, all three of them cause the same blue screen of death and crash the computer.
 
-So what causes these errors to happen in the first place? According to Microsoft, 70-75% of BSOD's are caused by poorly written drivers that are simply experiencing errors and not handling them correctly. They are attempting to perform illegal tasks, and Windows is being forced to crash the system entirely. While I  do not subscribe to that statistic, this does happen very regularly, and it is becoming especially common with the rise of kernel-level anti-cheats as they interact poorly with antivirus software and other applications on the system. These anticheats have not been in use long enough for the developers to have worked out all the issues with these interactions.
+So, what causes these errors in the first place? 
 
-The remaining causes are split between hardware failure and indeterminate reasons, with a small amount being caused by Windows bugs.  Unless you are intentionally causing the blue screen of death, and you would know if you were, these errors are in no way your fault. Something you installed may be causing them, but nothing you are doing during the use of the computer is directly putting Windows into the BSOD. You, either have an old driver for something that simply needs to be reinstalled, you have one of the aforementioned anticheat programs, Windows corrupted itself, or the hardware inside the computer simply failed.
+[According to Microsoft](https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/stop-error-or-blue-screen-error-troubleshooting#what-causes-stop-errors), 70-75% of BSOD's are caused by poorly written drivers that are simply experiencing errors and not handling them correctly. They are attempting to perform illegal tasks, and Windows is being forced to crash the system entirely. 
 
-But how can we know what is causing this particular BSOD?
+While I, (writer [JimmahDean](https://github.com/JimmahDean)), do not subscribe to that statistic, this does happen very regularly, and it is becoming especially common with the rise of *kernel-level anti-cheats* as they interact poorly with antivirus software and other applications on the system. These anticheats have not been in use long enough for the developers to have worked out all the issues with these interactions.
+
+The remaining causes are split between hardware failure and indeterminate reasons, with a small amount being caused by Windows bugs. Unless you are intentionally causing the blue screen of death, and you would know if you were, these errors are in no way your fault. 
+
+Something you installed may be causing them, but nothing you are doing during the use of the computer is directly putting Windows into the BSOD. You, either have an old driver for something that simply needs to be reinstalled, you have one of the aforementioned anticheat programs, Windows corrupted itself, or the hardware inside the computer simply failed.
+
+But how can we know what is causing your particular BSOD?
 
 ## Using the Debugger
 
-We have covered what a BSOD is and why they happen, now let's get into the tricky stuff! What is causing your computer to crash? Note that the information from here on out may be very technical. If at any point you find yourself unsure of something, or your eyes glaze over in confusion, I would highly recommend seeking the advice of a professional rather than attempting to diagnose the issue yourself. You are not stupid if it does  not make sense, this is not easy stuff.
-Feel free to upload the dumps to our discord with [this guide](/docs/factoids/bsod)
+> ❗ *All further information in this article may be very technical. If you, at any point, feel uncomfortable with reading dumps, I would **highly recommend** seeking the advice of a professional rather than attempting to diagnose the issue yourself. You are not stupid if it doesn't make sense, this is not easy stuff. Feel free to upload the dumps to [our Discord](https://rtech.support/discord) with [this guide](/docs/factoids/bsod) where volunteers can analyze the dumps for you.*
 
-When a BSOD occurs, Windows will create what is called a memory dump. During the last seconds of functioning, it saves the data stored in RAM to a file, which can be analyzed to help determine the cause of the crash. There are certain programs out there that attempt to automatically analyze these dumps and detail what happened, but let me stop you right now: They are awful. They make guesses, pull information out of thin air and lead you in the wrong direction. The only app I can recommend for analyzing these dumps is [WinDbg Preview](https://aka.ms/windbg/download), which can be downloaded for free from the Microsoft Store.
+We have covered what a BSOD is and why they happen, now let's get into the tricky stuff! What is causing your computer to crash?
 
-When you have WinDbg Preview installed, find your minidump folder in C:\Windows\Minidump. You should now be able to open them simply by double-clicking one. If you have issues with read permissions, try copying the dump to your Downloads folder and opening it again. Do not move the file, it will simply move the locked file, and you will be unable to read it due to the lock. You must copy it. Windows gets weird with permissions when you're in system folders.
+When a BSOD occurs, Windows will create what is called a memory dump. During the last seconds of functioning, it saves the data stored in RAM to a file, which can be analyzed to help determine the cause of the crash. 
+
+> ❗ *There are certain programs out there that attempt to automatically analyze these dumps and detail what happened, but before you download them, let me stop you right now: **They are awful.** They make guesses, pull information out of thin air and lead you in the wrong direction.*
+
+The only app I can recommend for analyzing these dumps is [WinDbg Preview](https://aka.ms/windbg/download), which can be downloaded for free from the Microsoft Store.
+
+When you have WinDbg Preview installed, find your minidump folder in C:\Windows\Minidump. You should now be able to open them simply by double-clicking one. 
+
+> ❓ *If you have issues with read permissions, try copying the dump to your Downloads folder and opening it again. Do not move the file, it will simply move the locked file, and you will be unable to read it due to the lock. You must copy it. Windows gets weird with permissions when you're in system folders.*
 
 When you first open a dump file, you will be greeted with a screen like this:
 
 ![StartScreen](/assets/BSOD-Guide/StartScreen.png)
 
-Nothing in here is particularly important, but go ahead and click on the blue `!analyze -v -` Now you get a whole lot of scary-looking information that makes no sense. If your immediate reaction is, "Is this just the matrix?" I again advise you to seek advice from a professional rather than continue on.
+Nothing in here is *particularly* important, but go ahead and click on the blue `!analyze -v -` text. Now, you get a whole lot of scary-looking information that makes no sense. 
 
-If you are still with me, lets break this down. I am only going to briefly explain the different sections of the analysis first and go over them in more detail later. 
+> ❗ *If your immediate reaction is, "Is this just the matrix?" I, again, advise you to **seek advice from a professional** rather than continue on.*
+
+Let's break this down. I am only going to briefly explain the different sections of the analysis first and go over them in more detail later. 
 
 ### The First Part
 
-The first thing you see is something that looks like this:
+The first thing you should see is something that looks like this:
 
 ```
 DRIVER_POWER_STATE_FAILURE (9f)
@@ -80,17 +105,23 @@ Arg2: ffffa68adae7e9e0, Physical Device Object of the stack
 Arg3: ffffcb8c25661850, nt!TRIAGE_9F_POWER on Win7 and higher, otherwise the Functional Device Object of the stack
 Arg4: ffffa68adecba010, The blocked IRP
 ```
-Okay, some of this is English, but The Numbers? What do they mean?! That is a great question. They are a lot scarier than they look, given that they are written in hex. "ffffa68adae7e9e0" is simply a number in base 16. You can convert this to a base 10 number using any hex to decimal converter you would find on Google, but in most cases the exact number is not important. Recognize that this is just a number, and in this case, the number is just an ID. It is not scary nonsense that means nothing to anyone except the smartest people, it is simply an identification number like the number on your driver's license. Like the number on your driver's license, a memory address is not a number that means anything on its own. It points to an area of memory that contained more information about the computer during the crash. You cannot take the address alone and use it to infer anything about the cause of the crash, and the addresses will always be different between crashes, even if the cause of the crash and the state of the computer during the crash are identical. Addresses are assigned randomly each time the computer is restarted.
 
-All this section shows you is an overview of the error. You have your error on top, a brief description of the error, and the four parameters, which give more information about the error. These parameters vary in importance from being completely meaningless to being the most important information in the dump, depending on the specific error and parameter.
+All this section shows you is an ***overview of the error***. You have your error on top, a brief description of the error, and four parameters, called "arguments" here, which give more information about the error. These parameters vary in importance from being completely meaningless to being the most important information in the dump, depending on the specific error and parameter.
+
+Let's look closer. Okay, some of this is written in plain English, but what do the numbers mean? The numbers are written in [hexadecimal](https://simple.wikipedia.org/wiki/Hexadecimal), or Base 16. `ffffa68adae7e9e0` is simply a number in Base 16. You can convert this to a base 10 number using any hex to decimal converter you would find on Google, but in most cases the exact number is not important. 
+
+> ❓ *Recognize that this is just a number. In this case, the number is just an ID. It is not scary nonsense that means nothing to anyone except the smartest people, it is simply an identification number like the number on your driver's license.*
+
+Like the number on your driver's license, a memory address is not a number that means anything *on its own*. It points to an area of memory that contained more information about the computer during the crash. You cannot take the address alone and use it to infer anything about the cause of the crash, and the addresses will always be different between crashes, even if the cause of the crash and the state of the computer during the crash *are identical*. Addresses are assigned randomly each time the computer is restarted.
 
 ### The Second Part
 
-Following the overview you have a list of Key Values. I ignore these.
+Following the overview, you have a list of Key Values. I would ignore these. After the key values are the bugcheck code and parameters again. There is no new information here; **you can skip over them**.
 
-After the key values are the bugcheck code and parameters again. There is no new information here; you can skip over them.
+Following the reiteration of the error codes, WinDbg will provide you with information it deems relevant to the error. What information is displayed here *will differ depending on the specific bug check*. 
 
-Following the reiteration of the error codes, WinDbg will provide you with information it deems relevant to the error. What information is displayed here will differ depending on the specific bug check. For example, if the BSOD is caused by an unhandled exception, you will usually see an:
+For example, if the BSOD is caused by an unhandled exception, you will usually see:
+
 ```
 EXCEPTION_RECORD:
 EXCEPTION_RECORD:  fffff904f6c8a128 -- (.exr 0xfffff904f6c8a128)
@@ -103,11 +134,18 @@ NumberParameters: 2
 
 Attempt to read from address 00000000046dc232
 ```
-More scary numbers, but again, recognize that these are just numbers describing the error. The exception code is the main error, in this case a memory access violation, and the parameters are details about the error. WinDbg then attempts to describe the exception beneath it, if possible. The "(.exr 0xfffff904f6c8a128)" is WinDbg telling you the command it ran to get this information. If you want, you can run this command yourself by clicking on that or by typing the command in the box beneath the analysis labeled "kd>" However, running the command now will garner no further information than what has already been given.
+
+More scary numbers, but again, recognize that these are just numbers describing the error. 
+
+The exception code is the main error, in this case a memory access violation, and the parameters are details about the error. WinDbg then attempts to describe the exception beneath it, if possible. 
+
+`(.exr 0xfffff904f6c8a128)` is WinDbg telling you the command it ran to get this information. If you want, you can run this command yourself by clicking on that or by typing the command in the box beneath the analysis labeled `kd>`.
+
+However, running the command now will garner no further information than what has already been given.
 
 ### The Third Part
 
-You may also see a CONTEXT or TRAP_FRAME with even more numbers:
+You may also see a `CONTEXT` or `TRAP_FRAME` with even more numbers:
 
 ```
 TRAP_FRAME:  ffffdb809cf9bf20 -- (.trap 0xffffdb809cf9bf20)
@@ -121,15 +159,18 @@ r11=0000000000000000 r12=0000000000000000 r13=0000000000000000
 r14=0000000000000000 r15=0000000000000000
 iopl=0         nv up ei pl zr na po nc
 ```
-You have the familiar blue "(.trap 0xffffdb809cf9bf20)" which, again, is simply the command WinDbg ran to provide you with this information. The numbers in this grouping are the values stored in the CPU's registers at the time of the BSOD. The CPU uses registers to store various information, such as memory addresses, or the result of a mathematical operation. It may want to add the value of r8 to r9 and store the result of that operation in rdx. In this case, r8 is 0 and r9 is 0, so the result is 0 + 0 = 0, which would then make rdx 0. These numbers are rarely important, but I will be mentioning them in later sections.
+You have the familiar blue `(.trap 0xffffdb809cf9bf20)` which, again, is simply the command WinDbg ran to provide you with this information. 
 
-After the context record, we have the PROCESS_NAME. This will almost always blame an application, and it will almost never be useful. "System" is not helpful. "steam.exe" does not cause blue screens. It is simply the program running on the thread that ran into the error. While this is very rarely the cause, it is still worth looking at. Occasionally software will interact with drivers in a way that causes a blue screen. Most notably, anticheats, 3rd-party RGB controllers, and occasionally overclocking tools.
+The numbers in this grouping are the values stored in the CPU's registers at the time of the BSOD. The CPU uses registers to store various information, such as memory addresses, or the result of a mathematical operation. It may want to add the value of `r8` to `r9` and store the result of that operation in `rdx`. In this case, `r8` is 0 and `r9` is 0, so the result is 0 + 0 = 0, which would then make `rdx 0`. These numbers are rarely important, but I will be mentioning them in later sections.
+
+After the context record, we have the `PROCESS_NAME`. This will almost always blame an application, and it will ***almost never be useful***. `System` is not helpful. `steam.exe` does not cause blue screens. It is simply the program running on the thread that ran into the error. While this is very rarely the cause, it is still worth looking at. Occasionally software will interact with drivers in a way that causes a blue screen. Most notably, anticheats, 3rd-party RGB controllers, and occasionally overclocking tools.
 
 ### The Fourth Part
 
 In most BSODs, the next section is the most important:
 
 The stack trace. You have seen a fair few scary numbers; now we get a lot more. Most dumps have small stack traces with only a few lines, but these can be massive walls of text. When troubleshooting, it is critically important that you have an understanding of what you are looking at here:
+
 ```
 ffffdb80`9cf9bdd8 fffff805`6fe3e2a9     : 00000000`0000000a 00000000`00000008 00000000`00000002 00000000`00000000 : nt!KeBugCheckEx
 ffffdb80`9cf9bde0 fffff805`6fe39934     : 00000000`00000125 00000000`00000000 00000000`00000000 00000000`00000000 : nt!KiBugCheckDispatch+0x69
@@ -180,97 +221,185 @@ ffffdb80`9cf9e940 fffff805`6fc0f4a7     : ffffa60b`da324080 00000000`000001c8 ff
 ffffdb80`9cf9eb30 fffff805`6fe2dbb4     : ffff9200`ea5dc180 ffffa60b`da324080 fffff805`6fc0f450 00650074`0065006c : nt!PspSystemThreadStartup+0x5 
 ffffdb80`9cf9eb80 00000000`00000000     : ffffdb80`9cf9f000 ffffdb80`9cf98000 00000000`00000000 00000000`00000000 : nt!KiStartSystemThread+0x34
 ```
-If you did not immediately close the tab, I commend you. Let's break this down. The stack trace is a list of functions Windows was performing on the crashing thread at the time of the BSOD. It is read from bottom to top; in my example, "nt!KiStartSystemThread+0x34" is the first function. You should be able to intuit that this function starts a new thread. The thread ends at the top with nt!KeBugCheckEx, which you should again be able to intuit as the function calling the BSOD.
 
-The first number on the left is the Stack Pointer. This number can be used to manually walk the stack in case a dump's stack trace is corrupted; however, I will not be getting into that in this article. The main thing to note about the stack pointer is that the function that failed will have its stack pointer saved in the rsp register. In my example, rsp = ffffdb809cf9c0b0 which matches the line NETIO!StreamInvokeCalloutAndNormalizeAction+0x5c, marking that as the failed function.
+If you did not immediately close the tab, I commend you. Let's break this down.
 
-The second number is the Return Address. This number indicates the memory address for the instruction that called the function on that line. You can  reassemble these instructions to get the code behind them, but we will go more into that later.
+The stack trace is a list of functions Windows was performing on the crashing thread at the time of the BSOD. It is read from bottom to top; in my example, `nt!KiStartSystemThread+0x34` is the first function. You should be able to intuit that this function starts a new thread. The thread ends at the top with `nt!KeBugCheckEx`, which you should again be able to intuit as the function calling the BSOD.
+
+The first number on the left is the ***Stack Pointer***. This number can be used to manually walk the stack in case a dump's stack trace is corrupted; however, I will not be getting into that in this article. The main thing to note about the stack pointer is that the function that failed will have its stack pointer saved in the `rsp` register. In my example, `rsp = ffffdb809cf9c0b0` which matches the line `NETIO!StreamInvokeCalloutAndNormalizeAction+0x5c`, marking that as the failed function.
+
+The second number is the **Return Address**. This number indicates the memory address for the instruction that called the function on that line. You can  reassemble these instructions to get the code behind them, but we will go more into that later.
 
 To the right of the return address are four arguments for each function. I rarely look at these, but occasionally you will find an exception code in there that can point you in the right direction of the problem. Skilled technicians can use these to more effectively understand exactly what is happening throughout the stack; however, we will not be exploring that in this article.
 
-The function names are the most important part of the stack trace. The name before the ! is the module running the function. In my example, we have nt, which is the overarching windows kernel system module, netwtw12, an Intel wifi driver, wdiwifi, the "Windows Diagnostic Interface" wifi driver, ndis, Network Driver Interface Specification, tcpip, another windows network driver, and NETIO, another windows network driver. Already, we can point to an issue with the computer's wifi as the main suspect.
+The function names are the most important part of the stack trace. The name before the ! is the module running the function. 
 
-The name to the right of the ! is what that module is doing. Oftentimes these make sense, as with KiStartSystemThread or KeBugCheckEx, and a tech-savvy debugger can simply follow along to pinpoint where the fault is, other times you might only see Netwtw12+0x4bd7e, which is not given a function name due to netwtw12 being a non-windows driver. WinDbg does not have symbols with which to label functions on non-windows drivers. Worse still, you may see functions like the one directly before netwtw12, 0xffffa60b\`cfafaa00, which is completely meaningless. The functions labeled 0x1 and 0x2 are corrupted.
+In my example, we have `nt`, which is the overarching Windows kernel system module, `netwtw12`, an Intel wifi driver, `wdiwifi`, the "Windows Diagnostic Interface" WiFi driver, `ndis`, **N**etwork **D**river **I**nterface **S**pecification, `tcpip` and `NETIO`, some Windows network drivers. 
 
-The number after the + is the offset. Symbols allow WinDbg to know where in memory certain functions start, so they can be properly labeled. The offset is how far from the start point the function got before calling the next function. The simplest example is Netwtw12+0x4bd7e which shows an offset of 4bd7e. If you look at the return address of the function after it, fffff805\`b004bd7e, you can calculate netwtw12's starting point in memory to be fffff805\`b0000000. This can be confirmed by running the command 'lm' and finding netwtw12 in the list. "fffff805\`b0000000 fffff805\`b0566000   Netwtw12 T (no symbols)" shows netwtw12's instructions are between fffff805\`b0000000 and fffff805\`b0566000. This is rarely useful in troubleshooting, but it will help to understand how to read the traces better.
+Already, we can point to an issue with the computer's wifi as the main suspect.
 
-Following the stack, you will see the symbol name and module that WinDbg blames for the fault. While this information can guide you in the right direction, be very careful not to immediately think this is correct, as WinDbg simply assumes the first function not in the nt module is the faulting function. It is much more reliable to read the stack trace and find the fault there. In this section is a line called FAILURE_BUCKET_ID, which can provide more context for the error. These are a little tricky to parse and usually start with the stop code, followed by some combination of fault type and faulting module.
+The name to the right of the `!` is what that module is doing. Oftentimes these make sense, as with `KiStartSystemThread` or `KeBugCheckEx`, and a tech-savvy debugger can simply follow along to pinpoint where the fault is, other times you might only see `Netwtw12+0x4bd7e`, which is not given a function name due to `netwtw12` being a **non-Windows** driver. 
 
+WinDbg does not have symbols with which to label functions on non-Windows drivers. Worse still, you may see functions like the one directly before `netwtw12`, ``0xffffa60b`cfafaa00``, which is completely meaningless. The functions labeled `0x1` and `0x2` are corrupted.
+
+The number after the + is the *offset*. Symbols allow WinDbg to know where in memory certain functions start, so they can be properly labeled. The offset is how far from the start point the function got before calling the next function. The simplest example is `Netwtw12+0x4bd7e` which shows an offset of `4bd7e`. If you look at the return address of the function after it, ``fffff805`b004bd7e``, you can calculate netwtw12's starting point in memory to be ``fffff805`b0000000``. 
+
+This can be confirmed by running the command 'lm' and finding netwtw12 in the list. ``fffff805`b0000000 fffff805`b0566000   Netwtw12 T (no symbols)`` shows `netwtw12`'s instructions are between ``fffff805`b0000000`` and ``fffff805`b0566000``. This is rarely useful in troubleshooting, but it will help to understand how to read the traces better.
+
+Following the stack, you will see the symbol name and module that WinDbg blames for the fault. While this information can guide you in the right direction, **be very careful not to immediately think this is correct**. 
+
+WinDbg simply assumes the first function not in the `nt` module is the faulting function. It is much more reliable to read the stack trace and find the fault there. In this section is a line called `FAILURE_BUCKET_ID`, which can provide more context for the error. These are a little tricky to parse and usually start with the stop code, followed by some combination of fault type and faulting module.
+
+```
 FAILURE_BUCKET_ID:  0x9F_3_amdi2c_DEV_AMDI0010_IMAGE_ACPI.sys
+```
 
-This particular line starts with 0x9F, referring to DRIVER_POWER_STATE_FAILURE, then the 3 is the first parameter. amdi2c is the I2C controller driver, and the rest relates to the device node for AMD's ACPI driver. In other bugchecks, you may see AV, or Access Violation, IP_MISALIGNED, indicating a misaligned instruction packet, or other failures. It is worth at least taking a glance here.
+This particular line starts with `0x9F`, referring to `DRIVER_POWER_STATE_FAILURE`, then the 3 is the first parameter. `amdi2c` is the I2C controller driver, and the rest relates to the device node for AMD's ACPI driver. In other bugchecks, you may see AV, or Access Violation, `IP_MISALIGNED`, indicating a misaligned instruction packet, or other failures. It is worth at least taking a glance here.
 
 ## Troubleshooting/Analysis
 
+Now that you have some understanding of what you are looking at, we can go over how to analyze the dump file.
 
-Now that you have some understanding of what you are looking at, we can go over how to analyze the dump file. As with any investigation, you should do your best to always maintain an open mind. Every human being is vulnerable to confirmation bias, If you have an idea in your head as to what the problem is, you will subconsciously focus on any evidence that helps confirm that theory and put less weight on evidence that contradicts it. This intrinsic bias is especially troublesome when working with minidumps as the differences between the actual causes of errors can be extremely subtle. If you are focused on proving ram to be the issue, you might overlook signs of drive failure, as the two issues appear virtually identical in dumps.
+As with any investigation, you should do your best to always maintain an open mind. Every human being is vulnerable to ***confirmation bias***. If you have an idea in your head as to what the problem is, you will subconsciously focus on any evidence that helps confirm that theory and put less weight on evidence that contradicts it. This intrinsic bias is especially troublesome when working with minidumps as the differences between the actual causes of errors can be extremely subtle. If you are focused on proving ram to be the issue, you might overlook signs of drive failure, as the two issues appear virtually identical in dumps.
 
-Second, in almost all cases, if you are diagnosing off of a single dump file, **you are wasting your time.** Without at least a second dump, there is no pattern to find. It is extremely difficult to determine if the fault you are seeing is actually due to the driver being blamed or if it is a hardware fault, not to mention narrowing down which piece of hardware is failing. Professionals are able to do deep dives into single dumps to find the cause of the fault in a single dump, but if you were such a professional, you would not be here. Do yourself a favor and wait for another crash before attempting to track down the issue.
+Second, in almost all cases, if you are diagnosing off of a single dump file, **you are wasting your time.**
 
-The two exceptions to the previous statement are 0x124 WHEA_UNCORRECTABLE_ERROR crashes, and when WinDbg blames "hardware" as the faulting module. WHEA errors are always hardware errors, and it is relatively straightforward to track down the cause. When WinDbg blames hardware as the faulting module, you can be confident it is a hardware failure, but you will still need more dumps to correctly determine which piece of hardware is failing.
+Without at least a second dump, there is no pattern to find. It is extremely difficult to determine if the fault you are seeing is actually due to the driver being blamed or if it is a hardware fault, not to mention narrowing down which piece of hardware is failing. Professionals are able to do deep dives into single dumps to find the cause of the fault in a single dump, but if you were such a professional, you would not be here. Do yourself a favor and wait for another crash before attempting to track down the issue.
+
+The two exceptions to the previous statement are `0x124 WHEA_UNCORRECTABLE_ERROR` crashes, and when WinDbg blames "hardware" as the faulting module. WHEA errors are always hardware errors, and it is relatively straightforward to track down the cause. When WinDbg blames hardware as the faulting module, you can be confident it is a hardware failure, but you will still need more dumps to correctly determine which piece of hardware is failing.
 
 ### Opening
 
-Okay. You have a folder with a bunch of dumps in it, you have a cup of coffee and a snack, and it is time to get to work. Open every dump in the folder, run kb first, then click the !analyze -v link. Do not read the analysis yet, just open each one. Pressing analyze first before running kb can change the thread context, and it is possible the stack changes from when you first open the dump to when you click analyze. This is not common, but typing kb takes less than a second.
+Okay. You have a folder with a bunch of dumps in it, you have a cup of coffee and a snack, and it is time to get to work. 
+
+pen every dump in the folder, run `kb` first, then click the `!analyze -v` link. **Do not read the analysis yet**, just open each one. Pressing `!analyze -v` first before running `kb` can change the thread context, and it is possible the stack changes from when you first open the dump to when you click analyze. This is not common, but typing `kb` takes less than a second.
 
 ### Deciphering
 
-With every dump open, you can start deciphering. Do not go looking for the exact cause immediately, you will see something that looks like one failure and tune out the possibility of it being something else. Instead, start by determining if it is a hardware or software problem. In many cases, this is very easily accomplished by simply finding the pattern. If every error you have is the same and blames the same module at the same function/offset, you can be very confident the problem is software related and caused by that module. On the other hand, if every error is different, with the only similarity being that two of the five dumps have the same stop code, your issue is almost certainly hardware related.
+With every dump open, you can start deciphering. Do not go looking for the exact cause immediately, you will see something that looks like one failure and tune out the possibility of it being something else. Instead, start by determining if it is a **hardware or software** problem. 
 
-I am not here to explain how to solve every software issue that causes BSODs. If you are seeing bugchecks from an anticheat or 3rd party AV, and reinstalling the software is not solving the problem, you will need to go check with the developers' customer support teams and get help through them. Sometimes there is a way to determine the exact cause of the fault, and you might get away with a registry change or disabling/enabling a system service, but we would not be exploring that in this guide. The overwhelmingly the best course of action in the case of a software-caused BSOD is to reinstall the faulting module. If the faulting module is part of the Windows system, run the [DISM/SFC commands](/docs/guides/dism-sfc) and, when those do nothing, [reinstall windows](/windows).  You may choose to spend time looking for solutions online, and maybe you get lucky and find a forum post with a solution that solves the issue, but in most cases you are simply wasting your time. No need to give it your all. Just reinstall.
+In many cases, this is very easily accomplished by simply finding the pattern. If every error you have is the same and blames the *same module at the same function/offset*, you can be very confident the problem is **software related and caused by that module**. 
+
+On the other hand, *if every error is different*, with the only similarity being that two of the five dumps have *the same stop code*, your issue is almost certainly **hardware related**.
+
+I am not here to explain how to solve every software issue that causes BSODs. If you are seeing bugchecks from an anticheat or 3rd party AV, and reinstalling the software is not solving the problem, you will need to go check with the developers' customer support teams and get help through them.
+
+Sometimes there is a way to determine the exact cause of the fault, and you might get away with a registry change or disabling/enabling a system service, but we would not be exploring that in this guide. The overwhelmingly the best course of action in the case of a software-caused BSOD is to reinstall the faulting module. 
+
+If the faulting module is part of the Windows system, run the [DISM/SFC commands](/docs/guides/dism-sfc) and, when those do nothing, [reinstall windows](/windows).
+
+You may choose to spend time looking for solutions online, and maybe you get lucky and find a forum post with a solution that solves the issue, but in most cases you are simply wasting your time. No need to give it your all. ***Just reinstall.***
 
 There are two very important things to note when determining hardware or software faults. 
 
-  * Number 1: If your faulting module is ntkrnlmp, or another module similar to nt or a kernel, it is virtually guaranteed to be hardware related. Sure, it is possible the kernel can fail, but virtually every other component of windows will fail first, and ntkrnlmp being blamed generally just means "the kernel was doing something when something in the computer broke." The main exception to this is DPC_WATCHDOG_VIOLATION.
-  * Number 2: You should very rarely blame the process as the fault. Four BSODs in Chivalry2-Win64-Shipping.exe does not mean Chivalry 2 is causing BSODs. It means one of the drivers Chivalry 2 is accessing is causing them, you just happen to play a lot of Chivalry 2, and it is a demanding game, so it is more error-prone if there are issues in the supporting software or hardware. You instead need to be blaming the "MODULE_NAME" and reinstalling the driver rather than the application.
+  * If your faulting module is `ntkrnlmp`, or another module similar to `nt` or a kernel, it is virtually guaranteed to be **hardware related**. Sure, it is possible the kernel can fail, but virtually every other component of Windows will fail first, and `ntkrnlmp` being blamed generally just means "the kernel was doing something when something in the computer broke." The main exception to this is `DPC_WATCHDOG_VIOLATION`.
 
-It is important to keep in mind that the module WinDbg blames in MODULE_NAME may not be the faulting module; in the overview, I mentioned that WinDbg will always blame the first module, which is not nt, and there may be cases where WinDbg blames the wrong driver. It is critically important that you recognize when this happens as to not blame the wrong component. Please review the Reading the Stack section for more information.
+  * You should very rarely blame the process *as the fault*. Four BSODs in `Chivalry2-Win64-Shipping.exe` does not mean Chivalry 2 is causing BSODs. It means one of the drivers Chivalry 2 is accessing is causing them, you just happen to play a lot of Chivalry 2, and it is a demanding game, so it is more error-prone if there are issues in the supporting software or hardware. You instead need to be blaming the `MODULE_NAME` and reinstalling the driver rather than the application.
 
-A way to be certain the error is software-related and not hardware-related would be to simply reinstall windows. If you continue getting BSODs on a clean installation of Windows, having not done something idiotic like use the built-in factory reset, or run [CCleaner](/docs/recommendations/maintenance.html#cleaners) or [DriverEasy](/docs/recommendations/maintenance#driver-finders), you have a hardware problem.
+It is important to keep in mind that the module WinDbg blames in `MODULE_NAME` *may not be the faulting module*.
+
+In the overview, I mentioned that WinDbg will always blame the first module, which is not `nt`, and there may be cases where WinDbg blames the wrong driver. It is critically important that you recognize when this happens as to not blame the wrong component. Please review the Reading the Stack section for more information.
+
+A way to be certain the error is software-related and not hardware-related would be to *simply reinstall Windows*. If you continue getting BSODs on a clean installation of Windows, having not done something that may break Windows like use the built-in factory reset, run [CCleaner](/docs/recommendations/maintenance.html#cleaners) or [DriverEasy](/docs/recommendations/maintenance#driver-finders), you have a **hardware** problem.
 
 ### Hardware
 
-Now that we know how to handle software-caused bugchecks, let's get into the truly complicated stuff.  A BSOD is determined to be a hardware error if the errors seem to be completely random. If you have five dumps with three different bugcheck codes and the faulting function/offset is always different, there is virtually no pattern at all, it simply happens: Sorry to be the bearer of bad news, but that is hardware failure. The goal now becomes what hardware to replace.
+Now that we know how to handle software-caused bugchecks, let's get into the truly complicated stuff.
+
+A BSOD is determined to be a hardware error if the errors seem to be completely random. If you have five dumps with three different bugcheck codes and the faulting function/offset is always different, there is virtually no pattern at all, it simply happens: Sorry to be the bearer of bad news, but that is hardware failure. The goal now becomes what hardware to replace.
 
 I assume you know this, but in case you do not, let's do a quick rundown of the components of a typical home computer:
 
 The following components are 100% required: No computer will run without them.
 
-  * The Drive. The drive is where all the data lives. Every file, every game, every tool, every document, picture, top secret battle plan, etc. is on the computer's drives. They are connected to the motherboard through a SATA cable or plugged directly into the board via a PCIe slot. Drives use physical methods to preserved data even without power.
+  * **The Drive**. The drive is where all the data lives. Every file, every game, every tool, every document, picture, top secret battle plan, etc. is on the computer's drives. They are connected to the motherboard either through a SATA cable or plugged directly into the board via a PCIe slot. Drives use physical methods to preserve data even without power.
 
-  * The RAM. When data from the drive is loaded, it passes through the motherboard and is stored in the RAM. The data then sits iSn RAM to be easily accessed by the CPU when necessary. This data is both information, such as the color value of the pixels in a picture, as well as instructions for the CPU to run when needed. RAM consists of Digital Flip-Flop Circuits, that use basic logic gates to determine if a bit is on or off and, as such, cannot retain data without power.
+  * **The RAM**. When data from the drive is loaded, it passes through the motherboard and is stored in the RAM. The data then sits in RAM to be easily accessed by the CPU when necessary. This data is both information, such as the color value of the pixels in a picture, as well as instructions for the CPU to run when needed. RAM consists of *Digital Flip-Flop Circuits*, that use basic logic gates to determine if a bit is on or off and, as such, cannot retain data without power.
 
-  * The CPU. The CPU is the brain of the computer. Purists might consider the CPU to be the computer and everything else to be extra. Like your brain controls every part of you, the CPU controls every part of the computer. The CPU works in tandem with the RAM by reading instructions in the RAM, working accordingly, and writing the results of those instructions back to the RAM to be retrieved later. The CPU handles everything that happens on the computer. Without the CPU, you have no computation.
+  * **The CPU**. The CPU is the brain of the computer. Purists might consider the CPU to be the computer and everything else to be extra. Like your brain controls every part of you, the CPU controls every part of the computer. The CPU works in tandem with the RAM by reading instructions in the RAM, working accordingly, and writing the results of those instructions back to the RAM to be retrieved later. The CPU handles everything that happens on the computer. Without the CPU, you have no computation.
 
-  * The Motherboard. Following the human body references, the motherboard is the central nervous system of the computer. The motherboard contains all the electrical pathways between the various components, including power. Every component uses the motherboard to move information, and the motherboard is loaded with all sorts of controllers and logic to guide information to where it needs to go.
+  * **The Motherboard**. Following the human body references, the motherboard is the central nervous system of the computer. The motherboard contains all the electrical pathways between the various components, including power. Every component uses the motherboard to move information, and the motherboard is loaded with all sorts of controllers and logic to guide information to where it needs to go.
 
-  * The PSU. Power Supply Unit, is the heart of the computer. It distributes all the power from the wall outlet to the various components as necessary. A failing PSU usually presents itself as instant power cuts rather than BSODs, but insufficient power can cause other issues, most notably in the GPU as it uses the most power.
+  * **The PSU**. Power Supply Unit, is the heart of the computer. It distributes all the power from the wall outlet to the various components as necessary. A failing PSU usually presents itself as instant power cuts rather than BSODs, but insufficient power can cause other issues, most notably in the GPU as it uses the most power.
 
-  * The GPU. The Graphical Processing Unit is tasked with translating instructions into visual data to send to the monitor. The GPU can either be a dedicated card (i.e. nVidia GTX 4090Ti, AMD Radeon RX 7900 XTX) or integrated into the CPU. It may be beneficial to think of the GPU as the eyes of the computer, turning stimulus into picture. The computer will technically run without a GPU, you will simply be unable to see what is going on.
+  * **The GPU**. The Graphical Processing Unit is tasked with translating instructions into visual data to send to the monitor. The GPU can either be a dedicated card (i.e. nVidia GTX 4090Ti, AMD Radeon RX 7900 XTX) or integrated into the CPU. It may be beneficial to think of the GPU as the eyes of the computer, turning stimulus into picture. The computer will technically run without a GPU, you will simply be unable to see what is going on.
 
-Aside from the GPU, all of these components are constantly talking to each other, sending billions of messages every second to create the magic of a modern computer. As they all work together, it can be incredibly difficult to determine if a BSOD is the result of RAM failure or the CPU simply failing to correctly read what is in the ram. Was the data lost in transit on the motherboard? Did the drive even send the right data? To answer this, we will need to go over the patterns of different failures. Please keep in mind that, due to the interconnectivity of all the parts, it is very possible that a group of errors presenting classic RAM failure is actually drive failure. ❗ Certainty cannot be guaranteed.
+Aside from the GPU, all of these components are constantly talking to each other, sending billions of messages every second to create the magic of a modern computer. As they all work together, it can be incredibly difficult to determine if a BSOD is the result of RAM failure or the CPU simply failing to correctly read what is in the ram. Was the data lost in transit on the motherboard? Did the drive even send the right data? To answer this, we will need to go over the patterns of different failures. 
+
+Please keep in mind that, due to the interconnectivity of all the parts, it is very possible that a group of errors presenting classic RAM failure is actually drive failure.
 
 There can be more components here, such as a Wi-Fi card or other various PCIe devices, but let's start with the basics.
 
-I will not spend too much time talking about what GPU failure looks like. It is by far the easiest fault to spot. If you have a group of dumps all blaming various video issues; VIDEO_TDR_FAILURE, VIDEO_DXGKRNL_FATAL_ERROR, etc. blaming amdkmdag.sys, nvlddmkm.sys or directx, and drivers have already been reinstalled, it is probably a failing GPU. This same idea works for other expansion devices; for instance, a Wi-Fi card will have BSODs calling out network-related modules in the stack. Keep in mind if it always blames the same function/offset, it is virtually guaranteed to be a software problem. Also keep in mind that a GPU failure can mean a failure of the slot it is in, a riser cable if used, or a power supply.
+I will not spend too much time talking about what GPU failure looks like. It is by far the easiest fault to spot. If you have a group of dumps all blaming various video issues; `VIDEO_TDR_FAILURE`, `VIDEO_DXGKRNL_FATAL_ERROR`, etc. blaming `amdkmdag.sys`, `nvlddmkm.sys` or DirectX, and drivers have already been reinstalled, it is probably a failing GPU. 
+
+This same idea works for other expansion devices; for instance, a Wi-Fi card will have BSODs calling out network-related modules in the stack. Keep in mind if it always blames *the same function/offset*, it is virtually guaranteed to be a *software* problem. Also keep in mind that a GPU failure can mean a failure of the slot it is in, a riser cable if used, or a power supply.
 
 ### Pattern Recognition
 
-Now, I have mentioned finding a pattern a few times, but what does that actually mean? Like all patterns, you are looking for what is common between the dumps you have. In a hardware-related set of dumps, the stack is your most valuable resource here, as it determines when the computer actually fails during operation. The important thing you are looking for is the modules involved. If most of them are network-related, you might be seeing a failure in the network card or motherboard. If most are GPU related, it follows that you are looking at a problem with the GPU. If all the modules are Windows system modules, you will have symbols and can read the function names. These are not always helpful, but if you see a lot of mention of the processor, you can point to that as your suspect. "Mm" is a common phrase you might see, which stands for Memory Manager. If the memory manager is involved, consider the RAM or drive as main suspects. While searching for your pattern, it is critical to remain open to new information. If the first dump seems to blame RAM and you read the following dumps trying to convince yourself of a RAM problem, you will miss signs that it is a CPU or drive issue. Always consider every possibility until you have all the information and can make a judgement call accordingly.
+Now, I have mentioned finding a pattern a few times, but what does that actually mean? Like all patterns, you are looking for ***what is common*** between the dumps you have. 
+
+In a hardware-related set of dumps, the stack is your most valuable resource here, as it determines when the computer actually fails during operation. The important thing you are looking for is the modules involved. 
+
+  * If most of them are **network-related**, you might be seeing a failure in the network card or motherboard. 
+
+  * If most are **GPU related**, it follows that you are looking at a problem with the GPU. If all the modules are Windows system modules, you will have symbols and can read the function names. These are not always helpful, but if you see a lot of mention of the processor, you can point to that as your suspect. "Mm" is a common phrase you might see, which stands for Memory Manager. 
+
+  * If the **memory manager** is involved, consider the RAM or drive as main suspects.
+  
+While searching for your pattern, it is critical to **remain open to new information**. If the first dump seems to blame RAM and you read the following dumps trying to convince yourself of a RAM problem, you will miss signs that it is a CPU or drive issue. Always consider every possibility until you have all the information and can make a judgement call accordingly.
 
 When you are looking to pin down which part is failing, it is important to know how the parts interact and how that interaction looks when it fails:
 
-RAM holds all the information and instructions required for your processor to actually process things. As the CPU works, it is constantly fetching directions from different places in RAM and reading and changing information, like the current position of your player character, or the layout of the text you are reading right now. When a program is loaded, all the information about that program is loaded into RAM from the drive the program is on. When RAM fails, it loses the ability to correctly store that information, or correctly map where the information is stored. You will often see errors with a single bit being flipped or where the referenced memory argument is nearly zero. Another common pattern is to have a large portion of the dumps be SYSTEM_SERVICE_EXCEPTION with a mix of 0xC0000005 and 0xC0000409 exception codes. When looking at a set of five dumps, there is a very good chance the errors will seem completely random. You might have two of the same bugcheck, but the stacks would be different, and the blamed drivers would be different. On boot, Windows stores all the loaded drivers in random spots in the RAM, meaning on one power cycle, you might have a network driver on the bad bit causing it to crash while watching a video online. Then the next power cycle, Windows puts the graphics driver on that same bad bit and crashes when you are in a game or running a benchmark test. It will be very random.
+#### RAM
 
-The drive holds all the data someone wants to save permanently. RAM is as fast as it is by utilizing digital flip-flop circuits, which are a specific set of logic gates that can flip between on and off at a whim, but the downside of these circuits is that once they lose power, they lose the data. Drives use physical methods to store data: Hard drives magnetize a disk, solid state drives use flash cells to block or allow power to travel through a bit. Data is not shifted around with each power cycle, making errors caused by a failing drive less random. Errors involving the drive will more often blame the page table than RAM. When Windows accesses the drive, it does so through certain drivers, and you will often see stacks blaming those drivers. The two most prominent examples are ntfs and volmgr. There is also storport and stornvme among others. Anecdotally, I see a lot of FLTRMGR errors when drives are involved. It is very rare to see single bit flip errors in drive related crashes.
+RAM holds all the information and instructions required for your processor to actually process things. As the CPU works, it is constantly fetching directions from different places in RAM and reading and changing information, like the current position of your player character, or the layout of the text you are reading right now. When a program is loaded, all the information about that program is loaded into RAM from the drive the program is on. 
 
-The CPU retrieves and executes instructions from RAM as well as manages the data stored in the memory, and modern CPUs are usually effective at sorting out if there is an internal error. It is not common to have a CPU issue without a fairly clear indication of it being a processor problem. In most CPU related dumps, WinDbg will blame intelppm/amdppm or other CPU drivers. The errors will often happen at idle, nt!KiIdleLoop, or at least mention the processor in the stack. You might see nt!KeYieldProcessorEx or nt!KiHeteroChooseTargetProcessor. A very strong indicator that the CPU is involved would be having a dump with a 0x124 WHEA_UNCORRECTABLE_ERROR with the first argument of 0x0 or 0x1. You may also see CLOCK_WATCHDOG_VIOLATION as a prominent error among the group. Occasionally CPU errors will cause DPC_WATCHDOG_VIOLATION, though DPC_WATCHDOG_VIOLATION is usually caused by incompatible or corrupted drivers causing deadlocks.
+When RAM fails, it loses the ability to correctly store that information, or correctly map where the information is stored. You will often see errors with a single bit being flipped or where the referenced memory argument is nearly zero. Another common pattern is to have a large portion of the dumps be `SYSTEM_SERVICE_EXCEPTION` with a mix of `0xC0000005` and `0xC0000409` exception codes.
 
-Tracking down a motherboard problem is the trickiest of the bunch and is often impossible to diagnose with confidence. A motherboard issue could simply be a bad DIMM slot, causing the error to look identical to RAM failure, or it could be a bad socket pin, causing the dumps to look like CPU failure. It can be a bad bridge, causing all sorts of errors between the USB controller and PCIe controller, causing the dump to be a smorgasbord of blue screens that look like a drive problem with stacks blaming USBxHCI with two VIDEO_TDR_FAILURE sprinkled in there. In general, if the dumps seem to match multiple problems simultaneously, the motherboard should be the first suspect. If you have a group of dumps all blaming different network drivers and the user is on ethernet, it is probably the ethernet controller on the board. The same goes for random errors with USB drivers mentioned in the stack; however, you always have the possibility that any of the other hardware problems are caused by a bad motherboard.
+When looking at a set of five dumps, there is a very good chance the errors will seem completely random. You might have two of the same bugcheck, but the stacks would be different, and the blamed drivers would be different. On boot, Windows stores all the loaded drivers in random spots in the RAM, meaning on one power cycle, you might have a network driver on the bad bit causing it to crash while watching a video online. Then the next power cycle, Windows puts the graphics driver on that same bad bit and crashes when you are in a game or running a benchmark test. It will be very random.
 
-It is hard to explain what a PSU problem looks like in dumps, which are much more likely to simply be sudden hard crashes. If you have a set of dumps with both GPU and CPU failures, you might consider the PSU a suspect, but even then it is not particularly likely. There is a difference in how power-related GPU failure looks compared to dumps relating to damage on the GPU itself, but the difference is subtle. The computer will most likely lose its display, and the resulting dump will mention something like dxgkrnl fatal error with an exception code for device lost or other similar errors, implying the GPU simply turned off. If these crashes happen in tandem with sudden hard crashes, then the PSU would be the primary suspect. A failing PSU will not cause RAM or drive-related bug checks.
+#### Drive
 
-Another important thing to look for are exception codes. Not every dump will have an exception in the arguments. You may have a context record for the exception, which will allow you to view the exception by running .exr <address of context record>. In other dumps, there might just be one hiding in the stack. An exception code in a BSOD will always follow the layout 0xc0000###, for instance 0xc0000005 or 0xc000019d. You can find the definitions for these codes [here](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55) however I find it more convenient to use Microsoft's Error Lookup Tool, which can be found [here](https://learn.microsoft.com/en-us/windows/win32/debug/system-error-code-lookup-tool). These exceptions can point you in the right direction. Let's take a look at the following example:
+The drive holds all the data someone wants to save permanently. RAM is as fast as it is by utilizing digital flip-flop circuits, which are a specific set of logic gates that can flip between on and off at a whim, but the downside of these circuits is that once they lose power, they lose the data.
+
+Drives use physical methods to store data: Hard drives magnetize a disk, Solid State Drives use flash cells to block or allow power to travel through a bit. Data is not shifted around with each power cycle, making errors caused by a failing drive less random. Errors involving the drive will more often blame the page table than RAM. 
+
+When Windows accesses the drive, it does so through certain drivers, and you will often see stacks blaming those drivers. The two most prominent examples are `ntfs` and `volmgr`. There is also `storport` and `stornvme` among others. Anecdotally, I see a lot of `FLTRMGR` errors when drives are involved. It is very rare to see single bit flip errors in drive related crashes.
+
+#### CPU
+
+The CPU retrieves and executes instructions from RAM as well as manages the data stored in the memory, and modern CPUs are usually effective at sorting out if there is an internal error.
+
+It is not common to have a CPU issue without a fairly clear indication of it being a processor problem. In most CPU related dumps, WinDbg will blame `intelppm`/`amdppm` or other CPU drivers. The errors will often happen at `idle`, `nt!KiIdleLoop`, or at least mention the processor in the stack. 
+
+You might see `nt!KeYieldProcessorEx` or `nt!KiHeteroChooseTargetProcessor`. A very strong indicator that the CPU is involved would be having a dump with a `0x124 WHEA_UNCORRECTABLE_ERROR` with the first argument of `0x0` or `0x1`. 
+
+You may also see `CLOCK_WATCHDOG_VIOLATION` as a prominent error among the group. Occasionally CPU errors will cause `DPC_WATCHDOG_VIOLATION`, though `DPC_WATCHDOG_VIOLATION` is usually caused by incompatible or corrupted drivers causing deadlocks.
+
+#### Motherboard
+
+Tracking down a motherboard problem is the trickiest of the bunch and is **often impossible** to diagnose with confidence. 
+
+A motherboard issue could simply be a bad DIMM slot, causing the error to look identical to RAM failure, or it could be a bad socket pin, causing the dumps to look like CPU failure. It can be a bad bridge, causing all sorts of errors between the USB controller and PCIe controller, causing the dump to be a smorgasbord of blue screens that look like a drive problem with stacks blaming `USBxHCI` with two `VIDEO_TDR_FAILURE` sprinkled in there. 
+
+In general, if the dumps seem to match ***multiple problems simultaneously***, the motherboard should be the first suspect. If you have a group of dumps all blaming different network drivers and the user is on ethernet, it is probably the ethernet controller on the board. The same goes for random errors with USB drivers mentioned in the stack; however, you always have the possibility that any of the other hardware problems are caused by a bad motherboard.
+
+#### PSU
+
+It is hard to explain what a PSU problem looks like in dumps, which are much more likely to simply be sudden hard crashes. If you have a set of dumps with both GPU and CPU failures, you might consider the PSU a suspect, but even then it is not particularly likely.
+
+There is a difference in how power-related GPU failure looks compared to dumps relating to damage on the GPU itself, but the difference is subtle. The computer will most likely lose its display, and the resulting dump will mention something like `dxgkrnl` fatal error with an exception code for device lost or other similar errors, implying the GPU simply turned off. If these crashes happen in tandem with sudden hard crashes, then the PSU would be the primary suspect. A failing PSU will not cause RAM or drive-related bug checks.
+
+#### Exception Codes
+
+Another important thing to look for are **exception codes**. Not every dump will have an exception in the arguments. You may have a context record for the exception, which will allow you to view the exception by running `.exr <address of context record>`. 
+
+In other dumps, there might just be one hiding in the stack. An exception code in a BSOD will always follow the layout `0xc0000###`, for instance `0xc0000005` or `0xc000019d`.
+
+You can find the definitions for these codes [here](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55), however I find it more convenient to use [Microsoft's Error Lookup Tool](https://learn.microsoft.com/en-us/windows/win32/debug/system-error-code-lookup-tool). These exceptions can point you in the right direction.
+
+Let's take a look at the following example:
+
 ```
 VIDEO_SCHEDULER_INTERNAL_ERROR (119)
 The video scheduler has detected that fatal violation has occurred. This resulted
@@ -282,7 +411,9 @@ Arg2: ffffffffc000000d
 Arg3: fffffe89f4a5a960
 Arg4: ffffba8ef9c4a830
 ```
-Right away, without it being labeled, you should recognize Arg2 as the exception code 0xc000000d. We can look up the code with the lookup tool to determine the definition of that code:
+
+Right away, without it being labeled, you should recognize `Arg2` as the exception code 0xc000000d. We can look up the code with the lookup tool to determine the definition of that code:
+
 ```
 # for hex 0xc000000d / decimal -1073741811
   ISCSI_ERR_INVALID_AUTHMETHOD                                   iscsilog.h
@@ -296,6 +427,7 @@ Right away, without it being labeled, you should recognize Arg2 as the exception
   ERROR_INVALID_DATA                                             winerror.h
 # The data is invalid.
 ```
+
 When looking at exceptions in a BSOD dump, you are only interested in ntstatus codes; the other codes are used in other parts of Windows. Given that, our error code is STATUS_INVALID_PARAMETER: An invalid parameter was passed to a service or function. This is not the most helpful error code for debugging, but it tells us the error is most likely a software problem. The driver's code sent a parameter to a function that had no routine that accepted that parameter. This might be the device controller accepting requests of types 1-14 and the driver sending a request of type 0. Given this happened on a GPU driver, sending invalid commands directly to the GPU can cause damage to the physical device, so Windows forces the system to shut down rather than allow the driver to potentially ruin the computer. It is impossible to determine the exact parameter sent; we only know it was wrong. 
 
 Lastly, the Microsoft documentation on a specific BSOD can be useful to understand why that BSOD happens. The best way I have found to find the documentation is to search the stop code (the hex number) and add "bugcheck" to the query. Without this, you will find a lot of tech blogs with very generic fixes that simply farm clicks and do not solve the issue.
