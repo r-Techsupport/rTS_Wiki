@@ -351,6 +351,7 @@ While searching for your pattern, it is critical to **remain open to new informa
 When you are looking to pin down which part is failing, it is important to know how the parts interact and how that interaction looks when it fails:
 
 #### RAM
+{: .no_toc }
 
 RAM holds all the information and instructions required for your processor to actually process things. As the CPU works, it is constantly fetching directions from different places in RAM and reading and changing information, like the current position of your player character, or the layout of the text you are reading right now. When a program is loaded, all the information about that program is loaded into RAM from the drive the program is on. 
 
@@ -359,6 +360,7 @@ When RAM fails, it loses the ability to correctly store that information, or cor
 When looking at a set of five dumps, there is a very good chance the errors will seem completely random. You might have two of the same bugcheck, but the stacks would be different, and the blamed drivers would be different. On boot, Windows stores all the loaded drivers in random spots in the RAM, meaning on one power cycle, you might have a network driver on the bad bit causing it to crash while watching a video online. Then the next power cycle, Windows puts the graphics driver on that same bad bit and crashes when you are in a game or running a benchmark test. It will be very random.
 
 #### Drive
+{: .no_toc }
 
 The drive holds all the data someone wants to save permanently. RAM is as fast as it is by utilizing digital flip-flop circuits, which are a specific set of logic gates that can flip between on and off at a whim, but the downside of these circuits is that once they lose power, they lose the data.
 
@@ -367,6 +369,7 @@ Drives use physical methods to store data: Hard drives magnetize a disk, Solid S
 When Windows accesses the drive, it does so through certain drivers, and you will often see stacks blaming those drivers. The two most prominent examples are `ntfs` and `volmgr`. There is also `storport` and `stornvme` among others. Anecdotally, I see a lot of `FLTRMGR` errors when drives are involved. It is very rare to see single bit flip errors in drive related crashes.
 
 #### CPU
+{: .no_toc }
 
 The CPU retrieves and executes instructions from RAM as well as manages the data stored in the memory, and modern CPUs are usually effective at sorting out if there is an internal error.
 
@@ -377,6 +380,7 @@ You might see `nt!KeYieldProcessorEx` or `nt!KiHeteroChooseTargetProcessor`. A v
 You may also see `CLOCK_WATCHDOG_VIOLATION` as a prominent error among the group. Occasionally CPU errors will cause `DPC_WATCHDOG_VIOLATION`, though `DPC_WATCHDOG_VIOLATION` is usually caused by incompatible or corrupted drivers causing deadlocks.
 
 #### Motherboard
+{: .no_toc }
 
 Tracking down a motherboard problem is the trickiest of the bunch and is **often impossible** to diagnose with confidence. 
 
@@ -385,6 +389,7 @@ A motherboard issue could simply be a bad DIMM slot, causing the error to look i
 In general, if the dumps seem to match ***multiple problems simultaneously***, the motherboard should be the first suspect. If you have a group of dumps all blaming different network drivers and the user is on ethernet, it is probably the ethernet controller on the board. The same goes for random errors with USB drivers mentioned in the stack; however, you always have the possibility that any of the other hardware problems are caused by a bad motherboard.
 
 #### PSU
+{: .no_toc }
 
 It is hard to explain what a PSU problem looks like in dumps, which are much more likely to simply be sudden hard crashes. If you have a set of dumps with both GPU and CPU failures, you might consider the PSU a suspect, but even then it is not particularly likely.
 
