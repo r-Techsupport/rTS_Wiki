@@ -412,7 +412,7 @@ Arg3: fffffe89f4a5a960
 Arg4: ffffba8ef9c4a830
 ```
 
-Right away, without it being labeled, you should recognize `Arg2` as the exception code 0xc000000d. We can look up the code with the lookup tool to determine the definition of that code:
+Right away, without it being labeled, you should recognize `Arg2` as the exception code `0xc000000d`. We can look up the code with the lookup tool to determine the definition of that code:
 
 ```
 # for hex 0xc000000d / decimal -1073741811
@@ -428,9 +428,13 @@ Right away, without it being labeled, you should recognize `Arg2` as the excepti
 # The data is invalid.
 ```
 
-When looking at exceptions in a BSOD dump, you are only interested in ntstatus codes; the other codes are used in other parts of Windows. Given that, our error code is STATUS_INVALID_PARAMETER: An invalid parameter was passed to a service or function. This is not the most helpful error code for debugging, but it tells us the error is most likely a software problem. The driver's code sent a parameter to a function that had no routine that accepted that parameter. This might be the device controller accepting requests of types 1-14 and the driver sending a request of type 0. Given this happened on a GPU driver, sending invalid commands directly to the GPU can cause damage to the physical device, so Windows forces the system to shut down rather than allow the driver to potentially ruin the computer. It is impossible to determine the exact parameter sent; we only know it was wrong. 
+When looking at exceptions in a BSOD dump, you are only interested in `ntstatus` codes; the other codes are used in other parts of Windows. Given this information, our error code is `STATUS_INVALID_PARAMETER`: An invalid parameter was passed to a service or function. This is not the most helpful error code for debugging, but it tells us the error is most likely a software problem. 
 
-Lastly, the Microsoft documentation on a specific BSOD can be useful to understand why that BSOD happens. The best way I have found to find the documentation is to search the stop code (the hex number) and add "bugcheck" to the query. Without this, you will find a lot of tech blogs with very generic fixes that simply farm clicks and do not solve the issue.
+The driver's code sent a parameter to a function that had no routine that accepted that parameter. This might be the device controller accepting requests of types *1-14* and the driver sending a request of type *0*.
+
+Given this happened on a GPU driver, sending invalid commands directly to the GPU can cause damage to the physical device, so Windows forces the system to shut down rather than allow the driver to potentially ruin the computer. It is impossible to determine the exact parameter sent; *we only know it was wrong*. 
+
+Lastly, the Microsoft documentation on a specific BSOD can be useful to understand why that BSOD happens. The best way I have found to find the documentation is to search the stop code (the hex number) and add `"bugcheck"` to the query. Without this, you will find a lot of tech blogs with very generic fixes that simply farm clicks and do not solve the issue.
 
 ## Reading the Stack
 
@@ -438,7 +442,7 @@ Being able to correctly read and understand the stack trace is crucial to unders
 
 Please note that many of these examples give diagnoses that are seemingly based on the stack alone. The stack led me to the diagnoses, but they were confirmed by reviewing multiple dumps to ensure the pattern was accurate. Looking at a single stack and making the assumption that the one stack is definitive will cause information from other dumps to be overlooked, and the diagnosis may be wildly off base. Always confirm an idea with information from multiple dumps before making a decision. Refer to the "Case Studies" page for more information.
 
-### Example - DRIVER_POWER_STATE_FAILURE
+### Example - `DRIVER_POWER_STATE_FAILURE`
 
 We will start with a relatively simple stack. This is from a DRIVER_POWER_STATE_FAILURE and the stack itself is not useful, but it is a good starting point to learn on:
 
@@ -450,19 +454,23 @@ ffff858a`ca43e880 fffff803`3fe298d6     : 00000000`00000000 00000000`00000000 00
 ffff858a`ca43e9b0 fffff803`4002e19e     : 00000000`00001b66 ffff8701`6476c180 ffffd48a`90ae2040 ffffd48a`a2a31040 : nt!KiRetireDpcList+0xed6
 ffff858a`ca43ec40 00000000`00000000     : ffff858a`ca43f000 ffff858a`ca439000 00000000`00000000 00000000`00000000 : nt!KiIdleLoop+0x9e
 ```
-The primary goal of reading a stack is to identify the point of failure. WinDbg attempts to do this on its own and will tell you its guess at the bottom, labeled SYMBOL_NAME; however, this should not be relied upon. You will need to know how to identify the issue yourself. Let's get started.
+The primary goal of reading a stack is to identify the point of failure. WinDbg attempts to do this on its own and will tell you its guess at the bottom, labeled `SYMBOL_NAME`; however, this should not be relied upon. You will need to know how to identify the issue yourself. 
+
+Let's get started.
 
 The stacks are read from bottom to top, with the bottom function being the first function in the thread. In our case, Windows is taking an idle thread and telling it to check if the DPC list is empty and, if so, mark it as such. This happens constantly as Windows operates.
 
 After the thread attempts to retire the DPC list, it then checks the list's timer. We can safely assume the DPC list was not empty, and now Windows is checking to make sure the list has not been open for too long.
 
-Following the timer check, we have PopIrpWatchdog. Watchdog is a very common word indicating a fault happened. When a stack travels from a function reporting a fault straight into KeBugCheckEx, there is no fault recovery, meaning the function immediately before the Watchdog is the primary faulting function. For a DRIVER_POWER_STATE_FAILURE, the cause of the fault is not in the stack, but we will pretend for the moment. The BSOD was caused by KiProcessExpiredTimerList. Something went wrong in that function, which forced Windows to crash. The specific cause of that crash is determined by the kind of bugcheck. In the case of DRIVER_POWER_STATE_FAILURE, it means an Information Request Packet was outstanding for too long. The function to check the timer recognized the device was hanging and deliberately forced the crash. Make sure to review the article on DRIVER_POWER_STATE_FAILURE for more information.
+Following the timer check, we have `PopIrpWatchdog`. Watchdog is a very common word indicating *a fault happened*. When a stack travels from a function reporting a fault straight into `KeBugCheckEx`, there is no fault recovery, meaning the function immediately before the Watchdog is the primary faulting function. For a `DRIVER_POWER_STATE_FAILURE`, the cause of the fault is not in the stack, but we will pretend for the moment. The BSOD was caused by `KiProcessExpiredTimerList`. Something went wrong in that function, which forced Windows to crash.
 
-At the end of every stack, you will see nt!KeBugCheckEx. This is the function that tells windows to shut everything down and display the Blue Screen of Death. If you do not see this function at the end of your stack, click "Stop Debugging" at the top of WinDbg, then "Restart" and type k *before* clicking the effervescent !analyze -v. The stack it shows will then have the BugCheck call.
+The specific cause of that crash is determined by the kind of bugcheck. In the case of `DRIVER_POWER_STATE_FAILURE`, it means an Information Request Packet was outstanding for too long. The function to check the timer recognized the device was hanging and deliberately forced the crash. Make sure to review the article on `DRIVER_POWER_STATE_FAILURE` for more information.
 
-### Example - Invalid Internal State, KERNEL_MODE_HEAP_CORRUPTION
+At the end of every stack, you will see `nt!KeBugCheckEx`. This is the function that tells windows to shut everything down and display the Blue Screen of Death. If you do not see this function at the end of your stack, click `"Stop Debugging"` at the top of WinDbg, then "Restart" and type `k` *before* clicking `!analyze -v`. The stack it shows will then have the BugCheck call.
 
-Lets get a little more complicated, take this stack from a KERNEL_MODE_HEAP_CORRUPTION bugcheck with Arg1 indicating an "Invalid Internal State":
+### Example - Invalid Internal State, `KERNEL_MODE_HEAP_CORRUPTION`
+
+Lets get a little more complicated, take this stack from a `KERNEL_MODE_HEAP_CORRUPTION` bugcheck with `Arg1` indicating an *"Invalid Internal State"*:
 
 ```
 ffffb505`7b129f38 fffff800`66790e6c     : 00000000`0000013a 00000000`00000011 ffffb803`d8a02100 ffffb803`df2ffb00 : nt!KeBugCheckEx
@@ -482,17 +490,25 @@ ffffb505`7b12a248 00000000`00000003     : 00000000`00000002 00000000`00000000 ff
 ffffb505`7b12a250 00000000`00000002     : 00000000`00000000 fffff800`00000438 ffffe485`002f7600 ffffb803`00000003 : 0x3
 ffffb505`7b12a258 00000000`00000000     : fffff800`00000438 ffffe485`002f7600 ffffb803`00000003 00000000`00000001 : 0x2
 ```
-You can already tell this stack includes a few more elements. First off, the bottom functions are invalid; you will never know what is happening before 0xffffb803`ee931bd0. This is fairly common in corruption issues.
+You can already tell this stack includes a few more elements. First off, the bottom functions are invalid; you will never know what is happening before ``0xffffb803`ee931bd0``. This is fairly common in corruption issues.
 
-Next, we have a function called AVXGC570D_x64+0xe7e8. This is a third-party driver, which you can tell by the lack of a function name. Windows drivers have symbols telling the debugger which addresses belong to which functions. Third-party drivers do not have these symbols, so WinDbg is only able to tell you which driver owns the instruction, but not the name of the function. This is still useful, however, as the driver's name can point you to the cause of the problem. AVXGC570D_x64 is an Audio/Video driver for a capture card.
+Next, we have a function called `AVXGC570D_x64+0xe7e8`. This is a third-party driver, which you can tell by the lack of a function name. Windows drivers have symbols telling the debugger which addresses belong to which functions. Third-party drivers do not have these symbols, so WinDbg is only able to tell you which driver own.
 
-ks!KsPinReleaseProcessingMutex+0x2e follows. KS is short for Kernel Streaming, a framework Windows uses to facilitate streaming. Combining this with the capture card driver, and you can be virtually certain that the capture card is the problem, but let's keep exploring. Mutex (Mutual Exclusion) is a form of thread lock that prevents multiple threads from accessing critical data at the same time. KS is releasing a mutex, allowing other threads to now access whatever information the capture card had locked. The following two functions, ks!CKsPin::ReleaseProcessSync+0x1e and nt!KeReleaseMutex+0x14 are the same. ks!KsPinReleaseProcessingMutex+0x2e began the process of releasing the lock, ks!CKsPin::ReleaseProcessSync+0x1e presumably makes sure the lock is able to be released and nt!KeReleaseMutex+0x14 finally releases it.
+This is still useful, however, as the driver's name can point you to the cause of the problem. `AVXGC570D_x64` is an Audio/Video driver for a capture card.
 
-You then have some more user code, followed by another capture card function, which attempts to free up part of the heap the card was using. It is not immediately obvious, but this is our failure point. At first glance, it looks like the failure point is nt!RtlpHpLfhSubsegmentFreeBlock+0x152238, the function immediately trailing the very clear nt!RtlpLogHeapFailure+0x45, however, the failure is still within the heap process. The heap process ran a check to ensure everything was as it should be, decided there was a critical problem, and forced the bugcheck. If Windows could never successfully free the heap pool, you would never get far enough into the computer to see a desktop let alone begin streaming, implying the fault is not with the process itself, but how the process was run. AVXGC570D_x64 had control of the heap and, when it was done with it, initiated the failing process. Windows determined the heap the card controlled had an invalid internal state upon freeing, making our capture card driver the point of failure. The user was advised to reinstall the driver and the issue was solved.  
+`ks!KsPinReleaseProcessingMutex+0x2e` follows. `KS` is short for Kernel Streaming, a framework Windows uses to facilitate streaming. Combining this with the capture card driver, and you can be virtually certain that the capture card is the problem, but let's keep exploring. **Mutex (Mutual Exclusion)** is a form of thread lock that prevents multiple threads from accessing critical data at the same time.
 
-### Example - SYMBOL_NAME inaccurate, IRQL_NOT_LESS_OR_EQUAL
+`KS` is releasing a mutex, allowing other threads to now access whatever information the capture card had locked. The following two functions, `ks!CKsPin::ReleaseProcessSync+0x1e` and `nt!KeReleaseMutex+0x14` are the same. `ks!KsPinReleaseProcessingMutex+0x2e` began the process of releasing the lock, `ks!CKsPin::ReleaseProcessSync+0x1e` presumably makes sure the lock is able to be released and `nt!KeReleaseMutex+0x14` finally releases it.
 
-While I did not include it, the noted SYMBOL_NAME in this case was accurate, so lets take a look at a stack where the SYMBOL_NAME is wrong. Here we have one from an IRQL_NOT_LESS_OR_EQUAL:
+You then have some more user code, followed by another capture card function, which attempts to free up part of the heap the card was using. It is not immediately obvious, but this is our failure point.
+
+At first glance, it looks like the failure point is `nt!RtlpHpLfhSubsegmentFreeBlock+0x152238`, the function immediately trailing the very clear `nt!RtlpLogHeapFailure+0x45`, however, the failure is *still within the heap process*. The heap process ran a check to ensure everything was as it should be, decided there was a critical problem, and forced the bugcheck. 
+
+If Windows could never successfully free the heap pool, you would never get far enough into the computer to see a desktop let alone begin streaming, implying the fault is not with the process itself, but *how the process was run*. `AVXGC570D_x64` had control of the heap and, when it was done with it, initiated the failing process. Windows determined the heap the card controlled had an invalid internal state upon freeing, making our capture card driver the point of failure. The user was advised to reinstall the driver and the issue was solved.  
+
+### Example - `SYMBOL_NAME` inaccurate, `IRQL_NOT_LESS_OR_EQUAL`
+
+While I did not include it, the noted `SYMBOL_NAME` in this case was accurate, so lets take a look at a stack where the `SYMBOL_NAME` is wrong. Here we have one from an `IRQL_NOT_LESS_OR_EQUAL`:
 
 ```
 fffff806`416d9718 fffff806`3c63e2a9     : 00000000`0000000a 00000000`00400000 00000000`00000002 00000000`00000000 : nt!KeBugCheckEx
@@ -519,18 +535,26 @@ MODULE_NAME: rtwlane6
 
 IMAGE_NAME:  rtwlane6.sys
 ```
-It is very, very easy to look at this and blame rtwlane6 (a RealTek WLAN driver), implicating either the driver or the card itself. The other dumps look different, typically implicating hardware failure, making the immediate assumption that it is a bad Wi-Fi card. Taking the SYMBOL_NAME at face value would encourage someone to replace a perfectly functional card and still get the same errors.
+It is very, very easy to look at this and blame `rtwlane6` (a RealTek WLAN driver), implicating either the driver or the card itself. The other dumps look different, typically implicating hardware failure, making the immediate assumption that it is a bad Wi-Fi card. Taking the `SYMBOL_NAME` at face value would encourage someone to replace a perfectly functional card and still get the same errors.
 
-KiPageFault is where our fault is reported. Between the driver and that report, we have five Windows functions:  
+`KiPageFault` is where our fault is reported. Between the driver and that report, we have five Windows functions:
+
+```
 nt!KeReleaseSemaphore+0xa5  
 nt!KiExitDispatcher+0x184  
 nt!KiDeferredReadySingleThread+0x9af  
 nt!KiCommitRescheduleContextEntry+0x1d4340  
-nt!KiSetSchedulerAssistPriority  
+nt!KiSetSchedulerAssistPriority
+```
 
-Unlike the capture card example, we do not stay in the same process from driver to report. We release a semaphore, which is similar to a mutex, then exit the dispatcher. Exiting the dispatcher essentially makes everything that happened before irrelevant. The dispatcher is how the wlan driver sends instructions to the NIC, once we are outside of it, the driver is effectively no longer working on that thread. Windows then readies the thread to switch contexts, allowing it to be used for another task, and checks the scheduler's priority list. Only then does it fail. nt!KiSetSchedulerAssistPriority is our failure point. The SYMBOL_NAME suggests the wlan driver because WinDbg will often blame the most recent function that is not a Windows native function, assuming the native code is uncorrupted.
+Unlike the capture card example, we do not stay in the same process from driver to report. We release a *semaphore*, which is similar to a mutex, then exit the dispatcher. Exiting the dispatcher essentially makes everything that happened before irrelevant. 
 
-In the same dump set, we had another IRQL_NOT_LESS_OR_EQUAL with the same bad memory reference, showing the following stack:
+The dispatcher is how the WLAN driver sends instructions to the NIC, once we are outside of it, the driver is effectively no longer working on that thread. Windows then readies the thread to switch contexts, allowing it to be used for another task, and checks the scheduler's priority list. Only then does it fail.
+
+`nt!KiSetSchedulerAssistPriority` is our failure point. The `SYMBOL_NAME` suggests the wlan driver because WinDbg will often blame the most recent function that is not a Windows native function, assuming the native code is uncorrupted.
+
+In the same dump set, we had another `IRQL_NOT_LESS_OR_EQUAL` with the same bad memory reference, showing the following stack:
+
 ```
 ffff900e`7940ed38 fffff805`5d63e2a9     : 00000000`0000000a 00000000`00400000 00000000`00000002 00000000`00000000 : nt!KeBugCheckEx
 ffff900e`7940ed40 fffff805`5d639934     : ffffd40e`3b69a080 ffff900e`7940f4e9 00000000`00000c9e fffff805`d6624620 : nt!KiBugCheckDispatch+0x69
@@ -554,11 +578,14 @@ MODULE_NAME: nt
 
 IMAGE_NAME:  ntkrnlmp.exe
 ```
-In this stack, you can see the same pattern: Exit the dispatcher, prepare the thread to switch contexts, check the scheduler, bsod. Without recognizing that this pattern, combining these two dumps looks like a hardware problem. Once you recognize the failure point of the first stack is not actually the RealTek driver, you will pick up on this being an identical error. Identical errors implicate a software problem, in this case suggesting Windows corruption. The user reinstalled Windows, and the crashing stopped.
+
+In this stack, you can see the same pattern: Exit the dispatcher, prepare the thread to switch contexts, check the scheduler, BSOD. Without recognizing that this pattern, combining these two dumps looks like a hardware problem.
+
+Once you recognize the failure point of the first stack is not actually the RealTek driver, you will pick up on this being an identical error. Identical errors implicate a software problem, in this case suggesting Windows corruption. The user reinstalled Windows, and the crashing stopped.
 
 ### Example - Meaningless Stack
 
-Now, lets take a look at a meaningless stack. This one is from a VIDEO_TDR_FAILURE:
+Now, lets take a look at a meaningless stack. This one is from a `VIDEO_TDR_FAILURE`:
 
 ```
 ffffa80d`13d17168 fffff800`38a1dade     : 00000000`00000116 ffffcd06`06779010 fffff800`4544bff0 ffffffff`c000009a : nt!KeBugCheckEx
@@ -577,17 +604,22 @@ MODULE_NAME: nvlddmkm
 
 IMAGE_NAME:  nvlddmkm.sys
 ```
-Luckily, the SYMBOL_NAME on this one actually steers you in the right direction, though a lot of times it will blame directX on stacks like these. From the stop code alone, you know this is an issue with the GPU or GPU driver, so it is not that surprising to see the nvidia driver being blamed here, but this is a section about stacks, so let's talk about the stack. It is a very straightforward stack that says nothing. You take a thread start, attach a worker to it, and immediately attempt to handle a TDR. The first function after the worker's set is already working on a failure, and that failure transitions into a bugcheck. Nothing in the stack shows anything relating to what happened before the error, and there is no indication as to why the failure happened. You see this a lot in timeout-related stop codes, as the bsod is caused by Windows checking a timer and deciding the timer is too high. The threads involved with that timer are not present in the dump.
+
+Luckily, the `SYMBOL_NAME` on this one actually steers you in the right direction, though a lot of times it will blame DirectX on stacks like these. From the stop code alone, you know this is an issue with the GPU or GPU driver, so it is not that surprising to see the nVidia driver being blamed here, but this is a section about stacks, so let's talk about the stack. 
+
+It is a very straightforward stack that says nothing. You take a thread start, attach a worker to it, and immediately attempt to handle a TDR. The first function after the worker's set is already working on a failure, and that failure transitions into a bugcheck. Nothing in the stack shows ***anything*** relating to what happened before the error, and there is no indication as to why the failure happened.
+
+You see this a lot in timeout-related stop codes, as the BSOD is caused by Windows checking a timer and deciding the timer is too high. The threads involved with that timer are not present in the dump.
 
 ## The Usual Suspects
 
-Let's review a few of the most common BSOD codes you will see. If you are normal, and you have a normal computer problem, the following section will further guide you to discovering the problem and replacing the correct part. If you are weird and are getting something crazy like INSTRUCTION_COHERENCY_EXCEPTION, god rest your soul.
+Let's review a few of the most common BSOD codes you will see. If you are normal, and you have a normal computer problem, the following section will further guide you to discovering the problem and replacing the correct part. If you are weird and are getting something crazy like `INSTRUCTION_COHERENCY_EXCEPTION`, god rest your soul.
 
-### DRIVER_IRQL_NOT_LESS_OR_EQUAL
+### `DRIVER_IRQL_NOT_LESS_OR_EQUAL`
 
-There are two types of DRIVER_IRQL_NOT_LESS_OR_EQUAL: `0xD1` and `0xA`. In my experience, D1 is the most common bugcheck you will see, as it can be caused by every single error imaginable. Any failure in the computer, including faulty drivers, can cause a D1, but luckily, it can be very helpful in figuring out the issue. Everything mentioned in this section relates to both 0xD1 and 0xA stop codes.
+There are two types of `DRIVER_IRQL_NOT_LESS_OR_EQUAL` codes: `0xD1` and `0xA`. In my experience, `D1` is the most common bugcheck you will see, as it can be caused by every single error imaginable. Any failure in the computer, including faulty drivers, can cause a `D1`, but luckily, it can be very helpful in figuring out the issue. Everything mentioned in this section relates to both `0xD1` and `0xA` stop codes.
 
-As mentioned previously, if all of your dumps are identical, they are all the same stop code, blame the same driver and the same function, etc., then you are looking at an issue with a faulty driver. Simply reinstall the driver, and you should be set. If you are not looking at a software problem, you will have a slew of other codes, and which codes you have can give you clues to the problem, but more about that later. Let's first take a look at what a 0xD1 looks like:
+As mentioned previously, if all of your dumps are identical, they are all the same stop code, blame the same driver and the same function, etc., then you are looking at *an issue with a faulty driver*. Simply reinstall the driver, and you should be set. If you are not looking at a software problem, you will have a slew of other codes, and which codes you have can give you clues to the problem, but more about that later. Let's first take a look at what a `0xD1` looks like:
 
 ```
 DRIVER_IRQL_NOT_LESS_OR_EQUAL (d1)  
@@ -626,14 +658,21 @@ r11=4898020181af0100 r12=0000000000000000 r13=0000000000000000
 r14=0000000000000000 r15=0000000000000000  
 iopl=0         nv up ei ng nz na pe nc  
 ```
+
 This example is from a set of dumps that very clearly implicate the Realtek WLAN driver; however, it will be a good introduction to this specific code.
 
-  * Arg1 is the memory address that the CPU tried to access. If this number is smaller than ~8 digits long, you have what is called a null pointer dereference: The address given is completely invalid. If the number is larger, like the fffff806697f8304 in Arg4, the driver is attempting to access memory it is not allowed to. I will go more in depth on this shortly.
-  * Arg2 is the IRQL Level at which the request was made. IRQL, or Interrupt Request Level, is how the CPU manages priority. Lower IRQL instructions are of lower priority, and higher IRQL instructions will be run sooner. As with Arg1, I will go more in depth on IRQLs shortly.
-  * Arg3 is a simple Read/Write/Execute bitfield. The only valid values here are 0 = Read, 1 = Write, 2 = Execute and 8 = Execute. This parameter is not particularly important except if it is not one of those four values, you have a hardware problem.
-  * Arg4 is the address of the failing instruction. In our example, we have fffff806697f8304, which can be found in our stack as the return address for nt!KiPageFault+0x469, and translates directly to rtwlanu+0x48304. You can run ub fffff806697f8304 followed by u fffff806697f8304 to see what this instruction is doing.
+  * `Arg1` is the memory address that the CPU tried to access. If this number is smaller than ~8 digits long, you have what is called a null pointer dereference: The address given is completely invalid. If the number is larger, like the `fffff806697f8304` in `Arg4`, the driver is attempting to access memory it is not allowed to. I will go more in depth on this shortly.
 
-Back to Arg1. If you see a null pointer dereference (if Arg1 is less than 8 digits or so), in  virtually every case, what is happening is that the cpu is trying to run an instruction that attempts to move data to or from a memory address denoted by a register plus an offset, and the value in the register is zero instead of a valid memory address. You can easily confirm this by running ub on the instruction address, followed by u on the same address:
+  * `Arg2` is the IRQL Level at which the request was made. IRQL, or Interrupt Request Level, is how the CPU manages priority. Lower IRQL instructions are of lower priority, and higher IRQL instructions will be run sooner. As with `Arg1`, I will go more in depth on IRQLs shortly.
+
+  * `Arg3` is a simple Read/Write/Execute bitfield. The only valid values here are 0 = Read, 1 = Write, 2 = Execute and 8 = Execute. This parameter is not particularly important except if it is not one of those four values, you have a hardware problem.
+
+  * `Arg4` is the address of the failing instruction. In our example, we have `fffff806697f8304`, which can be found in our stack as the return address for `nt!KiPageFault+0x469`, and translates directly to `rtwlanu+0x48304`. You can run `ub fffff806697f8304` followed by `u fffff806697f8304` to see what this instruction is doing.
+
+Back to `Arg1`. If you see a null pointer dereference (if `Arg1` is less than 8 digits or so), in  virtually every case, what is happening is that the cpu is trying to run an instruction that attempts to move data to or from a memory address denoted by a register plus an offset, and the value in the register is zero instead of a valid memory address. 
+
+You can easily confirm this by running ub on the instruction address, followed by u on the same address:
+
 ```
 0: kd> ub fffff806`697f8304
 rtwlanu+0x482f1:
@@ -656,51 +695,80 @@ fffff806`697f831b 488b89500d0000  mov     rcx,qword ptr [rcx+0D50h]
 fffff806`697f8322 ff15f0904700    call    qword ptr [rtwlanu+0x4c1418 (fffff806`69c71418)]
 fffff806`697f8328 4883c428        add     rsp,28h
 ```
-In the code above, you can see the noted failing instruction as `mov rdx,qword ptr [rdx+60h]`. The readout does not show where rdx was populated, but you could track it down in the disassembly tab of WinDbg if you wanted to. This instruction is moving the data from the memory address at rdx+60h (the h simply denotes the number is in hexadecimal) into the rdx register. If you look back at our trap frame information, you can find rdx=0000000000000000, and 0+60h is just 0x60, the same value found in Arg1.
+
+In the code above, you can see the noted failing instruction as `mov rdx,qword ptr [rdx+60h]`. The readout does not show where `rdx` was populated, but you could track it down in the disassembly tab of WinDbg if you wanted to. This instruction is moving the data from the memory address at `rdx+60h` (the h simply denotes the number is in hexadecimal) into the `rdx` register. If you look back at our trap frame information, you can find `rdx=0000000000000000`, and `0+60h` is just `0x60`, the same value found in `Arg1`.
 
 If you see a null pointer dereference, there are a few implied causes, depending on if the issue is hardware or software. On software, this can be a few things:
-  1. Poorly written code that fails to allocate a block of memory in which it is allowed to run, This is rare. 
-  2. The driver fails to set a pointer to that block of memory and attempts to access memory at address 0x0 + <offset> - In this case, the offset is 0x60. 
+
+  1. Poorly written code that fails to allocate a block of memory in which it is allowed to run, This is rare.
+
+  2. The driver fails to set a pointer to that block of memory and attempts to access memory at address `0x0 + <offset>` - In this case, the offset is 0x60.
+
   3. The program is corrupted, and the instruction to load the address into a CPU register is either wrong or missing completely. For the purpose of solving the BSOD, the exact cause is unimportant, simply reinstall the driver.
 
-For hardware, seeing a null pointer dereference almost always rules out the CPU and motherboard as the faulting hardware. If the CPU's connection to its own registers is compromised or the registers themselves are faulty, the computer would fail well before we got to a 0xD1 BSOD. This leaves our primary suspects as the RAM or drive, which we would have to determine through the stack or by using other dumps in the group.
+For hardware, seeing a null pointer dereference *almost always rules out the CPU and motherboard* as the faulting hardware. If the CPU's connection to its own registers is compromised or the registers themselves are faulty, the computer would fail well before we got to a `0xD1` BSOD. This leaves our primary suspects as the *RAM or drive*, which we would have to determine through the stack or by using other dumps in the group.
 
-When Arg1 is a long, seemingly valid address, you have a more generic access violation, and the cause is a little trickier to track down. To start with, if the address is misaligned, for example, if our Arg1 were 00fffff80667881b and the first byte is cut off and the last byte is zeroed, you can rule out the drive as the suspect, and you are looking more towards the CPU and motherboard. RAM can still cause this, though being misaligned is more likely to be how the data is transmitted and understood than the data itself. If the address seemingly makes complete sense, it may simply be an antivirus denying the driver use of that block of memory, or it may be a bit flip. A bit flip is when one single bit is on when it should be off, or vice versa. As an example, if the address the driver is supposed to access is fffff806697f8304 but the address that was actually accessed is fffff806a97f8304, you would never see the difference in a dump. If you have ruled out software as the problem and uninstalled any AV and there are still crashes occurring with seemingly valid addresses, the problem can be caused by virtually anything. A bit flip can happen if the ram's bad, if the drive's bad, if the pathway on the motherboard between the ram and cpu has an issue, or if the cpu's decoder is faulty. You are at the mercy of other dumps to garner any further information.
+When `Arg1` is a long, seemingly valid address, you have a more generic access violation, and the cause is a little trickier to track down. To start with, if the address is misaligned, for example, if our `Arg1` were `00fffff80667881b` and the first byte is cut off and the last byte is zeroed, you can rule out the ***drive*** as the suspect, and you are looking more towards the ***CPU and motherboard***. RAM can still cause this, though being misaligned is more likely to be how the data is transmitted and understood than the data itself.
 
-On to the IRQLs. Before we get into why the code has NOT_LESS_OR_EQUAL, let me first explain IRQLs. As you use the computer, Windows will manage four IRQL levels: PASSIVE_LEVEL (0), APC_LEVEL (1), DISPATCH_LEVEL (2) and DIRQL (3+). PASSIVE_LEVEL is where drivers run their basic routines, mathematical operations and whatnot. APC_LEVEL is for Asynchronous Procedure Calls. You can look up more information about those if you are interested. DISPATCH_LEVEL is where drivers dispatch instructions to their devices, making these routines critical to get right. If a driver runs into an error at an IRQL that is "not less or equal" to APC_LEVEL, it is in DISPATCH_LEVEL, and the error can cause the driver to send invalid instructions to the hardware it is controlling. Windows forces the computer to crash rather than allowing the driver to potentially damage the hardware with bad commands. You should never see Arg2 be anything except 0x2 for a 0xD1 Bugcheck. If Arg2 is higher than 0x2, i.e., the instruction is being run at DIRQL, the stop code should instead be 0xA, IRQL_NOT_LESS_OR_EQUAL. If you are looking at a 0xA dump and the IRQL is 0xFF, there is a very high chance you have a processor problem. Nothing except the processor runs at 0xFF.
+If the address seemingly makes complete sense, it may simply be *an antivirus* denying the driver use of that block of memory, or it may be a bit flip. A bit flip is when one single bit is on when it should be off, or vice versa. As an example, if the address the driver is supposed to access is `fffff806697f8304` but the address that was actually accessed is `fffff806a97f8304`, you would never see the difference in a dump.
 
-If you have followed along with what the value of Arg1 implies, you are left with two groups of potential hardware problems: RAM and Drive, or CPU and Motherboard. If you have a misaligned Arg1 and are looking at figuring out if it is the CPU or motherboard, you will not find assistance here. I am sure there are methods to figure that out, but the CPU and motherboard are so interlinked, it is very difficult to discern between the two.
+If you have ruled out software as the problem and uninstalled any AV and there are still crashes occurring with seemingly valid addresses, the problem can be caused by ***virtually anything***. A bit flip can happen if the RAM's bad, if the drive's bad, if the pathway on the motherboard between the RAM and RAM has an issue, or if the CPU's decoder is faulty. *You are at the mercy of other dumps to garner any further information.*
 
-Discerning between RAM and a drive issue can be very tricky. The differences are very subtle, you are at the mercy of the other dumps to figure it out, and there are no guarantees. As mentioned earlier in the guide, if the stack mentions volmgr or ntfs, you can lean towards a drive problem. If only one of your dumps does so, it is still well within the realm of possibility that you have a RAM problem. The more dumps to mention them, the more likely it is that you have a drive issue. If none of the dumps blame ntfs, FLTMGR or volmgr, it is very likely to be a RAM problem; however, you cannot rule out a drive issue either. Also, in general, drive issues are less random than RAM. It is difficult to articulate exactly what that means. In a RAM failure, you will virtually never see the same error twice. In drive failure, you may get two or three of the same BSODs with similar stacks.
+On to the IRQLs. Before we get into why the code has `NOT_LESS_OR_EQUAL`, let me first explain IRQLs. As you use the computer, Windows will manage four IRQL levels: `PASSIVE_LEVEL` (0), `APC_LEVEL` (1), `DISPATCH_LEVEL` (2) and `DIRQL` (3+).
 
-If you are looking at a drive issue, you will commonly see these stop codes alongside the 0xD1:
+`PASSIVE_LEVEL` is where drivers run their basic routines, mathematical operations and whatnot. `APC_LEVEL` is for *Asynchronous Procedure Calls*. You can look up more information about those if you are interested. `DISPATCH_LEVEL` is where drivers dispatch instructions to their devices, making these routines critical to get right.
 
+If a driver runs into an error at an IRQL that is "not less or equal" to `APC_LEVEL`, it is in `DISPATCH_LEVEL`, and the error can cause the driver to send invalid instructions to the hardware it is controlling. Windows forces the computer to crash rather than allowing the driver to potentially damage the hardware with bad commands. You should never see `Arg2` be anything except `0x2` for a `0xD1` Bugcheck.
+
+If `Arg2` is higher than `0x2`, i.e., the instruction is being run at `DIRQL`, the stop code should instead be `0xA`, `IRQL_NOT_LESS_OR_EQUAL`. If you are looking at a `0xA` dump and the IRQL is `0xFF`, there is a very high chance you have a processor problem. Nothing except the processor runs at `0xFF`.
+
+If you have followed along with what the value of `Arg1` implies, you are left with two groups of potential hardware problems: RAM and Drive, or CPU and Motherboard. If you have a misaligned `Arg1` and are looking at figuring out if it is the CPU or motherboard, you will not find assistance here.
+
+I am sure there are methods to figure that out, but the CPU and motherboard are so interlinked, it is very difficult to discern between the two.
+
+Discerning between *RAM* and *a drive* issue can be *very tricky*. The differences are very subtle, you are at the mercy of the other dumps to figure it out, and there are no guarantees. As mentioned earlier in the guide, if the stack mentions `volmgr` or `ntfs`, you can lean towards a drive problem.
+
+If only one of your dumps does so, it is still well within the realm of possibility that you have a RAM problem. The more dumps to mention them, the more likely it is that you have a drive issue. 
+
+If none of the dumps blame `ntfs`, `FLTMGR` or `volmgr`, it is very likely to be a RAM problem; however, you cannot rule out a drive issue either. Also, in general, drive issues are less random than RAM.
+
+It is difficult to articulate*exactly* what that means. In a RAM failure, you will virtually never see the same error twice. In drive failure, you may get two or three of the same BSODs with similar stacks.
+
+If you are looking at a drive issue, you will commonly see these stop codes alongside the `0xD1`:
+
+
+```
 UNEXPECTED_STORE_EXCEPTION  
 PFN_LIST_CORRUPT  
 BAD_POOL_CALLER  
 KERNAL_DATA_INPAGE_ERROR  
-
+```
 For RAM, you should see more of the following:
 
+```
 PAGE_FAULT_IN_NONPAGED_AREA  
 ATTEMPTED_EXECUTE_OF_NOEXECUTE_MEMORY  
 ATTEMPTED_WRITE_TO_READONLY_MEMORY  
 UNEXPECTED_KERNEL_MODE_TRAP  
 FAULTY_HARDWARE_CORRUPTED_PAGE (This is rare, but guarantees RAM failure)  
+```
 
 And the following stop codes commonly appear regardless of the problem:
 
+```
 SYSTEM_THREAD_EXCEPTION_NOT_HANDLED  
 SYSTEM_SERVICE_EXCEPTION  
 KMODE_EXCEPTION_NOT_HANDLED  
 KERNEL_SECURITY_CHECK_FAILURE  
 MEMORY_MANAGEMENT  
+```
 
---
+### `SYSTEM_THREAD_EXCEPTION_NOT_HANDLED_M` (`0x1000007e`)
 
-### SYSTEM_THREAD_EXCEPTION_NOT_HANDLED_M (0x1000007e)
+Here we see the actually useful cousin of `SYSTEM_SERVICE_EXCEPTION` (`0x3B`). Both the `0x1000007e` and `0x3B` bugchecks are very common, and `0x3B` dumps will give you virtually nothing to work off of aside from maybe getting an informative stack.
 
-Here we see the actually useful cousin of SYSTEM_SERVICE_EXCEPTION (0x3B). Both the 0x1000007e and 0x3B bugchecks are very common, and 0x3B dumps will give you virtually nothing to work off of aside from maybe getting an informative stack. The 0x1000007e bugcheck is much more informative; let's take a look:
+The `0x1000007e` bugcheck is much more informative; let's take a look:
+
 ```
 SYSTEM_THREAD_EXCEPTION_NOT_HANDLED_M (1000007e)
 This is a very common BugCheck.  Usually the exception address pinpoints
@@ -719,12 +787,17 @@ Arg2: fffff800524853a8, The address that the exception occurred at
 Arg3: ffffd18b0ea0d498, Exception Record Address
 Arg4: ffffd18b0ea0ccd0, Context Record Address
 ```
-Arg1 is going to be 0xc0000005 or 0xc0000409 in virtually every instance. 0xc0000005 is a generic access violation, meaning something tried to access an area of ram it should not have. Either it was trying to read from an area that simply did not exist or the ram it was trying to read was locked down. Sometimes AVs will lock out blocks of memory improperly and cause these bugchecks, other times there is an issue causing the address to be incorrect. This error code alone is quite generic. 0xc0000409 is a buffer overflow. Assuming you are not looking at a software problem, buffer overflows are very indicative of RAM failure.
 
-In cases where it is not one of these two errors, you will need to look up the error code either through the [windows error lookup tool](https://www.microsoft.com/en-us/download/confirmation.aspx?id=100432) provided by Microsoft, or by going to their error documentation [here](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55)  
-❗ Do not google the code, the information you find will be completely useless and potentially harmful.
+`Arg1` is going to be `0xc0000005` or `0xc0000409` in virtually every instance. `0xc0000005` is a generic access violation, meaning something tried to access an area of ram it should not have. Either it was trying to read from an area that simply did not exist or the ram it was trying to read was locked down.
+
+Sometimes AVs will lock out blocks of memory *improperly* and cause these bugchecks, other times there is an issue causing the address to be incorrect. This error code alone is quite generic. `0xc0000409` is a buffer overflow. Assuming you are not looking at a software problem, buffer overflows are very indicative of RAM failure.
+
+In cases where it is not one of these two errors, you will need to look up the error code either through the [Windows Error Lookup Tool](https://www.microsoft.com/en-us/download/confirmation.aspx?id=100432) provided by Microsoft, or by going to their error documentation [here](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55).
+
+> ❗ Do not google the code, the information you find will be completely useless and potentially harmful.
 
 Arguments 2, 3, and 4 are addresses to other information; however, they are not the most useful for our purposes, as WinDbg Preview will automatically run the necessary commands on these addresses to get you the information you need.
+
 ```
 EXCEPTION_RECORD:  ffffd18b0ea0d498 -- (.exr 0xffffd18b0ea0d498)
 ExceptionAddress: fffff800524853a8 (Ntfs!NtfsCommonClose+0x00000000000007a8)
@@ -735,9 +808,15 @@ NumberParameters: 2
    Parameter[1]: 0000000000000008
 Attempt to read from address 0000000000000008
 ```
-This is the result of .exr being run on Arg3, and it shows information about our problem. For our 0xc0000005 error, the first parameter is 0 for read or 1 for write, and the second parameter is the memory being addressed. As the exception record states, we are attempting to read from memory at address 0x8, which is completely invalid. Valid memory addresses will look like the address of the exception record, 0xffffd18b0ea0d498. It starts with four or five Fs and has very few zeroes. Addresses that are smaller than seven or so digits or that look like 0xffffd18b00000060 (the second half is wrong here) are simply wrong. This is indicative of a RAM or drive failure.
 
-We also have a context record. The command being run here is .cxr on the address in Arg4:
+This is the result of .exr being run on `Arg3`, and it shows information about our problem. For our `0xc0000005` error, the first parameter is 0 for read or 1 for write, and the second parameter is the memory being addressed. As the exception record states, we are attempting to read from memory at address `0x8`, which is completely invalid.
+
+Valid memory addresses will look like the address of the exception record, `0xffffd18b0ea0d498`. It starts with four or five Fs and has very few zeroes. 
+
+Addresses that are smaller than seven or so digits or that look like `0xffffd18b00000060` (the second half is wrong here) are simply wrong. This is indicative of a RAM or drive failure.
+
+We also have a context record. The command being run here is `.cxr` on the address in `Arg4`:
+
 ```
 CONTEXT:  ffffd18b0ea0ccd0 -- (.cxr 0xffffd18b0ea0ccd0)
 rax=ffff838152b3b898 rbx=ffffd78a64d95d08 rcx=0000800300880709
@@ -749,16 +828,28 @@ r14=0000000000000001 r15=0000000000000000
 iopl=0         nv up ei ng nz na pe nc
 cs=0010  ss=0018  ds=002b  es=002b  fs=0053  gs=002b             efl=00050282  
 ```
-This is  not very useful by itself, but we can combine it with our failing instruction to get more information.
+
+This is not very useful by itself, but we can combine it with our failing instruction to get more information.
+
 ```
 Ntfs!NtfsCommonClose+0x7a8:
 fffff800`524853a8 48394208        cmp     qword ptr [rdx+8],rax ds:002b:00000000`00000008=????????????????
 ```
-The first number here is the instruction address (Arg2). The second number is the opcode, which is the instruction converted into a binary string to be sent to the CPU, it is not useful for our purposes. After the opcode is the instruction itself, cmp qword ptr [rdx+8], rax ds. If you are interested, this is x64 Assembly, meaning you could look this up by searching "cmp assembly" to get documentation on the cmp command. In most cases, the exact command is not important; what is important is knowing why this instruction would cause the bsod. What we are doing here is comparing the value of the rax register with "qword ptr [rdx+8]" which says 'find a qword (8 bytes) worth of information at the address stored in rdx+8'. The rax register is just a number; it is not important, it is the pointer that is not working. If you look at the context record, you will see "rdx=0000000000000000", and rdx+8 is just 0000000000000008, which is our incorrect memory address.  At some point before this failing instruction, the rdx register was loaded with zeroes instead of a valid memory address. The rdx register would be loaded with information from another block of memory, however the address it was loaded from was empty instead of containing the data we were expecting. This can happen because the ram itself is bad and is starting to lose its ability to store information, or because there is an issue with the drive, and it failed to properly put the information into that block of memory.
+
+The first number here is the instruction address (`Arg2`). The second number is the opcode, which is the instruction converted into a binary string to be sent to the CPU, it is not useful for our purposes. After the opcode is the instruction itself, `cmp qword ptr [rdx+8], rax ds`. 
+
+If you are interested, this is x64 Assembly, meaning you could look this up by searching `"cmp assembly"` to get documentation on the `cmp` command. In most cases, the exact command is not important; what is important is knowing why this instruction would cause the BSOD.
+
+What we are doing here is comparing the value of the `rax` register with `"qword ptr [rdx+8]"` which says 'find a `qword` (8 bytes) worth of information at the address stored in `rdx+8`'. The `rax` register is just a number; it is not important, it is the pointer that is not working.
+
+If you look at the context record, you will see "`rdx=0000000000000000`", and `rdx+8` is just `0000000000000008`, which is our incorrect memory address.  At some point before this failing instruction, the `rdx` register was loaded with zeroes instead of a valid memory address. The `rdx` register would be loaded with information from another block of memory, however the address it was loaded from was empty instead of containing the data we were expecting.
+
+This can happen because the RAM itself is bad and is starting to lose its ability to store information, or because there is an issue with the drive, and it failed to properly put the information into that block of memory.
 
 If this address were seemingly valid, this might be a bit flip which can happen for any number of reasons, including cosmic radiation, or it can be your antivirus misbehaving. If you are not using Windows Defender, uninstall the antivirus and see if the problem continues. If it does continue with the antivirus removed, you are left at the mercy of other dumps to have any clue what the issue is.
 
 Moving on to the stack. The stack of 0x1000007e is just a normal stack; there is nothing special to be aware of or look out for that you would not see in any other stack. Check out the section on how to read stacks for more information.
+
 ```
 fffff800`50617cab     : 00000000`0000007e ffffffff`c0000005 fffff800`524853a8 ffffd18b`0ea0d498 : nt!KeBugCheckEx
 fffff800`505cfb22     : fffff800`00000003 fffff800`502d6818 ffffd18b`0ea08000 ffffd18b`0ea0e000 : nt!PspSystemThreadStartup$filt$0+0x44
@@ -783,15 +874,21 @@ fffff800`505265f5     : ffffd78a`54555040 ffff8381`5437b7b0 00000000`0000000e 00
 fffff800`50604848     : fffff800`4b34d180 ffffd78a`54555040 fffff800`505265a0 00000000`00000000 : nt!PspSystemThreadStartup+0x55
 00000000`00000000     : ffffd18b`0ea0e000 ffffd18b`0ea08000 00000000`00000000 00000000`00000000 : nt!KiStartSystemThread+0x28
 ```
-A stack like this screams drive failure. We were already considering either the RAM or drive due to the information from the exception record, and this stack seals the deal in my book. FLTMGR is very common to see in drive issues, as is Ntfs. Both of these are drive related, with FLTMGR being the File Manager driver and Ntfs being the file system driver. We also see a file operation in here with nt!IopDeleteFile+0x14f. If Windows fails while working with files, drive errors are always the primary suspect. 
 
-You can find more details about determining between ram and drive failure along with understanding invalid memory addresses in the IRQL_NOT_LESS_OR_EQUAL article.
+A stack like this screams drive failure. We were already considering either the RAM or drive due to the information from the exception record, and this stack seals the deal in my book. `FLTMGR` is very common to see in drive issues, as is `Ntfs`.
 
-### DRIVER_POWER_STATE_FAILURE (0x9F)
+Both of these are drive related, with `FLTMGR` being the File Manager driver and `Ntfs` being the file system driver. We also see a file operation in here with `nt!IopDeleteFile+0x14f`. If Windows fails while working with files, drive errors are always the primary suspect. 
 
-DRIVER_POWER_STATE_FAILURE occurs for several different reasons, most of which are software-related and generally have to do with things happening too slowly. When first analyzing a dump, Arg1 is the most important place to start. Of the seven possibilities, 0x1, 0x2, and 0x500 are virtually guaranteed to be a poorly written or corrupted driver. 0x3 through 0x5 are timeouts and tend to be hardware related, though drivers can affect them similar to how drivers cause DPC_WATCHDOG_VIOLATION. 0x6 is hardware-related.
+You can find more details about determining between ram and drive failure along with understanding invalid memory addresses in the `IRQL_NOT_LESS_OR_EQUAL` article.
+
+### `DRIVER_POWER_STATE_FAILURE` (`0x9F`)
+
+`DRIVER_POWER_STATE_FAILURE` occurs for several different reasons, most of which are software-related and generally have to do with things happening too slowly. When first analyzing a dump, Arg1 is the most important place to start.
+
+Of the seven possibilities, `0x1`, `0x2`, and `0x500` are virtually guaranteed to be a poorly written or corrupted driver. `0x3` through `0x5` are timeouts and tend to be hardware related, though drivers can affect them similar to how drivers cause `DPC_WATCHDOG_VIOLATION`. `0x6` is hardware-related.
 
 Outside of the software flavors, the stack is not useful. Timeout related BSODs will always have a stack which refers to a timer or accumulating ticks, however the original call thread is unrelated to the thread in which the BugCheck occurred. As such, the stack will be unrelated and not helpful. Let's take a look at an example:
+
 ```
 DRIVER_POWER_STATE_FAILURE (9f)
 A driver has failed to complete a power IRP within a specific time.
@@ -809,7 +906,10 @@ ffffd00c`bba929b0 fffff804`3922e09e     : 00000000`00000000 ffffac81`c83d1180 ff
 ffffd00c`bba92c40 00000000`00000000     : ffffd00c`bba93000 ffffd00c`bba8d000 00000000`00000000 00000000`00000000 : nt!KiIdleLoop+0x9e
 ```
 
-Arg1 is 0x3, which is telling us that Windows sent a device an Information Request Packet to determine if the device is still functioning and what power state it is in. In normal operation, these requests are returned nearly immediately, and the computer keeps on chugging. Unfortunately for our user here, the device timed out and never sent a response back to Windows, forcing Windows to shut the system down as it is unable to determine the functionality of a core system component. Given that this is a timeout, our stack is just Idle -> Run a DPC -> Check a timer -> Watchdog -> BugCheck. This does not give us any usable information. For our example, there are two additional commands to run, !devstack on Arg2 (Only relevant on 0x3 and 0x5) and !poaction (Only relevant on 0x2 and 0x3):
+`Arg1` is `0x3`, which is telling us that Windows sent a device an Information Request Packet to determine if the device is still functioning and what power state it is in. In normal operation, these requests are returned nearly immediately, and the computer keeps on chugging. Unfortunately for our user here, the device *timed out* and never sent a response back to Windows, forcing Windows to shut the system down as it is unable to determine the functionality of a core system component.
+
+Given that this is a timeout, our stack is just `Idle -> Run a DPC -> Check a timer -> Watchdog -> BugCheck`. This does not give us any usable information. For our example, there are two additional commands to run, `!devstack` on `Arg2` (Only relevant on `0x3` and `0x5`) and `!poaction` (Only relevant on `0x2` and `0x3`):
+
 ```
 5: kd> !devstack ffffd188a5cf8060
   !DevObj           !DrvObj            !DevExt           ObjectName
@@ -821,12 +921,14 @@ Arg1 is 0x3, which is telling us that Windows sent a device an Information Reque
 
 > ffffd188a5cf8060  \Driver\pci        ffffd188a5cf81b0  Cannot read info offset from nt!ObpInfoMaskToOffset
 ```
+
 ```
 !DevNode ffffd188a47d4a20 :
   DeviceInst is "PCI\VEN_1022&DEV_15E2&SUBSYS_383917AA&REV_01\4&1185d5e4&0&0541"
   ServiceName is "amdacpbus"
 ```
-Already, we have better information. !devstack shows us more information about the responsible device, in this case AMD's ACPI bus, which is a chipset driver handling the motherboard's power interface. It is not rare to see the power interface implicated in a power related failure, so we next look at !poaction to gather more info:
+Already, we have better information. `!devstack` shows us more information about the responsible device, in this case AMD's ACPI bus, which is a chipset driver handling the motherboard's power interface. It is not rare to see the power interface implicated in a power related failure, so we next look at !poaction to gather more info:
+
 ```
 5: kd> !poaction
 PopAction: fffff80439a3c980
@@ -858,7 +960,9 @@ Entry 1:
 
 00000000: Unable to get thread contents
 ```
+
 This command by itself does not give much actionable information; however, it shows a list of active IRPs which can be clicked on for more details:
+
 ```
 5: kd> !irp 0xffffd188c1fb6aa0
 Irp is active with 8 stacks 6 is current (= 0xffffd188c1fb6cd8)
@@ -897,24 +1001,35 @@ Irp is active with 8 stacks 6 is current (= 0xffffd188c1fb6cd8)
 
 			Args: 00000000 00000000 00000000 00000000
 ```		
-Now this is much more helpful. There are two IRPs on the list, one of which is completed. The only pending IRP on our list involves the HD Audio Bus. For this example, there were two other 0x9F dumps implicating the HD Audio Bus, one of which blamed the I2C controller rather than the ACPI bus. Both the I2C and the ACPI drivers are part of the chipset driver, leaving us with the following possibilities for what caused the issue: 
+
+Now this is much more helpful. There are two IRPs on the list, one of which is completed. The only pending IRP on our list involves the HD Audio Bus. For this example, there were two other `0x9F` dumps implicating the HD Audio Bus, one of which blamed the I2C controller rather than the ACPI bus.
+
+Both the I2C and the ACPI drivers are part of the chipset driver, leaving us with the following possibilities for what caused the issue:
+
   1. The Chipset/ACPI Driver is not playing nice with the audio driver, causing the audio bus to fail to respond to the request. Both drivers should be reinstalled/updated. 
+
   2. The Windows HD Audio driver is corrupted, in which case sfc can be run, and assuming sfc does nothing as usual, a reinstallation of Windows would fix it. 
+
   3. The sound card on the motherboard is damaged or faulty. This is only relevant if the card is removable. 4) The motherboard itself is failing.
 
-When you are analyzing these on your own, you should be focused on first identifying the device at fault to isolate the issue. This should not be too difficult using the techniques above. Once you have the hanging component, you can then look at everything involved in the dump and work out how they interact to find the potential causes. In our case, we had a chipset driver, which controls the motherboard, and the HD Audio Bus, which is another piece of the motherboard. The interaction is primarily on the motherboard, leaving the motherboard as the prime suspect, but given there are multiple dumps blaming the same drivers, software should not be ruled out. Fixing software is free and should always be the first course of action before considering hardware replacement.
+When you are analyzing these on your own, you should be focused on first identifying the device at fault to isolate the issue. This should not be too difficult using the techniques above. Once you have the hanging component, you can then look at everything involved in the dump and work out how they interact to find the potential causes.
 
-Unfortunately, the 0x3 flavor is the only example I have on hand, but luckily, they are the most prominent versions of the 0x9F BugCheck. I will update this section as I come across other variations.
+In our case, we had a chipset driver, which controls the motherboard, and the HD Audio Bus, which is another piece of the motherboard. The interaction is primarily on the motherboard, leaving the motherboard as the prime suspect, but given there are multiple dumps blaming the same drivers, software should not be ruled out. Fixing software is free and should always be the first course of action before considering hardware replacement.
 
-### WHEA_UNCORRECTABLE_ERROR (0x124)
+Unfortunately, the `0x3` flavor is the only example I have on hand, but luckily, they are the most prominent versions of the `0x9F` BugCheck. I will update this section as I come across other variations.
 
-0x124 is one bugcheck you never want to see. You never want to see any of them, really, but WHEA is practically a 100% guarantee of hardware failure. People keep insisting it can be software-related; however, I have never once seen that be the case.
+### `WHEA_UNCORRECTABLE_ERROR` (`0x124`)
 
-There are a few different flavors of WHEA, determined by the value of Arg1. The three most common are 0x0, Machine Check Exception, 0x4, Uncorrectable PCI Express error, and 0x10. 0x10 is a strange one. In most cases, it will never create a dump with which to analyze. You need to set a registry key to enable advanced parameters to even know that your particular WHEA is a 0x10 WHEA, and it is guaranteed to be an error with an NVMe/M.2 drive or the slot it is plugged in to. The Microsoft documentation for 0x10 claims "Device driver error source," but from everything I have seen and all the information I have gathered on that flavor, it is always the NVMe drive.
+`0x124` is one bugcheck you never want to see. You never want to see any of them, really, but WHEA is practically a 100% guarantee of *hardware failure*. People keep insisting it can be software-related; however, I have never once seen that be the case.
 
-The next flavor is Machine Check Exception. Machine Check Exceptions (MCEs) are errors thrown by the CPU when the CPU detects there is something wrong with its own operation or when a device triggers the Bus/Interconnect error pin. In very rare cases, the CPU will throw an MCE when it is provided with an ECC code from ram telling it to throw the exception. In the majority of cases, a Machine Check Exception is almost always an error with how the CPU is operating.
+There are a few different flavors of WHEA, determined by the value of `Arg1`. The three most common are `0x0`, Machine Check Exception, `0x4`, Uncorrectable PCI Express error, and `0x10`. `0x10` is a strange one. In most cases, it will never create a dump with which to analyze. You need to set a registry key to enable advanced parameters to even know that your particular WHEA is a `0x10` WHEA, and it is guaranteed to be an error with an NVMe/M.2 drive or the slot it is plugged in to.
+
+The Microsoft documentation for 0x10 claims "Device driver error source," but from everything I have seen and all the information I have gathered on that flavor, it is always the NVMe drive.
+
+The next flavor is Machine Check Exception. Machine Check Exceptions (MCEs) are errors thrown by the CPU when the CPU detects there is something wrong with its own operation or when a device triggers the Bus/Interconnect error pin. *In very rare cases*, the CPU will throw an MCE when it is provided with an ECC code from ram telling it to throw the exception. In the majority of cases, a Machine Check Exception is almost always an error with how the CPU is operating.
 
 To confirm CPU failure, we need to translate a status code from our dump, so let's get into the analysis. When you hit analyze on a dump with an MCE, you will see something similar to the following:
+
 ```
 WHEA_UNCORRECTABLE_ERROR (124)
 A fatal hardware error has occurred. Parameter 1 identifies the type of error
@@ -926,11 +1041,15 @@ Arg2: ffffd98699135028, Address of the nt!_WHEA_ERROR_RECORD structure.
 Arg3: 00000000be000000, High order 32-bits of the MCi_STATUS value.
 Arg4: 00000000000c117a, Low order 32-bits of the MCi_STATUS value.
 ```
-Arg1 tells us it is an MCE.
-Arg2 is a pointer to the memory address where the error information is stored. I typically do not bother with this. If you want, you can try running `!errrec <address>` or `!errpkt <address>` to get more error information, though these commands do not seem to work properly on current versions of Windows.
-Arg3 and Arg4 are combined to make a 64-bit MCi_STATUS code. In the example above, the code would be 0xbe000000000c117a. This is the important part.
+
+`Arg1` tells us it is an MCE.
+
+`Arg2` is a pointer to the memory address where the error information is stored. I typically do not bother with this. If you want, you can try running `!errrec <address>` or `!errpkt <address>` to get more error information, though these commands do not seem to work properly on current versions of Windows.
+
+`Arg3` and `Arg4` are combined to make a 64-bit MCi_STATUS code. In the example above, the code would be `0xbe000000000c117a`. This is the important part.
 
 The stack is not important here. It will always be some variation of the following, with references to MCE and a faulting module of either GenuineIntel.sys or AuthenticAMD.sys.
+
 ```
 STACK_TEXT:  
 ffffa400`63a80908 fffff807`0faf403b     : 00000000`00000124 00000000`00000000 ffffd986`99135028 00000000`be000000 : nt!KeBugCheckEx
@@ -952,37 +1071,47 @@ MODULE_NAME: GenuineIntel
 
 IMAGE_NAME:  GenuineIntel.sys
 ```
-This stack does tell you the brand of processor without having to skim the SMBios dump, which is helpful for decoding the MCi_STATUS code. To decode the error, you will need to look up the manual for the brand of processor you are looking at. AMD has MCE information in the AMD64 Architecture Programmer's Manual, Volume 2: System Programming. Intel has theirs in the Intel® 64 and IA-32 Architectures Software Developer’s Manual, Combined Volumes.
 
-Once you have found your manual and located the documentation for MCEs, you can begin decoding by converting the hex code into binary. There are plenty of free converters online to do this for you, or you can do it yourself. Each number in a hex code is four bits, with 0xF being 15, or 1111 in binary. In our example, 0xbe000000000c117a would translate to the following:
+This stack does tell you the brand of processor without having to skim the SMBios dump, which is helpful for decoding the `MCi_STATUS` code. To decode the error, you will need to look up the manual for the brand of processor you are looking at. AMD has MCE information in the AMD64 Architecture Programmer's Manual, Volume 2: System Programming. Intel has theirs in the Intel® 64 and IA-32 Architectures Software Developer’s Manual, Combined Volumes.
+
+Once you have found your manual and located the documentation for MCEs, you can begin decoding by converting the hex code into binary. There are plenty of free converters online to do this for you, or you can do it yourself. Each number in a hex code is four bits, with 0xF being 15, or 1111 in binary. In our example, `0xbe000000000c117a` would translate to the following:
+
 ```
 1011 (b) 1110 (e) 0000 (0) 0000 (0) 0000 (0) 0000 (0) 0000 (0) 0000 (0) 
 63       59       55       51       47       43       39       35 
 0000 (0) 0000 (0) 0000 (0) 1100 (c) 0001 (1) 0001 (1) 0111 (7) 1010 (a)
 31       27       23       19       15       11       7        3
 ```
+
 We can find out what most of these bits mean from the intel manual:
 
 | Bit Number | Description |
 |-------|-------------------|
-|63 | MCi_STATUS register valid - This is set to 1, meaning the cpu is confident the code it is provided is a valid error code.|
+|63 | `MCi_STATUS` register valid - This is set to 1, meaning the cpu is confident the code it is provided is a valid error code.|
 |62 | Error Overflow - This is set to 0, meaning that when the error occurred, the CPU was not in the process of handling another error. Had this been 1, that would mean there were multiple simultaneous errors happening.|
-|61 | Uncorrected error - This is set to 1, meaning the error was fatal and forced the computer to shut down. I have seen this set to 0 and Windows will still BSOD with an Arg1 of 0x1, Corrected Machine Check Exception. I  do not know why Windows does this.|
+|61 | Uncorrected error - This is set to 1, meaning the error was fatal and forced the computer to shut down. I have seen this set to 0 and Windows will still BSOD with an `Arg1` of `0x1`, Corrected Machine Check Exception. I  do not know why Windows does this.|
 |60 | Error reporting enabled - This is set to 1, and it should always be set to 1, otherwise the error would not be reported.|
 |59 and 58| Marking the validity of other error information which we will not be covering in this overview.|
 |57 | Processor context corrupted. This is set to 1, which is indicative of a severe error. The processor thinks it is incapable of being restarted in its current state and must be shut down.|
 |43 | Poison. If 43 is set, the error is caused by the CPU attempting to execute an instruction which it knows is invalid. This is often still a CPU error as the CPU is potentially decoding an instruction improperly, however it can indicate an error outside the CPU.|
 |56 through 44 and 42 through 32 | Are not particularly important for our purposes, but you can read up on what they mean in the aforementioned manuals.|
 |31 through 16 | Are an extended error code and their definition varies wildly between AMD and Intel, varies between different models in those brands, and varies based on the specific error code. This needs to be decoded with the manual.|
-|15 through 0 are the meaningful bits | As they make up the error code. The provided example error code, 0001 0001 0111 1010 can be found in the Compound Error Code table, 000F 0001 RRRR TTLL = Cache Heirarchy Error. The RRRR, TT and LL translate to Request, Transaction Type and Level respectively. An RRRR of 0111 is the "Eviction" request, a TT of 10 is a Generic Transaction Type (Generic implies the CPU could not determine the real type), and an LL of 10 shows an error in the L2 cache. All combined, you have a single fatal error caused by the CPU failing to evict memory from its L2 cache due to a heirarchy error.|
+|15 through 0 are the meaningful bits | As they make up the error code. The provided example error code, `0001 0001 0111 1010` can be found in the Compound Error Code table, `000F 0001 RRRR TTLL = Cache Heirarchy Error`. The `RRRR`, `TT and LL translate to Request`, `Transaction Type and Level` respectively. An `RRRR` of `0111` is the "Eviction" request, a `TT` of 10 is a Generic Transaction Type (Generic implies the CPU could not determine the real type), and an `LL` of 10 shows an error in the L2 cache. All combined, you have a single fatal error caused by the CPU failing to evict memory from its L2 cache due to a heirarchy error.|
 
-The code to look out for in Machine Check Exceptions to rule out the CPU is Bus Error for AMD and Bus/Interconnect Error for Intel. For AMD, the bitfield is 0000 1XXT RRRR XXLL. For intel, the bitfield is 000F 1PPT RRRR IILL. When translated to hex, this will mean the third number of the MCi_STATUS code is 8 or larger for both CPU brands. Bus/Interconnect errors are caused by another device sending a signal to a pin on the CPU telling it to interrupt execution immediately and shut down. Occasionally, the event viewer will have information about which device triggered this interrupt; otherwise, you will need to explore the manual of your CPU for more information on identifying the faulting component. A Bus/Interconnect error does not mean the error is not internal to the CPU. The CPU has a few components that will cause the error; it simply allows the possibility that it is not a CPU issue. If your error is not a Bus/Interconnect error, you are guaranteed to have a CPU problem.
+The code to look out for in Machine Check Exceptions to rule out the CPU is Bus Error for AMD and Bus/Interconnect Error for Intel.
+
+For AMD, the bitfield is `0000 1XXT RRRR XXLL`. For Intel, the bitfield is `000F 1PPT RRRR IILL`. When translated to hex, this will mean the third number of the `MCi_STATUS` code is 8 or larger for both CPU brands.
+
+Bus/Interconnect errors are cased by another device sending a signal to a pin on the CPU telling it to interrupt execution *immediately* and shut down. Occasionally, the event viewer will have information about which device triggered this interrupt; otherwise, you will need to explore the manual of your CPU for more information on identifying the faulting component. 
+
+Bus/Interconnect error does not mean the error is not internal to the CPU. The CPU has a few components that will cause the error; it simply allows the possibility that it is not a CPU issue. If your error is not a Bus/Interconnect error, you are guaranteed to have a CPU problem.
 
 In the vast majority of cases, you need to replace the CPU. Something to try first, especially if you are getting these errors on a brand-new CPU, start with a [CMOS reset](/docs/factoids/cmos) followed by a BIOS update. If you are running any overclocks or underclocks, disable them and ensure you are not overheating. After doing all of that, you can be certain that the CPU is faulty.
 
-For a 0x10 WHEA, you will almost certainly not have a dump to analyze. It will very rarely produce one, but in the vast majority of cases, the only way to determine if a WHEA error is a 0x10 WHEA is by enabling DisplayParameters in the registry to show the arguments on the blue screen itself. You can do this by navigating to HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl in the Registry Editor and adding a DWORD called "DisplayParameters" with a value of 1. In this same key, you should also add a DWORD called AutoReboot with a value of 0 to prevent Windows from self-restarting, so you have time to read the new parameters.
+For a `0x10` WHEA, you will almost certainly not have a dump to analyze. It will very rarely produce one, but in the vast majority of cases, the only way to determine if a WHEA error is a 0x10 WHEA is by enabling DisplayParameters in the registry to show the arguments on the blue screen itself. You can do this by navigating to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl` in the Registry Editor and adding a `DWORD` called `DisplayParameters` with a value of `1`. In this same key, you should also add a `DWORD` called `AutoReboot` with a value of `0` to prevent Windows from self-restarting, so you have time to read the new parameters.
 
 On the off chance you do get a dump for one, it is very straightforward:
+
 ```
 WHEA_UNCORRECTABLE_ERROR (124)
 A fatal hardware error has occurred. Parameter 1 identifies the type of error
@@ -994,9 +1123,11 @@ Arg2: ffffe60dd1ee1028, Address of the nt!_WHEA_ERROR_RECORD structure.
 Arg3: ffffe60db931aaac
 Arg4: ffffe60db94101a0
 ```
-This claims the source is a "Device Driver Error". This is either outdated or completely wrong. The cause of a 0x10 WHEA is invariably an NVMe drive. Either the drive is failing, there is an issue with how it is plugged in, or the slot it is plugged into is bad. If you happen to have a dump, the stack confirms this. If you do not have a dump, you have to go off of blind faith here; however, I have never once seen a 0x10 be caused by something unrelated to an NVMe drive.
+
+This claims the source is a "Device Driver Error". This is either outdated or completely wrong. The cause of a `0x10` WHEA is invariably an NVMe drive. Either the drive is failing, there is an issue with how it is plugged in, or the slot it is plugged into is bad. If you happen to have a dump, the stack confirms this. If you do not have a dump, you have to go off of blind faith here; however, I have never once seen a `0x10` be caused by something unrelated to an NVMe drive.
 
 The stack for a 0x10 looks like this:
+
 ```
 ffffe502`de44f388 fffff801`331b8a4c     : 00000000`00000124 00000000`00000010 ffffe60d`d1ee1028 ffffe60d`b931aaac : nt!KeBugCheckEx
 ffffe502`de44f390 fffff801`331b95a9     : ffffe60d`d29b7b90 ffffe60d`d29b7b90 ffffe60d`b931aa80 ffffe60d`c739d378 : nt!WheaReportHwError+0x3ec
@@ -1014,6 +1145,7 @@ ffffe502`de44fa70 fffff801`32e55485     : ffffe60d`ca2ef040 00000000`00000080 ff
 ffffe502`de44fb10 fffff801`33002d48     : ffff9001`e305c180 ffffe60d`ca2ef040 fffff801`32e55430 00000000`00000000 : nt!PspSystemThreadStartup+0x55
 ffffe502`de44fb60 00000000`00000000     : ffffe502`de450000 ffffe502`de449000 00000000`00000000 00000000`00000000 : nt!KiStartSystemThread+0x28
 ```
+
 Nothing mind-blowing here; Windows does something that needs the NVMe drive to "reset", the drive fails to do so, tells storport that it failed and storport tells windows there is a fatal error in the NVMe drive and forces the bugcheck. It is a very clear-cut NVMe failure.
 
-It is very important to note that a WHEA Machine Check Exception is not the same as the BugCheck MACHINE_CHECK_EXCEPTION (0x9C). If you are seeing a MACHINE_CHECK_EXCEPTION BSOD, you are either getting a WHEA error as Windows is booting, and it can be anything a WHEA error can be, or it is happening after boot and something is causing Windows to think you are getting an MCE without the CPU agreeing, which is typically due to Windows corruption.
+It is very important to note that a WHEA Machine Check Exception is not the same as the BugCheck `MACHINE_CHECK_EXCEPTION` (`0x9C`). If you are seeing a `MACHINE_CHECK_EXCEPTION` BSOD, you are either getting a WHEA error as Windows is booting, and it can be anything a WHEA error can be, or it is happening after boot and something is causing Windows to think you are getting an MCE without the CPU agreeing, which is typically due to Windows corruption.
