@@ -28,4 +28,4 @@ This serves as a master list of recommended and permitted software that we permi
 || [Memtest86+](https://rtech.support/books/how-to-and-guides/page/running-memtest86) | We have a complete guide for testing RAM found [here](https://rtech.support/books/how-to-and-guides/page/running-memtest86).|
 || [WinDBG Preview](https://apps.microsoft.com/store/detail/windbg-preview/9PGJGD53TN86?hl=en-us&gl=US) | This is the program we use to read the diagnostics of your BSODs. While this is not an end-all guide, you can learn to get started by clicking [here](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/bug-check-0xc2--bad-pool-caller).
 || [Revo Uninstaller](https://www.revouninstaller.com/revo-uninstaller-free-download/) | Advanced uninstaller to be used only when an application must be removed completely. Regular use is not required.
-
+|| [7-zip](https://7-zip.org/) | File archiver tool that can compress files as well as extract multiple file formats such as .7z, .zip, .rar, and more.
