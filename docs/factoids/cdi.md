@@ -18,7 +18,7 @@ It collects a drive's [S.M.A.R.T. data](docs/factoids/cdi#analyzing-smart-data-i
 
 ## How to use CDI
 
-1. Download and install [Crystal Disk Info](https://osdn.net/projects/crystaldiskinfo/downloads/76716/CrystalDiskInfo8_15_2.exe/)
+1. Download and install [Crystal Disk Info](https://crystalmark.info/redirect.php?product=CrystalDiskInfoInstaller)
 
 2. At the top of the program's window, copy the contents by going to `Edit -> Copy`
 
