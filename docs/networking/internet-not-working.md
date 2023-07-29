@@ -40,7 +40,7 @@ Usually the "Receive-Side Scaling State" and "Receive Window Auto-Tuning Level" 
 ### Programs interfering
 If you know you have VPNs or third-party Antivirus/ Antimalware applications installed, keep in mind that any of those might cause the problem. To stop those from interfering try a speedtest/ check the connection on a [Linux Live Session](/docs/live-sessions/linux-live-session.html). If the problem is not present here, there is a very high chance that a program is the source.
 
-Boot back into Windows and perform a [Cleanboot](/docs/factoids/cleanboot.md). If the problem gets solved by this you will have to keep re-enable services to find which one is the cause. A good way of doing this is through binary search. This procedure implies that you enable half of the disabled services and check.  
+Boot back into Windows and perform a [Cleanboot](https://rtech.support/docs/factoids/cleanboot.html). If the problem gets solved by this you will have to keep re-enable services to find which one is the cause. A good way of doing this is through binary search. This procedure implies that you enable half of the disabled services and check.  
 If the problem is not present, continue doing this until it shows up.  
 If it is present, disable half of the services you just enabled.  
 You keep doing this until get to the services that is causing the problem.
@@ -69,4 +69,4 @@ Search "cmd.exe" in the start menu and click "Command Prompt". Type `ipconfig /a
 
 If the address is between 169.254.0.1 to 169.254.255.254 then your computer does not get assigned an IP address by the DHCP server (usually the router) thus the connection is faulty.
 
-From a software standpoint, there migth be bad drivers installed on the computer. From a hardware standpoint, a number of things can be faulty: the port on either device, the cable, computer's NIC or the router itself.
+From a software standpoint, there might be bad drivers installed on the computer. From a hardware standpoint, a number of things can be faulty: the port on either device, the cable, computer's NIC or the router itself.
