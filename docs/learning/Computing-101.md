@@ -106,7 +106,7 @@ Refer to the matrix below to identifier what product you need the drivers for, t
 
 | Part                 | Site to check                                  | Driver Name         |
 | -------------------- | ---------------------------------------------- | ------------------- |
-| Built in Ethernet    | Motherboard or laptop manufacture              | "LAN" or "Ethernet" |
+| Built in Ethernet    | Motherboard or laptop manufacturer             | "LAN" or "Ethernet" |
 | PCIe or USB Ethernet | Check the site for the brand of adapter in use |                     |
 | Built in WiFi        | Motherboard or laptop manufacturer             | "WLAN" or "WiFi"    |
 | PCIe or USB Wifi     | Check the site for the brand of adapter in use |                     |
