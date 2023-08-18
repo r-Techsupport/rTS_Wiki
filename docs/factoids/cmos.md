@@ -17,7 +17,7 @@ The CMOS battery is present in all laptops and desktops, and is the failsafe opt
 
 2. Remove CMOS battery. This is a small 'watch battery' in your motherboard (see below).
 
-![cmos battery](/assets/factoids/cmos.jpeg)
+	![cmos battery](/assets/factoids/cmos.jpeg)
 
 3. Press and hold PC power button for 30 seconds, this clears out any remaining charge in your PC.
 
@@ -32,6 +32,6 @@ The CMOS Clear pins are present on many desktop and even some laptop motherboard
 
 3. Using a screwdriver, short the two pins by inserting the screwdriver between the two pins (see below).
 
-![cmos reset using screwdriver](/assets/factoids/cmos_screwdriver.png)
+	![cmos reset using screwdriver](/assets/factoids/cmos_screwdriver.png)
 
 4. Hold the screwdriver in place four roughly 20-30 seconds. Press the power button multiple times while holding the screwdriver in place. Once the time expires, remove the screwdriver, reconnect power, and try restarting the machine.
