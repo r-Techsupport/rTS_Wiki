@@ -5,28 +5,33 @@ nav_exclude: false
 parent: Factoids
 has_children: false
 search_exclude: false
-last_modified_date: 2022-08-13
+last_modified_date: 2022-10-31
 ---
 
 # Obtaining BSOD Dumps
 
-Blue Screen of Death (BSOD) memory dumps allow us to further analyze a BSOD and potentially find the issue.
+## What is a BSOD Dump?
+
+Blue Screen of Death (BSOD) memory dumps contain information about your computer on the time when the BSOD took place.
+
+BSOD dumps allow us to further analyze a BSOD and potentially find the issue.
+
+## Finding the BSOD Dumps
 
 1. Navigate to your Windows directory by opening the Run dialog (Win+R) and typing `%WINDIR%`. You can also do this from any folder by clicking in the navigation bar.
 
-![](https://user-images.githubusercontent.com/8887005/188329591-fb107638-78f9-4875-b09b-e9835b43407d.PNG)
-
-![](https://user-images.githubusercontent.com/8887005/188329596-8b426f05-7225-4ccf-a4a0-8b8dfbbbc744.PNG)
+    ![](https://user-images.githubusercontent.com/8887005/188329591-fb107638-78f9-4875-b09b-e9835b43407d.PNG)
+    ![](https://user-images.githubusercontent.com/8887005/188329596-8b426f05-7225-4ccf-a4a0-8b8dfbbbc744.PNG)
 
 2. Find the folder named `Minidump` and open it to double check to see if you have any `.dmp` files.
 
-3. If you have dump files, copy the entire folder (*not just the files in the folder*) to the desktop. This will require administrator permissions.
+3. If you have dump files, copy the entire folder (*not just the files in the folder*) to the Downloads folder. This will require administrator permissions.
 
 4. Create a .zip file of the whole folder by right clicking the folder -> `Send to` -> `Compressed (zip) folder`
 
-![](https://user-images.githubusercontent.com/8887005/188329574-e3b8084d-7879-4d21-8da3-21db76c418dc.PNG)
+    ![CompressDump.png](/assets/factoids/CompressDump.png)
 
-5. Drop the .zip file into the chat for the tech support team to analyze.
+5.  Drop the .zip file into the chat for the tech support team to analyze.
 
 # Common Issues
 
@@ -53,3 +58,7 @@ First, double check the dump configuration settings following the guide [here](h
 If your file is stuck on `Processing...` when uploading it to Discord, you are attemping to upload a dump file directly from the Minidump folder. Depending on your account's permissions, Windows prevents this but does not provide any sort of notification. Please follow the steps above to copy and upload the entire Minidump folder rather than the individual dump files.
 
 If you're curious, we use [WinDbg](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools) to analyze the dump.
+
+## Unable to access windows desktop
+
+If you are unable to access the windows desktop even after troubleshooting steps like booting into [safemode](https://support.microsoft.com/en-us/windows/start-your-pc-in-safe-mode-in-windows-92c27cff-db89-8644-1ce4-b3e5e56fe234) you can try following our tutorial on [Live Linux USB's](https://rtech.support/docs/live-sessions/linux-live-session.html) to obtain and send us the dump files created by windows. However, please note that in most situations. If you are unable to enter the desktop environment you will be suggested to [re-install windows](https://rtech.support/windows).

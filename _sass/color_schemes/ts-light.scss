@@ -17,4 +17,6 @@ li::before, h4::before {
   color: $nord2 !important;
 }
 
-@import "support/common.scss";
+blockquote {
+  border-color: darken($nord5, 10%) !important;
+}

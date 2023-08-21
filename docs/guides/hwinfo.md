@@ -13,7 +13,7 @@ redirect_from: /books/how-to-and-guides/page/hwinfo-full-guide
 
 To start troubleshooting using HWiNFO, follow this guide. It will walk you though how to setup logging and stress testing.
 
-> All 3 programs are required for this test. None are optional.
+> Note that if you are specifically told to use HWInfo for game logging, ignore the steps pertaining to Furmark and Prime95 (i.e. follow steps 1, 4, 5 and 6). If told you are doing a stress test, you must download all 3 programs and follow all steps accordingly. None of the programs are optional during a stress test.
 >
 > ***<u class="blink">Read the entirety of step 1 and 2 before complaining that downloads aren't working.</u>***
 
@@ -21,7 +21,7 @@ To start troubleshooting using HWiNFO, follow this guide. It will walk you thoug
 
     **All versions will work the same. You won't have to install the portable version.**
 
-2. Download Prime95 from [here (64-bit)](http://www.mersenne.org/ftp_root/gimps/p95v308b9.win64.zip) or [here (32-bit)](http://www.mersenne.org/ftp_root/gimps/p95v307b9.win32.zip)
+2. Download Prime95 from [here (64-bit)](https://www.mersenne.org/ftp_root/gimps/p95v308b9.win64.zip) or [here (32-bit)](https://www.mersenne.org/ftp_root/gimps/p95v307b9.win32.zip)
 
     **If you are using chrome, you may need to copy-paste these links into a new tab, or right click and "save link as".**
 

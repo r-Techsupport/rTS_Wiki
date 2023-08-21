@@ -1,0 +1,15 @@
+name: Push master to gh-pages
+on: workflow_dispatch
+jobs:
+  merge-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Merge master -> gh-pages
+        uses: devmasx/merge-branch@master
+        with:
+          type: now
+          from_branch: master
+          target_branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}

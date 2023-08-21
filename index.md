@@ -4,6 +4,7 @@ title: Homepage
 nav_exclude: true
 last_modified: 2022-06-25
 ---
+
 # Highlighted Content
 * How to clean install [Windows](/windows)
 * Believe you are infected? View our recommendations for dealing with [malware](/docs/safety-security/malware-guide)
