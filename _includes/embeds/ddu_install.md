@@ -1,4 +1,4 @@
-1. [Download DDU](https://www.guru3d.com/files-get/display-driver-uninstaller-download,19.html) and _extract_ the .zip:
+1. [Download DDU](https://www.guru3d.com/files-details/display-driver-uninstaller-download.html), from the "Download Locations" links at the bottom of the page, and _extract_ the .zip:
 
 	![dduzip.png](/assets/factoids/dduzip.png)
 
