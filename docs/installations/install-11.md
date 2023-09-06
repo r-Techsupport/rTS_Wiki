@@ -16,7 +16,7 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 
 1. Create a bootable USB flash drive using the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/windows11) from Microsoft. This will also wipe any data stored on the USB flash drive.
 
-   > ❗ Save MCT to Desktop or Downloads folder. MCT must be saved and run from outside the USB flash drive. Just moving an ISO file to the Usb flash drive will not make it bootable.
+   > ❗ Save MCT to Desktop or Downloads folder. MCT must be saved and run from outside the USB flash drive. Just moving an ISO file to the USB flash drive will not make it bootable.
 
 2. Run MCT by double clicking it. You will be greeted with windows Terms Of Service, after reading it, press Accept.
 
@@ -125,6 +125,8 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 7. Windows will now install. When it finishes it will automatically restart your machine, when your screen goes black pull out your installation USB drive.
 
 8. Once the machine finishes restarting you will be facing the setup screen. Configure as you wish.
+
+     > If you need to complete installation without internet access, please refer to the following guide: <https://pureinfotech.com/bypass-internet-connection-install-windows-11/>
     
     
 You have successfully installed Windows 11.
