@@ -4,11 +4,12 @@ jobs:
   merge-branch:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - uses: actions/checkout@gh-pages
-#      - name: Checkout gh-pages
-#        run: git checkout gh-pages
+      - uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+      - name: Fetch master
+        run: git fetch origin master
       - name: Merge master -> gh-pages
-        run: git merge master
+        run: git merge --ff-only origin/master
       - name: Push
         run: git push origin gh-pages
