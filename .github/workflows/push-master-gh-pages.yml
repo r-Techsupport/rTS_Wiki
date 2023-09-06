@@ -6,10 +6,9 @@ jobs:
     steps:
       - uses: actions/checkout@master
 
+      - name: Checkout gh-pages
+        run: git checkout gh-pages
       - name: Merge master -> gh-pages
-        uses: devmasx/merge-branch@master
-        with:
-          type: now
-          from_branch: master
-          target_branch: gh-pages
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+        run: git merge master
+      - name: Push
+        run: git push origin gh-pages
