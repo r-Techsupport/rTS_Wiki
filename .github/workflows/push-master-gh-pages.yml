@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-
-      - name: Checkout gh-pages
-        run: git checkout gh-pages
+      - uses: actions/checkout@gh-pages
+#      - name: Checkout gh-pages
+#        run: git checkout gh-pages
       - name: Merge master -> gh-pages
         run: git merge master
       - name: Push
