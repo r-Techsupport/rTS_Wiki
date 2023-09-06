@@ -50,7 +50,7 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 
    > Please make sure to disable CSM, enable Secure Boot, and enable TPM prior to installation of Windows 11.
 
-   > It is best to disconnect all storage disks except from the main (C Drive) disk from the computer before installing Windows 10. Not doing so can accidentally result in the installer choosing the wrong disk as the boot drive and putting actual windows on another drive.
+   > It is best to disconnect all storage disks except from the main (C Drive) disk from the computer before installing Windows 11. Not doing so can accidentally result in the installer choosing the wrong disk as the boot drive and putting actual windows on another drive.
 
 1. Boot into your USB that has the Windows 11 Media on it. 
 	
@@ -79,7 +79,7 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
     
     [![Windows 11-2021-10-05-15-11-30.png](/assets/install-11/windows-11-2021-10-05-15-11-30.png)](/assets/install-11/windows-11-2021-10-05-15-11-30.png)
 	  
-       > Ensure that you only have drive 0 partitions in this window before deleting, otherwise this means you didnt disconnect other drives as noted in step 8.
+        Ensure that you only have drive 0 partitions in this window before deleting, otherwise this means you didnt disconnect other drives as noted in step 8.
 
     <details markdown="1">
     <summary markdown=span>
