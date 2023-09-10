@@ -19,9 +19,9 @@ This guide will mention basic steps to help you fix your pc not showing anything
 
 ## Pre-troubleshooting things to do:
 
-1 - Make sure any power cables are properly connected and receiving power.
+1 - ***Never touch or move any of the parts inside the computer while its still on.*** This is important for both your own safety and to prevent accidentally damaging some of the hardware.
 
-2 - ***Never touch or move any of the parts inside the computer while its still on.*** This is important for both your own safety and to prevent accidentally damaging some of the hardware.
+2 - Make sure all power cables are properly connected and receiving power. Make sure video cable is in GPU if applicable.
 
 3 - List of hardware parts models and signs of life (this will help you (and us) to locate manuals and have a better look of whats going on and what you can try).
 
