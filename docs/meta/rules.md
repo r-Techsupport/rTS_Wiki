@@ -11,6 +11,7 @@ redirect_from:
     - /rules
     - /books/rules/page/rules-of-the-rtechsupport
     - /books/rules
+    - /books/rules/
 ---
 
 # Rules of the r/TechSupport
