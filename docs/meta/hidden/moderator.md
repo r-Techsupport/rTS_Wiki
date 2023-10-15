@@ -4,10 +4,11 @@ title: Moderator Guidelines
 nav_exclude: true
 has_children: false
 search_exclude: true
-last_modified_date: 2022-12-09
+last_modified_date: 2023-10-15
 parent: Hidden
 redirect_from: /coc
 redirect_from: /docs/meta/hidden/coc.html
+published: false
 ---
 
 # Moderator Guidelines
