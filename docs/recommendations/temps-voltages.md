@@ -20,13 +20,16 @@ Watching your temperatures is an important part of managing any machine, especia
 When reporting your temperatures to people, please use Celsius. It doesn't matter what country you are in, everyone uses Celsius for computers.
 
 ## Specify
-This is an all around system reporting tool. We use this actively in our [Discord live chat](/discord) to gather system information, including temperatures.
+This is an all around system reporting tool. We use this actively in our [Discord live chat](/discord) to gather system information, including temperatures and their corresponding sensors.
 
-You can download Specify [here](https://spec-ify.com/download). Temperatures, including the hardware component(s) and sensors reporting them are listed in the "Temps" section of the Specify report.
+You can download Specify [here](https://spec-ify.com/download). Temperatures (including their corresponding sensors) are listed in the "Temps" section of the Specify report.
 
-> ℹ️ For more information on how to use Specify and Get-Specs, please see our page on making a system dossier.
+### Get-Specs
+Alternatively, you can use Get-Specs to gather similar (albeit more basic/limited) information 
 
+You can download Get-Specs [here](https://github.com/r-Techsupport/Get-Specs/releases/latest/download/Get-Specs.zip). Temperatures are listed in the "Hardware Basics" section of the report.
 
+> ℹ️ **For more information on how to use Specify and Get-Specs, please see our guide on [making a system dossier](docs/guides/making-a-system-dossier.md).**
 
 ## Ryzen Master
 The go-to for ensuring you get proper temperature readings for your Ryzen CPU. If other tools show the same temperature you can assume they are accurate.
@@ -34,6 +37,6 @@ The go-to for ensuring you get proper temperature readings for your Ryzen CPU. I
 [Download](https://download.amd.com/Desktop/AMD-Ryzen-Master.exe)
 
 ## HWiNFO
-Like Specs, this has a ton of info, but it is isolated to hardware. We utilize this for extended logging of voltages, temps, etc. during stress tests.
+Like Specify, this has a ton of info, but it is isolated to hardware. We utilize this for extended logging of voltages, temps, etc. during stress tests.
 
 [Download](https://www.hwinfo.com/download/)
