@@ -1,4 +1,7 @@
----
+## Specify
+This is an all around system reporting tool. We use this actively in [the Discord](/discord) to gather system information, including temperatures. You can download Specify [here](
+
+<!--Speccy can have some issues reading Ryzen, if you temps are incredibly high please check with a Ryzen specific tool.-->---
 layout: default
 title: Reading Machine Temperatures & Voltages
 nav_exclude: false
@@ -16,14 +19,14 @@ Watching your temperatures is an important part of managing any machine, especia
 
 When reporting your temperatures to people, please use Celsius. It doesn't matter what country you are in, everyone uses Celsius for computers.
 
-## Specs
-This is an all around system reporting tool. We use this actively in [the Discord](/discord) to get a ton of information about your machine. 
+## Specify
+This is an all around system reporting tool. We use this actively in our [Discord live chat](/discord) to gather system information, including temperatures.
 
-<!--Speccy can have some issues reading Ryzen, if you temps are incredibly high please check with a Ryzen specific tool.-->
+You can download Specify [here](https://spec-ify.com/download). Temperatures, including the hardware component(s) and sensors reporting them are listed in the "Temps" section of the Specify report.
 
-[Download](https://github.com/r-Techsupport/Get-Specs/releases/latest/download/Get-Specs.zip)
+> ℹ️ For more information on how to use Specify and Get-Specs, please see our page on making a system dossier.
 
-Alternatively, you can use [Speccy](https://www.ccleaner.com/speccy/download/standard) to get similar information.
+
 
 ## Ryzen Master
 The go-to for ensuring you get proper temperature readings for your Ryzen CPU. If other tools show the same temperature you can assume they are accurate.
