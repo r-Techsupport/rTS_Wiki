@@ -17,7 +17,7 @@ redirect_from: /books/how-to-and-guides/page/making-a-system-dossier
 ## General System Information
 None of the tools here do everything, but oftentimes all of them don't need to be run.
 ### Specify
-Specify is a tool that gathers information about your OS, software, and hardware, and allows convenient ways to save and share it. You can download Specify [here](https://spec-ify.com/download).
+[Specify](https://github.com/Spec-ify) is a tool that gathers information about your OS, software, and hardware, and allows convenient ways to save and share it. You can download Specify [here](https://spec-ify.com/download).
 
 To use this tool, run `Specify.exe` and follow the prompts. Once done, it will automatically open a link and copy it to your clipboard.
  
@@ -27,11 +27,11 @@ Links are automatically deleted after 24 hours. You can choose to redact your us
 > 📶 For machines without internet access, select the "Don't Upload" option. Upload `specify_specs.json` to the [official website](https://spec-ify.com/) to generate a report.
 
 ### Get-Specs
-Alternatively, you can use [Get-Specs](https://github.com/r-Techsupport/Get-Specs/releases/latest/download/Get-Specs.zip) to get similar information.
+Alternatively, you can use [Get-Specs](https://github.com/r-Techsupport/Get-Specs) to get similar information. You can download Get-Specs [here](https://github.com/r-Techsupport/Get-Specs/releases/latest/download/Get-Specs.zip)
 
 To use this tool, extract `Get-Specs.zip` and run `Specs.cmd` inside the newly extracted folder. Click "Start" and once done, click "Upload" to open a link and copy it to your clipboard, or click "View" to open a `.html` file in your browser. 
 
-Links are automatically deleted after 24 hours, a permanent `TechSupport_Specs.html` file will be generated in the folder regardless.
+Links are automatically deleted after 24 hours. A permanent `TechSupport_Specs.html` file will be generated in the folder regardless.
 > ℹ️: Do *not* move, modify, or delete any files inside of the extracted folder. If you receive a "Windows protected your PC" pop up, click `More info` then `Run anyway`.
 ### msinfo32
 msinfo32 is built into Windows. It will provide some of the same information Speccy does. This is more focused on hardware and OS than installed software.
