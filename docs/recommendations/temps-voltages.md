@@ -1,3 +1,4 @@
+---
 layout: default
 title: Reading Machine Temperatures & Voltages
 nav_exclude: false
