@@ -32,7 +32,7 @@ Alternatively, you can use [Get-Specs](https://github.com/r-Techsupport/Get-Spec
 To use this tool, extract `Get-Specs.zip` and run `Specs.cmd` inside the newly extracted folder. Click "Start" and once done, click "Upload" to open a link and copy it to your clipboard, or click "View" to open a `.html` file in your browser. 
 
 Links are automatically deleted after 24 hours. A permanent `TechSupport_Specs.html` file will be generated in the folder regardless.
-> ℹ️: Do *not* move, modify, or delete any files inside of the extracted folder. If you receive a "Windows protected your PC" pop up, click `More info` then `Run anyway`.
+> ℹ️: **Do not move, modify, or delete any files inside of the extracted folder.** If you receive a "Windows protected your PC" pop up, click `More info` then `Run anyway`.
 ### msinfo32
 msinfo32 is built into Windows. It will provide some of the same information Speccy does. This is more focused on hardware and OS than installed software.
 
