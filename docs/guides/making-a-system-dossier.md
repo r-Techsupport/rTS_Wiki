@@ -14,6 +14,9 @@ redirect_from: /books/how-to-and-guides/page/making-a-system-dossier
 
 {% include toc.md %}
 
+## What is a system dossier?
+A system dossier is a great way to provide needed information about your computer (hardware, software, and OS). While you could list it all by hand, some problems can require a lot of information, and it would be time-consuming to obtain it all manually. The more info you can provide about your computer the easier it is for someone to diagnose your issue, and the more accurate their advice will be.
+
 ## General System Information
 None of the tools here do everything, but oftentimes all of them don't need to be run.
 ### Specify
