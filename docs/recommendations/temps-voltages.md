@@ -1,7 +1,3 @@
-## Specify
-This is an all around system reporting tool. We use this actively in [the Discord](/discord) to gather system information, including temperatures. You can download Specify [here](
-
-<!--Speccy can have some issues reading Ryzen, if you temps are incredibly high please check with a Ryzen specific tool.-->---
 layout: default
 title: Reading Machine Temperatures & Voltages
 nav_exclude: false
