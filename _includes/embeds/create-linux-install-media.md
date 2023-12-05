@@ -10,7 +10,7 @@
 5. Convert the ISO image. `hdiutil convert /path/to/image.iso -format UDRW -o /path/to/ubuntu.img`
 6. Run `dd if=/path/to/image.img of=/dev/rdiskN status=progress` to create a bootable drive from the image. Using `/dev/rdiskN` instead of `/dev/diskN` usually results in faster media creation.
 7. Wait until dd finishes. The terminal will display the next prompt when it's done.
-8. Eject the USB flash drive: `diskutil eject /dev/diskN`.GG
+8. Eject the USB flash drive: `diskutil eject /dev/diskN`.
 
 ### Linux
 {: .no_toc }

@@ -5,7 +5,7 @@ nav_exclude: false
 parent: Factoids
 has_children: false
 search_exclude: false
-last_modified_date: 2022-10-31
+last_modified_date: 2023-11-03
 ---
 
 # Using CDI
@@ -18,9 +18,11 @@ It collects a drive's [S.M.A.R.T. data](docs/factoids/cdi#analyzing-smart-data-i
 
 ## How to use CDI
 
-1. Download and install [Crystal Disk Info](https://osdn.net/projects/crystaldiskinfo/downloads/76716/CrystalDiskInfo8_15_2.exe/)
+1. Download and install [Crystal Disk Info](https://crystalmark.info/redirect.php?product=CrystalDiskInfoInstaller)
 
 2. At the top of the program's window, copy the contents by going to `Edit -> Copy`
+
+	![cmos battery](/assets/factoids/cdi.png)
 
 3. If you are being helped in Discord you can paste the content directly with Ctrl + V. If this was requested on the subreddit please put it on [Pastebin](https://pastebin.com) then supply the link in your comment.
 
