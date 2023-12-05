@@ -133,7 +133,7 @@ You have successfully installed Windows 11.
 
 # Bypassing network requirements
 ### Bypassing the network connection step
-If you reached the screen seen below, but don't want to connect to WiFior are unable to connect and don't have the option for "I don't have internet", follow these steps: 
+If you reached the screen seen below, but don't want to connect to WiFi or are unable to connect and don't have the option for "I don't have internet", follow these steps: 
      
 [![win11-network.png](/assets/install-11/win11-network.png)](/assets/install-11/win11-network.png)
 
