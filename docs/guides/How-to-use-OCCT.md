@@ -5,7 +5,7 @@ nav_exclude: false
 has_children: false
 parent: Information
 search_exclude: false
-last_modified_date: 2023-02-04
+last_modified_date: 2023-12-10
 ---
 
 # How to use OCCT
