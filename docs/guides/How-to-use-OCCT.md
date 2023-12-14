@@ -3,7 +3,7 @@ layout: default
 title: How to use OCCT
 nav_exclude: false
 has_children: false
-parent: Information
+parent: General Guides
 search_exclude: false
 last_modified_date: 2023-12-10
 ---
