@@ -3,7 +3,8 @@ layout: default
 title: Bitlocker Recovery with Linux
 nav_exclude: false
 has_children: false
-parent: Disks
+grand_parent: Disks
+parent: Disk Encryption
 search_exclude: false
 last_modified_date: 2022-09-17
 ---
