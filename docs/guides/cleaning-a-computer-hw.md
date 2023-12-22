@@ -10,6 +10,11 @@ last_modified_date: 2023-12-22
 
 
 # Cleaning Computer Hardware
+{: .no_toc}
+
+{% include toc.md %}
+
+## Introduction
 
 Cleaning your computer hardware is essential to maintain your computer's longevity and proper functioning. Over time, dust and debris can build up inside your computer's case, causing it to overheat and potentially damaging critical components such as the CPU and graphics card. Additionally, dust can accumulate on your computer's fans, causing them to slow down and malfunction, leading to overheating.
 
@@ -46,7 +51,7 @@ Your computer is a delicate machine that requires careful handling. Using the wr
 8. Reattach the case cover after cleaning and plug your computer into the outlet.
 9. Turn on your computer to see if everything is functioning correctly. Double-check to ensure all the components are connected and seated if you notice any issues.
 
-## Maintaining the cleanliness and efficacy of your computer
+### Maintaining Hardware Cleanliness
 
 To maintain the cleanliness of your computer hardware in the future, there are some simple steps you can take:
 
