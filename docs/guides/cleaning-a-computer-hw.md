@@ -51,7 +51,7 @@ Your computer is a delicate machine that requires careful handling. Using the wr
 8. Reattach the case cover after cleaning and plug your computer into the outlet.
 9. Turn on your computer to see if everything is functioning correctly. Double-check to ensure all the components are connected and seated if you notice any issues.
 
-### Maintaining Hardware Cleanliness
+## Maintaining Hardware Cleanliness
 
 To maintain the cleanliness of your computer hardware in the future, there are some simple steps you can take:
 
