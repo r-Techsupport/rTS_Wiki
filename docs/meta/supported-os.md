@@ -6,30 +6,31 @@ nav_order: 2
 has_children: false
 parent: Information
 search_exclude: false
-last_modified_date: 2023-12-25
+last_modified_date: 2023-02-27
 ---
 
 # Supported Operating Systems
 
-## Fully Supported
-* All actively maintained versions of Windows 10 and Windows 11, provided they are not end-of-life (EOL) and are consumer editions:
+## Full Support:
+* Non-EOL, consumer versions of Windows 10/11 only:
     * Home
     * Pro
-    * Pro Education
     * Pro for Workstations
+    * Education
 
-## Not Supported
-* Any operating system that has reached end-of-life (EOL), including but not limited to:
+## No Support:
+* Any EOL OS, including but not limited to:
     * Windows XP
     * Windows Vista
     * Windows 7
     * Windows 8/8.1
-    * Certain versions of Windows 10/11 (e.g., Windows 10 versions 1507 to 21H2; for more details, visit the [Windows lifecycle fact sheet](https://learn.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro))
-* Fixed-release Linux distributions (please check your distro's website for more information)
-* Rolling-release Linux distributions that are not up-to-date (e.g., Arch-based distributions)
-* Enterprise, Long-Term Servicing Channel (LTSC), and Long-Term Servicing Branch (LTSB) versions of Windows
-* Hackintosh systems
-* Any altered or modified versions of Windows (e.g., [Tiny11](https://github.com/ntdevlabs/tiny11builder), [AtlasOS](https://atlasos.net/), etc.)
+    * Windows 10/11 versions that have lost support [(1507-21H1 at time of writing)](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro)
+    * Fixed-release Linux distro versions, consult your distro's website
+    * Rolling-release Linux installations that are not fully up-to-date (Arch-based distros are usually rolling-release)
+<!--    * Standard versions of Ubuntu 21.04 and older, and LTS versions of Ubuntu 12.04 and older -->
+* Enterprise/LTSC/LTSB versions of Windows
+* Hackintosh
+* *Any* modified image of Windows (e.g. Tiny11, AtlasOS, etc.)
 
-## Windows Server Support
-While our general stance is that we do not offer Windows Server support for business environments, we understand that each system has its own unique purpose. If a Windows Server system requires support for a business, we recommend seeking assistance from the IT department or designated support team. However, we can provide support for those utilizing Windows Server in a home lab environment if it is within reason and not an end-of-life (EOL) version (such as Windows Server 2008 R2 and earlier at the time of writing). We suggest seeking advice from communities such as r/sysadmin and r/homelab for more specific topics.
+## Windows Server on the Discord
+The general view of Windows Server is that we do not provide support for it, as it may be used in a business environment. We will now look at it from a more holistic view, where the purpose of the system is taken into consideration. If a Windows Server system needs support, and it is for a business, then it will still be best to recommend that they go to their IT department or support for the business at hand. However, if it is in a homelab environment, then support can continue within reason, as long as it is not EOL (Windows Server 2008 and earlier at time of writing). Some topics may be best suited to other places like r/sysadmin and r/homelab.
