@@ -125,7 +125,8 @@ To add a custom image, place your image in `/assets/<page-name>/<image.png>`, an
 
 Applications you have installed, *regardless of which drive you have installed it on*, **will not carry over** the next time you clean install Windows, even if it is on a different hard drive to your Windows drive. [(source)](/docs/learning/multiple-disks)
 
-### Warnings
+### Callouts
+#### Warnings
 
 Warnings like:
 
@@ -138,6 +139,11 @@ are just blockquotes in markdown.
 ```
 
 To let the user know that it IS a warning, add the ❗ emoji to the beginning.
+
+#### Information
+
+> ⓘ Info block<br>
+> Use the ⓘ emoji for info blocks
 
 ### Hyperlinks
 
