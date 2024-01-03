@@ -7,3 +7,4 @@ _site/
 .obsidian/
 .trash/
 Gemfile.lock
+.vscode/
