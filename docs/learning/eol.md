@@ -27,17 +27,17 @@ If you are in school, you should see if you are eligible for a license for Windo
 
 Windows used to perform two annual updates before 2022, named accordingly `2xHx`, with `2x` being replaced with current year and H standing for first or second half For example 20H2 (Second half of 2020) and 21H1 (First half of 2021), but since 2022, `2xh1` (first half-year) will not be released anymore, with only `2xH2` (second half-year) versions coming out instead. It is always recommended to be on the latest version as it has the most security patches, and therefore is the safest. This is a list of the most popular Windows versions that are still **supported** at the time of writing this article.
 
-|OS|Name|Date EOL|
+|OS|Name|EOL Date|
 |-|-|-|
 |Win8.1|~~8.1*~~|2023-1-10|
 |Win10|~~2004~~|2021-12-14|
 |Win10|~~20H2~~|2022-05-10|
 |Win10|~~21H1~~|2022-12-13|
 |Win10|~~21H2~~|2023-06-13|
-|Win10|22h2|2024-05-14|
-|Win11|21H2|2023-10-10|
-|Win11|22h2|2024-10-14|
-
+|Win10|22H2|2025-10-14|
+|Win11|~~21H2~~|2023-10-10|
+|Win11|22H2|2024-10-08|
+|Win11|23H2|2025-11-11|
 \* Excluding Home edition
 
 For versions not listed here, check out the lifecycle information from Microsoft: [Windows 8.1](https://docs.microsoft.com/en-us/lifecycle/products/windows-81), [Windows 10](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro), [Windows 11](https://docs.microsoft.com/en-us/lifecycle/products/windows-11-home-and-pro-version-21h2)
