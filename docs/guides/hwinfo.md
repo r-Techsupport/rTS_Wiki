@@ -43,7 +43,7 @@ To start troubleshooting using HWiNFO, follow this guide. It will walk you thoug
 
     ![hwinfo-4.jpg](/assets/hwinfo/hwinfo4.jpeg)
 
-7. Next, just as soon as you started logging with HWiNFO launch Prime95.
+7. Next, wait for 2-5 minutes just as soon as you started logging with HWiNFO to get the idle temperatures, then launch Prime95.
 
     ![p95-1.jpg](/assets/hwinfo/p951.jpeg)
 

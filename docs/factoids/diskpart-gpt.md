@@ -29,7 +29,7 @@ Make note of the disk you want to install to from the step above. Run the follow
 
 ```
 sel disk #
-convert gpt
 clean
+convert gpt
 ```
 
