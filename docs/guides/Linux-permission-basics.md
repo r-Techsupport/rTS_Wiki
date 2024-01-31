@@ -1,4 +1,3 @@
-
 ---
 layout: default
 title: Permissions in Linux with chmod
