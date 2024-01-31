@@ -3,5 +3,8 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
         "editor.tabSize": 2
-    }
+    },
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "master"
+    ]
 }
