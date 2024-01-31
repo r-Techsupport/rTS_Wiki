@@ -24,7 +24,7 @@ last_modified_date: 2023-02-27
     * Windows Vista
     * Windows 7
     * Windows 8/8.1
-    * Windows 10/11 versions that have lost support [(1507-21H1 at time of writing)](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro)
+    * Windows 10/11 versions that have lost support [(1507-21H2 at time of writing)](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro)
     * Fixed-release Linux distro versions, consult your distro's website
     * Rolling-release Linux installations that are not fully up-to-date (Arch-based distros are usually rolling-release)
 <!--    * Standard versions of Ubuntu 21.04 and older, and LTS versions of Ubuntu 12.04 and older -->
