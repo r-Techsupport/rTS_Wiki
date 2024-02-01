@@ -30,7 +30,8 @@ It collects a drive's [S.M.A.R.T. data](docs/factoids/cdi#analyzing-smart-data-i
 
 S.M.A.R.T. (Self-Monitoring, Analysis, and Reporting Technology) is a monitoring system included in drives (SSDs and HDDs), its primary function is to detect and report various indicators of a drive's reliablity and health. 
 
-> ❗ Important: Any app that uses SMART data to analyse drive health is just a diagnostic utility. **It cannot and should not be used to completely evaluate drive health** as there are many factors that won’t show up. However, it is a key component and produces a lot of useful information. Just know that drive can have perfectly fine SMART data and still fail _without any warning_.
+{: .warning .warning-icon }
+> Important: Any app that uses SMART data to analyse drive health is just a diagnostic utility. **It cannot and should not be used to completely evaluate drive health** as there are many factors that won’t show up. However, it is a key component and produces a lot of useful information. Just know that drive can have perfectly fine SMART data and still fail _without any warning_.
 
 When analyzing a drive's health, it may be best to look at the raw SMART values, which are usually [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal). 
 

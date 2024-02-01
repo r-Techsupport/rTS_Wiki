@@ -21,7 +21,8 @@ Display Driver Uninstaller is a program that can fully wipe display/audio driver
 ## Wiping Audio Drivers
 ![dduaudio.png](/assets/factoids/dduaudio.png)
 
-> ❗ Make sure you are in [Safe Mode](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode).
+{: .warning .warning-icon }
+> Make sure you are in [Safe Mode](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode).
 
 * Select the "Audio" device type from the drop-down list on the right, select the Audio driver you wish to uninstall, and click `Clean and restart`
 

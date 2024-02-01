@@ -16,7 +16,8 @@ Enabling encryption on other devices, such as laptops and desktops, is a choice 
 
 > ⓘ If you are seeing Bitlocker on your computer but you did not set it up would could have a device with [Bitlocker OEM](https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-bitlocker).
 
-> ❗ **Risk of data loss with encryption**<br>
+{: .warning .warning-icon }
+> **Risk of data loss with encryption**<br>
 > Should something fail during the normal use of your encrypted device you may be required to use recovery methods or keys to regain access to your data. It is very imporatnt you understand and protect these methods or you may lose all chances to your data. <br>
 > On phones you have no recovery options. Your data is gone when the device has an issue. For this reason we recommend [making backups](/docs/backups/backups.md)) of all your devices.
 

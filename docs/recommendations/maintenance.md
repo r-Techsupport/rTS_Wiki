@@ -31,7 +31,8 @@ Windows can natively handle most drivers during install, or directly from Device
 
 Defragging, or defragmenting, is only relevant on spinning platter disks, colloquially HDDs. As data is added, removed, and extended a file will inevitably be split in several locations across the disk, resulting in the drive head taking more time from physically moving around to seek the blocks of data that make the file to piece it together. Defragging a disk will try to make all blocks that make a file contiguous so the head ideally stays steady and can read files efficiently.
 
-> ❗ **Do not use defragmenting tools on SSDs.** An SSD has near-instant seek times regardless of underlying fragmentation, so forcing a defragement in third-party programs will cause excessive wear and reduce their life by needlessly rewriting data.
+{: .warning .warning-icon }
+> **Do not use defragmenting tools on SSDs.** An SSD has near-instant seek times regardless of underlying fragmentation, so forcing a defragement in third-party programs will cause excessive wear and reduce their life by needlessly rewriting data.
 
 Trim, or trimming, is a SSD's alternative to defragmentation and is only used to help inform the SDD which blocks that the filesystem has freed and aid the wear-leveling, extending the life of the SSD. The OS typically handles issuing trim commands, but can be inspected and manually invoked on Windows with the built-in Drive Optimizer utility.
 

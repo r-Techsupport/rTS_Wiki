@@ -24,7 +24,8 @@ Here's how to set up BitLocker on Windows:
 6. Choose the encryption method and encryption settings, such as the encryption algorithm and the encryption key size.
 7. Start the encryption process and wait for it to complete. This process may take several hours, depending on the size of the drive.
 
-> ❗ **Hardware Change Warning**<br>
+{: .warning .warning-icon }
+> **Hardware Change Warning**<br>
 > **Changing your motherboard or CPU may "break" bitlocker and require recovery.**<br>
 > <br>
 > BitLocker is designed to lock down in the event of hardware or firmware changes, to prevent unauthorized access to the encrypted data. However, there may be times when hardware or firmware changes are necessary, such as during routine maintenance or upgrades. In these cases, BitLocker can be put into maintenance mode, allowing the changes to be made and then resumed.<br>
@@ -52,7 +53,8 @@ In order to use BitLocker, your computer must meet the following minimum require
 
 BitLocker to Go provides a convenient and secure way to encrypt external drives and protect sensitive data stored on them. While it does have some limitations, it is a useful tool for anyone who needs to store sensitive data on an external drive. Just be sure to always keep a backup of your data and store your password in a safe place to avoid data loss.
 
-> ❗ BitLocker to Go is compatible with Windows operating systems that support BitLocker with no additional software required, but it is **NOT compatible** with MacOS or Linux without the use of third-party tools.
+{: .warning .warning-icon }
+> BitLocker to Go is compatible with Windows operating systems that support BitLocker with no additional software required, but it is **NOT compatible** with MacOS or Linux without the use of third-party tools.
 
 To encrypt an external drive using BitLocker to Go, follow these steps:
 
@@ -74,4 +76,5 @@ Bitlocker recovery keys can be found in several places, depending on how Bitlock
 - On a USB drive: If the recovery key was saved to a USB drive, the USB drive must be inserted into the computer to access the encrypted data.
 - With the Bitlocker Recovery Console: If the recovery key was not saved to the Microsoft account or a USB drive, it can be found using the Bitlocker Recovery Console.
 
-> ❗ It is not possible to decrypt BitLocker drives without them and we will not asisst in doing so.
+{: .warning .warning-icon }
+> It is not possible to decrypt BitLocker drives without them and we will not asisst in doing so.

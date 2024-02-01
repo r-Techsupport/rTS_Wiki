@@ -47,7 +47,8 @@ After Step 3, you will have to select your user account, type the password to ac
 
 ## 2. Open up the Services HIVE in regedit
 
-> ❗ The registry is a core component of the OS. Messing up the registry may result in you having to reinstall windows!
+{: .warning .warning-icon }
+> The registry is a core component of the OS. Messing up the registry may result in you having to reinstall windows!
 
 First, we will try to open up the SERVICES hive as a test in regedit (the "folders" depicted on the side of regedit are referred to as hives.)
 
@@ -65,7 +66,8 @@ If the services hive opens up, then that means that your OS is working. **If the
 
 Here we will look for 4 different registry hives and keys to fix.
 
-> ❗ Depending on the type of login you utilize, not all keys may be present! If 1 or 2 of these keys are missing, there is no need to worry. If all 4 are missing, you will have to resort to [reinstalling windows](/windows).
+{: .warning .warning-icon }
+> Depending on the type of login you utilize, not all keys may be present! If 1 or 2 of these keys are missing, there is no need to worry. If all 4 are missing, you will have to resort to [reinstalling windows](/windows).
 
 You will have to look for the following folders:
 - `KeyIso`

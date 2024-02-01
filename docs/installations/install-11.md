@@ -16,7 +16,8 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 
 1. Create a bootable USB flash drive using the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/windows11) from Microsoft. This will also wipe any data stored on the USB flash drive.
 
-   > ❗ Save MCT to Desktop or Downloads folder. MCT must be saved and run from outside the USB flash drive. Just moving an ISO file to the USB flash drive will not make it bootable.
+   {: .warning .warning-icon }
+   > Save MCT to Desktop or Downloads folder. MCT must be saved and run from outside the USB flash drive. Just moving an ISO file to the USB flash drive will not make it bootable.
 
 2. Run MCT by double clicking it. You will be greeted with windows Terms Of Service, after reading it, press Accept.
 
@@ -36,7 +37,8 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 
 6. Select the USB you want to use, press next. 
 
-   > ❗ Warning: This step will wipe the selected USB Flash drive, so ensure you have nothing important on the USB drive, and back up all important documents.
+   {: .warning .warning-icon }
+   > Warning: This step will wipe the selected USB Flash drive, so ensure you have nothing important on the USB drive, and back up all important documents.
 
      ![select.png](/assets/install-11/select.png)
 

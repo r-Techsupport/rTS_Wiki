@@ -16,9 +16,11 @@ last_modified_date: 2023-12-10
 
 ## What is OCCT?
 OCCT stands for Overclock Checking Tool. Its a stability testing suite as well as a excellent error checking tool that allows for stress testing (like that found in the [hwinfo stress test guide](/docs/guides/hwinfo)) and as an added bonus, error checking within that stress test to ensure that the system/components are stable.
-> ❗ Keep in mind that OCCT does not log data and will not output a CSV file (if using the free edition, which we will be here). For logging performance data while using OCCT, use the `game logging` procedure from the [hwinfo stress test guide](/docs/guides/hwinfo).
+{: .warning .warning-icon }
+> Keep in mind that OCCT does not log data and will not output a CSV file (if using the free edition, which we will be here). For logging performance data while using OCCT, use the `game logging` procedure from the [hwinfo stress test guide](/docs/guides/hwinfo).
 
-> ❗ Another point to mention is the fact that despite it saying it is an `Overclock Checking Tool`, it is important to state that **we will not explain how to overclock in r/techsupport as it goes against our rules**. We are using this to test your system, nothing more. Adjusting the clocks and voltages of any component can cause system instability or irreversible damage if done incorrectly. You can perform these changes at your own risk, **we will not provide help with it**.
+{: .warning .warning-icon }
+> Another point to mention is the fact that despite it saying it is an `Overclock Checking Tool`, it is important to state that **we will not explain how to overclock in r/techsupport as it goes against our rules**. We are using this to test your system, nothing more. Adjusting the clocks and voltages of any component can cause system instability or irreversible damage if done incorrectly. You can perform these changes at your own risk, **we will not provide help with it**.
 
 ## Downloading OCCT
 1. Download OCCT from the official OCCT website [here](https://www.ocbase.com/download).
@@ -48,7 +50,8 @@ Default values are best set here. Ensure the test is set at 1 hour, and all othe
 ![stability_cpu.jpg](/assets/OCCT/stability_cpu.jpg)
 
 ### Memory stability test
-> ❗ A better version of this is using [memtest86+](/docs/guides/memtest/memtest86). We **highly** recommend using that for proper RAM testing.
+{: .warning .warning-icon }
+> A better version of this is using [memtest86+](/docs/guides/memtest/memtest86). We **highly** recommend using that for proper RAM testing.
 
 Here, change Memory utilization to 90%-95% (unless specified otherwise.) Leave the other configurations as default (1 hour testing):
 - Memory: `90 %` - Ensure that `%` is selected, not `MB`.
@@ -71,7 +74,8 @@ Ensure `Error Detection` is set to `enabled`, while ensuring the proper GPU is s
 ![stability_gpu.jpg](/assets/OCCT/stability_gpu.jpg)
 
 #### VRAM test
-> ❗ If you have an iGPU or shared GPU memory with normal RAM, ensure that memory utilization is set at 90%. Otherwise, set it to 100%.
+{: .warning .warning-icon }
+> If you have an iGPU or shared GPU memory with normal RAM, ensure that memory utilization is set at 90%. Otherwise, set it to 100%.
 
 If not using an iGPU (and you have a GPU with dedicated VRAM), you can set VRAM to 95%. Ensure the proper GPU is selected here:
 - Use All GPUs: `Disabled`
@@ -81,7 +85,8 @@ If not using an iGPU (and you have a GPU with dedicated VRAM), you can set VRAM 
 ![stability_vram.jpg](/assets/OCCT/stability_vram.jpg)
 
 #### 3D Adaptive test
-> ❗ Useful for testing after testing the the `3D Standard test` as well as the `VRAM` test if issue is still not found. If you have not ran the previous tests, it is highly recommended you run them before running this test.
+{: .warning .warning-icon }
+> Useful for testing after testing the the `3D Standard test` as well as the `VRAM` test if issue is still not found. If you have not ran the previous tests, it is highly recommended you run them before running this test.
 
 There are 2 sets of tests you will need to run here: `Variable` and `Switch`. You will need to run them both to see any reasonable results.
 

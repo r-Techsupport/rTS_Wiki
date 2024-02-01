@@ -32,7 +32,8 @@ A single #2 Phillips head screwdriver would be ideal for this but the closest yo
 
 ## Procedure
 
-> ❗ It is very important that you remember to **power-off the motherboard** and switch-off and unplug the PSU after each component test. Do this before you remove or install anything.
+{: .warning .warning-icon }
+> It is very important that you remember to **power-off the motherboard** and switch-off and unplug the PSU after each component test. Do this before you remove or install anything.
 
 Place the motherboard on a piece of cardboard along with everything else in the motherboard's box. 
 
@@ -42,7 +43,8 @@ Lee, the orignial writer of the forum post, used the kitchen table here covered 
 
 ### Installing CPU
 
-> ❗ Remember to **turn off the power** between each of the following steps and make no changes unless the power is off.
+{: .warning .warning-icon }
+> Remember to **turn off the power** between each of the following steps and make no changes unless the power is off.
 
 Before installing the [CPU](/docs/learning/terms#central-processing-unit-cpu), now is the time to inspect the board's CPU socket for any obvious damage or any tiny debris that might have fallen in at the factory during packaging. Also inspect the [RAM](/docs/learning/terms#random-access-memory-ram) and [PCIe slots and pins](/docs/learning/terms#pci-express-pcie). 
 

@@ -10,7 +10,8 @@ last_modified_date: 2022-10-31
 
 # Cleaning a Disk in Diskpart
 
-> ❗ Note that cleaning the disk **will remove any data stored on it.**
+{: .warning .warning-icon }
+> Note that cleaning the disk **will remove any data stored on it.**
 
 Open Command Prompt or PowerShell as admin then follow the steps below.
 

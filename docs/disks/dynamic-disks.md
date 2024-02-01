@@ -11,7 +11,8 @@ last_modified_date: 2022-10-23
 
 # Dynamic Disks
 
-> ❗ Any method to accomplish these tasks without data-loss are not supported. The lazy "safe" method is never safe.
+{: .warning .warning-icon }
+> Any method to accomplish these tasks without data-loss are not supported. The lazy "safe" method is never safe.
 
 Dynamic disks allows you to combine multiple disks into one, allowing you more space on a single drive letter. If you need to upgrade storage it is easy to add another disk without much trouble. 
 
@@ -42,9 +43,11 @@ A fault tolerant solution where data is duplicated (mirrored) between disks. Thi
 
 3. A dialog box will pop up asking you which disks you would like to convert to dynamic, select all the disks that you would like to span. 
 
-    > ❗ Do not convert the disk containing C:\  
+    {: .warning .warning-icon }
+    > Do not convert the disk containing C:\  
 
-    > ❗ Converting a disk to dynamic will wipe it
+    {: .warning .warning-icon }
+    > Converting a disk to dynamic will wipe it
 
     ![assets/multiple-disks/dynamic1.png](/assets/multiple-disks/dynamic1.png)
 

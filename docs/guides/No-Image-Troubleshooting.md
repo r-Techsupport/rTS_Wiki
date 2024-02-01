@@ -15,7 +15,8 @@ This guide will mention basic steps to help you fix your pc not showing anything
 
 {% include toc.md %}
  
-> ❗ When the guide says "HARDWARE ISSUE", then it means you reached a dead end of troubleshooting unless you have spare parts that you can use or you are willing to buy some. Alternatively you can always just take it to a repair shop and ask them to help you with it or ask family members or friends if you can borrow a part for short time for troubleshooting purposes.
+{: .warning .warning-icon }
+> When the guide says "HARDWARE ISSUE", then it means you reached a dead end of troubleshooting unless you have spare parts that you can use or you are willing to buy some. Alternatively you can always just take it to a repair shop and ask them to help you with it or ask family members or friends if you can borrow a part for short time for troubleshooting purposes.
 
 ## Pre-troubleshooting things to do:
 

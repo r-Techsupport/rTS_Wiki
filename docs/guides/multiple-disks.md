@@ -10,9 +10,11 @@ redirect_from: /docs/learning/multiple-disks
 ---
 # How to Use Multiple Disks in Windows
 
-> ❗ All guides here are supplied for the purpose of offering safe methods to accomplish each goal. That does not mean the goal is safe for all users. All disks fail, we encourage users to be proactive with protecting their data by creating a [personal backup strategy](/docs/backups) no matter what disk layout is chosen.
+{: .warning .warning-icon }
+> All guides here are supplied for the purpose of offering safe methods to accomplish each goal. That does not mean the goal is safe for all users. All disks fail, we encourage users to be proactive with protecting their data by creating a [personal backup strategy](/docs/backups) no matter what disk layout is chosen.
 
-> ❗ Any method to accomplish these tasks without data-loss are not supported. The lazy "safe" method is never safe.
+{: .warning .warning-icon }
+> Any method to accomplish these tasks without data-loss are not supported. The lazy "safe" method is never safe.
 
 ## Advantages
 Many people leverage multiple disks in their systems to expand their storage capabilities, partition data way from their OS, maximize cost-performance savings, or a combination of these and other goals. The most basic and common setup seen will be a small OS SSD and a larger HDD used for storage mounted at a single drive letter. 
@@ -71,4 +73,5 @@ You can also copy and paste the data to your other drive if you have it installe
 
 [Epic Games - How to move an installed game from the Epic Games Launcher to another directory on your computer](https://www.epicgames.com/help/en-US/epic-games-store-c5719341124379/launcher-support-c5719357217435/how-to-move-an-installed-game-from-the-epic-games-launcher-to-another-directory-on-your-computer-a5720215231515)
 
-> ❗ If you are unsure of what you are doing, make sure you take a [backup](/docs/backups/creating-backups.md) of your data.
+{: .warning .warning-icon }
+> If you are unsure of what you are doing, make sure you take a [backup](/docs/backups/creating-backups.md) of your data.
