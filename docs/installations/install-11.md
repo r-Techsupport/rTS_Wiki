@@ -50,7 +50,7 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 
 # Part 2: Installing Windows 11
 
-   > Please make sure to disable CSM, enable Secure Boot, and enable TPM prior to installation of Windows 11.
+   > Please make sure to disable CSM, enable Secure Boot, enable TPM and set SATA mode to AHCI if your drive is using SATA prior to installation of Windows 11
 
    > It is best to disconnect all storage disks except from the main (C Drive) disk from the computer before installing Windows 11. Not doing so can accidentally result in the installer choosing the wrong disk as the boot drive and putting actual windows on another drive.
 
