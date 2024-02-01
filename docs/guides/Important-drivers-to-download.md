@@ -50,7 +50,38 @@ These drivers are optional and mainly for RGB control purposes, or custom button
 - Motherboard control center (For example, ASUS Armory Crate, Gigabyte Control Center, MSI Center, etc.) - Purely optional for RGB control, and optional driver updates, but can introduce extra bloatware. 
 - Peripheral drivers (For example Logitech GHub for mice and keyboard) - RGB control and extra button assignment and customization, sometimes necessary for stuff like HOTAS joysticks, Rudder pedals, steering wheels, etc.
 
-## FAQ - Frequently Asked Questions
+### Unsupported and blacklisted applications and software
+
+> ❗ To find the full list of applications and software we do not encourage the use of or support, please refer to [our blacklist](/docs/recommendations/blacklist).
+
+- **System Optimizers, Cleaners and debloaters:** 
+
+    We do not support any form of system optimizers and cleaners and highly discourage the use of them as they falsly advertise: "clean up Windows to make it less bloated". This is false. 
+    
+    Windows is a heavy OS and all features that come with it are necessary to its functioning. Using these scripts can easily cause system instability at best, and broken OS's at worst (If you want a lighter OS, run run Linux instead!). Such applications include, but are not limited to:
+
+    - WinDebloater
+    - WinScript
+    - Debloat-Windows
+    - Tron Script
+    - AtlasOS
+
+    If you utilized these tools, it is highly recommended you reinstall Windows (again) by following [this guide](/docs/installations/win).
+
+- **Driver finders:**
+
+    Please refer to this page to view our stance on driver finders. We consider them PUPs in short. The best way to update drivers is to use the tools officially supported by the motherboard manufacturers and peripheral manufacturers and manual installation of them, or let Windows Update take care of them.
+
+    The reason for us not supporting them is most of these driver finders utilize non-up-to-date databases for finding drivers and can potentially install faulty or non-compatible drivers for a device.
+
+    The following applications are not supported and are blacklisted:
+    - SnappyDriver Installer
+    - DriverBooster
+    - DriverEasy
+
+
+
+## Frequently Asked Questions
 
 - **What is my laptop/prebuilt model?** - If you are unaware of what your laptop/prebuilt model is, you can easily find it the following ways (Note the following only applies to OEM devices):
     - Search up `System Information` in the Windows search bar, or `sysinfo`, select the first option. The laptop information will be displayed there in the `System Model name` field. If not displayed, refer to the next question.
