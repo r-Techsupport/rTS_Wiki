@@ -24,15 +24,28 @@ This guide is to quickly set up your Windows desktop after installation of Windo
 
 ## Drivers/Applications you need to download:
 
+### Custom builds:
 To find most necessary drivers, you would need to head to the motherboard page. This can easily be found by searching for `<Company name> <Motherboard model> drivers` in a search engine, for example: `ASUS TUF X670e Plus Wifi drivers`.
 
 {: .info .info-icon }
 > Different Motherboard variants<br/>
 > Note that some motherboards have the WiFi variant named differently to their standard products. `ASUS TUF X670e Plus Wifi` is a different motherboard to simply `ASUS TUF X670e Plus`!
 
-{: .info .info-icon }
-> Laptops and prebuilts<br/>
-> For laptops and prebuilts, the same logic also applies. If from an OEM like HP and Dell, search up your laptop and exact model, for example `Dell Vostro 7590 drivers`. To find the laptop/prebuilt model exactly, refer to the FAQ below. Do note that non-OEM prebuilts, such as Origin PC, Build Redux, etc. utilize commercial products so the previous points apply instead.
+### Laptops and prebuilts:
+
+For laptops and prebuilts, the same logic also applies. If from an OEM like HP and Dell, search up your laptop and exact model, for example `Dell Vostro 7590 drivers`.
+
+If you are unaware of what your laptop/prebuilt model is, you can easily find it the following ways (Note the following only applies to OEM devices):
+    - Search up `System Information` in the Windows search bar, or `sysinfo`, select the first option. The laptop information will be displayed there in the `System Model name` field. If not displayed, refer to the next question.
+    - Search up `dxdiag` in the search bar, run it (its alternate name is directX diagnostics tool), the first page will tell you the model of your laptop/prebuilt in the `System model` secion.
+
+### System Integrators / Unknown motherboard:
+If you have a non-OEM prebuilt, particularly system integrators such as Origin PC, Build Redux, chances are they are utilizing standard commercial components in which case the motherboard model will yield results instead.
+
+If you don't know the motherboard model, search up `System Information` in the Windows search bar, or `sysinfo`, select the first option. The laptop information will be displayed there in the `Baseboard product` field. 
+
+Alternatively, running Specify will also tell you the necessary information: https://spec-ify.com/download.
+
 
 ### Important drivers:
 
@@ -90,12 +103,6 @@ These drivers are optional and mainly for RGB control purposes, or custom button
     - DriverBooster
     - DriverEasy
 
-## Frequently Asked Questions
-
-- **What is my laptop/prebuilt model?** - If you are unaware of what your laptop/prebuilt model is, you can easily find it the following ways (Note the following only applies to OEM devices):
-    - Search up `System Information` in the Windows search bar, or `sysinfo`, select the first option. The laptop information will be displayed there in the `System Model name` field. If not displayed, refer to the next question.
-    - Search up `dxdiag` in the search bar, run it (its alternate name is directX diagnostics tool), the first page will tell you the model of your laptop/prebuilt in the `System model` secion.
-
-- **What is my motherboard model?** - If you have a non-OEM prebuilt, particularly system integrators such as Origin PC, Build Redux, chances are they are utilizing standard commercial components in which case the motherboard model will yield results instead. Search up `System Information` in the Windows search bar, or `sysinfo`, select the first option. The laptop information will be displayed there in the `Baseboard product` field. Alternatively, running Specify will also tell you the necessary information: https://spec-ify.com/download.
+## Frequently Asked Question(s)
 
 - **I cannot find the drivers on the motherboard page!** - If using an older motherboard, for example a TUF Z370, then it is likely that the page you are looking at is currently the Windows 11 drivers section. Select OS as Windows 10, and all drivers will be listed there. Windows 10 drivers will work in Windows 11.
