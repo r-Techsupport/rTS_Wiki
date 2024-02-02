@@ -18,15 +18,21 @@ last_modified_date: 2024-02-01
 
 This guide is to quickly set up your Windows desktop after installation of Windows. It will outline the key necessary steps to quickly set up your PC in installing drivers so you can begin using it as soon as possible.
 
-> ❗ For installing/reinstalling Windows, please refer to [this guide](/docs/installations/win).
+{: .info .info-icon }
+> Reinstalling Windows<br/>
+> For installing/reinstalling Windows, please refer to [this guide](/docs/installations/win).
 
 ## Drivers/Applications you need to download:
 
 To find most necessary drivers, you would need to head to the motherboard page. This can easily be found by searching for `<Company name> <Motherboard model> drivers` in a search engine, for example: `ASUS TUF X670e Plus Wifi drivers`.
 
-> ❗ Note that some motherboards have the WiFi variant named differently to their standard products. `ASUS TUF X670e Plus Wifi` is a different motherboard to simply `ASUS TUF X670e Plus`!
+{: .info .info-icon }
+> Different Motherboard variants<br/>
+> Note that some motherboards have the WiFi variant named differently to their standard products. `ASUS TUF X670e Plus Wifi` is a different motherboard to simply `ASUS TUF X670e Plus`!
 
-> ❗ For laptops and prebuilts, the same logic also applies. If from an OEM like HP and Dell, search up your laptop and exact model, for example `Dell Vostro 7590 drivers`. To find the laptop/prebuilt model exactly, refer to the FAQ below. Do note that non-OEM prebuilts, such as Origin PC, Build Redux, etc. utilize commercial products so the previous points apply instead.
+{: .info .info-icon }
+> Laptops and prebuilts<br/>
+> For laptops and prebuilts, the same logic also applies. If from an OEM like HP and Dell, search up your laptop and exact model, for example `Dell Vostro 7590 drivers`. To find the laptop/prebuilt model exactly, refer to the FAQ below. Do note that non-OEM prebuilts, such as Origin PC, Build Redux, etc. utilize commercial products so the previous points apply instead.
 
 ### Important drivers:
 
@@ -52,13 +58,18 @@ These drivers are optional and mainly for RGB control purposes, or custom button
 
 ### Unsupported and blacklisted applications and software
 
-> ❗ To find the full list of applications and software we do not encourage the use of or support, please refer to [our blacklist](/docs/recommendations/blacklist).
+{: .info .info-icon }
+> Blacklisted Software<br/>
+> To find the full list of applications and software we do not encourage the use of or support, please refer to [our blacklist](/docs/recommendations/blacklist).
 
 - **System Optimizers, Cleaners and debloaters:** 
 
     We do not support any form of system optimizers and cleaners and highly discourage the use of them as they falsly advertise: "clean up Windows to make it less bloated". This is false. 
     
-    Windows is a heavy OS and all features that come with it are necessary to its functioning. Using these scripts can easily cause system instability at best, and broken OS's at worst (If you want a lighter OS, run run Linux instead!). Such applications include, but are not limited to:
+    {: .warning .warning-icon }
+    > Windows is a heavy OS and all features that come with it are necessary to its functioning. Using these scripts can easily cause system instability at best, and broken OS's at worst (If you want a lighter OS, run run Linux instead!). 
+    
+    Such applications include, but are not limited to:
 
     - WinDebloater
     - WinScript
@@ -78,8 +89,6 @@ These drivers are optional and mainly for RGB control purposes, or custom button
     - SnappyDriver Installer
     - DriverBooster
     - DriverEasy
-
-
 
 ## Frequently Asked Questions
 
