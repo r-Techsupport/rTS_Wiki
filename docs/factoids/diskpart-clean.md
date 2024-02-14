@@ -33,6 +33,10 @@ Make note of the disk you want to clean from the step above.
 ```
 sel disk #
 clean
+```
+
+Follow the below setps to you want to partition and format the drive. You will want to do this unless otherwise instructed.
+```
 create partition=primary
 format quick fs=ntfs
 assign letter=E
