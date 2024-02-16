@@ -16,6 +16,6 @@ The mtr tool combines the functionality of the traceroute and ping programs in a
 1. Open "terminal emulator" from the application menu
 2. Run `mtr <ip or hostname>` where \<ip or hostname\> is a site or game server you are having issues with.
     - To do a basic test you can use "google.com": `mtr google.com`
-3. The mtr output is live, just wait a 10-20 seconds then take a screenshot and share it with the channel.
+3. Let mtr run for about 2 minutes then take a screenshot and share it with the channel.
     - To take a screenshot in our live session type "screenshot" in the application menu to open the screenshot utility.
     - After taking your screenshot use the "Host on imgur" option to upload the screenshot and get a URL that you will provide to the chat.
