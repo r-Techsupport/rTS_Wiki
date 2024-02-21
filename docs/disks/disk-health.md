@@ -6,7 +6,7 @@ nav_order: 2
 has_children: false
 parent: Disks
 search_exclude: false
-last_modified_date: 2022-08-13
+last_modified_date: 2024-02-21
 ---
 
 # Verifying Disk Health
@@ -27,13 +27,11 @@ Current Pending Sector Count
 
 When a sector is detected as bad it will be counted and the disk will attempt to move it. This value can go up and down as the disk moves or recovers sectors.
 
-[More info](https://harddrivegeek.com/current-pending-sector-count/)
 
 ## Reallocated Sectors Count
 
 When detected as bad your disk will attempt to move a sector. If it is moved successfully this count will go up.
 
-[More info](https://harddrivegeek.com/reallocated-sector-count/)
 
 ## Uncorrectable Sector Count
 
@@ -43,7 +41,7 @@ This count goes up when the disk is not able to recover and move a sector. This 
 
 This count goes up when the disk is being read with unstable sectors on the disk. They are a precursor to Reallocated Sectors, which cause lost of data.
 
-[More info](https://harddrivegeek.com/current-pending-sector-count/)
+For more info about those attributes, read [wikipedia](https://en.wikipedia.org/wiki/Self-Monitoring%2C_Analysis_and_Reporting_Technology) and [backblaze](https://www.backblaze.com/blog/what-smart-stats-indicate-hard-drive-failures/) articles.
 
 ## Crystal Disk Info
 
