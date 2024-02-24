@@ -9,7 +9,7 @@ last_modified_date: 2024-02-23
 ---
 
 # Data Recovery
-Data recovery is a complicated process that requires care and attention to be done properdly. Look through the scenarios below to decide which method of data recovery you will need to do.
+Data recovery is a complicated process that requires care and attention to be done properly. Look through the scenarios below to decide which method of data recovery you will need to do.
 
 {% include embeds/data-recovery-warning.md %}
 
