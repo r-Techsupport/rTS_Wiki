@@ -11,8 +11,7 @@ last_modified_date: 2024-02-23
 # Data Recovery
 Data recovery is a complicated process that requires care and attention to be done properdly. Look through the scenarios below to decide which method of data recovery you will need to do.
 
-{: .warning .warning-icon }
-> Attempting data recovery always has a chance to make your situation worse, causing the permanent loss of your data. For priceless data you should seek professional data recovery services.
+{% include embeds/data-recovery-warning.md %}
 
 {: .warning .warning-icon }
 > If you are seeing "cyclic redundancy check" anywhere, you will not be able to attempt recovery at home and should seek professional data recovery services.
@@ -25,7 +24,7 @@ A small obstacle preventing you from using your computer like normal such as:
 - My laptop screen broke so I can't see anything
 - I cannot log into Windows for some reason
 
-For these issues, you can [recover files with a Live Linux Session]().
+For these issues, you can [recover files with a Live Linux Session](/docs/disks/data-recovery/reading-linux).
 
 ### My disk was erased on accident
 You have a drive that is visible in Windows but it has no data on it. This may be because:
@@ -35,7 +34,7 @@ You have a drive that is visible in Windows but it has no data on it. This may b
 - My disk is "unknown" in disk management
 - My disk is "unallocated" in disk management
 
-For these issues, use [Testdisk]() to recover your partition table.
+For these issues, use [Testdisk](/docs/disks/data-recovery/testdisk) to recover your partition table.
 
 ### My disk was wiped and has new data on it
 You had data on your disk, and it had new data written to it, replacing the old data.

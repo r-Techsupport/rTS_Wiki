@@ -13,6 +13,8 @@ last_modified_date: 2024-02-23
 
 {% include embeds/use-linux-live-session.md %}
 
+{% include embeds/data-recovery-warning.md %}
+
 This guide was written using a Windows 11 host that has a 128GB C:\ drive and a 256GB D:\ drive called "Game_Data". The D:\ drive is holding an application, it has been validated that the application can be launched after recovery.
 
 ## Using Testdisk
