@@ -6,7 +6,7 @@ has_children: false
 parent: Data Recovery
 grand_parent: Disks
 search_exclude: false
-last_modified_date: 2024-02-23
+last_modified_date: 2024-02-24
 ---
 # Using Testdisk to recover partitions
 ## Overview
@@ -15,7 +15,7 @@ last_modified_date: 2024-02-23
 
 {% include embeds/data-recovery-warning.md %}
 
-This guide was written using a Windows 11 host that has a 128GB C:\ drive and a 256GB D:\ drive called "Game_Data". The D:\ drive is holding an application, it has been validated that the application can be launched after recovery.
+This guide was written using a Windows 11 host that has a 128GB C:\ drive and a 256GB D:\ drive called "Game_Data".
 
 ## Using Testdisk
 1. From the Live media desktop click the application menu in the top left and open "Terminal Emulator"
@@ -63,7 +63,7 @@ This guide was written using a Windows 11 host that has a 128GB C:\ drive and a 
     ![Partition discovery Testdisk](/assets/testdisk/testdisk7.png)
 
     {: .info .info-icon }
-    > Notes on recovering multiple partitions
+    > **Notes on recovering multiple partitions**
     > 
     > - If multiple partitions are found you can use the arrow keys to move between them. Select the partitions you want to restore with the Space bar. Some of those partitions may be duplicates and some may be labeled "Found using backup sector
     > 
