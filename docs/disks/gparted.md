@@ -11,7 +11,7 @@ last_modified_date: 2022-06-29
 # Manipulating partitions and disks with Gparted
 {: .no_toc}
 
-This article relies on the live media [created here](/docs/live-sessions/linux-live-session) or the official media can be downloaded from [here](https://gparted.org/livecd.php).
+{% include embeds/use-linux-live-session.md %}
 
 {% include toc.md %}
 
