@@ -20,7 +20,7 @@ This guide was written using a Windows 11 host that has a 128GB C:\ drive and a 
 
     ![Opening Testdisk from the applications menu](/assets/testdisk/testdisk0.png)
 
-2. In the terminal type "Testdisk" to start the application. Use the arrow keys to select and hit Enter on "No Log"
+2. In the terminal type "testdisk" to start the application. Use the arrow keys to select and hit Enter on "No Log"
 
     ![Launching Testdisk in terminal](/assets/testdisk/testdisk1.png)
 
@@ -49,7 +49,7 @@ This guide was written using a Windows 11 host that has a 128GB C:\ drive and a 
 
 7. Press Enter to begin a "Quick Search".
 
-    > You may be told a partitions cannot be recovered. Make not of this and press "Continue"
+    > You may be told a partitions cannot be recovered. Make note of this and press "Continue"
 
     ![Quick scan in Testdisk for partitions](/assets/testdisk/testdisk6.png)
 
@@ -73,7 +73,7 @@ This guide was written using a Windows 11 host that has a 128GB C:\ drive and a 
 
 10. After writing the partition back to the disk you will be brought back to Step 6. You can close the terminal and reboot your computer, removing the USB, to validate if partition recovery was a success.
 
-    - If you restored an OS disk, it most likely won't be bootable but is hopefully readable. You can refer to [Recoverying files from a readable disk](/docs/disks/data-recovery/reading-linux) for the next steps in recovering your data.
+    - If you restored an OS disk, it most likely won't be bootable but it is hopefully readable. You can refer to [Recoverying files from a readable disk](/docs/disks/data-recovery/reading-linux) for the next steps in recovering your data.
 
 
 {: .warning .warning-icon }
