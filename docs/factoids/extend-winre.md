@@ -14,11 +14,8 @@ To extend WinRE run the following script, you can do this easily with the follow
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/r-Techsupport/rTS_Wiki/master/_includes/scripts/Extend-WinRE.ps1'))
 ```
 
-The script being executed can be seen below:
+The script being executed can be seen below, it is from the [official Microsoft article](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-update-to-winre?view=windows-11) for resolving this issue.
 
 ```
 {% include scripts/Extend-WinRE.ps1 %}
 ```
-
-## References
-- https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-update-to-winre?view=windows-11
