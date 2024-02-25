@@ -26,7 +26,7 @@ A small obstacle preventing you from using your computer like normal such as:
 
 For these issues, you can [recover files with a Live Linux Session](/docs/disks/data-recovery/reading-linux).
 
-### My disk was erased on accident
+### My disk is visible but inaccessible
 You have a drive that is visible in Windows but it has no data on it. This may be because:
 - I deleted partitions on the wrong disk (But did not make new ones)
 - I turned my computer on and it says my disk needs to be "initialized"
@@ -36,7 +36,7 @@ You have a drive that is visible in Windows but it has no data on it. This may b
 
 For these issues, use [Testdisk](/docs/disks/data-recovery/testdisk) to recover your partition table.
 
-### My disk was wiped and has new data on it
+### I accidentally changed data on my disk
 You had data on your disk, and it had new data written to it, replacing the old data.
 - You formatted the wrong disk
 - You installed Windows on the wrong disk
