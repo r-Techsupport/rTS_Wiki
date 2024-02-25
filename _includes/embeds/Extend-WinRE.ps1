@@ -605,4 +605,4 @@
         LogMessage("The contents of the old WinRE partition has been backed up to [" + $BackupFolder + "]")
     }
     LogMessage("")
-    LogMessage("Successfully completed the operation")	
+    LogMessage("Successfully completed the operation")
