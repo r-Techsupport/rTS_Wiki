@@ -11,13 +11,13 @@ last_modified_date: 2024-02-25
 To extend WinRE run the following script, you can do this easily with the following command:
 
 ```powershell
-iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/r-Techsupport/rTS_Wiki/extend-winre/_includes/embeds/Extend-WinRE.ps1'))
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/r-Techsupport/rTS_Wiki/master/_includes/scripts/Extend-WinRE.ps1'))
 ```
 
 The script being executed can be seen below:
 
 ```
-{% include embeds/Extend-WinRE.ps1 %}
+{% include scripts/Extend-WinRE.ps1 %}
 ```
 
 ## References
