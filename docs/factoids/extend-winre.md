@@ -16,7 +16,9 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 
 The script being executed can be seen below:
 
+```
 {% include embeds/Extend-WinRE.ps1 %}
+```
 
 ## References
 - https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-update-to-winre?view=windows-11
