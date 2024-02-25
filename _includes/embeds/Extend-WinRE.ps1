@@ -96,7 +96,7 @@ $OSPartition = Get-Partition -DriveLetter $OSDrive
 $WinRELocationItems = $WinRELocation.Split('\\')
 foreach ($item in $WinRELocationItems)
 {
-	if ($item -like "harddisk*")
+    if ($item -like "harddisk*")
 	{
 		$OSDiskIndex = ExtractNumbers($item)
 	}
