@@ -43,8 +43,7 @@ You had data on your disk, and it had new data written to it, replacing the old 
 - You installed Linux on the wrong disk
 - You formatted and then put data onto the wrong disk
 
-For these issues, use [Photorec]() to recover individual files.
+For these issues, use [Photorec](/docs/disks/data-recovery/photorec) to recover individual files.
 
 ## Other resources
 - [old wiki article](https://www.reddit.com/r/techsupport/wiki/livelinuxsession#wiki_recover_data_from_your_storage_drives)
-- [Using Testdisk to recover partition tables](https://www.howtoforge.com/data_recovery_with_testdisk)

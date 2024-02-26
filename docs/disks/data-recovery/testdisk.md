@@ -89,3 +89,6 @@ This guide was written using a Windows 11 host that has a 128GB C:\ drive and a 
 
 {: .warning .warning-icon }
 > After completing a partition or table recovery it is recommended you backup your data and properly reformat the disk. Follow [Diskpart clean](/docs/factoids/diskpart-clean) directions to do that.
+
+## Other resources
+- [Using Testdisk to recover partition tables](https://www.howtoforge.com/data_recovery_with_testdisk)
