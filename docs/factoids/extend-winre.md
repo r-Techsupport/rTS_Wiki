@@ -8,7 +8,7 @@ search_exclude: false
 last_modified_date: 2024-02-25
 ---
 # Extend WinRE with a PowerShell Script
-To extend WinRE run the following script, you can do this easily with the following command:
+To extend WinRE run the following script in an Admin PowerShell.Do this easily by pasting in just the one liner below.
 
 ```powershell
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/r-Techsupport/rTS_Wiki/master/_includes/scripts/Extend-WinRE.ps1'))
