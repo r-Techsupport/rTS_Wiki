@@ -1,0 +1,80 @@
+---
+layout: default
+title: Using Photorec to recover files
+nav_exclude: false
+has_children: false
+parent: Data Recovery
+grand_parent: Disks
+search_exclude: false
+last_modified_date: 2024-02-24
+---
+# Using Photorec to recover files
+## Overview
+
+{% include embeds/use-linux-live-session.md %}
+
+{% include embeds/data-recovery-warning.md %}
+
+This guide was written using a Windows 11 host that has a 128GB C:\ drive and a 256GB D:\ drive called "Game_Data".
+
+## Mount a second disk to recover files to
+You will need a second disk to recover files to, preferably a clean external drive formatted as ExFat for compatibility and to avoid further issues.
+
+Any secondary disks, or external disks, should appear in the File Explorer where you can double click on them to mount. The secondary drive will need to be mounted so we can use it in step 7.
+
+## Using Photorec
+1. From the Live media desktop click the application menu in the top left and open "Terminal Emulator"
+
+    ![Opening Testdisk from the applications menu](/assets/testdisk/testdisk0.png)
+
+2. In the terminal type "photorec" to start the application.
+
+    ![Launching photorec in the terminal](/assets/photorec/photorec0.png)
+
+3. When Photorec opens you will see a list of disks, most likely you will only see your USB though. Use the arrow keys to highlight and select "Sudo" with Enter to load more disks.
+
+    ![Selecting sudo in photorec](/assets/photorec/photorec1.png)
+    
+4. You should now see all possible disks. You will use the Up and Down arrows to select the disk you want to operate on then hit Enter to Proceed.
+
+    {: .info .info-icon }
+    > Select your disk based on it's size. If you have multiple disks of the same size removing the extra disks is the safest way to proceed.
+
+    {: .warning .warning-icon }
+    > If you do not see your disk here then you should seek professional data recovery services.
+
+    ![Complete disk selection in Photorec](/assets/photorec/photorec2.png)
+
+5. Photorec will show you the known partitions on the disk. Use the arrow keys to move up and down then press Enter to continue.
+
+    {: .info .info-icon }
+    > **What partition do I choose?**
+    > 
+    > If you deleted a file or group of files accidently, then you will want to select the specific partition that you deleted these files from.
+    >
+    > If you are trying to recover files from a disk that was wiped/deleted or over-written then you will hit the Up arrow to select "Whole disk" so that Photorec will search over the entire disk instead of only in the existing partition.
+
+    ![Partition selection and beginning search in Photorec](/assets/photorec/photorec3.png)
+
+6. Select the partition scheme that will be searched. Unless you know what ext2/ext3 is, you are going to choose "Other" here by pressing Enter.
+
+    ![Partition scheme selection in Photorec](/assets/photorec/photorec4.png)
+
+7. You now select where our files will be recovered to. Photorec opens to `/home/user` by default but we need to get to `/media/user`.
+    - Press Left arrow twice to navigate to `/` then use the Down arrow to go to `Media` and hit Right arrow. Finish navigating to `user` and then the arbitrary folder name that denotes your mounted drive. In the example this directory is `/media/user/EDFE-710F`
+    - Once you are in the directory, as seen in the second image, press "c" to start searching.
+
+    ![User home shown by default in Photorec](/assets/photorec/photorec5.png)
+
+    {: .info .info-icon }
+    > You can see the arbitrary file name in File Explorer if you navigate to your mounted disk from the side pane.
+
+   ![Final directory selection in Photorec](/assets/photorec/photorec6.png)
+
+8. Photorec will now begin searching and printing out the number of files it found with elapsed time displayed as well as the estimate until finished.
+
+    ![Active searching in Photorec](/assets/photorec/photorec7.png)
+
+9. When complete you will be told about the total number of files recovered and you can browse your secondary drive to review them all. You can close the terminal and shutdown your computer. Remove the USB then boot your computer again to your normal OS.
+
+    ![Alt text](/assets/photorec/photorec8.png)
