@@ -56,7 +56,10 @@ Any secondary disks, or external disks, should appear in the File Explorer where
 
     ![Partition selection and beginning search in Photorec](/assets/photorec/photorec3.png)
 
-6. Select the partition scheme that will be searched. Unless you know what ext2/ext3 is, you are going to choose "Other" here by pressing Enter.
+6. Select the partition scheme that will be searched. 
+
+    {: .info .info-icon }
+    > Some Linux systems may use ext2/ext3/ext4 but in most cases you are going to choose "Other" here by pressing Enter.
 
     ![Partition scheme selection in Photorec](/assets/photorec/photorec4.png)
 
