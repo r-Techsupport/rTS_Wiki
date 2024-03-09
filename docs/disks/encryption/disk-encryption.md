@@ -14,7 +14,8 @@ Modern phones have been using encryption by default since the early to mid 2010'
 
 Enabling encryption on other devices, such as laptops and desktops, is a choice for the user. Encryption is more useful on mobile platforms like a laptop than a desktop but you may still choose to add these protections on any device you desire.
 
-> ⓘ If you are seeing Bitlocker on your computer but you did not set it up would could have a device with [Bitlocker OEM](https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-bitlocker).
+{: .info .info-icon }
+> If you are seeing Bitlocker on your computer but you did not set it up would could have a device with [Bitlocker OEM](https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-bitlocker).
 
 {: .warning .warning-icon }
 > **Risk of data loss with encryption**<br>
