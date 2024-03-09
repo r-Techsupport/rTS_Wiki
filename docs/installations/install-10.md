@@ -6,7 +6,7 @@ nav_order: 1
 has_children: false
 parent: OS Install Guides
 search_exclude: false
-last_modified_date: 2023-05-20
+last_modified_date: 2024-03-09
 redirect_from: /books/how-to-and-guides/page/clean-installing-windows-10
 ---
 {: .warning .warning-icon }
