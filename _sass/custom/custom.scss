@@ -100,7 +100,8 @@ $callout-icons: (
   /* fa-warning */ "warning": "\f071",
   /* fa-circle-xmark */ "danger": "\f057",
   /* fa-circle-info */ "info": "\f05a",
-  /* fa-sticky-note */ "note": "\f249"
+  /* fa-square-pen */ "note": "\f14b",
+  /* fa-square-check */ "success": "\f14a"
 );
 
 @each $name, $val in $callout-icons {
