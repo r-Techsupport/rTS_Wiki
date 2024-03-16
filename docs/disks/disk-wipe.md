@@ -42,6 +42,7 @@ This relies on the application `nvme-cli`. It might not be included on all Linux
 ## Physical destruction
 Physical destruction is a perfectly acceptable method to ensure data cannot be read from a disk. This can be accomplished by either smashing the disk with a hammer or opening it and placing it in salt water to rust.
 
+> {: .danger .danger-icon }
 > DO NOT SMASH AN OPEN DISK.
 > Disk platters may be made out of glass that can splinter into painfully small shards. These will go through your skin to cause intense irritation.
 
