@@ -15,7 +15,7 @@ redirect_from: /books/how-to-and-guides/page/running-memtest86
 Memtest86+ is a small tool that allows you to test memory for issues.
 
 ## 1. Obtaining media
-You may also use the [official Memtest86+ ISO](https://memtest.org/download/v6.00/mt86plus_6.00_32.iso.zip), or the [install tool for Windows](https://memtest.org/download/v6.00/mt86plus_6.00_USB_Installer.exe).
+You may also use the [official Memtest86+ ISO](https://www.memtest.org/download/v7.00/mt86plus_7.00_64.iso.zip), or the [install tool for Windows](https://www.memtest.org/download/v7.00/mt86plus_7.00_USB_Installer.exe).
 
 ## 2. Creating bootable media
 This will require a USB that is at least the size of the ISO you downloaded.
@@ -24,7 +24,6 @@ Follow the [Linux media guide](/docs/installations/install-linux#step-2-creating
 
 ## Run Memtest86+
 
-**This media needs to be booted in Legacy/CSM mode. They will not work when loaded in UEFI mode**
 If you used the official Memtest86+ media, it will boot straight into the test.
 
 ## 3. Results

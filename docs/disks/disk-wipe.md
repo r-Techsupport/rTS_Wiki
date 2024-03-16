@@ -5,12 +5,12 @@ nav_exclude: false
 has_children: false
 parent: Disks
 search_exclude: false
-last_modified_date: 2022-08-05
+last_modified_date: 2024-02-23
 redirect_from: /books/troubleshooting-with-a-linux-live-session/page/wiping-disks
 ---
 
 # Wiping Disks
-This guide uses the [Linux live session](/docs/live-sessions/linux-live-session).
+{% include embeds/use-linux-live-session.md %}
 
 ## Encrypted disks
 All modern OS are capable of encrypting disks, on Windows this is called Bitlocker, MacOS has FileVault and Linux/BSD typically use LUKS. If you already use encryption to secure your data at rest then you are a step ahead with wiping the disk as well. You can format the disk by doing a full and proper reinstall of the OS ([Windows guide here](/windows)) to cycle your encryption keys. Once these keys are destroyed recovery of the old data is not possible.

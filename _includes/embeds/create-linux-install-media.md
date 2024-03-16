@@ -8,7 +8,7 @@
 3. Plug in the flash drive and run `diskutil list` again. You can do this to identify the drive device path. The device path is in the form of `/dev/diskN`, where N is a number (example: `/dev/disk1`).
 4. Unmount the flash drive you have identified. `diskutil unmountdisk /dev/diskN`.
 5. Convert the ISO image. `hdiutil convert /path/to/image.iso -format UDRW -o /path/to/ubuntu.img`
-6. Run `dd if=/path/to/image.img of=/dev/rdiskN status=progress` to create a bootable drive from the image. Using `/dev/rdiskN` instead of `/dev/diskN` usually results in faster media creation.
+6. Run `sudo dd if=/path/to/image.img of=/dev/rdiskN status=progress` to create a bootable drive from the image. Using `/dev/rdiskN` instead of `/dev/diskN` usually results in faster media creation.
 7. Wait until dd finishes. The terminal will display the next prompt when it's done.
 8. Eject the USB flash drive: `diskutil eject /dev/diskN`.
 
