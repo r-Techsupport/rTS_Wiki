@@ -25,7 +25,7 @@ To start troubleshooting using HWiNFO, follow this guide. It will walk you thoug
 
     **If you are using chrome, you may need to copy-paste these links into a new tab, or right click and "save link as".**
 
-3. Download Furmark from [here](https://geeks3d.com/furmark/downloads/)
+3. Download Furmark 2 from [here](https://geeks3d.com/furmark/downloads/)
 
 4. Start HWiNFO and launch it in sensors only mode
 
@@ -54,8 +54,6 @@ To start troubleshooting using HWiNFO, follow this guide. It will walk you thoug
 9. It will look like this when running.
 
     ![p95-3.jpg](/assets/hwinfo/p953.jpeg)
-	
-  
  
 10. After you get prime95 running, install and launch furmark. In the first menu, change the resolution to match your monitor. If you don't see your resolution listed, you can use custom resolution. Set the Anti-aliasing selection box to 8X MSAA.
 
