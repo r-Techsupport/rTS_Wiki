@@ -34,7 +34,7 @@ There are multiple type of tests to run OCCT, each dependant on what you will ne
 
 ![stability_test_panel.jpg](/assets/OCCT/stability_panel.jpg)
 
-### CPU stability test
+### CPU + RAM stability test
 Default values are best set here. Ensure the test is set at 1 hour, and all other configurations are set as default (Unless specified otherwise):
 - Data set: `Large`
 - Mode: `Extreme`
