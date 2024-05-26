@@ -90,11 +90,11 @@ These drivers are optional and mainly for RGB control purposes, or custom button
     - Tron Script
     - AtlasOS
 
-    If you utilized these tools, it is highly recommended you reinstall Windows (again) by following [this guide](/docs/installations/win).
+    If you utilized these tools, it is highly recommended you reinstall Windows (again) by following [this guide](/windows).
 
 - **Driver finders:**
 
-    Please refer to [this page](/docs/recommendations/maintenance) to view our stance on driver finders. We consider them PUPs in short. The best way to update drivers is to use the tools officially supported by the motherboard manufacturers and peripheral manufacturers and manual installation of them, or let Windows Update take care of them.
+    Please refer to [this page](/docs/recommendations/maintenance#driver-finders) to view our stance on driver finders. We consider them PUPs in short. The best way to update drivers is to use the tools officially supported by the motherboard manufacturers and peripheral manufacturers and manual installation of them, or let Windows Update take care of them.
 
     The reason for us not supporting them is most of these driver finders utilize non-up-to-date databases for finding drivers and can potentially install faulty or non-compatible drivers for a device.
 
