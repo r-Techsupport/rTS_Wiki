@@ -19,6 +19,7 @@ Firstly, launch all of the apps that you generally have going. Open a few browse
 
   1. Launch Task Manager: Right-click the taskbar at the bottom of the screen and then click Task Manager.
  2. Switch to the ‘Performance’ tab, click the ‘Resource Monitor…’ button at the bottom, and it will pop up a window like this.
+    - In Windows 11, the ‘Resource Monitor’ button will be located in the three dot menu located in the top right of the window.
 
 ![resource monitor](/assets/more-memory/resource_monitor.jpeg)
 
