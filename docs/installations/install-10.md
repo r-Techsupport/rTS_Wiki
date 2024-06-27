@@ -6,16 +6,18 @@ nav_order: 1
 has_children: false
 parent: OS Install Guides
 search_exclude: false
-last_modified_date: 2023-05-20
+last_modified_date: 2024-03-09
 redirect_from: /books/how-to-and-guides/page/clean-installing-windows-10
 ---
-**Warning**: All files on the drive you plan to install Windows to will be **deleted** if you follow this guide - this is intended. Please ensure you have an adequate [backup policy](/docs/backups) in place before proceeding if you have files of value.
+{: .warning .warning-icon }
+> All files on the drive you plan to install Windows to will be **deleted** if you follow this guide - this is intended. Please ensure you have an adequate [backup policy](/docs/backups) in place before proceeding if you have files of value.
 
 # Part 1: Creating USB Installer
 
 1. Using a USB flash drive **at least 8 gigabytes in size**, create a bootable USB flash drive using the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/windows10) from Microsoft. This will also wipe any data stored on the USB flash drive.
 
-   > ❗ Save MCT to Desktop or Downloads folder. MCT must be saved and run from outside the USB flash drive. Just moving an ISO file to the Usb flash drive will not make it bootable.
+   {: .warning .warning-icon }
+   > Save MCT to Desktop or Downloads folder. MCT must be saved and run from outside the USB flash drive. Just moving an ISO file to the Usb flash drive will not make it bootable.
 
 2. Run MCT by double clicking it. You will be greeted with windows Terms Of Service, after reading it, press Accept.
 
@@ -35,7 +37,8 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-10
 
 6. Select the USB you want to use, press next. 
 
-   > ❗ Warning: This step will wipe the selected USB Flash drive, so ensure you have nothing important on the USB drive, and back up all important documents.
+   {: .warning .warning-icon }
+   > Warning: This step will wipe the selected USB Flash drive, so ensure you have nothing important on the USB drive, and back up all important documents.
 
      ![select.png](/assets/install-10/select.png)
 

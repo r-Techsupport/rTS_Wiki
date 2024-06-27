@@ -24,4 +24,5 @@ Locates bad sectors and recovers readable information.
 
 `/r` includes the functionality of `/f`, with the additional analysis of physical disk errors.
 
-> ❗`chkdsk C: /r` can and will delete files that are corrupted, this is not a tool to be ran on a drive that has unique data.
+{: .warning .warning-icon }
+>`chkdsk C: /r` can and will delete files that are corrupted, this is not a tool to be ran on a drive that has unique data.

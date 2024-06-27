@@ -10,7 +10,8 @@ last_modified_date: 2022-10-31
 
 # Cleaning a Disk in Diskpart
 
-> ❗ Note that cleaning the disk **will remove any data stored on it.**
+{: .warning .warning-icon }
+> Note that cleaning the disk **will remove any data stored on it.**
 
 Open Command Prompt or PowerShell as admin then follow the steps below.
 
@@ -32,6 +33,10 @@ Make note of the disk you want to clean from the step above.
 ```
 sel disk #
 clean
+```
+
+Follow the below setps to you want to partition and format the drive. You will want to do this unless otherwise instructed.
+```
 create partition=primary
 format quick fs=ntfs
 assign letter=E

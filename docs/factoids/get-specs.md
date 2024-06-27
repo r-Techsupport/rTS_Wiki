@@ -14,7 +14,8 @@ last_modified_date: 2022-10-09
 
 **Get-Specs** is a custom made, [open-source](https://github.com/r-Techsupport/Get-Specs) program that gathers system information like OS, Hardware, and Software that helps us troubleshoot your computer.
 
-> ❗ Nothing sensitive is included in the report, we will not ask you to share private information.
+{: .warning .warning-icon }
+> Nothing sensitive is included in the report, we will not ask you to share private information.
 
 ## How to use Get-Specs
 

@@ -50,7 +50,8 @@ New partitions can only be created from unallocated space.
     [![NewDriveLetter.png](/assets/disk-management/newdriveletter.png)](/assets/disk-management/newdriveletter.png)
 
 ### Change file system
-> ❗ This is a destructive action, all data on the drive will be deleted.
+{: .warning .warning-icon }
+> This is a destructive action, all data on the drive will be deleted.
 
 1. Right click on an existing partition and choose "Format...".
 2. Leaving allocation unit size at default and quick format selected will usually work.

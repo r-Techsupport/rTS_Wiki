@@ -14,7 +14,8 @@ When a battery swells it means the internal structure has failed and the compone
 ## What to do when a battery is swollen
 Temporarily store it in a cool dry area until you can take it somewhere to be disposed of. Most repair shops are equipped to deal with a swollen battery. 
 
-> ❗ Do not attempt to remove it from the device yourself!
+{: .warning .warning-icon }
+> Do not attempt to remove it from the device yourself!
 
 ## What if I see smoke?
 1. Get away from the battery. 
@@ -23,7 +24,8 @@ Temporarily store it in a cool dry area until you can take it somewhere to be di
 3. Only specially rated fire extinguishers can handle this kind of fire. 
 4. Try to remove anything flammable from around the device. 
 
-> ❗ Do not try to pick up the device!
+{: .warning .warning-icon }
+> Do not try to pick up the device!
 
 ## What if I see fire?
 1. Get to a safe distance from the fire, don't go near it. These fires are violent and extremely hot. 

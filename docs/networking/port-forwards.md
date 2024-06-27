@@ -47,7 +47,8 @@ If you are using an ISP provided modem/router combo and a personal router then y
 
 This issue can also arise when using a second router as a wireless access point. If you are using a second router only to create wifi then you should plug it into the network via a LAN port or force the device into AP mode if it does not want to function with only the LAN port in use. Ensure the WAN port on the router is left empty for this to work with most devices. Using only the LAN port should stop the unit from routing and creating a new network.
 
-> ❗ If your router doesn't support AP Mode then you also have to ensure the LAN DHCP Service is disabled on the router to avoid competing DHCP Servers. Additionally, some devices simply WILL NOT FUNCTION in this manner and will fail to provide any connectivity if the WAN Port is left disconnected.
+{: .warning .warning-icon }
+> If your router doesn't support AP Mode then you also have to ensure the LAN DHCP Service is disabled on the router to avoid competing DHCP Servers. Additionally, some devices simply WILL NOT FUNCTION in this manner and will fail to provide any connectivity if the WAN Port is left disconnected.
 
 ## Firewalls/VPNs
 ### Firewalls

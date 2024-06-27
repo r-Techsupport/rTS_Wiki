@@ -130,20 +130,21 @@ Applications you have installed, *regardless of which drive you have installed i
 
 Warnings like:
 
-> ❗ It is very important that you remember to **power-off the motherboard** and switch-off and unplug the PSU after each component test. Do this before you remove or install anything. [(source)](/docs/factoids/breadboarding.md)
+{: .warning .warning-icon }
+> It is very important that you remember to **power-off the motherboard** and switch-off and unplug the PSU after each component test. Do this before you remove or install anything. [(source)](/docs/factoids/breadboarding.md)
 
 are just blockquotes in markdown.
 
 ```
-> ❗ It is very important that you remember to **power-off the motherboard** and switch-off and unplug the PSU after each component test. Do this before you remove or install anything.
+{: .warning .warning-icon }
+> It is very important that you remember to **power-off the motherboard** and switch-off and unplug the PSU after each component test. Do this before you remove or install anything.
 ```
-
-To let the user know that it IS a warning, add the ❗ emoji to the beginning.
 
 #### Information
 
-> ⓘ Info block<br>
-> Use the ⓘ emoji for info blocks
+{: .info .info-icon }
+> Info block<br/>
+> Use `{: .info .info-icon }` for info blocks
 
 ### Hyperlinks
 

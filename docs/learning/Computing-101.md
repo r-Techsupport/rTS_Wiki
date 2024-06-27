@@ -31,7 +31,8 @@ Installing programs is a little bit more work, navigate to the website of the pr
 
 For example, a program that you might want to install would be *Discord* which you can find [here](https://discord.com/). You would click the download button and run the .exe file you just downloaded to install. You would do this with any program that you wanted to install.
 
-> ❗Avoid downloading software from file sharing sites like Softpedia. Their releases are rarely official and often harbor **malicious software** instead of a clean legitamate product.
+{: .warning .warning-icon }
+>Avoid downloading software from file sharing sites like Softpedia. Their releases are rarely official and often harbor **malicious software** instead of a clean legitamate product.
 
 ### Sites to avoid:
 - Softpedia
@@ -53,7 +54,8 @@ For example, a program that you might want to install would be *Discord* which y
 
 
 ## Uninstalling Programs
-> ❗ **DO NOT** manually delete the files associated with the program.
+{: .warning .warning-icon }
+> **DO NOT** manually delete the files associated with the program.
 
 You want to fully uninstall which would remove the associated files, settings, registry keys, etc. There are a few ways to do this. 
 

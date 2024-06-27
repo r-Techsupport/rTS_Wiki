@@ -67,13 +67,15 @@ But how can we know what is causing your particular BSOD?
 
 ## Using the Debugger
 
-> ❗ *All further information in this article may be very technical. If you, at any point, feel uncomfortable with reading dumps, I would **highly recommend** seeking the advice of a professional rather than attempting to diagnose the issue yourself. You are not stupid if it doesn't make sense, this is not easy stuff. Feel free to upload the dumps to [our Discord](https://rtech.support/discord) with [this guide](/docs/factoids/bsod) where volunteers can analyze the dumps for you.*
+{: .warning .warning-icon }
+> *All further information in this article may be very technical. If you, at any point, feel uncomfortable with reading dumps, I would **highly recommend** seeking the advice of a professional rather than attempting to diagnose the issue yourself. You are not stupid if it doesn't make sense, this is not easy stuff. Feel free to upload the dumps to [our Discord](https://rtech.support/discord) with [this guide](/docs/factoids/bsod) where volunteers can analyze the dumps for you.*
 
 We have covered what a BSOD is and why they happen, now let's get into the tricky stuff! What is causing your computer to crash?
 
 When a BSOD occurs, Windows will create what is called a memory dump. During the last seconds of functioning, it saves the data stored in RAM to a file, which can be analyzed to help determine the cause of the crash. 
 
-> ❗ *There are certain programs out there that attempt to automatically analyze these dumps and detail what happened, but before you download them, let me stop you right now: **They are awful.** They make guesses, pull information out of thin air and lead you in the wrong direction.*
+{: .warning .warning-icon }
+> *There are certain programs out there that attempt to automatically analyze these dumps and detail what happened, but before you download them, let me stop you right now: **They are awful.** They make guesses, pull information out of thin air and lead you in the wrong direction.*
 
 The only app I can recommend for analyzing these dumps is [WinDbg Preview](https://aka.ms/windbg/download), which can be downloaded for free from the Microsoft Store.
 
@@ -87,7 +89,8 @@ When you first open a dump file, you will be greeted with a screen like this:
 
 Nothing in here is *particularly* important, but go ahead and click on the blue `!analyze -v -` text. Now, you get a whole lot of scary-looking information that makes no sense. 
 
-> ❗ *If your immediate reaction is, "Is this just the matrix?" I, again, advise you to **seek advice from a professional** rather than continue on.*
+{: .warning .warning-icon }
+> *If your immediate reaction is, "Is this just the matrix?" I, again, advise you to **seek advice from a professional** rather than continue on.*
 
 Let's break this down. I am only going to briefly explain the different sections of the analysis first and go over them in more detail later. 
 
@@ -799,7 +802,8 @@ Sometimes AVs will lock out blocks of memory *improperly* and cause these bugche
 
 In cases where it is not one of these two errors, you will need to look up the error code either through the [Windows Error Lookup Tool](https://www.microsoft.com/en-us/download/confirmation.aspx?id=100432) provided by Microsoft, or by going to their error documentation [here](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55).
 
-> ❗ Do not google the code, the information you find will be completely useless and potentially harmful.
+{: .warning .warning-icon }
+> Do not google the code, the information you find will be completely useless and potentially harmful.
 
 Arguments 2, 3, and 4 are addresses to other information; however, they are not the most useful for our purposes, as WinDbg Preview will automatically run the necessary commands on these addresses to get you the information you need.
 
