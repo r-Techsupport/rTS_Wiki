@@ -6,7 +6,7 @@ nav_order: 5
 has_children: false
 parent: Software We Recommend
 search_exclude: false
-last_modified_date: 2022-06-29
+last_modified_date: 2024-06-28
 redirect_from: /books/software-we-recommend/page/reading-machine-temperatures-voltages
 ---
 
@@ -16,12 +16,8 @@ Watching your temperatures is an important part of managing any machine, especia
 
 When reporting your temperatures to people, please use Celsius. It doesn't matter what country you are in, everyone uses Celsius for computers.
 
-## Specs
-This is an all around system reporting tool. We use this actively in [the Discord](/discord) to get a ton of information about your machine. 
-
-<!--Speccy can have some issues reading Ryzen, if you temps are incredibly high please check with a Ryzen specific tool.-->
-
-[Download](https://github.com/r-Techsupport/Get-Specs/releases/latest/download/Get-Specs.zip)
+### Specify
+{% include embeds/specify.md %}
 
 Alternatively, you can use [Speccy](https://www.ccleaner.com/speccy/download/standard) to get similar information.
 
