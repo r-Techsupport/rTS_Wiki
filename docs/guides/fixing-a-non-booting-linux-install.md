@@ -5,7 +5,7 @@ nav_exclude: false
 has_children: false
 parent: General Guides
 search_exclude: false
-last_modified_date: 2023-09-08
+last_modified_date: 2024-06-28
 ---
 
 # Fixing a non-booting linux install
