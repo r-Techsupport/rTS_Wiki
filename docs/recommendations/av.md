@@ -6,7 +6,7 @@ nav_order: 3
 has_children: false
 parent: Software We Recommend
 search_exclude: false
-last_modified_date: 2022-06-15
+last_modified_date: 2024-06-28
 redirect_from: /books/software-we-recommend/page/anti-virus-and-malware-tools
 ---
 
