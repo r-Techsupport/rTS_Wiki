@@ -73,7 +73,7 @@ For the most part RAM is *tied* into CPU performance.
 
 There are three aspects to ram performance: capacity (how many GB of ram you have), bandwidth (what frequency your ram is running at and whether it's in dual channel or not), and latency (what timings your RAM is running at, notably different from frequency).
 
-The main one that can hold you back is *capacity*. If your computer runs out of free RAM space, your CPU will have to ask for information from the storage drive directly which takes significantly longer than having things stored in RAM and ready for the CPU to see. The best thing to do would be to upgrade or add more RAM.
+The main one that can hold you back is *capacity*. If your computer runs out of free RAM space, your CPU will have to ask for information from the storage drive directly which takes significantly longer than having things stored in RAM and ready for the CPU to see. The best thing to do would be to upgrade or [add more RAM](/docs/guides/how-to-know-if-you-need-more-ram).
 
 ## What about bottleneck calculators?
 
