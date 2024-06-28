@@ -6,7 +6,7 @@ nav_order: 2
 has_children: false
 parent: OS Install Guides
 search_exclude: false
-last_modified_date: 2024-06-27
+last_modified_date: 2024-06-28
 redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 ---
 {: .warning .warning-icon }
@@ -133,4 +133,5 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 
 You have successfully installed Windows 11.
 
+## Post-install setup guides
 If you need to setup Windows 11 without an internet connection or without a Microsoft account, follow this [article](/docs/guides/bypass-11.md).

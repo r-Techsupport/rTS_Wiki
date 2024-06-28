@@ -5,7 +5,7 @@ nav_exclude: false
 parent: General Guides
 has_children: false
 search_exclude: false
-last_modified_date: 2024-06-27
+last_modified_date: 2024-06-28
 ---
 # Windows 11 Local Account Setup 
 {: .no_toc }
@@ -38,7 +38,7 @@ Hopefully, running this command gives you the option of "I don't have internet" 
 
 ## Bypassing Microsoft account requirements
 If you don't have a Microsoft account, or don't want to log into one, follow the steps shown below. 
-### Home Edition
+### Home edition
 If you have reached this screen and have done the steps in the previous section, follow these steps: 
 
 [![win11-msft_acc_login.png](/assets/install-11/win11-msft_acc_login.png)](/assets/install-11/win11-msft_acc_login.png)
@@ -56,7 +56,7 @@ If you have reached this screen and have done the steps in the previous section,
 
 [![win11-home-acc-bypass2.png](/assets/install-11/win11-home-acc-bypass2.png)](/assets/install-11/win11-home-acc-bypass2.png)
 
-### Pro Edition
+### Pro edition
 Pro Edition has an simple method of bypassing the Microsoft account requirement. 
 
 If you reached this screen seen below, follow these steps: 
@@ -77,7 +77,7 @@ If you reached this screen seen below, follow these steps:
 
 [![win11-pro-acc-bypass3.png](/assets/install-11/win11-pro-acc-bypass3.png)](/assets/install-11/win11-pro-acc-bypass3.png)
 
-## End Result
+## End result
 Following these steps should bring you to the local account creation screen. (See image) 
 
 [![win11-local-acc.png](/assets/install-11/win11-local-acc.png)](/assets/install-11/win11-local-acc.png)
