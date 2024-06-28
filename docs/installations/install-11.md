@@ -6,11 +6,11 @@ nav_order: 2
 has_children: false
 parent: OS Install Guides
 search_exclude: false
-last_modified_date: 2023-05-20
+last_modified_date: 2024-03-09
 redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 ---
-
-**Warning**: All files on the drive you plan to install Windows to will be **deleted** if you follow this guide - this is intended. Please ensure you have an adequate [backup policy](/docs/backups) in place before proceeding if you have files of value.
+{: .warning .warning-icon }
+> All files on the drive you plan to install Windows to will be **deleted** if you follow this guide - this is intended. Please ensure you have an adequate [backup policy](/docs/backups) in place before proceeding if you have files of value.
 
 # Part 1: Creating USB Installer
 

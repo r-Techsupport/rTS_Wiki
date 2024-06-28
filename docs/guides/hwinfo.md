@@ -25,7 +25,11 @@ To start troubleshooting using HWiNFO, follow this guide. It will walk you thoug
 
     **If you are using chrome, you may need to copy-paste these links into a new tab, or right click and "save link as".**
 
-3. Download Furmark from [here](https://geeks3d.com/furmark/downloads/)
+3. Download Furmark 2 from [here](https://geeks3d.com/furmark/downloads/)
+
+    ![furmark1.jpg](/assets/hwinfo/furmark1.jpg)
+
+    **Recommended you get the 64 bit version!**
 
 4. Start HWiNFO and launch it in sensors only mode
 
@@ -54,20 +58,22 @@ To start troubleshooting using HWiNFO, follow this guide. It will walk you thoug
 9. It will look like this when running.
 
     ![p95-3.jpg](/assets/hwinfo/p953.jpeg)
-	
-  
  
-10. After you get prime95 running, install and launch furmark. In the first menu, change the resolution to match your monitor. If you don't see your resolution listed, you can use custom resolution. Set the Anti-aliasing selection box to 8X MSAA.
+10. After you get prime95 running, install and launch furmark. Set the following in the options:
+    - Set **Graphics Test** to `Furmark Knot  (GL)`
+    - Change the resolution to match your monitor. If you don't see your resolution listed, you can use custom resolution.
+    - Checkmark the following boxes:
+        - BFC
+        - Display OSI
+        - DXT5
 
-    ![fuarmark-settings.png](/assets/hwinfo/fur1.png)
+    ![furmark2.jpg](/assets/hwinfo/furmark2.jpg)
 
-11. Read the warning and press "GO!"
+    > Note: There's an option called Artifact scanner. Only run this in case you suspect your GPU may be artifacting (and specified by the helper).
 
-    ![furmark-2.jpg](/assets/hwinfo/fur2.jpeg)
+11. Leave furmark as the top window on your screen.
 
-12. Leave furmark as the top window on your screen.
-
-    ![furmark-3.jpg](/assets/hwinfo/fur3.jpeg)
+    ![furmark3.jpg](/assets/hwinfo/furmark3.jpg)
 
 ## Note
 
