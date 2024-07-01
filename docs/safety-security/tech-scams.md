@@ -104,18 +104,14 @@ Ultimately, I was able to regain control of my accounts, terminate all other Ste
 
 ## Email scams/Text scams
 
-Email and text scams, often referred to as email phishing, are prevalent forms of fraudulent activities. These scams, which are becoming increasingly sophisticated, may target various accounts, including your email, bank, or even involve you in a multi-level marketing scheme for their benefit. The complexity of these scams is escalating, making it increasingly challenging to distinguish between authentic and fraudulent emails.
+Email and text scams are prevalent forms of fraudulent activities. These scams, which are becoming increasingly sophisticated, may target various accounts, including your email, bank, or even involve you in a multi-level marketing scheme for their benefit. The complexity of these scams is escalating, making it increasingly challenging to distinguish between authentic and fraudulent emails.
 
 {: .warning .warning-icon }
-> When dealing with suspicious emails, it’s imperative to exercise caution. Always scrutinize the sender’s email address; official communications will originate from official email accounts, not arbitrary third-party emails. Double-check the links, spelling, format of the email, images, and logos. Refrain from clicking on any links within these emails or logging in for verification purposes. Additionally, avoid downloading any attachments, such as applications or PDFs, as they may contain malicious software, including viruses, keyloggers, or cookie hijackers.
+> When dealing with suspicious emails, it’s imperative to exercise caution. Always scrutinize the sender’s email address; official communications will originate from official email accounts, not arbitrary third-party emails. Double-check the links, spelling, format of the email, images, and logos. Refrain from clicking on any links within these emails or logging in for verification purposes. Additionally, avoid downloading any attachments, such as applications or PDFs, as they may contain malicious software, including viruses, keyloggers, or session hijackers.
 
 Some email scams may impersonate official services, such as Amazon or FedEx. For instance, you may receive an email regarding a package you’ve supposedly ordered, urging you to “further verify” your details. If you have indeed ordered a package, refer back to the package tracker to confirm its status. Any disputes should be directly mentioned in the tracker, allowing you to contact the relevant party and resolve the dispute through the tracker.
 
-At times, an email may attempt to exploit your business account, reaching out with a seemingly innocuous request for advice or similar. For example, in one instance, a supposed CEO reached out to ask for a package of some sort. Thanks to the email it was sent by, and the fact that I have other means of reaching out to my CEO, I was able to immediately identify this as a scam email. By reconfirming with the CEO using official means of communication (in this case, MS Teams), I was able to verify that this was indeed a scam email.
-
-![Email_Scam_01.png](/assets/tech-scams/Email_Scam_01.png)
-
-![Email_Scam_02.png](/assets/tech-scams/Email_Scam_02.png)
+At times, an email may attempt to exploit your business account, reaching out with a seemingly innocuous request for advice or similar. For example, in one instance, supposedly my own CEO reached out to ask for a package of some sort. Thanks to the email it was sent by, and the fact that I have other means of reaching out to my CEO, I was able to immediately identify this as a scam email. By reconfirming with the CEO using official means of communication (in this case, MS Teams), I was able to verify that this was indeed a scam email.
 
 Other email scams may present unsolicited job or interview offers, aiming to extract your personal information with the intent to bypass account security measures or potentially blackmail you later. It’s advisable not to respond to these either.
 
@@ -123,20 +119,39 @@ Please note that these are merely examples. Email scams are becoming increasingl
 
 For more information regarding how to recognize a scam email, as well as what kinds of scam emails there are and their examples, please refer to this wiki article here: [Email scams](/docs/safety-security/email-scams.md).
 
-## Precautions to take - TODO
-- Never sign in using QR code to a site which you do not trust - Preferable if you never use qr code for signing in at all tbh
-    - Also triple check the login link that is being utilized here
-- Check the link for the site and reconfirm that it is the site you are signing into - Multiple screenshots for this
-- Set up 2fa/mfa, use password managers for stuff, etc.
-- Discuss session hijacking in detail, use this extract: https://discord.com/channels/912488290597343333/912488291054518284/1254534921624485969
-- When signing up for shady sites, use an alt email if possible
-    - Use separate emails for separate work for example:
-        - Work email
-        - Game email
-        - Personal email
-        - Alt email for shady shit, etc.
-    - Never share personal important data like your real DOB, your real name, etc. for them
-    - NEVER USE YOUR CREDIT/DEBIT CARD FOR ANY SERVICE YOU DO NOT KNOW OR CANNOT TRUST FULLY
+## Precautions to take
+
+In order to safeguard oneself from potential scams, it is prudent to adopt preventative measures rather than dealing with the aftermath. The subsequent guidelines provide a general approach to handling unsolicited communications or potential scam messages.
+
+### Avoiding Downloads
+It is crucial to exercise caution when downloading files from the internet. Even seemingly harmless file types such as PNGs, JPGs, PDFs, etc., can harbor malicious scripts or viruses. These harmful elements can be triggered automatically upon download, potentially compromising your account or operating system. Therefore, it is always advisable to thoroughly verify the source and content of any download. In case an unverified file has been downloaded, it is recommended to reinstall the operating system. This ensures the complete eradication of any potentially harmful elements, providing a clean slate for your system’s security.
+
+### Verifying Website Links
+When you receive a link, especially in an unsolicited message, it’s important not to click on it impulsively. Instead, take a moment to inquire about its content and purpose. This precaution can help you avoid landing on a fraudulent page designed to mimic a legitimate website. If you have any doubts about the authenticity of a site, take the time to cross-verify the link with the official site. This step can help confirm the legitimacy of the site and protect you from potential phishing attempts.
+
+### Updating Browser and Antivirus Software
+Keeping your operating system and web browser updated is a key aspect of maintaining system security. Software updates often include patches for known vulnerabilities, which can significantly reduce the risk of a successful cyber attack. An updated system is less susceptible to malicious code execution, providing a safer environment for your online activities.
+
+### Confirming Sign-In Details
+When signing into sites, it’s important to pay close attention to the details of the sign-in link. Make sure that the link directs you to the official login page of the respective site. Be wary of using QR codes for signing in, as they can easily obscure important details such as the sign-in destination. Despite their convenience, the use of QR codes can increase the risk of overlooking suspicious elements, potentially leading to security breaches.
+
+### Implementing Multi-Factor Authentication (MFA) and utilizing password managers
+Multi-Factor Authentication (MFA) is a highly recommended security measure that adds an extra layer of protection to your online accounts. By requiring verification from another device during sign-in, MFA significantly increases the difficulty for unauthorized users to gain access to your accounts. More details of MFA can be found in our [Multi-Factor Authentication wiki article](/docs/safety-security/mfa.md). Popular apps of MFA include, but are not limited to:
+- [Steamguard](https://help.steampowered.com/en/faqs/view/06B0-26E6-2CF8-254C) (For Steam only)
+- [Discord MFA](https://support.discord.com/hc/en-us/articles/219576828-Setting-up-Multi-Factor-Authentication) (For Discord only)
+- [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en&co=GENIE.Platform%3DiOS) (General MFA application)
+- [Microsoft Authenticator](https://www.microsoft.com/en-ca/security/business/identity-access/microsoft-entra-mfa-multi-factor-authentication) (General MFA application)
+
+However, it's important to note that the use of QR codes for sign-in can potentially undermine the effectiveness of MFA. The convenience of QR codes can lead to oversights, potentially allowing malicious actors to bypass the additional security provided by MFA. 
+
+In addition to MFA, the use of password managers, such as Bitwarden, can further enhance your online security. Password managers help you create, store, and manage strong, unique passwords for all your accounts, reducing the risk of password-related breaches. By combining the use of MFA and a reliable password manager, you can significantly bolster the security of your online accounts. To learn more about password managers, please refer to our [Password Managers wiki article](/docs/safety-security/pw-managers.md).
+
+### Utilizing different email accounts
+When interacting with websites of uncertain credibility, it’s highly recommended to use an alternative email address. This strategy not only helps to protect your primary email account but also allows you to organize your online activities more effectively. For instance, you might have a dedicated email address for work-related matters, another for gaming, a personal email for communication with friends and family, and an alternative email for potentially risky interactions (such as signing up for shady sites).
+
+This level of separation can significantly enhance your online security and privacy. It’s also crucial to be mindful of the personal information you share on these platforms. Sharing sensitive details such as your real name or date of birth can expose you to various risks, including identity theft. Therefore, it’s best to provide minimal personal information, especially on sites you’re unsure about.
+
+The most critical aspect to consider is your financial security. It’s imperative to exercise extreme caution when it comes to online transactions. Never use your credit or debit card for any service that you do not fully trust or recognize. If a site or service seems suspicious or too good to be true, it probably is. Always research and verify the legitimacy of a site before providing any financial information.
 
 ## What you can do to recover your accounts - TODO
 - Change password if possible
@@ -147,3 +162,4 @@ For more information regarding how to recognize a scam email, as well as what ki
     - Steam
     - Epic games
     - Google
+    - Microsoft
