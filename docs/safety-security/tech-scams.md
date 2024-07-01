@@ -51,7 +51,7 @@ The "support" agent may look legitimate, but remember that no official support a
 ![Reported_account_scam_03.JPG](/assets/tech-scams/Reported_account_scam_03.JPG)
 </details>
 
-## Request from a Compromised Friend’s account seeking assistance
+## Request from a Compromised Friend’s account
 
 {: .warning .warning-icon }
 > Exercise caution when dealing with messages from anyone, even those you consider friends, that request you to "register" or "log in" to assist them with a certain task. Be wary as well of requests to download items to aid in "testing" a game or application, particularly if the sender is not known for engaging in development work. This caution should extend to downloading files such as PDFs, PNGs, or any other type of file under the pretext of checking if it "appears correct", as they can contain viruses. Remember, it's always better to be safe than sorry when it comes to your digital security.
@@ -102,14 +102,26 @@ Ultimately, I was able to regain control of my accounts, terminate all other Ste
 
 </details>
 
-## Email scams/Text scams - TODO
-- The classic
-- Are getting better and better now - Really hard to differentiate between real and fake
-- Double check links, spelling, sender sending you the email, format of email, images and logos etc.
-- Recall why you got the email:
-    - For package emails - Recall if you did order a package. Look up your order no. and reconfirm with the tracking service you used, or use one of the universal tracking apps
-    - For account emails, send a support question to the support website directly, do not use any emails or reply to said email - Refer to account disputes in the above section in "tech support scams"
-    - DO NOT CLICK ON ANY LINKS IN SAID EMAIL, DO NOT DOWNLOAD ANYTHING FROM SAID EMAIL (could contain viruses - See LMG getting their YT account stolen thanks to a virulent PDF)
+## Email scams/Text scams
+
+Email and text scams, often referred to as email phishing, are prevalent forms of fraudulent activities. These scams, which are becoming increasingly sophisticated, may target various accounts, including your email, bank, or even involve you in a multi-level marketing scheme for their benefit. The complexity of these scams is escalating, making it increasingly challenging to distinguish between authentic and fraudulent emails.
+
+{: .warning .warning-icon }
+> When dealing with suspicious emails, it’s imperative to exercise caution. Always scrutinize the sender’s email address; official communications will originate from official email accounts, not arbitrary third-party emails. Double-check the links, spelling, format of the email, images, and logos. Refrain from clicking on any links within these emails or logging in for verification purposes. Additionally, avoid downloading any attachments, such as applications or PDFs, as they may contain malicious software, including viruses, keyloggers, or cookie hijackers.
+
+Some email scams may impersonate official services, such as Amazon or FedEx. For instance, you may receive an email regarding a package you’ve supposedly ordered, urging you to “further verify” your details. If you have indeed ordered a package, refer back to the package tracker to confirm its status. Any disputes should be directly mentioned in the tracker, allowing you to contact the relevant party and resolve the dispute through the tracker.
+
+At times, an email may attempt to exploit your business account, reaching out with a seemingly innocuous request for advice or similar. For example, in one instance, a supposed CEO reached out to ask for a package of some sort. Thanks to the email it was sent by, and the fact that I have other means of reaching out to my CEO, I was able to immediately identify this as a scam email. By reconfirming with the CEO using official means of communication (in this case, MS Teams), I was able to verify that this was indeed a scam email.
+
+![Email_Scam_01.png](/assets/tech-scams/Email_Scam_01.png)
+
+![Email_Scam_02.png](/assets/tech-scams/Email_Scam_02.png)
+
+Other email scams may present unsolicited job or interview offers, aiming to extract your personal information with the intent to bypass account security measures or potentially blackmail you later. It’s advisable not to respond to these either.
+
+Please note that these are merely examples. Email scams are becoming increasingly elaborate, and the most effective way to avoid them is to refrain from interacting with them in the first place and promptly discard them. 
+
+For more information regarding how to recognize a scam email, as well as what kinds of scam emails there are and their examples, please refer to this wiki article here: [Email scams](/docs/safety-security/email-scams.md).
 
 ## Precautions to take - TODO
 - Never sign in using QR code to a site which you do not trust - Preferable if you never use qr code for signing in at all tbh
