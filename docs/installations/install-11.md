@@ -6,7 +6,7 @@ nav_order: 2
 has_children: false
 parent: OS Install Guides
 search_exclude: false
-last_modified_date: 2024-03-09
+last_modified_date: 2024-06-28
 redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 ---
 {: .warning .warning-icon }
@@ -126,41 +126,11 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 
 7. Windows will now install. When it finishes it will automatically restart your machine, when your screen goes black pull out your installation USB drive.
 
-8. Once the machine finishes restarting you will be facing the setup screen. Configure as you wish.
+{: .success .success-icon }
+> Congratulations!
+>
+> You have successfully installed Windows 11. Once the computer has rebooted, you will be greeted with the Out-of-the-Box Experience and you can start setting up your new installation of Windows. 
 
-     > If you need to complete installation without internet access, please refer to the following guide: <https://pureinfotech.com/bypass-internet-connection-install-windows-11/>
-    
 
-You have successfully installed Windows 11.
-
-## Bypassing network requirements
-### Bypassing the network connection step
-If you reached the screen seen below, but don't want to connect to WiFi or are unable to connect and don't have the option for "I don't have internet", follow these steps: 
-     
-[![win11-network.png](/assets/install-11/win11-network.png)](/assets/install-11/win11-network.png)
-
-1. Press Shift + F10 on your keyboard. This will bring up a Command Prompt window. 
-
-2. Type in `OOBE\BYPASSNRO` and then press Enter. 
-
-[![win11-network_bypass.png](/assets/install-11/win11-network_bypass.png)](/assets/install-11/win11-network_bypass.png)
-
-The setup process will now restart. This will either give you the option for "I don't have internet", or skip to the local account creation screen. 
-You can continue setting up Windows 11. 
-
-### Bypassing the Microsoft account requirement
-If you reached the screen seen below, but don't want to log into a Microsoft account or don't have one, follow these steps: 
-
-[![win11-msft_acc_login.png](/assets/install-11/win11-msft_acc_login.png)](/assets/install-11/win11-msft_acc_login.png)
-
-1. Type in `no@thankyou.com` and press Enter. 
-
-[![win11-msft_acc_bypass.png](/assets/install-11/win11-msft_acc_bypass.png)](/assets/install-11/win11-msft_acc_bypass.png)
-
-2. Type in any password and press Enter. 
-
-[![win11-msft_acc_login_bypass2.png](/assets/install-11/win11-msft_acc_bypass2.png)](/assets/install-11/win11-msft_acc_bypass2.png)
-
-You will get an error like seen below, but it can be ignored and you can continue setting up Windows 11. 
-
-[![win11-msft_acc_login_bypass3.png](/assets/install-11/win11-msft_acc_bypass3.png)](/assets/install-11/win11-msft_acc_bypass3.png)
+## Post-install setup guides
+If you need to setup Windows 11 without an internet connection or without a Microsoft account, follow this [article](/docs/guides/bypass-11).
