@@ -5,82 +5,76 @@ nav_exclude: false
 has_children: false
 parent: Learning
 search_exclude: false
-last_modified_date: 2024-06-18
+last_modified_date: 2024-07-01
 ---
 
 # What is a bottleneck?
 {: .no_toc}
 
-Your PC has a series of components such as CPU, GPU, RAM, storage, and networking devices. A bottleneck is when one of these components is slower than the others for a certain task and is holding back the maximum performance of the rest of the PC.
+Every PC consists of various components such as the CPU, GPU, RAM, storage, and networking devices. A bottleneck is when one of these components is slower than the others for a certain task and is holding back the performance of other components of the PC.
 
-This is **normal** and isn't an issue *unless it is severe*. There will always be some degree of bottleneck, it's impossible for everything to be perfectly balanced, let alone at all times in all different tasks.
+This is **normal** and isn't an issue *unless it is severe*. There will always be some degree of bottleneck, as achieving perfect balance across all components for all tasks is impossible.
 
 {% include toc.md %}
 
-## Is a bottleneck something I should worry about?
+## Should I Worry About Bottlenecks?
 
 Generally **no**.
 
-There will always be some sort of bottleneck in a system but a good rule is you want the most expensive components to be able to perform at their best.
+Bottlenecks are going to happen in any system. The goal should be to ensure that the most expensive components, typically the CPU and GPU, won't be severely bottlenecked by each other or the rest of the system. 
 
-For most systems, that would be the CPU and GPU being able to keep up with each other. It could also be something like using a Solid State Drive (SSD) as your C: drive in Windows instead of a Hard Disk Drive (HDD), having enough RAM for what you're using the computer for, or getting a WiFi or ethernet card that's at least capable of going as fast as the internet service you're paying for.
+Depending on the tasks you need to perform on your PC, you may need to focus on other aspects, such as using a fast Solid State Drive (SSD) as your primary drive instead of a slower Hard Disk Drive (HDD), ensuring you have enough RAM for your needs, or obtaining a Wi-Fi or Ethernet card (network interface card) capable of matching the speed of your internet service plan.
 
-The most common bottlenecks people ask about are CPU or GPU bottlenecks for PC gaming.  A CPU and a GPU will both have a maximum number of FPS they can get in a game.
+The most common bottlenecks people ask about are CPU or GPU bottlenecks in PC gaming. Both the CPU and the GPU will have a maximum number of frames they can generate in a certain game.
 
-For the GPU this number will change a lot depending on the graphical settings and the resolution; 4K Ultra is a lot more work for the GPU than 1080p Low. A CPU does not care if you're playing at 1080p or 4K, but it can care about certain settings.
+The GPU’s performance limit depends on the *resolution* and the *graphics settings*. The CPU's performance is not affected by resolution or by most of the graphics settings.
 
-One *will always* bottleneck the other in games unless there is an *outside factor* like a frame limit (many people limit their FPS to save power or provide a smoother experience) or a game engine limit (common examples would be Apex Legends which won't go over 300 FPS or Grand Theft Auto V which will run into problems if you try to go over ~180 FPS).
+The limits of the CPU depend more on other factors such as game physics or the number characters on screen, especially ones that move like other players, NPCs or vehicles.
+
+# Should I use a bottleneck calculator?
+
+For accurate information, *you want third-party reviews and testing*. Websites that condense 'bottlenecking' into a single number are unreliable.
+
+They estimate results and their goal is to display ads and offer affiliate links to upgrades to make themselves money. Good resources will provide data for a specific game at a specific resolution and settings, bad websites will just try to condense it all into 'graphically intensive tasks'.
 
 ## What is a GPU bottleneck in gaming?
 
-A GPU bottleneck is when your GPU is *running at or near 100%*. GPUs are designed to be able to run at or near 100% utilization *without issues* and having a GPU bottleneck is how many people who prefer visually demanding single player games at high resolutions and high settings decide to set up their PC.
+A GPU bottleneck is when the GPU is *running at or near 100%*. This isn't always a problem, as GPUs are designed to handle high utilization without any issues.
 
-Many of these people want the best GPU they can afford and the cheapest CPU that is able to keep up with it in the games they like. You could have the best GPU in the world and if it can only do 80 FPS in 4K Ultra but your cheap CPU can do 120 FPS in Ultra settings, *you'll still have a GPU bottleneck in 4K Ultra*.
+Many gamers prefer a GPU bottleneck or setting an FPS (Frames Per Second) cap since the GPU will be delivering as many FPS as it can, or as many FPS as are wanted, while limiting stutters and screen tearing. Gamers who prefer high resolution and high graphics settings, typically in single-player games, often choose the best GPU they can afford, paired with a CPU that is good enough to let their GPU run at 100%.
 
-If you were playing in 1080p Ultra on that same PC it would now be a situation where you're getting that 120 FPS but only using less than half the power of your GPU. It's the same PC but a different bottleneck *depending on how you use it*.
+For example, if a top-tier GPU can achieve 80 FPS in 4K Ultra settings in a game, but a midrange CPU can handle 120 FPS in Ultra settings in that game, *the GPU will be the bottleneck*. If the resolution were lowered to 1080p and the GPU could do 250 FPS, but the CPU could only do 120 FPS, *the CPU would now be the bottleneck*.
 
 ## What is a CPU bottleneck in gaming?
 
-A CPU bottleneck is when the CPU is not fast enough to keep up with how many frames per second (FPS) the GPU is capable of outputting, so the GPU utilization will be well below 100%.
+A CPU bottleneck is when the CPU is not fast enough to keep up with how many FPS the GPU is capable of outputting, so the GPU utilization will be well below 100%.
 
-*This isn't always a bad thing*.
+In some scenarios, *a CPU bottleneck is inevitable*, particularly in competitive multiplayer or simulation games. In these cases, gamers often opt for the best CPU they can afford, paired with a GPU that can still achieve sufficient FPS for the desired tasks. This approach helps ensure smooth gameplay and a competitive edge through higher frame rates.
 
-Many people who play competitive multiplayer games or simulation games design their systems to have a CPU bottleneck. They want as many FPS as possible for a slight competitive advantage in response time and input latency for competitive, reaction-time based games (like Fortnite, Call of Duty or Rocket League) or fast turn times and smooth panning/zooming in simulation games (like Factorio or Cities Skylines) and want the best CPU they can get paired with a GPU that's good enough to keep up at lower graphical settings and/or resolution.
+They aim for as many FPS as possible to gain a slight competitive advantage in response time and input latency for reaction-time-based games like Fortnite, Call of Duty, or Rocket League, or for fast turn times and smooth panning/zooming in simulation games like Factorio or Cities Skylines. While the best CPU can handle demanding tasks, pairing it with a lower-end GPU can still result in a CPU bottleneck, depending on the specific use case.
 
-You can have the best CPU on the market and still have a CPU bottleneck using a fairly cheap GPU depending on what you're doing with the PC.
+## How do I know if I have a CPU or GPU bottleneck, and what can I do about it?
 
-## How do I know if I have a CPU or GPU bottleneck and what can I do about it?
+To identify a bottleneck, use performance monitoring software. AMD, Nvidia, and Intel offer tools like [AMD Adrenalin](https://www.amd.com/en/products/software/adrenalin.html), [Nvidia Geforce Experience](https://www.nvidia.com/en-us/geforce/geforce-experience/), and [Intel Arc Control Center](https://www.intel.com/content/www/us/en/products/docs/discrete-gpus/arc/software/arc-control.html), respectively.
 
-Seeing if you have a GPU bottleneck or CPU bottleneck is relatively easy with *performance monitoring software*.
+To check for a GPU bottleneck, play a game with the monitoring software overlay on the screen and watch your GPU utilization percentage. If it stays *near 100%* in various scenes, the GPU is the bottleneck. To increase FPS, *lower the graphical settings*, making it easier for your GPU to render each frame. Different settings can have varying impacts on performance and visual quality.
 
-AMD, Nvidia and Intel all have first party monitoring software you can use with their products; [AMD Adrenalin](https://www.amd.com/en/products/software/adrenalin.html), [Nvidia Geforce Experience](https://www.nvidia.com/en-us/geforce/geforce-experience/), and [Intel Arc Control Center](https://www.intel.com/content/www/us/en/products/docs/discrete-gpus/arc/software/arc-control.html); you should pick the one that matches your GPU.
+To check for a CPU bottleneck, observe your GPU utilization during gameplay. If it's *significantly below 100%*, the CPU might be the bottleneck. You can try increasing graphical settings to improve visual quality without overloading the CPU, as most settings add more work for the GPU. However, settings like *ray-tracing and draw distance* typically increase CPU workload. *Experiment* to find the best balance that looks and feels right to you.
 
-To see if you have a GPU bottleneck you play a game with the monitoring software overlay on the screen and watch your GPU utilization percentage. If the GPU is staying at or near 100% utilization in various scenes, then you have a GPU bottleneck in that game. If you want higher FPS you can turn down the graphical settings, making it easier for your GPU to draw each frame and your FPS should go up. Different settings can have a more noticeable impact on performance or on visual quality than others.
-
-To see if you have a CPU bottleneck you'd do the same process and look at your GPU utilization percentage, the farther away from 100% it's staying, the more headroom your current GPU has. You can try turning up some graphical settings to improve visual quality. With most settings, this will add more work for the GPU while adding little to no extra work for the CPU. Ray-tracing and Draw Distance are two settings that typically do increase the amount of work the CPU has to do. It's best to experiment a bit and find what looks and feels the best to you.
-
-If you have a severe bottleneck and want more performance out of your PC but adjusting the balance of the settings isn't improving things enough for you then it would be time to consider hardware upgrades.
+If severe bottlenecks persist and adjusting settings doesn't help, consider hardware upgrades.
 
 ## Why am I not looking at CPU utilization?
 
 Most games are *not designed to utilize 100% of a CPU*, especially with newer CPUs having higher core and thread counts. Many games care more about each core's performance than they do about how many cores you have.
 
-For example: a 6-core AMD 5600X or an 8-core AMD 5800X will perform about as well in most games as a 16-core AMD 5950X. The 5600X might show fairly high utilization while the 5950X shows very low utilization because a specific game was only designed to really utilize 4 cores, or even only 1 core.
+For example: a 6-core AMD 5600X or an 8-core AMD 5800X performs similarly in most games to a 16-core AMD 5950X. The 5600X might show high utilization while the 5950X shows low utilization because the game only uses a few cores.
+
+Since the CPU is responsible for the entire system and not just rendering frames, having nearly 100% utilization typically causes *major performance issues* like stutters, lag, or frame drops.
 
 ## What about RAM?
 
-For the most part RAM is *tied* into CPU performance.
+RAM performance, particularly its *capacity*, can significantly affect CPU performance if it's insufficient.
 
-There are three aspects to ram performance: capacity (how many GB of ram you have), bandwidth (what frequency your ram is running at and whether it's in dual channel or not), and latency (what timings your RAM is running at, notably different from frequency).
+If you don't have enough RAM, the CPU will need to access data from the slower storage drive, causing substantial delays. While capacity is the primary concern, bandwidth (frequency and dual-channel configuration) and latency (timings) are secondary factors that can also influence performance to a lesser extent.
 
-The main one that can hold you back is *capacity*. If your computer runs out of free RAM space, your CPU will have to ask for information from the storage drive directly which takes significantly longer than having things stored in RAM and ready for the CPU to see. The best thing to do would be to upgrade or [add more RAM](/docs/guides/how-to-know-if-you-need-more-ram).
-
-## What about bottleneck calculators?
-
-Websites that try to take everything you just read and condense it into *one number* are ***misleading***.
-
-If they do have a setting for a specific CPU with a specific GPU in a specific game at a specific resolution with specific graphical settings, they likely made that number up.
-
-In the best case scenario they compared some real numbers to come up with an estimate. They definitely did not test everything they claimed to provide. These sites usually just want to show you some ads and/or get you to buy something using their affiliate link so they can get a cut of the profits.
-
-There are places that do honest third party reviews and testing and post their results, bottleneck calculator websites are not one of those places.
+Upgrading or [adding more RAM](/docs/guides/how-to-know-if-you-need-more-ram) can alleviate these issues and improve overall system performance.
