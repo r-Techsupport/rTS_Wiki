@@ -6,7 +6,7 @@ nav_order: 3
 has_children: false
 parent: Software We Recommend
 search_exclude: false
-last_modified_date: 2022-06-15
+last_modified_date: 2024-06-28
 redirect_from: /books/software-we-recommend/page/anti-virus-and-malware-tools
 ---
 
@@ -39,3 +39,5 @@ All free alternatives are considered PUPs. They will sell you as their product a
 ## Paid AV Suites
 
 We do not recommend any paid AV suite for consumers, they do not provide significant advantages over Windows Defender and only increase overhead.
+
+If you have a paid AV installed but wish to remove it please refer to our [list of AV removers](/docs/factoids/av-remover).
