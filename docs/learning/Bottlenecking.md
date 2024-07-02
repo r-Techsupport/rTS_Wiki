@@ -31,7 +31,7 @@ The GPU’s performance limit depends on the *resolution* and the *graphics sett
 
 The limits of the CPU depend more on other factors such as game physics or the number characters on screen, especially ones that move like other players, NPCs or vehicles.
 
-# Should I use a bottleneck calculator?
+## Should I use a bottleneck calculator?
 
 For accurate information, *you want third-party reviews and testing*. Websites that condense 'bottlenecking' into a single number are unreliable.
 
