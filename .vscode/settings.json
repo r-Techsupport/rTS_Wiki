@@ -1,0 +1,9 @@
+{
+    "languageToolLinter.languageTool.ignoredWordsInWorkspace": [
+        "bottlenecked",
+        "bottlenecking",
+        "factorio",
+        "geforce",
+        "toc"
+    ]
+}
