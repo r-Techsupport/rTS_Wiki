@@ -1,0 +1,3 @@
+Specify is a small tool made by us that gets a bunch of info about your hardware, software, and OS, and allows convenient ways to save and share it. You can download it [here](https://github.com/Spec-ify/specify/releases/latest/download/Specify.exe).
+
+Run Specify.exe and follow the prompts, once it is done, it will automatically open a link and copy it to your clipboard. Click "Close Program" at the end to exit. This link will only live for 24 hours.

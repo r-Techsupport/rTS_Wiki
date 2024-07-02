@@ -10,7 +10,7 @@ last_modified_date: 2024-02-15
 This article relies on the live media [created here](/docs/live-sessions/linux-live-session).
 
 ## Overview
-The mtr tool combines the functionality of the traceroute and ping programs in a single network diagnostic tool, it is [Pingplotter](/docs/networking/pingplotter.md) for Linux.
+The mtr tool combines the functionality of the traceroute and ping programs in a single network diagnostic tool, it is [Pingplotter](/docs/networking/pingplotter) for Linux.
 
 ## Using MTR to troubleshoot
 1. Open "terminal emulator" from the application menu
