@@ -126,12 +126,11 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 
 7. Windows will now install. When it finishes it will automatically restart your machine, when your screen goes black pull out your installation USB drive.
 
-8. Once the machine finishes restarting you will be facing the setup screen. Configure as you wish.
+{: .success .success-icon }
+> Congratulations!
+>
+> You have successfully installed Windows 11. Once the computer has rebooted, you will be greeted with the Out-of-the-Box Experience and you can start setting up your new installation of Windows. 
 
-     > If you need to complete installation without internet access, please refer to the following guide: <https://pureinfotech.com/bypass-internet-connection-install-windows-11/>
-    
-
-You have successfully installed Windows 11.
 
 ## Post-install setup guides
-If you need to setup Windows 11 without an internet connection or without a Microsoft account, follow this [article](/docs/guides/bypass-11.md).
+If you need to setup Windows 11 without an internet connection or without a Microsoft account, follow this [article](/docs/guides/bypass-11).

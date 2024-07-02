@@ -121,6 +121,7 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-10
 
 7. Windows will now install. When it finishes it will automatically restart your machine, when your screen goes black pull out your installation USB drive.
 
-8. Once the machine finishes restarting you will be facing the setup screen. Configure as you wish.
-
-You have successfully installed Windows 10.
+{: .success .success-icon }
+> Congratulations!
+>
+> You have successfully installed Windows 10. Once the computer has rebooted, you will be greeted with the Out-of-the-Box Experience and you can start setting up your new installation of Windows. 
