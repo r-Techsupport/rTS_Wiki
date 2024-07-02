@@ -5,7 +5,7 @@ nav_exclude: false
 has_children: false
 parent: Disks
 search_exclude: false
-last_modified_date: 2022-06-29
+last_modified_date: 2024-06-28
 ---
 
 # Manipulating partitions and disks with Gparted
@@ -52,15 +52,11 @@ Typical file system types and uses are:
 HFS/+|MacOS native with read on other OS via third party tools|MacOS OS and data partitions
 
 ## Working with existing disks
-**Manipulating partitions is dangerous and can result in a loss of data. It is recommended you have your data/disks images backed up prior to executing the following procedures.**
 
-### How partitions can move
-When working with partitions it is important to understand how you can move them. 
-
-1. You can only enlarge a partition to the right
-2. You can only shrink a partition to the left
-3. Partitions can move left or right
-4. Partitions cannot move around each other
+{: .warning .warning-icon }
+> Manipulating partitions is dangerous and can result in a loss of data. It is recommended you have your data/disks images backed up prior to executing the following procedures.
+> 
+> Please be familiar with [how partitions can move](/docs/factoids/how-parts-move)
 
 ### Enlarge/Move/Shrink partitions
 To change the size of a partition right click it and choose 'resize/move'. You can manipulate the size the same way as when making a new partition.
