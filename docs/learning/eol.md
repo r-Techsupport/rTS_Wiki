@@ -77,7 +77,7 @@ How to stay secure on any system
 ## Other security tips
 No matter what option you choose, there are plenty of ways to stay secure online.
 
-* Blocking ads helps a ton due to malvertizing. The browser extension uBlock Origin (Chrome, Firefox, Opera) does a great job at blocking ads. Additionally, it's a great idea to get a hosts-file adblocker or a Pi-hole to block ads before they even get to your system in the first place.
+* Blocking ads helps a ton due to malvertizing. The browser extension [uBlock Origin](https://ublockorigin.com/) (Chrome, Firefox, Opera) does a great job at blocking ads. Additionally, it's a great idea to get a hosts-file adblocker or a Pi-hole to block ads before they even get to your system in the first place.
 
 <!--
 * The browser extension HTTPS Everywhere (Chrome, Firefox, Opera) will automatically redirect you to the secure version of a website, if there is one. Firefox offers a native tool that does the same, you can check out the guide on how to enable it [here](https://blog.mozilla.org/security/2020/11/17/firefox-83-introduces-https-only-mode/). This is a simple and easy way to improve your security while browsing the web. 
