@@ -38,6 +38,7 @@ Windows used to perform two annual updates before 2022, named accordingly `2xHx`
 |Win11|~~21H2~~|2023-10-10|
 |Win11|22H2|2024-10-08|
 |Win11|23H2|2025-11-11|
+
 \* Excluding Home edition
 
 For versions not listed here, check out the lifecycle information from Microsoft: [Windows 8.1](https://docs.microsoft.com/en-us/lifecycle/products/windows-81), [Windows 10](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro), [Windows 11](https://docs.microsoft.com/en-us/lifecycle/products/windows-11-home-and-pro-version-21h2)
