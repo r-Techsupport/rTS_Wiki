@@ -96,12 +96,11 @@ $btn-colors: (
 }
 
 $callout-icons: (
-  /* fa-circle-exclamation */ "caution": "\f06a",
-  /* fa-warning */ "warning": "\f071",
   /* fa-circle-xmark */ "danger": "\f057",
+  /* fa-warning */ "warning": "\f071",
+  /* fa-circle-exclamation */ "caution": "\f06a",
   /* fa-circle-info */ "info": "\f05a",
-  /* fa-square-pen */ "note": "\f14b",
-  /* fa-square-check */ "success": "\f14a"
+  /* a-check-circle */ "success": "\f058"
 );
 
 @each $name, $val in $callout-icons {
