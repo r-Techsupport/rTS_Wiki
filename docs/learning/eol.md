@@ -5,7 +5,7 @@ nav_exclude: false
 has_children: false
 parent: Learning
 search_exclude: false
-last_modified_date: 2022-10-30
+last_modified_date: 2024-07-09
 redirect_from: /books/how-to-and-guides/page/eol-software
 ---
 
