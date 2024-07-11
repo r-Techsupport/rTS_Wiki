@@ -5,7 +5,7 @@ nav_exclude: false
 has_children: false
 parent: General Guides
 search_exclude: false
-last_modified_date: 2023-09-10
+last_modified_date: 2024-07-11
 ---
 
 # How To Troubleshoot a PC That Doesnt Output an Image
@@ -50,6 +50,7 @@ If you have a debug code that points to a specific part of your computer, reseat
 ## Step 3: Removing Non-Essential Components
 
 Parts like drives, and other extras like front panel, and other PCIE cards.
+
 {: .info .info-icon }
 > A computer does not need a drive to boot. You should be able to reach the BIOS screen, or get a message saying something similar to: "No Boot Disk Detected".
 
