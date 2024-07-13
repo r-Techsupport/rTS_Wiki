@@ -50,7 +50,7 @@ If you have a debug code that points to a specific part of your computer, reseat
 ## Step 3: Removing Non-Essential Components
 
 Parts like drives, and other extras like front panel, and other PCIE cards.
-
+{: .info .info-icon }
 > A computer does not need a drive to boot. You should be able to reach the BIOS screen, or get a message saying something similar to: "No Boot Disk Detected".
 
 If removing a non-essential component causes the computer to boot, that means one of the parts you disconnected has caused the computer to stop booting. We have seen failing drives preventing boot alot of times. It is a common HARDWARE ISSUE. Even a secondary drive (not the OS drive) can cause that.

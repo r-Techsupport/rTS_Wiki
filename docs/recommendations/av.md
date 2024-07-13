@@ -6,13 +6,13 @@ nav_order: 3
 has_children: false
 parent: Software We Recommend
 search_exclude: false
-last_modified_date: 2024-06-28
+last_modified_date: 2024-07-11
 redirect_from: /books/software-we-recommend/page/anti-virus-and-malware-tools
 ---
 
 # Antivirus and Malware tools
-
-**For information about how to clean malware from your computer, or prevent it in the future, see [this](https://rtech.support/books/safety-and-security/page/malware-guide) malware guide**
+{: .info .info-icon }
+> **For information about how to clean malware from your computer, or prevent it in the future, see [this](https://rtech.support/books/safety-and-security/page/malware-guide) malware guide**
 
 ## Definitions
 
