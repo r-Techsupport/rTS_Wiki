@@ -51,7 +51,7 @@ As an end user, there are several strategies you can employ to prevent passive s
 
 ## Examples of prime targets for Session Hijacking and precautions to take:
 
-Session hijacking can potentially affect users across a wide range of commonly used services and applications. One of the best protections for session hijacking is the use of [Multi-Factor Authentication (MFA)](/docs/safety-security/mfa.md). Here are some additional examples and precautions you can take:
+Session hijacking can potentially affect users across a wide range of commonly used services and applications. One of the best protections for session hijacking is the use of [Multi-Factor Authentication (MFA)](/docs/safety-security/mfa). Here are some additional examples and precautions you can take:
 
 - **Social Media Platforms (Facebook, Twitter, Instagram, etc.)**: These platforms are prime targets for session hijacking due to the wealth of personal information available. Always log out of your sessions when finished, especially on shared devices, and consider using two-factor authentication.
 - **Email Services (Gmail, Outlook, Yahoo, etc.)**: Email accounts are often linked to many other services, making them a valuable target. Use strong, unique passwords and enable two-factor authentication.
@@ -70,4 +70,57 @@ If you suspect you are a victim of session hijacking, here are the following ste
 
 2. **Terminate all sessions from the service:** Many services offer you to terminate sessions from any device. If you suspect one of your devices have had their session token/cookie stolen, then utilize another device and terminate the session from there. Details on how to terminate sessions from popular services can be found below.
 
-3. **Resetting passwords, and utilizing password managers and MFA:** Last but not least. Resetting passwords may not do much during a session hijack, but it will guarantee prevention of future issues. Some services also terminate sessions immediately as well in the event of a session hijack (Steam and Discord do this), so you may not need to terminate sessions actively. Utilizing password managers to use random passwords for all accounts is also highly recommended, as it will prevent attackers from using the same password elsewhere for another account. More information on password managers can be found in our [Password Managers wiki article](/docs/safety-security/pw-managers.md). Multi-Factor authentication is an added security layer on top of that, allowing you to see potential false logins and prevent other people from accessing your account. More information on MFA can be found in our [Multi-Factor Authentication wiki article](/docs/safety-security/mfa.md).
+3. **Resetting passwords, and utilizing password managers and MFA:** Last but not least. Resetting passwords may not do much during a session hijack, but it will guarantee prevention of future issues. Some services also terminate sessions immediately as well in the event of a session hijack (Steam and Discord do this), so you may not need to terminate sessions actively. 
+
+    Utilizing password managers to use random passwords for all accounts is also highly recommended, as it will prevent attackers from using the same password elsewhere for another account. More information on password managers can be found in our [Password Managers wiki article](/docs/safety-security/pw-managers). 
+
+    Multi-Factor authentication is an added security layer on top of that, allowing you to see potential false logins and prevent other people from accessing your account. More information on MFA can be found in our [Multi-Factor Authentication wiki article](/docs/safety-security/mfa).
+
+## Terminating sessions from services
+These are the following steps to follow if you wish to terminate all sessions from the following services.
+
+{: .info .info-icon }
+> As mentioned in the [Tech Scams](/docs/safety-security/tech-scams) page, no real support agent will utilize a third party tool to contact you, such as Discord. They will always utilize a proper ticket method within the service itself, or via emails. This is true for all the following cases.
+
+{: .info .info-icon }
+> Another important point is to change all passwords related to said accounts so the attacker cannot log back in, and also utilizing a [password manager](/docs/safety-security/pw-managers) to ensure you use different passwords on different accounts. Using the same password for multiple accounts is bad practice and can lead the attackers to access other accounts on other services.
+
+### Discord
+To terminate all sessions from Discord, a [password reset/password change](https://support.discord.com/hc/en-us/articles/218410947-I-forgot-my-Password-Where-can-I-set-a-new-one#h_01HGXDF93Y5XVH4NWKAAJSV7SS) will automatically terminate all sessions from all logged in devices.
+
+For more information, refer to the official Discord article here: [Sign Out of all Devices - Discord Support](https://support.discord.com/hc/en-us/community/posts/360056305071-Sign-Out-of-all-Devices)
+
+Once that is done, you can take it one step further and remove all other devices you do not recognize from the discord account by heading to: `User settings` -> `Devices` and select the `Log Out All Known Devices` button.
+
+![Log_Out_All_devices_Discord.gif](/assets/tech-scams/Log_Out_All_devices_Discord.gif)
+
+Should you be in a situation where you could not recover your account still, then the only option left will be to contact [Discord support](https://support.discord.com/hc/en-us/requests/new) and create a ticket there. 
+
+{: .info .info-icon }
+> Do note that Discord however may be lacking in support, so you may be better off creating a new account and securing other accounts that were initially linked to your Discord account. **Do ensure to contact your bank regarding Discord Nitro and terminate all payments towards Nitro and Nitro gifts if the account was compromised.**
+
+### Steam
+To terminate all sessions from Steam, a [password reset/password change](https://help.steampowered.com/en/faqs/view/5107-700D-89B4-A4CD) will automatically terminate all sessions from all logged in devices.
+
+If it was hijacked fully and there are no viable means of recovering your account (See: [Account recovery self help page](https://help.steampowered.com/en/wizard/HelpWithLogin) of Steam), you may need to contact [Steam Support directly](https://help.steampowered.com/en/wizard/HelpWithAccount) and create a ticket there to validate yourself.
+
+### Epic Games
+To terminate all sessions from Epic Games, you will need to go to `Account Settings` -> `Password and Security`. Scroll down the page and look for the `Sign out everywhere` button, then select `Sign out other sessions`. Await the confirmation email for the code, input the confirmation code, and refresh your page.
+
+![Log_Out_All_devices_Epic_Games.gif](/assets/tech-scams/Log_Out_All_devices_Epic_Games.gif)
+
+For more information, refer to the official Epic Games article here: [Logging out of all devices - Account Security - Epic Games](https://www.epicgames.com/help/en-US/c-Category_EpicAccount/c-AccountSecurity/how-do-i-logout-of-all-devices-and-all-logged-in-sessions-for-my-epic-games-account-a000085872).
+
+If it was hijacked fully and there are no viable means of recovering your account, (See: [Account recovery self help page](https://www.epicgames.com/help/en-US/c-Category_EpicAccount/c-AccountSecurity/my-epic-account-was-compromised-and-i-cannot-access-it-a000085846) of Epic Games), you may need to contact [Epic Games directly](https://www.epicgames.com/help/en-US/c-Category_TechnicalSupport/c-TechnicalSupport_GeneralSupport/how-do-i-submit-an-epic-games-support-request-if-i-can-t-log-in-to-my-account-a000088916) via the link and follow their instructions which will work even if you cannot log into any account.
+
+### Google
+Refer to [this guide](https://support.google.com/accounts/answer/3067630?hl=en) on Google's official page to secure your account, recovery procedures as well as termination of sessions on your account.
+
+### Microsoft/Xbox
+While changing the passwords can help secure your account, if the perpetrators are still logged in, you may have to remove the devices via your Microsoft account. Do note that changing your password is still highly recommended here as well to prevent further log ins.
+
+You can do this by heading to the [Microsoft Account Devices](https://account.microsoft.com/devices) page, logging in, and removing any device you do not recognize from that page.
+
+![Log_Out_All_devices_MSXBOX.jpg](/assets/tech-scams/Log_Out_All_devices_MSXBOX.jpg)
+
+If you need further support, you can contact Microsoft Support directly regarding account issues. You can reach their support page [via this link](https://support.microsoft.com/en-us/contactus/).

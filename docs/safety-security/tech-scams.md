@@ -117,7 +117,7 @@ Other email scams may present unsolicited job or interview offers, aiming to ext
 
 Please note that these are merely examples. Email scams are becoming increasingly elaborate, and the most effective way to avoid them is to refrain from interacting with them in the first place and promptly discard them. 
 
-For more information regarding how to recognize a scam email, as well as what kinds of scam emails there are and their examples, please refer to this wiki article here: [Email scams](/docs/safety-security/email-scams.md).
+For more information regarding how to recognize a scam email, as well as what kinds of scam emails there are and their examples, please refer to this wiki article here: [Email scams](/docs/safety-security/email-scams).
 
 ## Precautions to take
 
@@ -136,7 +136,7 @@ Keeping your operating system and web browser updated is a key aspect of maintai
 When signing into sites, it’s important to pay close attention to the details of the sign-in link. Make sure that the link directs you to the official login page of the respective site. Be wary of using QR codes for signing in, as they can easily obscure important details such as the sign-in destination. Despite their convenience, the use of QR codes can increase the risk of overlooking suspicious elements, potentially leading to security breaches.
 
 ### Implementing Multi-Factor Authentication (MFA) and utilizing password managers
-Multi-Factor Authentication (MFA) is a highly recommended security measure that adds an extra layer of protection to your online accounts. By requiring verification from another device during sign-in, MFA significantly increases the difficulty for unauthorized users to gain access to your accounts. More details of MFA can be found in our [Multi-Factor Authentication wiki article](/docs/safety-security/mfa.md). Popular apps of MFA include, but are not limited to:
+Multi-Factor Authentication (MFA) is a highly recommended security measure that adds an extra layer of protection to your online accounts. By requiring verification from another device during sign-in, MFA significantly increases the difficulty for unauthorized users to gain access to your accounts. More details of MFA can be found in our [Multi-Factor Authentication wiki article](/docs/safety-security/mfa). Popular apps of MFA include, but are not limited to:
 - [Steamguard](https://help.steampowered.com/en/faqs/view/06B0-26E6-2CF8-254C) (For Steam only)
 - [Discord MFA](https://support.discord.com/hc/en-us/articles/219576828-Setting-up-Multi-Factor-Authentication) (For Discord only)
 - [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en&co=GENIE.Platform%3DiOS) (General MFA application)
@@ -144,7 +144,7 @@ Multi-Factor Authentication (MFA) is a highly recommended security measure that 
 
 However, it's important to note that the use of QR codes for sign-in can potentially undermine the effectiveness of MFA. The convenience of QR codes can lead to oversights, potentially allowing malicious actors to bypass the additional security provided by MFA. 
 
-In addition to MFA, the use of password managers, such as Bitwarden, can further enhance your online security. Password managers help you create, store, and manage strong, unique passwords for all your accounts, reducing the risk of password-related breaches. By combining the use of MFA and a reliable password manager, you can significantly bolster the security of your online accounts. To learn more about password managers, please refer to our [Password Managers wiki article](/docs/safety-security/pw-managers.md).
+In addition to MFA, the use of password managers, such as Bitwarden, can further enhance your online security. Password managers help you create, store, and manage strong, unique passwords for all your accounts, reducing the risk of password-related breaches. By combining the use of MFA and a reliable password manager, you can significantly bolster the security of your online accounts. To learn more about password managers, please refer to our [Password Managers wiki article](/docs/safety-security/pw-managers).
 
 ### Utilizing different email accounts
 When interacting with websites of uncertain credibility, it’s highly recommended to use an alternative email address. This strategy not only helps to protect your primary email account but also allows you to organize your online activities more effectively. For instance, you might have a dedicated email address for work-related matters, another for gaming, a personal email for communication with friends and family, and an alternative email for potentially risky interactions (such as signing up for shady sites).
@@ -154,12 +154,21 @@ This level of separation can significantly enhance your online security and priv
 The most critical aspect to consider is your financial security. It’s imperative to exercise extreme caution when it comes to online transactions. Never use your credit or debit card for any service that you do not fully trust or recognize. If a site or service seems suspicious or too good to be true, it probably is. Always research and verify the legitimacy of a site before providing any financial information.
 
 ## What you can do to recover your accounts - TODO
-- Change password if possible
-- Contact the account support page - Link steam, discord (although useless af ngl), and epic games pages
-- Set up 2fa and mfa
-- Discuss session hijacking and how to terminate sessions from common services + nuke your system (https://security.stackexchange.com/questions/61427/my-cookies-have-been-stolen-what-to-do):
-    - Discord
-    - Steam
-    - Epic games
-    - Google
-    - Microsoft
+
+Should in case you fall for a scam and wish to recover your accounts, please follow the following steps to attempt to recover your accounts:
+
+### 1. Terminate sessions on the accounts and resetting passwords
+
+The first step is to reset password and terminate sessions from said accounts. Steps to do so, including how to terminate sessions from common services and applications can be found [here](/docs/safety-security/session-hijack#terminating-sessions-from-services).
+
+Most session hijacks can also be virulent in nature. If you suspect you have been affected by a virus where the attacker is using malware as a vector to access your accounts, you may need to reinstall Windows as a whole to completely remove said virus. More info on how to recover from a virulent attack can be found [here](/docs/safety-security/session-hijack#recommended-actions-in-the-event-of-suspected-session-hijacking).
+
+### 2. Contact the support page of said services
+
+The next step is to contact the support page and request for help to ensure you are safe. Said support contacts for popular/common applications can be found [here](/docs/safety-security/session-hijack#terminating-sessions-from-services).
+
+### 3. Set up 2FA and MFA, start using password managers
+
+Setting up 2FA or MFA is an excellent safety precaution to prevent attackers from logging in to the account. You can review setup of MFA and others [above in the "Implementing Multi-Factor Authentication (MFA) and utilizing password managers" section.](/docs/safety-security/tech-scams#implementing-multi-factor-authentication-mfa-and-utilizing-password-managers)
+
+Using [password managers](/docs/safety-security/pw-managers) is also another extra safety precaution we highly recommend to ensure you use different passwords on different accounts. Using the same password for multiple accounts is bad practice and can lead the attackers to access other accounts on other services.
