@@ -49,7 +49,7 @@ A CPU bottleneck is when the CPU is not fast enough to keep up with how many FPS
 
 In some types of games, like competitive shooters at lower settings or some simulation games, a CPU bottleneck is *much more likely* and many people design their systems the opposite way, with the best CPU they can get and a good enough GPU to keep up. 
 
-# Can I have a system with neither kind of bottleneck?
+## Can I have a system with neither kind of bottleneck?
 
 There is a third type of bottleneck, an artificial one where the FPS is capped. Neither the CPU nor the GPU will be at their limit. This can provide benefits such as a smoother experience with less stuttering or reducing power usage.
 
