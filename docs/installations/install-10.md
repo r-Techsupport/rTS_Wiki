@@ -12,6 +12,11 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-10
 {: .warning .warning-icon }
 > All files on the drive you plan to install Windows to will be **deleted** if you follow this guide - this is intended. Please ensure you have an adequate [backup policy](/docs/backups) in place before proceeding if you have files of value.
 
+# Prerequisites
+* An internet connection.
+* A working computer to run the Windows Media Creation Tool.
+* A USB flash drive that is at least 8GB or greater.
+
 # Part 1: Creating USB Installer
 
 1. Using a USB flash drive **at least 8 gigabytes in size**, create a bootable USB flash drive using the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/windows10) from Microsoft. This will also wipe any data stored on the USB flash drive.
