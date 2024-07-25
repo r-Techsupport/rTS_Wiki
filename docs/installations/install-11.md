@@ -53,8 +53,8 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 
 8. After MCT says it finished, shutdown your PC.
 
-    {: .warning .warning-icon }
-    > It is best to disconnect all storage disks except from the main (C Drive) disk from the computer before installing Windows 10. Not doing so can accidentally result in the installer choosing the wrong disk as the boot drive and putting actual windows on another drive.
+    {: .danger .danger-icon }
+    > Disconnect all storage disks except from the main (C Drive) disk from the computer before installing Windows 10. Not doing so can accidentally wipe other disks or result in the installer choosing the wrong disk as the boot drive and putting actual windows on another drive.
 
 # Part 2: Installing Windows 11
  
@@ -88,11 +88,11 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 
 6. Click on each partition of the target drive and select delete, once all the partitions are gone you will be left with unallocated space. At this point click `Next`.
 
-    {: .info .info-icon }
-    > If you see multiple disks and do not know which to install to power down and unplug the extra drives that you don't want to install windows on. 
+    {: .danger .danger-icon }
+    > If you see any drive other than "Drive 0" as seen in our images, power down and unplug the extra drives that you don't want to install windows on.
 
     {: .warning .warning-icon }
-    > ***Each means ALL*** But do you mean ALL? ***Yes, All***. Once all the partitions are gone you will be left with unallocated space. At this point click next. 
+    > ***Each means ALL*** But do you mean ALL? ***Yes, All***. Once all the partitions are gone you will be left with unallocated space.
 
     [![Windows 11-2021-10-05-15-20-37.png](/assets/install-11/windows-11-2021-10-05-15-20-37.png)](/assets/install-11/windows-11-2021-10-05-15-20-37.png)
 
