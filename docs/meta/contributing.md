@@ -142,9 +142,11 @@ The colours used for callouts are defined in [setup.scss](https://github.com/r-T
 {: .danger .danger-icon }
 > Danger block
 > 
-> Use `{: .danger .info-icon }` for danger blocks
+> Use `{: .danger .danger-icon }` for danger blocks
 > 
 > Danger boxes contain critical information that, if dismissed, will lead to operational or security issues!
+> 
+> Data deletion callouts should be Danger callouts!
 
 #### Warnings
 
