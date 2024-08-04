@@ -5,7 +5,7 @@ nav_exclude: false
 has_children: false
 parent: General Guides
 search_exclude: false
-last_modified_date: 2022-07-01
+last_modified_date: 2024-06-28
 redirect_from: /books/how-to-and-guides/page/making-a-system-dossier
 ---
 
@@ -19,10 +19,9 @@ A system dossier is a great way to provide needed information about your compute
 
 ## General System Information
 None of the tools here do everything, but oftentimes all of them don't need to be run.
-### Specs (Get-Specs)
-Specs is a small tool made by us that gets a bunch of info about your hardware, software, and OS, and allows convenient ways to save and share it. You can download it [here](https://github.com/r-Techsupport/Get-Specs/releases/latest/download/Get-Specs.zip).
 
-Once downloaded, extract the zip file and run `Specs.exe`. Follow the prompts, and it will eventually give you an option to upload the snapshot to our pastebin or to view the file on your computer. Uploading the file will last for 24 hours. Either way, the file will be saved in `TechSupport_Specs.html`.
+### Specify
+{% include embeds/specify.md %}
 
 Alternatively, you can use [Speccy](https://www.ccleaner.com/speccy/download/standard) to get similar information.
 

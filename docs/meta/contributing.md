@@ -6,7 +6,7 @@ nav_order: 8
 has_children: false
 parent: Information
 search_exclude: false 
-last_modified_date: 2023-02-09
+last_modified_date: 2024-06-28
 ---
 
 # Contributing to the Wiki
@@ -126,25 +126,63 @@ To add a custom image, place your image in `/assets/<page-name>/<image.png>`, an
 Applications you have installed, *regardless of which drive you have installed it on*, **will not carry over** the next time you clean install Windows, even if it is on a different hard drive to your Windows drive. [(source)](/docs/learning/multiple-disks)
 
 ### Callouts
-#### Warnings
+Callouts are used to "call out" specific information. We have a number of these at our disposal and their paradigms are outlined below. Please adhere to this paradigm for consistency.
 
-Warnings like:
-
-{: .warning .warning-icon }
-> It is very important that you remember to **power-off the motherboard** and switch-off and unplug the PSU after each component test. Do this before you remove or install anything. [(source)](/docs/factoids/breadboarding.md)
-
-are just blockquotes in markdown.
+The format to create a callout is below. You can add additonal "quote" `>` lines without issue. Use blank quote lines for spacing.
 
 ```
 {: .warning .warning-icon }
 > It is very important that you remember to **power-off the motherboard** and switch-off and unplug the PSU after each component test. Do this before you remove or install anything.
 ```
 
+The colours used for callouts are defined in [setup.scss](https://github.com/r-Techsupport/rTS_Wiki/blob/master/_sass/custom/setup.scss) and you must also define them in [config.yml](https://github.com/r-Techsupport/rTS_Wiki/blob/master/_config.yml). The icon names come from [Font Awesome](https://fontawesome.com/v4/icons/), but they are defined in [custom.scss](https://github.com/r-Techsupport/rTS_Wiki/blob/5550de4964949a8bacd460d9d48ee540abb05eaf/_sass/custom/custom.scss#L98).
+
+#### Danger
+
+{: .danger .danger-icon }
+> Danger block
+> 
+> Use `{: .danger .danger-icon }` for danger blocks
+> 
+> Danger boxes contain critical information that, if dismissed, will lead to operational or security issues!
+> 
+> Data deletion callouts should be Danger callouts!
+
+#### Warnings
+
+{: .warning .warning-icon }
+> Warning block
+> 
+> Use `{: .warning .warning-icon }` for warning blocks
+> 
+> Warning boxes contain information that may lead to issues and should not be quickly dismissed. 
+
+#### Caution
+
+{: .caution .caution-icon }
+> Caution block
+> 
+> Use `{: .caution .caution-icon }` for caution blocks
+> 
+> These have no documented use.
+
 #### Information
 
 {: .info .info-icon }
-> Info block<br/>
+> Info block
+> 
 > Use `{: .info .info-icon }` for info blocks
+> 
+> Info boxes contain notes or helpful hints that may be safely ignored. 
+
+#### Success
+
+{: .success .success-icon }
+> Success block
+> 
+> Use `{: .success .success-icon }` for succes blocks
+> 
+> Success boxes contain a positive result, if you do not see this result something has gone wrong.
 
 ### Hyperlinks
 

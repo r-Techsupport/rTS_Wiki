@@ -52,7 +52,7 @@ This will require a USB drive that is at least the size of the ISO you downloade
 
 ## Things to do
 * [Wipe disks](/docs/disks/disk-wipe)
-* [Data Retrieval/Recovery](/docs/disks/data-retrieval)
+* [Data Retrieval/Recovery](/docs/disks/data-recovery/data-recovery)
 * [Disk Manipulation with Gparted](/docs/disks/gparted)
 * [Verify Disk Health](/docs/disks/disk-health#smartmontools)
 * [Stressful Application Test](/docs/guides/memtest/stressapptest)

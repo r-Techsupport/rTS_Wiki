@@ -5,7 +5,7 @@ nav_exclude: false
 has_children: false
 parent: Learning
 search_exclude: false
-last_modified_date: 2022-10-30
+last_modified_date: 2024-07-09
 redirect_from: /books/how-to-and-guides/page/eol-software
 ---
 
@@ -38,6 +38,7 @@ Windows used to perform two annual updates before 2022, named accordingly `2xHx`
 |Win11|~~21H2~~|2023-10-10|
 |Win11|22H2|2024-10-08|
 |Win11|23H2|2025-11-11|
+
 \* Excluding Home edition
 
 For versions not listed here, check out the lifecycle information from Microsoft: [Windows 8.1](https://docs.microsoft.com/en-us/lifecycle/products/windows-81), [Windows 10](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro), [Windows 11](https://docs.microsoft.com/en-us/lifecycle/products/windows-11-home-and-pro-version-21h2)
@@ -45,7 +46,7 @@ For versions not listed here, check out the lifecycle information from Microsoft
 If you need help installing a newer version of Windows, check out [our guide](/windows).
 ## Switch to a Linux distro
 
-These days, Linux distros are truly a great alternative to Windows. Linux is very stable and secure, and does everything an average user wants, whether that be Facebook or writing essays. If you are a gamer, Linux has thousands of native games and many more are available via Steam's [ProtonDB](https://www.protondb.com/). Proton's support is getting expanded daily, Battleye and EAC support has been released  recently, meaning you will soon be able to play almost all of the current AAA games natively. However, you can play the majority of games on Steam on Linux with no hassle by just switching on ProtonDB.
+These days, Linux distros are truly a great alternative to Windows. Linux is very stable and secure, and does everything an average user wants, whether that be Facebook or writing essays. If you are a gamer, Linux has thousands of native games and many more are available via Steam's [ProtonDB](https://www.protondb.com/). Proton's support is getting expanded daily, Battleye and EAC support has been released  recently, meaning you will soon be able to play almost all of the current AAA games natively. However, you can play the majority of games on Steam on Linux with no hassle by just switching on the Proton compatibility layer.
 
 If you play games with heavy DRM, or play VR games, or frequently use Adobe products, Linux may not be a good option for you. But even if you do play those games or use those products, you also have the option of dual-booting, so that you can have both Windows and Linux installed at the same time. This post doesn't go too much into detail on Linux, since the below links are already great resources.
 
@@ -76,7 +77,7 @@ How to stay secure on any system
 ## Other security tips
 No matter what option you choose, there are plenty of ways to stay secure online.
 
-* Blocking ads helps a ton due to malvertizing. The browser extension uBlock Origin (Chrome, Firefox, Opera) does a great job at blocking ads. Additionally, it's a great idea to get a hosts-file adblocker or a Pi-hole to block ads before they even get to your system in the first place.
+* Blocking ads helps a ton due to malvertizing. The browser extension [uBlock Origin](https://ublockorigin.com/) (Chrome, Firefox, Opera) does a great job at blocking ads. Additionally, it's a great idea to get a hosts-file adblocker or a Pi-hole to block ads before they even get to your system in the first place.
 
 <!--
 * The browser extension HTTPS Everywhere (Chrome, Firefox, Opera) will automatically redirect you to the secure version of a website, if there is one. Firefox offers a native tool that does the same, you can check out the guide on how to enable it [here](https://blog.mozilla.org/security/2020/11/17/firefox-83-introduces-https-only-mode/). This is a simple and easy way to improve your security while browsing the web. 

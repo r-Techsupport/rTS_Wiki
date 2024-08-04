@@ -36,12 +36,12 @@ OCCT stands for Overclock Checking Tool. Its a stability testing suite as well a
 ## Using OCCT
 There are multiple type of tests to run OCCT, each dependent on what you will need to test. Here we will only describe the methods to run specific stability tests (Selected on the right hand pane of the application):
 
-![stability_test_panel.jpg](/assets/OCCT/stability_test_panel.jpg)
+![stability_test_panel.jpg](/assets/OCCT/stability_panel.jpg)
 
-### CPU stability test
+### CPU + RAM stability test
 Default values are best set here. Ensure the test is set at 1 hour, and all other configurations are set as default (Unless specified otherwise):
 - Data set: `Large`
-- Mode: `Normal`
+- Mode: `Extreme`
 - Load Type: `Variable`
 - Start at Cycle: `1`
 - Instruction Set: `Auto`
@@ -49,8 +49,16 @@ Default values are best set here. Ensure the test is set at 1 hour, and all othe
 
 ![stability_cpu.jpg](/assets/OCCT/stability_cpu.jpg)
 
+### Linpack stability test
+In case CPU stability does not reveal anything, you may run Linpack (a stress test from Intel), which also has decent error detection. Once again, default values will be good here (Unless specified otherwise):
+- Version: `2021`
+- Threads: `Physical and virtual`
+- Memory: `2048`
+
+![stability_linpack.jpg](/assets/OCCT/stability_linpack.jpg)
+
 ### Memory stability test
-{: .warning .warning-icon }
+{: .info .info-icon }
 > A better version of this is using [memtest86+](/docs/guides/memtest/memtest86). We **highly** recommend using that for proper RAM testing.
 
 Here, change Memory utilization to 90%-95% (unless specified otherwise.) Leave the other configurations as default (1 hour testing):
@@ -63,10 +71,15 @@ Here, change Memory utilization to 90%-95% (unless specified otherwise.) Leave t
 ### GPU stability testing
 There are 3 different types of tests you can run. Depending on your issue, you may be running just the `3D Standard test` as well as the `VRAM` test. Depending on your issue, you may be asked to run `3D Adaptive` as well.
 
+{: .info .info-icon }
+> It would be recommended to run the following GPU tests in the combined section as you most likely will be testing all 3 tests anyways. Simply select the `Combined` tab and select `3D Standard`, `3D Adaptive` and `VRAM` in the checkboxes. Change the details to whats mentioned below in the respective fields.
+
+![stability_gpu_combined.jpg](/assets/OCCT/stability_gpu_combined.jpg)
+
 #### 3D Standard test
 Ensure `Error Detection` is set to `enabled`, while ensuring the proper GPU is selected here (integrated iGPU vs dGPU, etc.):
 - Use All GPUs: `Disabled`
-- Graphics Card Selection - Whichever one you are using for game output (usually dGPU)
+- Graphics Card Selection: Whichever one you are using for game output (usually dGPU)
 - Error Detection: `Enabled`
 - Shader complexity: `3`
 - Usage limit: `100`
@@ -80,7 +93,7 @@ Ensure `Error Detection` is set to `enabled`, while ensuring the proper GPU is s
 If not using an iGPU (and you have a GPU with dedicated VRAM), you can set VRAM to 95%. Ensure the proper GPU is selected here:
 - Use All GPUs: `Disabled`
 - Graphics Card Selection: Whichever one you are using for game output (usually dGPU)
-- Memory: `95%` if not iGPU.
+- Memory: `100%` if not iGPU.
 
 ![stability_vram.jpg](/assets/OCCT/stability_vram.jpg)
 
@@ -88,7 +101,7 @@ If not using an iGPU (and you have a GPU with dedicated VRAM), you can set VRAM 
 {: .warning .warning-icon }
 > Useful for testing after testing the the `3D Standard test` as well as the `VRAM` test if issue is still not found. If you have not ran the previous tests, it is highly recommended you run them before running this test.
 
-There are 2 sets of tests you will need to run here: `Variable` and `Switch`. You will need to run them both to see any reasonable results.
+There are 2 sets of tests you will need to run here: `Variable` and `Switch`. You will need to run them both to see any reasonable results. If running the combined setup, set the settings to `Variable`.
 
 - **3D Adaptive test - Variable**
 
@@ -109,3 +122,13 @@ There are 2 sets of tests you will need to run here: `Variable` and `Switch`. Yo
     - Second Intensity: `80%`
 
     ![stability_gpu_alt_swi.jpg](/assets/OCCT/stability_gpu_alt_swi.jpg)
+
+### PSU/Power stability test
+{: .info .info-icon }
+> A better version of this is following our full [hwinfo stress test guide](/docs/guides/hwinfo). We **highly** recommend using that for proper power testing as it will provide better logs. Otherwise, ensure that you are running hwinfo for logging purposes.
+
+This is a quick way to test your full system to check if your PSU is good enough to handle the system it is running as it will stress test your entire system. Set the following options:
+- Use All GPUs: `Enabled`
+- Instruction Set: `Auto`
+
+![stability_psu.jpg](/assets/OCCT/stability_psu.jpg)
