@@ -43,7 +43,7 @@ This count goes up when the disk is being read with unstable sectors on the disk
 
 {: .info .info-icon }
 
-> For more info about those attributes, read [wikipedia](https://en.wikipedia.org/wiki/Self-Monitoring%2C_Analysis_and_Reporting_Technology) and [backblaze](https://www.backblaze.com/blog/what-smart-stats-indicate-hard-drive-failures/) articles.
+> For more info about those attributes, read [Wikipedia](https://en.wikipedia.org/wiki/Self-Monitoring%2C_Analysis_and_Reporting_Technology) and [Backblaze](https://www.backblaze.com/blog/what-smart-stats-indicate-hard-drive-failures/) articles.
 
 ## Crystal Disk Info
 

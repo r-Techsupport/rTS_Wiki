@@ -21,7 +21,7 @@ This Linux installation guide may seem long, but it’s not very difficult. It c
 
 You should **ALWAYS** [backup](/docs/backups) your important files before installing a new operating system, regardless of the OS. In the rare case that the installer messes up, you will lose your data if you don’t back it up.
 
-Figuring out if your system supports GPT/UEFI, as Legacy/BIOS/MBR systems can't boot from GPT/UEFI installation media. The best way to check is on your motherboard's specifications. An alternative solution (albeit not as effective) for Windows, is to check what your **current** partition table is by running `$env:firmware_type` in powershell. 
+Figuring out if your system supports GPT/UEFI, as Legacy/BIOS/MBR systems can't boot from GPT/UEFI installation media. The best way to check is on your motherboard's specifications. An alternative solution (albeit not as effective) for Windows, is to check what your **current** partition table is by running `$env:firmware_type` in PowerShell. 
 
 If your current OS is installed with MBR, your motherboard may still support GPT, with Windows just not being installed properly. GPT is typically preferred, so you should check your motherboard's specifications if possible.
 
@@ -66,14 +66,14 @@ Open the installer, select your language, and then check both of the two boxes. 
 
 The rest of the installation should be mostly self-explanatory. You have to enter the username and password that you want, choose your computer’s name, set your timezone, etc.
 
-Once the installation has finished, it will ask you to reboot. After you restart, you will need to unplug the installation usb.
+Once the installation has finished, it will ask you to reboot. After you restart, you will need to unplug the installation USB.
 
 ## Step 4: Post-Installation Configuration
 
 1. Open the “Additional Drivers” menu, if it exists on your chosen distro.
     * In most cases, you’ll see your GPU and “Unknown: Unknown”.
     * Select the latest drivers for each and then click “Apply Changes”. You will have to enter your password.
-    * If you do not seem to have this menu, you can type `sudo apt install nvidia-384` to install the latest Nvidia graphics card drivers if you have an Nvidia card. You can use apt search nvidia-3 to get a list of available Nvidia graphics drivers.
+    * If you do not seem to have this menu, you can type `sudo apt install nvidia-384` to install the latest NVIDIA graphics card drivers if you have an NVIDIA card. You can use apt search nvidia-3 to get a list of available NVIDIA graphics drivers.
     * If your card is very old, you may wish to get nvidia-490 or nvidia-460 instead.
 2. Perform all updates.
     * Open the “Software Updater” menu, if it exists on your chosen distro, and update your system.
@@ -91,4 +91,4 @@ Most common software is compatible with Linux. If you need to use software that 
 * Find an alternative application
 * Run a VM with the needed OS
 * Dual-boot
-* Use a compatibilty layer program such as Wine
+* Use a compatibility layer program such as Wine

@@ -20,7 +20,7 @@ Cleaning your computer hardware is essential to maintain your computer's longevi
 
 Regular computer hardware cleaning can prevent these issues and keep your computer running smoothly. It can also improve the performance of your computer, as dust and debris can slow down the processing speed of your components. Overall, taking the time to clean your computer hardware can save you money in the long run by preventing damage and prolonging the life of your computer.
 
-## Do's and Don't's
+## Do's and Don'ts
 
 Your computer is a delicate machine that requires careful handling. Using the wrong cleaning agents or tools can damage its components.
 

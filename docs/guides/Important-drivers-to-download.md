@@ -37,7 +37,7 @@ For laptops and prebuilts, the same logic also applies. If from an OEM like HP a
 
 If you are unaware of what your laptop/prebuilt model is, you can easily find it the following ways (Note the following only applies to OEM devices):
     - Search up `System Information` in the Windows search bar, or `sysinfo`, select the first option. The laptop information will be displayed there in the `System Model name` field. If not displayed, refer to the next question.
-    - Search up `dxdiag` in the search bar, run it (its alternate name is directX diagnostics tool), the first page will tell you the model of your laptop/prebuilt in the `System model` secion.
+    - Search up `dxdiag` in the search bar, run it (its alternate name is DirectX diagnostics tool), the first page will tell you the model of your laptop/prebuilt in the `System model` section.
 
 ### System Integrators / Unknown motherboard:
 If you have a non-OEM prebuilt, particularly system integrators such as Origin PC, Build Redux, chances are they are utilizing standard commercial components in which case the motherboard model will yield results instead.
@@ -53,12 +53,12 @@ The following is a list of drivers you would need to install and where to find t
 
 | Driver | Definition | Where to find them |
 | ------ | ---------- | ------------------ |
-| Wifi drivers | Sometimes referred to as wireless/network/LAN drivers, they enable you to have wifi on your PC. Keep in mind not all motherboards are wifi supported, so ensure the motherboard you have is the wifi variant. If using a WiFi dongle, then windows update will take care of them, or you will have to manually install the drivers. | If motherboard is wifi variant, then from motherboard drivers page. Otherwise, if dongle, then from the dongle product support page (may be included with windows updates). |
-| Bluetooth drivers | May be included with the network drivers/wireless/LAN drivers, these allow you to connect your devices via bluetooth, such as wireless headsets, controllers, etc. Same logic also applies with dongle.| If motherboard is wifi variant, then from motherboard drivers page. Otherwise, if dongle, then from the dongle product support page (may be included with windows updates). |
+| Wi-Fi drivers | Sometimes referred to as wireless/network/LAN drivers, they enable you to have WiFi on your PC. Keep in mind not all motherboards are WiFi supported, so ensure the motherboard you have is the WiFi variant. If using a WiFi dongle, then windows update will take care of them, or you will have to manually install the drivers. | If motherboard is Wi-Fi variant, then from motherboard drivers page. Otherwise, if dongle, then from the dongle product support page (may be included with windows updates). |
+| Bluetooth drivers | May be included with the network drivers/wireless/LAN drivers, these allow you to connect your devices via Bluetooth, such as wireless headsets, controllers, etc. Same logic also applies with dongle.| If motherboard is Wi-Fi variant, then from motherboard drivers page. Otherwise, if dongle, then from the dongle product support page (may be included with windows updates). |
 | Chipset drivers | Drivers for chipset to allow features of CPU to integrate well with the OS and motherboard. | Motherboard drivers page. |
 | Audio drivers | Allows for function of the 3.5mm audio jacks included with the motherboard (front panel extension and back). | Motherboard drivers page |
 | USB drivers | Usually included in Windows updates, but in case you are using an older motherboard, you many need to install USB drivers if you find some of the front/back USB ports not working. | Motherboard driver page |
-| Graphics drivers | Dependant on GPU, if GPU drivers are available on motherboard page **do not download them**! GPU drivers on the motherboard page typically are outdated and we highly recommend you head to the appropriate GPU manufacturer and download the driver from there. If you are using iGPU, then download from AMD or Intel, depending on what CPU you are running. | If AMD GPU, download from: https://www.amd.com/en/support. If NVidia GPU, download from: https://www.nvidia.com/download/index.aspx. If Intel GPU, download from: https://www.intel.com/content/www/us/en/support/products/80939/graphics.html. |
+| Graphics drivers | Dependent on GPU, if GPU drivers are available on motherboard page **do not download them**! GPU drivers on the motherboard page typically are outdated and we highly recommend you head to the appropriate GPU manufacturer and download the driver from there. If you are using iGPU, then download from AMD or Intel, depending on what CPU you are running. | If AMD GPU, download from: https://www.amd.com/en/support. If NVIDIA GPU, download from: https://www.nvidia.com/download/index.aspx. If Intel GPU, download from: https://www.intel.com/content/www/us/en/support/products/80939/graphics.html. |
 
 **Once that is done, make sure to update Windows after this installing all these important drivers by opening up Settings -> Updates -> Update Windows. This step cannot be ignored!**
 
@@ -77,7 +77,7 @@ These drivers are optional and mainly for RGB control purposes, or custom button
 
 - **System Optimizers, Cleaners and debloaters:** 
 
-    We do not support any form of system optimizers and cleaners and highly discourage the use of them as they falsly advertise: "clean up Windows to make it less bloated". This is false. 
+    We do not support any form of system optimizers and cleaners and highly discourage the use of them as they falsely advertise: "clean up Windows to make it less bloated". This is false. 
     
     {: .warning .warning-icon }
     > Windows is a heavy OS and all features that come with it are necessary to its functioning. Using these scripts can easily cause system instability at best, and broken OS's at worst (If you want a lighter OS, run run Linux instead!). 

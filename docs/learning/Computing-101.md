@@ -32,7 +32,7 @@ Installing programs is a little bit more work, navigate to the website of the pr
 For example, a program that you might want to install would be *Discord* which you can find [here](https://discord.com/). You would click the download button and run the .exe file you just downloaded to install. You would do this with any program that you wanted to install.
 
 {: .warning .warning-icon }
->Avoid downloading software from file sharing sites like Softpedia. Their releases are rarely official and often harbor **malicious software** instead of a clean legitamate product.
+>Avoid downloading software from file sharing sites like Softpedia. Their releases are rarely official and often harbor **malicious software** instead of a clean legitimate product.
 
 ### Sites to avoid:
 - Softpedia
@@ -41,7 +41,7 @@ For example, a program that you might want to install would be *Discord* which y
 - CNET
 - Softonic
 
-## Unziping/extracting a Folder
+## Unzipping/extracting a Folder
 1. Navigate to the spot where the zip folder is located. 
 
     ![zipFolder.png](/assets/Basic-Computing/zipFolder.png)
@@ -111,7 +111,7 @@ Refer to the matrix below to identifier what product you need the drivers for, t
 | Built in Ethernet    | Motherboard or laptop manufacturer             | "LAN" or "Ethernet" |
 | PCIe or USB Ethernet | Check the site for the brand of adapter in use |                     |
 | Built in WiFi        | Motherboard or laptop manufacturer             | "WLAN" or "WiFi"    |
-| PCIe or USB Wifi     | Check the site for the brand of adapter in use |                     |
+| PCIe or USB WiFi     | Check the site for the brand of adapter in use |                     |
 | Built in Audio       | Motherboard or laptop manufacturer             | Audio               |
 | PCIe or USB Audio    | Check the site for the brand of adapter in use |                     |
 
@@ -132,12 +132,12 @@ Refer to the matrix below to identifier what product you need the drivers for, t
 - [Razer](https://support.razer.com/)
 - [Roccat](https://support.roccat.com/s/downloads?language=en_US)
 - [Samsung](https://www.samsung.com/us/support/)
-- [Tosiba](https://www.samsung.com/us/support/)
+- [Toshiba](https://www.samsung.com/us/support/)
 - [Zotac](https://www.zotac.com/us/support/)
 
 ### GPU Driver Downloads
 - [AMD](https://www.amd.com/en/support)
-- [Nvidia](https://www.nvidia.com/download/index.aspx)
+- [NVIDIA](https://www.nvidia.com/download/index.aspx)
 
 ## Ending Processes
 Ending a process that might not be responding is a task everyone should know. 

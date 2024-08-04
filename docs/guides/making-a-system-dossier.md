@@ -46,7 +46,7 @@ You can open the tool by typing `dxdiag` into a command line, or you can open it
 
 There is only one way to save the information from dxdiag, which is the "Save All Information..." button. It will create a small .txt file.
 
-## Useful for crashes or blackscreens
+## Useful for crashes or black screens
 These are not a replacement for general system information tools, these should only be an additional tool you use.
 
 ### HWiNFO stress tests and logging

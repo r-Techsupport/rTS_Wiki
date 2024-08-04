@@ -14,7 +14,7 @@ redirect_from: /books/how-to-and-guides/page/psu-guide
 
 {% include toc.md %}
 
-This guide will cover the basics of a desktop PSU, ways to test it's power output. Always be careful when performing any task that requires a multimeter or another tool.
+This guide will cover the basics of a desktop PSU, ways to test it's power output. Always be careful when performing any task that requires a multi-meter or another tool.
 
 ## The dangers
 Before we get into the guide, we need to address the dangers involved with computer power supplies first.
@@ -40,7 +40,7 @@ Remember - if your PSU is causing your problems, then swapping out other compone
  Advertised wattage ratings are a good indicator of PSU capability and/or quality
     If a power supply is faulty or underpowered then the system will simply not power on and/or the problem will be obvious
     Power supplies with identical advertised specifications are equally good. 
-    All PSU's have a standard specification, for example ATX, 80+ and EPS. They all specify how a PSU  should be designed, what voltage it is supposed to deliver etc. If a PSU doesn't qualify for one of the aforementioned standards, running it may be dangerous as you may get voltage spikes that can fry your components, incompatibility as well as a poasible fire hazard. Cheap PSUs are likelier for such events to occur, as the quality of internal components can vary even while meeting the standards.
+    All PSUs have a standard specification, for example ATX, 80+ and EPS. They all specify how a PSU  should be designed, what voltage it is supposed to deliver etc. If a PSU doesn't qualify for one of the aforementioned standards, running it may be dangerous as you may get voltage spikes that can fry your components, incompatibility as well as a possible fire hazard. Cheap PSUs are likelier for such events to occur, as the quality of internal components can vary even while meeting the standards.
 
 ### Regarding misunderstanding #1:
 
@@ -68,7 +68,7 @@ Power supply problems often lead to misdiagnosis during troubleshooting because 
 
 Build quality, internal component quality, and design are the most important aspects of a good power supply. It is much more important to get a reliable power supply than to get a bigger power supply.
 
-Most power supply brands are simply repackaged units that have been sourced from a large manufacturer and cosmetically altered. Thus, a different model PSU from the same brand may be made by a completely different manufacturer and be of entirely different quality than others by the same brand. A google search for your make and model PSU and the letters 'OEM' will often reveal which manufacturer made the unit if it is a rebranded unit.
+Most power supply brands are simply repackaged units that have been sourced from a large manufacturer and cosmetically altered. Thus, a different model PSU from the same brand may be made by a completely different manufacturer and be of entirely different quality than others by the same brand. A google search for your make and model PSU and the letters 'OEM' will often reveal which manufacturer made the unit if it is a re-branded unit.
 
 ## I have a suspicious PSU in my system. Should I replace it?
 
@@ -110,7 +110,7 @@ This guide will use this template:
   5.  Insert one end of the of the jumper into the 16th pin of the 24 or 20 pin ATX power connector.
 
   6.   Insert the other end of the jumper into the 17th pin to ground it out and trigger it to start once powered later. **Important:** On the multimeter, ensure the red probe is attached to the `mAV Ω` connection and that the black probe is connected to `COM (-)`. On an auto-ranging multimeter, select the `VDC` position. Otherwise, turn the dial to `20 VDC` setting. > If you are ever unsure of the output voltage you should always use the highest choice first, ex: `200V DC`. Once confirmed low disconnect and select the `20V DC` setting.
-  ![psu 24-pin power test.png](/assets/psu/paperclip-test.png)
+  ![PSU 24-pin power test.png](/assets/psu/paperclip-test.png)
   (Picture for reference)
 
 ## Taking Measurements

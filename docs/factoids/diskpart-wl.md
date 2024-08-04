@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Removing write protection on drives using diskpart
+title: Removing write protection on drives using DiskPart
 nav_exclude: false
 parent: Factoids
 has_children: false
@@ -8,7 +8,7 @@ search_exclude: false
 last_modified_date: 2024-02-15
 ---
 
-# Removing write protection on drives using diskpart
+# Removing write protection on drives using DiskPart
 Open Command Prompt or PowerShell as admin then follow the steps below.
 
 ```
@@ -31,6 +31,6 @@ select disk x
 attrib disk clear readonly
 ```
 
-If successful, Command Prompt should output 'Disk attibutes cleared successfully'
+If successful, Command Prompt should output 'Disk attributes cleared successfully'
 You can now exit Command Prompt
 Keep in mind that drives are often write-locked because they are failing or dead. In those cases, it's best to back up the data on said drive

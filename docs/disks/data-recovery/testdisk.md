@@ -85,7 +85,7 @@ This guide was written using a Windows 11 host that has a 128GB C:\ drive and a 
 10. After writing the partition back to the disk you will be brought back to Step 6. You can close the terminal and shutdown your computer. Remove the USB then boot your computer again to validate if partition recovery was a success.
 
     {: .info .info-icon }
-    > If you restored an OS disk, it most likely won't be bootable but it is hopefully readable. You can refer to [Recoverying files from a readable disk](/docs/disks/data-recovery/reading-linux) for the next steps in recovering your data.
+    > If you restored an OS disk, it most likely won't be bootable but it is hopefully readable. You can refer to [Recovering files from a readable disk](/docs/disks/data-recovery/reading-linux) for the next steps in recovering your data.
 
 {: .warning .warning-icon }
 > After completing a partition or table recovery it is recommended you backup your data and properly reformat the disk. Follow [Diskpart clean](/docs/factoids/diskpart-clean) directions to do that.

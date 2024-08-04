@@ -39,7 +39,7 @@ The process of reverting to a standard DNS provider varies depending on the oper
 5. Select "Internet Protocol Version 4 (TCP/IPv4)" and click "Properties."
 6.  Select "Use the following DNS server addresses" and enter the preferred DNS server addresses for the provider [you want to use](#list-of-dns-providers).
 7. Click OK to save the changes.
-8. Press Win+r and enter ```ipconfig /flushdns``` then press Ok to Confirm, this will clear IPs and domains resolved using your old DNS provider.
+8. Press Win+r and enter ```ipconfig /flushdns``` then press OK to Confirm, this will clear IPs and domains resolved using your old DNS provider.
 
 ### MacOS
 

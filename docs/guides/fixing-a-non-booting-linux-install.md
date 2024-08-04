@@ -84,19 +84,19 @@ grub-install --target=i386-pc /dev/sdXY
 
 Check your UEFI/BIOS and ensure Secure Boot is disabled for most Linux distros, or enabled if you are using a Linux distro that supports secure boot.
 
-- Try Ventoy, if it boots to the Ventoy menu without issue, try redownloading/burning your Linux ISO. You can ensure the ISO checksum matches:
+- Try Ventoy, if it boots to the Ventoy menu without issue, try re-downloading/burning your Linux ISO. You can ensure the ISO checksum matches:
 
 From Linux(this utility is included in most distros):
 ```
 sha256sum [file]
 ```
-From Windows(from Powershell):
+From Windows(from PowerShell):
 ```
 Get-FileHash
 ```
 If the checksum doesn't match with the one provided by the original source, than something went wrong during the download process, and the ISO needs to be downloaded again.
 If the checksum matches and the ISO *still* isn't booting:
-- Try a different iso utility(Rufus, Ventoy, `dd`(unix only), BalenaEtcher)
+- Try a different ISO utility(Rufus, Ventoy, `dd`(UNIX only), BalenaEtcher)
 - Try a different "base" of distro(RHEL, Debian/Ubuntu, Arch, and OpenSUSE are all common alternatives)
 - Try a different USB drive
 - See if the drive works on a different computer
@@ -108,20 +108,20 @@ If the checksum matches and the ISO *still* isn't booting:
 ## GRUB/Bootloader
 *Note: this section assumes you use GRUB*
 
-At this point, your UEFI/BIOS has passed control over to GRUB, by default, it presents a menu similar to the one shown below, although the appearence may vary.
+At this point, your UEFI/BIOS has passed control over to GRUB, by default, it presents a menu similar to the one shown below, although the appearance may vary.
 ![grub menu](/assets/fixing-linux-boot/GRUB_screenshot.png)
 
 ### Recovery shell
 With the standard boot option selected in GRUB:
 - Hit `e` to temporarily edit the boot config
 - Find the line that says `linux`, and go to the end of the line and put `systemd.unit=rescue.target`
-- Then hit ctrl + x or F10 to boot with the modified config.
+- Then hit Ctrl + x or F10 to boot with the modified config.
 - If the recovery shell doesn't work, you can try an emergency shell(a more minimalistic recovery interface) by replacing `systemd.unit=rescue.target` with `systemd.unit=emergency.target`
 
 ### Init shell
 In Linux, the init process is the very first process launched by the system, identified with a PID of 1. This can be changed with a GRUB variable.
 - Hit `e` over the correct entry to temporarily edit the boot config
-- Append `init=/bin/bash` to the line that starts with `linux`. You can experiement with having it earlier in the line to see if it makes a difference.
+- Append `init=/bin/bash` to the line that starts with `linux`. You can experiment with having it earlier in the line to see if it makes a difference.
 
 ### Troubleshooting from a shell
 - Update everything
@@ -138,7 +138,7 @@ Once GRUB passes booting over to Linux, it will start booting in VGA text mode u
 
 
 ### Different TTY
-During the boot process, you can try switching to a different TTY to bypass the TTY used at boot. You can use ctrl + alt + f2-f9 to drop to a different interface.
+During the boot process, you can try switching to a different TTY to bypass the TTY used at boot. You can use Ctrl + alt + f2-f9 to drop to a different interface.
 #### Troubleshooting from a recovery shell
 If the shell loads successfully, than the system not booting might be prevented by a bad config loaded at startup, a nonfunctional display manager or desktop environment. 
 

@@ -34,8 +34,8 @@ A Linux ISO has been made for r/Techsupport that has many of the proper tools pr
 
 **The username and password for the media is `user` and `live`**
 
-### Official Xubuntu Media
-You may also use the official Xubuntu ISO and load your own tools as needed.
+### Official XUbuntu Media
+You may also use the official XUbuntu ISO and load your own tools as needed.
 
 [Download](https://xubuntu.org/download/)
 

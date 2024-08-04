@@ -29,11 +29,11 @@ On April 8, 2023 [Reddit announced they would begin charging for usage of their 
 
 As the moderators of a technical support subreddit, we could not agree more. Currently, data from Reddit is utilized freely to train [Large Language Models (LLM)](https://en.wikipedia.org/wiki/Large_language_model), which are the base for AI technologies such as ChatGPT. As you may imagine, this can become problematic very quickly for a multitude of reasons. However, there are also many benefits to LLMs. Even Reddit's engineers have pointed out [machine learning is very beneficial to Reddit](https://www.redditinc.com/blog/the-benefits-of-machine-learning-to-study-small-dataset-of-social-conversations).
 
-So then what's the big deal? We agree with Reddit for the most part, right? Well, here's where things get tricky: Reddit's changes to their API, with regard to cost and usage, introduced several issues that would drastically change how most users use Reddit. They have stated that their goal is to make these updates with as little disruption as possible. However, if the relevations over the past few days have been any indication, this will not be the case.
+So then what's the big deal? We agree with Reddit for the most part, right? Well, here's where things get tricky: Reddit's changes to their API, with regard to cost and usage, introduced several issues that would drastically change how most users use Reddit. They have stated that their goal is to make these updates with as little disruption as possible. However, if the revelations over the past few days have been any indication, this will not be the case.
 
 Over the years Reddit has picked up the particularly annoying habit of failing to follow through with their promises. From [promises of building new tools for moderators](https://www.reddit.com/r/announcements/comments/3cbo4m/we_apologize/) to [promising to give more visibility when users follow you](https://www.reddit.com/r/announcements/comments/cevm31/update_regarding_user_profile_transparency), Reddit has either, at best, barely followed through with their promise or, at worst, completely missed the mark on what they promised. 
 
-## What does this have to do with third-party reddit applications and why is everyone screaming about them dying because of Reddit?
+## What does this have to do with third-party Reddit applications and why is everyone screaming about them dying because of Reddit?
 I'm sure you all have heard of the various third-party mobile applications. To name a few...
 - Apollo
 - Narwhal
@@ -76,7 +76,7 @@ Reddit is very aware of how awful their site is for those requiring accessibilit
 
 We will have to keep our fingers crossed that Reddit will follow through with creating a more accessible site as the free API for accessible 3PAs might only be temporary.
 
-We encourage you to please read through [the post by r/blind moderators](https://www.reddit.com/r/Blind/comments/13zr8h2/reddits_recently_announced_api_changes_and_the/) on the issues they face with the loss of 3PAs with accessibility features, as well as [this recent update from the r/blind moderators](https://www.reddit.com/r/Blind/comments/14nzwkm/they_finally_did_it_reddit_made_it_impossible_for/) where, despite reddit's promise to work with them for accessibility features, reddit instead made it impossible for moderation teams needing accessibility options to moderate their own subreddits.
+We encourage you to please read through [the post by r/blind moderators](https://www.reddit.com/r/Blind/comments/13zr8h2/reddits_recently_announced_api_changes_and_the/) on the issues they face with the loss of 3PAs with accessibility features, as well as [this recent update from the r/blind moderators](https://www.reddit.com/r/Blind/comments/14nzwkm/they_finally_did_it_reddit_made_it_impossible_for/) where, despite reddit's promise to work with them for accessibility features, Reddit instead made it impossible for moderation teams needing accessibility options to moderate their own subreddits.
 
 ## What about NSFW content?
 NSFW content is available everywhere on the internet. Reddit has opted to remove NSFW content from being available through their API. We realize it's not easy to see why this could create issues, however this has caused problems in the past. We will be [quoting the points made in the original post from r/ModCoord](https://www.reddit.com/r/ModCoord/comments/13xmmuo/what_is_this_subreddit_what_is_happening_here/) as we feel they said it best:
@@ -1700,7 +1700,7 @@ ___
   English
   {: .label .label-green .mr-0 .ml-0 }
 
-  [Youtube, Philip DeFranco - He Faked His Death To Teach His Family A Lesson, Book Banning Banned, & Today’s News 6.14.23](https://www.youtube.com/watch?v=RieDjQOx694&t=225s)
+  [YouTube, Philip DeFranco - He Faked His Death To Teach His Family A Lesson, Book Banning Banned, & Today’s News 6.14.23](https://www.youtube.com/watch?v=RieDjQOx694&t=225s)
   {: .d-inline }
   </div>
 

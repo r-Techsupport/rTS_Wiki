@@ -50,7 +50,7 @@ Any secondary disks, or external disks, should appear in the File Explorer where
     {: .info .info-icon }
     > **What partition do I choose?**
     > 
-    > If you deleted a file or group of files accidently, then you will want to select the specific partition that you deleted these files from.
+    > If you deleted a file or group of files accidentally, then you will want to select the specific partition that you deleted these files from.
     >
     > If you are trying to recover files from a disk that was wiped/deleted or over-written then you will hit the Up arrow to select "Whole disk" so that Photorec will search over the entire disk instead of only in the existing partition.
 

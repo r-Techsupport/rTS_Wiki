@@ -37,7 +37,7 @@ An *unhandled exception* is when an exception happens in a section of code that 
 
 In many cases, a BSOD is a more serious form of an unhandled exception, but instead of a program doing something it should not and crashing back to Windows, it is Windows *itself* doing something it should not. Unlike a game, which has Windows to fall back on when it crashes, Windows has no fallback. There is nowhere to crash to, and the only option is to crash the computer entirely.
 
-While these errors are very frustrating and can often seem random or pointless, it is very important to note that BSOD's do not occur for no reason. Windows, for all its faults, handles errors very effectively. If an error happens in such a way that Windows cannot handle it, Windows forces itself to enter a ***Blue Screen of Death*** to avoid sending improper instructions that may cause damage to any hardware, corrupt data, or breach the system's security measures.
+While these errors are very frustrating and can often seem random or pointless, it is very important to note that BSODs do not occur for no reason. Windows, for all its faults, handles errors very effectively. If an error happens in such a way that Windows cannot handle it, Windows forces itself to enter a ***Blue Screen of Death*** to avoid sending improper instructions that may cause damage to any hardware, corrupt data, or breach the system's security measures.
 
 ## What causes a BSOD?
 
@@ -55,13 +55,13 @@ As Windows is simply a complex piece of software, let's start with what causes t
 
 So, what causes these errors in the first place? 
 
-[According to Microsoft](https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/stop-error-or-blue-screen-error-troubleshooting#what-causes-stop-errors), 70-75% of BSOD's are caused by poorly written drivers that are simply experiencing errors and not handling them correctly. They are attempting to perform illegal tasks, and Windows is being forced to crash the system entirely. 
+[According to Microsoft](https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/stop-error-or-blue-screen-error-troubleshooting#what-causes-stop-errors), 70-75% of BSODs are caused by poorly written drivers that are simply experiencing errors and not handling them correctly. They are attempting to perform illegal tasks, and Windows is being forced to crash the system entirely. 
 
-While I, (writer [JimmahDean](https://github.com/JimmahDean)), do not subscribe to that statistic, this does happen very regularly, and it is becoming especially common with the rise of *kernel-level anti-cheats* as they interact poorly with antivirus software and other applications on the system. These anticheats have not been in use long enough for the developers to have worked out all the issues with these interactions.
+While I, (writer [JimmahDean](https://github.com/JimmahDean)), do not subscribe to that statistic, this does happen very regularly, and it is becoming especially common with the rise of *kernel-level anti-cheats* as they interact poorly with antivirus software and other applications on the system. These anti-cheats have not been in use long enough for the developers to have worked out all the issues with these interactions.
 
 The remaining causes are split between hardware failure and indeterminate reasons, with a small amount being caused by Windows bugs. Unless you are intentionally causing the blue screen of death, and you would know if you were, these errors are in no way your fault. 
 
-Something you installed may be causing them, but nothing you are doing during the use of the computer is directly putting Windows into the BSOD. You, either have an old driver for something that simply needs to be reinstalled, you have one of the aforementioned anticheat programs, Windows corrupted itself, or the hardware inside the computer simply failed.
+Something you installed may be causing them, but nothing you are doing during the use of the computer is directly putting Windows into the BSOD. You, either have an old driver for something that simply needs to be reinstalled, you have one of the aforementioned anti-cheat programs, Windows corrupted itself, or the hardware inside the computer simply failed.
 
 But how can we know what is causing your particular BSOD?
 
@@ -166,7 +166,7 @@ You have the familiar blue `(.trap 0xffffdb809cf9bf20)` which, again, is simply 
 
 The numbers in this grouping are the values stored in the CPU's registers at the time of the BSOD. The CPU uses registers to store various information, such as memory addresses, or the result of a mathematical operation. It may want to add the value of `r8` to `r9` and store the result of that operation in `rdx`. In this case, `r8` is 0 and `r9` is 0, so the result is 0 + 0 = 0, which would then make `rdx 0`. These numbers are rarely important, but I will be mentioning them in later sections.
 
-After the context record, we have the `PROCESS_NAME`. This will almost always blame an application, and it will ***almost never be useful***. `System` is not helpful. `steam.exe` does not cause blue screens. It is simply the program running on the thread that ran into the error. While this is very rarely the cause, it is still worth looking at. Occasionally software will interact with drivers in a way that causes a blue screen. Most notably, anticheats, 3rd-party RGB controllers, and occasionally overclocking tools.
+After the context record, we have the `PROCESS_NAME`. This will almost always blame an application, and it will ***almost never be useful***. `System` is not helpful. `steam.exe` does not cause blue screens. It is simply the program running on the thread that ran into the error. While this is very rarely the cause, it is still worth looking at. Occasionally software will interact with drivers in a way that causes a blue screen. Most notably, anti-cheats, 3rd-party RGB controllers, and occasionally overclocking tools.
 
 ### The Fourth Part
 
@@ -237,9 +237,9 @@ To the right of the return address are four arguments for each function. I rarel
 
 The function names are the most important part of the stack trace. The name before the ! is the module running the function. 
 
-In my example, we have `nt`, which is the overarching Windows kernel system module, `netwtw12`, an Intel wifi driver, `wdiwifi`, the "Windows Diagnostic Interface" WiFi driver, `ndis`, **N**etwork **D**river **I**nterface **S**pecification, `tcpip` and `NETIO`, some Windows network drivers. 
+In my example, we have `nt`, which is the overarching Windows kernel system module, `netwtw12`, an Intel WiFi driver, `wdiwifi`, the "Windows Diagnostic Interface" WiFi driver, `ndis`, **N**etwork **D**river **I**nterface **S**pecification, `tcpip` and `NETIO`, some Windows network drivers. 
 
-Already, we can point to an issue with the computer's wifi as the main suspect.
+Already, we can point to an issue with the computer's Wii as the main suspect.
 
 The name to the right of the `!` is what that module is doing. Oftentimes these make sense, as with `KiStartSystemThread` or `KeBugCheckEx`, and a tech-savvy debugger can simply follow along to pinpoint where the fault is, other times you might only see `Netwtw12+0x4bd7e`, which is not given a function name due to `netwtw12` being a **non-Windows** driver. 
 
@@ -285,7 +285,7 @@ In many cases, this is very easily accomplished by simply finding the pattern. I
 
 On the other hand, *if every error is different*, with the only similarity being that two of the five dumps have *the same stop code*, your issue is almost certainly **hardware related**.
 
-I am not here to explain how to solve every software issue that causes BSODs. If you are seeing bugchecks from an anticheat or 3rd party AV, and reinstalling the software is not solving the problem, you will need to go check with the developers' customer support teams and get help through them.
+I am not here to explain how to solve every software issue that causes BSODs. If you are seeing bugchecks from an anti-cheat or 3rd party AV, and reinstalling the software is not solving the problem, you will need to go check with the developers' customer support teams and get help through them.
 
 Sometimes there is a way to determine the exact cause of the fault, and you might get away with a registry change or disabling/enabling a system service, but we would not be exploring that in this guide. The overwhelmingly the best course of action in the case of a software-caused BSOD is to reinstall the faulting module. 
 
@@ -325,7 +325,7 @@ The following components are 100% required: No computer will run without them.
 
   * **The PSU**. Power Supply Unit, is the heart of the computer. It distributes all the power from the wall outlet to the various components as necessary. A failing PSU usually presents itself as instant power cuts rather than BSODs, but insufficient power can cause other issues, most notably in the GPU as it uses the most power.
 
-  * **The GPU**. The Graphical Processing Unit is tasked with translating instructions into visual data to send to the monitor. The GPU can either be a dedicated card (i.e. nVidia GTX 4090Ti, AMD Radeon RX 7900 XTX) or integrated into the CPU. It may be beneficial to think of the GPU as the eyes of the computer, turning stimulus into picture. The computer will technically run without a GPU, you will simply be unable to see what is going on.
+  * **The GPU**. The Graphical Processing Unit is tasked with translating instructions into visual data to send to the monitor. The GPU can either be a dedicated card (i.e. NVIDIA GTX 4090Ti, AMD Radeon RX 7900 XTX) or integrated into the CPU. It may be beneficial to think of the GPU as the eyes of the computer, turning stimulus into picture. The computer will technically run without a GPU, you will simply be unable to see what is going on.
 
 Aside from the GPU, all of these components are constantly talking to each other, sending billions of messages every second to create the magic of a modern computer. As they all work together, it can be incredibly difficult to determine if a BSOD is the result of RAM failure or the CPU simply failing to correctly read what is in the ram. Was the data lost in transit on the motherboard? Did the drive even send the right data? To answer this, we will need to go over the patterns of different failures. 
 
@@ -349,7 +349,7 @@ In a hardware-related set of dumps, the stack is your most valuable resource her
 
   * If the **memory manager** is involved, consider the RAM or drive as main suspects.
   
-While searching for your pattern, it is critical to **remain open to new information**. If the first dump seems to blame RAM and you read the following dumps trying to convince yourself of a RAM problem, you will miss signs that it is a CPU or drive issue. Always consider every possibility until you have all the information and can make a judgement call accordingly.
+While searching for your pattern, it is critical to **remain open to new information**. If the first dump seems to blame RAM and you read the following dumps trying to convince yourself of a RAM problem, you will miss signs that it is a CPU or drive issue. Always consider every possibility until you have all the information and can make a judgment call accordingly.
 
 When you are looking to pin down which part is failing, it is important to know how the parts interact and how that interaction looks when it fails:
 
@@ -389,7 +389,7 @@ Tracking down a motherboard problem is the trickiest of the bunch and is **often
 
 A motherboard issue could simply be a bad DIMM slot, causing the error to look identical to RAM failure, or it could be a bad socket pin, causing the dumps to look like CPU failure. It can be a bad bridge, causing all sorts of errors between the USB controller and PCIe controller, causing the dump to be a smorgasbord of blue screens that look like a drive problem with stacks blaming `USBxHCI` with two `VIDEO_TDR_FAILURE` sprinkled in there. 
 
-In general, if the dumps seem to match ***multiple problems simultaneously***, the motherboard should be the first suspect. If you have a group of dumps all blaming different network drivers and the user is on ethernet, it is probably the ethernet controller on the board. The same goes for random errors with USB drivers mentioned in the stack; however, you always have the possibility that any of the other hardware problems are caused by a bad motherboard.
+In general, if the dumps seem to match ***multiple problems simultaneously***, the motherboard should be the first suspect. If you have a group of dumps all blaming different network drivers and the user is on Ethernet, it is probably the Ethernet controller on the board. The same goes for random errors with USB drivers mentioned in the stack; however, you always have the possibility that any of the other hardware problems are caused by a bad motherboard.
 
 #### PSU
 {: .no_toc }
@@ -559,7 +559,7 @@ Unlike the capture card example, we do not stay in the same process from driver 
 
 The dispatcher is how the WLAN driver sends instructions to the NIC, once we are outside of it, the driver is effectively no longer working on that thread. Windows then readies the thread to switch contexts, allowing it to be used for another task, and checks the scheduler's priority list. Only then does it fail.
 
-`nt!KiSetSchedulerAssistPriority` is our failure point. The `SYMBOL_NAME` suggests the wlan driver because WinDbg will often blame the most recent function that is not a Windows native function, assuming the native code is uncorrupted.
+`nt!KiSetSchedulerAssistPriority` is our failure point. The `SYMBOL_NAME` suggests the WLAN driver because WinDbg will often blame the most recent function that is not a Windows native function, assuming the native code is uncorrupted.
 
 In the same dump set, we had another `IRQL_NOT_LESS_OR_EQUAL` with the same bad memory reference, showing the following stack:
 
@@ -613,7 +613,7 @@ MODULE_NAME: nvlddmkm
 IMAGE_NAME:  nvlddmkm.sys
 ```
 
-Luckily, the `SYMBOL_NAME` on this one actually steers you in the right direction, though a lot of times it will blame DirectX on stacks like these. From the stop code alone, you know this is an issue with the GPU or GPU driver, so it is not that surprising to see the nVidia driver being blamed here, but this is a section about stacks, so let's talk about the stack. 
+Luckily, the `SYMBOL_NAME` on this one actually steers you in the right direction, though a lot of times it will blame DirectX on stacks like these. From the stop code alone, you know this is an issue with the GPU or GPU driver, so it is not that surprising to see the NVIDIA driver being blamed here, but this is a section about stacks, so let's talk about the stack. 
 
 It is a very straightforward stack that says nothing. You take a thread start, attach a worker to it, and immediately attempt to handle a TDR. The first function after the worker's set is already working on a failure, and that failure transitions into a bugcheck. Nothing in the stack shows ***anything*** relating to what happened before the error, and there is no indication as to why the failure happened.
 
@@ -667,7 +667,7 @@ r14=0000000000000000 r15=0000000000000000
 iopl=0         nv up ei ng nz na pe nc  
 ```
 
-This example is from a set of dumps that very clearly implicate the Realtek WLAN driver; however, it will be a good introduction to this specific code.
+This example is from a set of dumps that very clearly implicate the RealTek WLAN driver; however, it will be a good introduction to this specific code.
 
   * `Arg1` is the memory address that the CPU tried to access. If this number is smaller than ~8 digits long, you have what is called a null pointer dereference: The address given is completely invalid. If the number is larger, like the `fffff806697f8304` in `Arg4`, the driver is attempting to access memory it is not allowed to. I will go more in depth on this shortly.
 
@@ -677,7 +677,7 @@ This example is from a set of dumps that very clearly implicate the Realtek WLAN
 
   * `Arg4` is the address of the failing instruction. In our example, we have `fffff806697f8304`, which can be found in our stack as the return address for `nt!KiPageFault+0x469`, and translates directly to `rtwlanu+0x48304`. You can run `ub fffff806697f8304` followed by `u fffff806697f8304` to see what this instruction is doing.
 
-Back to `Arg1`. If you see a null pointer dereference (if `Arg1` is less than 8 digits or so), in  virtually every case, what is happening is that the cpu is trying to run an instruction that attempts to move data to or from a memory address denoted by a register plus an offset, and the value in the register is zero instead of a valid memory address. 
+Back to `Arg1`. If you see a null pointer dereference (if `Arg1` is less than 8 digits or so), in  virtually every case, what is happening is that the CPU is trying to run an instruction that attempts to move data to or from a memory address denoted by a register plus an offset, and the value in the register is zero instead of a valid memory address. 
 
 You can easily confirm this by running ub on the instruction address, followed by u on the same address:
 
@@ -1096,7 +1096,7 @@ We can find out what most of these bits mean from the intel manual:
 
 | Bit Number | Description |
 |-------|-------------------|
-|63 | `MCi_STATUS` register valid - This is set to 1, meaning the cpu is confident the code it is provided is a valid error code.|
+|63 | `MCi_STATUS` register valid - This is set to 1, meaning the CPU is confident the code it is provided is a valid error code.|
 |62 | Error Overflow - This is set to 0, meaning that when the error occurred, the CPU was not in the process of handling another error. Had this been 1, that would mean there were multiple simultaneous errors happening.|
 |61 | Uncorrected error - This is set to 1, meaning the error was fatal and forced the computer to shut down. I have seen this set to 0 and Windows will still BSOD with an `Arg1` of `0x1`, Corrected Machine Check Exception. I  do not know why Windows does this.|
 |60 | Error reporting enabled - This is set to 1, and it should always be set to 1, otherwise the error would not be reported.|
@@ -1105,7 +1105,7 @@ We can find out what most of these bits mean from the intel manual:
 |43 | Poison. If 43 is set, the error is caused by the CPU attempting to execute an instruction which it knows is invalid. This is often still a CPU error as the CPU is potentially decoding an instruction improperly, however it can indicate an error outside the CPU.|
 |56 through 44 and 42 through 32 | Are not particularly important for our purposes, but you can read up on what they mean in the aforementioned manuals.|
 |31 through 16 | Are an extended error code and their definition varies wildly between AMD and Intel, varies between different models in those brands, and varies based on the specific error code. This needs to be decoded with the manual.|
-|15 through 0 are the meaningful bits | As they make up the error code. The provided example error code, `0001 0001 0111 1010` can be found in the Compound Error Code table, `000F 0001 RRRR TTLL = Cache Heirarchy Error`. The `RRRR`, `TT and LL translate to Request`, `Transaction Type and Level` respectively. An `RRRR` of `0111` is the "Eviction" request, a `TT` of 10 is a Generic Transaction Type (Generic implies the CPU could not determine the real type), and an `LL` of 10 shows an error in the L2 cache. All combined, you have a single fatal error caused by the CPU failing to evict memory from its L2 cache due to a heirarchy error.|
+|15 through 0 are the meaningful bits | As they make up the error code. The provided example error code, `0001 0001 0111 1010` can be found in the Compound Error Code table, `000F 0001 RRRR TTLL = Cache Heirarchy Error`. The `RRRR`, `TT and LL translate to Request`, `Transaction Type and Level` respectively. An `RRRR` of `0111` is the "Eviction" request, a `TT` of 10 is a Generic Transaction Type (Generic implies the CPU could not determine the real type), and an `LL` of 10 shows an error in the L2 cache. All combined, you have a single fatal error caused by the CPU failing to evict memory from its L2 cache due to a hierarchy error.|
 
 The code to look out for in Machine Check Exceptions to rule out the CPU is Bus Error for AMD and Bus/Interconnect Error for Intel.
 

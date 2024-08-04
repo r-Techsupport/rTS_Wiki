@@ -48,7 +48,7 @@ Typical file system types and uses are:
 |NTFS|Windows, with read natively on Linux/BSD or MacOS|Windows OS and data partitions|
 |ext2/3/4|Linux/BSD, with read on other OS via third party tools|Linux/BSD OS and data partitions
 |Fat32|Read/Write natively on most OS|Removable media|Fat32 file systems cannot hold files larger than 4GB|
-|exFat|Read/Write natively on most OS|Removable media|
+|exFAT|Read/Write natively on most OS|Removable media|
 HFS/+|MacOS native with read on other OS via third party tools|MacOS OS and data partitions
 
 ## Working with existing disks

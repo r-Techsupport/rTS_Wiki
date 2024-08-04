@@ -8,10 +8,10 @@ search_exclude: false
 last_modified_date: 2023-09-10
 ---
 
-# How To Troubleshoot a PC That Doesnt Output an Image
+# How To Troubleshoot a PC That Doesn't Output an Image
 {: .no_toc}
 
-This guide will mention basic steps to help you fix your pc not showing anything on the monitor. Note that this guide is meant to be for a setup that is known to be functional before. If your build is new, there might be other things you want to check. Feel free to ask for help in our [Discord](/discord).
+This guide will mention basic steps to help you fix your PC not showing anything on the monitor. Note that this guide is meant to be for a setup that is known to be functional before. If your build is new, there might be other things you want to check. Feel free to ask for help in our [Discord](/discord).
 
 {% include toc.md %}
  
@@ -53,7 +53,7 @@ Parts like drives, and other extras like front panel, and other PCIE cards.
 
 > A computer does not need a drive to boot. You should be able to reach the BIOS screen, or get a message saying something similar to: "No Boot Disk Detected".
 
-If removing a non-essential component causes the computer to boot, that means one of the parts you disconnected has caused the computer to stop booting. We have seen failing drives preventing boot alot of times. It is a common HARDWARE ISSUE. Even a secondary drive (not the OS drive) can cause that.
+If removing a non-essential component causes the computer to boot, that means one of the parts you disconnected has caused the computer to stop booting. We have seen failing drives preventing boot a lot of times. It is a common HARDWARE ISSUE. Even a secondary drive (not the OS drive) can cause that.
 
 ## Step 4: Use only one RAM stick
 
@@ -67,10 +67,10 @@ Make sure that you unplug your dGPU first because some motherboards disable it w
 
 ## Step 6: Using Another Monitor or Video Cable
 
-Sometimes, the issue isnt with the pc but with the monitor or the cable. It is also possible that the port is what causing it, so switching from HDMI to DisplayPort and vice versa is a good idea. This can indicate that it is a HARDWARE ISSUE.
+Sometimes, the issue isn't with the PC but with the monitor or the cable. It is also possible that the port is what causing it, so switching from HDMI to DisplayPort and vice versa is a good idea. This can indicate that it is a HARDWARE ISSUE.
 
 ## Step 7: Replacing Parts
 
-This is a HARDWARE ISSUE. This is the hardest to accept as fact. A part has failed and you need to replace it with another. It is also the only way to be sure which part is the one failing in some cases (eg. CPU or motherboard failure). 
+This is a HARDWARE ISSUE. This is the hardest to accept as fact. A part has failed and you need to replace it with another. It is also the only way to be sure which part is the one failing in some cases (e.g. CPU or motherboard failure). 
 
 > If you have any questions, feel free to join our [Discord](/discord) and ask them!

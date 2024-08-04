@@ -56,7 +56,7 @@ To encrypt an entire disk using VeraCrypt:
 - Offers full disk encryption and encrypted volumes
 - Strong encryption options
 
-#### Disdvantages
+#### Disadvantages
 
 - May be more difficult to set up and use than other disk encryption software
 - Not as widely used as other disk encryption software, meaning there may be less support and resources available

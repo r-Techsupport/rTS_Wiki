@@ -20,7 +20,7 @@ last_modified_date: 2022-06-30
 
 * If you bought a new device and it's not working properly, [RMA](/docs/learning/terms#return-merchandise-authorization-rma) the defective product.
 
-* Max supported RAM for a 32 bit windows installation is 4gb
+* Max supported RAM for a 32 bit windows installation is 4GB
 
 * Using a normal vacuum to clean your computer free of dust can cause damage
 
@@ -92,7 +92,7 @@ last_modified_date: 2022-06-30
 
 * Prefer HTTPS over HTTP when browsing the web.
 
-* Don't submit credit card details over unsecure connections, i.e. HTTP. If a site asking for your CC info is unsecure, you're better off not using it in the first place.
+* Don't submit credit card details over insecure connections, i.e. HTTP. If a site asking for your CC info is insecure, you're better off not using it in the first place.
 
 * Never tell anyone your passwords, not even people claiming to be employees of Google, Microsoft, Apple, or any other major company.
 
@@ -110,7 +110,7 @@ last_modified_date: 2022-06-30
 
 * Defragging your drive is an outdated and unnecessary ritual. Modern operating systems will avoid disk fragmentation automatically.
 
-* Bundled software is typically inferior to the built in Windows features (Photos, Wifi management, anti-virus, etc). You do not need it and can uninstall it.
+* Bundled software is typically inferior to the built in Windows features (Photos, WiFi management, anti-virus, etc). You do not need it and can uninstall it.
 
 * Keep all of your software up to date.
 

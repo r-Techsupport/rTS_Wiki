@@ -11,7 +11,7 @@ last_modified_date: 2022-06-15
 
 # How to Appeal a Ban
 
-This pages details how to appeal a ban on /r/techsupport. This applies for both the subReddit and Discord. 
+This pages details how to appeal a ban on /r/techsupport. This applies for both the subreddit and Discord. 
 
 ## Requirements
 
@@ -21,7 +21,7 @@ The time until possibility of an appeal will be specified in the ban message. If
 ### Contact
 If told not to contact the mods until a specified time, comply. If you are simply linked this page, the default is two weeks. If you fail to comply, your appeal will automatically be denied.
 
-All ban appeals must come through Reddit modmail, not Discord modmail.
+All ban appeals must come through Reddit ModMail, not Discord ModMail.
 
 ### Content
 An appeal must contain a direct admission of wrongdoing, a statement that the rules have since been read and fully understood, and assurance no further violations will occur. You can read the rules [here](/docs/meta/rules) if you aren't familiar.
@@ -30,7 +30,7 @@ The message must not contain excuses, arguments, requests for special considerat
 
 For best results, submit your appeal in a reply to the original thread that noted your ban. If you used the thread to communicate with the moderators already, reply to the most recent moderator response.
 
-If you are appealing a Discord ban, you can just start a new modmail thread. Be sure to include your Discord name and discriminator (Name#1234).
+If you are appealing a Discord ban, you can just start a new ModMail thread. Be sure to include your Discord name and discriminator (Name#1234).
 
 ### Eligibility
 Any account that is specifically linked to any company will not be considered for an appeal. Any account that has continued violations on other subreddits will not be considered for appeal. Spam, scammers, trolls, and otherwise unhelpful accounts will be ignored entirely.

@@ -9,9 +9,9 @@ last_modified_date: 2023-05-22
 ---
 # How to fix an OS after a failed Cleanboot
 
-If by accident you have disabled microsoft services when performing a Cleanboot, __**which is something you should never do**__, this guide will detail how to attempt to fix the failed Cleanboot.
+If by accident you have disabled Microsoft services when performing a Cleanboot, __**which is something you should never do**__, this guide will detail how to attempt to fix the failed Cleanboot.
 
-> Note that we will only cover how to fix cleanboot. For information on how to do a cleanboot, please refer to the "[How to Cleanboot Windows](/docs/factoids/cleanboot)" guide.
+> Note that we will only cover how to fix Cleanboot. For information on how to do a Cleanboot, please refer to the "[How to Cleanboot Windows](/docs/factoids/cleanboot)" guide.
 
 > Another point to mention is that all the screenshots depict Windows 10, but Windows 11 will operate the same way.
 

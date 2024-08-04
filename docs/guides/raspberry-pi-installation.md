@@ -15,7 +15,7 @@ last_modified_date: 2022-06-28
 
 The Raspberry Pi is a multi-purpose credit-card-sized computer. You can use it to do many cool things. For example, you can host a website, a file server, or other servers on it. You can create a home surveillance system. You can set up a retro game system with emulators. Maybe you want to control a robot with the programmable pins. Or, you can just use it as a regular cheap desktop computer.
 
-This guide will be focusing on setting up Raspbian. Some things may be a little bit different if you’re using another OS on your Raspberry Pi, however, many concepts will still apply.
+This guide will be focusing on setting up Raspberry Pi OS. Some things may be a little bit different if you’re using another OS on your Raspberry Pi, however, many concepts will still apply.
 
 ## Pre-installation
 
@@ -24,7 +24,7 @@ Before we begin, you should be sure to have everything you will need. You will n
    *  Raspberry Pi, preferably the newest model. At the time of writing, that’s the Raspberry Pi 4.
    *  An USB-C power adapter which can handle at least 3A (at 5.1V DC or ~15.3W total).
    *  A micro-HDMI cable, and a micro-HDMI output device, for displaying the desktop.
-   *  A Micro-SD card for storing the OS and any other files, 8Gb size is minimum while 32Gb is recommended.
+   *  A Micro-SD card for storing the OS and any other files, 8GB size is minimum while 32GB is recommended.
    *  You may need a Micro-SD card to USB adapter if your computer can’t read Micro-SD cards
    *  (Recommended) A case to place the device in, so it stays clean and safe.
 
@@ -37,9 +37,9 @@ Consider purchasing a “Starter kit”, which includes a Raspberry Pi 4, a case
    
 Now you will see a list of available operating systems.
 
-* You will probably want to install Raspbian, as it has the desktop experience available.
+* You will probably want to install Raspberry Pi OS, as it has the desktop experience available.
 * You will also get multiple other choices such as: (Media player) - Kodi OS, Emulation or Game OS amongst others.
-* Press ctrl+shift+x to see the settings for the OS, it is recommended you set up Wifi and SSH.
+* Press Ctrl+shift+x to see the settings for the OS, it is recommended you set up WiFi and SSH.
 * Choose the OS you desire, select your SD card and hit wipe
 
 If you have a case for your Raspberry Pi, start by inserting the device into the case. Next, insert the Micro-SD card. You will also have to connect a keyboard/mouse and a display.
@@ -53,11 +53,11 @@ Once it boots up, you will see your selected OS.
 Perform all updates.
 
 1. Open the software update menu and update your system. Do this for each OS you installed.
-2. On Raspbian, you can also open a terminal and manually type `sudo apt update` and then `sudo apt upgrade` to update the system. You will have to enter your password each time, the default is `raspberry`.
+2. On Raspberry Pi OS, you can also open a terminal and manually type `sudo apt update` and then `sudo apt upgrade` to update the system. You will have to enter your password each time, the default is `raspberry`.
 
-You can use ssh for terminal access if you enabled it, almost every OS has openssh built in, meaning there shouldn't be a need for 3rd party apps.
+You can use ssh for terminal access if you enabled it, almost every OS has OpenSSH built in, meaning there shouldn't be a need for 3rd party apps.
 
-* To set it up in Raspbian, read the [SSH guide](https://www.raspberrypi.org/documentation/remote-access/ssh/) in the Raspberry Pi documentation.
+* To set it up in Raspberry Pi OS, read the [SSH guide](https://www.raspberrypi.org/documentation/remote-access/ssh/) in the Raspberry Pi documentation.
 * For other OSes, it’s somewhere in the menus. It varies depending on the OS.
 * When connecting, the default username is `pi` and the default password is `raspberry`.
 

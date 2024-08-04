@@ -11,7 +11,7 @@ last_modified_date: 2024-03-09
 {: .no_toc }
 {% include toc.md %}
 ## Using the Windows media creation tool "Update now" option
-To force update Windows 10 [go to the Micosoft site](https://www.microsoft.com/en-us/software-download/windows10) and click 'update now'
+To force update Windows 10 [go to the Microsoft site](https://www.microsoft.com/en-us/software-download/windows10) and click 'update now'
 
 To force update Windows 11 download the "Windows 11 Installation Assistant" [from Microsoft](https://www.microsoft.com/en-us/software-download/windows11) then run it.
 
@@ -19,8 +19,8 @@ To force update Windows 11 download the "Windows 11 Installation Assistant" [fro
 If the Windows 10 upgrade tool or the Windows 11 installation assistant fails to update Windows and you are on an old version number of Windows, you can try downloading then mounting the "ISO" file for the OS.
 
 ### Windows 10
-1. Download the Windows 10 Media Creation Tool [from the microsoft site](https://www.microsoft.com/en-us/software-download/windows10) by clicking "Download now" under the "Create Windows 10 installation media"
-2. Run the downloaded tool and choose "Create installatoon media" instead of "Upgrade this PC now" when you run it.
+1. Download the Windows 10 Media Creation Tool [from the Microsoft site](https://www.microsoft.com/en-us/software-download/windows10) by clicking "Download now" under the "Create Windows 10 installation media"
+2. Run the downloaded tool and choose "Create installation media" instead of "Upgrade this PC now" when you run it.
 3. Choose the appropriate language and edition values then click "Next"
 4. Choose "ISO" and click "Next"
 5. Choose a location to save the file too then click "Save"

@@ -15,10 +15,10 @@ redirect_from: /books/software-we-recommend/page/disk-partition-management
 
 {% include toc.md %}
 
-## Disk Managment
-You can open disk managment by pressing Win+R and typing `diskmgmt.msc`.
+## Disk Management
+You can open disk management by pressing Win+R and typing `diskmgmt.msc`.
 
-Disk managment can only be run from a installed copy of windows, and has limits on what partitions and disks can be edited. For a more robust solution, consider using diskpart or gparted.
+Disk management can only be run from a installed copy of windows, and has limits on what partitions and disks can be edited. For a more robust solution, consider using DiskPart or gparted.
 
 ### Create a new partition
 New partitions can only be created from unallocated space.
@@ -37,8 +37,8 @@ New partitions can only be created from unallocated space.
 
 4. Set the filesystem to one of three options (there are 3 options (you may have less depending on your drive):
 
-    | FAT32 | Desgined to be used with smaller USB drives 32GB or less in size. |
-    | exFAT | Desgined to be used with all USB drives. Can replace FAT32. |
+    | FAT32 | Designed to be used with smaller USB drives 32GB or less in size. |
+    | exFAT | Designed to be used with all USB drives. Can replace FAT32. |
     | NTFS | Designed to be used with hard drives and SSDs of all sizes, internal and external. |
 
     Set the label to what you want.
@@ -57,8 +57,8 @@ New partitions can only be created from unallocated space.
 2. Leaving allocation unit size at default and quick format selected will usually work.
 3. Choose a filesystem:
 
-    | FAT32 | Desgined to be used with smaller USB drives 32GB or less in size. |
-    | exFAT | Desgined to be used with all USB drives. Can replace FAT32. |
+    | FAT32 | Designed to be used with smaller USB drives 32GB or less in size. |
+    | exFAT | Designed to be used with all USB drives. Can replace FAT32. |
     | NTFS | Designed to be used with hard drives and SSDs of all sizes, internal and external. |
 
 4. Click "OK" to format the drive.
@@ -71,14 +71,14 @@ New partitions can only be created from unallocated space.
 
 ### Deleting a partition
 1. Right click on an existing partition and choose "Delete Volume..."
-2. Click "Yes" to delete the partition. You will loose all data on this partiton.
+2. Click "Yes" to delete the partition. You will loose all data on this partition.
 
 ## Diskpart
 Diskpart is a command line tool that doesn't have as many restrictions as disk manager. It is still limited when working on the `C:` drive, and not a good tool for partition manipulation. To use it on the `C:` drive, run it from run from the windows installer or from the [windows PE](/docs/LiveSessions/windows-live-session).
 
 This guide will walk you through wiping a disk and creating a single empty partition using the entire drive. However, this will not securely erase your data, see [the wiping disks article](/docs/LiveSessions/linux/linux-wipe-disks) to do that.
 
-1. To open diskpart, you will need an elevated command prompt. Just type `diskpart` and diskpart will load.
+1. To open DiskPart, you will need an elevated command prompt. Just type `diskpart` and DiskPart will load.
 2. To identify your disk, type `list disk`, then type `select disk X` where X is the disk number. (Choosing the wrong disk will cause data loss)
 
     [![ListDisk.png](/assets/disk-management/listdisk.png)](/assets/disk-management/listdisk.png)
@@ -94,10 +94,10 @@ This guide will walk you through wiping a disk and creating a single empty parti
 
     [![Detail-PreFormat.png](/assets/disk-management/detail-preformat.png)](/assets/disk-management/detail-preformat.png)
 
-7. To format tbe partition, type `format fs=<filesystem>`. For what file system to use, reference the following:
+7. To format the partition, type `format fs=<filesystem>`. For what file system to use, reference the following:
 
-    | FAT32 | Desgined to be used with smaller USB drives 32GB or less in size. |
-    | exFAT | Desgined to be used with all USB drives. Can replace FAT32. |
+    | FAT32 | Designed to be used with smaller USB drives 32GB or less in size. |
+    | exFAT | Designed to be used with all USB drives. Can replace FAT32. |
     | NTFS | Designed to be used with hard drives and SSDs of all sizes, internal and external. |
 
     To add a label at this stage, add `label=<label>` to your command.
@@ -109,7 +109,7 @@ This guide will walk you through wiping a disk and creating a single empty parti
     A full format command will look something like `format fs=fat32 label=Drive quick`. This will do a quick format with a label of "Drive" and file system of FAT32.
 
 8. To assign a drive letter to the new partition, run `assign letter=X` where X is the letter you choose.
-9. Type `exit` to close diskpart. Your drive is formatted.
+9. Type `exit` to close DiskPart. Your drive is formatted.
 
 ## GParted
 This is used via a Linux live environment. 

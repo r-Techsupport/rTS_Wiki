@@ -30,14 +30,14 @@ Ventoy is an useful tool that can create USB drives which can have more than one
 
 ### Linux
 
-1. Open your web browser, go to the [Ventoy's github page](https://github.com/ventoy/Ventoy/releases) and click on the `.tar.gz` file. Wait for the downloads to finish.
-2. Open Terminal, find your USB's directory by looking at the size. In this case the usb drive is 16GB, labelled `sda`:
+1. Open your web browser, go to the [Ventoy's GitHub page](https://github.com/ventoy/Ventoy/releases) and click on the `.tar.gz` file. Wait for the downloads to finish.
+2. Open Terminal, find your USB's directory by looking at the size. In this case the USB drive is 16GB, labeled `sda`:
 ![linux-0](/assets/ventoy/linux-0.png)
 
 3. Run `cd ~/Downloads` followed by `tar -xf ventoy-1.0.xx-linux.tar.gz`.
 
 4. Run `cd ./ventoy-1.0.xx`, followed by `sudo ./Ventoy2Disk.sh /dev/sdX -i`. **This will delete everything on the target drive**. Type `y` if prompted with a warning.
-   * Replace 'sdX' with your flash drives label. If your computer supports uefi, add the '-g' switch. If it requires secure boot, also add the '-s' switch. 
+   * Replace 'sdX' with your flash drives label. If your computer supports UEFI, add the '-g' switch. If it requires secure boot, also add the '-s' switch. 
 
 ## Usage
 

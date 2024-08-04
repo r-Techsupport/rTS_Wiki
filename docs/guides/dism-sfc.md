@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Dism and SFC
+title: DISM and SFC
 nav_exclude: false
 has_children: false
 parent: General Guides
@@ -12,7 +12,7 @@ redirect_from: /books/how-to-and-guides/page/dism-and-sfc
 # DISM and SFC
 {: .no_toc}
 
-#### **All commands require an admin CMD or Powershell**
+#### **All commands require an admin CMD or PowerShell**
 {: .no_toc}
 *Note: DISM should be used to repair the OS files before using SFC to repair the OS.*
 
@@ -21,7 +21,7 @@ redirect_from: /books/how-to-and-guides/page/dism-and-sfc
 ## Using DISM without a source
 DISM is a higher level command compared to SFC that aims to do more than just to fix broken system files, instead fixing the OS image.
 
-1. In CMD or Powershell run: 
+1. In CMD or PowerShell run: 
 
 	`DISM /Online /Cleanup-Image /RestoreHealth`
 
@@ -39,7 +39,7 @@ The DISM commands below check if the OS image is broken, but do not attempt to f
 ## Using SFC
 SFC is a basic command to check and repair minor OS corruption.
 
-In CMD or Powershell run:
+In CMD or PowerShell run:
 
 `sfc /scannow`
 
@@ -50,9 +50,9 @@ DISM normally uses an Online source to repair your system, sometimes this leads 
 
 Double click the downloaded ISO to mount it and note its drive letter in 'This PC'
 
-![iso image](/assets/dism-sfc/iso.png)
+![ISO image](/assets/dism-sfc/iso.png)
 
-In CMD or Powershell run:
+In CMD or PowerShell run:
 
 1. Repair issues with your local source
 	
@@ -63,7 +63,7 @@ In CMD or Powershell run:
 For Windows server you may need to look into using a specific index of the WIM
 
 1. Check a WIM's indices
-	* Powershell: `Get-WindowsImage -ImagePath F:\sources\install.wim`
+	* PowerShell: `Get-WindowsImage -ImagePath F:\sources\install.wim`
     * CMD: `dism /Get-WimInfo /WimFile:F:\sources\install.wim`
 
 2. Use the index to run a repair against your specific OS type

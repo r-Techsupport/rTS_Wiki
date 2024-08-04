@@ -24,7 +24,7 @@ Firstly, launch all of the apps that you generally have going. Open a few browse
 
 There are 5 different sections of memory usage on the bar graph, but only 3 of them are really important to you.
 ## What to ignore
-The first section, in grey, labeled Hardware Reserved, is RAM that hardware itself uses and there’s nothing you can do about this, so it’s not important. This amount will generally be pretty low (a large size here usually indicates that you’ve got more than 4 GB in a 32-bit machine). Ignore this section.
+The first section, in gray, labeled Hardware Reserved, is RAM that hardware itself uses and there’s nothing you can do about this, so it’s not important. This amount will generally be pretty low (a large size here usually indicates that you’ve got more than 4 GB in a 32-bit machine). Ignore this section.
 
 The third section, in orange, labeled Modified, is not very important because this amount is generally low. This is RAM that’s in use by low priority tasks that can be quickly released for other use. Ignore this as well.
 ## The Second Section

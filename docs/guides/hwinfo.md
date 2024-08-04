@@ -39,7 +39,7 @@ To start troubleshooting using HWiNFO, follow this guide. It will walk you thoug
 
     ![hwinfo-3.jpg](/assets/hwinfo/hwinfo3.jpeg)
 
-6. Start the logging process by clicking the green + with the paper icon and save a csv file to a location.
+6. Start the logging process by clicking the green + with the paper icon and save a CSV file to a location.
 
     ![hwinfo-4.jpg](/assets/hwinfo/hwinfo4.jpeg)
 
@@ -57,9 +57,9 @@ To start troubleshooting using HWiNFO, follow this guide. It will walk you thoug
 	
   
  
-10. After you get prime95 running, install and launch furmark. In the first menu, change the resolution to match your monitor. If you don't see your resolution listed, you can use custom resolution. Set the Anti-aliasing selection box to 8X MSAA.
+10. After you get prime95 running, install and launch Furmark. In the first menu, change the resolution to match your monitor. If you don't see your resolution listed, you can use custom resolution. Set the Anti-aliasing selection box to 8X MSAA.
 
-    ![fuarmark-settings.png](/assets/hwinfo/fur1.png)
+    ![Furmark-settings.png](/assets/hwinfo/fur1.png)
 
 11. Read the warning and press "GO!"
 
@@ -77,4 +77,4 @@ All 3 programs need to be running for at least 10 minutes, or until your PC cras
 
 If you are getting help from the discord, you can just upload the .csv file directly to discord.
 
-If you are getting help from the reddit, or the CSV file is too large for discord, upload the csv to [https://www.catbox.moe/](https://www.mediafire.com/)
+If you are getting help from the Reddit, or the CSV file is too large for discord, upload the csv to [https://www.catbox.moe/](https://www.mediafire.com/)

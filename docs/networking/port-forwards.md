@@ -39,13 +39,13 @@ To determine that you are not subject to CGNAT check your router admin panel to 
 If your IP is private, or does not match what online tools state then you may be subject to CGNAT. Verify that you are not dealing with [multiple routing devices](#multiple-routing-devices), if you are not using multiple routing devices then you need to call your ISP to request a public IP to be assigned to your router (this may have a fee associated).
 
 ### Multiple routing devices
-A network should only have 1 routing device (typically a router). Every routing device will create its own network, leading to 'double-nat' meaning you will need to port forward twice. This is complex solution and we suggest eliminating the double-nat.
+A network should only have 1 routing device (typically a router). Every routing device will create its own network, leading to 'double-NAT' meaning you will need to port forward twice. This is complex solution and we suggest eliminating the double-NAT.
 
 If you are using an ISP provided modem/router combo and a personal router then you must place the modem/router into 'passthrough' or 'bridge' mode.
 
 > Passthrough and Bridge are different processes but essentially achieve the same thing. Passthrough or IP Passthrough usually has a relatively significant hit on performance, but Bridge mode will also disable the NAT/routing feature of the device. It depends on the type of service and the equipment provided by the ISP.
 
-This issue can also arise when using a second router as a wireless access point. If you are using a second router only to create wifi then you should plug it into the network via a LAN port or force the device into AP mode if it does not want to function with only the LAN port in use. Ensure the WAN port on the router is left empty for this to work with most devices. Using only the LAN port should stop the unit from routing and creating a new network.
+This issue can also arise when using a second router as a wireless access point. If you are using a second router only to create WiFi then you should plug it into the network via a LAN port or force the device into AP mode if it does not want to function with only the LAN port in use. Ensure the WAN port on the router is left empty for this to work with most devices. Using only the LAN port should stop the unit from routing and creating a new network.
 
 {: .warning .warning-icon }
 > If your router doesn't support AP Mode then you also have to ensure the LAN DHCP Service is disabled on the router to avoid competing DHCP Servers. Additionally, some devices simply WILL NOT FUNCTION in this manner and will fail to provide any connectivity if the WAN Port is left disconnected.

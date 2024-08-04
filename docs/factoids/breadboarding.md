@@ -12,7 +12,7 @@ last_modified_date: 2022-10-31
 
 > This article is based off of [this What the Tech forum post by Lee.](https://forums.whatthetech.com/index.php?showtopic=120814)
 
-## What is Breadbording?
+## What is Breadboarding?
 
 Known as an out of case install, **breadboarding** is a procedure where you test your computer outside of your case to ensure that the most basic components it has are working properly.
 
@@ -37,7 +37,7 @@ A single #2 Phillips head screwdriver would be ideal for this but the closest yo
 
 Place the motherboard on a piece of cardboard along with everything else in the motherboard's box. 
 
-Lee, the orignial writer of the forum post, used the kitchen table here covered with a large cotton towel as that is where most of you will assemble your new PC. The kitchen floor doesn't have carpet, so it's a good place to proceed.
+Lee, the original writer of the forum post, used the kitchen table here covered with a large cotton towel as that is where most of you will assemble your new PC. The kitchen floor doesn't have carpet, so it's a good place to proceed.
 
 ![Post_Thumb.png](/assets/Breadboarding/post_Thumb.png)
 

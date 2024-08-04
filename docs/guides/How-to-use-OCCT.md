@@ -15,10 +15,10 @@ last_modified_date: 2023-12-10
 {% include toc.md %}
 
 ## What is OCCT?
-OCCT stands for Overclock Checking Tool. Its a stability testing suite as well as a excellent error checking tool that allows for stress testing (like that found in the [hwinfo stress test guide](/docs/guides/hwinfo)) and as an added bonus, error checking within that stress test to ensure that the system/components are stable.
+OCCT stands for Overclock Checking Tool. Its a stability testing suite as well as a excellent error checking tool that allows for stress testing (like that found in the [HWInfo stress test guide](/docs/guides/hwinfo)) and as an added bonus, error checking within that stress test to ensure that the system/components are stable.
 
 {: .info .info-icon }
-> Keep in mind that OCCT does not log data and will not output a CSV file (if using the free edition, which we will be here). For logging performance data while using OCCT, use the `game logging` procedure from the [hwinfo stress test guide](/docs/guides/hwinfo).
+> Keep in mind that OCCT does not log data and will not output a CSV file (if using the free edition, which we will be here). For logging performance data while using OCCT, use the `game logging` procedure from the [HWInfo stress test guide](/docs/guides/hwinfo).
 >
 > Another point to mention is the fact that despite it saying it is an `Overclock Checking Tool`, it is important to state that **we will not explain how to overclock in r/techsupport as it goes against our rules**. We are using this to test your system, nothing more. Adjusting the clocks and voltages of any component can cause system instability or irreversible damage if done incorrectly. You can perform these changes at your own risk, **we will not provide help with it**.
 
@@ -27,14 +27,14 @@ OCCT stands for Overclock Checking Tool. Its a stability testing suite as well a
 
     ![download_occt](/assets/OCCT/download_occt.jpg)
 
-    **Either version will work (Base vs Coolermaster), it is just a difference in the theme.**
+    **Either version will work (Base vs Cooler Master), it is just a difference in the theme.**
 
 2. Once downloaded, you will need to run the program as administrator (automatic prompt usually, otherwise you must right click the application and select `Run as administrator`). Admin permissions are necessary for OCCT to collect the error logs.
 
     ![run_as_admin.jpg](/assets/OCCT/run_as_admin.jpg)
 
 ## Using OCCT
-There are multiple type of tests to run OCCT, each dependant on what you will need to test. Here we will only describe the methods to run specific stability tests (Selected on the right hand pane of the application):
+There are multiple type of tests to run OCCT, each dependent on what you will need to test. Here we will only describe the methods to run specific stability tests (Selected on the right hand pane of the application):
 
 ![stability_test_panel.jpg](/assets/OCCT/stability_test_panel.jpg)
 

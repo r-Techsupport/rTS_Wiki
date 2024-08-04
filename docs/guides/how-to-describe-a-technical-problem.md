@@ -40,7 +40,7 @@ Please refer to our [System Dossier article](/docs/guides/making-a-system-dossie
 ## Step 3: Choose a title
 Your title should be descriptive. Here are some examples of really bad titles: “I have a problem”, “help”, “I’ve been trying for hours and this problem is still here oh no I’m running out of characte”
 
-Examples of good titles are: “Windows 10 shows ‘unable to boot from harddrive’ “, “Android has red icon on top left corner”, “Outlook doesn't sync anymore”.
+Examples of good titles are: “Windows 10 shows ‘unable to boot from hard drive’ “, “Android has red icon on top left corner”, “Outlook doesn't sync anymore”.
 
 The title should be a tiny summary of your post. Just enough that a tech will know what it is roughly about.
 

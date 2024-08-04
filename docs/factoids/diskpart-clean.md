@@ -35,7 +35,7 @@ sel disk #
 clean
 ```
 
-Follow the below setps to you want to partition and format the drive. You will want to do this unless otherwise instructed.
+Follow the below steps to you want to partition and format the drive. You will want to do this unless otherwise instructed.
 ```
 create partition=primary
 format quick fs=ntfs

@@ -8,3 +8,6 @@ _site/
 .trash/
 Gemfile.lock
 .vscode/
+.bundle/
+
+*.bak

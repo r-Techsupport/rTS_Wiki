@@ -19,7 +19,7 @@ Temporarily store it in a cool dry area until you can take it somewhere to be di
 
 ## What if I see smoke?
 1. Get away from the battery. 
-    - The smoke is very toxic and usually ocurrs before a flare out fire.
+    - The smoke is very toxic and usually occurs before a flare out fire.
 2. Do not attempt to douse it with water or a normal fire extinguisher. 
 3. Only specially rated fire extinguishers can handle this kind of fire. 
 4. Try to remove anything flammable from around the device. 

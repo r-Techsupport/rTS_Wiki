@@ -38,12 +38,12 @@ Trim, or trimming, is a SSD's alternative to defragmentation and is only used to
 
 On Windows specifically, you do not need to ritually run Drive Optimizer as Windows will schedule periodic defragging and trims (or "optimizing" in Microsoft's vocabulary) when your computer is idle.
 
-> ⚠️ **For removable SSDs, especially using seperately bought enclosures:** Do check Drive Optimizer and see if it's recognized as a SSD propperly as it will show "Optimized" verses "Defragemented." Some enclosures can misreport that they hold a HDD and _not_ a SSD so you might need to adjust settings to avoid defragmenting the SSD if you intend to keep it connected for extended periods.
+> ⚠️ **For removable SSDs, especially using  separately bought enclosures:** Do check Drive Optimizer and see if it's recognized as a SSD properly as it will show "Optimized" verses "Defragmented." Some enclosures can misreport that they hold a HDD and _not_ a SSD so you might need to adjust settings to avoid defragmenting the SSD if you intend to keep it connected for extended periods.
 
 ## Advanced Uninstallers
 #### Revo Uninstaller
 This is one of the few maintenance tools we can recommend, and it is for a specific need. If you ever have an app break and continue to misbehave after a reinstall you may need to clear out more items than Windows natively does. 
 
-Running this tool can clear residual configuration files and registry entries. The registry cleanup on this application has the same warning as ccleaner, it can break the OS if something goes wrong.
+Running this tool can clear residual configuration files and registry entries. The registry cleanup on this application has the same warning as CCleaner, it can break the OS if something goes wrong.
 
 [Download](https://www.revouninstaller.com/start-freeware-download-portable)

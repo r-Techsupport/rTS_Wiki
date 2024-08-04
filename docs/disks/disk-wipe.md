@@ -13,7 +13,7 @@ redirect_from: /books/troubleshooting-with-a-linux-live-session/page/wiping-disk
 {% include embeds/use-linux-live-session.md %}
 
 ## Encrypted disks
-All modern OS are capable of encrypting disks, on Windows this is called Bitlocker, MacOS has FileVault and Linux/BSD typically use LUKS. If you already use encryption to secure your data at rest then you are a step ahead with wiping the disk as well. You can format the disk by doing a full and proper reinstall of the OS ([Windows guide here](/windows)) to cycle your encryption keys. Once these keys are destroyed recovery of the old data is not possible.
+All modern OS are capable of encrypting disks, on Windows this is called BitLocker, MacOS has FileVault and Linux/BSD typically use LUKS. If you already use encryption to secure your data at rest then you are a step ahead with wiping the disk as well. You can format the disk by doing a full and proper reinstall of the OS ([Windows guide here](/windows)) to cycle your encryption keys. Once these keys are destroyed recovery of the old data is not possible.
 
 ## Wiping with software
 ### HDD
@@ -23,7 +23,7 @@ All modern OS are capable of encrypting disks, on Windows this is called Bitlock
 2. Run `sudo nwipe` in the terminal to launch our nwipe session
 3. Navigate up and down the list with the arrow keys, select disks by size with the space bar. 
 	* Removing extra disks from the machine may make this selection easier. **Choosing the wrong disk will cause data loss**
-	* You can change the wipe method by pressing `m`. DoD short is the default and recomended method. It makes 3 passes over the disk.
+	* You can change the wipe method by pressing `m`. DoD short is the default and recommended method. It makes 3 passes over the disk.
     * You can change the number of rounds by pressing `r`. This multiplies the method. Leaving DoD short and setting 2 rounds would make 6 passes (1 is recommended).
 4. Press capital `S` to start the process
 
@@ -33,7 +33,7 @@ All modern OS are capable of encrypting disks, on Windows this is called Bitlock
 #### NVMe SSD
 This relies on the application `nvme-cli`. It might not be included on all Linux distros, you might have to install it. It is included in the r/Techsupport rescue media.
 1. Open "terminal emulator" from the application menu.
-2. Run `sudo nvme list` to see the list of valid nvme drives.
+2. Run `sudo nvme list` to see the list of valid NVMe drives.
 	* Some SSDs will not be listed here. If your drive isn't listed, put your computer to sleep and then wake it up. This is mainly an issue with Samsung drives.
 3. Run `sudo nvme format -s2 /dev/nvmeX` where X is the location of your drive.
 	* Example: `sudo nvme format -s2 /dev/nvme0n1` **Choosing the wrong disk will cause data loss**

@@ -22,7 +22,7 @@ If multiple devices are affected, the cause is probably among the resources they
 If one device is affected, check if it is a software problem, be it an OS setting or a program.
 
 ### Network reset
-Various connectivity problems are fixed with the following 3 commands. To run them seach "cmd.exe" in the start menu, right click "Command Prompt" and click on "Run as administrator".
+Various connectivity problems are fixed with the following 3 commands. To run them search "cmd.exe" in the start menu, right click "Command Prompt" and click on "Run as administrator".
 ```
 ipconfig /flushdns
 netsh interface ip reset

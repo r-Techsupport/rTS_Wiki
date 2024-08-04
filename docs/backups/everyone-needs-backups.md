@@ -19,7 +19,7 @@ Most people do not have any form of backup for their data. Many people do not se
 * Using the tools to execute that plan
 
 ## Why do I need backups?
-Every disk, every phone, every flash drive dies, and odds are they will die with unique data on them that you will suddenly miss very much. Recovery is a time consuming and often expensive process. Backups also make the reinstallation process of an OS much smoother.
+Every disk, every phone, every flash drive dies, and odds are they will die with unique data on them that you will suddenly miss very much. Recovery is a time consuming and often expensive process. Backups also make the re-installation process of an OS much smoother.
 
 **Drives do not always broadcast imminent death. Assume they will just die. Every time.**
 

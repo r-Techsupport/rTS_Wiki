@@ -25,7 +25,7 @@ last_modified_date: 2022-10-09
 
 3. **Run** the file named "Specs.cmd", if a User Account Control window pops up, press Yes.
 
-4. Click **"Start"**, the powershell window should be displaying each step.
+4. Click **"Start"**, the PowerShell window should be displaying each step.
 
 5. Click **"Upload"**, a link should be copied to your clipboard. You can then paste it in the channel.
 

@@ -43,11 +43,11 @@ To unlock an encrypted device:
 
 #### Advantages
 
-- LUKS is broadly availible accros Linux Distributions
+- LUKS is broadly available across Linux Distributions
 
 #### Disadvantages
 
 - No GUI (Graphical User Interface)
 - Requires a certain degree of knowledge of the Linux Terminal
-- No way of accessing Drives on Other Operating systems wihtout usage of 3rd Party Software 
+- No way of accessing Drives on Other Operating systems without usage of 3rd Party Software 
 

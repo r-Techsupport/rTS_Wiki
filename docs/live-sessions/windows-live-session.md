@@ -26,7 +26,7 @@ Windows PE is small bootable Windows environment made for r/Techsupport. This PE
 ## Creating bootable media
 This will require a USB that is at least the size of the ISO you downloaded.
 
-**All methods of creating boot media are destructive and will WIPE the USB flasdrive or external disk.**
+**All methods of creating boot media are destructive and will WIPE the USB flash drive or external disk.**
 
 ### Windows
 1. Download and run [Rufus](https://rufus.ie/)

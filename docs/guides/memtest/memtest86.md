@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  Memtest86+
+title:  MemTest86+
 nav_exclude: false
 has_children: false
 #grand_parent: General Guides

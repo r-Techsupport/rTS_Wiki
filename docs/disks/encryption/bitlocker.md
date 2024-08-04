@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bitlocker
+title: BitLocker
 nav_exclude: false
 has_children: false
 has_toc: true
@@ -10,7 +10,7 @@ search_exclude: false
 last_modified_date: 2023-12-17
 ---
 
-# Bitlocker
+# BitLocker
 BitLocker is a built-in disk encryption feature in Windows that provides full disk encryption for the operating system drive, as well as additional data drives. It is the most accessible solution to anyone wishing to add disk encryption on their computer.
 
 ## Setting Up Full Disk Encryption on Windows using BitLocker
@@ -26,11 +26,11 @@ Here's how to set up BitLocker on Windows:
 
 {: .warning .warning-icon }
 > **Hardware Change Warning**<br>
-> **Changing your motherboard or CPU may "break" bitlocker and require recovery.**<br>
+> **Changing your motherboard or CPU may "break" BitLocker and require recovery.**<br>
 > <br>
 > BitLocker is designed to lock down in the event of hardware or firmware changes, to prevent unauthorized access to the encrypted data. However, there may be times when hardware or firmware changes are necessary, such as during routine maintenance or upgrades. In these cases, BitLocker can be put into maintenance mode, allowing the changes to be made and then resumed.<br>
 > <br>
-> If you are already "broken" please see [Finding Bitlocker Recovery Keys](#finding-bitlocker-recovery-keys)
+> If you are already "broken" please see [Finding BitLocker Recovery Keys](#finding-bitlocker-recovery-keys)
 
 ## How to put BitLocker into maintenance mode:
 
@@ -67,14 +67,14 @@ To encrypt an external drive using BitLocker to Go, follow these steps:
 
 To unlock a BitLocker to Go drive, simply connect it to a Windows computer and enter the password when prompted. The drive will then be unlocked and accessible just like any other drive.
 
-## Finding Bitlocker Recovery Keys 
+## Finding BitLocker Recovery Keys 
 
-Bitlocker recovery keys can be found in several places, depending on how Bitlocker was set up:
+BitLocker recovery keys can be found in several places, depending on how BitLocker was set up:
 
 - In the Microsoft account: If the recovery key was saved to the Microsoft account, it can be found by signing in to the account and viewing the security information. Follow [this guide](https://support.microsoft.com/en-us/windows/finding-your-bitlocker-recovery-key-in-windows-6b71ad27-0b89-ea08-f143-056f5ab347d6) to retrieve it.
-- In the OneDrive account: If the recovery key was saved to the OneDrive account, it can be found by signing in to the account and searching for "Bitlocker".
+- In the OneDrive account: If the recovery key was saved to the OneDrive account, it can be found by signing in to the account and searching for "BitLocker".
 - On a USB drive: If the recovery key was saved to a USB drive, the USB drive must be inserted into the computer to access the encrypted data.
-- With the Bitlocker Recovery Console: If the recovery key was not saved to the Microsoft account or a USB drive, it can be found using the Bitlocker Recovery Console.
+- With the BitLocker Recovery Console: If the recovery key was not saved to the Microsoft account or a USB drive, it can be found using the BitLocker Recovery Console.
 
 {: .warning .warning-icon }
-> It is not possible to decrypt BitLocker drives without them and we will not asisst in doing so.
+> It is not possible to decrypt BitLocker drives without them and we will not assist in doing so.

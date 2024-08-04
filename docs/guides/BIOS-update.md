@@ -36,7 +36,7 @@ BIOS updates generally does not improve performance (and even when it states it 
 {: .warning .warning-icon }
 > Manufacturers warn against updating BIOS unless you have a specific problem. If you are not doing an upgrade or do not have any issues, then it is best to leave the BIOS version as is, as it typically is a last resort for most troubleshooting, as updating the BIOS can be a risky process. A failure of flashing may result in a bricked motherboard.
 
-Sometimes there are multiple ways to update the BIOS, all dependant on the motherboard and system you have set up. Please follow the general guide below to understand how to update the BIOS.
+Sometimes there are multiple ways to update the BIOS, all dependent on the motherboard and system you have set up. Please follow the general guide below to understand how to update the BIOS.
 
 # Steps to Updating the BIOS:
 
@@ -95,7 +95,7 @@ With the update file on the USB, you can now commit to actually updating the BIO
     {: .warning .warning-icon }
     > This method is especially important for updating a BIOS without a CPU, or have an unsupported CPU. So if you were to buy a motherboard whose BIOS version currently does not support the CPU, you may have to utilize this method to update it.
 
-    > In the event you have a motherboard without this feature, and the BIOS version does not support the CPU you are trying to use, then you may have to go to a repair shop or ask a friend to borrow a CPU which the BIOs supports and updating the BIOS through that (or letting them do it for you), or doing an RMA for the board and buying a motherboard with a onboard BIOS flash feature or has a supported BIOS out of the box.
+    > In the event you have a motherboard without this feature, and the BIOS version does not support the CPU you are trying to use, then you may have to go to a repair shop or ask a friend to borrow a CPU which the BIOS supports and updating the BIOS through that (or letting them do it for you), or doing an RMA for the board and buying a motherboard with a onboard BIOS flash feature or has a supported BIOS out of the box.
 
 # Common Issues and Information:
 

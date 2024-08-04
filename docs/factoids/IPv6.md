@@ -27,16 +27,16 @@ Turning off [IPv6](/docs/learning/terms#ipv6-address) can help troubleshoot inte
  
 5. Test to see if the issue continues. 
 
-## Turning Off IPv6 (Powershell)
+## Turning Off IPv6 (PowerShell)
 
-1. Right click on the start menu and run Powershell (Windows Terminal) as admin.
+1. Right click on the start menu and run PowerShell (Windows Terminal) as admin.
 
 2. Enter this command: `Get-NetAdapter | ? {-not $_.Virtual -and $_.Status -eq "Up" } | foreach {Disable-NetAdapterBinding -InterfaceAlias $_.Name -ComponentID ms_tcpip6}`
 
 3. Test to see if the issue continues.
 
-## Turning IPv6 ON (Powershell)
+## Turning IPv6 ON (PowerShell)
 
-1. Right click on the start menu and run Powershell (Windows Terminal) as admin.
+1. Right click on the start menu and run PowerShell (Windows Terminal) as admin.
 
 2. Enter this command: `Get-NetAdapter | ? {-not $_.Virtual -and $_.Status -eq "Up" } | foreach {Enable-NetAdapterBinding -InterfaceAlias $_.Name -ComponentID ms_tcpip6}`

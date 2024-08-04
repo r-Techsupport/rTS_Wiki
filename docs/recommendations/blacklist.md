@@ -105,7 +105,7 @@ See [here](/docs/recommendations/av) for our stance on AV Tools. It doesn't have
 | Webroot |
 
 ### Precompiled Windows PE
-Various PE distributions are illegal for various reasons such as distributing pirated/TOS breaking applications or requiring defacto payment prior to download.
+Various PE distributions are illegal for various reasons such as distributing pirated/TOS breaking applications or requiring de facto payment prior to download.
 
 | Name | Notes |
 | --- | --- | 
@@ -113,7 +113,7 @@ Various PE distributions are illegal for various reasons such as distributing pi
 | Gandalf |
 
 ### Vendors
-This list of vendors offer nothing to the community or make multiple products that are considerd PUPs/Malware.
+This list of vendors offer nothing to the community or make multiple products that are considered PUPs/Malware.
 
 | Name | Notes |
 | --- | --- |
