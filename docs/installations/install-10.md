@@ -89,12 +89,11 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-10
 
     ![10-4.png](/assets/install-10/10-4.png)
 
-<<<<<<< HEAD
-     > Ensure that you only have drive 0 partitions in this window before deleting, otherwise this means you didn't disconnect other drives as noted in step 8.
-=======
-    {: .info .info-icon }
+
+
+     {: .info .info-icon }
      > Ensure that you only have drive 0 partitions in this window before deleting, otherwise this means you didnt disconnect other drives as noted in step 8.
->>>>>>> a89416de323d8e327b81263d568e3e1880aaa5a8
+
 
     <details markdown="1">
     <summary markdown=span>
