@@ -15,7 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     env:
-      PLATFORM_VERSION: '3.0.0' # Environment variable only for this job
+      PLATFORM_NAME: 'ruby'
+      PLATFORM_VERSION: '3.0.0'
     steps:
       - uses: actions/checkout@v3
         with:
