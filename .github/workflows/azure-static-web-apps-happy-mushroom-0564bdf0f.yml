@@ -8,6 +8,8 @@ on:
     types: [opened, synchronize, reopened, closed]
     branches:
       - azure-swa-test
+  env:
+    PAGES_REPO_NWO = "rts_wiki"
 
 jobs:
   build_and_deploy_job:
