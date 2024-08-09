@@ -9,5 +9,6 @@ _site/
 Gemfile.lock
 .vscode/
 .bundle/
+.ruby-version
 
 *.bak
