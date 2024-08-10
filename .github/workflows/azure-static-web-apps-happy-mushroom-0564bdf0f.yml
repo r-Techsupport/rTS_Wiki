@@ -3,11 +3,11 @@ name: Azure Static Web Apps CI/CD
 on:
   push:
     branches:
-      - azure-swa-test
+      - master
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
-      - azure-swa-test
+      - master
 env:
   PAGES_REPO_NWO: "r-Techsupport/rTS_Wiki"
 
