@@ -3,16 +3,18 @@ layout: default
 title:  MemTest86+
 nav_exclude: false
 has_children: false
-#grand_parent: General Guides
 parent: General Guides
 search_exclude: false
-last_modified_date: 2023-01-22
+last_modified_date: 2024-08-13
 redirect_from: /books/how-to-and-guides/page/running-memtest86
 ---
 
 # Memtest86+
 
 Memtest86+ is a small tool that allows you to test memory for issues.
+
+{: .info .info-icon }
+> Memtest86+ and Memtest86 are different products. This guide is for Memtest86+ 
 
 ## 1. Obtaining media
 You may also use the [official Memtest86+ ISO](https://www.memtest.org/download/v7.00/mt86plus_7.00_64.iso.zip), or the [install tool for Windows](https://www.memtest.org/download/v7.00/mt86plus_7.00_USB_Installer.exe).
