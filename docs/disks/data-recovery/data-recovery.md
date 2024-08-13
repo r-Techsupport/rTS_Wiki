@@ -5,7 +5,7 @@ nav_exclude: false
 has_children: true
 parent: Disks
 search_exclude: false
-last_modified_date: 2024-02-25
+last_modified_date: 2024-08-13
 ---
 
 # Data Recovery
@@ -13,7 +13,7 @@ Data recovery is a complicated process that requires care and attention to be do
 
 {% include embeds/data-recovery-warning.md %}
 
-{: .warning .warning-icon }
+{: .danger .danger-icon }
 > If you are seeing "cyclic redundancy check" anywhere, you will not be able to attempt recovery at home and should seek professional data recovery services.
 
 ## Scenarios
@@ -24,7 +24,7 @@ A small obstacle preventing you from using your computer like normal such as:
 - My laptop screen broke so I can't see anything
 - I cannot log into Windows for some reason
 
-For these issues, you can [recover files with a Live Linux Session](/docs/disks/data-recovery/reading-linux).
+For these issues, you can [recover files by attaching your disk to another computer](/docs/disks/data-recovery/drive-dock) or [recover files with a Live Linux Session](/docs/disks/data-recovery/reading-linux).
 
 ### My disk is visible but inaccessible
 You have a drive that is visible in Windows but it has no data on it. This may be because:
