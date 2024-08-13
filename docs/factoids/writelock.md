@@ -10,6 +10,9 @@ last_modified_date: 2024-06-28
 
 # Removing write protection on drives
 
+{: .warning .warning-icon }
+> Drives are often write-locked because they are failing or dead. In those cases, it's best to back up the data on said drive.
+
 Open CMD with admin privileges and type in the following commands line by line
 1. `diskpart`
     - Command to open diskpart
@@ -23,7 +26,6 @@ Open CMD with admin privileges and type in the following commands line by line
 4. `attrib disk clear readonly`
     - Clears the read-only attribute
 
-If successful, Command Prompt should output `Disk attibutes cleared successfully`. You can now exit Command Prompt.
+{: .success .success-icon }
+> Command Prompt should output `Disk attibutes cleared successfully`. You can now exit Command Prompt.
 
-{: .warning .warning-icon }
-> Drives are often write-locked because they are failing or dead. In those cases, it's best to back up the data on said drive
