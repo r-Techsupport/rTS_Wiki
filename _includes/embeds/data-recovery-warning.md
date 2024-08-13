@@ -1,4 +1,4 @@
-{: .warning .warning-icon }
+{: .danger .danger-icon }
 > **Warning: Make a disk image**
 > 
 > Attempting data recovery always has a chance to make your situation worse, causing the permanent loss of your data. 
