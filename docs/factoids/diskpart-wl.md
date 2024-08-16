@@ -33,4 +33,4 @@ attrib disk clear readonly
 
 If successful, Command Prompt should output 'Disk attributes cleared successfully'
 You can now exit Command Prompt
-Keep in mind that drives are often write-locked because they are failing or dead. In those cases, it's best to back up the data on said drive
+Keep in mind that drives are often write-locked because they are failing or dead. In those cases, it's best to back up the data on said drive.
