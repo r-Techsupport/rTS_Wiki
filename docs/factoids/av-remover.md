@@ -7,6 +7,7 @@ parent: Factoids
 search_exclude: false
 last_modified_date: 2024-01-02
 ---
+
 Below is a list of links for downloading (or usage guides of) dedicated uninstallers for 3rd party AVs. 
 
 |Name of Antivirus|Link|
