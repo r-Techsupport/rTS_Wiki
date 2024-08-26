@@ -39,7 +39,7 @@ BSOD dumps allow us to further analyze a BSOD and potentially find the issue.
 
 If you are receiving an error that access is denied when opening the Windows Directory, your account does not have the permissions required to view system files. You will need to have access to an administrator account before we can help you further.
 
-If you are receiving an Access is Denied error when creating the .zip file in step 4, you most likely did not copy the Minidump folder to the desktop. Windows will not allow you to modify the Minidump folder inside the Windows directory. It must be copied elsewhere.
+If you are receiving an Access is Denied error when creating the .zip file in step 4, you most likely did not copy the Minidump folder to the documents. Windows will not allow you to modify the Minidump folder inside the Windows directory. It must be copied elsewhere.
 
 ## No Minidump folder exists
 
@@ -57,7 +57,7 @@ First, double check the dump configuration settings following the guide [here](h
 
 If your file is stuck on `Processing...` when uploading it to Discord, you are attempting to upload a dump file directly from the Minidump folder. Depending on your account's permissions, Windows prevents this but does not provide any sort of notification. Please follow the steps above to copy and upload the entire Minidump folder rather than the individual dump files.
 
-If you're curious, we use [WinDbg](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools) to analyze the dump.
+If you're curious, you can learn more about reading the dump files [here](/docs/learning/bsod_guide)
 
 ## Unable to access windows desktop
 
