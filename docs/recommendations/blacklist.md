@@ -6,7 +6,7 @@ nav_order: 2
 has_children: false
 parent: Software We Recommend
 search_exclude: false
-last_modified_date: 2022-07-16
+last_modified_date: 2024-08-18
 redirect_from: /books/software-we-recommend/page/blacklist
 ---
 
@@ -18,16 +18,17 @@ redirect_from: /books/software-we-recommend/page/blacklist
 This serves as a master list of banned software that we do not permit in the community.
 
 ### EOL OS 
-Any EOL OS is unsupported, it does not need to be listed here.
+Any EOL OS is unsupported, it does not need to be listed here, but here are some examples
 
-| Name | Notes |
-| --- | --- |
-| Windows XP | 
-| Windows Vista |
-| Windows 7 |
-| Ubuntu 12.04 |
-| Windows 10 | [See here](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro) to check if you are running a compatible version. You can type "Winver" on the start menu to see your current version.
-| ETC |
+| Name          | Notes                                                                                                                                                                                                           |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Windows XP    |                                                                                                                                                                                                                 |
+| Windows Vista |                                                                                                                                                                                                                 |
+| Windows 7     |                                                                                                                                                                                                                 |
+| Ubuntu 12.04  |                                                                                                                                                                                                                 |
+| Windows 10    | Any version prior to 22H2 is no longer supported. You can type "winver" into the start menu to see your current version.                                                                                        |
+| Windows 11    | [See here](https://docs.microsoft.com/en-us/lifecycle/products/windows-11-home-and-pro) to check which versions are currently supported. You can type "winver" into the start menu to see your current version. |
+| ETC           |                                                                                                                                                                                                                 |
 
 ### Unsupported OS
 Any custom Windows ISO is unsupported. They are not endorsed by Microsoft and often remove or cripple important Windows features like Windows Update and Window Defender. The developers of these ISOs can also decide whether or not to implement malware and put the user in danger. These unsupported OSs are not limited to but include the ones listed below.  
