@@ -32,7 +32,7 @@ This guide will mention basic steps to help you fix your PC not showing anything
  	RAM:
  	dGPU:
  	PSU:
- 	(Example: no fans, no LEDs, and nothing indicates that it's receiving power)
+ 	Notes: (for example: fans are not moving, no LEDs, and nothing indicates that it's receiving power)
 ```
 
 4 - If your motherboard includes a [debugging LED](https://beebom.com/wp-content/uploads/2022/09/Motherboard-LED-debug.jpg?quality=75&strip=all), or has a [7-segmented display](https://upload.wikimedia.org/wikipedia/commons/e/ea/Seven_segment_01_Pengo.jpg), or is beeping, take note of the code it is showing.
