@@ -24,8 +24,10 @@ Display Driver Uninstaller is a program that can fully wipe display/audio driver
 > Make sure you are in [Safe Mode](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode) for the following steps.
 
 >Your Display Resolution Will decrease because Windows will revert to the failsafe "MsDisplayAdapter Driver"
+
 ### Laptops or integrated graphics
-To wipe display drivers for laptops/devices with onboard graphics: Select the "GPU" device type from the drop-down list on the right. 
+
+>To wipe display drivers for laptops/devices with onboard graphics: Select the "GPU" device type from the drop-down list on the right. 
 
 * Select the `Clean and do NOT restart` option for the first driver, _then_ the `Clean and restart` option for the second driver. Any GPU driver can be wiped first, the order is irrelevant.
 
