@@ -27,7 +27,7 @@ Display Driver Uninstaller is a program that can fully wipe display/audio driver
 
 ### Laptops or integrated graphics
 
->To wipe display drivers for laptops/devices with onboard graphics: Select the "GPU" device type from the drop-down list on the right. 
+To wipe display drivers for laptops/devices with onboard graphics: Select the "GPU" device type from the drop-down list on the right. 
 
 * Select the `Clean and do NOT restart` option for the first driver, _then_ the `Clean and restart` option for the second driver. Any GPU driver can be wiped first, the order is irrelevant.
 
