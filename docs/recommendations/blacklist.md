@@ -31,12 +31,11 @@ Any EOL OS is unsupported, it does not need to be listed here, but here are some
 | ETC           |                                                                                                                                                                                                                 |
 
 ### Unsupported OS
-Any custom Windows ISO is unsupported. They are not endorsed by Microsoft and often remove or cripple important Windows features like Windows Update and Window Defender. The developers of these ISOs can also decide whether or not to implement malware and put the user in danger. These unsupported OSs are not limited to but include the ones listed below.  
-
-| Name | Notes |
-| --- | --- |
-| ReviOS | Due to ReviOS TOS this is considered to have malware included such as keyloggers. The vendor also provides 0 support to users.
-| AtlasOS | The AtlasOS developer has admitted to purposely removing security mechanisms and protections from his build, he actively refuses to disclose this information to users choosing to cause great harm to the community rather than learn to deal with the security introduced by Microsoft and required for use by regular citizens in the modern world. |
+Any custom Windows ISO is unsupported. They are not endorsed by Microsoft and often remove or cripple important Windows features like Windows Update and Window Defender. The developers of these ISOs can also decide whether or not to implement malware and put the user in danger. These unsupported OSs are not limited to but include the ones listed below.
+- AtlasOS
+- ReviOS
+- Tiny10
+- Tiny11
 
 ### Debloaters
 These break machines and are black boxes for troubleshooting. If you have an issue with an OS don't use it. Do not break it then expect help.
