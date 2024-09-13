@@ -31,7 +31,7 @@ Any EOL OS is unsupported, it does not need to be listed here, but here are some
 | ETC           |                                                                                                                                                                                                                 |
 
 ### Unsupported OS
-Any custom Windows ISO is unsupported. They are not endorsed by Microsoft and often remove or cripple important Windows features like Windows Update and Window Defender. The developers of these ISOs can also decide whether or not to implement malware and put the user in danger. These unsupported OSs are not limited to but include the ones listed below.
+Any custom Windows ISO is unsupported. They are not endorsed by Microsoft and often remove or cripple important Windows features like Windows Update and Windows Defender. The developers of these ISOs can also decide whether or not to implement malware and put the user in danger. These unsupported OSs are not limited to but include the ones listed below.
 - AtlasOS
 - ReviOS
 - Tiny10
