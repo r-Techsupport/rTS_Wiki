@@ -6,7 +6,7 @@ nav_order: 2
 has_children: false
 parent: OS Install Guides
 search_exclude: false
-last_modified_date: 2024-06-28
+last_modified_date: 2024-09-29
 redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 ---
 {: .danger .danger-icon }
@@ -54,16 +54,18 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 8. After MCT says it finished, shutdown your PC.
 
     {: .danger .danger-icon }
-    > Disconnect all storage disks except from the main (C Drive) disk from the computer before installing Windows 10. Not doing so can accidentally wipe other disks or result in the installer choosing the wrong disk as the boot drive and putting actual windows on another drive.
+    > Disconnect all storage disks except from the main (C Drive) disk from the computer before installing Windows 11. Not doing so can accidentally wipe other disks or result in the installer choosing the wrong disk as the boot drive and putting actual windows on another drive.
 
 # Part 2: Installing Windows 11
  
 {: .info .info-icon }
-> Please make sure to:
+> Please make sure to (those are settings in BIOS/UEFI):
 > - Disable CSM
 > - Enable Secure Boot
 > - Enable TPM
 > - Set SATA mode to AHCI if your drive is using SATA prior to installation of Windows 11
+
+
 
 1. Boot into your USB that has the Windows 11 Media on it. 
 
