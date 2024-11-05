@@ -5,19 +5,24 @@ nav_exclude: false
 parent: Factoids
 has_children: false
 search_exclude: false
-last_modified_date: 2023-05-08
+last_modified_date: 2024-11-05
 ---
 
 # Resetting the CMOS
 
 ## Method 1: Removing the CMOS battery
-The CMOS battery is present in all laptops and desktops, and is the fail-safe option for most products.
+
 
 1. Unplug PSU power cable from wall, this ensures no power is going to the PC. If on laptop, disconnect the battery from the motherboard as well.
 
 2. Remove CMOS battery. This is a small 'watch battery' in your motherboard (see below).
 
 	![CMOS battery](/assets/factoids/cmos.jpeg)
+
+	 {: .info .info-icon }
+	 > Some laptops may lack a dedecated CMOS battery but use the main battery for its functionality, other laptops may have the battery covered like this: ![laptop CMOS](/assets/cmos/cmos-laptop.jpg)
+	
+
 
 3. Press and hold PC power button for 30 seconds, this clears out any remaining charge in your PC.
 
