@@ -122,7 +122,7 @@ Refer to the matrix below to identifier what product you need the drivers for, t
 - [Corsair Downloads](https://www.corsair.com/us/en/downloads)
 - [Corsair Support](https://help.corsair.com/hc/en-us)
 - [Creative - Sound Blaster](https://support.creative.com/Products/Products.aspx?catid=1)
-- [Dell](https://www.asus.com/us/support/)
+- [Dell](https://www.dell.com/support/home/en-us)
 - [Gateway](https://www.gateway.com/gw/en/US/content/support-overview)
 - [Gigabyte](https://www.gigabyte.com/Support)
 - [HP](https://support.hp.com/us-en)
