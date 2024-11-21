@@ -17,6 +17,6 @@ Below is a list of links for downloading (or usage guides of) dedicated uninstal
 |Avast|[https://www.avast.com/uninstall-utility](https://www.avast.com/uninstall-utility)|
 |Malwarebytes|[https://support.malwarebytes.com/hc/en-us/articles/360039023473-Uninstall-and-reinstall-Malwarebytes-using-the-Malwarebytes-Support-Tool](https://support.malwarebytes.com/hc/en-us/articles/360039023473-Uninstall-and-reinstall-Malwarebytes-using-the-Malwarebytes-Support-Tool)|
 |Kaspersky|[https://support.kaspersky.com/common/uninstall/1464](https://support.kaspersky.com/common/uninstall/1464)|
-|McAfee|{https://download.mcafee.com/molbin/iss-loc/SupportTools/MCPR/MCPR.exe](https://download.mcafee.com/molbin/iss-loc/SupportTools/MCPR/MCPR.exe)|
+|McAfee|[https://download.mcafee.com/molbin/iss-loc/SupportTools/MCPR/MCPR.exe](https://download.mcafee.com/molbin/iss-loc/SupportTools/MCPR/MCPR.exe)|
 |Bitdefender|[https://www.bitdefender.com/uninstall/](https://www.bitdefender.com/uninstall/)|
 |ESET|[https://support.eset.com/en/kb2289-uninstall-eset-manually-using-the-eset-uninstaller-tool](https://support.eset.com/en/kb2289-uninstall-eset-manually-using-the-eset-uninstaller-tool)|
