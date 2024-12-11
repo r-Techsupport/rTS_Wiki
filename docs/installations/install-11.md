@@ -57,26 +57,29 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
     > Disconnect all storage disks except from the main (C Drive) disk from the computer before installing Windows 11. Not doing so can accidentally wipe other disks or result in the installer choosing the wrong disk as the boot drive and putting actual windows on another drive.
 
 # Part 2: Installing Windows 11
+
  
 {: .info .info-icon }
-> Please make sure to (those are settings in BIOS/UEFI):
+> The following section occurs in your BIOS, you can enter your systems' BIOS by looking for the words "setup" when you see your BIOS boot screen then pressing the corresponding function key.
+> 
+> Please validate the following settings in your BIOS before booting into the USB:
 > - Disable CSM
 > - Enable Secure Boot
 > - Enable TPM
-> - Set SATA mode to AHCI if your drive is using SATA prior to installation of Windows 11
+> - Set drive controller mode to AHCI/NVMe or disable RAID/VMD/IRST prior to installation of Windows 11
 
 
 
 1. Boot into your USB that has the Windows 11 Media on it. 
 
-    {: .info .info-icon }
-    > You can do this by entering your systems' BIOS and change the BIOS boot order to have USB media as the first priority (this can usually be found under the boot tab), or simply look for the words "boot menu" when you see your BIOS boot screen, press the corresponding function key and choose the USB flash drive to boot from it.
+{: .info .info-icon }
+> Change the BIOS boot order to have USB media as the first priority (this can usually be found under the boot tab), or simply look for the words "boot menu" when you see your BIOS boot screen, press the corresponding function key and choose the USB flash drive to boot from it.
 
 2. Follow the steps on screen to install Windows 11. 
  
 3. Click `Install now`
 
-     {: .info .info-icon }
+     {: .warning .warning-icon }
      > If you do not see an installer like the below screenshot, click next twice, then click "Previous version of Setup" near the bottom left corner of the installer window.
 
      [![Windows 11-2021-10-05-15-03-05.png](/assets/install-11/windows-11-2021-10-05-15-03-05.png)](/assets/install-11/windows-11-2021-10-05-15-03-05.png)
