@@ -63,7 +63,7 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 > - Disable CSM
 > - Enable Secure Boot
 > - Enable TPM
-> - Set drive controller mode mode to AHCI/NVMe or disable RAID/VMD/IRST prior to installation of Windows 11
+> - Set drive controller mode to AHCI/NVMe or disable RAID/VMD/IRST prior to installation of Windows 11
 
 
 
