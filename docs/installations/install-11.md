@@ -61,6 +61,7 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
  
 {: .info .info-icon }
 > The following section occurs in your BIOS, you can enter your systems' BIOS by looking for the words "setup" when you see your BIOS boot screen then pressing the corresponding function key.
+> 
 > Please validate the following settings in your BIOS before booting into the USB:
 > - Disable CSM
 > - Enable Secure Boot
