@@ -76,7 +76,7 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
  
 3. Click `Install now`
 
-     {: .info .info-icon }
+     {: .warning .warning-icon }
      > If you do not see an installer like the below screenshot, click next twice, then click "Previous version of Setup" near the bottom left corner of the installer window.
 
      [![Windows 11-2021-10-05-15-03-05.png](/assets/install-11/windows-11-2021-10-05-15-03-05.png)](/assets/install-11/windows-11-2021-10-05-15-03-05.png)
