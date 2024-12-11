@@ -59,7 +59,7 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 # Part 2: Installing Windows 11
  
 {: .info .info-icon }
-> Please make sure to (those are settings in BIOS/UEFI):
+> Please validate the following settings in your BIOS before booting into the USB:
 > - Disable CSM
 > - Enable Secure Boot
 > - Enable TPM
