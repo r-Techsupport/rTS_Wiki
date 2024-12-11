@@ -57,10 +57,10 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
     > Disconnect all storage disks except from the main (C Drive) disk from the computer before installing Windows 11. Not doing so can accidentally wipe other disks or result in the installer choosing the wrong disk as the boot drive and putting actual windows on another drive.
 
 # Part 2: Installing Windows 11
-The following section occurs in your BIOS, you can enter your systems' BIOS by looking for the words "setup" when you see your BIOS boot screen then pressing the corresponding function key.
 
  
 {: .info .info-icon }
+> The following section occurs in your BIOS, you can enter your systems' BIOS by looking for the words "setup" when you see your BIOS boot screen then pressing the corresponding function key.
 > Please validate the following settings in your BIOS before booting into the USB:
 > - Disable CSM
 > - Enable Secure Boot
