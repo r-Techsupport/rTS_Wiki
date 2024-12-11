@@ -1,3 +1,5 @@
+### Windows
+
 {% include embeds/rufus.md %}
 
 ### macOS
