@@ -1,7 +1,5 @@
-**Warning: This will wipe all existing data on the USB drive.**
-
-### Windows
-{: .no_toc }
+{: .danger .danger-icon }
+> This will wipe all existing data on the USB drive.
 
 1. Download and run [Rufus](https://rufus.ie/).
 2. Select “ISO Image” and then browse for the ISO image.
