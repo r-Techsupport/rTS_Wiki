@@ -27,6 +27,10 @@ BSOD dumps allow us to further analyze a BSOD and potentially find the issue.
 
 3. If you have dump files, copy the entire folder (*not just the files in the folder*) to the Downloads folder. This will require administrator permissions.
 
+    {: .warning .warning-icon }
+    > Ensure that you **copy** this folder. Do not attempt to move it entirely or you will receive permission errors.
+
+
 4. Create a .zip file of the whole folder by right clicking the folder -> `Send to` -> `Compressed (zip) folder`
 
     ![CompressDump.png](/assets/factoids/CompressDump.png)
