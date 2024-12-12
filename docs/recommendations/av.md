@@ -31,7 +31,7 @@ View more definitions [here](/docs/learning/terms).
 
 ## Windows Defender
 
-The built in solution for AV in Windows 10 is more than adequate for consumers. This is much better than running a free AV suite that is of lesser quality or plans to sell your personal habits for profit (McAfee, Avast, AVG, etc)
+The built in solution for AV in Windows is more than adequate for consumers. This is much better than running a free AV suite that is of lesser quality or plans to sell your personal habits for profit (McAfee, Avast, AVG, etc)
 
 ## Free Alternatives
 
