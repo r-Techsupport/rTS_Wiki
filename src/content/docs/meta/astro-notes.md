@@ -28,3 +28,4 @@ description: 'All changes and outstanding items to know about for the Jekyll to 
 ## To Do
 - Includes are broken
 - `/assets/` will be deprecated. Markdown files in astro can only use relative paths to images so `/src/assets` will be used.
+- Faveico isnt working
