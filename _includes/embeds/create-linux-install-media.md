@@ -3,7 +3,6 @@
 {% include embeds/rufus.md %}
 
 ### macOS
-{: .no_toc}
 
 1. Open the Terminal.
 2. First, without the flash drive inserted, run `diskutil list` in the Terminal.
@@ -15,7 +14,6 @@
 8. Eject the USB flash drive: `diskutil eject /dev/diskN`.
 
 ### Linux
-{: .no_toc }
 
 1. First, without the flash drive inserted, run `lsblk` in the Terminal.
 2. Plug in the flash drive and run `lsblk` again. You can do this to identify the drive device path. The device path is usually in the form of `/dev/sdX`, where X is a letter (example: `/dev/sdb`).
@@ -23,6 +21,5 @@
 5. Wait until dd finishes. The terminal will display the next prompt when it's done.
 
 ### Ventoy (Windows and Linux)
-{: .no_toc }
 
 Follow our [Ventoy guide](/docs/guides/ventoy) to make one flash drive that can boot multiple ISO files, this is a more advanced method but suitable for power users who may not have heard about it before.
