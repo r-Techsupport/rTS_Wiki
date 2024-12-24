@@ -5,6 +5,7 @@ import remarkObsidianCallout from "remark-obsidian-callout";
 
 // https://astro.build/config
 export default defineConfig({
+    site: 'https://rtech.support',
     integrations: [
         starlight({
             title: 'rTS Wiki',

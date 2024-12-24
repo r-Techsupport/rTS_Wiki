@@ -9,6 +9,9 @@
     "preview": "astro preview",
     "astro": "astro"
   },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
     "@astrojs/starlight": "^0.30.3",
     "astro": "^5.1.0",
