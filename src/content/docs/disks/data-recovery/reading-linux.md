@@ -1,0 +1,24 @@
+---
+layout: default
+title: Recovering files from a readable disk
+sidebar:
+    hidden: false
+has_children: false
+parent: Data Recovery
+grand_parent: Disks
+pagefind: true
+last_modified_date: 2024-02-23
+---
+
+
+{% include embeds/use-linux-live-session.md %}
+
+Open the File Manager from the applications menu, you should see your disk in the pane on the left. In the below image, it is the "11GB Volume"
+
+![image1](/assets/data-recovery/dr0.png)
+
+Double click the desired disk and it should open in the file manager.
+
+![image2](/assets/data-recovery/dr1.png)
+
+Once opened, you can drag and drop files to another disk that you mount into the system just like in Windows.
