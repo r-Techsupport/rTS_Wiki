@@ -111,7 +111,7 @@ This guide will use this template:
   5.  Insert one end of the of the jumper into the 16th pin of the 24 or 20 pin ATX power connector.
 
   6.   Insert the other end of the jumper into the 17th pin to ground it out and trigger it to start once powered later. **Important:** On the multimeter, ensure the red probe is attached to the `mAV Ω` connection and that the black probe is connected to `COM (-)`. On an auto-ranging multimeter, select the `VDC` position. Otherwise, turn the dial to `20 VDC` setting. > If you are ever unsure of the output voltage you should always use the highest choice first, ex: `200V DC`. Once confirmed low disconnect and select the `20V DC` setting.
-  ![PSU 24-pin power test.png](/assets/psu/paperclip-test.png)
+  ![PSU 24-pin power test.png](../../../assets/psu/paperclip-test.png)
   (Picture for reference)
 
 ## Taking Measurements
@@ -245,4 +245,4 @@ Pinout Reference for ATX 24-pin
 **Optional - Removed in ATX12V v2.01, now an empty pin
 
 Picture for the sake of simplification.
-![table.jpg](/assets/psu/psu-pinout.jpg)
+![table.jpg](../../../assets/psu/psu-pinout.jpg)

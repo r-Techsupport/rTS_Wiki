@@ -25,22 +25,22 @@ A disk needs a partition table made as the first step in formatting. This is gen
 
 Select a disk in Gparted from the drop-down in the top right
 
-![Selecting a disk in gparted](/assets/gparted/gparted_disk_sel.png)
+![Selecting a disk in gparted](../../../assets/gparted/gparted_disk_sel.png)
 
 To create your table, hover over 'device' with your disk selected.
 
-![creating a table in gparted](/assets/gparted/gparted_create_table.png)
+![creating a table in gparted](../../../assets/gparted/gparted_create_table.png)
 
 #### Create partition
 To create a partition on a disk right click any unallocated space and choose 'New'. 
 
-![creating a partition in gparted](/assets/gparted/gparted_create_part.png)
+![creating a partition in gparted](../../../assets/gparted/gparted_create_part.png)
 
 Choose your size and location on the disk by dragging the sliders, the entire box or entering values manually. It is recommended to make partitions starting at the head (start) of the disk and work your way right.
 
 Primary partitions are the typical user partition. Logical or extended are for more advanced setups.
 
-![creating a partition in gparted 2](/assets/gparted/gparted_create_part2.png)
+![creating a partition in gparted 2](../../../assets/gparted/gparted_create_part2.png)
 
 Typical file system types and uses are:
 
@@ -62,7 +62,7 @@ HFS/+|MacOS native with read on other OS via third party tools|MacOS OS and data
 ### Enlarge/Move/Shrink partitions
 To change the size of a partition right click it and choose 'resize/move'. You can manipulate the size the same way as when making a new partition.
 
-![resizing a partition in gparted](/assets/gparted/gparted_part_res.png)
+![resizing a partition in gparted](../../../assets/gparted/gparted_part_res.png)
 
 #### Enlarging
 If enlarging a partition ensure you have enough **empty** space to the immediate right of the partition. If you do not, move the neighbor partition far enough right that you have space for your enlargement operation.
@@ -78,4 +78,4 @@ Moving partitions takes a very long time. It is recommended that you restore dat
 ## Finalizing changes
 When you are done making changes to disk choose the 'Check' at the top to save those changes, confirm and the changes will start processing. **If you shrunk, or moved partitions this can take a very long time.**
 
-![final step gparted](/assets/gparted/gparted_disk_final.png)
+![final step gparted](../../../assets/gparted/gparted_disk_final.png)

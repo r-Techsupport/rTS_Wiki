@@ -16,27 +16,27 @@ If you want to stop syncing OneDrive on your computer because you are on a meter
 
 ### To pause syncing
 1. Select the white or blue OneDrive cloud icon in the notification/menu area. This icon may be under the "show hidden icons"tab on your taskbar. (See pictures for referencing below)
-![HiddenIcon.png](/assets/One-Drive/HiddenIcon.png) 
-![OneDriveIcon.png](/assets/One-Drive/OneDriveIcon.png)
-2. Right-click (or CTRL-click in Mac) the OneDrive icon on the taskbar, Click the        ![settingsicon.png](/assets/One-Drive/settingsicon.png) icon and select Pause syncing > 2 / 8 / 24hours.
+![HiddenIcon.png](../../../assets/One-Drive/HiddenIcon.png) 
+![OneDriveIcon.png](../../../assets/One-Drive/OneDriveIcon.png)
+2. Right-click (or CTRL-click in Mac) the OneDrive icon on the taskbar, Click the        ![settingsicon.png](../../../assets/One-Drive/settingsicon.png) icon and select Pause syncing > 2 / 8 / 24hours.
 
 
 ### To resume syncing
 1. Select the white or blue OneDrive cloud icon in the notification/menu area. This icon may be under the "show hidden icons"tab on your taskbar.
-2. Right-click (or CTRL-click in Mac) the OneDrive icon on the taskbar, Click the     ![settingsicon.png](/assets/One-Drive/settingsicon.png) icon and select Resume syncing.
+2. Right-click (or CTRL-click in Mac) the OneDrive icon on the taskbar, Click the     ![settingsicon.png](../../../assets/One-Drive/settingsicon.png) icon and select Resume syncing.
 
 
 ## Unlinking OneDrive 
 
 ### Windows:
 1. Select the white or blue OneDrive cloud icon in the notification/menu area. This icon may be under the "show hidden icons"tab on your taskbar.
-2. Right-click (or CTRL-click in Mac) the OneDrive icon on the taskbar, Click the ![settingsicon.png](/assets/One-Drive/settingsicon.png) icon
+2. Right-click (or CTRL-click in Mac) the OneDrive icon on the taskbar, Click the ![settingsicon.png](../../../assets/One-Drive/settingsicon.png) icon
 3. Click the settings text, which will open a separate window.
 4. Go into the "Accounts" tab and click "Unlink this PC"
-![unlink.png](/assets/One-Drive/unlink.png)
+![unlink.png](../../../assets/One-Drive/unlink.png)
 
 ### MacOS:
-1. Click the OneDrive cloud icon up in your Menu bar, click the three dots ![3dots.png](/assets/One-Drive/3dots.png) to open the menu, and select Preferences.
+1. Click the OneDrive cloud icon up in your Menu bar, click the three dots ![3dots.png](../../../assets/One-Drive/3dots.png) to open the menu, and select Preferences.
 2. Go to the "Account" tab.
 3. Select "Unlink this PC"
 
@@ -44,9 +44,9 @@ If you want to stop syncing OneDrive on your computer because you are on a meter
 OneDrive is built in to some versions of Windows and can't be uninstalled. But you can hide it and stop the sync process, so it stays hidden. To do this, turn off all the OneDrive settings and remove the OneDrive folder from File Explorer.
 ### Windows 10/11:
 1. Select the white or blue OneDrive cloud icon in the notification area, at the far right of the taskbar.This icon may be under the "show hidden icons"tab on your taskbar.
-2. Select  ![settingsicon.png](/assets/One-Drive/settingsicon.png)  > Settings.
+2. Select  ![settingsicon.png](../../../assets/One-Drive/settingsicon.png)  > Settings.
 
-   ![isettings.png](/assets/One-Drive/isettings.png)
+   ![isettings.png](../../../assets/One-Drive/isettings.png)
    
 3. On the Settings tab, uncheck all the boxes under General.
 4. On the Auto Save tab, set the Documents and Pictures lists to This PC only, and uncheck the other boxes.
@@ -55,7 +55,7 @@ OneDrive is built in to some versions of Windows and can't be uninstalled. But y
 7. Click OK to save your changes in the Settings box.
 8. Open the Settings again. On the Account tab, click Unlink OneDrive. Close the Welcome to OneDrive box that appears.
 9. Open File Explorer, right-click OneDrive, and then click Properties.On the General tab, next to Attributes, check the Hidden box. This hides OneDrive from File Explorer.
-10. One more time, select ![settingsicon.png](/assets/One-Drive/settingsicon.png) and select Quit OneDrive. This removes the OneDrive icon from the Notifications area.
+10. One more time, select ![settingsicon.png](../../../assets/One-Drive/settingsicon.png) and select Quit OneDrive. This removes the OneDrive icon from the Notifications area.
 
 ## Uninstalling OneDrive
 You won't lose files or data by uninstalling OneDrive from your computer. You can always access your files by signing in to [OneDrive online](https://onedrive.com/)

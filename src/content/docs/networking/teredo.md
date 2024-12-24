@@ -28,10 +28,10 @@ To check if your ISP is providing an IPv6 address already, you can go to [this w
 To check if Teredo is enabled, open command prompt as administrator and type in `netsh int teredo show state`
 
 The output of this command if the Teredo service is disabled:         
-![teredo disabled](/assets/teredo/disabled.png)
+![teredo disabled](../../../assets/teredo/disabled.png)
 
 If enabled:          
-![teredo enabled](/assets/teredo/enabled.png)
+![teredo enabled](../../../assets/teredo/enabled.png)
 
 ## How do I enable Teredo?
  If the previous command gave you the *Disabled* output, open an command prompt as administrator, type in the following commands: 

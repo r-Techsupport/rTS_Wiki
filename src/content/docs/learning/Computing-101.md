@@ -45,11 +45,11 @@ For example, a program that you might want to install would be *Discord* which y
 ## Unzipping/extracting a Folder
 1. Navigate to the spot where the zip folder is located. 
 
-    ![zipFolder.png](/assets/Basic-Computing/zipFolder.png)
+    ![zipFolder.png](../../../assets/Basic-Computing/zipFolder.png)
 
 2. Right click on the name of the folder then hit `Extract All`.
 
-    ![Extract.png](/assets/Basic-Computing/Extract.png)
+    ![Extract.png](../../../assets/Basic-Computing/Extract.png)
 
 3. Now you have a new folder with the unzipped contents. 
 
@@ -64,21 +64,21 @@ You want to fully uninstall which would remove the associated files, settings, r
 
 Go to settings on your PC. Click *Apps*.
 
-![settingsApps.png](/assets/Basic-Computing/settingsApps.png)
+![settingsApps.png](../../../assets/Basic-Computing/settingsApps.png)
 
 Click on *Installed Apps*.
 
-![installedApps.png](/assets/Basic-Computing/installedApps.png)
+![installedApps.png](../../../assets/Basic-Computing/installedApps.png)
 
 Click on the three dots for the program you want to uninstall.
 
-![threeDots.png](/assets/Basic-Computing/threeDots.png)
+![threeDots.png](../../../assets/Basic-Computing/threeDots.png)
 
 Click *Uninstall* and then click it again to confirm.
 
-![uninstallApp.png](/assets/Basic-Computing/uninstallApp.png)
+![uninstallApp.png](../../../assets/Basic-Computing/uninstallApp.png)
 
-![uninstallAppConfirm.png](/assets/Basic-Computing/uninstallAppConfirm.png)
+![uninstallAppConfirm.png](../../../assets/Basic-Computing/uninstallAppConfirm.png)
 
 Either the program will uninstall right away and be removed from the list of your installed apps or the program may launch a uninstall prompt from where you finish the uninstallation process. 
 
@@ -86,7 +86,7 @@ Either the program will uninstall right away and be removed from the list of you
 
 Open *Control Panel* and click *Uninstall a program*.
 
-![controlpanelPrograms.png](/assets/Basic-Computing/controlpanelPrograms.png)
+![controlpanelPrograms.png](../../../assets/Basic-Computing/controlpanelPrograms.png)
 
 This will launch a list of installed apps where you can simply double click the desired entry which will uninstall the app. 
 
@@ -99,7 +99,7 @@ Installing drivers is usually straight forward, you let Windows update install t
 
 You can also install the optional drivers that Windows provides, to check for optional drivers open Windows Update in your Settings and click Advanced Options, then Optional Updates.
 
-![optdriv.gif](/assets/Basic-Computing/optdriv.gif)
+![optdriv.gif](../../../assets/Basic-Computing/optdriv.gif)
 
 There might be a couple drivers Windows does not provide on their own, these can be found on their respective support sites. 
 

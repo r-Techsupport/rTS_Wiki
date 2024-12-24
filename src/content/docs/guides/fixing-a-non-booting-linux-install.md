@@ -110,7 +110,7 @@ If the checksum matches and the ISO *still* isn't booting:
 *Note: this section assumes you use GRUB*
 
 At this point, your UEFI/BIOS has passed control over to GRUB, by default, it presents a menu similar to the one shown below, although the appearance may vary.
-![grub menu](/assets/fixing-linux-boot/GRUB_screenshot.png)
+![grub menu](../../../assets/fixing-linux-boot/GRUB_screenshot.png)
 
 ### Recovery shell
 With the standard boot option selected in GRUB:

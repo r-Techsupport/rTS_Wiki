@@ -20,7 +20,7 @@ Display Driver Uninstaller is a program that can fully wipe display/audio driver
 {% include embeds/ddu_install.md %}
 
 ## Wiping Audio Drivers
-![dduaudio.png](/assets/factoids/dduaudio.png)
+![dduaudio.png](../../../assets/factoids/dduaudio.png)
 
 > [!WARNING] Warning
 > Make sure you are in [Safe Mode](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode).

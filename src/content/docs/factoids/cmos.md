@@ -18,10 +18,10 @@ last_modified_date: 2024-11-05
 
 2. Remove CMOS battery. This is a small 'watch battery' in your motherboard (see below).
 
-	![CMOS battery](/assets/factoids/cmos.jpeg)
+	![CMOS battery](../../../assets/factoids/cmos.jpeg)
 
 	 > [!NOTE] Information
-	 > Some laptops may lack a dedecated CMOS battery but use the main battery for its functionality, other laptops may have the battery covered like this: ![laptop CMOS](/assets/cmos/cmos-laptop.jpg)
+	 > Some laptops may lack a dedecated CMOS battery but use the main battery for its functionality, other laptops may have the battery covered like this: ![laptop CMOS](../../../assets/cmos/cmos-laptop.jpg)
 	
 
 
@@ -38,6 +38,6 @@ The CMOS Clear pins are present on many desktop and even some laptop motherboard
 
 3. Using a screwdriver, short the two pins by inserting the screwdriver between the two pins (see below).
 
-	![CMOS reset using screwdriver](/assets/factoids/cmos_screwdriver.png)
+	![CMOS reset using screwdriver](../../../assets/factoids/cmos_screwdriver.png)
 
 4. Hold the screwdriver in place four roughly 20-30 seconds. Press the power button multiple times while holding the screwdriver in place. Once the time expires, remove the screwdriver, reconnect power, and try restarting the machine.

@@ -42,11 +42,11 @@ Due to these factors, monitors are generally preferred over TVs for tasks that r
 ### Over/Underscan
 When you use a TV with a computer, you may notice that the edges of the display are hidden beyond the borders of the screen, as if the picture is zoomed in:
 
-![overscan](/assets/Display-Comparison/desktop-overscan.jpg)
+![overscan](../../../assets/Display-Comparison/desktop-overscan.jpg)
 
 This is probably because of **overscan**. On the other hand, black bars surrounding the display is an indication of **underscan**:
 
-![underscan](/assets/Display-Comparison/desktop-underscan.jpg)
+![underscan](../../../assets/Display-Comparison/desktop-underscan.jpg)
 
 These issues can usually solved by adjusting the TV's display settings, or changing resolution/display scaling in the computer settings or GPU control panel.
 

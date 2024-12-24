@@ -26,7 +26,7 @@ Firstly, launch all of the apps that you generally have going. Open a few browse
 1. Launch Task Manager: Right-click the taskbar at the bottom of the screen and then click Task Manager.
 2. Switch to the ‘Performance’ tab, and then under the "3 dot" menu in the top right corner of Task Manager click ‘Resource Monitor’
 
-![resource monitor](/assets/more-memory/resource_monitor.jpeg)
+![resource monitor](../../../assets/more-memory/resource_monitor.jpeg)
 
 There are 5 different sections of memory usage on the bar graph, but only 3 of them are really important to you.
 ## What to ignore

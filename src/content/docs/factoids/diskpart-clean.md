@@ -21,13 +21,13 @@ diskpart
 list disk
 ```
 
-[![Windows 11-2021-10-05-15-09-53.png](/assets/install-11/windows-11-2021-10-05-15-09-53.png)](/assets/install-11/windows-11-2021-10-05-15-09-53.png)
+[![Windows 11-2021-10-05-15-09-53.png](../../../assets/install-11/windows-11-2021-10-05-15-09-53.png)](../../../assets/install-11/windows-11-2021-10-05-15-09-53.png)
 
-[![Windows 11-2021-10-05-15-10-13.png](/assets/install-11/windows-11-2021-10-05-15-10-13.png)](/assets/install-11/windows-11-2021-10-05-15-10-13.png)
+[![Windows 11-2021-10-05-15-10-13.png](../../../assets/install-11/windows-11-2021-10-05-15-10-13.png)](../../../assets/install-11/windows-11-2021-10-05-15-10-13.png)
 
-[![Windows 11-2021-10-05-15-10-24.png](/assets/install-11/windows-11-2021-10-05-15-10-24.png)](/assets/install-11/windows-11-2021-10-05-15-10-24.png)
+[![Windows 11-2021-10-05-15-10-24.png](../../../assets/install-11/windows-11-2021-10-05-15-10-24.png)](../../../assets/install-11/windows-11-2021-10-05-15-10-24.png)
 
-[![Windows 11-2021-10-05-15-10-39.png](/assets/install-11/windows-11-2021-10-05-15-10-39.png)](/assets/install-11/windows-11-2021-10-05-15-10-39.png)
+[![Windows 11-2021-10-05-15-10-39.png](../../../assets/install-11/windows-11-2021-10-05-15-10-39.png)](../../../assets/install-11/windows-11-2021-10-05-15-10-39.png)
 
 Make note of the disk you want to clean from the step above.
 

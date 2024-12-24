@@ -13,12 +13,9 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 > [!CAUTION] Caution
 > All files on the drive you plan to install Windows to will be **deleted** if you follow this guide - this is intended. Please ensure you have an adequate [backup policy](/docs/backups) in place before proceeding if you have files of value.
 
-
 * An internet connection.
 * A working computer to run the Windows Media Creation Tool.
 * A USB flash drive that is at least 8GB or greater.
-
-
 
 1. Create a bootable USB flash drive using the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/windows11) from Microsoft. This will also wipe any data stored on the USB flash drive.
 
@@ -27,39 +24,36 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 
 2. Run MCT by double clicking it. You will be greeted with windows Terms Of Service, after reading it, press Accept.
 
-     ![wintos.png](/assets/install-11/wintos.png)
+     ![wintos.png](../../../assets/install-11/wintos.png)
 
-3. You can leave this to default, press next.  
+3. You can leave this to default, press next.
 
-     ![kde.png](/assets/install-11/kde.png)
+     ![kde.png](../../../assets/install-11/kde.png)
 
 4. Select create installation media for another PC, and then click next.
 
-     ![aPC.png](/assets/install-11/aPC.png)
+     ![aPC.png](../../../assets/install-11/aPC.png)
 
 5. Select USB flash drive, then press next.
 
-     ![USB.png](/assets/install-11/USB.png)
+     ![USB.png](../../../assets/install-11/USB.png)
 
 6. Select the USB you want to use, press next. 
 
     > [!CAUTION] Caution
     >  This step will wipe the selected USB Flash drive, so ensure you have nothing important on the USB drive, and back up all important documents.
 
-     ![select.png](/assets/install-11/select.png)
+     ![select.png](../../../assets/install-11/select.png)
 
 7. Wait till MCT finish its job. this may take some time.
 
-     ![downl.png](/assets/install-11/downl.png)
+     ![downl.png](../../../assets/install-11/downl.png)
 
 8. After MCT says it finished, shutdown your PC.
 
     > [!CAUTION] Caution
     > Disconnect all storage disks except from the main (C Drive) disk from the computer before installing Windows 11. Not doing so can accidentally wipe other disks or result in the installer choosing the wrong disk as the boot drive and putting actual windows on another drive.
 
-
-
- 
 > [!NOTE] Information
 > The following section occurs in your BIOS, you can enter your systems' BIOS by looking for the words "setup" when you see your BIOS boot screen then pressing the corresponding function key.
 > 
@@ -83,17 +77,17 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
      > [!WARNING] Warning
      > If you do not see an installer like the below screenshot, click next twice, then click "Previous version of Setup" near the bottom left corner of the installer window.
 
-     [![Windows 11-2021-10-05-15-03-05.png](/assets/install-11/windows-11-2021-10-05-15-03-05.png)](/assets/install-11/windows-11-2021-10-05-15-03-05.png)
+     [![Windows 11-2021-10-05-15-03-05.png](../../../assets/install-11/windows-11-2021-10-05-15-03-05.png)](../../../assets/install-11/windows-11-2021-10-05-15-03-05.png)
 
 4. Continue on until you hit the license key screen. Here you can either enter your license code, or if Windows has been installed to this computer before, click on the `I don't have a product key` link.
 
-    [![Windows 11-2021-10-05-15-02-59.png](/assets/install-11/windows-11-2021-10-05-15-02-59.png)](/assets/install-11/windows-11-2021-10-05-15-02-59.png)
+    [![Windows 11-2021-10-05-15-02-59.png](../../../assets/install-11/windows-11-2021-10-05-15-02-59.png)](../../../assets/install-11/windows-11-2021-10-05-15-02-59.png)
 
-    [![Windows 11-2021-10-05-15-03-29.png](/assets/install-11/windows-11-2021-10-05-15-03-29.png)](/assets/install-11/windows-11-2021-10-05-15-03-29.png)
+    [![Windows 11-2021-10-05-15-03-29.png](../../../assets/install-11/windows-11-2021-10-05-15-03-29.png)](../../../assets/install-11/windows-11-2021-10-05-15-03-29.png)
 
 5.  Continue on until you hit the “Which type of installation do you want?” screen. Click `Custom`. 
 
-     [![Windows 11-2021-10-05-15-09-05.png](/assets/install-11/windows-11-2021-10-05-15-09-05.png)](/assets/install-11/windows-11-2021-10-05-15-09-05.png)
+     [![Windows 11-2021-10-05-15-09-05.png](../../../assets/install-11/windows-11-2021-10-05-15-09-05.png)](../../../assets/install-11/windows-11-2021-10-05-15-09-05.png)
 
 6. Click on each partition of the target drive and select delete, once all the partitions are gone you will be left with unallocated space. At this point click `Next`.
 
@@ -103,9 +97,9 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
     > [!WARNING] Warning
     > ***Each means ALL*** But do you mean ALL? ***Yes, All***. Once all the partitions are gone you will be left with unallocated space.
 
-    [![Windows 11-2021-10-05-15-20-37.png](/assets/install-11/windows-11-2021-10-05-15-20-37.png)](/assets/install-11/windows-11-2021-10-05-15-20-37.png)
+    [![Windows 11-2021-10-05-15-20-37.png](../../../assets/install-11/windows-11-2021-10-05-15-20-37.png)](../../../assets/install-11/windows-11-2021-10-05-15-20-37.png)
 
-    [![Windows 11-2021-10-05-15-11-30.png](/assets/install-11/windows-11-2021-10-05-15-11-30.png)](/assets/install-11/windows-11-2021-10-05-15-11-30.png)
+    [![Windows 11-2021-10-05-15-11-30.png](../../../assets/install-11/windows-11-2021-10-05-15-11-30.png)](../../../assets/install-11/windows-11-2021-10-05-15-11-30.png)
 
      > [!NOTE] Information
      > Ensure that you only have drive 0 partitions in this window before deleting, otherwise this means you didnt disconnect other drives as noted in step 8.
@@ -118,7 +112,7 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 
     > If you receive an error about your disk being MBR like this:
     >
-    > [![the-selected-disk-has-an-mbr-partition-table-01.png](/assets/install-11/the-selected-disk-has-an-mbr-partition-table-01.png)](/assets/install-11/the-selected-disk-has-an-mbr-partition-table-01.png)
+    > [![the-selected-disk-has-an-mbr-partition-table-01.png](../../../assets/install-11/the-selected-disk-has-an-mbr-partition-table-01.png)](../../../assets/install-11/the-selected-disk-has-an-mbr-partition-table-01.png)
     > 
     >
     > then press `Shift+F10` to open CMD and follow below.
@@ -127,13 +121,13 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
     > list disk
     > ```
     > 
-    > [![Windows 11-2021-10-05-15-09-53.png](/assets/install-11/windows-11-2021-10-05-15-09-53.png)](/assets/install-11/windows-11-2021-10-05-15-09-53.png)
+    > [![Windows 11-2021-10-05-15-09-53.png](../../../assets/install-11/windows-11-2021-10-05-15-09-53.png)](../../../assets/install-11/windows-11-2021-10-05-15-09-53.png)
     >
-    > [![Windows 11-2021-10-05-15-10-13.png](/assets/install-11/windows-11-2021-10-05-15-10-13.png)](/assets/install-11/windows-11-2021-10-05-15-10-13.png)
+    > [![Windows 11-2021-10-05-15-10-13.png](../../../assets/install-11/windows-11-2021-10-05-15-10-13.png)](../../../assets/install-11/windows-11-2021-10-05-15-10-13.png)
     >
-    > [![Windows 11-2021-10-05-15-10-24.png](/assets/install-11/windows-11-2021-10-05-15-10-24.png)](/assets/install-11/windows-11-2021-10-05-15-10-24.png)
+    > [![Windows 11-2021-10-05-15-10-24.png](../../../assets/install-11/windows-11-2021-10-05-15-10-24.png)](../../../assets/install-11/windows-11-2021-10-05-15-10-24.png)
     >
-    > [![Windows 11-2021-10-05-15-10-39.png](/assets/install-11/windows-11-2021-10-05-15-10-39.png)](/assets/install-11/windows-11-2021-10-05-15-10-39.png)
+    > [![Windows 11-2021-10-05-15-10-39.png](../../../assets/install-11/windows-11-2021-10-05-15-10-39.png)](../../../assets/install-11/windows-11-2021-10-05-15-10-39.png)
     >
     > Make note of the disk you want to install to from the step above.
     > ```
@@ -142,12 +136,12 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
     > clean
     > ```
     > 
-    > [![Windows 11-2021-10-05-15-10-51.png](/assets/install-11/windows-11-2021-10-05-15-10-51.png)](/assets/install-11/windows-11-2021-10-05-15-10-51.png)
-    > [![Windows 11-2021-10-05-15-11-01.png](/assets/install-11/windows-11-2021-10-05-15-11-01.png)](/assets/install-11/windows-11-2021-10-05-15-11-01.png)
-    > [![Windows 11-2021-10-05-15-11-13.png](/assets/install-11/windows-11-2021-10-05-15-11-13.png)](/assets/install-11/windows-11-2021-10-05-15-11-13.png)
+    > [![Windows 11-2021-10-05-15-10-51.png](../../../assets/install-11/windows-11-2021-10-05-15-10-51.png)](../../../assets/install-11/windows-11-2021-10-05-15-10-51.png)
+    > [![Windows 11-2021-10-05-15-11-01.png](../../../assets/install-11/windows-11-2021-10-05-15-11-01.png)](../../../assets/install-11/windows-11-2021-10-05-15-11-01.png)
+    > [![Windows 11-2021-10-05-15-11-13.png](../../../assets/install-11/windows-11-2021-10-05-15-11-13.png)](../../../assets/install-11/windows-11-2021-10-05-15-11-13.png)
     > 
     > You can exit the CMD and click `next` again.
-    > [![Windows 11-2021-10-05-15-09-40.png](/assets/install-11/windows-11-2021-10-05-15-09-40.png)](/assets/install-11/windows-11-2021-10-05-15-09-40.png)
+    > [![Windows 11-2021-10-05-15-09-40.png](../../../assets/install-11/windows-11-2021-10-05-15-09-40.png)](../../../assets/install-11/windows-11-2021-10-05-15-09-40.png)
 
     </details>
 

@@ -25,30 +25,30 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-10
 
 2. Run MCT by double clicking it. You will be greeted with windows Terms Of Service, after reading it, press Accept.
 
-     ![wintos.png](/assets/install-10/wintos.png)
+     ![wintos.png](../../../assets/install-10/wintos.png)
 
 3. Select create installation media for another PC, and then click next.
 
-     ![aPC.png](/assets/install-10/aPC.png)
+     ![aPC.png](../../../assets/install-10/aPC.png)
 
 4. You can leave this to default, press next.  
 
-     ![kde.png](/assets/install-10/kde.png)
+     ![kde.png](../../../assets/install-10/kde.png)
 
 5. Select USB flash drive, then press next.
 
-     ![USB.png](/assets/install-10/USB.png)
+     ![USB.png](../../../assets/install-10/USB.png)
 
 6. Select the USB you want to use, press next. 
 
     > [!WARNING] Warning
     > This step will wipe the selected USB Flash drive, so ensure you have nothing important on the USB drive, and back up all important documents.
 
-     ![select.png](/assets/install-10/select.png)
+     ![select.png](../../../assets/install-10/select.png)
 
 7. Wait till MCT finish its job. this may take some time.
 
-     ![downl.png](/assets/install-10/downl.png)
+     ![downl.png](../../../assets/install-10/downl.png)
 
 8. After MCT says it finished, shutdown your PC.
 
@@ -66,15 +66,15 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-10
 
 3. Click Install now
 
-     ![10-0.png](/assets/install-10/10-0.png)
+     ![10-0.png](../../../assets/install-10/10-0.png)
 
 4. Continue on until you hit the license key screen. Here you can either enter your license code or, if Windows has been installed to this computer before, click on the "I don't have a product key" link.
 
-    ![10-1.png](/assets/install-10/10-1.png)
+    ![10-1.png](../../../assets/install-10/10-1.png)
 
 5. Continue on until you hit the “Which type of installation do you want?” screen. Click "Custom". 
 
-    ![10-2.png](/assets/install-10/10-2.png)
+    ![10-2.png](../../../assets/install-10/10-2.png)
 
 6. Click on each partition of the target drive and select delete, once all the partitions are gone you will be left with unallocated space. At this point click `Next`.
 
@@ -84,9 +84,9 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-10
     > [!WARNING] Warning
     > ***Each means ALL*** But do you mean ALL? ***Yes, All***. Once all the partitions are gone you will be left with unallocated space.
 
-    ![10-3.png](/assets/install-10/10-3.png)
+    ![10-3.png](../../../assets/install-10/10-3.png)
 
-    ![10-4.png](/assets/install-10/10-4.png)
+    ![10-4.png](../../../assets/install-10/10-4.png)
 
 
 
@@ -102,7 +102,7 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-10
 
     > If you receive an error about your disk being MBR like this:
     >
-    > [![the-selected-disk-has-an-mbr-partition-table-01.png](/assets/install-11/the-selected-disk-has-an-mbr-partition-table-01.png)](/assets/install-11/the-selected-disk-has-an-mbr-partition-table-01.png)
+    > [![the-selected-disk-has-an-mbr-partition-table-01.png](../../../assets/install-11/the-selected-disk-has-an-mbr-partition-table-01.png)](../../../assets/install-11/the-selected-disk-has-an-mbr-partition-table-01.png)
     > 
     >
     > then press `Shift+F10` to open CMD and follow below.
@@ -111,13 +111,13 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-10
     > list disk
     > ```
     > 
-    > [![Windows 11-2021-10-05-15-09-53.png](/assets/install-11/windows-11-2021-10-05-15-09-53.png)](/assets/install-11/windows-11-2021-10-05-15-09-53.png)
+    > [![Windows 11-2021-10-05-15-09-53.png](../../../assets/install-11/windows-11-2021-10-05-15-09-53.png)](../../../assets/install-11/windows-11-2021-10-05-15-09-53.png)
     >
-    > [![Windows 11-2021-10-05-15-10-13.png](/assets/install-11/windows-11-2021-10-05-15-10-13.png)](/assets/install-11/windows-11-2021-10-05-15-10-13.png)
+    > [![Windows 11-2021-10-05-15-10-13.png](../../../assets/install-11/windows-11-2021-10-05-15-10-13.png)](../../../assets/install-11/windows-11-2021-10-05-15-10-13.png)
     >
-    > [![Windows 11-2021-10-05-15-10-24.png](/assets/install-11/windows-11-2021-10-05-15-10-24.png)](/assets/install-11/windows-11-2021-10-05-15-10-24.png)
+    > [![Windows 11-2021-10-05-15-10-24.png](../../../assets/install-11/windows-11-2021-10-05-15-10-24.png)](../../../assets/install-11/windows-11-2021-10-05-15-10-24.png)
     >
-    > [![Windows 11-2021-10-05-15-10-39.png](/assets/install-11/windows-11-2021-10-05-15-10-39.png)](/assets/install-11/windows-11-2021-10-05-15-10-39.png)
+    > [![Windows 11-2021-10-05-15-10-39.png](../../../assets/install-11/windows-11-2021-10-05-15-10-39.png)](../../../assets/install-11/windows-11-2021-10-05-15-10-39.png)
     >
     > Make note of the disk you want to install to from the step above.
     > ```
@@ -126,12 +126,12 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-10
     > clean
     > ```
     > 
-    > [![Windows 11-2021-10-05-15-10-51.png](/assets/install-11/windows-11-2021-10-05-15-10-51.png)](/assets/install-11/windows-11-2021-10-05-15-10-51.png)
-    > [![Windows 11-2021-10-05-15-11-01.png](/assets/install-11/windows-11-2021-10-05-15-11-01.png)](/assets/install-11/windows-11-2021-10-05-15-11-01.png)
-    > [![Windows 11-2021-10-05-15-11-13.png](/assets/install-11/windows-11-2021-10-05-15-11-13.png)](/assets/install-11/windows-11-2021-10-05-15-11-13.png)
+    > [![Windows 11-2021-10-05-15-10-51.png](../../../assets/install-11/windows-11-2021-10-05-15-10-51.png)](../../../assets/install-11/windows-11-2021-10-05-15-10-51.png)
+    > [![Windows 11-2021-10-05-15-11-01.png](../../../assets/install-11/windows-11-2021-10-05-15-11-01.png)](../../../assets/install-11/windows-11-2021-10-05-15-11-01.png)
+    > [![Windows 11-2021-10-05-15-11-13.png](../../../assets/install-11/windows-11-2021-10-05-15-11-13.png)](../../../assets/install-11/windows-11-2021-10-05-15-11-13.png)
     > 
     > You can exit the CMD and click `next` again.
-    > [![Windows 11-2021-10-05-15-09-40.png](/assets/install-11/windows-11-2021-10-05-15-09-40.png)](/assets/install-11/windows-11-2021-10-05-15-09-40.png)
+    > [![Windows 11-2021-10-05-15-09-40.png](../../../assets/install-11/windows-11-2021-10-05-15-09-40.png)](../../../assets/install-11/windows-11-2021-10-05-15-09-40.png)
 
     </details>
 

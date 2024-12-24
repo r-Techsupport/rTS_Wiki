@@ -35,7 +35,7 @@ To wipe display drivers for laptops/devices with onboard graphics: Select the "G
 ### Desktops with a dedicated GPU
 To wipe display drivers from a dedicated GPU: Select the "GPU" device type from the drop-down list on the right, select the GPU driver you wish to uninstall, and click `Clean and restart`
 
-![ddunvidia.png](/assets/factoids/dduvideo.png)
+![ddunvidia.png](../../../assets/factoids/dduvideo.png)
 
 ## Reinstalling Display Drivers
   

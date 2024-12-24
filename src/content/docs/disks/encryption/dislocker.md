@@ -24,7 +24,7 @@ The first step is to install Dislocker. If you are already using our [Linux Live
 ```
 sudo apt install dislocker
 ```
-![install-dislocker-ubuntu.png](/assets/Dislocker/install-dislocker-ubuntu.png)
+![install-dislocker-ubuntu.png](../../../../assets/Dislocker/install-dislocker-ubuntu.png)
 
 ## Create mount points
 The next step is to create two mount points. The first mounting point is for where Dislocker will generate the dislocker-file and the other mounting point is where you will mount the dislocker-file as a loop device.
@@ -36,12 +36,12 @@ sudo mkdir -p /media/decrypt
 sudo mkdir -p /media/windows-mount
 ```
 
-![mount-points.png](/assets/Dislocker/ScreenShot2.png)
+![mount-points.png](../../../../assets/Dislocker/ScreenShot2.png)
 
 ## Get the partition name
 To decrypt the Windows partition we need to get the name of the partition. To get the name there is another program on the Linux Live session, GParted. We can use this tool to get the name of the partition we need.
 
-![Device-name.png](/assets/Dislocker/ScreenShot3.png)
+![Device-name.png](../../../../assets/Dislocker/ScreenShot3.png)
 
 *This is just an exmaple, your partition name will be different*
 
@@ -66,11 +66,11 @@ After decrypting the file, we mount it that way it is accessible. To do that we 
 sudo mount -o loop /media/decrypt/dislocker-file /media/windows-mount
 ```
 
-![Mount.png](/assets/Dislocker/ScreenShot4_1.png)
+![Mount.png](../../../../assets/Dislocker/ScreenShot4_1.png)
 
 The BitLocker encrypted Windows partition is now decrypted and mounted in Linux. You can now access it from file explorer.
   
-![DriveInExplorer.png](/assets/Dislocker/ScreenShot5.png)
+![DriveInExplorer.png](../../../../assets/Dislocker/ScreenShot5.png)
 
 ## Troubleshooting tips
 If you get an error for wrong fs type then need to include the file type.

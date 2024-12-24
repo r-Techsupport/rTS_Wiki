@@ -23,6 +23,8 @@ description: 'All changes and outstanding items to know about for the Jekyll to 
     - Notes
         - `parent` and `has_children` no longer used
         - `last_modified_date` no longer used, dates are pulled from Git history
+- All image paths must now be relative. Absolute would require the linked files to be in `/public`
 
 ## To Do
 - Includes are broken
+- `/assets/` will be deprecated. Markdown files in astro can only use relative paths to images so `/src/assets` will be used.
