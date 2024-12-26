@@ -9,9 +9,9 @@ export default defineConfig({
     integrations: [
         starlight({
             title: 'rTS Wiki',
-            favicon: './assets/favicon.ico',
+            favicon: '/favicon.ico',
             logo: {
-                src: './assets/favicon.png',
+                src: './src/assets/favicon.png',
             },
             components: {
                 Header: './src/components/customHeader.astro',
