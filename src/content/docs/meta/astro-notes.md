@@ -32,4 +32,3 @@ description: 'All changes and outstanding items to know about for the Jekyll to 
     - Scripts
     - Terms
 - `/assets/` will be deprecated. Markdown files in astro can only use relative paths to images so `/src/assets` will be used.
-- Evaluate why links sometimes work and sometimes don't in callout embeds
