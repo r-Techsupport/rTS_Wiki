@@ -9,7 +9,7 @@ import Default from '@astrojs/starlight/components/Sidebar.astro';
 
 <style>
     .sidebar-container {
-        margin-bottom: 2rem;
         overflow: auto;
+        max-height: calc(100vh - 2 * var(--sl-nav-height));
     }
 </style>
