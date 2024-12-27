@@ -229,7 +229,7 @@ If you want the content to be collapsible, add:
 
 </details>
 
-## Directory pages
+## Directory or Index pages
 Use a `.mdx` file in the root of any directory, named the same as the directory. This is `backups.mdx`:
 
 ```mdx
