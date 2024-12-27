@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Windows Run Dialog Commands
 sidebar:
     hidden: false

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Using Resource Monitor To Find A Locked File
 sidebar:
     hidden: false

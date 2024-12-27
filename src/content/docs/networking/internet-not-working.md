@@ -1,5 +1,4 @@
 ---
-layout: default
 title: "My Internet doesn't work"
 sidebar:
     hidden: false

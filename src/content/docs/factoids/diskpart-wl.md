@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Removing write protection on drives using DiskPart
 sidebar:
     hidden: false

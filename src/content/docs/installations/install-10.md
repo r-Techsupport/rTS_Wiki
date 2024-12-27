@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Installing Windows 10
 sidebar:
     hidden: false

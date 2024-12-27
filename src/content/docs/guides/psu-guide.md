@@ -1,5 +1,4 @@
 ---
-layout: default
 title: PSU Guide
 sidebar:
     hidden: false
@@ -10,21 +9,17 @@ last_modified_date: 2022-06-27
 redirect_from: /books/how-to-and-guides/page/psu-guide
 ---
 
-
-
-
-
-
 This guide will cover the basics of a desktop PSU, ways to test it's power output. Always be careful when performing any task that requires a multi-meter or another tool.
 
-## The dangers
+## The Dangers
 Before we get into the guide, we need to address the dangers involved with computer power supplies first.
 
-**NEVER DO ANY OF THESE THINGS:**
- * **NEVER OPEN UP A PSU BY YOURSELF. IT CAN HOLD LETHAL AMOUNTS OF CHARGE EVEN AFTER BEING UPLUGGED FOR EXTENDED PERIODS OF TIME.**
- * Mix PSU cables (e.g. CPU and PCIe)
- * Reuse modular cables from another PSU (Always only use the ones that are made directly for your PSU)
- 
+> [!CAUTION] Never do any of these things
+> 
+> - **NEVER OPEN UP A PSU BY YOURSELF. IT CAN HOLD LETHAL AMOUNTS OF CHARGE EVEN AFTER BEING UPLUGGED FOR EXTENDED PERIODS OF TIME.**
+> - Mix PSU cables (e.g. CPU and PCIe)
+> - Reuse modular cables from another PSU (Always only use the ones that are made directly for your PSU)
+
 ## Why you should care about your power supply unit (PSU)
 
 The power supply unit (PSU) is the engine on which your entire computer system is based. It is responsible for taking the high voltage mains power from your wall outlet and transforming it into the low voltage DC that your computer requires. Without electricity, your computer would be useless, but the importance of quality power supplies are often overlooked by the end user.

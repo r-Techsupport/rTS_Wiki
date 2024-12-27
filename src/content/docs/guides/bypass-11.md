@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Windows 11 Local Account Setup 
 sidebar:
     hidden: false

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: How to boot into WinRE from a black or blank screen
 sidebar:
     hidden: false

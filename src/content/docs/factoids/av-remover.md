@@ -1,5 +1,4 @@
 ---
-layout: default
 title: List of AV removers
 sidebar:
     hidden: false

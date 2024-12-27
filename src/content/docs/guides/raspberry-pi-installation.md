@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Raspberry Pi Installation
 sidebar:
     hidden: false
@@ -8,11 +7,6 @@ parent: General Guides
 pagefind: true
 last_modified_date: 2022-06-28
 ---
-
-
-
-
-{% include toc_numbered.md %}
 
 The Raspberry Pi is a multi-purpose credit-card-sized computer. You can use it to do many cool things. For example, you can host a website, a file server, or other servers on it. You can create a home surveillance system. You can set up a retro game system with emulators. Maybe you want to control a robot with the programmable pins. Or, you can just use it as a regular cheap desktop computer.
 

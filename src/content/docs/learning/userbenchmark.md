@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Why you shouldn't use UserBenchMark
 sidebar:
     hidden: false

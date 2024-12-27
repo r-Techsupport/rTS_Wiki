@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Hybrid Graphics and Optimus
 sidebar:
     hidden: false

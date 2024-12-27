@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Fixing Cleanboot
 sidebar:
     hidden: false

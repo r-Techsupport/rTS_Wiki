@@ -1,5 +1,4 @@
 ---
-layout: default
 title: How to know if you need more RAM
 sidebar:
     hidden: false

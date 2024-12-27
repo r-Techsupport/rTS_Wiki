@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Windows Live Session
 sidebar:
     hidden: false
@@ -9,9 +8,6 @@ pagefind: true
 last_modified_date: 2022-07-16
 redirect_from: /books/troubleshooting-with-a-live-session/chapter/windows-pe
 ---
-
-
-
 
 ## What is Windows PE
 

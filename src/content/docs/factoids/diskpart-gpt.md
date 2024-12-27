@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Making a GPT Partition Table in Diskpart
 sidebar:
     hidden: false

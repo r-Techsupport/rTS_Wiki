@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Process for Advancement
 sidebar:
     hidden: true

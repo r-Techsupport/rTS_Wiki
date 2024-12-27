@@ -1,5 +1,4 @@
 ---
-layout: default
 title: How partitions can move
 sidebar:
     hidden: false

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Display Comparison
 sidebar:
     hidden: false

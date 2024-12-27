@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Rules
 sidebar:
     hidden: false

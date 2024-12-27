@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Troubleshooting Port Forwards
 sidebar:
     hidden: false

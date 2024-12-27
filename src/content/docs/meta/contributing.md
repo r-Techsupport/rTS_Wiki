@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Contributing to the Wiki
 sidebar:
     hidden: false
@@ -55,7 +54,6 @@ Here is the header for this specific page:
 ### Jekyll
 ```
 ---
-layout: default
 title: Contributing to the Wiki
 sidebar:
     hidden: false
@@ -109,6 +107,21 @@ To add a custom image, place your image in `/assets/<page-name>/<image.png>`, an
 
 (see [Table of Contents](#table-of-contents) above for a live example.)
 
+## Includes
+Includes (also called embeds or transcludes) are a way to embed one small note into many other notes.
+
+1. Create a `.md` file in `/src/_includes/embeds`, it does not need to have any [Frontmatter](#frontmatter-header).
+    - If your embed will contain other emebds it should be created as a `.mdx` file instead of `.md`
+2. Create a `.mdx` file in whatever docs directory you desire.
+    - A `.mdx` file is a `.md` file that can contain JSX. All of your normal markdown text and Frontmatter will be used like normal in this file.
+3. Using a relative path to the file you want to embed use a block like below anywhere in the file that you want to insert the content of the embed note:
+    - The white space between the import and `<>` statement is required.
+    ```
+    import LinuxInstallMedia from '../../../_includes/embeds/create-linux-install-media.mdx';
+
+    <LinuxInstallMedia />
+    ```
+
 ## Page Styling
 
 ### Bolding and Italicizing
@@ -122,9 +135,13 @@ Alerts are used to "call out" specific information. We have a number of these at
 
 The format to create an Alert is below. You can add additonal "quote" `>` lines without issue. Use blank quote lines for spacing.
 
+> [!IMPORTANT] Important
+> If you use a link in a callout, you must have an extra blank line between the title and your body as seen below
+
 ```
 > [!WARNING] Warning
-> It is very important that you remember to **power-off the motherboard** and switch-off and unplug the PSU after each component test. Do this before you remove or install anything.
+> 
+> It is very important that you remember to **power-off the motherboard** and switch-off and unplug the PSU after each component test. Do this before you remove or install anything. [ExampleLink](https://contoso.com)
 ```
 
 #### Caution

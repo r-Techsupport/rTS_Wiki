@@ -1,5 +1,4 @@
 ---
-layout: default
 title: How to Use Multiple Disks in Windows
 sidebar:
     hidden: false

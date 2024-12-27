@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Troubleshooting with Pingplotter
 sidebar:
     hidden: false

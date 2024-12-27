@@ -1,5 +1,4 @@
 ---
-layout: default
 title: How to use OCCT
 sidebar:
     hidden: false

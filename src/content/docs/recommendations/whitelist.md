@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Whitelist
 sidebar:
     hidden: false

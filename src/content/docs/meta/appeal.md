@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Appeal a Ban
 sidebar:
     hidden: false

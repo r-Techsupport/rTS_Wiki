@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Everyone Needs Backups
 sidebar:
     hidden: false

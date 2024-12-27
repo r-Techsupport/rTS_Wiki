@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Ventoy
 sidebar:
     hidden: false

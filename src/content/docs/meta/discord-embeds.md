@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Enabling Discord Embeds
 sidebar:
     hidden: false

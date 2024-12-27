@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Subreddit Commands
 sidebar:
     hidden: false

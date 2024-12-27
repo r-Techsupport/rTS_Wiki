@@ -1,5 +1,4 @@
 ---
-layout: default
 title: EOL Operating Systems
 sidebar:
     hidden: false

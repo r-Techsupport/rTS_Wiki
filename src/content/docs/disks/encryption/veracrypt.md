@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Veracrypt
 sidebar:
     hidden: false

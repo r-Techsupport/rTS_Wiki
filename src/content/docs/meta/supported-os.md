@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Supported Operating Systems
 sidebar:
     hidden: false

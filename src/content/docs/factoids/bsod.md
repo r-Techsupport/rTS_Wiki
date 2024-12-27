@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Obtaining BSOD Dumps
 sidebar:
     hidden: false

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Broken Linux Boot
 sidebar:
     hidden: false

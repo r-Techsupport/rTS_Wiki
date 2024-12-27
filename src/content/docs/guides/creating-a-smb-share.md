@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Sharing a Directory
 sidebar:
     hidden: false

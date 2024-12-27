@@ -20,12 +20,16 @@ description: 'All changes and outstanding items to know about for the Jekyll to 
         - `permalink` to `slug`
         - `search_exclude: false` to `pagefind: true`
         - `search_exclude: true` to `pagefind: false`
+        - `layout: default\n` removed
     - Notes
         - `parent` and `has_children` no longer used
         - `last_modified_date` no longer used, dates are pulled from Git history
 - All image paths must now be relative. Absolute would require the linked files to be in `/public`
+- Embeds have a new format, see [Contributing](/docs/meta/contributing#includes).
 
 ## To Do
 - Includes are broken
+    - Scripts
+    - Terms
 - `/assets/` will be deprecated. Markdown files in astro can only use relative paths to images so `/src/assets` will be used.
-- Faveico isnt working
+- Evaluate why links sometimes work and sometimes don't in callout embeds

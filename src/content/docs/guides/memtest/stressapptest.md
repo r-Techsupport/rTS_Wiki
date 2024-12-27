@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Stressful App Test
 sidebar:
     hidden: true

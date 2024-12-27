@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Securing Data Before Device Disposal or Transfer
 sidebar:
     hidden: false

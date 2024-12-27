@@ -1,5 +1,4 @@
 ---
-layout: default
 title: BitLocker Recovery with Linux
 sidebar:
     hidden: false

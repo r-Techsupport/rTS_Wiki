@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Disk/Partition Management
 sidebar:
     hidden: false

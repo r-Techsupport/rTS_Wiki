@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Moderator Guidelines
 last_modified_date: 2023-10-15
 sidebar:

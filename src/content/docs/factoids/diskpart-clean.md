@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Cleaning a Disk in Diskpart
 sidebar:
     hidden: false
@@ -9,9 +8,7 @@ pagefind: true
 last_modified_date: 2022-10-31
 ---
 
-
-
-> [!WARNING] Warning
+> [!CAUTION] Caution
 > Note that cleaning the disk **will remove any data stored on it.**
 
 Open Command Prompt or PowerShell as admin then follow the steps below.

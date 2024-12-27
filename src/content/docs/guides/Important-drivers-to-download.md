@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Important drivers to download
 sidebar:
     hidden: false

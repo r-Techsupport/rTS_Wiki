@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Using Get-Specs
 sidebar:
     hidden: false

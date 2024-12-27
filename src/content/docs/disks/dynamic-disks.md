@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Dynamic Disks
 sidebar:
     hidden: false

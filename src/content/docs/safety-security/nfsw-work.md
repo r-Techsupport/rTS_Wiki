@@ -1,5 +1,4 @@
 ---
-layout: default
 title: NSFW at Work
 sidebar:
     hidden: false

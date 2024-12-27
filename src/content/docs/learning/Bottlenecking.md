@@ -1,5 +1,4 @@
 ---
-layout: default
 title: What is a bottleneck?
 sidebar:
     hidden: false

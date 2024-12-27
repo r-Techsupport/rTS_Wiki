@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Force updating Windows
 sidebar:
     hidden: false

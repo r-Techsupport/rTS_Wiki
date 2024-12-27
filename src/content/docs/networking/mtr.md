@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Troubleshooting with MTR
 sidebar:
     hidden: false

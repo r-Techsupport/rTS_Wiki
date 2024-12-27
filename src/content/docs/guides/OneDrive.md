@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Unsync/Unlink/Uninstall OneDrive
 sidebar:
     hidden: false
@@ -18,12 +17,12 @@ If you want to stop syncing OneDrive on your computer because you are on a meter
 1. Select the white or blue OneDrive cloud icon in the notification/menu area. This icon may be under the "show hidden icons"tab on your taskbar. (See pictures for referencing below)
 ![HiddenIcon.png](../../../assets/One-Drive/HiddenIcon.png) 
 ![OneDriveIcon.png](../../../assets/One-Drive/OneDriveIcon.png)
-2. Right-click (or CTRL-click in Mac) the OneDrive icon on the taskbar, Click the        ![settingsicon.png](../../../assets/One-Drive/settingsicon.png) icon and select Pause syncing > 2 / 8 / 24hours.
+2. Right-click (or CTRL-click in Mac) the OneDrive icon on the taskbar, Click the ![settingsicon.png](../../../assets/One-Drive/settingsicon.png) icon and select Pause syncing > 2 / 8 / 24hours.
 
 
 ### To resume syncing
 1. Select the white or blue OneDrive cloud icon in the notification/menu area. This icon may be under the "show hidden icons"tab on your taskbar.
-2. Right-click (or CTRL-click in Mac) the OneDrive icon on the taskbar, Click the     ![settingsicon.png](../../../assets/One-Drive/settingsicon.png) icon and select Resume syncing.
+2. Right-click (or CTRL-click in Mac) the OneDrive icon on the taskbar, Click the ![settingsicon.png](../../../assets/One-Drive/settingsicon.png) icon and select Resume syncing.
 
 
 ## Unlinking OneDrive 

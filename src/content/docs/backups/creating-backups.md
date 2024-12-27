@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Creating a Backup Process
 sidebar:
     hidden: false
@@ -9,8 +8,6 @@ parent: Backups
 pagefind: true
 last_modified_date: 2022-06-16
 ---
-
-
 
 ## The 3-2-1 Rule
 

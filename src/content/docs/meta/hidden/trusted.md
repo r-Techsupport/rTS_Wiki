@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Trusted Guidelines
 sidebar:
     hidden: true

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: BSOD Guide
 sidebar:
     hidden: false

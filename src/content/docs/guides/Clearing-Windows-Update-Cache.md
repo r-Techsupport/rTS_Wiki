@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Clearing Windows Update Cache
 sidebar:
     hidden: false

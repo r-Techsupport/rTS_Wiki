@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Basic Troubleshooting
 sidebar:
     hidden: false

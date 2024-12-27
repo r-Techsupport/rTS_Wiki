@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Using CDI
 sidebar:
     hidden: false

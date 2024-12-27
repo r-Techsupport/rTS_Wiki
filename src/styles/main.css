@@ -1,31 +1,60 @@
+/*
+base color: #07090D,#151C28
+https://coolors.co/
+
+accent-low - color of selected item in sidebar
+accent:
+    - light: accents     
+    - dark: active outline of search box in search dialog
+accent-high - background of selected item in sidebar
+
+white - headers in body and sidebar
+    - Hovering over items in sidebar
+1 - theme button
+2 - main text
+    - items in sidebar
+3 - edit page & last updated time & ToC
+4 - branches in search dialog
+5 - search/card outline 
+    - line next to expanded items in sidebar
+6 - border lines & search dialog background
+    - light: inside of search button
+    - dark: headerbar & sidebar
+7 - header bar          dark: card hover
+black - background
+*/
+
 /* Dark mode colors. */
 :root[data-theme="dark"] {
-    --sl-color-accent-low: #1d242f;
-    --sl-color-accent: #efd9fd;
-    --sl-color-accent-high: #9ccbee;
-    --sl-color-white: #ffffff;
-    --sl-color-gray-1: #ebeef3;
-    --sl-color-gray-2: #bfc2c8;
-    --sl-color-gray-3: #868c98;
-    --sl-color-gray-4: #535863;
-    --sl-color-gray-5: #333842;
-    --sl-color-gray-6: #222730;
-    --sl-color-black: #16181d;
+    --sl-color-accent-low: var(--sl-color-black);
+    --sl-color-accent: var(--sl-color-accent-high);
+    --sl-color-accent-high: #879CC0;
+
+    --sl-color-white: #f2f4f8;
+    --sl-color-gray-1: var(--sl-color-accent-high);
+    --sl-color-gray-2: #cad2e3;
+    --sl-color-gray-3: var(--sl-color-accent-high);
+    --sl-color-gray-4: var(--sl-color-gray-2);
+    --sl-color-gray-5: #32405d;
+    --sl-color-gray-6: #242e42;
+    --sl-color-gray-7: var(--sl-color-gray-6);
+    --sl-color-black: #151c28;
 }
 
 /* Light mode colors. */
 :root[data-theme='light'] {
-    --sl-color-accent-low: #d0d8e3;
-    --sl-color-accent: #004173;
-    --sl-color-accent-high: #3b2e58;
-    --sl-color-white: #16181d;
-    --sl-color-gray-1: #222730;
-    --sl-color-gray-2: #333842;
-    --sl-color-gray-3: #535863;
-    --sl-color-gray-4: #868c98;
-    --sl-color-gray-5: #bfc2c8;
-    --sl-color-gray-6: #ebeef3;
-    --sl-color-gray-7: #f5f6f9;
+    --sl-color-accent-low: red;
+    --sl-color-accent: #5470A0;
+    --sl-color-accent-high: var(--sl-color-accent);
+
+    --sl-color-white: #151C28;
+    --sl-color-gray-1: var(--sl-color-accent);
+    --sl-color-gray-2: var(--sl-color-white);
+    --sl-color-gray-3: var(--sl-color-gray-1);
+    --sl-color-gray-4: var(--sl-color-gray-2);
+    --sl-color-gray-5: var(--sl-color-accent);
+    --sl-color-gray-6: #cad2e3;
+    --sl-color-gray-7: #f2f4f8;
     --sl-color-black: #ffffff;
 }
 

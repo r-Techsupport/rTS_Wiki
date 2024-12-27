@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Using an adapter to read a disk
 sidebar:
     hidden: false
@@ -9,8 +8,6 @@ grand_parent: Disks
 pagefind: true
 last_modified_date: 2024-08-13
 ---
-
-
 
 A quick way to recover data from a readable disk will be to remove it from the issue computer and use an adapter to plug it into a working computer so you can copy required data off. 
 

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: DISM and SFC
 sidebar:
     hidden: false

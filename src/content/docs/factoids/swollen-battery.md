@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Handling a swollen battery
 sidebar:
     hidden: false

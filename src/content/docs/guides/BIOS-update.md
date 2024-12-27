@@ -1,5 +1,4 @@
 ---
-layout: default
 title: How to Update BIOS
 sidebar:
     hidden: false

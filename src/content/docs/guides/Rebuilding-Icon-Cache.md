@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Rebuild Icon Cache
 sidebar:
     hidden: false

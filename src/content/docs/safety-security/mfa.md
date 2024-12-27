@@ -1,5 +1,4 @@
 ---
-layout: default
 title: MFA
 sidebar:
     hidden: false

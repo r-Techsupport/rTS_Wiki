@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Installing Windows 11
 sidebar:
     hidden: false

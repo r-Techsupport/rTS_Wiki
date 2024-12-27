@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Computing 101
 sidebar:
     hidden: false

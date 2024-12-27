@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Throttling
 sidebar:
     hidden: false

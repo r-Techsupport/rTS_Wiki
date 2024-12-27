@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Using chkdsk
 sidebar:
     hidden: false

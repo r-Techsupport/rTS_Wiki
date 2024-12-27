@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Installing Linux
 sidebar:
     hidden: false
@@ -12,8 +11,6 @@ redirect_from: /books/how-to-and-guides/page/linux-installation-guide
 ---
 
 This Linux installation guide may seem long, but it’s not very difficult. It covers as many common cases as possible, and also aims to be informative.
-
-
 
 ## Step 0: Pre-installation
 
@@ -50,7 +47,9 @@ Additional tips:
 
 After you’ve downloaded the distro of your choice, you should have an ISO file. You will need to write it to a USB drive (just copying the ISO file over won't work, there's a special technique to write them). An 8GB+ flash drive is typically large enough.
 
-{% include embeds/create-linux-install-media.md %}
+import LinuxInstallMedia from '../../../_includes/embeds/create-linux-install-media.mdx';
+
+<LinuxInstallMedia />
 
 ## Step 3: The Actual Installation
 

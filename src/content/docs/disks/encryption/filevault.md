@@ -1,5 +1,4 @@
 ---
-layout: default
 title: FileVault
 sidebar:
     hidden: false

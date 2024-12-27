@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Using Testdisk to recover partitions
 sidebar:
     hidden: false
@@ -12,9 +11,13 @@ last_modified_date: 2024-02-24
 
 ## Overview
 
-{% include embeds/use-linux-live-session.md %}
+import LinuxInstallMedia from '../../../../_includes/embeds/create-linux-install-media.mdx';
 
-{% include embeds/data-recovery-warning.md %}
+<LinuxInstallMedia />
+
+import DataRecoveryWarning from '../../../../_includes/embeds/data-recovery-warning.md';
+
+<DataRecoveryWarning />
 
 This guide was written using a Windows 11 host that has a 128GB C:\ drive and a 256GB D:\ drive called "Game_Data".
 

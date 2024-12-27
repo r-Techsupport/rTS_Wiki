@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Disk Encryption
 sidebar:
     hidden: false

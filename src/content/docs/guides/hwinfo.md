@@ -1,5 +1,4 @@
 ---
-layout: default
 title: HWiNFO - Full Guide
 sidebar:
     hidden: false
@@ -14,7 +13,8 @@ redirect_from: /books/how-to-and-guides/page/hwinfo-full-guide
 
 To start troubleshooting using HWiNFO, follow this guide. It will walk you though how to setup logging and stress testing.
 
-> Note that if you are specifically told to use HWInfo for game logging, ignore the steps pertaining to Furmark and Prime95 (i.e. follow steps 1, 4, 5 and 6). If told you are doing a stress test, you must download all 3 programs and follow all steps accordingly. None of the programs are optional during a stress test.
+> [!NOTE] Information
+If you are specifically told to use HWInfo for game logging, ignore the steps pertaining to Furmark and Prime95 (i.e. follow steps 1, 4, 5 and 6). If told you are doing a stress test, you must download all 3 programs and follow all steps accordingly. None of the programs are optional during a stress test.
 >
 > ***<u class="blink">Read the entirety of step 1 and 2 before complaining that downloads aren't working.</u>***
 

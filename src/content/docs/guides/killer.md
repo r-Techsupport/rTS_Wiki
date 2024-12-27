@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Killer Networking Drivers
 sidebar:
     hidden: false

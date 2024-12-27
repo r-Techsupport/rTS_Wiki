@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Memory Testing
 sidebar:
     hidden: true

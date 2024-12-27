@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Cleaning Computer Hardware
 sidebar:
     hidden: false

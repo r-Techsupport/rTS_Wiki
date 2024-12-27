@@ -1,5 +1,4 @@
 ---
-layout: default
 title: LUKS
 sidebar:
     hidden: false

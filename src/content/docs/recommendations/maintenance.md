@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Windows Maintenance
 sidebar:
     hidden: false

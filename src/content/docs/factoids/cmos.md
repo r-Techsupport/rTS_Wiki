@@ -1,5 +1,4 @@
 ---
-layout: default
 title: How to Reset CMOS
 sidebar:
     hidden: false

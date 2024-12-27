@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Turning Off IPv6
 sidebar:
     hidden: false

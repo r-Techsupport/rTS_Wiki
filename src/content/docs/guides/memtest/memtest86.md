@@ -1,5 +1,4 @@
 ---
-layout: default
 title:  MemTest86+
 sidebar:
     hidden: false

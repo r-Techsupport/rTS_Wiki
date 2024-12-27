@@ -1,5 +1,4 @@
 ---
-layout: default
 title: How to Describe a Technical Problem
 sidebar:
     hidden: false

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Taking good Hardware photos
 sidebar:
     hidden: false

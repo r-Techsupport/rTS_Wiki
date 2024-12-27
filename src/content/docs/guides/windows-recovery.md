@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Windows Recovery
 has_children: false
 parent: General Guides
@@ -101,7 +100,9 @@ Windows Recovery is a built-in feature in Microsoft Windows operating systems th
   - When you've exhausted all hope and want to gamble with the fragile stability of your system.
   - Perfect for those moments when you feel too attached to your data and want to play Russian roulette with the operating system.
 
-> ❗ Warning: If you choose to erase your data during the reset, it's not irrecoverable. Before selling your computer, you should properly wipe your stuff. 
+> [!CAUTION] Caution
+> 
+> If you choose to erase your data during the reset it can be recovered by someone with the time and skills. Before selling your computer you should properly wipe your disks using [our guides](/docs/disks/disk-wipe/).
 
 ### 6. Uninstall Updates
 

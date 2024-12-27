@@ -1,18 +1,10 @@
 ---
-layout: default
 title: Linux Live Session
 sidebar:
     hidden: false
-has_children: false
-parent: Live Sessions
 pagefind: true
-last_modified_date: 2022-07-16
 redirect_from: /books/troubleshooting-with-a-live-session/chapter/linux-live-environment
 ---
-
-
-
-
 ## What is a Linux Live Session
 
 Linux is a great tool for troubleshooting. It can run off a USB drive in a live session. This allows you to use a wide range of tools to manipulate the disks, data, and hardware of your computer/OS without worrying about anything running on it.
@@ -43,7 +35,9 @@ You may also use the official XUbuntu ISO and load your own tools as needed.
 ## 2. Creating bootable media
 This will require a USB drive that is at least the size of the ISO you downloaded.
 
-{% include embeds/create-linux-install-media.md %}
+import LinuxInstallMedia from '../../../_includes/embeds/create-linux-install-media.mdx';
+
+<LinuxInstallMedia />
 
 ## 3. Boot the live media
 1. Press your 'Boot menu' key when you power on the machine to access your boot options.

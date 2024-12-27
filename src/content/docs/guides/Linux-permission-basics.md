@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Permissions in Linux with chmod
 sidebar:
     hidden: false
@@ -13,7 +12,8 @@ last_modified_date: 2024-01-30
 
 In Linux, file permissions are crucial for maintaining the security and integrity of your system. The `chmod` command allows you to modify these permissions. This guide will walk you through the basics of using `chmod` to manage file permissions.
 
-> ❗ Modifying file permissions wields great power in Linux. Missteps can lead to destructive commands executing without hesitation.
+> [!WARNING] Warning
+> Modifying file permissions wields great power in Linux. Missteps can lead to destructive commands executing without hesitation.
 
 ## Understanding File Permissions
 

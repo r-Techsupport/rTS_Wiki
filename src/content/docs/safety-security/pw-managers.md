@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Password Managers
 sidebar:
     hidden: false

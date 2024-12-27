@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Domain Name System
 sidebar:
     hidden: false

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Verifying Disk Health
 sidebar:
     hidden: false
