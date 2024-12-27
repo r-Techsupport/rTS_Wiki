@@ -6,90 +6,89 @@ import remarkObsidianCallout from "remark-obsidian-callout";
 // https://astro.build/config
 export default defineConfig({
     site: 'https://rtech.support',
-    integrations: [
-        starlight({
-            title: 'rTS Wiki',
-            favicon: '/favicon.ico',
-            logo: {
-                src: './src/assets/favicon.png',
+    integrations: [starlight({
+        title: 'rTS Wiki',
+        favicon: '/favicon.ico',
+        logo: {
+            src: './src/assets/favicon.png',
+        },
+        components: {
+            Header: './src/components/customHeader.astro',
+            PageFrame: './src/components/customPageFrame.astro',
+        }, 
+        customCss: [
+            './src/styles/main.css',
+            './src/styles/callouts.css',
+        ],
+        sidebar: [
+            {
+                label: 'Information',
+                autogenerate: { directory: 'meta' },
+                collapsed: true,
             },
-            components: {
-                Header: './src/components/customHeader.astro',
-                PageFrame: './src/components/customPageFrame.astro',
-            }, 
-            customCss: [
-                './src/styles/main.css',
-                './src/styles/callouts.css',
-            ],
-            sidebar: [
-                {
-                    label: 'Information',
-                    autogenerate: { directory: 'meta' },
-                    collapsed: true,
-                },
-                {
-                    label: 'Software We Recommend',
-                    autogenerate: { directory: 'recommendations' },
-                    collapsed: true,
-                },
-                {
-                    label: 'OS Install Guides',
-                    autogenerate: { directory: 'installations' },
-                    collapsed: true,
-                },
-                {
-                    label: 'General Guides',
-                    autogenerate: { directory: 'guides' },
-                    collapsed: true,
-                },
-                {
-                    label: 'Learning',
-                    autogenerate: { directory: 'learning' },
-                    collapsed: true,
-                },
-                {
-                    label: 'Safety & Security',
-                    autogenerate: { directory: 'safety-security' },
-                    collapsed: true,
-                },
-                {
-                    label: 'Backups',
-                    autogenerate: { directory: 'backups' },
-                    collapsed: true,
-                },
-                {
-                    label: 'Networking',
-                    autogenerate: { directory: 'networking' },
-                    collapsed: true,
-                },
-                {
-                    label: 'Disks',
-                    autogenerate: { directory: 'disks' },
-                    collapsed: true,
-                },
-                {
-                    label: 'Live Sessions',
-                    autogenerate: { directory: 'live-session' },
-                    collapsed: true,
-                },
-                {
-                    label: 'Factoids',
-                    autogenerate: { directory: 'factoids' },
-                    collapsed: true,
-                },
-            ],
-            editLink: {
-                baseUrl: 'https://github.com/r-techsupport/rts_wiki/edit/main/',
+            {
+                label: 'Software We Recommend',
+                autogenerate: { directory: 'recommendations' },
+                collapsed: true,
             },
-            social: {
-                github: 'https://github.com/r-techsupport/rts_wiki',
-                discord: 'https://rtech.support/discord',
-                reddit: 'https://reddit.com/r/techsupport',
+            {
+                label: 'OS Install Guides',
+                autogenerate: { directory: 'installations' },
+                collapsed: true,
             },
-            pagination: false,
-            lastUpdated: true,
-            credits: false,
-        }),
+            {
+                label: 'General Guides',
+                autogenerate: { directory: 'guides' },
+                collapsed: true,
+            },
+            {
+                label: 'Learning',
+                autogenerate: { directory: 'learning' },
+                collapsed: true,
+            },
+            {
+                label: 'Safety & Security',
+                autogenerate: { directory: 'safety-security' },
+                collapsed: true,
+            },
+            {
+                label: 'Backups',
+                autogenerate: { directory: 'backups' },
+                collapsed: true,
+            },
+            {
+                label: 'Networking',
+                autogenerate: { directory: 'networking' },
+                collapsed: true,
+            },
+            {
+                label: 'Disks',
+                autogenerate: { directory: 'disks' },
+                collapsed: true,
+            },
+            {
+                label: 'Live Sessions',
+                autogenerate: { directory: 'live-sessions' },
+                collapsed: true,
+            },
+            {
+                label: 'Factoids',
+                autogenerate: { directory: 'factoids' },
+                collapsed: true,
+            },
+        ],
+        editLink: {
+            baseUrl: 'https://github.com/r-techsupport/rts_wiki/edit/main/',
+        },
+        social: {
+            github: 'https://github.com/r-techsupport/rts_wiki',
+            discord: 'https://rtech.support/discord',
+            reddit: 'https://reddit.com/r/techsupport',
+        },
+        pagination: false,
+        lastUpdated: true,
+        credits: false,
+    }),
     ],
     markdown: {
         remarkPlugins: [ 
