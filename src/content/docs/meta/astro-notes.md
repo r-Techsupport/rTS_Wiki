@@ -28,6 +28,7 @@ description: 'All changes and outstanding items to know about for the Jekyll to 
 - Embeds have a new format, see [Contributing](/docs/meta/contributing#includes).
 - Scripts are imported using a new method, as described [here](https://starlight-examples.netlify.app/examples/imported-code/) and implemented in [Extend-WinRE](/docs/factoids/extend-winre.mdx).
     - The "gotchya" in this is that your script ends with `?raw` to import otherwise Astro tries to parse it as JS.
+- Contributors list re-worked, use this method (modified) https://starlight-examples.netlify.app/examples/git-authors/
 
 ## To Do
 - Includes are broken
