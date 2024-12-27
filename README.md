@@ -59,5 +59,8 @@ Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro 
     - https://starlight.astro.build/reference/frontmatter/
 - Alerts
     - https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts
-    - https://github.com/lin-stephanie/rehype-callouts
+    - https://github.com/escwxyz/remark-obsidian-callout
 - https://learn.microsoft.com/en-us/contribute/content/markdown-reference
+- https://starlight-examples.netlify.app/
+    - https://github.com/delucis/starlight-examples
+    - https://starlight-examples.netlify.app/examples/imported-code/

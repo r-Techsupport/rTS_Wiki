@@ -26,9 +26,10 @@ description: 'All changes and outstanding items to know about for the Jekyll to 
         - `last_modified_date` no longer used, dates are pulled from Git history
 - All image paths must now be relative. Absolute would require the linked files to be in `/public`
 - Embeds have a new format, see [Contributing](/docs/meta/contributing#includes).
+- Scripts are imported using a new method, as described [here](https://starlight-examples.netlify.app/examples/imported-code/) and implemented in [Extend-WinRE](/docs/factoids/extend-winre.mdx).
+    - The "gotchya" in this is that your script ends with `?raw` to import otherwise Astro tries to parse it as JS.
 
 ## To Do
 - Includes are broken
-    - Scripts
     - Terms
 - `/assets/` will be deprecated. Markdown files in astro can only use relative paths to images so `/src/assets` will be used.
