@@ -15,6 +15,7 @@ export default defineConfig({
         components: {
             Header: './src/components/customHeader.astro',
             PageFrame: './src/components/customPageFrame.astro',
+            Sidebar: './src/components/customSidebar.astro',
         }, 
         customCss: [
             './src/styles/main.css',
@@ -68,7 +69,7 @@ export default defineConfig({
             },
             {
                 label: 'Live Sessions',
-                autogenerate: { directory: 'live-sessions' },
+                autogenerate: { directory: 'live-sessionst ' },
                 collapsed: true,
             },
             {

@@ -1,0 +1,15 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+import Default from '@astrojs/starlight/components/Sidebar.astro';
+---
+
+<div class="sidebar-container">
+    <Default {...Astro.props}><slot /></Default>
+</div>
+
+<style>
+    .sidebar-container {
+        margin-bottom: 2rem;
+        overflow: auto;
+    }
+</style>
