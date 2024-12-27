@@ -69,7 +69,7 @@ export default defineConfig({
             },
             {
                 label: 'Live Sessions',
-                autogenerate: { directory: 'live-sessionst ' },
+                autogenerate: { directory: 'live-sessions' },
                 collapsed: true,
             },
             {
