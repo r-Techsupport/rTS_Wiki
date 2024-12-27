@@ -273,9 +273,7 @@ The two exceptions to the previous statement are `0x124 WHEA_UNCORRECTABLE_ERROR
 
 ### Opening
 
-Okay. You have a folder with a bunch of dumps in it, you have a cup of coffee and a snack, and it is time to get to work. 
-
-pen every dump in the folder, run `kb` first, then click the `!analyze -v` link. **Do not read the analysis yet**, just open each one. Pressing `!analyze -v` first before running `kb` can change the thread context, and it is possible the stack changes from when you first open the dump to when you click analyze. This is not common, but typing `kb` takes less than a second.
+Okay. You have a folder with a bunch of dumps in it, you have a cup of coffee and a snack, and it is time to get to work. Open every dump in the folder, run `kb` first, then click the `!analyze -v` link. **Do not read the analysis yet**, just open each one. Pressing `!analyze -v` first before running `kb` can change the thread context, and it is possible the stack changes from when you first open the dump to when you click analyze. This is not common, but typing `kb` takes less than a second.
 
 ### Deciphering
 
