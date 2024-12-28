@@ -4,6 +4,7 @@ import type { Props } from '../props';
 
 import Search from 'virtual:starlight/components/Search';
 import SiteTitle from 'virtual:starlight/components/SiteTitle';
+import SiteLinks from '/src/components/SiteLinks.astro';
 
 /**
  * Render the `Search` component if Pagefind is enabled or the default search component has been overridden.
@@ -15,6 +16,9 @@ const shouldRenderSearch =
 <div class="header sl-flex">
     <div class="title-wrapper sl-flex">
         <SiteTitle {...Astro.props} />
+    </div>
+    <div class="sitelinks-wrapper"> 
+        <SiteLinks />
     </div>
     <div class="search-wrapper sl-flex">
         {shouldRenderSearch && <Search {...Astro.props} />}
@@ -39,6 +43,10 @@ const shouldRenderSearch =
         --sl-color-text-accent: var(--sl-color-white);
         /* Hack to fix a gap that is set on the title, it affects our site but not the example */
         --sl-nav-gap: 0;
+    }
+
+    .sitelinks-wrapper {
+        align-content: center;
     }
 
     @media (min-width: 50rem) {
@@ -72,3 +80,10 @@ const shouldRenderSearch =
         }
     }
 </style>
+
+<!-- Script to seletively render the SiteLinks component based on screen size -->
+<script>
+    if (window.innerWidth <= 768) {
+      document.querySelector('.site-links').style.display = 'none';
+    }
+</script>

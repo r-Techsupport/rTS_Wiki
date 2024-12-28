@@ -1,0 +1,44 @@
+---
+const links = [
+  { href: 'https://hyde.rtech.support', text: 'Hyde', desc: 'A web editor and CMS for this wiki' },
+  { href: 'https://hwgv.rtech.support', text: 'HWGV', desc: 'A csv graph reader for .csv hwinfo files'},
+  { href: 'https://webdbg.rtech.support', text: 'WebDBG', desc: 'Online BSOD dump parser' },
+  { href: 'https://spec-ify.com', text: 'Specify', desc: ' Specify: a lightweight and fast tool to gather information about a Windows computer, designed for support purposes '},
+];
+---
+<div class="horizontal-list">
+    {links.map(link => (
+      <a href={link.href} target="_blank" rel="noopener noreferrer">
+        {link.text}
+        <div class="popup">{link.desc}</div>
+      </a>
+    ))}
+</div>
+
+<style>
+    .horizontal-list {
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+    }
+    .horizontal-list a {
+        text-decoration: none;
+        color: var(--sl-color-white);
+    }
+    .popup {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: var(--sl-color-white);
+        background-color: var(--sl-color-black);
+        border: 1px solid var(--sl-color-accent);
+        padding: 0.5rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+    .horizontal-list a:hover .popup {
+        display: block;
+    }
+</style>
