@@ -47,9 +47,10 @@ const { hasSidebar } = Astro.props;
         background-color: var(--sl-color-bg-nav);
     }
 
-    :global([data-has-sidebar]) .header {
+    /* spacing for the mobile menu being on the right, we moved it left */
+    /* :global([data-has-sidebar]) .header {
         padding-inline-end: calc(var(--sl-nav-gap) + var(--sl-nav-pad-x) + var(--sl-menu-button-size));
-    }
+    } */
 
     .sidebar-pane {
         visibility: var(--sl-sidebar-visibility, hidden);
