@@ -6,8 +6,6 @@ import Search from 'virtual:starlight/components/Search';
 import SiteTitle from 'virtual:starlight/components/SiteTitle';
 import SiteLinks from '/src/components/SiteLinks.astro';
 
-import MobileMenuToggle from 'virtual:starlight/components/MobileMenuToggle';
-
 /**
  * Render the `Search` component if Pagefind is enabled or the default search component has been overridden.
  */
@@ -17,9 +15,6 @@ const shouldRenderSearch =
 
 <div class="header sl-flex">
     <div class="title-wrapper sl-flex">
-        <div class="mobile-menu-wrapper">
-            <MobileMenuToggle {...Astro.props} />
-       </div>
         <SiteTitle {...Astro.props} />
     </div>
     <div class="sitelinks-wrapper"> 
@@ -48,10 +43,6 @@ const shouldRenderSearch =
         --sl-color-text-accent: var(--sl-color-white);
         /* Hack to fix a gap that is set on the title, it affects our site but not the example */
         --sl-nav-gap: 0;
-    }
-
-    .mobile-menu-wrapper {
-        margin-right: 1em;
     }
 
     /* we display none here so when the width is greater than 50rem (below) a display !important is set */
@@ -89,12 +80,8 @@ const shouldRenderSearch =
                 auto;
             align-content: center;
         }
-        /* added here to only render sitelinks when view is larger than 50rem */
         .sitelinks-wrapper {
             display: contents !important;
-        }
-        .mobile-menu-wrapper {
-            margin-right: 0em !important;
         }
     }
 </style>

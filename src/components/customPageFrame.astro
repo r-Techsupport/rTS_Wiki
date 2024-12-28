@@ -13,6 +13,7 @@ const { hasSidebar } = Astro.props;
         {
             hasSidebar && (
                 <nav class="sidebar" aria-label={Astro.locals.t('sidebarNav.accessibleLabel')}>
+                    <MobileMenuToggle {...Astro.props} />
                     <div id="starlight__sidebar" class="sidebar-pane">
                         <div class="sidebar-content sl-flex">
                             <slot name="sidebar" />
@@ -47,10 +48,9 @@ const { hasSidebar } = Astro.props;
         background-color: var(--sl-color-bg-nav);
     }
 
-    /* spacing for the mobile menu being on the right, we moved it left */
-    /* :global([data-has-sidebar]) .header {
+    :global([data-has-sidebar]) .header {
         padding-inline-end: calc(var(--sl-nav-gap) + var(--sl-nav-pad-x) + var(--sl-menu-button-size));
-    } */
+    }
 
     .sidebar-pane {
         visibility: var(--sl-sidebar-visibility, hidden);
