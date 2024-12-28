@@ -35,3 +35,4 @@ description: 'All changes and outstanding items to know about for the Jekyll to 
 - Includes are broken
     - Terms
 - `/assets/` will be deprecated. Markdown files in astro can only use relative paths to images so `/src/assets` will be used.
+- Move menu to left of icon in mobile
