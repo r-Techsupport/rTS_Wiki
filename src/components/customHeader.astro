@@ -45,8 +45,10 @@ const shouldRenderSearch =
         --sl-nav-gap: 0;
     }
 
+    /* we display none here so when the width is greater than 50rem (below) a display !important is set */
     .sitelinks-wrapper {
         align-content: center;
+        display: none;
     }
 
     @media (min-width: 50rem) {
@@ -78,21 +80,8 @@ const shouldRenderSearch =
                 auto;
             align-content: center;
         }
+        .sitelinks-wrapper {
+            display: contents !important;
+        }
     }
 </style>
-
-<!-- Script to seletively render the SiteLinks component based on screen size -->
-<!-- we use 800px because that is when the sidebar dissapears it seems -->
-<script>
-    function updateSiteLinksVisibility() {
-      const siteLinks = document.querySelector('.sitelinks-wrapper');
-      if (window.innerWidth <= 800) {
-        siteLinks.style.display = 'none';
-      } else {
-        siteLinks.style.display = 'flex';
-      }
-    }
-
-    window.addEventListener('resize', updateSiteLinksVisibility);
-    window.addEventListener('load', updateSiteLinksVisibility);
-</script>
