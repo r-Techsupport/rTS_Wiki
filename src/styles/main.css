@@ -1,6 +1,6 @@
 /*
-base color: #111318, others are tones of this
-https://coolors.co/
+base color: #191c24, others are tones of this
+https://coolors.co/191c24-222630-333948-aee2fe-dbdee6-e7e9ee-f3f4f7-0277b6
 
 accent-low - color of selected item in sidebar
 accent:
@@ -28,7 +28,7 @@ black - background
 :root[data-theme="dark"] {
     --sl-color-accent-low: var(--sl-color-black);
     --sl-color-accent: var(--sl-color-accent-high);
-    --sl-color-accent-high: #81a1c1;
+    --sl-color-accent-high: #aee2fe;
 
     --sl-color-white: #f3f4f7;
     --sl-color-gray-1: var(--sl-color-accent-high);
@@ -44,7 +44,7 @@ black - background
 /* Light mode colors. */
 :root[data-theme='light'] {
     --sl-color-accent-low: red;
-    --sl-color-accent: #5e81ac;
+    --sl-color-accent: #0277b6;
     --sl-color-accent-high: var(--sl-color-accent);
 
     --sl-color-white: #191c24;
