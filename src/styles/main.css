@@ -43,7 +43,7 @@ black - background
 
 /* Light mode colors. */
 :root[data-theme='light'] {
-    --sl-color-accent-low: red;
+    --sl-color-accent-low: var(--sl-color-black);
     --sl-color-accent: #0277b6;
     --sl-color-accent-high: var(--sl-color-accent);
 
