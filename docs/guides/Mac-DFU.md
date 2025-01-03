@@ -4,7 +4,7 @@ title: Mac DFU Mode
 nav_exclude: false
 nav_order: 2
 has_children: false
-parent: Mac Guides
+parent: General Guides
 search_exclude: false
 last_modified_date: 2025-01-03
 ---
