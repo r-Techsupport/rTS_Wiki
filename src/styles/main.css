@@ -38,7 +38,7 @@ black - background
     --sl-color-gray-5: #333948;
     --sl-color-gray-6: #222630;
     --sl-color-gray-7: var(--sl-color-gray-6);
-    --sl-color-black: #111318;
+    --sl-color-black: #191c24;
 }
 
 /* Light mode colors. */
@@ -47,7 +47,7 @@ black - background
     --sl-color-accent: #5e81ac;
     --sl-color-accent-high: var(--sl-color-accent);
 
-    --sl-color-white: #111318;
+    --sl-color-white: #191c24;
     --sl-color-gray-1: var(--sl-color-accent);
     --sl-color-gray-2: var(--sl-color-white);
     --sl-color-gray-3: var(--sl-color-gray-1);
