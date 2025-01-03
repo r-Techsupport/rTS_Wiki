@@ -101,7 +101,7 @@ If keyboard commands aren't working:
 3. Install and run the app
 4. Follow on-screen instructions to enter DFU mode
 
-{: .note .note-icon }
+{: .caution .caution-icon }
 > DFU Blaster is a third-party tool. Review its licensing terms before use.
 
 # Restore Process
