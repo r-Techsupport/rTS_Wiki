@@ -12,57 +12,51 @@ Hello! Would you like to create an article for this wiki or want to modify somet
 
 Requires some knowledge of Markdown. See [@adam-p](https://github.com/adam-p)'s cheatsheet [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). This article will also only cover how to style them properly, so read other articles in this wiki to get a feel of how to structure your article.
 
-If you want to see the docs for our theme (Just the Docs), click [here](https://just-the-docs.github.io/just-the-docs/).
+If you want to see the docs for our theme (Starlight), click [here](https://starlight.astro.build/).
 
 Already read this but don't know where to start? Check the [issues page](https://github.com/r-Techsupport/rTS_Wiki/issues) for the repository!
 
-## Creating the File
+## Using Hyde
+[Hyde](https://github.com/r-Techsupport/hyde) is an internal rTS project that is a web editor and CMS for Jekyll/git static sites. You can most easily edit the wiki by visiting https://hyde.rtech.support in your browser and opening the existing file or creating a new file in `src/content/docs/`.
+
+## Using git locally
+### Creating the File
 
 [Fork the wiki's repository](https://github.com/r-Techsupport/rTS_Wiki/fork), clone your fork to your computer, and go to the repo folder.
 
-Create your Markdown file (`.md`) in the respective category in `docs/`.
+Create your Markdown file (`.md`) in the respective category in `src/content/docs/`.
 
-`docs/guides/` contain various step-by-step guides for the user to follow.
+`src/content/docs/guides/` contain various step-by-step guides for the user to follow.
 
-`docs/factoids/` contain the articles that are either copied from, or linked to by embeds.
+`src/content/docs/factoids/` contain the articles that are either copied from, or linked to by embeds.
 
-`docs/learning/` contains education articles like [Computing 101](/docs/learning/Computing-101)
+`src/content/docs/learning/` contains education articles like [Computing 101](/docs/learning/Computing-101)
 
-## Testing Locally
+### Testing locally
 
 You can host the wiki locally to check what your articles will look like: 
 
-1. Ensure you have `ruby` and `gem` installed. Run the following commands in the folder containing `Gemfile`:
-2. `gem install jekyll bundler`
-3. `bundle install`
-4. `bundle exec jekyll serve`
-5. The site should be hosted at: [http://localhost:4000/](http://localhost:4000/)
+Ensure you have `nodejs` installed. Run the following commands in the root of the project:
 
-After doing step 3, you can just skip to step 4 if you want to test the site again.
+```bash
+npm install
+npm run dev
+```
 
-## Creating the Pull Request
+The site should be viewable at [http://localhost:4321/](http://localhost:4321/)
 
- Once your changes are complete you can [open a pull request (PR)](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) to the master branch.
+### Creating the pull request
 
-## FrontMatter Header
+Once your changes are complete you can [open a pull request (PR)](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) to the master branch.
+
+When your PR is submitted a Github Action will build and publish a test website, commenting a link to it. You will be able to view your site live at that link and it will be updated on every commit in your PR until it is merged.
+
+## Frontmatter header
 - https://starlight.astro.build/reference/frontmatter/
 
-**The FrontMatter Header contains all of the metadata of the page**, including title, parent category, and date of last modification. **This is required** and should always be placed on the **first line of the file**.
+**The FrontMatter Header contains all of the metadata of the page**, including title and a page description. **This is required** and should always be placed on the **first line of the file**.
 
 Here is the header for this specific page:
-
-### Jekyll
-```
----
-title: Contributing to the Wiki
-sidebar:
-    hidden: false
-has_children: false
-parent: Information
-pagefind: true
-last_modified_date: 2023-02-04
----
-```
 
 ### Astro
 ```
@@ -70,8 +64,8 @@ last_modified_date: 2023-02-04
 title: Contributing to the Wiki
 description:
 sidebar:
-    hidden: false           (nav_exclude)
-pagefind: true              (Search_exclude)
+    hidden: false
+pagefind: true
 tableOfContents: true
 template: doc
 prev: false
@@ -86,7 +80,7 @@ The title contains the name that will be displayed for the page on the sidebar a
 
 You can copy the codeblock above to your markdown file and replace all the fields.
 
-## Page Headers
+## Page headers
 
 For the sake of consistency across the pages:
 
@@ -98,6 +92,9 @@ For the sake of consistency across the pages:
 
 #### Like so.
 `#### Like so.`
+
+#### Only the first word is capitalized
+`#### Only the first word is capitalized`
 
 ## Images
 
@@ -122,9 +119,9 @@ Includes (also called embeds or transcludes) are a way to embed one small note i
     <LinuxInstallMedia />
     ```
 
-## Page Styling
+## Page styling
 
-### Bolding and Italicizing
+### Bolding and italicizing
 
 **Bold** (`**Bold**`) important words/phrases and *Italicize* (`*Italicize*`) them to emphasize like:
 
@@ -191,8 +188,6 @@ The format to create an Alert is below. You can add additonal "quote" `>` lines 
 > 
 > Tangential comments that are not directly related to the article but could be worth knowing.
 
-
-
 ### Hyperlinks
 
 You can link to headers in the current page with:
@@ -229,7 +224,7 @@ If you want the content to be collapsible, add:
 
 </details>
 
-## Directory or Index pages
+## Directory or index pages
 Use a `.mdx` file in the root of any directory, named the same as the directory. This is `backups.mdx`:
 
 ```mdx
