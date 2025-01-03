@@ -65,13 +65,10 @@ For things like Games, often, you can change the install path to be on your exte
 See links below on how to change game installs/library paths.
 You can also copy and paste the data to your other drive if you have it installed, and when the install checks the data, it will see everything is there, and you won't have to re-download everything.
 
-[Steam - Steam Support :: Moving a Steam Installation and Games (steampowered.com)](https://help.steampowered.com/en/faqs/view/4BD4-4528-6B2E-8327)
-
-[Battle.net - How Do I Install Blizzard Games on a Different Hard Drive? - Blizzard Support (battle.net)](https://us.battle.net/support/en/article/151376)
-
-[Origin - Back up and restore your games with Origin](https://help.ea.com/en-us/help/origin/origin/backing-up-and-restoring-your-origin-games/)
-
-[Epic Games - How to move an installed game from the Epic Games Launcher to another directory on your computer](https://www.epicgames.com/help/en-US/epic-games-store-c5719341124379/launcher-support-c5719357217435/how-to-move-an-installed-game-from-the-epic-games-launcher-to-another-directory-on-your-computer-a5720215231515)
+- [Steam - Steam Support :: Moving a Steam Installation and Games (steampowered.com)](https://help.steampowered.com/en/faqs/view/4BD4-4528-6B2E-8327)
+- [Battle.net - How Do I Install Blizzard Games on a Different Hard Drive? - Blizzard Support (battle.net)](https://us.battle.net/support/en/article/151376)
+- [Origin - Back up and restore your games with Origin](https://help.ea.com/en-us/help/origin/origin/backing-up-and-restoring-your-origin-games/)
+- [Epic Games - How to move an installed game from the Epic Games Launcher to another directory on your computer](https://www.epicgames.com/help/en-US/epic-games-store-c5719341124379/launcher-support-c5719357217435/how-to-move-an-installed-game-from-the-epic-games-launcher-to-another-directory-on-your-computer-a5720215231515)
 
 > [!WARNING] Warning
 > If you are unsure of what you are doing, make sure you take a [backup](/docs/backups/creating-backups.md) of your data.
