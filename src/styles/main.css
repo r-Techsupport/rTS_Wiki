@@ -1,5 +1,5 @@
 /*
-base color: #07090D,#151C28
+base color: #111318, others are tones of this
 https://coolors.co/
 
 accent-low - color of selected item in sidebar
@@ -28,34 +28,34 @@ black - background
 :root[data-theme="dark"] {
     --sl-color-accent-low: var(--sl-color-black);
     --sl-color-accent: var(--sl-color-accent-high);
-    --sl-color-accent-high: #879CC0;
+    --sl-color-accent-high: #81a1c1;
 
-    --sl-color-white: #f2f4f8;
+    --sl-color-white: #f3f4f7;
     --sl-color-gray-1: var(--sl-color-accent-high);
-    --sl-color-gray-2: #cad2e3;
+    --sl-color-gray-2: #dbdee6;
     --sl-color-gray-3: var(--sl-color-accent-high);
     --sl-color-gray-4: var(--sl-color-gray-2);
-    --sl-color-gray-5: #32405d;
-    --sl-color-gray-6: #242e42;
+    --sl-color-gray-5: #333948;
+    --sl-color-gray-6: #222630;
     --sl-color-gray-7: var(--sl-color-gray-6);
-    --sl-color-black: #151c28;
+    --sl-color-black: #111318;
 }
 
 /* Light mode colors. */
 :root[data-theme='light'] {
     --sl-color-accent-low: red;
-    --sl-color-accent: #5470A0;
+    --sl-color-accent: #5e81ac;
     --sl-color-accent-high: var(--sl-color-accent);
 
-    --sl-color-white: #151C28;
+    --sl-color-white: #111318;
     --sl-color-gray-1: var(--sl-color-accent);
     --sl-color-gray-2: var(--sl-color-white);
     --sl-color-gray-3: var(--sl-color-gray-1);
     --sl-color-gray-4: var(--sl-color-gray-2);
     --sl-color-gray-5: var(--sl-color-accent);
-    --sl-color-gray-6: #cad2e3;
-    --sl-color-gray-7: #f2f4f8;
-    --sl-color-black: #ffffff;
+    --sl-color-gray-6: #dbdee6;
+    --sl-color-gray-7: #e7e9ee;
+    --sl-color-black: #f3f4f7;
 }
 
 /* all badge text needs to just be plain */
@@ -67,44 +67,50 @@ black - background
     --sl-badge-tip-text: inherit;
 }
 
+/* set other colours */
+:root {
+    --sl-color-orange: #6a4b16 !important;
+    --sl-color-green: #054b16 !important;
+    --sl-color-blue: #004173 !important;
+    --sl-color-purple: #3b2e58 !important;
+    --sl-color-red: #470001 !important;
+
+    --sl-color-orange-alt: #fff4ce !important;
+    --sl-color-green-alt: #dff6dd !important;
+    --sl-color-blue-alt: #9ccbee !important;
+    --sl-color-purple-alt: #efd9fd !important;
+    --sl-color-red-alt: #fde7e9 !important;
+}
+
 /* set the dark version of our colors */
 :root[data-theme="dark"]{
-    --sl-color-orange-low: #6a4b16 !important;
-    --sl-color-orange: #6a4b16 !important;
-    --sl-color-orange-high: #fff4ce !important;
-    --sl-color-green-low: #054b16 !important;
-    --sl-color-green: #054b16 !important;
-    --sl-color-green-high: #dff6dd !important;
-    --sl-color-blue-low: #004173 !important;
-    --sl-color-blue: #004173 !important;
-    --sl-color-blue-high: #9ccbee !important;
-    --sl-color-purple-low: #3b2e58 !important;
-    --sl-color-purple: #3b2e58 !important;
-    --sl-color-purple-high: #efd9fd !important;
-    --sl-color-red-low: #470001 !important;
-    --sl-color-red: #470001 !important;
-    --sl-color-red-high: #fde7e9 !important;
+    --sl-color-orange-low: var(--sl-color-orange) !important;
+    --sl-color-orange-high: var(--sl-color-orange-alt) !important;
+    --sl-color-green-low: var(--sl-color-green) !important;
+    --sl-color-green-high: var(--sl-color-green-alt) !important;
+    --sl-color-blue-low: var(--sl-color-blue) !important;
+    --sl-color-blue-high: var(--sl-color-blue-alt) !important;
+    --sl-color-purple-low: var(--sl-color-purple) !important;
+    --sl-color-purple-high: var(--sl-color-purple-alt) !important;
+    --sl-color-red-low: var(--sl-color-red) !important;
+    --sl-color-red-high: var(--sl-color-red-alt) !important;
 }
 
 /* invert for our light theme but leave the base the same */
 :root[data-theme='light'] {
-    --sl-color-orange-high: #6a4b16 !important;
-    --sl-color-orange: #6a4b16 !important;
-    --sl-color-orange-low: #fff4ce !important;
-    --sl-color-green-high: #054b16 !important;
-    --sl-color-green: #054b16 !important;
-    --sl-color-green-low: #dff6dd !important;
-    --sl-color-blue-high: #004173 !important;
-    --sl-color-blue: #004173 !important;
-    --sl-color-blue-low: #9ccbee !important;
-    --sl-color-purple-high: #3b2e58 !important;
-    --sl-color-purple: #3b2e58 !important;
-    --sl-color-purple-low: #efd9fd !important;
-    --sl-color-red-high: #470001 !important;
-    --sl-color-red: #470001 !important;
-    --sl-color-red-low: #fde7e9 !important;
+    --sl-color-orange-high: var(--sl-color-orange) !important;
+    --sl-color-orange-low: var(--sl-color-orange-alt) !important;
+    --sl-color-green-high: var(--sl-color-green) !important;
+    --sl-color-green-low: var(--sl-color-green-alt) !important;
+    --sl-color-blue-high: var(--sl-color-blue) !important;
+    --sl-color-blue-low: var(--sl-color-blue-alt) !important;
+    --sl-color-purple-high: var(--sl-color-purple) !important;
+    --sl-color-purple-low: var(--sl-color-purple-alt) !important;
+    --sl-color-red-high: var(--sl-color-red) !important;
+    --sl-color-red-low: var(--sl-color-red-alt) !important;
 }
 
+/* callout colours are set and will invert based on theme */
 :root {
     --callout-info-bg: var(--sl-color-purple-low);
     --callout-info-text: var(--sl-color-purple-high);
