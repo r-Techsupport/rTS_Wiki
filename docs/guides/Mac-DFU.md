@@ -1,8 +1,6 @@
 ---
 layout: default
-title: Mac DFU Mode
-nav_exclude: false
-nav_order: 2
+title: Mac DFU
 has_children: false
 parent: General Guides
 search_exclude: false
