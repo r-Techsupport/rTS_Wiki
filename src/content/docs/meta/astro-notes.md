@@ -30,10 +30,11 @@ description: 'All changes and outstanding items to know about for the Jekyll to 
     - The "gotchya" in this is that your script ends with `?raw` to import otherwise Astro tries to parse it as JS.
 - Contributors list re-worked, use this method (modified) https://starlight-examples.netlify.app/examples/git-authors/
 - The "index" notes "recommendations.md" are now index.mdx and are hidden from the sidebar but are searchable. They present a directory listing of their respective notes.
+- Redirect_from frontmatter does not work, this is now configured in `astro.config.mjs` but should really be deprecated entirely. 
+    - Need to audit for Bookstack links that still exist, `/docs` to `/` is already being handled and that is all we will support
 
 ## To Do
 - Includes are broken
     - Terms
 - `/assets/` will be deprecated. Markdown files in astro can only use relative paths to images so `/src/assets` will be used.
 - Move menu to left of icon in mobile
-- Redirect_from frontmatter does not work
