@@ -107,6 +107,9 @@ export default defineConfig({
     },
     redirects: {
         "/docs/[...slug]": "/[...slug]",
+        "/rules": "/meta/rules",
+        "/books/rules/page/rules-of-the-rtechsupport": "/meta/rules",
+        "/books/rules": "/meta/rules",
         "/books/safety-and-security/page/malware-guide": "/safety-security/malware-guide",
         "/books/safety-and-security/page/security-rant": "/safety-security/security-rant",
         "/books/safety-and-security/page/ransomware": "/safety-security/ransomware",
