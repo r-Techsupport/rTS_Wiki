@@ -13,6 +13,9 @@ description: 'All changes and outstanding items to know about for the Jekyll to 
     - Tip was added
     - Success was changed to Tip
 - Frontmatter
+    - New
+        - description
+            - This will be displayed on the "card" for a note on its Index page and under the page title
     - Replaced
         - `nav_exclude: false` to `sidebar:\n    hidden: false`
         - `nav_exclude: true` to `sidebar:\n    hidden: true`
@@ -33,6 +36,7 @@ description: 'All changes and outstanding items to know about for the Jekyll to 
 - Redirect_from frontmatter does not work, this is now configured in `astro.config.mjs` but should really be deprecated entirely. 
     - Need to audit for Bookstack links that still exist, `/docs` to `/` is already being handled and that is all we will support
 - `/assets/` has been deprecated. Markdown files in astro can only use relative paths to images so `/src/assets` will be used.
+- rules page has been updated
 
 ## To Do
 - Includes are broken
