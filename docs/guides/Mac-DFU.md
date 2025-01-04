@@ -11,14 +11,20 @@ last_modified_date: 2025-01-03
 > This process will erase your Mac's drive. Ensure you have an adequate backup of all important data before proceeding.
 
 # Prerequisites
-* A second Mac running macOS 10.15.6 or newer, or equivalent VM
-* Apple Configurator installed on the host Mac
-* Stable broadband internet connection
-* 32GB free storage space for download and extraction
-* Compatible connection:
-    * USB-C to USB-C cable (Apple charging cable works fine)
-    * USB-C to USB-A cable
-    * Thunderbolt 3 to Thunderbolt 2 adapter with cable
+○ A second Mac running macOS 10.15.6 or newer
+○ Active Apple ID and App Store access
+○ Stable broadband internet connection
+○ 32GB free storage space for download and extraction
+○ Both computers should be fully charged
+○ Compatible connection:
+    ● USB-C to USB-C cable (Apple charging cable works fine)
+    ● USB-C to USB-A cable
+    ● Official Apple Thunderbolt 3 to Thunderbolt 2 adapter with cable
+
+# Download Apple Configurator
+1. Download Apple Configurator from the App Store
+    * [https://apps.apple.com/app/id1037126344](https://apps.apple.com/app/id1037126344)
+2. Run Apple Configurator
 
 {: .warning .warning-icon }
 > While Finder can sometimes be used for restoration, Apple Configurator is more reliable and recommended.
@@ -106,19 +112,21 @@ If keyboard commands aren't working:
 
 # Restore Process
 
+{: .danger .danger-icon }
+> Unplugging the cable during restoration will result in data loss and may leave your computer in an unrecoverable state.
+
 1. Once in DFU mode, open Apple Configurator
 
-2. Choose one option:
-    * **Revive**: Reinstalls recovery only while preserving data
-    * **Restore**: Performs complete reset, erasing drive and reinstalling system
-
-3. For Restore:
+2. For Restore:
     * Right-click the DFU icon
     * Select Advanced > Restore
     * Confirm the warning
-    * Wait for download and installation (10-15 minutes)
+    * Wait for download and installation (15-45 minutes)
 
-4. Mac will automatically restart when complete
+3. Mac will automatically restart when complete
+
+{: .success .success-icon }
+> When restoration completes successfully, your Mac should turn on and display the Hello screen.
 
 {: .note .note-icon }
 > If having trouble entering DFU mode:
@@ -126,6 +134,7 @@ If keyboard commands aren't working:
 > * Ensure using correct ports
 > * Verify cable supports data transfer
 > * If using adapters, try different connection methods
+> * Try the alternative DFU Blaster method above
 
 # Common Issues
 
