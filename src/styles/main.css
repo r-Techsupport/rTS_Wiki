@@ -29,8 +29,8 @@ black - background
 /* Dark mode colors. */
 :root[data-theme="dark"] {
     --sl-color-accent-low: var(--sl-color-black);
-    --sl-color-accent: var(--sl-color-accent-high);
-    --sl-color-accent-high: #aee2fe;
+    --sl-color-accent: #aee2fe;
+    --sl-color-accent-high: var(--sl-color-accent);
 
     --sl-color-white: #f3f4f7;
     --sl-color-gray-1: var(--sl-color-accent-high);
