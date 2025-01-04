@@ -4,8 +4,10 @@ https://coolors.co/191c24-222630-333948-aee2fe-dbdee6-e7e9ee-f3f4f7-0277b6
 
 accent-low - color of selected item in sidebar
 accent:
-    - light: accents     
-    - dark: active outline of search box in search dialog
+    - light: accents
+    - dark
+        - active outline of search box in search dialog
+        - active TOC header
 accent-high - background of selected item in sidebar
 
 white - headers in body and sidebar
@@ -33,7 +35,7 @@ black - background
     --sl-color-white: #f3f4f7;
     --sl-color-gray-1: var(--sl-color-accent-high);
     --sl-color-gray-2: #dbdee6;
-    --sl-color-gray-3: var(--sl-color-accent-high);
+    --sl-color-gray-3: #5D6783;
     --sl-color-gray-4: var(--sl-color-gray-2);
     --sl-color-gray-5: #333948;
     --sl-color-gray-6: #222630;
@@ -50,7 +52,7 @@ black - background
     --sl-color-white: #191c24;
     --sl-color-gray-1: var(--sl-color-accent);
     --sl-color-gray-2: var(--sl-color-white);
-    --sl-color-gray-3: var(--sl-color-gray-1);
+    --sl-color-gray-3: #5D6783;
     --sl-color-gray-4: var(--sl-color-gray-2);
     --sl-color-gray-5: var(--sl-color-accent);
     --sl-color-gray-6: #dbdee6;
