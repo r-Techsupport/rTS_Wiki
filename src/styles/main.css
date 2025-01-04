@@ -34,7 +34,7 @@ black - background
 
     --sl-color-white: #f3f4f7;
     --sl-color-gray-1: var(--sl-color-accent-high);
-    --sl-color-gray-2: #dbdee6;
+    --sl-color-gray-2: var(--sl-color-white);
     --sl-color-gray-3: #5D6783;
     --sl-color-gray-4: var(--sl-color-gray-2);
     --sl-color-gray-5: #333948;
