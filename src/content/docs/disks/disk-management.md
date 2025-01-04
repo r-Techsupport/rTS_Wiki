@@ -1,5 +1,6 @@
 ---
 title: Disk/Partition Management
+description: The basics to disk and partition management in Windows and Linux
 sidebar:
     hidden: false
     order: 1
@@ -10,12 +11,7 @@ last_modified_date: 2023-05-08
 redirect_from: /books/software-we-recommend/page/disk-partition-management
 ---
 
-
-
-
-
-
-## Disk Management
+## Using Disk Management in Windows
 You can open disk management by pressing Win+R and typing `diskmgmt.msc`.
 
 Disk management can only be run from a installed copy of windows, and has limits on what partitions and disks can be edited. For a more robust solution, consider using DiskPart or gparted.
@@ -73,7 +69,7 @@ New partitions can only be created from unallocated space.
 1. Right click on an existing partition and choose "Delete Volume..."
 2. Click "Yes" to delete the partition. You will loose all data on this partition.
 
-## Diskpart
+## Using Diskpart in Windows
 Diskpart is a command line tool that doesn't have as many restrictions as disk manager. It is still limited when working on the `C:` drive, and not a good tool for partition manipulation. To use it on the `C:` drive, run it from run from the windows installer or from the [windows PE](/docs/LiveSessions/windows-live-session).
 
 This guide will walk you through wiping a disk and creating a single empty partition using the entire drive. However, this will not securely erase your data, see [the wiping disks article](/docs/LiveSessions/linux/linux-wipe-disks) to do that.
@@ -111,7 +107,7 @@ This guide will walk you through wiping a disk and creating a single empty parti
 8. To assign a drive letter to the new partition, run `assign letter=X` where X is the letter you choose.
 9. Type `exit` to close DiskPart. Your drive is formatted.
 
-## GParted
+## Using GParted in Linux
 This is used via a Linux live environment. 
 
 Gparted has the advantage of working on almost any disk, when in Windows you cannot operate extensively on your main `C:\` drive but Gparted is booted from its own media and not running on `C:\` so it does not have this restriction. 

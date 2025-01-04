@@ -1,5 +1,6 @@
 ---
 title: Ransomware
+description: Learn how to deal with Crypto-ransomware
 sidebar:
     hidden: false
 has_children: false

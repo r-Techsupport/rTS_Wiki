@@ -1,5 +1,6 @@
 ---
 title: List of AV removers
+description: A list of links for downloading (or usage guides of) dedicated uninstallers for 3rd party AVs. 
 sidebar:
     hidden: false
 has_children: false
@@ -7,8 +8,6 @@ parent: Factoids
 pagefind: true
 last_modified_date: 2024-01-02
 ---
-
-Below is a list of links for downloading (or usage guides of) dedicated uninstallers for 3rd party AVs. 
 
 |Name of Antivirus|Link|
 |---|---|
