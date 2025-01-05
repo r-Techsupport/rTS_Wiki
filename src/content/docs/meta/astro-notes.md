@@ -41,4 +41,5 @@ description: 'All changes and outstanding items to know about for the Jekyll to 
 ## To Do
 - Includes are broken
     - Terms
-- Move menu to left of icon in mobile
+- Move menu to left of icon in m
+- Clicking a header should change the URL (make them hrefs)
