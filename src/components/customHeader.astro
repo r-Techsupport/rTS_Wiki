@@ -16,11 +16,11 @@ const shouldRenderSearch =
 <div class="header sl-flex">
     <div class="title-wrapper sl-flex">
         <SiteTitle {...Astro.props} />
-    </div>
-    <div class="sitelinks-wrapper"> 
-        <SiteLinks />
-    </div>
-    <div class="search-wrapper sl-flex">
+    </div> 
+    <div class="right-wrapper sl-flex">
+        <div class="sitelinks-wrapper"> 
+            <SiteLinks />
+        </div>
         {shouldRenderSearch && <Search {...Astro.props} />}
     </div>
 </div>
@@ -45,9 +45,11 @@ const shouldRenderSearch =
         --sl-nav-gap: 0;
     }
 
+    .right-wrapper {
+        gap: 1rem;
+    }
     /* we display none here so when the width is greater than 50rem (below) a display !important is set */
     .sitelinks-wrapper {
-        align-content: center;
         display: none;
     }
 

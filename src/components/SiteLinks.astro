@@ -6,31 +6,63 @@ const links = [
   { href: 'https://hyde.rtech.support', text: 'Hyde', desc: 'A web editor and CMS for this wiki' },
 ];
 ---
-<div class="horizontal-list">
+<div class="dropdown">
+  <button class="dropdown-button">Other Tools</button>
+  <div class="dropdown-content">
     {links.map(link => (
       <a href={link.href} target="_blank" rel="noopener noreferrer">
         {link.text}
         <div class="popup">{link.desc}</div>
       </a>
     ))}
+  </div>
 </div>
 
 <style>
-    .horizontal-list {
-        display: flex;
-        gap: 3rem;
+    .dropdown {
+        position: relative;
+        display: inline-block;
         align-items: center;
     }
-    .horizontal-list a {
-        text-decoration: none;
-        color: var(--sl-color-white);
+    .dropdown-button {
+        background-color: var(--sl-color-black);
+        color: var(--sl-color-gray-2);
+        border: 1px solid var(--sl-color-gray-5);
+        border-radius: 0.5rem;
+        height: 2.5rem;
+        cursor: pointer;
+        font-size: var(--sl-text-sm);
+        text-wrap: nowrap;
     }
-    .popup {
+    .dropdown-content {
         display: none;
         position: absolute;
-        top: 100%;
-        left: 50%;
-        transform: translateX(-50%);
+        background-color: var(--sl-color-black);
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 0.5rem;
+        flex-direction: column;
+        font-size: var(--sl-text-sm);
+    }
+    .dropdown-content a {
+        color: var(--sl-color-white);
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        display: block;
+        position: relative;
+    }
+    .dropdown-content a:hover .popup,
+    .dropdown-content a:focus .popup {
+        display: block;
+    }
+    .dropdown-content .popup {
+        display: none;
+        position: absolute;
+        font-size: 0.75em;
+        top: 50%;
+        left: -100%;
+        transform: translateY(-50%);
         color: var(--sl-color-white);
         background-color: var(--sl-color-black);
         border: 1px solid var(--sl-color-accent);
@@ -38,8 +70,12 @@ const links = [
         padding: 0.5rem;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         z-index: 10;
+        white-space: normal;
+        width: max-content;
+        max-width: 200px;
     }
-    .horizontal-list a:hover .popup {
-        display: block;
+    .dropdown:hover .dropdown-content {
+        display: flex;
+        flex-direction: column;
     }
 </style>
