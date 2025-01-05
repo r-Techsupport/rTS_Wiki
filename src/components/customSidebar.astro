@@ -15,7 +15,7 @@ import Default from '@astrojs/starlight/components/Sidebar.astro';
     /* very hacky method to make items coloured on hover I don't
     want to modify the actual child object because of how complex
     and maintenance intensice that would get */
-    :global(li) > :global(a:hover:not([aria-current="page"])) {
+    .sidebar-container :global(li) > :global(a:hover:not([aria-current="page"])) {
         color: var(--sl-color-accent);
     }
 </style>
