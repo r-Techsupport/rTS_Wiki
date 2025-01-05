@@ -21,6 +21,7 @@ export default defineConfig({
         customCss: [
             './src/styles/main.css',
             './src/styles/callouts.css',
+            './src/styles/tables.css',
         ],
         sidebar: [
             {
