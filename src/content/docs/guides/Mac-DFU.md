@@ -10,7 +10,7 @@ last_modified_date: 2025-01-03
 > [!CAUTION] Caution
 > This process will erase your Mac's drive. Ensure you have an adequate backup of all important data before proceeding.
 
-# Prerequisites
+## Prerequisites
 
 - A second Mac running macOS 10.15.6 or newer
 - Active Apple ID and App Store access
@@ -22,7 +22,7 @@ last_modified_date: 2025-01-03
     - USB-C to USB-A cable
     - Official Apple Thunderbolt 3 to Thunderbolt 2 adapter with cable
 
-# Download Apple Configurator
+## Download Apple Configurator
 
 1. Download [Apple Configurator](https://apps.apple.com/app/id1037126344) from the App Store
 2. Run Apple Configurator
@@ -30,7 +30,7 @@ last_modified_date: 2025-01-03
 {: .warning .warning-icon }
 > While Finder can sometimes be used for restoration, Apple Configurator is more reliable and recommended.
 
-# Apple Silicon MacBook Instructions
+## Apple Silicon MacBook Instructions
 
 1. Ensure the MacBook is powered off
 
@@ -49,7 +49,7 @@ last_modified_date: 2025-01-03
 
         <img src="https://cdsassets.apple.com/live/7WUAS350/images/mac-os/sonoma/macbook-pro-keyboard-dfu-mode-startup-keyboard-combination-diagram.png" width="500" />
 
-# Apple Silicon Desktop Instructions
+## Apple Silicon Desktop Instructions
 
 1. Disconnect power from the Mac
 
@@ -63,7 +63,7 @@ last_modified_date: 2025-01-03
     - Continue holding for 3-5 seconds
     - Look for DFU icon in Apple Configurator
 
-# Intel T2 MacBook Instructions 
+## Intel T2 MacBook Instructions 
 
 1. Ensure MacBook is powered off
 
@@ -84,7 +84,7 @@ last_modified_date: 2025-01-03
 
         <img src="https://cdsassets.apple.com/live/7WUAS350/images/mac-os/sonoma/macbook-pro-keyboard-dfu-mode-startup-keyboard-combination-diagram.png" width="500" />
 
-# Intel T2 Desktop Instructions 
+## Intel T2 Desktop Instructions 
 
 1. Disconnect power from the Mac
 
@@ -99,7 +99,7 @@ last_modified_date: 2025-01-03
     - Continue holding for 3-5 seconds
     - Look for DFU icon in Apple Configurator
 
-# Alternative Method: DFU Blaster
+## Alternative Method: DFU Blaster
 
 If keyboard commands aren't working:
 
@@ -111,7 +111,7 @@ If keyboard commands aren't working:
 > [!CAUTION] Caution
 > DFU Blaster is a third-party tool. Review its licensing terms before use.
 
-# Restore Process
+## Restore Process
 
 > [!CAUTION] Caution
 > Unplugging the cable during restoration will result in data loss and may leave your computer in an unrecoverable state.
@@ -137,7 +137,7 @@ If keyboard commands aren't working:
 > - If using adapters, try different connection methods
 > - Try the alternative DFU Blaster method above
 
-# Common Issues
+## Common Issues
 
 If restore fails, check:
 - Apple Configurator is on latest version
