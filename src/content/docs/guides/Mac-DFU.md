@@ -7,7 +7,7 @@ search_exclude: false
 last_modified_date: 2025-01-03
 ---
 
-{: .danger .danger-icon }
+> [!CAUTION] Caution
 > This process will erase your Mac's drive. Ensure you have an adequate backup of all important data before proceeding.
 
 # Prerequisites
@@ -108,12 +108,12 @@ If keyboard commands aren't working:
 3. Install and run the app
 4. Follow on-screen instructions to enter DFU mode
 
-{: .caution .caution-icon }
+> [!CAUTION] Caution
 > DFU Blaster is a third-party tool. Review its licensing terms before use.
 
 # Restore Process
 
-{: .danger .danger-icon }
+> [!CAUTION] Caution
 > Unplugging the cable during restoration will result in data loss and may leave your computer in an unrecoverable state.
 
 1. Once in DFU mode, open Apple Configurator
@@ -126,10 +126,10 @@ If keyboard commands aren't working:
 
 3. Mac will automatically restart when complete
 
-{: .success .success-icon }
+> [!TIP] Success
 > When restoration completes successfully, your Mac should turn on and display the Hello screen.
 
-{: .note .note-icon }
+> [!NOTE] Information
 > If having trouble entering DFU mode:
 > - Try multiple attempts with precise timing
 > - Ensure using correct ports
