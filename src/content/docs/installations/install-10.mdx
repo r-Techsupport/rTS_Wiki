@@ -9,6 +9,7 @@ pagefind: true
 last_modified_date: 2024-03-09
 redirect_from: /books/how-to-and-guides/page/clean-installing-windows-10
 ---
+import MBRError from '../../../_includes/embeds/mbr-install-error.md';
 
 > [!CAUTION] Caution
 > All files on the drive you plan to install Windows to will be **deleted** if you follow this guide - this is intended. Please ensure you have an adequate [backup policy](/docs/backups) in place before proceeding if you have files of value.
@@ -16,6 +17,8 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-10
 * An internet connection.
 * A working computer to run the Windows Media Creation Tool.
 * A USB flash drive that is at least 8GB or greater.
+
+## Creating installation media
 
 1. Using a USB flash drive **at least 8 gigabytes in size**, create a bootable USB flash drive using the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/windows10) from Microsoft. This will also wipe any data stored on the USB flash drive.
    
@@ -51,10 +54,10 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-10
 
 8. After MCT says it finished, shutdown your PC.
 
-    > [!CAUTION] Caution
-    > Disconnect all storage disks except from the main (C Drive) disk from the computer before installing Windows 10. Not doing so can accidentally wipe other disks or result in the installer choosing the wrong disk as the boot drive and putting actual windows on another drive.
+## Installing Windows
 
-
+> [!CAUTION] Caution
+> Disconnect all storage disks except the main (C Drive) disk from the computer before installing Windows 10. Not doing so can accidentally wipe other disks or result in the installer choosing the wrong disk as the boot drive and putting actual windows on another drive.
 
 1. Boot into your USB that has the Windows 10 Media on it. 
 
@@ -89,50 +92,10 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-10
 
 
 
-     > [!NOTE] Information
-     > Ensure that you only have drive 0 partitions in this window before deleting, otherwise this means you didnt disconnect other drives as noted in step 8.
+    > [!NOTE] Information
+    > Ensure that you only have drive 0 partitions in this window before deleting, otherwise this means you didnt disconnect other drives as noted in step 8.
 
-
-    <details markdown="1">
-    <summary markdown=span>
-    **Error: Windows cannot be installed on this disk. The selected disk has an MBR partition table.**
-
-    </summary>
-
-    > If you receive an error about your disk being MBR like this:
-    >
-    > [![the-selected-disk-has-an-mbr-partition-table-01.png](../../../assets/install-11/the-selected-disk-has-an-mbr-partition-table-01.png)](../../../assets/install-11/the-selected-disk-has-an-mbr-partition-table-01.png)
-    > 
-    >
-    > then press `Shift+F10` to open CMD and follow below.
-    > ```
-    > diskpart
-    > list disk
-    > ```
-    > 
-    > [![Windows 11-2021-10-05-15-09-53.png](../../../assets/install-11/windows-11-2021-10-05-15-09-53.png)](../../../assets/install-11/windows-11-2021-10-05-15-09-53.png)
-    >
-    > [![Windows 11-2021-10-05-15-10-13.png](../../../assets/install-11/windows-11-2021-10-05-15-10-13.png)](../../../assets/install-11/windows-11-2021-10-05-15-10-13.png)
-    >
-    > [![Windows 11-2021-10-05-15-10-24.png](../../../assets/install-11/windows-11-2021-10-05-15-10-24.png)](../../../assets/install-11/windows-11-2021-10-05-15-10-24.png)
-    >
-    > [![Windows 11-2021-10-05-15-10-39.png](../../../assets/install-11/windows-11-2021-10-05-15-10-39.png)](../../../assets/install-11/windows-11-2021-10-05-15-10-39.png)
-    >
-    > Make note of the disk you want to install to from the step above.
-    > ```
-    > sel disk #
-    > convert gpt
-    > clean
-    > ```
-    > 
-    > [![Windows 11-2021-10-05-15-10-51.png](../../../assets/install-11/windows-11-2021-10-05-15-10-51.png)](../../../assets/install-11/windows-11-2021-10-05-15-10-51.png)
-    > [![Windows 11-2021-10-05-15-11-01.png](../../../assets/install-11/windows-11-2021-10-05-15-11-01.png)](../../../assets/install-11/windows-11-2021-10-05-15-11-01.png)
-    > [![Windows 11-2021-10-05-15-11-13.png](../../../assets/install-11/windows-11-2021-10-05-15-11-13.png)](../../../assets/install-11/windows-11-2021-10-05-15-11-13.png)
-    > 
-    > You can exit the CMD and click `next` again.
-    > [![Windows 11-2021-10-05-15-09-40.png](../../../assets/install-11/windows-11-2021-10-05-15-09-40.png)](../../../assets/install-11/windows-11-2021-10-05-15-09-40.png)
-
-    </details>
+    <MBRError />
 
 7. Windows will now install. When it finishes it will automatically restart your machine, when your screen goes black pull out your installation USB drive.
 
