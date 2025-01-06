@@ -81,7 +81,7 @@ export default defineConfig({
             },
         ],
         editLink: {
-            baseUrl: 'https://github.com/r-techsupport/rts_wiki/edit/main/',
+            baseUrl: 'https://github.com/r-techsupport/rts_wiki/edit/master/',
         },
         social: {
             github: 'https://github.com/r-techsupport/rts_wiki',
