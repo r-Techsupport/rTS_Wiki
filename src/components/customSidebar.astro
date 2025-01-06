@@ -1,0 +1,21 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+import Default from '@astrojs/starlight/components/Sidebar.astro';
+---
+
+<div class="sidebar-container">
+    <Default {...Astro.props}><slot /></Default>
+</div>
+
+<style>
+    .sidebar-container {
+        overflow: auto;
+        max-height: calc(100vh - 2 * var(--sl-nav-height));
+    }
+    /* very hacky method to make items coloured on hover I don't
+    want to modify the actual child object because of how complex
+    and maintenance intensice that would get */
+    .sidebar-container :global(li) > :global(a:hover:not([aria-current="page"])) {
+        color: var(--sl-color-accent);
+    }
+</style>

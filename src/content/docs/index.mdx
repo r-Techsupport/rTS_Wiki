@@ -1,0 +1,25 @@
+---
+title: Welcome to the rTS Wiki
+description: The official documentation site for r/Techsupport, built by the community for the community.
+tableOfContents: false
+---
+
+## Highlighted Content
+
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid>
+  <LinkCard title="How to clean install Windows" href="/windows" />
+  <LinkCard title="Believe you are infected? View our recommendations for dealing with malware" href="/docs/safety-security/malware-guide" />
+  <LinkCard title="Improve your cyber hygiene with MFA" href="/docs/safety-security/mfa" />
+  <LinkCard title="Setup a personal backup plan" href="/docs/backups" />
+</CardGrid>
+
+---
+## Who is writing this wiki? The contributors!
+import Contributors from '/src/components/contributors.astro';
+
+<Contributors repo="r-techsupport/rts_wiki" />
+
+## How can I contribute?
+This site is created via [Github Pages](https://pages.github.com/), the repository can be found [here](https://github.com/r-Techsupport/rTS_Wiki). For those wishing to contribute to this, please checkout our [Contributing Guide](/docs/meta/contributing).

@@ -1,0 +1,16 @@
+th, td {
+    border: 1px solid;
+}
+
+.sl-markdown-content th {
+    padding: .5rem .75rem !important;
+}
+
+/* stupid specific to override */
+.sl-markdown-content :is(th:first-child, td:first-child):not(:where(.not-content *)) {
+    padding-inline-start: .75rem;
+}
+
+.sl-markdown-content table {
+    box-shadow: 1px 2px rgba(0,0,0,0.12),0 3px 10px rgba(0,0,0,0.08);
+}

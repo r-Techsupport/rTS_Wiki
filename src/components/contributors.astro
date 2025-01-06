@@ -1,0 +1,145 @@
+---
+interface Props {
+  repo: string;
+  file: string;
+}
+const { repo, file } = Astro.props;
+
+// Build an API URL that gets the 100 most recent commits for the specified file.
+// See https://docs.github.com/en/rest/commits/commits?apiVersion=2022-11-28#list-commits
+const url = new URL(`https://api.github.com/repos/${repo}/commits`);
+url.searchParams.set('per_page', 1000);
+
+// Fetch commits from the GitHub API
+const commits = await fetch(url, {
+  headers: {
+    Accept: 'application/vnd.github+json',
+    'User-Agent': 'starlight-contributors/1.0',
+  },
+}).then((res) => res.json());
+
+function removeDuplicates(commits) {
+  if (!commits) return [];
+  const map = new Map();
+  for (const commit of commits) {
+    const author = commit.author;
+    if (author) {
+      // Deduplicate based on author.id
+      map.set(author.id, { login: author.login, id: author.id });
+    }
+  }
+  return Array.from(map.values());
+}
+
+// Remove any duplicate commit authors.
+const uniqueAuthors = removeDuplicates(commits);
+---
+
+{/*
+  Render a list of page authors for each of the people who committed:
+ */}
+{uniqueAuthors.length > 0 && (
+  <div class="page-authors">
+    <ul class="smol-avatar-list not-content">
+      {uniqueAuthors.map(({ login, id }) => (
+        <li class="author-item">
+          <a href={`https://github.com/${login}`}>
+            <img alt={`Contributor ${login}`} width="64" height="64" src={`https://avatars.githubusercontent.com/u/${id}`}/>
+          </a>
+          <div class="author-popup">{login}</div>
+        </li>
+      ))}
+    </ul>
+  </div>
+)}
+
+<style define:vars={{ 'avatar-count': uniqueAuthors.length }}>
+    /* Popups on hover added here */
+    .author-item {
+        position: relative;
+        display: inline-block;
+    }
+
+    .author-popup {
+        display: none;
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: inherit;
+        background-color: var(--sl-color-black);
+        border: 1px solid var(--sl-color-accent);
+        border-radius: 0.5rem;
+        padding: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        font-size: 1rem;
+    }
+
+    .author-item:hover .author-popup {
+        display: block;
+    }
+
+    /* Original CSS starts here */
+    .page-authors {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        font-size: var(--sl-text-sm);
+        font-weight: 600;
+    }
+
+    /* Thank you Stephanie Eckles! https://smolcss.dev/#smol-avatar-list */
+    .smol-avatar-list {
+        --avatar-size: 2rem;
+
+        padding: 0.08em;
+        font-size: var(--avatar-size);
+        list-style: none;
+    }
+
+    @media (any-hover: hover) and (any-pointer: fine) {
+        .smol-avatar-list {
+            /* We create 1 extra cell to enable the computed 
+            width to match the final visual width */
+            grid-template-columns: repeat(
+                calc(var(--avatar-count) + 1),
+                calc(var(--avatar-size) / 1.75)
+            );
+        }
+    }
+
+    .smol-avatar-list li {
+        width: var(--avatar-size);
+        height: var(--avatar-size);
+    }
+
+    .smol-avatar-list li:hover ~ li a,
+    .smol-avatar-list li:focus-within ~ li a {
+        transform: translateX(33%);
+    }
+
+    .smol-avatar-list img,
+    .smol-avatar-list a {
+        display: block;
+        border-radius: 50%;
+    }
+
+    .smol-avatar-list a {
+        transition: transform 180ms ease-in-out;
+    }
+
+    .smol-avatar-list img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-color: var(--sl-color-black);
+        box-shadow: 0 0 0 0.05em var(--sl-color-black), 0 0 0 0.08em rgba(0, 0, 0, 0.15);
+    }
+
+    .smol-avatar-list a:focus {
+        outline: 2px solid transparent;
+        /* Double-layer trick to work for dark and light backgrounds */
+        box-shadow: 0 0 0 0.08em var(--sl-color-black), 0 0 0 0.12em white;
+    }
+</style>

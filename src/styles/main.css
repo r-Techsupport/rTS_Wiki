@@ -1,0 +1,127 @@
+/*
+base color: #191c24, others are tones of this
+https://coolors.co/191c24-222630-333948-5d6783-aee2fe-dbdee6-e7e9ee-f3f4f7-0277b6
+
+accent-low - color of selected item in sidebar
+accent:
+    - light: accents
+    - dark
+        - active outline of search box in search dialog
+        - active TOC header
+accent-high - background of selected item in sidebar
+
+white - headers in body and sidebar
+    - Hovering over items in sidebar
+1 - theme button
+2 - main text
+    - items in sidebar
+3 - edit page & last updated time & ToC
+4 - branches in search dialog
+5 - search/card outline 
+    - line next to expanded items in sidebar
+6 - border lines & search dialog background
+    - light: inside of search button
+    - dark: headerbar & sidebar
+7 - header bar          dark: card hover
+black - background
+*/
+
+/* Dark mode colors. */
+:root[data-theme="dark"] {
+    --sl-color-accent-low: var(--sl-color-black);
+    --sl-color-accent: #aee2fe;
+    --sl-color-accent-high: var(--sl-color-accent);
+
+    --sl-color-white: #f3f4f7;
+    --sl-color-gray-1: var(--sl-color-accent);
+    --sl-color-gray-2: var(--sl-color-white);
+    --sl-color-gray-3: #5D6783;
+    --sl-color-gray-4: var(--sl-color-gray-2);
+    --sl-color-gray-5: #333948;
+    --sl-color-gray-6: #222630;
+    --sl-color-gray-7: var(--sl-color-gray-6);
+    --sl-color-black: #191c24;
+}
+
+/* Light mode colors. */
+:root[data-theme='light'] {
+    --sl-color-accent-low: var(--sl-color-black);
+    --sl-color-accent: #0277b6;
+    --sl-color-accent-high: var(--sl-color-accent);
+
+    --sl-color-white: #191c24;
+    --sl-color-gray-1: var(--sl-color-accent);
+    --sl-color-gray-2: var(--sl-color-white);
+    --sl-color-gray-3: #5D6783;
+    --sl-color-gray-4: var(--sl-color-gray-2);
+    --sl-color-gray-5: var(--sl-color-accent);
+    --sl-color-gray-6: #dbdee6;
+    --sl-color-gray-7: #e7e9ee;
+    --sl-color-black: #f3f4f7;
+}
+
+/* all badge text needs to just be plain */
+:root {
+    --sl-badge-default-text: inherit;
+    --sl-badge-note-text: inherit;
+    --sl-badge-danger-text: inherit;
+    --sl-badge-caution-text: inherit;
+    --sl-badge-tip-text: inherit;
+}
+
+/* set other colours */
+:root {
+    --sl-color-orange: #6a4b16 !important;
+    --sl-color-green: #054b16 !important;
+    --sl-color-blue: #004173 !important;
+    --sl-color-purple: #3b2e58 !important;
+    --sl-color-red: #470001 !important;
+
+    --sl-color-orange-alt: #fff4ce !important;
+    --sl-color-green-alt: #dff6dd !important;
+    --sl-color-blue-alt: #9ccbee !important;
+    --sl-color-purple-alt: #efd9fd !important;
+    --sl-color-red-alt: #fde7e9 !important;
+}
+
+/* set the dark version of our colors */
+:root[data-theme="dark"]{
+    --sl-color-orange-low: var(--sl-color-orange) !important;
+    --sl-color-orange-high: var(--sl-color-orange-alt) !important;
+    --sl-color-green-low: var(--sl-color-green) !important;
+    --sl-color-green-high: var(--sl-color-green-alt) !important;
+    --sl-color-blue-low: var(--sl-color-blue) !important;
+    --sl-color-blue-high: var(--sl-color-blue-alt) !important;
+    --sl-color-purple-low: var(--sl-color-purple) !important;
+    --sl-color-purple-high: var(--sl-color-purple-alt) !important;
+    --sl-color-red-low: var(--sl-color-red) !important;
+    --sl-color-red-high: var(--sl-color-red-alt) !important;
+}
+
+/* invert for our light theme but leave the base the same */
+:root[data-theme='light'] {
+    --sl-color-orange-high: var(--sl-color-orange) !important;
+    --sl-color-orange-low: var(--sl-color-orange-alt) !important;
+    --sl-color-green-high: var(--sl-color-green) !important;
+    --sl-color-green-low: var(--sl-color-green-alt) !important;
+    --sl-color-blue-high: var(--sl-color-blue) !important;
+    --sl-color-blue-low: var(--sl-color-blue-alt) !important;
+    --sl-color-purple-high: var(--sl-color-purple) !important;
+    --sl-color-purple-low: var(--sl-color-purple-alt) !important;
+    --sl-color-red-high: var(--sl-color-red) !important;
+    --sl-color-red-low: var(--sl-color-red-alt) !important;
+}
+
+/* callout colours are set and will invert based on theme */
+:root {
+    --callout-info-bg: var(--sl-color-purple-low);
+    --callout-info-text: var(--sl-color-purple-high);
+    --callout-important-bg: var(--sl-color-blue-low);
+    --callout-important-text: var(--sl-color-blue-high);
+    --callout-tip-bg: var(--sl-color-green-low);
+    --callout-tip-text: var(--sl-color-green-high);
+    --callout-warning-bg: var(--sl-color-orange-low);
+    --callout-warning-text: var(--sl-color-orange-high);
+    --callout-caution-bg: var(--sl-color-red-low);
+    --callout-caution-text: var(--sl-color-red-high);
+}

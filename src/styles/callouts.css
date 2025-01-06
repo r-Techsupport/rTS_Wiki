@@ -1,0 +1,34 @@
+blockquote[class^='callout-'] {
+    border-radius: .375rem;
+    padding: 1rem;
+    border-inline-start: 0;
+}
+
+.callout-title {
+    display: flex;
+    align-items: end;
+    gap: .5rem;
+    font-weight: 600;
+    margin-top: -1rem;
+}
+
+.callout-note {
+    color: var(--callout-info-text);
+    background-color: var(--callout-info-bg);
+}
+.callout-important {
+    color: var(--callout-important-text);
+    background-color: var(--callout-important-bg);
+}
+.callout-tip {
+    color: var(--callout-tip-text);
+    background-color: var(--callout-tip-bg);
+}
+.callout-warning {
+    color: var(--callout-warning-text);
+    background-color: var(--callout-warning-bg);
+}
+.callout-caution {
+    color: var(--callout-caution-text);
+    background-color: var(--callout-caution-bg);
+}

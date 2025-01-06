@@ -1,0 +1,33 @@
+---
+import type { Props } from '../props';
+
+import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
+import LanguageSelect from 'virtual:starlight/components/LanguageSelect';
+import SocialIcons from 'virtual:starlight/components/SocialIcons';
+---
+
+<div class="pushedFooter">
+    <div class=left-group">
+        <ThemeSelect {...Astro.props} />
+        <LanguageSelect {...Astro.props} />
+    </div>
+    <div class="right-group">
+        <SocialIcons {...Astro.props} />
+    </div> 
+</div>
+
+<style>
+    .pushedFooter {
+        z-index: 100;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 2rem;
+    }
+    .left-group,
+    .right-group {
+        display: flex;
+        gap: .5rem;
+    }
+</style>
