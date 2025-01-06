@@ -12,4 +12,6 @@ jobs:
       - name: Merge master -> gh-pages
         run: git merge --ff-only origin/master
       - name: Push
+        with
+          github_token: ${{ secrets.PUSHPATH_WIKIMASTER }}
         run: git push origin gh-pages
