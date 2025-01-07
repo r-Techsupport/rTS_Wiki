@@ -9,8 +9,6 @@ pagefind: true
 last_modified_date: 2022-06-15
 ---
 
-
-
 This pages details how to appeal a ban on /r/techsupport. This applies for both the subreddit and Discord. 
 
 ## Requirements
