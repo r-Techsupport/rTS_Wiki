@@ -13,11 +13,13 @@ To resolve this issue you have two choices:
 - If you want to use RAID: [Load an Intel RST Driver](#load-and-intel-rst-driver)
 
 ## Disable Intel RST in BIOS
-The easist way to resolve this issue is to disable Intel RST in your BIOS. 
+The easiest way to resolve this issue is to disable Intel RST in your BIOS. 
 
 The menus vary by manufacture but the basic entries you want to find may be called "Storage" or "Disk" mode. 
 
 This field should currently be set to "RAID" and you want to change it to "AHCI".
+
+On some systems you may find a "VMD setup/controller" option, disabling this will have the same effect on RST.
 
 You can reboot and load back into the Windows install USB and complete the installation without issue.
 
@@ -25,6 +27,11 @@ You can reboot and load back into the Windows install USB and complete the insta
 Below are helpful images for some ASUS BIOS
 ![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst0.png)
 ![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst1.png)
+
+## Aurous
+Below are helpful images for some Aorus BIOS
+![Aorus RST VMD BIOS meny](../../../assets/intel-rst/aorus_rst0.png)
+![Aorus RST VMD BIOS meny](../../../assets/intel-rst/aorus_rst1.png)
 
 ## Load an Intel RST Driver
 If you would like to use RAID and leave Intel RST on then you will need to download the Intel RST driver from your motherboard or laptop manufacturers support page then put that on your Windows install USB.
