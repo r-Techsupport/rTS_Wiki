@@ -9,7 +9,7 @@ During the instalaltion of Windows 10 and Windows 11 you may encounter an error 
 ![We couldnt find any drives](../../../assets/intel-rst/missing_drives.png)
 
 To resolve this issue you have two choices:
-- Easist: [Disable Intel RST in BIOS](#disable-intel-rst-in-bios)
+- Easiest: [Disable Intel RST in BIOS](#disable-intel-rst-in-bios)
 - If you want to use RAID: [Load an Intel RST Driver](#load-and-intel-rst-driver)
 
 ## Disable Intel RST in BIOS
