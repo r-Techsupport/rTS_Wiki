@@ -22,11 +22,11 @@ This field should currently be set to "RAID" and you want to change it to "AHCI"
 You can reboot and load back into the Windows install USB and complete the installation without issue.
 
 ### Asus
-Below are helpful images for some ASUS BIOS'
+Below are helpful images for some ASUS BIOS
 ![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst0.png)
 ![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst1.png)
 
-## Load and Intel RST Driver
+## Load an Intel RST Driver
 If you would like to use RAID and leave Intel RST on then you will need to download the Intel RST driver from your motherboard or laptop manufacturers support page then put that on your Windows install USB.
 
 See below for some guides from various manufactures on this process.
@@ -36,4 +36,3 @@ See below for some guides from various manufactures on this process.
 
 ### Asus
 - https://www.asus.com/support/faq/1044458/
-
