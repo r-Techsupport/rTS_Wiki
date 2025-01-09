@@ -9,7 +9,7 @@ pagefind: true
 last_modified_date: 2024-09-29
 redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 ---
-import MBRError from '../../../_includes/embeds/mbr-install-error.md';
+import DiskErrors from '../../../_includes/embeds/install-disk-errors.md';
 
 > [!CAUTION] Caution
 > All files on the drive you plan to install Windows to will be **deleted** if you follow this guide - this is intended. Please ensure you have an adequate [backup policy](/docs/backups) in place before proceeding if you have files of value.
@@ -70,8 +70,8 @@ import MBRError from '../../../_includes/embeds/mbr-install-error.md';
 
 1. Boot into your USB that has the Windows 11 Media on it. 
 
-> [!NOTE] Information
-> Change the BIOS boot order to have USB media as the first priority (this can usually be found under the boot tab), or simply look for the words "boot menu" when you see your BIOS boot screen, press the corresponding function key and choose the USB flash drive to boot from it.
+    > [!NOTE] Information
+    > Change the BIOS boot order to have USB media as the first priority (this can usually be found under the boot tab), or simply look for the words "boot menu" when you see your BIOS boot screen, press the corresponding function key and choose the USB flash drive to boot from it.
 
 2. Follow the steps on screen to install Windows 11. 
  
@@ -100,14 +100,14 @@ import MBRError from '../../../_includes/embeds/mbr-install-error.md';
     > [!WARNING] Warning
     > ***Each means ALL*** But do you mean ALL? ***Yes, All***. Once all the partitions are gone you will be left with unallocated space.
 
+    > [!NOTE] Information
+    > Ensure that you only have drive 0 partitions in this window before deleting, otherwise this means you didnt disconnect other drives as noted in step 8.
+
     [![Windows 11-2021-10-05-15-20-37.png](../../../assets/install-11/windows-11-2021-10-05-15-20-37.png)](../../../assets/install-11/windows-11-2021-10-05-15-20-37.png)
 
     [![Windows 11-2021-10-05-15-11-30.png](../../../assets/install-11/windows-11-2021-10-05-15-11-30.png)](../../../assets/install-11/windows-11-2021-10-05-15-11-30.png)
 
-    > [!NOTE] Information
-    > Ensure that you only have drive 0 partitions in this window before deleting, otherwise this means you didnt disconnect other drives as noted in step 8.
-
-    <MBRError />
+    <DiskErrors />
 
 7. Windows will now install. When it finishes it will automatically restart your machine, when your screen goes black pull out your installation USB drive.
 

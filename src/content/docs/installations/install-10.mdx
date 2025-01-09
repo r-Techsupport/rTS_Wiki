@@ -9,7 +9,7 @@ pagefind: true
 last_modified_date: 2024-03-09
 redirect_from: /books/how-to-and-guides/page/clean-installing-windows-10
 ---
-import MBRError from '../../../_includes/embeds/mbr-install-error.md';
+import DiskErrors from '../../../_includes/embeds/install-disk-errors.md';
 
 > [!CAUTION] Caution
 > All files on the drive you plan to install Windows to will be **deleted** if you follow this guide - this is intended. Please ensure you have an adequate [backup policy](/docs/backups) in place before proceeding if you have files of value.
@@ -86,16 +86,14 @@ import MBRError from '../../../_includes/embeds/mbr-install-error.md';
     > [!WARNING] Warning
     > ***Each means ALL*** But do you mean ALL? ***Yes, All***. Once all the partitions are gone you will be left with unallocated space.
 
+    > [!NOTE] Information
+    > Ensure that you only have drive 0 partitions in this window before deleting, otherwise this means you didnt disconnect other drives as noted in step 8.
+
     ![10-3.png](../../../assets/install-10/10-3.png)
 
     ![10-4.png](../../../assets/install-10/10-4.png)
 
-
-
-    > [!NOTE] Information
-    > Ensure that you only have drive 0 partitions in this window before deleting, otherwise this means you didnt disconnect other drives as noted in step 8.
-
-    <MBRError />
+    <DiskErrors />
 
 7. Windows will now install. When it finishes it will automatically restart your machine, when your screen goes black pull out your installation USB drive.
 
