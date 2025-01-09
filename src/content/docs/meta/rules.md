@@ -42,12 +42,12 @@ This community is volunteer-only, so no offering reward/compensation for help. T
 ## No Recommendations
 We are not a recommendations or advertisement subreddit. Do not ask for recommendations.
 
-Commenters may only recommend products that are part of our [recommendation whitelist](/docs/recommendations/whitelist). 
+Commenters may only recommend products that are part of our [recommendation whitelist](/recommendations/whitelist). 
 Hardware recommendations should be kept to a minimum.
 
 Recommending products not in the whitelist may result in your comment or post being removed and a ban imposed. If you want anything added, please [message the mods](https://www.reddit.com/message/compose?to=/r/techsupport) and we will consider it.
 
-You can also view a [blacklist of products](/docs/recommendations/blacklist) we do not recommend, and recommend you uninstall or stay away from.
+You can also view a [blacklist of products](/recommendations/blacklist) we do not recommend, and recommend you uninstall or stay away from.
 
 ## No [Meta] Posts About Tech/Jobs
 No [Meta] posts about jobs (tech support related or not) or technology in general.
@@ -80,7 +80,7 @@ Sites selling these keys include but are not limited to:
 * r/microsoftsoftwareswap
 
 ## No Unsupported/EOL Systems
-See our [Supported Operating Systems page](/docs/meta/supported-os#no-support) for a list of operating systems that we do not support.
+See our [Supported Operating Systems page](/meta/supported-os#no-support) for a list of operating systems that we do not support.
 
 We do not provide support for EOL (end of life) software. Software that is EOL has lost all support from the developer and therefore all consumer communities as well.
 These operating systems and various softwares are no longer receiving security patches. Running them is unsafe and we recommend users install a supported version as soon as possible. 

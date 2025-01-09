@@ -30,7 +30,7 @@ Create your Markdown file (`.md`) in the respective category in `src/content/doc
 
 `src/content/docs/factoids/` contain the articles that are either copied from, or linked to by embeds.
 
-`src/content/docs/learning/` contains education articles like [Computing 101](/docs/learning/Computing-101)
+`src/content/docs/learning/` contains education articles like [Computing 101](/learning/Computing-101)
 
 ### Testing locally
 
@@ -125,7 +125,7 @@ Includes (also called embeds or transcludes) are a way to embed one small note i
 
 **Bold** (`**Bold**`) important words/phrases and *Italicize* (`*Italicize*`) them to emphasize like:
 
-Applications you have installed, *regardless of which drive you have installed it on*, **will not carry over** the next time you clean install Windows, even if it is on a different hard drive to your Windows drive. [(source)](/docs/learning/multiple-disks)
+Applications you have installed, *regardless of which drive you have installed it on*, **will not carry over** the next time you clean install Windows, even if it is on a different hard drive to your Windows drive. [(source)](/learning/multiple-disks)
 
 ### Alerts
 Alerts are used to "call out" specific information. We have a number of these at our disposal and their paradigms are outlined below. Please adhere to this paradigm for consistency.
@@ -198,9 +198,9 @@ You can link to headers in the current page with:
 
 and to other pages with
 
-`[BSOD Article](/docs/factoids/bsod)`
+`[BSOD Article](/factoids/bsod)`
 
-[BSOD Article](/docs/factoids/bsod)
+[BSOD Article](/factoids/bsod)
 
 ### Collapsible Sections
 

@@ -19,7 +19,7 @@ To do this, you will need either the BitLocker password or the recovery password
 
 
 ## Install Dislocker
-The first step is to install Dislocker. If you are already using our [Linux Live session](/docs/live-sessions/linux-live-session) you can skip this step, as it is included already. If your live session does not have it installed, you can use the following command to install dislocker for Ubuntu and Debian:
+The first step is to install Dislocker. If you are already using our [Linux Live session](/live-sessions/linux-live-session) you can skip this step, as it is included already. If your live session does not have it installed, you can use the following command to install dislocker for Ubuntu and Debian:
 ```
 sudo apt install dislocker
 ```

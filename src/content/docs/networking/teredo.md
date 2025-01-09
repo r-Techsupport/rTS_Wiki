@@ -11,7 +11,7 @@ redirect_from: /books/learning/page/teredo-guide
 
 
 
-**Note: This guide does not apply to people using [CGNAT](/docs/networking/port-forwards#cgnat-1).**
+**Note: This guide does not apply to people using [CGNAT](/networking/port-forwards#cgnat-1).**
 
 ## What is Teredo?
 Teredo is a virtual device that aims to make a "tunnel" between IPv4 and IPv6 networks. It does so by assigning your device an IPv6 address that is bridged to the Microsoft IPv6 server.

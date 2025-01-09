@@ -81,4 +81,4 @@ RAM can significantly affect CPU performance.
 
 If the system *does not have enough RAM*, the CPU will need to access data from the slower storage drive, causing substantial delays. While capacity is the primary concern, bandwidth (frequency and dual-channel configuration) and latency (timings) *can also affect CPU performance*.
 
-Upgrading or [adding more RAM](/docs/guides/how-to-know-if-you-need-more-ram) can alleviate these issues and improve overall system performance.
+Upgrading or [adding more RAM](/guides/how-to-know-if-you-need-more-ram) can alleviate these issues and improve overall system performance.

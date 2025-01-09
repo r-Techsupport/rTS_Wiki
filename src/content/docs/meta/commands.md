@@ -22,7 +22,7 @@ Comment any of the below commands to have automod print the relevant message as 
 3. Publish the results in a [Pastebin](https://pastebin.com/)
 
 ### ?win10
-To reinstall Windows 10, follow [this guide](/docs/installations/install-10)
+To reinstall Windows 10, follow [this guide](/installations/install-10)
 
 ### ?speccy
 
@@ -36,7 +36,7 @@ Follow [this guide](https://support.microsoft.com/en-us/help/929135/how-to-perfo
 No data is removed, this will only stop extra, non-windows, services from starting at boot.
 
 ### ?llcd
-Follow [this guide](/docs/live-sessions/linux-live-session) to boot Linux in a live session. This will allow you to isolate your issue between hardware and software.
+Follow [this guide](/live-sessions/linux-live-session) to boot Linux in a live session. This will allow you to isolate your issue between hardware and software.
 
 **It does not matter that your main OS is Windows**
 

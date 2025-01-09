@@ -22,7 +22,7 @@ You may also use the [official Memtest86+ ISO](https://www.memtest.org/download/
 ## 2. Creating bootable media
 This will require a USB that is at least the size of the ISO you downloaded.
 
-Follow the [Linux media guide](/docs/installations/install-linux#step-2-creating-installation-media) to create the install media. **If you use Rufus, make sure to select MBR/Legacy/BIOS even if your system supports GPT/UEFI.**
+Follow the [Linux media guide](/installations/install-linux#step-2-creating-installation-media) to create the install media. **If you use Rufus, make sure to select MBR/Legacy/BIOS even if your system supports GPT/UEFI.**
 
 ## Run Memtest86+
 

@@ -22,7 +22,7 @@ If told not to contact the mods until a specified time, comply. If you are simpl
 All ban appeals must come through Reddit ModMail, not Discord ModMail.
 
 ### Content
-An appeal must contain a direct admission of wrongdoing, a statement that the rules have since been read and fully understood, and assurance no further violations will occur. You can read the rules [here](/docs/meta/rules) if you aren't familiar.
+An appeal must contain a direct admission of wrongdoing, a statement that the rules have since been read and fully understood, and assurance no further violations will occur. You can read the rules [here](/meta/rules) if you aren't familiar.
 
 The message must not contain excuses, arguments, requests for special consideration, mentions of other users involved, threats, or any other content that doesn't directly address the three required components.
 

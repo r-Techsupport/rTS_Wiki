@@ -41,7 +41,7 @@ This guide will mention basic steps to help you fix your PC not showing anything
 
 ## Step 1: CMOS reset
 
-Follow [this](/docs/factoids/cmos) guide to do a CMOS reset.
+Follow [this](/factoids/cmos) guide to do a CMOS reset.
 
 ## Step 2: Reseating Components
 

@@ -15,7 +15,7 @@ last_modified_date: 2023-02-03
 
 ## What is DNS?
 
-[DNS](/docs/learning/terms#domain-name-system), or the Domain Name System, is the system that translates human-readable domain names (e.g. www.google.com) into machine-readable IP addresses (e.g. 216.58.194.174). It acts as a sort of phonebook for the internet, allowing users to access websites and other online resources using easy-to-remember names instead of difficult-to-remember numerical addresses.
+[DNS](/learning/terms#domain-name-system), or the Domain Name System, is the system that translates human-readable domain names (e.g. www.google.com) into machine-readable IP addresses (e.g. 216.58.194.174). It acts as a sort of phonebook for the internet, allowing users to access websites and other online resources using easy-to-remember names instead of difficult-to-remember numerical addresses.
 
 ## List of DNS Providers
 
