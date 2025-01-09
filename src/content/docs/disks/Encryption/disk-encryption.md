@@ -21,7 +21,7 @@ Enabling encryption on other devices, such as laptops and desktops, is a choice 
 > [!WARNING] Risk of data loss with encryption
 > Should something fail during the normal use of your encrypted device you may be required to use recovery methods or keys to regain access to your data. It is very important you understand and protect these methods or you may lose all chances to your data.
 > 
-> On phones you have no recovery options. Your data is gone when the device has an issue. For this reason we recommend [making backups](/backups/backups.md) of all your devices.
+> On phones you have no recovery options. Your data is gone when the device has an issue. For this reason we recommend [making backups](/backups/backups) of all your devices.
 
 ## Encryption Methods and Their Platforms
 

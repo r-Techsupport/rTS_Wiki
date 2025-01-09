@@ -73,4 +73,4 @@ You can also copy and paste the data to your other drive if you have it installe
 
 > [!WARNING] Warning
 > 
-> If you are unsure of what you are doing, make sure you take a [backup](/backups/creating-backups.md) of your data.
+> If you are unsure of what you are doing, make sure you take a [backup](/backups/creating-backups) of your data.
