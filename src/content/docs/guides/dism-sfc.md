@@ -50,7 +50,7 @@ DISM normally uses an Online source to repair your system, sometimes this leads 
 
 Double click the downloaded ISO to mount it and note its drive letter in 'This PC'
 
-![ISO image](../../../assets/dism-sfc/iso.png)
+![ISO image](../../../assets/dism-sfc/iso.webp)
 
 In CMD or PowerShell run:
 

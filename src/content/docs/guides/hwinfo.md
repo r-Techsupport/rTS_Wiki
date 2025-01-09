@@ -28,37 +28,37 @@ If you are specifically told to use HWInfo for game logging, ignore the steps pe
 
 3. Download Furmark 2 from [here](https://geeks3d.com/furmark/downloads/)
 
-    ![furmark1.jpg](../../../assets/hwinfo/furmark1.jpg)
+    ![furmark1.webp](../../../assets/hwinfo/furmark1.webp)
 
     **Recommended you get the 64 bit version!**
 
 4. Start HWiNFO and launch it in sensors only mode
 
-    ![hwinfo-1 .jpg](../../../assets/hwinfo/hwinfo1.jpeg)
+    ![hwinfo-1 .webp](../../../assets/hwinfo/hwinfo1.webp)
 
     **If you get a warning about an embedded EC sensor, just click "Do not monitor"**
 
 5. In the sensors only mode window, go to settings and set the global polling frequency to 250 ms and press ok.
 
-    ![hwinfo-2.jpg](../../../assets/hwinfo/hwinfo2.jpeg)
+    ![hwinfo-2.webp](../../../assets/hwinfo/hwinfo2.webp)
 
-    ![hwinfo-3.jpg](../../../assets/hwinfo/hwinfo3.jpeg)
+    ![hwinfo-3.webp](../../../assets/hwinfo/hwinfo3.webp)
 
 6. Start the logging process by clicking the green + with the paper icon and save a CSV file to a location.
 
-    ![hwinfo-4.jpg](../../../assets/hwinfo/hwinfo4.jpeg)
+    ![hwinfo-4.webp](../../../assets/hwinfo/hwinfo4.webp)
 
 7. Next, wait for 2-5 minutes just as soon as you started logging with HWiNFO to get the idle temperatures, then launch Prime95.
 
-    ![p95-1.jpg](../../../assets/hwinfo/p951.jpeg)
+    ![p95-1.webp](../../../assets/hwinfo/p951.webp)
 
 8. Start the "Blend" test.
 
-    ![p95-2.jpg](../../../assets/hwinfo/p952.jpeg)
+    ![p95-2.webp](../../../assets/hwinfo/p952.webp)
 
 9. It will look like this when running.
 
-    ![p95-3.jpg](../../../assets/hwinfo/p953.jpeg)
+    ![p95-3.webp](../../../assets/hwinfo/p953.webp)
  
 10. After you get prime95 running, install and launch furmark. Set the following in the options:
     - Set **Graphics Test** to `Furmark Knot  (GL)`
@@ -68,13 +68,13 @@ If you are specifically told to use HWInfo for game logging, ignore the steps pe
         - Display OSI
         - DXT5
 
-    ![furmark2.jpg](../../../assets/hwinfo/furmark2.jpg)
+    ![furmark2.webp](../../../assets/hwinfo/furmark2.webp)
 
     > Note: There's an option called Artifact scanner. Only run this in case you suspect your GPU may be artifacting (and specified by the helper).
 
 11. Leave furmark as the top window on your screen.
 
-    ![furmark3.jpg](../../../assets/hwinfo/furmark3.jpg)
+    ![furmark3.webp](../../../assets/hwinfo/furmark3.webp)
 
 ## Note
 

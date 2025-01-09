@@ -21,15 +21,15 @@ New partitions can only be created from unallocated space.
 
 1. Right click on the unallocated space and choose "New Simple Volume".
 
-    [![NewSimpleVolume-DiskManager.png](../../../assets/disk-management/newsimplevolume-diskmanager.png)](../../../assets/disk-management/newsimplevolume-diskmanager.png)
+    [![NewSimpleVolume-DiskManager.webp](../../../assets/disk-management/newsimplevolume-diskmanager.webp)](../../../assets/disk-management/newsimplevolume-diskmanager.webp)
 
 2. By default, the size will be the entire unallocated space. Most of the time, this is fine.
 
-    [![NewVolume-Prompt-1a.png](../../../assets/disk-management/newvolume-prompt-1a.png)](../../../assets/disk-management/newvolume-prompt-1a.png)
+    [![NewVolume-Prompt-1a.webp](../../../assets/disk-management/newvolume-prompt-1a.webp)](../../../assets/disk-management/newvolume-prompt-1a.webp)
 
 3. You can assign your new partition any drive letter you would like. However, assigning `A` or `B` may cause issues.
 
-    [![NewVolume-Prompt-2a.png](../../../assets/disk-management/newvolume-prompt-2a.png)](../../../assets/disk-management/newvolume-prompt-2a.png)
+    [![NewVolume-Prompt-2a.webp](../../../assets/disk-management/newvolume-prompt-2a.webp)](../../../assets/disk-management/newvolume-prompt-2a.webp)
 
 4. Set the filesystem to one of three options (there are 3 options (you may have less depending on your drive):
 
@@ -38,12 +38,12 @@ New partitions can only be created from unallocated space.
     | NTFS | Designed to be used with hard drives and SSDs of all sizes, internal and external. |
 
     Set the label to what you want.
-    [![NewVolume-Prompt-3a.png](../../../assets/disk-management/newvolume-prompt-3a.png)](../../../assets/disk-management/newvolume-prompt-3a.png)
+    [![NewVolume-Prompt-3a.webp](../../../assets/disk-management/newvolume-prompt-3a.webp)](../../../assets/disk-management/newvolume-prompt-3a.webp)
 
 ### Change drive letter
 1. Right click on an existing partition and choose "Change Drive Letter and Paths...".
 2. If the drive doesn't already have a letter, choose "Add..." on the open dialog. If it already has a letter, "Change...". To remove the drive letter, choose "Remove".  
-    [![NewDriveLetter.png](../../../assets/disk-management/newdriveletter.png)](../../../assets/disk-management/newdriveletter.png)
+    [![NewDriveLetter.webp](../../../assets/disk-management/newdriveletter.webp)](../../../assets/disk-management/newdriveletter.webp)
 
 ### Change file system
 > [!WARNING] Warning
@@ -59,7 +59,7 @@ New partitions can only be created from unallocated space.
 
 4. Click "OK" to format the drive.
 
-[![FormatDrive.png](../../../assets/disk-management/formatdrive.png)](../../../assets/disk-management/formatdrive.png)
+[![FormatDrive.webp](../../../assets/disk-management/formatdrive.webp)](../../../assets/disk-management/formatdrive.webp)
 
 ### Changing drive label
 1. Right click on an existing partition and choose "Properties".
@@ -77,7 +77,7 @@ This guide will walk you through wiping a disk and creating a single empty parti
 1. To open DiskPart, you will need an elevated command prompt. Just type `diskpart` and DiskPart will load.
 2. To identify your disk, type `list disk`, then type `select disk X` where X is the disk number. (Choosing the wrong disk will cause data loss)
 
-    [![ListDisk.png](../../../assets/disk-management/listdisk.png)](../../../assets/disk-management/listdisk.png)
+    [![ListDisk.webp](../../../assets/disk-management/listdisk.webp)](../../../assets/disk-management/listdisk.webp)
 
 3. To wipe all partitions from your disk, type `clean`
 4. For disk type and partition structure, most cases will want basic and GPT. If this disk needs to be read on older systems, use MBR instead of GPT. Run `convert basic` or `convert gpt` based on what you need.
@@ -88,7 +88,7 @@ This guide will walk you through wiping a disk and creating a single empty parti
 
     If the partition or volume isn't selected (you can tell by the star on the right), type `select partition X` or `select volume X`.
 
-    [![Detail-PreFormat.png](../../../assets/disk-management/detail-preformat.png)](../../../assets/disk-management/detail-preformat.png)
+    [![Detail-PreFormat.webp](../../../assets/disk-management/detail-preformat.webp)](../../../assets/disk-management/detail-preformat.webp)
 
 7. To format the partition, type `format fs=<filesystem>`. For what file system to use, reference the following:
 
