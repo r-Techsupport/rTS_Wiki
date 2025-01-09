@@ -64,6 +64,7 @@ But how can we know what is causing your particular BSOD?
 ## Using the Debugger
 
 > [!WARNING] Warning
+> 
 > *All further information in this article may be very technical. If you, at any point, feel uncomfortable with reading dumps, I would **highly recommend** seeking the advice of a professional rather than attempting to diagnose the issue yourself. You are not stupid if it doesn't make sense, this is not easy stuff. Feel free to upload the dumps to [our Discord](https://rtech.support/discord) with [this guide](/factoids/bsod) where volunteers can analyze the dumps for you.*
 
 We have covered what a BSOD is and why they happen, now let's get into the tricky stuff! What is causing your computer to crash?

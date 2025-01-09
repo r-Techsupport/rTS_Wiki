@@ -13,8 +13,7 @@ If you found your way to this page, then r/TechSupport WAS AT SOME POINT set as 
 
 ___
 
-> [!NOTE] Information
-> **Live Chat on Discord**
+> [!NOTE] Live Chat on Discord
 >
 > Our Live Chat is still open! You can join by clicking [here](/discord).
 

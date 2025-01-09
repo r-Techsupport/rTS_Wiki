@@ -67,6 +67,7 @@ If the services hive opens up, then that means that your OS is working. **If the
 Here we will look for 4 different registry hives and keys to fix.
 
 > [!WARNING] Warning
+> 
 > Depending on the type of login you utilize, not all keys may be present! If 1 or 2 of these keys are missing, there is no need to worry. If all 4 are missing, you will have to resort to [reinstalling windows](/windows).
 
 You will have to look for the following folders:

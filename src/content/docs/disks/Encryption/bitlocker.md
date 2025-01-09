@@ -24,12 +24,11 @@ Here's how to set up BitLocker on Windows:
 6. Choose the encryption method and encryption settings, such as the encryption algorithm and the encryption key size.
 7. Start the encryption process and wait for it to complete. This process may take several hours, depending on the size of the drive.
 
-> [!WARNING] Warning
-> **Hardware Change Warning**<br>
-> **Changing your motherboard or CPU may "break" BitLocker and require recovery.**<br>
-> <br>
-> BitLocker is designed to lock down in the event of hardware or firmware changes, to prevent unauthorized access to the encrypted data. However, there may be times when hardware or firmware changes are necessary, such as during routine maintenance or upgrades. In these cases, BitLocker can be put into maintenance mode, allowing the changes to be made and then resumed.<br>
-> <br>
+> [!WARNING] Hardware Change Warning
+> **Changing your motherboard or CPU may "break" BitLocker and require recovery.**
+> 
+> BitLocker is designed to lock down in the event of hardware or firmware changes, to prevent unauthorized access to the encrypted data. However, there may be times when hardware or firmware changes are necessary, such as during routine maintenance or upgrades. In these cases, BitLocker can be put into maintenance mode, allowing the changes to be made and then resumed.
+>
 > If you are already "broken" please see [Finding BitLocker Recovery Keys](#finding-bitlocker-recovery-keys)
 
 ## How to put BitLocker into maintenance mode:
