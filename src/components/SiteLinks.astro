@@ -8,13 +8,15 @@ const links = [
 ---
 <div class="dropdown">
   <button class="dropdown-button">Other Tools</button>
-  <div class="dropdown-content">
-    {links.map(link => (
-      <a href={link.href} target="_blank" rel="noopener noreferrer">
-        {link.text}
-        <div class="popup">{link.desc}</div>
-      </a>
-    ))}
+  <div class="dropdown-content-container">
+    <div class="dropdown-content">
+      {links.map(link => (
+        <a href={link.href} target="_blank" rel="noopener noreferrer">
+          {link.text}
+          <div class="popup">{link.desc}</div>
+        </a>
+      ))}
+    </div>
   </div>
 </div>
 
@@ -33,17 +35,21 @@ const links = [
         cursor: pointer;
         font-size: var(--sl-text-sm);
         text-wrap: nowrap;
+        padding: 0rem 0.5rem;
     }
     .dropdown-content {
-        display: none;
+        display: flex;
+        visibility: hidden;
+        opacity: 0%;
         position: absolute;
         background-color: var(--sl-color-black);
-        min-width: 160px;
+        min-width: 8rem;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         z-index: 1;
         border-radius: 0.5rem;
         flex-direction: column;
         font-size: var(--sl-text-sm);
+        transition: opacity 0.05s, top 0.1s ease-out;
     }
     .dropdown-content a {
         color: var(--sl-color-white);
@@ -51,17 +57,31 @@ const links = [
         text-decoration: none;
         display: block;
         position: relative;
+        transition: all 0.1s;
+    }
+    .dropdown-content a:hover {
+        background-color: var(--sl-color-text-accent);
+        color: var(--sl-color-text-invert);
+    }
+    .dropdown-content a:first-child {
+      border-radius: 0.5rem 0.5rem 0 0;
+    }
+    .dropdown-content a:last-child {
+      border-radius: 0 0 0.5rem 0.5rem;
     }
     .dropdown-content a:hover .popup,
     .dropdown-content a:focus .popup {
-        display: block;
+        visibility: visible;
+        opacity: 100%;
+        right: 8.7rem;
     }
     .dropdown-content .popup {
-        display: none;
+        visibility: hidden;
+        opacity: 0%;
         position: absolute;
         font-size: 0.75em;
         top: 50%;
-        left: -100%;
+        right: 8.5rem;
         transform: translateY(-50%);
         color: var(--sl-color-white);
         background-color: var(--sl-color-black);
@@ -72,10 +92,19 @@ const links = [
         z-index: 10;
         white-space: normal;
         width: max-content;
-        max-width: 200px;
+        max-width: 12rem;
+        transition: opacity 0.1s, right 0.2s ease-out;
     }
     .dropdown:hover .dropdown-content {
-        display: flex;
-        flex-direction: column;
+      visibility: visible;
+      opacity: 100%;
+    }
+    .dropdown-content-container {
+      position: relative;
+      top: -1px;
+      transition: top 0.1s ease-out;
+    }
+    .dropdown:hover .dropdown-content-container {
+      top: 0px;
     }
 </style>
