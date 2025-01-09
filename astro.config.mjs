@@ -107,6 +107,7 @@ export default defineConfig({
         ],
     },
     redirects: {
+        "/docs/[...slug].html": "/[...slug]",
         "/docs/[...slug]": "/[...slug]",
         "/rules": "/meta/rules",
         "/books/rules/page/rules-of-the-rtechsupport": "/meta/rules",
