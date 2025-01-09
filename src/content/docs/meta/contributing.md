@@ -100,7 +100,7 @@ For the sake of consistency across the pages:
 
 To add a custom image, place your image in `/assets/<page-name>/<image.png>`, and link to it like:
 
-`![![Table of Contents Code](../../../assets/writing-articles/toc1.webp)]`
+`![Table of Contents Code](../../../assets/writing-articles/toc1.webp)`
 
 (see [Table of Contents](#table-of-contents) above for a live example.)
 
