@@ -22,7 +22,7 @@ It collects a drive's [S.M.A.R.T. data](docs/factoids/cdi#analyzing-smart-data-i
 
 2. At the top of the program's window, copy the contents by going to `Edit -> Copy`
 
-	![CMOS battery](../../../assets/factoids/cdi.png)
+	![CMOS battery](../../../assets/factoids/cdi.webp)
 
 3. If you are being helped in Discord you can paste the content directly with Ctrl + V. If this was requested on the subreddit please put it on [Pastebin](https://pastebin.com) then supply the link in your comment.
 

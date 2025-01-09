@@ -21,9 +21,9 @@ Press and hold the `Shift` key when clicking the `Restart` button on the login p
 
 > Note that you may have to restart twice to get to the troubleshooting screen.
 
-![shift_restart.png](../../../assets/fixing-cleanboot/shift_restart.png)
+![shift_restart.webp](../../../assets/fixing-cleanboot/shift_restart.webp)
 
-![windows_recovery_environment.png](../../../assets/fixing-cleanboot/windows_recovery_environment.png)
+![windows_recovery_environment.webp](../../../assets/fixing-cleanboot/windows_recovery_environment.webp)
 
 This will cause the PC to restart into Windows Recovery Environment, where all forms of settings appear. Here, we will need to go to `regedit` to start the login services upon booting of Windows.
 
@@ -31,19 +31,19 @@ Open up the terminal by selecting `Troubleshoot` -> `Advanced Options` -> `Comma
 
 ### Step 1: Troubleshoot
 
-![get_into_regedit_1.png](../../../assets/fixing-cleanboot/get_into_regedit_1.png)
+![get_into_regedit_1.webp](../../../assets/fixing-cleanboot/get_into_regedit_1.webp)
 
 ### Step 2: Advanced Options
 
-![get_into_regedit_2.png](../../../assets/fixing-cleanboot/get_into_regedit_2.png)
+![get_into_regedit_2.webp](../../../assets/fixing-cleanboot/get_into_regedit_2.webp)
 
 ### Step 3: Command Prompt
 
-![get_into_regedit_3.png](../../../assets/fixing-cleanboot/get_into_regedit_3.png)
+![get_into_regedit_3.webp](../../../assets/fixing-cleanboot/get_into_regedit_3.webp)
 
 After Step 3, you will have to select your user account, type the password to access the terminal, and will be greeted to the terminal screen, where you will need to type in `regedit` to open up the corresponding application:
 
-![terminal_regedit.png](../../../assets/fixing-cleanboot/terminal_regedit.png)
+![terminal_regedit.webp](../../../assets/fixing-cleanboot/terminal_regedit.webp)
 
 ## 2. Open up the Services HIVE in regedit
 
@@ -54,7 +54,7 @@ First, we will try to open up the SERVICES hive as a test in regedit (the "folde
 
 In the top bar, type `Computer\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services` as shown in the picture:
 
-!![regedit_services_hive.png](../../../assets/fixing-cleanboot/regedit_services_hive.png)
+!![regedit_services_hive.webp](../../../assets/fixing-cleanboot/regedit_services_hive.webp)
 
 This will bring lots of folders up. These are the Microsoft Services Hive essential for your operating system, and now we will have to look for certain folders to fix the issues.
 
@@ -77,7 +77,7 @@ You will have to look for the following folders:
 
 In all 4, you will have to look for the "Start" key, double click it, and set them all to 3. Here, I am using `Netlogon` as an example, but the principle is the same for the rest of them:
 
-![regedit_fix.png](../../../assets/fixing-cleanboot/regedit_fix.png)
+![regedit_fix.webp](../../../assets/fixing-cleanboot/regedit_fix.webp)
 
 > Note that you can search for these keys in the top search bar as well!
 

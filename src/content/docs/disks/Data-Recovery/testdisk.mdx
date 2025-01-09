@@ -22,15 +22,15 @@ This guide was written using a Windows 11 host that has a 128GB C:\ drive and a 
 ## Using Testdisk
 1. From the Live media desktop click the application menu in the top left and open "Terminal Emulator"
 
-    ![Opening Testdisk from the applications menu](../../../../assets/testdisk/testdisk0.png)
+    ![Opening Testdisk from the applications menu](../../../../assets/testdisk/testdisk0.webp)
 
 2. In the terminal type "testdisk" to start the application. Use the arrow keys to select "No Log" and hit Enter. 
 
-    ![Launching Testdisk in terminal](../../../../assets/testdisk/testdisk1.png)
+    ![Launching Testdisk in terminal](../../../../assets/testdisk/testdisk1.webp)
 
 3. When Testdisk opens you will see a list of disks, most likely you will only see your USB though. Use the arrow keys to highlight and select "Sudo" with Enter to load more disks.
 
-    ![Selecting Sudo in Testdisk](../../../../assets/testdisk/testdisk2.png)
+    ![Selecting Sudo in Testdisk](../../../../assets/testdisk/testdisk2.webp)
 
 4. You should now see all possible disks. You will use the Up and Down arrows to select the disk you want to operate on then hit Enter to Proceed.
 
@@ -40,29 +40,29 @@ This guide was written using a Windows 11 host that has a 128GB C:\ drive and a 
     > [!WARNING] Warning
     > If you do not see your disk here then you should seek professional data recovery services.
 
-    ![Complete disk selection in Testdisk](../../../../assets/testdisk/testdisk3.png)
+    ![Complete disk selection in Testdisk](../../../../assets/testdisk/testdisk3.webp)
 
 5. Testdisk will attempt to determine the partition table that is on the disk. If it is correct or if you do not know press Enter to proceed otherwise correct the selection.
 
     > [!NOTE] Information
     > Most modern systems should be using a "EFI GPT" table type
 
-    ![Partition table selection in Testdisk](../../../../assets/testdisk/testdisk4.png)
+    ![Partition table selection in Testdisk](../../../../assets/testdisk/testdisk4.webp)
 
 6. Press Enter to Analyze the disk
 
-    ![Disk analysis confirmation](../../../../assets/testdisk/testdisk5.png)
+    ![Disk analysis confirmation](../../../../assets/testdisk/testdisk5.webp)
 
 7. Press Enter to begin a "Quick Search".
 
     > [!NOTE] Information
     > You may be told a partitions cannot be recovered. Make note of this and press "Continue"
 
-    ![Quick scan in Testdisk for partitions](../../../../assets/testdisk/testdisk6.png)
+    ![Quick scan in Testdisk for partitions](../../../../assets/testdisk/testdisk6.webp)
 
 8. If you are lucky, Testdisk has found a partition. From here you can use "p" to list the files in the partition to confirm it is correct (Hit "q" to exit that view.) Then hit Enter to proceed to the next step.
 
-    ![Partition discovery Testdisk](../../../../assets/testdisk/testdisk7.png)
+    ![Partition discovery Testdisk](../../../../assets/testdisk/testdisk7.webp)
 
     > [!NOTE] Information
     > **Notes on recovering multiple partitions**
@@ -73,16 +73,16 @@ This guide was written using a Windows 11 host that has a 128GB C:\ drive and a 
     > 
     > - Selected partitions are shown in green.
     > 
-    > ![Multiple partitions example](../../../../assets/testdisk/testdisk8.png)
+    > ![Multiple partitions example](../../../../assets/testdisk/testdisk8.webp)
 
 9. At this stage you can press Enter to "Deeper search" if this is not the correct partition or press the Right Arrow and Enter to "Write" the partition(s) to the disk.
 
-    ![Write or deeper search screen](../../../../assets/testdisk/testdisk9.png)
+    ![Write or deeper search screen](../../../../assets/testdisk/testdisk9.webp)
 
     > [!NOTE] Information
     > An example of multiple partitions being written
     > 
-    > ![Multiple partitions that can be written](../../../../assets/testdisk/testdisk10.png)
+    > ![Multiple partitions that can be written](../../../../assets/testdisk/testdisk10.webp)
 
 10. After writing the partition back to the disk you will be brought back to Step 6. You can close the terminal and shutdown your computer. Remove the USB then boot your computer again to validate if partition recovery was a success.
 

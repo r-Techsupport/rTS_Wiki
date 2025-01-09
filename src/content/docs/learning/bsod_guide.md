@@ -81,7 +81,7 @@ When you have WinDbg Preview installed, find your minidump folder in C:\Windows\
 
 When you first open a dump file, you will be greeted with a screen like this:
 
-![StartScreen](../../../assets/BSOD-Guide/StartScreen.png)
+![StartScreen](../../../assets/BSOD-Guide/StartScreen.webp)
 
 Nothing in here is *particularly* important, but go ahead and click on the blue `!analyze -v -` text. Now, you get a whole lot of scary-looking information that makes no sense. 
 

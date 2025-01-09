@@ -15,15 +15,15 @@ Turning off [IPv6](/docs/learning/terms#ipv6-address) can help troubleshoot inte
 
 2. Type `ncpa.cpl` into the box, and hit Enter
 
-    ![ncpa.png](../../../assets/factoids/runNCPA.png)
+    ![ncpa.png](../../../assets/factoids/runNCPA.webp)
 
 3. Select the internet adapter that is currently in use, and right click and select properties
 
-    ![InternetAdapter.png](../../../assets/factoids/internetAdapter.png)
+    ![InternetAdapter.png](../../../assets/factoids/internetAdapter.webp)
 
 4. Uncheck the box for Internet Protocol Version 6 (TCP/IPv6)
 
-    ![internetProperties.png](../../../assets/factoids/internetProperties.png)
+    ![internetProperties.png](../../../assets/factoids/internetProperties.webp)
  
 5. Test to see if the issue continues. 
 

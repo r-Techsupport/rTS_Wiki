@@ -47,7 +47,7 @@ There are multiple methods to check which BIOS version you are running. One meth
 
 The BIOS version will be listed as shown:
 
-![BIOS_version.png](../../../assets/BIOS-Update/BIOS_version.png)
+![BIOS_version.webp](../../../assets/BIOS-Update/BIOS_version.webp)
 
 ## 2. Downloading the update file
 
@@ -57,9 +57,9 @@ Generally, the BIOS update files can typically be found in the `Support` section
 
 > The manufacturer manual for your system should list the steps to do the BIOS update more specifically. You can also type "Manufacturer name" and "model" of the motherboard and "BIOS update" to get a guide from the manufacturer directly. Do be aware not all motherboard manufacturers do this.
 
-![Main_page.png](../../../assets/BIOS-Update/Main_page.png)
+![Main_page.webp](../../../assets/BIOS-Update/Main_page.webp)
 
-![BIOS_download.png](../../../assets/BIOS-Update/BIOS_download.png)
+![BIOS_download.webp](../../../assets/BIOS-Update/BIOS_download.webp)
 
 Once you downloaded the update file, you would need to move it to a USB. Ensure that the USB is:
 - Formatted to FAT32
@@ -117,4 +117,4 @@ Another troubleshooting step may be to attempt a [CMOS reset](/docs/factoids/cmo
 
 As mentioned previously, some CPUs are only supported by a specific version of a BIOS or newer. To know which BIOS version is needed for the CPU, you may have to refer to the manufacturer website. It will typically in the `Support` section of the manufacturer website for the motherboard, in `CPU support`. Here, look for the model of your CPU, and check the according BIOS version that it was supported for.
 
-![CPU_support.png](../../../assets/BIOS-Update/CPU_support.png)
+![CPU_support.webp](../../../assets/BIOS-Update/CPU_support.webp)
