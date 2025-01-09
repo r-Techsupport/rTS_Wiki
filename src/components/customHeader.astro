@@ -2,8 +2,8 @@
 import config from 'virtual:starlight/user-config';
 import type { Props } from '../props';
 
-import Search from 'virtual:starlight/components/Search';
-import SiteTitle from 'virtual:starlight/components/SiteTitle';
+import Search from './Search.astro';
+import SiteTitle from './SiteTitle.astro';
 import SiteLinks from '/src/components/SiteLinks.astro';
 
 /**
@@ -46,6 +46,7 @@ const shouldRenderSearch =
     }
 
     .right-wrapper {
+        padding-bottom: auto;
         gap: 1rem;
     }
     /* we display none here so when the width is greater than 50rem (below) a display !important is set */

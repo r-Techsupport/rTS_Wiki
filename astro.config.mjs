@@ -10,7 +10,7 @@ export default defineConfig({
         title: 'rTS Wiki',
         favicon: '/favicon.ico',
         logo: {
-            src: './src/assets/favicon.png',
+            src: './src/assets/favicon.webp',
         },
         components: {
             Header: './src/components/customHeader.astro',
