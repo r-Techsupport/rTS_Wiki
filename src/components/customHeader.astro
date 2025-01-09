@@ -2,7 +2,7 @@
 import config from 'virtual:starlight/user-config';
 import type { Props } from '../props';
 
-import Search from 'virtual:starlight/components/Search';
+import Search from './customSearch.astro';
 import SiteTitle from 'virtual:starlight/components/SiteTitle';
 import SiteLinks from '/src/components/SiteLinks.astro';
 
@@ -42,10 +42,11 @@ const shouldRenderSearch =
         /* Change the page title from accent color to header color */
         --sl-color-text-accent: var(--sl-color-white);
         /* Hack to fix a gap that is set on the title, it affects our site but not the example */
-        --sl-nav-gap: 0;
+        --sl-nav-gap: 0.5rem;
     }
 
     .right-wrapper {
+        padding-bottom: auto;
         gap: 1rem;
     }
     /* we display none here so when the width is greater than 50rem (below) a display !important is set */
