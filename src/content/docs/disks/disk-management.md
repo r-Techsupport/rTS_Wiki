@@ -70,9 +70,9 @@ New partitions can only be created from unallocated space.
 2. Click "Yes" to delete the partition. You will loose all data on this partition.
 
 ## Using Diskpart in Windows
-Diskpart is a command line tool that doesn't have as many restrictions as disk manager. It is still limited when working on the `C:` drive, and not a good tool for partition manipulation. To use it on the `C:` drive, run it from run from the windows installer or from the [windows PE](/LiveSessions/windows-live-session).
+Diskpart is a command line tool that doesn't have as many restrictions as disk manager. It is still limited when working on the `C:` drive, and not a good tool for partition manipulation. To use it on the `C:` drive, run it from run from the windows installer or from the [windows PE](/live-sessions/windows-live-session).
 
-This guide will walk you through wiping a disk and creating a single empty partition using the entire drive. However, this will not securely erase your data, see [the wiping disks article](/LiveSessions/linux/linux-wipe-disks) to do that.
+This guide will walk you through wiping a disk and creating a single empty partition using the entire drive. However, this will not securely erase your data, see [the wiping disks article](/disks/disk-wipe) to do that.
 
 1. To open DiskPart, you will need an elevated command prompt. Just type `diskpart` and DiskPart will load.
 2. To identify your disk, type `list disk`, then type `select disk X` where X is the disk number. (Choosing the wrong disk will cause data loss)
