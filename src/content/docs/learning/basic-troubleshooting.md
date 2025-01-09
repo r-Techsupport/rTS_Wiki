@@ -18,7 +18,7 @@ last_modified_date: 2022-06-30
 
 * Having monitor issues? Change cable, use monitor on different computer. (Actually many hardware components should be tested first on other computers before reporting)
 
-* If you bought a new device and it's not working properly, [RMA](/learning/terms#return-merchandise-authorization-rma) the defective product.
+* If you bought a new device and it's not working properly, RMA the defective product.
 
 * Max supported RAM for a 32 bit windows installation is 4GB
 
@@ -36,7 +36,7 @@ last_modified_date: 2022-06-30
 
 * A computer needs to be cleaned on a regular basis, and many shops will do this as part of a "tune-up" service if you're unwilling or able to do it yourself.
 
-* Get a [UPS](/learning/terms#uniterruptible-power-supply-ups) for your Wireless Router and cable-modem.
+* Get a UPS for your Wireless Router and cable-modem.
 
 * Get a UPS for your desktop computer. Your Laptop is a UPS.
 

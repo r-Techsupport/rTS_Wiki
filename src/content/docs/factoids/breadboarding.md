@@ -46,13 +46,13 @@ Lee, the original writer of the forum post, used the kitchen table here covered 
 > [!WARNING] Warning
 > Remember to **turn off the power** between each of the following steps and make no changes unless the power is off.
 
-Before installing the [CPU](/learning/terms#central-processing-unit-cpu), now is the time to inspect the board's CPU socket for any obvious damage or any tiny debris that might have fallen in at the factory during packaging. Also inspect the [RAM](/learning/terms#random-access-memory-ram) and [PCIe slots and pins](/learning/terms#pci-express-pcie). 
+Before installing the CPU, now is the time to inspect the board's CPU socket for any obvious damage or any tiny debris that might have fallen in at the factory during packaging. Also inspect the RAM and PCIe slots and pins. 
 
 Install the CPU and Heatsink applying a thin coat of thermal paste between the two with the edge of a credit card. Connect the Heatsink fan wires to the correct board socket. Plug in the main 24 pin ATX 12volt power connector and the 4 or 8 pin EPS 12 volt power connector into the motherboard.
 
 ![CPUinstalled.jpg](../../../assets/Breadboarding/CPUinstalled.jpg)
 
-Plug-in and turn on the [PSU's](/learning/terms#power-supply-unit-psu) power and then the board's power. A board and CPU that works should now give you a RAM failure beep code. If the CPU is faulty, you may or may not get a CPU failure beep code (depending on the board's bios). If you do get a faulty CPU beep code, you have a faulty or incorrectly installed CPU.
+Plug-in and turn on the PSU's power and then the board's power. A board and CPU that works should now give you a RAM failure beep code. If the CPU is faulty, you may or may not get a CPU failure beep code (depending on the board's bios). If you do get a faulty CPU beep code, you have a faulty or incorrectly installed CPU.
 
 If you get no codes and the Heatsink fan doesn't rotate (nothing works) and you have checked that your CPU is installed correctly, your motherboard, CPU and PSU all need proper testing to determine which one of them is *faulty*.
 
