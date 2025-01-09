@@ -10,7 +10,7 @@ During the instalaltion of Windows 10 and Windows 11 you may encounter an error 
 
 To resolve this issue you have two choices:
 - Easiest: [Disable Intel RST in BIOS](#disable-intel-rst-in-bios)
-- If you want to use RAID: [Load an Intel RST Driver](#load-and-intel-rst-driver)
+- If you want to use RAID: [Load an Intel RST Driver](#load-an-intel-rst-driver)
 
 ## Disable Intel RST in BIOS
 The easiest way to resolve this issue is to disable Intel RST in your BIOS. 
@@ -34,7 +34,7 @@ Below are helpful images for some Aorus BIOS
 ![Aorus RST VMD BIOS meny](../../../assets/intel-rst/aorus_rst1.png)
 
 ## Load an Intel RST Driver
-If you would like to use RAID and leave Intel RST on then you will need to download the Intel RST driver from your motherboard or laptop manufacturers support page then put that on your Windows install USB.
+If you would like to use RAID and leave Intel RST on then you will need to download the Intel RST driver [from your motherboard or laptop manufacturers support page](/learning/computing-101/#support-sites) then put that on your Windows install USB.
 
 See below for some guides from various manufactures on this process.
 
