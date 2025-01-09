@@ -33,7 +33,7 @@ After you have run them, reboot your computer and check.
 ### TCP Global Parameters
 A common problem in Windows is when an application changes the TCP Global Parameters. To check these search "cmd.exe" in the start menu, right click "Command Prompt" and click on "Run as administrator". Once opened, type `netsh interface tcp show global`. Everything should like in the following image:  
 
-![tcp-global.png](../../../assets/internet-not-working/tcp-global.png)  
+![tcp-global.webp](../../../assets/internet-not-working/tcp-global.webp)  
 
 Usually the "Receive-Side Scaling State" and "Receive Window Auto-Tuning Level" are the changed parameters. If that is the case, run `netsh interface tcp set global rss=enabled` and `netsh interface tcp set global autotuninglevel=normal` in your same Command Prompt.
 
@@ -58,11 +58,11 @@ When you find the first device where the problem is present (or reached the main
 Ideally now you have your computer connected to the first device that the problem is happening on.  
 ### Speed problem
 Press Win + R and type "ncpa.cpl". Press enter/ click "OK" to open "Network Connections".
-![run-ncpa.png](../../../assets/internet-not-working/run-ncpa.png)  
+![run-ncpa.webp](../../../assets/internet-not-working/run-ncpa.webp)  
 Right click on your Ethernet adapter and "Status".  
-![change-adapter-settings.png](../../../assets/internet-not-working/network-status.png)  
+![change-adapter-settings.webp](../../../assets/internet-not-working/network-status.webp)  
 The "Speed" property is what your computer negotiates at with the upstream device. Most devices nowadays support 1 Gigabit, but for that all 8 connectors and contacts must work on both sides. If only one is faulty, the speed will default to 100 Mbps (only 4 connections need to work for this speed). If both devices you connect support Gigabit and you only see 100 Mbps here, the cable is faulty or slightly loose. There is a slim chance that the port on the computer or the upstream device is at fault, but that is by far less common.  
-![negotiated-speed.png](../../../assets/internet-not-working/negotiated-speed.png)
+![negotiated-speed.webp](../../../assets/internet-not-working/negotiated-speed.webp)
 
 ### Connection not working at all
 Search "cmd.exe" in the start menu and click "Command Prompt". Type `ipconfig /all` and check "IPv4 Address" under "Ethernet adapter Ethernet".

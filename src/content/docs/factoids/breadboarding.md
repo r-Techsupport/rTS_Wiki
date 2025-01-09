@@ -39,7 +39,7 @@ Place the motherboard on a piece of cardboard along with everything else in the 
 
 Lee, the original writer of the forum post, used the kitchen table here covered with a large cotton towel as that is where most of you will assemble your new PC. The kitchen floor doesn't have carpet, so it's a good place to proceed.
 
-![Post_Thumb.png](../../../assets/Breadboarding/post_Thumb.png)
+![Post_Thumb.jpg](../../../assets/Breadboarding/post_Thumb.jpg)
 
 ### Installing CPU
 
@@ -50,7 +50,7 @@ Before installing the [CPU](/docs/learning/terms#central-processing-unit-cpu), n
 
 Install the CPU and Heatsink applying a thin coat of thermal paste between the two with the edge of a credit card. Connect the Heatsink fan wires to the correct board socket. Plug in the main 24 pin ATX 12volt power connector and the 4 or 8 pin EPS 12 volt power connector into the motherboard.
 
-![CPUinstalled.png](../../../assets/Breadboarding/CPUinstalled.png)
+![CPUinstalled.jpg](../../../assets/Breadboarding/CPUinstalled.jpg)
 
 Plug-in and turn on the [PSU's](/docs/learning/terms#power-supply-unit-psu) power and then the board's power. A board and CPU that works should now give you a RAM failure beep code. If the CPU is faulty, you may or may not get a CPU failure beep code (depending on the board's bios). If you do get a faulty CPU beep code, you have a faulty or incorrectly installed CPU.
 
@@ -70,6 +70,6 @@ With the power off, lift the motherboard and place it on a breadboard so you hav
 
 The card's edge will sit over the edge of the board as shown in the photo. If the video card is good, you should now hear a single beep. Congratulations, that's your post beep.
 
-![Fullinstalled.png](../../../assets/Breadboarding/Fullinstalled.png)
+![Fullinstalled.jpg](../../../assets/Breadboarding/Fullinstalled.jpg)
 
 After you have disconnected everything, it's time to start installing your new hardware into your case with the foreknowledge that everything works. 

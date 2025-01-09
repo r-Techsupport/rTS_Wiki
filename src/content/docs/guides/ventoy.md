@@ -32,7 +32,7 @@ Ventoy is an useful tool that can create USB drives which can have more than one
 
 1. Open your web browser, go to the [Ventoy's GitHub page](https://github.com/ventoy/Ventoy/releases) and click on the `.tar.gz` file. Wait for the downloads to finish.
 2. Open Terminal, find your USB's directory by looking at the size. In this case the USB drive is 16GB, labeled `sda`:
-![linux-0](../../../assets/ventoy/linux-0.png)
+![linux-0](../../../assets/ventoy/linux-0.webp)
 
 3. Run `cd ~/Downloads` followed by `tar -xf ventoy-1.0.xx-linux.tar.gz`.
 
@@ -65,7 +65,7 @@ In case you are using Linux, this is how to access and use Ventoy:
 
 When booting into a Ventoy stick, you may encounter a screen that says `Verification failed: (15) Access denied`:
 
-![securebootkey](../../../assets/ventoy/securebootkey.png)
+![securebootkey](../../../assets/ventoy/securebootkey.webp)
 
 To Fix this:
 1. Press enter followed by any other key to start the enrolling process

@@ -33,7 +33,7 @@ BSOD dumps allow us to further analyze a BSOD and potentially find the issue.
 
 4. Create a .zip file of the whole folder by right clicking the folder -> `Send to` -> `Compressed (zip) folder`
 
-    ![CompressDump.png](../../../assets/factoids/CompressDump.png)
+    ![CompressDump.webp](../../../assets/factoids/CompressDump.webp)
 
 5.  Drop the .zip file into the chat for the tech support team to analyze.
 

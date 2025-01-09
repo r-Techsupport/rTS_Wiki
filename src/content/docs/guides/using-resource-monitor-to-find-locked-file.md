@@ -12,7 +12,7 @@ last_modified_date: 2023-05-08
 
 If you see a popup like this telling you that you cant modify a file because it is locked or used by another process
 
-![folderInUse.png](../../../assets/resource-monitor/folderInUse.png)
+![folderInUse.webp](../../../assets/resource-monitor/folderInUse.webp)
 
 You can find out which process is locking or using the file with Resource Monitor. To do so follow these steps:
 
@@ -24,4 +24,4 @@ You can find out which process is locking or using the file with Resource Monito
 
 See picture below for reference:
 
-![rsmLockedFile.png](../../../assets/resource-monitor/rsmLockedFile.png)
+![rsmLockedFile.webp](../../../assets/resource-monitor/rsmLockedFile.webp)
