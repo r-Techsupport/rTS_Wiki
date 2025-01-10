@@ -64,7 +64,8 @@ But how can we know what is causing your particular BSOD?
 ## Using the Debugger
 
 > [!WARNING] Warning
-> *All further information in this article may be very technical. If you, at any point, feel uncomfortable with reading dumps, I would **highly recommend** seeking the advice of a professional rather than attempting to diagnose the issue yourself. You are not stupid if it doesn't make sense, this is not easy stuff. Feel free to upload the dumps to [our Discord](https://rtech.support/discord) with [this guide](/docs/factoids/bsod) where volunteers can analyze the dumps for you.*
+> 
+> *All further information in this article may be very technical. If you, at any point, feel uncomfortable with reading dumps, I would **highly recommend** seeking the advice of a professional rather than attempting to diagnose the issue yourself. You are not stupid if it doesn't make sense, this is not easy stuff. Feel free to upload the dumps to [our Discord](https://rtech.support/discord) with [this guide](/factoids/bsod) where volunteers can analyze the dumps for you.*
 
 We have covered what a BSOD is and why they happen, now let's get into the tricky stuff! What is causing your computer to crash?
 
@@ -283,7 +284,7 @@ I am not here to explain how to solve every software issue that causes BSODs. If
 
 Sometimes there is a way to determine the exact cause of the fault, and you might get away with a registry change or disabling/enabling a system service, but we would not be exploring that in this guide. The overwhelmingly the best course of action in the case of a software-caused BSOD is to reinstall the faulting module. 
 
-If the faulting module is part of the Windows system, run the [DISM/SFC commands](/docs/guides/dism-sfc) and, when those do nothing, [reinstall windows](/windows).
+If the faulting module is part of the Windows system, run the [DISM/SFC commands](/guides/dism-sfc) and, when those do nothing, [reinstall windows](/windows).
 
 You may choose to spend time looking for solutions online, and maybe you get lucky and find a forum post with a solution that solves the issue, but in most cases you are simply wasting your time. No need to give it your all. ***Just reinstall.***
 
@@ -297,7 +298,7 @@ It is important to keep in mind that the module WinDbg blames in `MODULE_NAME` *
 
 In the overview, I mentioned that WinDbg will always blame the first module, which is not `nt`, and there may be cases where WinDbg blames the wrong driver. It is critically important that you recognize when this happens as to not blame the wrong component. Please review the Reading the Stack section for more information.
 
-A way to be certain the error is software-related and not hardware-related would be to *simply reinstall Windows*. If you continue getting BSODs on a clean installation of Windows, having not done something that may break Windows like use the built-in factory reset, run [CCleaner](/docs/recommendations/maintenance.html#cleaners) or [DriverEasy](/docs/recommendations/maintenance#driver-finders), you have a **hardware** problem.
+A way to be certain the error is software-related and not hardware-related would be to *simply reinstall Windows*. If you continue getting BSODs on a clean installation of Windows, having not done something that may break Windows like use the built-in factory reset, run [CCleaner](/recommendations/maintenance.html#cleaners) or [DriverEasy](/recommendations/maintenance#driver-finders), you have a **hardware** problem.
 
 ### Hardware
 
@@ -1104,7 +1105,7 @@ Bus/Interconnect errors are cased by another device sending a signal to a pin on
 
 Bus/Interconnect error does not mean the error is not internal to the CPU. The CPU has a few components that will cause the error; it simply allows the possibility that it is not a CPU issue. If your error is not a Bus/Interconnect error, you are guaranteed to have a CPU problem.
 
-In the vast majority of cases, you need to replace the CPU. Something to try first, especially if you are getting these errors on a brand-new CPU, start with a [CMOS reset](/docs/factoids/cmos) followed by a BIOS update. If you are running any overclocks or underclocks, disable them and ensure you are not overheating. After doing all of that, you can be certain that the CPU is faulty.
+In the vast majority of cases, you need to replace the CPU. Something to try first, especially if you are getting these errors on a brand-new CPU, start with a [CMOS reset](/factoids/cmos) followed by a BIOS update. If you are running any overclocks or underclocks, disable them and ensure you are not overheating. After doing all of that, you can be certain that the CPU is faulty.
 
 For a `0x10` WHEA, you will almost certainly not have a dump to analyze. It will very rarely produce one, but in the vast majority of cases, the only way to determine if a WHEA error is a 0x10 WHEA is by enabling DisplayParameters in the registry to show the arguments on the blue screen itself. You can do this by navigating to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl` in the Registry Editor and adding a `DWORD` called `DisplayParameters` with a value of `1`. In this same key, you should also add a `DWORD` called `AutoReboot` with a value of `0` to prevent Windows from self-restarting, so you have time to read the new parameters.
 

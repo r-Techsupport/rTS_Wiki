@@ -37,4 +37,4 @@ When analyzing a drive's health, it may be best to look at the raw SMART values,
 
 If detailed SMART data is unavailable (as is the case with most NVMe drives, for instance), you can refer to other indicators such as a drive's health percentage. Although this is less reliable.
 
-See our guide on [disk health](/docs/disks/disk-health) for more information.
+See our guide on [disk health](/disks/disk-health) for more information.

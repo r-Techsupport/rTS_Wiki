@@ -14,7 +14,7 @@ This page will give you a run down guidance on what is expect of you when you jo
 
 First and formally, you will adhere to and respect other members of this group. You will adhere and enforce the rules of the Subreddit /r/TechSupport and Discord server.
 
-Rule can be found [here](/docs/meta/rules)  and in the `#verify` channel on Discord.
+Rule can be found [here](/meta/rules)  and in the `#verify` channel on Discord.
 
 As a **Moderator**, you must adhere to Discords partner policy
 

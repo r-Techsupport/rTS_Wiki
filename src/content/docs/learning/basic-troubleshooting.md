@@ -18,7 +18,7 @@ last_modified_date: 2022-06-30
 
 * Having monitor issues? Change cable, use monitor on different computer. (Actually many hardware components should be tested first on other computers before reporting)
 
-* If you bought a new device and it's not working properly, [RMA](/docs/learning/terms#return-merchandise-authorization-rma) the defective product.
+* If you bought a new device and it's not working properly, RMA the defective product.
 
 * Max supported RAM for a 32 bit windows installation is 4GB
 
@@ -36,7 +36,7 @@ last_modified_date: 2022-06-30
 
 * A computer needs to be cleaned on a regular basis, and many shops will do this as part of a "tune-up" service if you're unwilling or able to do it yourself.
 
-* Get a [UPS](/docs/learning/terms#uniterruptible-power-supply-ups) for your Wireless Router and cable-modem.
+* Get a UPS for your Wireless Router and cable-modem.
 
 * Get a UPS for your desktop computer. Your Laptop is a UPS.
 
@@ -70,7 +70,7 @@ last_modified_date: 2022-06-30
 
 * Clicking unknown links during a google search is a very common way of being infected with malware.
 
-* Never reuse passwords -- consider using a [password manager](/docs/safety-security/pw-managers).
+* Never reuse passwords -- consider using a [password manager](/safety-security/pw-managers).
 
 * There are 8 bits in a byte. Therefore, 100 Megabit per second (Mb) equals to 12.5 Megabyte (MB).
 
@@ -78,7 +78,7 @@ last_modified_date: 2022-06-30
 
 * Don't save your passwords on unknown computers either.
 
-* Enable [2-factor authentication](/docs/safety-security/mfa) on your accounts (where possible) to improve security.
+* Enable [2-factor authentication](/safety-security/mfa) on your accounts (where possible) to improve security.
 
 * Don't include personal information in your passwords (date of birth, your name, etc).
 
@@ -100,7 +100,7 @@ last_modified_date: 2022-06-30
 
 ### Software, maintenance & malware prevention
 
-* Using auto driver updaters can cause damage to your operating system and is not recommended. We talk about our stance and instructions on drivers [here](/docs/recommendations/maintenance)
+* Using auto driver updaters can cause damage to your operating system and is not recommended. We talk about our stance and instructions on drivers [here](/recommendations/maintenance)
 
 * Office and Windows versions do not have to match.
 
@@ -146,7 +146,7 @@ last_modified_date: 2022-06-30
 
 ### Data security
 
-* You should backup your data. Checkout [our backup guide.](/docs/backups)
+* You should backup your data. Checkout [our backup guide.](/backups)
 
 * A backup stored on the same drive doesn't count as a backup! Upload them to a cloud service or on an external HDD/network drive.
 

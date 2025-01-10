@@ -11,7 +11,7 @@ last_modified_date: 2022-07-16
 
 
 
-This article relies on the live media [created here](/docs/live-sessions/linux-live-session).
+This article relies on the live media [created here](/live-sessions/linux-live-session).
 
 Stressful Application Test is a memory testing tool, notably used by Google.
 

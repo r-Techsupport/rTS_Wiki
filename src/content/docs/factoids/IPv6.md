@@ -9,7 +9,7 @@ last_modified_date: 2022-08-29
 ---
 
 
-Turning off [IPv6](/docs/learning/terms#ipv6-address) can help troubleshoot internet issues.
+Turning off IPv6 can help troubleshoot internet issues.
 
 1. Press Win + R to launch the run box
 

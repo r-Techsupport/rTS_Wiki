@@ -11,7 +11,7 @@ tableOfContents: false
 ---
 Operating systems and software have a maximum date of support (End of Life/EOL), after which it will no longer get any upgrades. This means that new vulnerabilities discovered in the OS won't get patched, opening the door for malware. This page is written for Windows users, but a lot of the information may apply to users of other operating systems.
 
-***[HAVING A VULNERABLE SYSTEM IS NOT JUST YOUR ISSUE!](/docs/safety-security/security-rant)***
+***[HAVING A VULNERABLE SYSTEM IS NOT JUST YOUR ISSUE!](/safety-security/security-rant)***
 
 ## Upgrading to a supported OS
 This is the only option that guarantees you can keep using all of the latest software, as a lot of it also cuts support for older OS releases.
@@ -49,7 +49,7 @@ Most importantly, Linux is 100% free, so you can give it a try without any risks
 
 For more information about switching to Linux, see [this post](https://www.reddit.com/r/linux_gaming/comments/edaq0s/guide_migrating_to_linux_in_2020/) on the Linux gaming subreddit
 
-When you are ready to install Linux, you can check out [our guide](/docs/installations/install-linux)
+When you are ready to install Linux, you can check out [our guide](/installations/install-linux)
 
 If you'd like a more concrete guide, [this PDF](https://github.com/aaronfranke/Linux-tools/raw/master/ubuntu-only/qsg.pdf) focuses specifically on setting up Ubuntu for gaming, including setting up drivers, Steam, and more, with a focus on dual-booting
 ## Switch to a Mac
@@ -80,4 +80,4 @@ No matter what option you choose, there are plenty of ways to stay secure online
 
 ## Conclusion
 
-You should do something to stay secure. Whether you switch to a newer version of Windows, switch to a Linux distro such as Ubuntu, switch to a Mac, unplug your computer from the Internet, or throw it away, both you and [the people around you](/docs/safety-security/security-rant) will be more secure. And once you've decided what system you're going to use, there are many ways to make it more secure.
+You should do something to stay secure. Whether you switch to a newer version of Windows, switch to a Linux distro such as Ubuntu, switch to a Mac, unplug your computer from the Internet, or throw it away, both you and [the people around you](/safety-security/security-rant) will be more secure. And once you've decided what system you're going to use, there are many ways to make it more secure.

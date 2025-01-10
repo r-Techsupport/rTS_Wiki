@@ -11,7 +11,7 @@ last_modified_date: 2023-05-22
 
 If by accident you have disabled Microsoft services when performing a Cleanboot, __**which is something you should never do**__, this guide will detail how to attempt to fix the failed Cleanboot.
 
-> Note that we will only cover how to fix Cleanboot. For information on how to do a Cleanboot, please refer to the "[How to Cleanboot Windows](/docs/factoids/cleanboot)" guide.
+> Note that we will only cover how to fix Cleanboot. For information on how to do a Cleanboot, please refer to the "[How to Cleanboot Windows](/factoids/cleanboot)" guide.
 
 > Another point to mention is that all the screenshots depict Windows 10, but Windows 11 will operate the same way.
 
@@ -67,6 +67,7 @@ If the services hive opens up, then that means that your OS is working. **If the
 Here we will look for 4 different registry hives and keys to fix.
 
 > [!WARNING] Warning
+> 
 > Depending on the type of login you utilize, not all keys may be present! If 1 or 2 of these keys are missing, there is no need to worry. If all 4 are missing, you will have to resort to [reinstalling windows](/windows).
 
 You will have to look for the following folders:

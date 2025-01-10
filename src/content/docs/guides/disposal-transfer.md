@@ -17,7 +17,7 @@ Data is stored on the hard disk of your computer, before disposing or transferri
 > No persistent data is stored in your RAM (Memory)
 
 ### Wiping the drive
-Use [our guides](/docs/disks/disk-wipe) to wipe the particular type of storage in your device before transfer or disposal.
+Use [our guides](/disks/disk-wipe) to wipe the particular type of storage in your device before transfer or disposal.
 
 ### Keep the drive
 Keeping the disk is also a valid method, especially if you are selling a machine or passing it down. Buy a new disk to put into the machine (or sell it without a disk at all). This will ensure the next owner has a healthy clean slate to start out on.

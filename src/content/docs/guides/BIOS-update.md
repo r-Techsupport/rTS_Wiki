@@ -43,7 +43,7 @@ Sometimes there are multiple ways to update the BIOS, all dependent on the mothe
 ## 1. Checking which BIOS version you have before updating the BIOS
 This is the most general step and is necessary for all methods. It is important to know what BIOS version you are running before updating, because some manufacturers may require you to **update the BIOS incrementally** (download the subsequent update to your version instead of downloading the latest one immediately). This is the most general and safe method to update BIOS.
 
-There are multiple methods to check which BIOS version you are running. One method could be to going directly into BIOS and checking which version it has. Another method may be to open up MSConfig and checking the BIOS version there (to open up MSConfig, you can type it into the search bar and select the `System Information` application, or alternatively, follow the ms32info section in [Making a System Dossier](/docs/guides/making-a-system-dossier)).
+There are multiple methods to check which BIOS version you are running. One method could be to going directly into BIOS and checking which version it has. Another method may be to open up MSConfig and checking the BIOS version there (to open up MSConfig, you can type it into the search bar and select the `System Information` application, or alternatively, follow the ms32info section in [Making a System Dossier](/guides/making-a-system-dossier)).
 
 The BIOS version will be listed as shown:
 
@@ -111,7 +111,7 @@ Examples of such prebuilts and laptops that may need this method are: Dell XPS a
 
 This may be caused by a failed flash of the BIOS. In this case, some motherboards offer a dedicated BIOS flashback method to utilize the previous version of the BIOS before updating it. Please refer to the manual of the motherboard to understand how to use this feature.
 
-Another troubleshooting step may be to attempt a [CMOS reset](/docs/factoids/cmos) and hoping this works. Sometimes a CMOS reset may be necessary after a BIOS update to ensure that the BIOS is in its default state to properly boot.
+Another troubleshooting step may be to attempt a [CMOS reset](/factoids/cmos) and hoping this works. Sometimes a CMOS reset may be necessary after a BIOS update to ensure that the BIOS is in its default state to properly boot.
 
 ## BIOS support for CPU
 

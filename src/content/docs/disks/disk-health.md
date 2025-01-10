@@ -42,14 +42,14 @@ This count goes up when the disk is not able to recover and move a sector. This 
 This count goes up when the disk is being read with unstable sectors on the disk. They are a precursor to Reallocated Sectors, which cause lost of data.
 
 > [!NOTE] Information
-
+> 
 > For more info about those attributes, read [Wikipedia](https://en.wikipedia.org/wiki/Self-Monitoring%2C_Analysis_and_Reporting_Technology) and [Backblaze](https://www.backblaze.com/blog/what-smart-stats-indicate-hard-drive-failures/) articles.
 
 ## Crystal Disk Info
 
 Crystal disk is the simplest way to get a reading on SMART within Windows. Download the application then run it to view every disk in the machine.
 
-For directions on using CDI please see [our factoid](/docs/factoids/cdi) about it.
+For directions on using CDI please see [our factoid](/factoids/cdi) about it.
 
 ### Reading CDI
 The basics are color coded; if a disk shows up as Yellow/'Caution' or Red/'Bad' we recommend replacing it. 

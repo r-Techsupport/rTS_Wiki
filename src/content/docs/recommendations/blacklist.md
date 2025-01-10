@@ -60,7 +60,7 @@ These break machines and are black boxes for troubleshooting. If you have an iss
 | UserBenchMark | UserBenchMark is biased and untrusted |
 
 ### Driver finders
-[See here](/docs/recommendations/maintenance) for our stance and instructions on drivers. All driver finders are blacklisted, it doesn't have to be listed here.
+[See here](/recommendations/maintenance) for our stance and instructions on drivers. All driver finders are blacklisted, it doesn't have to be listed here.
 
 | Name | Notes |
 | --- | --- |
@@ -92,7 +92,7 @@ Programs that use virtual cables often permanently damage Windows audio systems.
 | Clownfish |
 
 ### Third-party AVs
-See [here](/docs/recommendations/av) for our stance on AV Tools. It doesn't have to be listed here to be blacklisted.
+See [here](/recommendations/av) for our stance on AV Tools. It doesn't have to be listed here to be blacklisted.
 
 | Name | Notes |
 | --- | --- | 

@@ -11,7 +11,8 @@ redirect_from: /docs/learning/multiple-disks
 
 
 > [!WARNING] Warning
-> All guides here are supplied for the purpose of offering safe methods to accomplish each goal. That does not mean the goal is safe for all users. All disks fail, we encourage users to be proactive with protecting their data by creating a [personal backup strategy](/docs/backups) no matter what disk layout is chosen.
+> 
+> All guides here are supplied for the purpose of offering safe methods to accomplish each goal. That does not mean the goal is safe for all users. All disks fail, we encourage users to be proactive with protecting their data by creating a [personal backup strategy](/backups) no matter what disk layout is chosen.
 
 > [!WARNING] Warning
 > Any method to accomplish these tasks without data-loss are not supported. The lazy "safe" method is never safe.
@@ -25,7 +26,7 @@ For the purpose of this guide we will only cover using supplementary disks with 
 ### Getting started on a new computer (no OS) with multiple disks
 To get started on a brand new computer with no operating system, we suggest **removing all the drives that the operating system (OS) are not being installed on.** This will make sure that you are installing on the correct disk.
 
-Then, you will need a flash drive with a bootable OS installed on it. You can follow [our guide](/docs/installations) for creating that USB, and fully installing the OS. After installing the OS to the correct disk, you can now plug back in the other disks.
+Then, you will need a flash drive with a bootable OS installed on it. You can follow [our guide](/installations) for creating that USB, and fully installing the OS. After installing the OS to the correct disk, you can now plug back in the other disks.
 
 After the OS is installed you can follow the section below on [Adding a disk to an existing OS](#adding-a-disk-to-an-existing-os).
 
@@ -36,12 +37,12 @@ This can be done be using a drive bay to store the drive that you are installing
 
 For **M.2 drives** specifically, there is a slot on the motherboard to put it in, and then screw it down to hold the drive in place. From there you close up the computer, and  boot into the operating system as normal. 
 
-Follow [our guide](/docs/disks/disk-management) to set the new storage device up.
+Follow [our guide](/disks/disk-management) to set the new storage device up.
 
 ### Dynamic disks
 Dynamic disks allows you to combine multiple disks into one, allowing you more space on a single drive letter. 
 
-If you need to upgrade storage it is easy to add another disk without much trouble. See [our guide](/docs/disks/dynamic-disks) on how to setup dynamic disks.
+If you need to upgrade storage it is easy to add another disk without much trouble. See [our guide](/disks/dynamic-disks) on how to setup dynamic disks.
 
 ### RAID
 RAID (redundant array of independent disks) is a method primarily used in servers, and is **outside of the scope** of this article.
@@ -71,4 +72,5 @@ You can also copy and paste the data to your other drive if you have it installe
 - [Epic Games - How to move an installed game from the Epic Games Launcher to another directory on your computer](https://www.epicgames.com/help/en-US/epic-games-store-c5719341124379/launcher-support-c5719357217435/how-to-move-an-installed-game-from-the-epic-games-launcher-to-another-directory-on-your-computer-a5720215231515)
 
 > [!WARNING] Warning
-> If you are unsure of what you are doing, make sure you take a [backup](/docs/backups/creating-backups.md) of your data.
+> 
+> If you are unsure of what you are doing, make sure you take a [backup](/backups/creating-backups) of your data.

@@ -28,7 +28,7 @@ redirect_from: /books/software-we-recommend/page/anti-virus-and-malware-tools
 | Anti-malware (AM) | A program that runs on demand to check for residual PUPs or other issues. |
 | Potentially Unwanted Program (PUP) | A generic term for an application that may not be malicious but is not wanted/intended regardless. |
 
-View more definitions [here](/docs/learning/terms).
+View more definitions [here](/learning/terms).
 
 ## Windows Defender
 
@@ -42,4 +42,4 @@ All free alternatives are considered PUPs. They will sell you as their product a
 
 We do not recommend any paid AV suite for consumers, they do not provide significant advantages over Windows Defender and only increase overhead.
 
-If you have a paid AV installed but wish to remove it please refer to our [list of AV removers](/docs/factoids/av-remover).
+If you have a paid AV installed but wish to remove it please refer to our [list of AV removers](/factoids/av-remover).

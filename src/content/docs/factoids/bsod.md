@@ -55,13 +55,13 @@ First, double check the dump configuration settings following the guide [here](h
 
 1. The failure was so sudden that windows did not have enough time to create a dump before the system shut down. In this case, your event viewer will have logged an Error 41 with partial information about the crash. You can open your Event Viewer through the start menu, or with the Run dialog (Win+R -> `eventvwr.exe`). The log will be under Windows Logs->System. The details tab (Not the general tab) may have partial error information in the form of a bugcheck code.
 
-2. If no corresponding error 41 exists, or the error 41 recorded a bugcheck code of `0`, your pagefile was either corrupted or for some reason inaccessible at the time of the BSOD. This is indicative of Operating System corruption or drive failure. This can sometimes be corrected through [DISM or the System File Checker (SFC)](/docs/guides/dism-sfc).
+2. If no corresponding error 41 exists, or the error 41 recorded a bugcheck code of `0`, your pagefile was either corrupted or for some reason inaccessible at the time of the BSOD. This is indicative of Operating System corruption or drive failure. This can sometimes be corrected through [DISM or the System File Checker (SFC)](/guides/dism-sfc).
 
 ## The file will not upload to Discord.
 
 If your file is stuck on `Processing...` when uploading it to Discord, you are attempting to upload a dump file directly from the Minidump folder. Depending on your account's permissions, Windows prevents this but does not provide any sort of notification. Please follow the steps above to copy and upload the entire Minidump folder rather than the individual dump files.
 
-If you're curious, you can learn more about reading the dump files [here](/docs/learning/bsod_guide)
+If you're curious, you can learn more about reading the dump files [here](/learning/bsod_guide)
 
 ## Unable to access windows desktop
 

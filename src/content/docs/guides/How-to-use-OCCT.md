@@ -9,10 +9,11 @@ last_modified_date: 2023-12-10
 ---
 
 ## What is OCCT?
-OCCT stands for Overclock Checking Tool. Its a stability testing suite as well as a excellent error checking tool that allows for stress testing (like that found in the [HWInfo stress test guide](/docs/guides/hwinfo)) and as an added bonus, error checking within that stress test to ensure that the system/components are stable.
+OCCT stands for Overclock Checking Tool. Its a stability testing suite as well as a excellent error checking tool that allows for stress testing (like that found in the [HWInfo stress test guide](/guides/hwinfo)) and as an added bonus, error checking within that stress test to ensure that the system/components are stable.
 
 > [!NOTE] Information
-> Keep in mind that OCCT does not log data and will not output a CSV file (if using the free edition, which we will be here). For logging performance data while using OCCT, use the `game logging` procedure from the [HWInfo stress test guide](/docs/guides/hwinfo).
+> 
+> Keep in mind that OCCT does not log data and will not output a CSV file (if using the free edition, which we will be here). For logging performance data while using OCCT, use the `game logging` procedure from the [HWInfo stress test guide](/guides/hwinfo).
 >
 > Another point to mention is the fact that despite it saying it is an `Overclock Checking Tool`, it is important to state that **we will not explain how to overclock in r/techsupport as it goes against our rules**. We are using this to test your system, nothing more. Adjusting the clocks and voltages of any component can cause system instability or irreversible damage if done incorrectly. You can perform these changes at your own risk, **we will not provide help with it**.
 
@@ -53,7 +54,8 @@ In case CPU stability does not reveal anything, you may run Linpack (a stress te
 
 ### Memory stability test
 > [!NOTE] Information
-> A better version of this is using [memtest86+](/docs/guides/memtest/memtest86). We **highly** recommend using that for proper RAM testing.
+> 
+> A better version of this is using [memtest86+](/guides/memtest/memtest86). We **highly** recommend using that for proper RAM testing.
 
 Here, change Memory utilization to 90%-95% (unless specified otherwise.) Leave the other configurations as default (1 hour testing):
 - Memory: `90 %` - Ensure that `%` is selected, not `MB`.
@@ -119,7 +121,8 @@ There are 2 sets of tests you will need to run here: `Variable` and `Switch`. Yo
 
 ### PSU/Power stability test
 > [!NOTE] Information
-> A better version of this is following our full [hwinfo stress test guide](/docs/guides/hwinfo). We **highly** recommend using that for proper power testing as it will provide better logs. Otherwise, ensure that you are running hwinfo for logging purposes.
+> 
+> A better version of this is following our full [hwinfo stress test guide](/guides/hwinfo). We **highly** recommend using that for proper power testing as it will provide better logs. Otherwise, ensure that you are running hwinfo for logging purposes.
 
 This is a quick way to test your full system to check if your PSU is good enough to handle the system it is running as it will stress test your entire system. Set the following options:
 - Use All GPUs: `Enabled`

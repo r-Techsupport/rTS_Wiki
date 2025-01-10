@@ -35,7 +35,7 @@ Operating System (Windows 10, Android, MacOS, which version is it?)
 Device (Smartphone, Computer, Laptop, which model is it?)
 Application (one application? multiple? Which version do you have?)
 Specs (System specs like RAM, CPU, GPU, etc, include even if you include the device model)
-Please refer to our [System Dossier article](/docs/guides/making-a-system-dossier) for details.
+Please refer to our [System Dossier article](/guides/making-a-system-dossier) for details.
 
 ## Step 3: Choose a title
 Your title should be descriptive. Here are some examples of really bad titles: “I have a problem”, “help”, “I’ve been trying for hours and this problem is still here oh no I’m running out of characte”

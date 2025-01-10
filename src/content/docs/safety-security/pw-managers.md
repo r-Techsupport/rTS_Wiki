@@ -51,10 +51,10 @@ Below is a non-exhaustive list of just 3 popular password managers. The major ca
 
 | Product | Online/Offline | Notes |
 | --- | --- | --- |
-| Bitwarden/Vaultwarden | Online | An opensource web based solution that works via a webpanel, browser extensions and mobile apps. Bitwarden can also hold your [totp mfa](/docs/safety-security/mfa#totp) tokens. Vaultwarden is self-hosted version of Bitwarden.
+| Bitwarden/Vaultwarden | Online | An opensource web based solution that works via a webpanel, browser extensions and mobile apps. Bitwarden can also hold your [totp mfa](/safety-security/mfa#totp) tokens. Vaultwarden is self-hosted version of Bitwarden.
 | Lastpass | Online | A web based solution that is very popular but fell out of favor when they required payment for use on more than one platform (Desktop or Mobile) |
-| KeepassKeepassXC | Offline | A popular offline solution that can be extended to include [TOTP mfa](/docs/safety-security/mfa#totp) and other functions via plugins. You are required to find your own synchronization method to share this across devices.
+| KeepassKeepassXC | Offline | A popular offline solution that can be extended to include [TOTP mfa](/safety-security/mfa#totp) and other functions via plugins. You are required to find your own synchronization method to share this across devices.
 
 ---
 
-Check out our article on [MFA](/docs/safety-security/mfa) for the next steps you can take in securing your accounts.
+Check out our article on [MFA](/safety-security/mfa) for the next steps you can take in securing your accounts.
