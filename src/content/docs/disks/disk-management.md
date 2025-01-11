@@ -16,6 +16,27 @@ You can open disk management by pressing Win+R and typing `diskmgmt.msc`.
 
 Disk management can only be run from a installed copy of windows, and has limits on what partitions and disks can be edited. For a more robust solution, consider using DiskPart or gparted.
 
+### Initialize a new disk
+A brand new disk must be initialized before it can be used.
+
+#### Initializing via Popup
+1. The first time you open disk management with a brand new disk in a machine you will be presented with a pop up saying "You must initialize a disk before Logical Disk Management can access it."
+
+    ![Must initialize popup](../../../assets/disk-management/initialize-popup.png)
+
+2. On all modern systems you should choose "GPT (GUID Partition Table). Once you click "Next" you should be able to proceed with [Create a new partition](#create-a-new-partition).
+
+#### Manual Initialization
+Sometimes you won't get this pop up and instead your disk will appear like below, you will need to manuall initialize this disk.
+
+![Not initialized disk](../../../assets/disk-management/not-initialized.png)
+
+1. Right click the left panel of the disk and choose "Initialize"
+
+    ![Manual initialization](../../../assets/disk-management/manual-initialize.png)
+
+2. On all modern systems you should choose "GPT (GUID Partition Table). Once you click "Next" you should be able to proceed with [Create a new partition](#create-a-new-partition).
+
 ### Create a new partition
 New partitions can only be created from unallocated space.
 
