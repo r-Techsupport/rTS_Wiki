@@ -21,7 +21,7 @@ last_modified_date: 2024-11-05
 
 	 > [!NOTE] Information
      > 
-	 > Some laptops may lack a dedecated CMOS battery but use the main battery for its functionality, other laptops may have the battery covered like this: ![laptop CMOS](../../../assets/cmos/cmos-laptop.jpg)
+	 > Some laptops may lack a dedicated CMOS battery but use the main battery for its functionality, other laptops may have the battery covered like this: ![laptop CMOS](../../../assets/cmos/cmos-laptop.jpg)
 	
 
 
