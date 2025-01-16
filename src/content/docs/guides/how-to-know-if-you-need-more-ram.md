@@ -19,7 +19,10 @@ Firstly, launch all of the apps that you generally have going. Open a few browse
 
 **Open Resource Monitor**
 1. Press Win + R to launch the run box
+
 2. Type `perfmon.exe /res` into the box, and hit Enter
+
+3. Go to the Memory tab
 
 ![resource monitor](../../../assets/more-memory/resource_monitor.webp)
 
