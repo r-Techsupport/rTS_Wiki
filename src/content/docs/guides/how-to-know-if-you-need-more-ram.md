@@ -38,7 +38,7 @@ The third section, in orange, labeled Modified, is not very important because th
 This section, in green, labeled In Use, is the total amount of physical RAM that your machine is currently using for open programs, the “active memory“. In the graphic linked above, the machine has 10 GB of actively used RAM.
 ## The Fourth Section
 
-This section, in dark blue, labeled Standby, is RAM that the system is using for caching files, but that the programs on the system do not actively need for running. This is memory that’s ready to be freed for use at any time for whatever application needs it next, if the next section runs out. In this example, there’s 3 GB of RAM being used for cache.
+This section, in dark blue, labeled Standby, is RAM that the system is using for caching files, but that the programs on the system do not actively need for running. This is memory that’s ready to be freed for use at any time for whatever application needs it next, if the next section runs out. In this example, there’s 20 GB of RAM being used for cache.
 ## The Fifth Section
 
 This section, in light blue, labeled Free, is empty RAM. The name “Free” is kind of misleading, as this is more like wasted RAM. The memory in this section is the amount that Windows is just ignoring because it has no use for it. It’s not being used at all, not even as a cache – it’s just sitting there doing nothing. In the example above, there’s 2 GB of RAM being used for nothing.
