@@ -57,4 +57,4 @@ If someone were to show this display and ask if they need more RAM then the answ
 A well-optimized computer will have a large amount of “Standby” and a decent amount of “Free” when running its typical workload.
 
 
-*This guide is copied from [SlickDeals](https://slickdeals.net/e/4922990-how-to-know-if-you-need-more-ram) and was originally written by /u/jeffbx*
+*This guide is copied from [SlickDeals](https://slickdeals.net/e/4922990-how-to-know-if-you-need-more-ram) and was originally written by /u/jeffbx and updated by /u/Xcissors280*
