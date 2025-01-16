@@ -35,7 +35,7 @@ The first section, in gray, labeled Hardware Reserved, is RAM that hardware itse
 The third section, in orange, labeled Modified, is not very important because this amount is generally low. This is RAM that’s in use by low priority tasks that can be quickly released for other use. Ignore this as well.
 ## The Second Section
 
-This section, in green, labeled In Use, is the total amount of physical RAM that your machine is currently using for open programs, the “active memory“. In the graphic linked above, the machine has 3 GB of actively used RAM.
+This section, in green, labeled In Use, is the total amount of physical RAM that your machine is currently using for open programs, the “active memory“. In the graphic linked above, the machine has 10 GB of actively used RAM.
 ## The Fourth Section
 
 This section, in dark blue, labeled Standby, is RAM that the system is using for caching files, but that the programs on the system do not actively need for running. This is memory that’s ready to be freed for use at any time for whatever application needs it next, if the next section runs out. In this example, there’s 3 GB of RAM being used for cache.
