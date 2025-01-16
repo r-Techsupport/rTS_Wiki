@@ -17,13 +17,9 @@ There is a very simple & quick way of seeing if you actually are running low on 
 
 Firstly, launch all of the apps that you generally have going. Open a few browser tabs, get your email going, etc. Aim for an average session that’s a bit on the intensive side, but don’t open every app on your machine. If you have an intensive game you’re trying to run, open that. The example below is a laptop that’s running Outlook, IE with several tabs, Chrome with several tabs, Notepad, Windows Explorer, a couple of chat apps, Dropbox and Snag-It. Then:
 
-**Windows 10**
-1. Launch Task Manager: Right-click the taskbar at the bottom of the screen and then click Task Manager.
-2. Switch to the ‘Performance’ tab, click the ‘Resource Monitor…’ button at the bottom.
-
-**Windows 11**
-1. Launch Task Manager: Right-click the taskbar at the bottom of the screen and then click Task Manager.
-2. Switch to the ‘Performance’ tab, and then under the "3 dot" menu in the top right corner of Task Manager click ‘Resource Monitor’
+**Open Resource Monitor**
+1. Press Win + R to launch the run box
+2. Type ```perfmon.exe /res``` into the box, and hit Enter
 
 ![resource monitor](../../../assets/more-memory/resource_monitor.webp)
 
