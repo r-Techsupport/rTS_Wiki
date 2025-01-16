@@ -41,7 +41,7 @@ This section, in green, labeled In Use, is the total amount of physical RAM that
 This section, in dark blue, labeled Standby, is RAM that the system is using for caching files, but that the programs on the system do not actively need for running. This is memory that’s ready to be freed for use at any time for whatever application needs it next, if the next section runs out. In this example, there’s 20 GB of RAM being used for cache.
 ## The Fifth Section
 
-This section, in light blue, labeled Free, is empty RAM. The name “Free” is kind of misleading, as this is more like wasted RAM. The memory in this section is the amount that Windows is just ignoring because it has no use for it. It’s not being used at all, not even as a cache – it’s just sitting there doing nothing. In the example above, there’s 2 GB of RAM being used for nothing.
+This section, in light blue, labeled Free, is empty RAM. The name “Free” is kind of misleading, as this is more like wasted RAM. The memory in this section is the amount that Windows is just ignoring because it has no use for it. It’s not being used at all, not even as a cache – it’s just sitting there doing nothing. In the example above, there’s 1 GB of RAM being used for nothing.
 
 ## What to look for
 If the Free section is very small (<500 MB) then your computer is making use of almost all of the available memory (some completely free memory is required). It could likely benefit from having additional RAM installed. Note that your OS prioritizes what to put into the Standby cache and therefore growing Standby has diminishing returns.
