@@ -24,6 +24,8 @@ Firstly, launch all of the apps that you generally have going. Open a few browse
 
 3. Go to the Memory tab
 
+![run](../../../assets/more-memory/run.webp)
+
 ![resource monitor](../../../assets/more-memory/resource_monitor.webp)
 
 There are 5 different sections of memory usage on the bar graph, but only 3 of them are really important to you.
