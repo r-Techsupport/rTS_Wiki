@@ -22,7 +22,7 @@ Firstly, launch all of the apps that you generally have going. Open a few browse
 
 2. Type `perfmon.exe /res` into the box, and hit Enter
 
-   ![run](../../../assets/more-memory/run.webp)
+     run.webp
 
 3. Go to the Memory tab
 
