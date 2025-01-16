@@ -1,7 +1,7 @@
 ---
 title: How to know if you need more RAM
 sidebar:
-hidden: false
+    hidden: false
 has_children: false
 parent: General Guides
 pagefind: true
