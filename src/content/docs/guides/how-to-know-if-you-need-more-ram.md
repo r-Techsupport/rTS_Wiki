@@ -13,9 +13,9 @@ last_modified_date: 2025-01-16
 
 
 
-There is a very simple & quick way of seeing if you actually are running low on RAM before buying extra. There’s a misconception that adding RAM makes a machine faster. This is not true UNLESS the machine can use more RAM than is already installed. Adding RAM to a machine that isn’t already using it all does nothing whatsoever.
+This guide explains how to see if you are actually are running low on RAM before buying more. Adding RAM to a machine only helps if your going to use it. If you have enough it wont do anything and you may want to consider other upgrade options.
 
-Firstly, launch all of the apps that you generally have going. Open a few browser tabs, get your email going, etc. Aim for an average session that’s a bit on the intensive side, but don’t open every app on your machine. If you have an intensive game you’re trying to run, open that. The example below is a laptop that’s running Outlook, IE with several tabs, Chrome with several tabs, Notepad, Windows Explorer, a couple of chat apps, Dropbox and Snag-It. Then:
+Firstly, launch all of the apps that you generally have going. Open a few apps and browser tabs you use regularly. Aim for an average session on the more intensive side, but don’t open every app on your machine. If you have an intensive game you’re trying to run, open that. The example below is a desktop that’s running Firefox, Steam, Discord, Google Drive, Windows Explorer, and a ton of other apps.
 
 **Open Resource Monitor**
 1. Press Win + R to launch the run box
