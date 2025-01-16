@@ -20,7 +20,7 @@ You can find out which process is locking or using the file with Resource Monito
 
 2. Type `perfmon.exe /res` into the box, and hit Enter
 
-3. Go to the CPU tab.
+3. Go to the CPU tab
 
 4. In the search bar at *Associated Handles* input the file name.
 
