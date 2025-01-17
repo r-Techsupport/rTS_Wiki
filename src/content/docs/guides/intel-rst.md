@@ -28,10 +28,24 @@ Below are helpful images for some ASUS BIOS
 ![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst0.webp)
 ![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst1.webp)
 
-## Gigabyte Aorus
+### Gigabyte Aorus
 Below are helpful images for some Gigabyte Aorus BIOS
 ![Aorus RST VMD BIOS menu](../../../assets/intel-rst/aorus_rst0.webp)
 ![Aorus RST VMD BIOS menu](../../../assets/intel-rst/aorus_rst1.webp)
+
+### MSI
+Note: Some MSI motherboards have a function called M.2/Optane Genie, which will automatically configure RAID even if RAID is manually disabled. Ensure that M.2/Optane Genie function is disabled as well.
+
+Possible menus to disable M.2/Optane Genie include:
+- (EZ Mode) M.2\Optane Genie => OFF
+- Advanced\Integrated Peripherals\M.2/Optane Genie => Disabled
+
+Possible menus to disable RAID for SATA drives include:
+- Advanced\Integrated Peripherals\SATA Mode => AHCI Mode
+- Advanced\Integrated Peripherals\RAID Configuration (Intel VMD)\Enable RAID/Optane Function => Disabled.
+
+Below are helpful images for some MSI BIOS
+![MSI RST VMD BIOS menu](../../../assets/intel-rst/msi_rst0.webp)
 
 ## Load an Intel RST Driver
 If you would like to use RAID and leave Intel RST on then you will need to download the Intel RST driver [from your motherboard or laptop manufacturers support page](/learning/computing-101/#support-sites), then put that on your Windows install USB.
