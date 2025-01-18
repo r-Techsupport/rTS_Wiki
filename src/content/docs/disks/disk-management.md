@@ -86,10 +86,18 @@ New partitions can only be created from unallocated space.
 
 ### Changing drive label
 1. Right click on an existing partition and choose "Properties".
+
+    ![Drive Context Menu](../../../assets/disk-management/drive-properties-context.png)
+
 2. From this menu, you can change your drive label to anything you would like
+
+    ![Drive properties](../../../assets/disk-management/drive-properties.png)
 
 ### Deleting a partition
 1. Right click on an existing partition and choose "Delete Volume..."
+
+    ![Drive delete context menu](../../../assets/disk-management/delete-volume-context.png)
+
 2. Click "Yes" to delete the partition. You will loose all data on this partition.
 
 ## Using Diskpart in Windows
@@ -115,9 +123,11 @@ This guide will walk you through wiping a disk and creating a single empty parti
 
 7. To format the partition, type `format fs=<filesystem>`. For what file system to use, reference the following:
 
+    | Format | Notes |
+    | ------ | ----- |
     | FAT32 | Designed to be used with smaller USB drives 32GB or less in size. |
     | exFAT | Designed to be used with all USB drives. Can replace FAT32. |
-    | NTFS | Designed to be used with hard drives and SSDs of all sizes, internal and external. |
+    | NTFS  | Designed to be used with hard drives and SSDs of all sizes, internal and external. |
 
     To add a label at this stage, add `label=<label>` to your command.
 
