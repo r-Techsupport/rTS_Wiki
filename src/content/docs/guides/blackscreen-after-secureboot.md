@@ -1,5 +1,5 @@
 ---
-title: Fixing a blackscreen issue that occurs after enabling Secureboot
+title: Blackscreen issue that occurs after enabling Secureboot
 sidebar:
     hidden: false
 pagefind: true
