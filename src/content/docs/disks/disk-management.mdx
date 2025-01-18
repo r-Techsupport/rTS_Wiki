@@ -4,12 +4,11 @@ description: The basics to disk and partition management in Windows and Linux
 sidebar:
     hidden: false
     order: 1
-has_children: false
-parent: Disks
 pagefind: true
-last_modified_date: 2023-05-08
 redirect_from: /books/software-we-recommend/page/disk-partition-management
 ---
+
+import DiskFormats from '../../../_includes/embeds/disk-formats.md';
 
 ## Using Disk Management in Windows
 You can open disk management by pressing Win+R and typing `diskmgmt.msc`.
@@ -52,13 +51,12 @@ New partitions can only be created from unallocated space.
 
     ![NewVolume-Prompt-2a.webp](../../../assets/disk-management/newvolume-prompt-2a.webp)
 
-4. Set the filesystem to one of three options (there are 3 options (you may have less depending on your drive):
+4. Set the filesystem to one of three options (there are 3 options, you may have less depending on your drive):
 
-    | FAT32 | Designed to be used with smaller USB drives 32GB or less in size. |
-    | exFAT | Designed to be used with all USB drives. Can replace FAT32. |
-    | NTFS | Designed to be used with hard drives and SSDs of all sizes, internal and external. |
+    <DiskFormats />
 
-    Set the label to what you want.
+5. Set the label to what you want.
+
     ![NewVolume-Prompt-3a.webp](../../../assets/disk-management/newvolume-prompt-3a.webp)
 
 ### Change drive letter
@@ -71,23 +69,33 @@ New partitions can only be created from unallocated space.
 > This is a destructive action, all data on the drive will be deleted.
 
 1. Right click on an existing partition and choose "Format...".
+
+    ![Drive format context menu](../../../assets/disk-management/drive-format-context.png)
+
 2. Leaving allocation unit size at default and quick format selected will usually work.
 3. Choose a filesystem:
 
-    | FAT32 | Designed to be used with smaller USB drives 32GB or less in size. |
-    | exFAT | Designed to be used with all USB drives. Can replace FAT32. |
-    | NTFS | Designed to be used with hard drives and SSDs of all sizes, internal and external. |
+    <DiskFormats />
+
+    ![FormatDrive.webp](../../../assets/disk-management/formatdrive.webp)
 
 4. Click "OK" to format the drive.
 
-![FormatDrive.webp](../../../assets/disk-management/formatdrive.webp)
 
 ### Changing drive label
 1. Right click on an existing partition and choose "Properties".
+
+    ![Drive properties context menu](../../../assets/disk-management/drive-properties-context.png)
+
 2. From this menu, you can change your drive label to anything you would like
+
+    ![Drive properties](../../../assets/disk-management/drive-properties.png)
 
 ### Deleting a partition
 1. Right click on an existing partition and choose "Delete Volume..."
+
+    ![Drive delete context menu](../../../assets/disk-management/drive-delete-volume-context.png)
+
 2. Click "Yes" to delete the partition. You will loose all data on this partition.
 
 ## Using Diskpart in Windows
@@ -113,9 +121,7 @@ This guide will walk you through wiping a disk and creating a single empty parti
 
 7. To format the partition, type `format fs=<filesystem>`. For what file system to use, reference the following:
 
-    | FAT32 | Designed to be used with smaller USB drives 32GB or less in size. |
-    | exFAT | Designed to be used with all USB drives. Can replace FAT32. |
-    | NTFS | Designed to be used with hard drives and SSDs of all sizes, internal and external. |
+    <DiskFormats />
 
     To add a label at this stage, add `label=<label>` to your command.
 

@@ -8,7 +8,6 @@ pagefind: true
 last_modified_date: 2024-06-28
 ---
 
-## Introduction
 After you have installed Windows 11, you will enter the Out-Of-The-Box experience (a.k.a OOBE). From here, you can simply follow the prompts on screen and setup Windows. 
 
 However, there are certain cases where you'll need to bypass the network requirements or the account requirements (i.e. you have no internet or no Microsoft account). In these cases, you need to make a local account and follow the steps shown below. The process will differ based on whether you have the Home edition or Pro edition.
