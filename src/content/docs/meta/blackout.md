@@ -4,11 +4,8 @@ sidebar:
     hidden: true
 pagefind: false
 ---
+Last Updated: {{page.last_modified_date}}
 
-
-{: .no_toc }
-Last Updated {{page.last_modified_date}}
-{: .label }
 If you found your way to this page, then r/TechSupport WAS AT SOME POINT set as private. You probably have a lot of questions. We will try our best to answer them all here.
 
 ___
@@ -59,7 +56,7 @@ In his recent disaster of an AMA when asked [why the timeline of charging for th
 
 They do not care if they made it difficult for 3PAs. They have no desire to remedy the situation to allow 3PAs to properly prepare nor to lower costs. Unfortunately, this has put several developers in a rough spot. Many have already announced they will be shutting down their applications come June 30th. 
 
-We can go on and on about this, but we are not the developers and cannot give the proper perspective on the issue. So, [we have compiled a list of developers describing the issue from their perspectives](/blackout#3pa-developer-announcements-on-the-situation). We urge you to take the time to read through their posts, once their subreddits are up if they are participating in the blackout. 
+We can go on and on about this, but we are not the developers and cannot give the proper perspective on the issue. So, [we have compiled a list of developers describing the issue from their perspectives](#3pa-developer-announcements-on-the-situation). We urge you to take the time to read through their posts, once their subreddits are up if they are participating in the blackout. 
 
 If anything, please read through the post made by Apollo's developer, Christian, as he gives a very well thought out and detailed explanation on why he has been forced to shut down Apollo.
 

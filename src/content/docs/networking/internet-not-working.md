@@ -9,10 +9,6 @@ pagefind: true
 last_modified_date: 2022-09-15
 ---
 
-
-
-
-
 ## Scope of the problem
 First you need to identify the scope of the problem. Check if only one device is affected by this problem or if multiples devices are affected.  
 If only one device is experiencing the problem, the cause is between that device and the last common link with other devices.  
@@ -38,9 +34,9 @@ A common problem in Windows is when an application changes the TCP Global Parame
 Usually the "Receive-Side Scaling State" and "Receive Window Auto-Tuning Level" are the changed parameters. If that is the case, run `netsh interface tcp set global rss=enabled` and `netsh interface tcp set global autotuninglevel=normal` in your same Command Prompt.
 
 ### Programs interfering
-If you know you have VPNs or third-party Antivirus/ Antimalware applications installed, keep in mind that any of those might cause the problem. To stop those from interfering try a speedtest/ check the connection on a [Linux Live Session](/live-sessions/linux-live-session.html). If the problem is not present here, there is a very high chance that a program is the source.
+If you know you have VPNs or third-party Antivirus/ Antimalware applications installed, keep in mind that any of those might cause the problem. To stop those from interfering try a speedtest/ check the connection on a [Linux Live Session](/live-sessions/linux-live-session). If the problem is not present here, there is a very high chance that a program is the source.
 
-Boot back into Windows and perform a [Cleanboot](/factoids/cleanboot.html). If the problem gets solved by this you will have to keep re-enable services to find which one is the cause. A good way of doing this is through binary search. This procedure implies that you enable half of the disabled services and check.  
+Boot back into Windows and perform a [Cleanboot](/factoids/cleanboot). If the problem gets solved by this you will have to keep re-enable services to find which one is the cause. A good way of doing this is through binary search. This procedure implies that you enable half of the disabled services and check.  
 If the problem is not present, continue doing this until it shows up.  
 If it is present, disable half of the services you just enabled.  
 You keep doing this until get to the services that is causing the problem.

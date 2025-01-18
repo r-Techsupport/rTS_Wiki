@@ -33,5 +33,5 @@ If the Windows 10 upgrade tool or the Windows 11 installation assistant fails to
 ## Using a USB
 This is perhaps the best method of the three. This will also wipe any data stored on the USB flash drive that is used.
 
-1. Create the install media from Part 1 of our [Windows 10](/installations/install-10#part-1-creating-usb-installer) or [Windows 11](/installations/install-11#part-1-creating-usb-installer) install guides.
+1. Create the install media from Part 1 of our [Windows 10](/installations/install-10/#creating-installation-media) or [Windows 11](/installations/install-11/#creating-installation-media) install guides.
 2. Open the created USB in File Explorer and run "setup.exe" to force upgrade Windows.

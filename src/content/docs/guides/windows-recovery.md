@@ -37,7 +37,7 @@ Windows Recovery is a built-in feature in Microsoft Windows operating systems th
 
 > Performing a clean install involves reinstalling the operating system, which will erase all data on the system drive. Ensure you have a backup of your important data before proceeding with a [clean install](/guides/making-a-system-dossier) 
 A
-> Always exercise caution when making significant changes to your system, and consider the potential impact on your data. Always have a [Backup](/installations/win)
+> Always exercise caution when making significant changes to your system, and consider the potential impact on your data. Always have a [Backup](/windows)
 
 
 

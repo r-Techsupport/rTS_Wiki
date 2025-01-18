@@ -20,7 +20,7 @@ This guide is to quickly set up your Windows desktop after installation of Windo
 
 > [!NOTE] Reinstalling Windows
 > 
-> For installing/reinstalling Windows, please refer to [this guide](/installations/win).
+> For installing/reinstalling Windows, please refer to [this guide](/windows).
 
 ## Drivers/Applications you need to download:
 

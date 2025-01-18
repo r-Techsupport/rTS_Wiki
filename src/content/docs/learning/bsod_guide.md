@@ -298,7 +298,7 @@ It is important to keep in mind that the module WinDbg blames in `MODULE_NAME` *
 
 In the overview, I mentioned that WinDbg will always blame the first module, which is not `nt`, and there may be cases where WinDbg blames the wrong driver. It is critically important that you recognize when this happens as to not blame the wrong component. Please review the Reading the Stack section for more information.
 
-A way to be certain the error is software-related and not hardware-related would be to *simply reinstall Windows*. If you continue getting BSODs on a clean installation of Windows, having not done something that may break Windows like use the built-in factory reset, run [CCleaner](/recommendations/maintenance.html#cleaners) or [DriverEasy](/recommendations/maintenance#driver-finders), you have a **hardware** problem.
+A way to be certain the error is software-related and not hardware-related would be to *simply reinstall Windows*. If you continue getting BSODs on a clean installation of Windows, having not done something that may break Windows like use the built-in factory reset, run [CCleaner](/recommendations/maintenance#cleaners) or [DriverEasy](/recommendations/maintenance#driver-finders), you have a **hardware** problem.
 
 ### Hardware
 

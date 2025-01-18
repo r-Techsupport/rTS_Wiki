@@ -21,7 +21,7 @@ Enabling encryption on other devices, such as laptops and desktops, is a choice 
 > [!WARNING] Risk of data loss with encryption
 > Should something fail during the normal use of your encrypted device you may be required to use recovery methods or keys to regain access to your data. It is very important you understand and protect these methods or you may lose all chances to your data.
 > 
-> On phones you have no recovery options. Your data is gone when the device has an issue. For this reason we recommend [making backups](/backups/backups) of all your devices.
+> On phones you have no recovery options. Your data is gone when the device has an issue. For this reason we recommend [making backups](/backups) of all your devices.
 
 ## Encryption Methods and Their Platforms
 
@@ -29,7 +29,7 @@ Enabling encryption on other devices, such as laptops and desktops, is a choice 
 
 | Method | Windows | Linux | MacOS |
 | ------ | ------- | ----- | ----- |
-| [BitLocker](/disks/encryption/bitlocker.html) | Yes | Using [Dislocker](/disks/disk-encryption/dislocker.html) | Third party tools required |
-| [FileVault](/disks/encryption/filevault.html) | No | No | Yes |
-| [LUKS](/disks/encryption/luks.html) | No  | Yes | No |
-| [Veracrypt](/disks/encryption/veracrypt.html) | Yes | Yes | Yes |
+| [BitLocker](/disks/encryption/bitlocker) | Yes | Using [Dislocker](/disks/encryption/dislocker) | Third party tools required |
+| [FileVault](/disks/encryption/filevault) | No | No | Yes |
+| [LUKS](/disks/encryption/luks) | No  | Yes | No |
+| [Veracrypt](/disks/encryption/veracrypt) | Yes | Yes | Yes |
