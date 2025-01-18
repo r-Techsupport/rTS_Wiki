@@ -24,9 +24,18 @@ On some systems you may find a "VMD setup/controller" option, disabling this wil
 You can reboot and load back into the Windows install USB and complete the installation without issue.
 
 ### Asus
+Possible menus to disable RAID include:
+- (EZ Mode) Intel Rapid Storage Technology => OFF
+- Advanced\VMD setup menu\Enable VMD controller => Disabled
+- Advanced\System Agent (SA)\VMD setup menu\Enable VMD controller => Disabled
+- Advanced\Integrated Peripherals\RAID Configuration (Intel VMD)\Enable RAID/Optane Function => Disabled
+- Advanced\PCH Storage Configuration\SATA Mode selection => AHCI Mode
+
 Below are helpful images for some ASUS BIOS
 ![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst0.webp)
 ![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst1.webp)
+![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst2.webp)
+![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst3.webp)
 
 ### Gigabyte Aorus
 Below are helpful images for some Gigabyte Aorus BIOS
@@ -40,9 +49,9 @@ Possible menus to disable M.2/Optane Genie include:
 - (EZ Mode) M.2\Optane Genie => OFF
 - Advanced\Integrated Peripherals\M.2/Optane Genie => Disabled
 
-Possible menus to disable RAID for SATA drives include:
+Possible menus to disable RAID include:
 - Advanced\Integrated Peripherals\SATA Mode => AHCI Mode
-- Advanced\Integrated Peripherals\RAID Configuration (Intel VMD)\Enable RAID/Optane Function => Disabled.
+- Advanced\Integrated Peripherals\RAID Configuration (Intel VMD)\Enable RAID/Optane Function => Disabled
 
 Below are helpful images for some MSI BIOS
 ![MSI RST VMD BIOS menu](../../../assets/intel-rst/msi_rst0.webp)
