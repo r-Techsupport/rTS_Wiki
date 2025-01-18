@@ -73,21 +73,27 @@ New partitions can only be created from unallocated space.
 > This is a destructive action, all data on the drive will be deleted.
 
 1. Right click on an existing partition and choose "Format...".
+
+    ![Drive format context menu](../../../assets/disk-management/drive-format-context.png)
+
 2. Leaving allocation unit size at default and quick format selected will usually work.
 3. Choose a filesystem:
 
+    | Format | Notes |
+    | ------ | ----- |
     | FAT32 | Designed to be used with smaller USB drives 32GB or less in size. |
     | exFAT | Designed to be used with all USB drives. Can replace FAT32. |
     | NTFS | Designed to be used with hard drives and SSDs of all sizes, internal and external. |
 
+    ![FormatDrive.webp](../../../assets/disk-management/formatdrive.webp)
+
 4. Click "OK" to format the drive.
 
-![FormatDrive.webp](../../../assets/disk-management/formatdrive.webp)
 
 ### Changing drive label
 1. Right click on an existing partition and choose "Properties".
 
-    ![Drive Context Menu](../../../assets/disk-management/drive-properties-context.png)
+    ![Drive properties context menu](../../../assets/disk-management/drive-properties-context.png)
 
 2. From this menu, you can change your drive label to anything you would like
 
@@ -96,7 +102,7 @@ New partitions can only be created from unallocated space.
 ### Deleting a partition
 1. Right click on an existing partition and choose "Delete Volume..."
 
-    ![Drive delete context menu](../../../assets/disk-management/delete-volume-context.png)
+    ![Drive delete context menu](../../../assets/disk-management/drive-delete-volume-context.png)
 
 2. Click "Yes" to delete the partition. You will loose all data on this partition.
 
