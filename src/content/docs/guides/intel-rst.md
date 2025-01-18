@@ -64,6 +64,17 @@ Possible menus to disable RAID include:
 Below are helpful images for some MSI BIOS
 ![MSI RST VMD BIOS menu](../../../assets/intel-rst/msi_rst0.webp)
 
+### HP 
+Note: Some HP desktops/laptops have RST option permanently turned on and it's impossible to change.
+
+Possible menus to disable RAID include:
+- Advanced\System Options\Configure Storage Controller for RAID => Unchecked
+- Configuration\SATA Emulation => AHCI
+
+Below are helpful images for some HP BIOS
+![HP RST VMD BIOS menu](../../../assets/intel-rst/HP_rst0.webp)
+![HP RST VMD BIOS menu](../../../assets/intel-rst/HP_rst1.webp)
+
 ## Load an Intel RST Driver
 If you would like to use RAID and leave Intel RST on then you will need to download the Intel RST driver [from your motherboard or laptop manufacturers support page](/learning/computing-101/#support-sites), then put that on your Windows install USB.
 
