@@ -32,6 +32,7 @@ Possible menus to disable RAID include:
 - Advanced\PCH Storage Configuration\SATA Mode selection => AHCI Mode
 
 Below are helpful images for some ASUS BIOS
+
 ![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst0.webp)
 ![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst1.webp)
 ![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst2.webp)
@@ -47,6 +48,7 @@ Possible menus to disable RAID include:
 - Peripherals\SATA Configuration\SATA Mode Selection => AHCI
 
 Below are helpful images for some Gigabyte Aorus BIOS
+
 ![Aorus RST VMD BIOS menu](../../../assets/intel-rst/aorus_rst0.webp)
 ![Aorus RST VMD BIOS menu](../../../assets/intel-rst/aorus_rst1.webp)
 
@@ -62,6 +64,7 @@ Possible menus to disable RAID include:
 - Advanced\Integrated Peripherals\RAID Configuration (Intel VMD)\Enable RAID/Optane Function => Disabled
 
 Below are helpful images for some MSI BIOS
+
 ![MSI RST VMD BIOS menu](../../../assets/intel-rst/msi_rst0.webp)
 
 ### HP 
@@ -72,6 +75,7 @@ Possible menus to disable RAID include:
 - Configuration\SATA Emulation => AHCI
 
 Below are helpful images for some HP BIOS
+
 ![HP RST VMD BIOS menu](../../../assets/intel-rst/hp_rst0.webp)
 ![HP RST VMD BIOS menu](../../../assets/intel-rst/hp_rst1.webp)
 
@@ -81,9 +85,10 @@ Note: Some Acer laptops have RST option permanently turned on and it's impossibl
 Option to change RAID option may be hidden. On select models it's possible to reveal them, by pressing Ctrl+S in Advanced tab.
 
 Possible menus to disable RAID include:
-- Advanced\System Agent (SA) Configuration\VMD setup menu\Enable VMD controlled => Disabled
+- Advanced\System Agent (SA) Configuration\VMD setup menu\Enable VMD controller => Disabled
 
 Below are helpful images for some Acer BIOS
+
 ![Acer RST VMD BIOS menu](../../../assets/intel-rst/acer_rst0.webp)
 ![Acer RST VMD BIOS menu](../../../assets/intel-rst/acer_rst1.webp)
 
