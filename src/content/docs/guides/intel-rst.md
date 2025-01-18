@@ -53,7 +53,8 @@ Below are helpful images for some Gigabyte Aorus BIOS
 ![Aorus RST VMD BIOS menu](../../../assets/intel-rst/aorus_rst1.webp)
 
 ### MSI
-Note: Some MSI motherboards have a function called M.2/Optane Genie, which will automatically configure RAID even if RAID is manually disabled. Ensure that M.2/Optane Genie function is disabled as well.
+> [!NOTE] Information
+> Some MSI motherboards have a function called M.2/Optane Genie, which will automatically configure RAID even if RAID is manually disabled. Ensure that M.2/Optane Genie function is disabled as well.
 
 Possible menus to disable M.2/Optane Genie include:
 - (EZ Mode) M.2\Optane Genie => OFF
@@ -68,7 +69,8 @@ Below are helpful images for some MSI BIOS
 ![MSI RST VMD BIOS menu](../../../assets/intel-rst/msi_rst0.webp)
 
 ### HP 
-Note: Some HP desktops/laptops have RST option permanently turned on and it's impossible to change.
+> [!NOTE] Information
+> Some HP desktops/laptops have RST option permanently turned on and it's impossible to change.
 
 Possible menus to disable RAID include:
 - Advanced\System Options\Configure Storage Controller for RAID => Unchecked
@@ -80,7 +82,8 @@ Below are helpful images for some HP BIOS
 ![HP RST VMD BIOS menu](../../../assets/intel-rst/hp_rst1.webp)
 
 ### Acer 
-Note: Some Acer laptops have RST option permanently turned on and it's impossible to change. 
+> [!NOTE] Information
+> Some Acer laptops have RST option permanently turned on and it's impossible to change. 
 
 Option to change RAID option may be hidden. On select models it's possible to reveal them, by pressing Ctrl+S in Advanced tab.
 
