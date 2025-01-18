@@ -51,6 +51,10 @@ Once your changes are complete you can [open a pull request (PR)](https://docs.g
 
 When your PR is submitted a Github Action will build and publish a test website, commenting a link to it. You will be able to view your site live at that link and it will be updated on every commit in your PR until it is merged.
 
+The site may fail to build for a variety of reasons, you can click "Details" on the failed action in your PR to find out why. Some common reasons are:
+- Invalid Frontmatter
+- Invalid links (Links are validated with [Startlight-Links-Validator](https://github.com/HiDeoo/starlight-links-validator))
+
 ## Frontmatter header
 - https://starlight.astro.build/reference/frontmatter/
 
