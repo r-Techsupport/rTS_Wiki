@@ -38,6 +38,14 @@ Below are helpful images for some ASUS BIOS
 ![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst3.webp)
 
 ### Gigabyte Aorus
+Possible menus to disable RAID include:
+- Chipset\SATA Mode => AHCI
+- Settings\IO Ports\SATA Mode => AHCI
+- Settings\IO Ports\NVMe RAID mode => Disabled
+- Settings\VMD setup menu\Enable VMD Controller => Disabled
+- Peripherals\SATA Mode Selection => AHCI
+- Peripherals\SATA Configuration\SATA Mode Selection => AHCI
+
 Below are helpful images for some Gigabyte Aorus BIOS
 ![Aorus RST VMD BIOS menu](../../../assets/intel-rst/aorus_rst0.webp)
 ![Aorus RST VMD BIOS menu](../../../assets/intel-rst/aorus_rst1.webp)
