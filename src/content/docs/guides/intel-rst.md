@@ -4,7 +4,7 @@ description: Resolving missing disk drives issues during Windows installation
 ---
 During the installation of Windows 10 and Windows 11 you may encounter an error message:
 
-> "We couldn't find any drives. To get a storage driver, click load driver."
+> "We couldn't find any drives. To get a storage driver, click Load driver."
 
 ![We couldnt find any drives](../../../assets/intel-rst/missing_drives.webp)
 
