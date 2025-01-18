@@ -20,7 +20,7 @@ When multiple disks are combined into one it can be called an "array" or "volume
 ### Spanned
 Also called `JBOD` this is several disks laid side by side with data written randomly across them. When using '2' 1TB disks, you will have a total of 2TB of space. This is not fault tolerant, losing either disk will result in a loss of all data.
 
-> ![NOTE] Information
+> [!NOTE] Information
 > Data is written sequentially, starting at the head of one disk and moving through each disk as they fill
 
 ### Striped
