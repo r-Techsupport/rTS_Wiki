@@ -14,7 +14,7 @@ last_modified_date: 2023-11-03
 
 Crystal Disk Info (CDI) is a tool to check hard drive health.
 
-It collects a drive's [S.M.A.R.T. data](docs/factoids/cdi#analyzing-smart-data-in-cdi) and creates a log for us to analyze.
+It collects a drive's [S.M.A.R.T. data](/factoids/cdi#analyzing-smart-data-in-cdi) and creates a log for us to analyze.
 
 ## How to use CDI
 

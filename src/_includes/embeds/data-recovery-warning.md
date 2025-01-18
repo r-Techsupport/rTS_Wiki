@@ -6,4 +6,4 @@
 > 
 > Always make a disk image before attempting recovery of data on a disk. You may need to restore this image to the disk between data recovery attempts.
 > 
-> Before attempting data recovery you should [evaluate the SMART data](/docs/disks/disk-health) for your disk. If it is failing data recovery may stress the disk and cause a complete failure.
+> Before attempting data recovery you should [evaluate the SMART data](/disks/disk-health) for your disk. If it is failing data recovery may stress the disk and cause a complete failure.

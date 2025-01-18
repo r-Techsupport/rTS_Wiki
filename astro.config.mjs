@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import remarkObsidianCallout from "remark-obsidian-callout";
+import starlightLinksValidator from 'starlight-links-validator';
 
 // https://astro.build/config
 export default defineConfig({
@@ -88,6 +89,11 @@ export default defineConfig({
             discord: 'https://rtech.support/discord',
             reddit: 'https://reddit.com/r/techsupport',
         },
+        plugins: [
+            starlightLinksValidator({
+                errorOnLocalLinks: false,
+              }),
+        ],
         pagination: false,
         lastUpdated: true,
         credits: false,

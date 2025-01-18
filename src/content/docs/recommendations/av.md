@@ -10,8 +10,6 @@ last_modified_date: 2024-07-11
 redirect_from: /books/software-we-recommend/page/anti-virus-and-malware-tools
 ---
 
-
-
 > [!NOTE] Information
 > 
 > For information about how to clean malware from your computer, or prevent it in the future, see [this](https://rtech.support/books/safety-and-security/page/malware-guide) malware guide.
@@ -27,8 +25,6 @@ redirect_from: /books/software-we-recommend/page/anti-virus-and-malware-tools
 | Antivirus (AV) | A program that runs constantly in the background, scanning files on download, on access, or on a schedule |
 | Anti-malware (AM) | A program that runs on demand to check for residual PUPs or other issues. |
 | Potentially Unwanted Program (PUP) | A generic term for an application that may not be malicious but is not wanted/intended regardless. |
-
-View more definitions [here](/learning/terms).
 
 ## Windows Defender
 
