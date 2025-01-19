@@ -1,0 +1,102 @@
+---
+title: Windows Disk Management
+description: The basics to disk and partition management in Windows
+sidebar:
+    hidden: false
+    order: 1
+pagefind: true
+redirect_from: /books/software-we-recommend/page/disk-partition-management
+---
+
+import DiskFormats from '../../../../_includes/embeds/disk-formats.md';
+
+Disk Management is the native graphical utility in Windows for managing disks and partitions. You can open it by pressing Win+R and typing `diskmgmt.msc`.
+
+Disk management can only be run from a installed copy of windows, and has limits on what partitions and disks can be edited. For a more robust solution, consider using [DiskPart](/disks/disk-management/diskpart) or [Gparted](/disks/disk-management/gparted).
+
+## Initialize a new disk
+A brand new disk must be initialized before it can be used.
+
+> [!WARNING] Warning
+> 
+> You should not initialize a disk that already has data on it, your disk has lost data and you need to look into [Data Recovery](/disks/data-recovery/data-recovery)
+
+### Initializing via Popup
+1. The first time you open disk management with a brand new disk in a machine you will be presented with a pop up saying "You must initialize a disk before Logical Disk Management can access it."
+
+    ![Must initialize popup](../../../../assets/disk-management/initialize-popup.png)
+
+2. On all modern systems you should choose "GPT (GUID Partition Table). Once you click "Next" you should be able to proceed with [Create a new partition](#create-a-new-partition).
+
+### Manual Initialization
+Sometimes you won't get this pop up and instead your disk will appear like below, you will need to manuall initialize this disk.
+
+![Not initialized disk](../../../../assets/disk-management/not-initialized.png)
+
+1. Right click the left panel of the disk and choose "Initialize"
+
+    ![Manual initialization](../../../../assets/disk-management/manual-initialize.png)
+
+2. On all modern systems you should choose "GPT (GUID Partition Table). Once you click "Next" you should be able to proceed with [Create a new partition](#create-a-new-partition).
+
+## Create a new partition
+New partitions can only be created from unallocated space.
+
+1. Right click on the unallocated space and choose "New Simple Volume".
+
+    ![NewSimpleVolume-DiskManager.webp](../../../../assets/disk-management/newsimplevolume-diskmanager.webp)
+
+2. By default, the size will be the entire unallocated space. Most of the time, this is fine.
+
+    ![NewVolume-Prompt-1a.webp](../../../../assets/disk-management/newvolume-prompt-1a.webp)
+
+3. You can assign your new partition any drive letter you would like. However, assigning `A` or `B` may cause issues.
+
+    ![NewVolume-Prompt-2a.webp](../../../../assets/disk-management/newvolume-prompt-2a.webp)
+
+4. Set the filesystem to one of three options (there are 3 options, you may have less depending on your drive):
+
+    <DiskFormats />
+
+5. Set the label to what you want.
+
+    ![NewVolume-Prompt-3a.webp](../../../../assets/disk-management/newvolume-prompt-3a.webp)
+
+## Change drive letter
+1. Right click on an existing partition and choose "Change Drive Letter and Paths...".
+2. If the drive doesn't already have a letter, choose "Add..." on the open dialog. If it already has a letter, "Change...". To remove the drive letter, choose "Remove".  
+    ![NewDriveLetter.webp](../../../../assets/disk-management/newdriveletter.webp)
+
+## Change file system
+> [!WARNING] Warning
+> This is a destructive action, all data on the drive will be deleted.
+
+1. Right click on an existing partition and choose "Format...".
+
+    ![Drive format context menu](../../../../assets/disk-management/drive-format-context.png)
+
+2. Leaving allocation unit size at default and quick format selected will usually work.
+3. Choose a filesystem:
+
+    <DiskFormats />
+
+    ![FormatDrive.webp](../../../../assets/disk-management/formatdrive.webp)
+
+4. Click "OK" to format the drive.
+
+
+## Changing drive label
+1. Right click on an existing partition and choose "Properties".
+
+    ![Drive properties context menu](../../../../assets/disk-management/drive-properties-context.png)
+
+2. From this menu, you can change your drive label to anything you would like
+
+    ![Drive properties](../../../../assets/disk-management/drive-properties.png)
+
+## Deleting a partition
+1. Right click on an existing partition and choose "Delete Volume..."
+
+    ![Drive delete context menu](../../../../assets/disk-management/drive-delete-volume-context.png)
+
+2. Click "Yes" to delete the partition. You will loose all data on this partition.

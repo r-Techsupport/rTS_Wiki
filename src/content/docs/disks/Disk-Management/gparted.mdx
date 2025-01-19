@@ -1,5 +1,5 @@
 ---
-title: Disk Manipulation with Gparted
+title: Linux Gparted
 description: A Linux/gnu front-end to the parted tool. It is the recommended method for manipulating disks when using a Linux live session.
 sidebar:
     hidden: false
@@ -9,7 +9,7 @@ pagefind: true
 last_modified_date: 2024-06-28
 ---
 
-import UseLLCD from '../../../_includes/embeds/use-linux-live-session.md';
+import UseLLCD from '../../../../_includes/embeds/use-linux-live-session.md';
 
 <UseLLCD />
 
@@ -19,32 +19,32 @@ A disk needs a partition table made as the first step in formatting. This is gen
 
 Select a disk in Gparted from the drop-down in the top right
 
-![Selecting a disk in gparted](../../../assets/gparted/gparted_disk_sel.webp)
+![Selecting a disk in gparted](../../../../assets/gparted/gparted_disk_sel.webp)
 
 To create your table, hover over 'device' with your disk selected.
 
-![creating a table in gparted](../../../assets/gparted/gparted_create_table.webp)
+![creating a table in gparted](../../../../assets/gparted/gparted_create_table.webp)
 
 #### Create partition
 To create a partition on a disk right click any unallocated space and choose 'New'. 
 
-![creating a partition in gparted](../../../assets/gparted/gparted_create_part.webp)
+![creating a partition in gparted](../../../../assets/gparted/gparted_create_part.webp)
 
 Choose your size and location on the disk by dragging the sliders, the entire box or entering values manually. It is recommended to make partitions starting at the head (start) of the disk and work your way right.
 
 Primary partitions are the typical user partition. Logical or extended are for more advanced setups.
 
-![creating a partition in gparted 2](../../../assets/gparted/gparted_create_part2.webp)
+![creating a partition in gparted 2](../../../../assets/gparted/gparted_create_part2.webp)
 
 Typical file system types and uses are:
 
-|Type|OS Compatibility|Use|Limitations
-|---|---|---|---|
-|NTFS|Windows, with read natively on Linux/BSD or MacOS|Windows OS and data partitions|
-|ext2/3/4|Linux/BSD, with read on other OS via third party tools|Linux/BSD OS and data partitions
-|Fat32|Read/Write natively on most OS|Removable media|Fat32 file systems cannot hold files larger than 4GB|
-|exFAT|Read/Write natively on most OS|Removable media|
-HFS/+|MacOS native with read on other OS via third party tools|MacOS OS and data partitions
+|Type      |OS Compatibility                                          |Use                                                                   |Limitations                                          |
+|--------- |----------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------|
+| NTFS     | Windows, with read natively on Linux/BSD or MacOS        | Windows OS and data partitions                                       |                                                     |
+| ext2/3/4 | Linux/BSD, with read on other OS via third party tools   | Linux/BSD OS and data partitions                                     |                                                     |
+| Fat32    | Read/Write natively on most OS                           | Removable media                                                      |Fat32 file systems cannot hold files larger than 4GB |
+| exFAT    | Read/Write natively on most OS                           | Removable media                                                      |                                                     |
+| HFS/+    | MacOS native with read on other OS via third party tools | MacOS OS and data partitions                                         |                                                     |
 
 ## Working with existing disks
 
@@ -56,7 +56,7 @@ HFS/+|MacOS native with read on other OS via third party tools|MacOS OS and data
 ### Enlarge/Move/Shrink partitions
 To change the size of a partition right click it and choose 'resize/move'. You can manipulate the size the same way as when making a new partition.
 
-![resizing a partition in gparted](../../../assets/gparted/gparted_part_res.webp)
+![resizing a partition in gparted](../../../../assets/gparted/gparted_part_res.webp)
 
 #### Enlarging
 If enlarging a partition ensure you have enough **empty** space to the immediate right of the partition. If you do not, move the neighbor partition far enough right that you have space for your enlargement operation.
@@ -72,4 +72,4 @@ Moving partitions takes a very long time. It is recommended that you restore dat
 ## Finalizing changes
 When you are done making changes to disk choose the 'Check' at the top to save those changes, confirm and the changes will start processing. **If you shrunk, or moved partitions this can take a very long time.**
 
-![final step gparted](../../../assets/gparted/gparted_disk_final.webp)
+![final step gparted](../../../../assets/gparted/gparted_disk_final.webp)
