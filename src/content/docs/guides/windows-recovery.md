@@ -35,9 +35,9 @@ Windows Recovery is a built-in feature in Microsoft Windows operating systems th
 ## Windows Recovery Options
 > **Warning:** Windows Recovery options are powerful tools designed to troubleshoot and resolve various system issues. However, they may not always guarantee a fix, and results can vary based on the nature and severity of the problem. If you encounter persistent or critical issues that remain unresolved after using these recovery options, it might be necessary to consider a clean install of the operating system.
 
-> Performing a clean install involves reinstalling the operating system, which will erase all data on the system drive. Ensure you have a backup of your important data before proceeding with a [clean install](/guides/making-a-system-dossier) 
+> Performing a clean install involves reinstalling the operating system, which will erase all data on the system drive. Ensure you have a backup of your important data before proceeding with a [clean install](/windows) 
 A
-> Always exercise caution when making significant changes to your system, and consider the potential impact on your data. Always have a [Backup](/windows)
+> Always exercise caution when making significant changes to your system, and consider the potential impact on your data. Always have a [Backup](/backups)
 
 
 
