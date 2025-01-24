@@ -26,7 +26,7 @@ An in-place upgrade reinstalls Windows over your current setup without losing yo
         - Follow the instructions provided on the page to see how you can download the ISO file using the Media Creation Tool.
 2. Double click the downloaded ISO file to mount it.
 3. Head to the mounted drive by double clicking it.
-4. In the mounted drive folder, select "setup.exe".
+4. In the mounted drive folder, run "setup.exe".
 5. Follow the on-screen instructions to proceed with the in-place upgrade/install.
 
     ![method-1-steps.jpg](/src/assets/in-place-upgrade/method-1-steps.jpg)
