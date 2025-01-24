@@ -18,8 +18,6 @@ An in-place upgrade reinstalls Windows over your current setup without losing yo
 >
 > Please refer to our [official malware](/safety-security/malware-guide) guide below to see how to deal with malware.
 
-Follow either method 1 or 2 to perform this action.
-
 ### Method 1: Downloading the Windows ISO file
 1. Download the Windows ISO file from Microsoft's official website:
     - Windows 11: https://www.microsoft.com/en-us/software-download/windows11
