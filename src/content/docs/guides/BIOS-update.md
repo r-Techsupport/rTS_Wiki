@@ -8,12 +8,6 @@ pagefind: true
 last_modified_date: 2023-05-08
 ---
 
-
-
-
-
-
-
 ## What is BIOS? How do I update it?
 
 BIOS stands for Basic Input Output System. It is the firmware of the motherboard that allows the control of inputs and outputs of the system, and is necessary to boot into any OS. It provides runtime services for operating systems and programs to perform hardware initialization during the boot process, so it is a necessary feature in any and all PCs.
