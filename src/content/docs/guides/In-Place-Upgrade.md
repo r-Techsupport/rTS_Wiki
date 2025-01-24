@@ -8,14 +8,15 @@ pagefind: true
 last_modified_date: 2025-01-23
 ---
 
-## What is an In-Place Update/upgrade?
-
 An in-place upgrade reinstalls Windows over your current setup without losing your files, settings, or apps. It refreshes system files to fix issues like system corruption or configuration problems by replacing core OS files. This is the highly preferred alternative to a reset, and the outcome is the same too.
 
 > [!WARNING] Do not use the built-in Reset features of Windows!
-> These are not a full reinstall of the system, and can lead to a broken OS. Resets use the current OS image as a base for the reinstall, which will result in any issues from the old OS installation carrying over, as well as potentially damaging the OS further.
 >
-> In addition, they cannot be used to remove malware, as they do not fully clean the disk. The same also goes for In-Place upgrades/updates. Please refer to [the installation guides](https://rtech.support/windows) to properly reinstall Windows should in case you come with any malware.
+> These options do not perform a full system reinstall and can result in a broken OS. Resets use the current OS image as a base, which means any issues from the old installation can carry over and potentially cause further damage.
+
+> [!NOTE] Neither Resets nor In-Place upgrades help with removing Malware!
+>
+> Please refer to our [official malware](/safety-security/malware-guide) guide below to see how to deal with malware.
 
 Follow either method 1 or 2 to perform this action.
 
@@ -35,7 +36,8 @@ Follow either method 1 or 2 to perform this action.
 ### Method 2: Utilizing Recovery Settings
 
 > [!NOTE] This method will only work in Windows 11 24H2 and higher!
-> Windows 11 23H2 or lower, or Windows 10 installs will not be able to utilize this method. Please refer to method 1 instead.
+>
+> Windows 11 23H2 or lower, or Windows 10 installs will not be able to utilize this method. [Please refer to method 1 instead](/guides/in-place-upgrade/#method-1-downloading-the-windows-iso-file).
 
 1. Open up settings, and head to `System` -> `Recovery`.
 2. You will be met with multiple options, select "Fix problems using Windows Update."
