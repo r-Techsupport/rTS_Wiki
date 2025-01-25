@@ -1,5 +1,6 @@
 ---
 title: Using Specify (No-Ring 0 version)
+description: Specify is an open-source windows applications that gathers various data to help us troubleshoot your computer.
 sidebar:
     hidden: false
 parent: Factoids
@@ -7,8 +8,9 @@ has_children: false
 pagefind: true
 last_modified_date: 2024-11-05
 ---
-
-Specify is an open-source windows applications that gathers various data to help us troubleshoot your computer. More information can be found on our [README on GitHub](https://github.com/Spec-ify/specify/blob/main/README.md).
+> [!TIP] TIP!
+> 
+> More information can be found on our [README on GitHub](https://github.com/Spec-ify/specify/blob/main/README.md). You can view a sample report [here](https://spec-ify.com/profile/demo-noring0).
 
 > This is the **No-Ring 0** version, where LibreHardwareMonitor/temperature has been excluded from the report. To get temperature readings, please refer to our [HWinfo guide](/guides/hwinfo).
 
@@ -26,7 +28,7 @@ Specify is an open-source windows applications that gathers various data to help
 5. Once it is done, it will **automatically open a link and copy it to your clipboard**. Click "Close Program" at the end to exit.
 6. Paste this link in the channel you are getting support from.
 
-You can vew an example specify report [here](https://spec-ify.com/profile/demo-noring0).
+
 
 > [!TIP] For machines without internet access
 >

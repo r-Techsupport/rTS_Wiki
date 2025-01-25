@@ -1,5 +1,6 @@
 ---
 title: Using Specify
+description: Specify is an open-source windows applications that gathers various data to help us troubleshoot your computer.
 sidebar:
     hidden: false
 parent: Factoids
@@ -8,11 +9,11 @@ pagefind: true
 last_modified_date: 2024-11-05
 ---
 
-Specify is an open-source windows applications that gathers various data to help us troubleshoot your computer. More information can be found on our [README on GitHub](https://github.com/Spec-ify/specify/blob/main/README.md).
-
 > [!IMPORTANT] Important!
 >
-> No sensitive information is included in the report, we will not ask you to share private information.
+>  No sensitive information is included in the report, we will not ask you to share private information. You can vew an example specify report [here](https://spec-ify.com/profile/demo1).
+>
+> More information can be found on our [README on GitHub](https://github.com/Spec-ify/specify/blob/main/README.md)
 
 ### How to use Specify
 
@@ -23,8 +24,6 @@ Specify is an open-source windows applications that gathers various data to help
 4. Click on **Start**, wait for the program to complete scanning the system.
 5. Once it is done, it will **automatically open a link and copy it to your clipboard**. Click "Close Program" at the end to exit.
 6. Paste this link in the channel you are getting support from.
-
-You can vew an example specify report [here](https://spec-ify.com/profile/demo1).
 
 > [!TIP] For machines without internet access
 >
