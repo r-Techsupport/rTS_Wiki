@@ -1,5 +1,6 @@
 ---
 title: How to do an In-Place Install/Upgrade
+description: An in-place upgrade reinstalls Windows without losing your files, settings, or apps. It fixes system issues by refreshing core OS files and is preferred over a Reset for the same outcome.
 sidebar:
     hidden: false
 has_children: false
@@ -7,9 +8,6 @@ parent: General Guides
 pagefind: true
 last_modified_date: 2025-01-23
 ---
-
-An in-place upgrade reinstalls Windows over your current setup without losing your files, settings, or apps. It refreshes system files to fix issues like system corruption or configuration problems by replacing core OS files. This is the highly preferred alternative to a reset, and the outcome is the same too.
-
 > [!WARNING] Do not use the built-in Reset features of Windows!
 >
 > These options do not perform a full system reinstall and can result in a broken OS. Resets use the current OS image as a base, which means any issues from the old installation can carry over and potentially cause further damage.
@@ -25,9 +23,11 @@ An in-place upgrade reinstalls Windows over your current setup without losing yo
     - Windows 10: https://www.microsoft.com/en-us/software-download/windows10
         - Follow the instructions provided on the page to see how you can download the ISO file using the Media Creation Tool.
 2. Double click the downloaded ISO file to mount it.
+    - You may get a User Account Control (UAC) dialogue, you may click Open anyways.
 3. Head to the mounted drive by double clicking it.
 4. In the mounted drive folder, run "setup.exe".
 5. Follow the on-screen instructions to proceed with the in-place upgrade/install.
+    - You may also be prompted to input a product key. You can select "I previously installed Windows 11 or Windows 10 on this PC" instead to bypass this.
 
     ![method-1-steps.jpg](/src/assets/in-place-upgrade/method-1-steps.jpg)
 
