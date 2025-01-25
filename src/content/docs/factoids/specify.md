@@ -15,7 +15,7 @@ last_modified_date: 2024-11-05
 >
 > More information can be found on our [README on GitHub](https://github.com/Spec-ify/specify/blob/main/README.md)
 
-### How to use Specify
+## How to use Specify
 
 1. **Download** the Specify tool from [here](https://github.com/Spec-ify/specify/releases/latest/download/Specify_noring0.exe).
 2. **Run** the Specify.exe program.
