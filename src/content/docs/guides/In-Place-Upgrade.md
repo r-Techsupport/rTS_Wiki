@@ -16,7 +16,7 @@ last_modified_date: 2025-01-23
 >
 > Please refer to our [official malware](/safety-security/malware-guide) guide below to see how to deal with malware.
 
-### Method 1: Downloading the Windows ISO file
+## Method 1: Downloading the Windows ISO file
 1. Download the Windows ISO file from Microsoft's official website:
     - Windows 11: https://www.microsoft.com/en-us/software-download/windows11
         - Scroll all the way to the bottom to get the direct link to download the ISO.
@@ -31,7 +31,7 @@ last_modified_date: 2025-01-23
 
     ![method-1-steps.jpg](/src/assets/in-place-upgrade/method-1-steps.jpg)
 
-### Method 2: Utilizing Recovery Settings
+## Method 2: Utilizing Recovery Settings
 
 > [!NOTE] This method will only work in Windows 11 24H2 and higher!
 >
