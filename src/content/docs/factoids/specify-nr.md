@@ -8,7 +8,7 @@ pagefind: true
 last_modified_date: 2024-11-05
 ---
 
-Specify is a custom made, [open-source](https://github.com/Spec-ify/specify) windows app that gathers system information like Operating System, Hardware specifications, and Software information/errors to help us troubleshoot your computer.
+Specify is an open-source windows applications that gathers various data to help us troubleshoot your computer. More information can be found on our [README on GitHub](https://github.com/Spec-ify/specify/blob/main/README.md).
 
 > This is the **No-Ring 0** version, where LibreHardwareMonitor/temperature has been excluded from the report. To get temperature readings, please refer to our [HWinfo guide](/guides/hwinfo).
 
