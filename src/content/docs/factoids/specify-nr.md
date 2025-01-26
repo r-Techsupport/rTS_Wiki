@@ -10,7 +10,7 @@ last_modified_date: 2024-11-05
 ---
 This is the **No-Ring 0** version, where LibreHardwareMonitor/temperature has been excluded from the report. To get temperature readings, please refer to our [HWinfo guide](/guides/hwinfo).
 
-> [!IMPORTANT] Important!
+> [!IMPORTANT] Important
 >
 > No sensitive information is included in the report, we will not ask you to share private information. You can view an example specify report [here](https://spec-ify.com/profile/demo-noring0).
 >

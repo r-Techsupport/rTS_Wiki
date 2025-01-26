@@ -9,7 +9,7 @@ pagefind: true
 last_modified_date: 2024-11-05
 ---
 
-> [!IMPORTANT] Important!
+> [!IMPORTANT] Important
 >
 > No sensitive information is included in the report, we will not ask you to share private information. You can vew an example specify report [here](https://spec-ify.com/profile/demo1).
 >
