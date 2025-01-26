@@ -1,3 +1,5 @@
-Specify is a small tool made by us that gets a bunch of info about your hardware, software, and OS, and allows convenient ways to save and share it. You can download it [here](https://github.com/Spec-ify/specify/releases/latest/download/Specify.exe).
+Specify is a custom made, [open-source](https://github.com/Spec-ify/specify) windows app that gathers system information like Operating System, Hardware specifications, and Software information/errors to help us troubleshoot your computer.
 
-Run Specify.exe and follow the prompts, once it is done, it will automatically open a link and copy it to your clipboard. Click "Close Program" at the end to exit. This link will only live for 24 hours.
+More information about specify can be found in the following articles:
+- [Specify](/factoids/specify)
+- [Specify (No-Ring 0)](/factoids/specify-nr)
