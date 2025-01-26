@@ -11,7 +11,7 @@ last_modified_date: 2024-11-05
 
 > [!IMPORTANT] Important!
 >
->  No sensitive information is included in the report, we will not ask you to share private information. You can vew an example specify report [here](https://spec-ify.com/profile/demo1).
+> No sensitive information is included in the report, we will not ask you to share private information. You can vew an example specify report [here](https://spec-ify.com/profile/demo1).
 >
 > More information can be found on our [README on GitHub](https://github.com/Spec-ify/specify/blob/main/README.md)
 

@@ -8,15 +8,13 @@ has_children: false
 pagefind: true
 last_modified_date: 2024-11-05
 ---
-> [!TIP] TIP!
-> 
-> More information can be found on our [README on GitHub](https://github.com/Spec-ify/specify/blob/main/README.md). You can view a sample report [here](https://spec-ify.com/profile/demo-noring0).
-
-> This is the **No-Ring 0** version, where LibreHardwareMonitor/temperature has been excluded from the report. To get temperature readings, please refer to our [HWinfo guide](/guides/hwinfo).
+This is the **No-Ring 0** version, where LibreHardwareMonitor/temperature has been excluded from the report. To get temperature readings, please refer to our [HWinfo guide](/guides/hwinfo).
 
 > [!IMPORTANT] Important!
 >
-> No sensitive information is included in the report, we will not ask you to share private information.
+> No sensitive information is included in the report, we will not ask you to share private information. You can view an example specify report [here](https://spec-ify.com/profile/demo-noring0).
+>
+> More information can be found on our [README on GitHub](https://github.com/Spec-ify/specify/blob/main/README.md). 
 
 ## How to use Specify
 
@@ -27,8 +25,6 @@ last_modified_date: 2024-11-05
 4. Click on **Start**, wait for the program to complete scanning the system.
 5. Once it is done, it will **automatically open a link and copy it to your clipboard**. Click "Close Program" at the end to exit.
 6. Paste this link in the channel you are getting support from.
-
-
 
 > [!TIP] For machines without internet access
 >
