@@ -8,4 +8,6 @@ description: The pagefile in Windows is virtual memory, extending the physical R
 3. Click the **Advanced** tab.
 4. In the **Performance** section, click on **Settings**.
 5. Go to the **Advanced** tab.
-6. Under the **Virtual memory** section, click on Change.
+6. Under the **Virtual memory** section, click on **Change**.
+
+![sysdm.cpl](../../../assets/view-pagefile/pagefile.png)
