@@ -106,3 +106,9 @@ See below for some guides from various manufactures on this process.
 
 ### Asus
 - https://www.asus.com/support/faq/1044458/
+
+If downloaded file is an executable called `SetupRST.exe`, you need to extract it first. Open a command prompt in a location with the executable, and run following command to extract drivers:
+
+    .\SetupRST.exe -extractdrivers .\RST
+
+The command will extract drivers a folder called `RST` in same location as executable. Copy the folder into the USB and then proceed with Windows setup.
