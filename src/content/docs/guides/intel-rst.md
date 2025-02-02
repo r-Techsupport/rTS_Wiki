@@ -84,6 +84,11 @@ Below are helpful images for some HP BIOS
 ![HP RST VMD BIOS menu](../../../assets/intel-rst/hp_rst0.webp)
 ![HP RST VMD BIOS menu](../../../assets/intel-rst/hp_rst1.webp)
 
+### Lenovo
+Possible menus to disable RAID include:
+
+- Devices/ATA Drive setup/Configure SATA as => AHCI
+
 ### MSI
 > [!NOTE] Information
 > Some MSI motherboards have a function called M.2/Optane Genie, which will automatically configure RAID even if RAID is manually disabled. Ensure that M.2/Optane Genie function is disabled as well.
@@ -99,6 +104,12 @@ Possible menus to disable RAID include:
 Below are helpful images for some MSI BIOS
 
 ![MSI RST VMD BIOS menu](../../../assets/intel-rst/msi_rst0.webp)
+
+### Razer
+Possible menus to disable RAID include:
+
+- Chipset/SATA and RST Configuration/SATA Mode Selection => AHCI
+- Chipset/Intel VMD Technology => Disabled
 
 
 ## Load an Intel RST Driver
