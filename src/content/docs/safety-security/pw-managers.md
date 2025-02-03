@@ -49,12 +49,13 @@ Password managers often generate long, complex passwords that, realistically, wi
 ## Examples
 Below is a non-exhaustive list of just 3 popular password managers. The major categories and where you should start your research at are **online** and **offline** solutions. Online solutions will be web based, accessible anywhere on any device and normally have mobile apps as well as browser extensions to make use quick, easy, and universal. Offline solutions are deemed "safer" by some, but you will need to setup synchronization methods if you desire to use the same database one more than one device.
 
-| Product | Online/Offline | Notes |
+| Product | Web | Notes |
 | --- | --- | --- |
-| Bitwarden/Vaultwarden | Online | A free open source web based solution with multi platfrom support. Vaultwarden is self-hosted version of Bitwarden.
+| Bitwarden | Online | A free open source web based solution with multi platform support. Bitwarden also offers paid plans with more features. |
+| Vaultwarden | Online | A free open source unofficial server replacement for bitwarden that can be self-hosted. Valutwarden uses the bitwarden client app and extension. |
 | 1Password | Online | A paid web based solution with multi platform support. 1Password generally has better Passkey and FIDO support. |
-| KeePassXC | Offline | A free open source offline solution with multi platform support. KeePassXC may require plugins for 2FA and multi device syncing.
-| Browser/Account | Online | Brower and Account based password managers like google passwords trade security for convenience and often have limited support outside of their official ecosystem. |
+| KeePassXC | Offline | A free open source offline solution with multi platform support. KeePassC requires plugins for MFA and syncing between devices.
+| Browser/Account | Online | Browser, Account, and Device based password managers like Google Passwords are often less secure and have limited feature support especially outside of their official ecosystems. |
 ---
 
 Check out our article on [MFA](/safety-security/mfa) for the next steps you can take in securing your accounts.
