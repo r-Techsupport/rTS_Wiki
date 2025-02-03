@@ -1,11 +1,10 @@
----
 title: MFA
 sidebar:
     hidden: false
 has_children: false
 parent: Safety & Security
 pagefind: true
-last_modified_date: 2022-07-16
+last_modified_date: 2025-01-29
 redirect_from: /books/safety-and-security/page/mfa
 ---
 
@@ -35,14 +34,11 @@ These are all mobile based applications, and while Google Authenticator can be u
 
 We recommend using something that can be backed up or synchronized instead of a basic static TOTP application.
 
-* Authy 
-    * A popular application that can be used on desktop and mobile. It synchronizes and requires a telephone number for use.
-* KeePass
-    * Plugins are available for this manager to also store MFA.
-* Bitwarden
-    * Under the Pro plan you can keep TOTP seeds in your manager.
-* Your password manager
-    * Check if your choice of password manager supports TOTP out of the box. Typically this can be a field you can add to your entry, and sometimes named "One-Time Password" or something else.
+* Ente Auth
+    * A popular open source multi platform TOTP app with cloud backup and multi device syncing
+* A Password Manager
+    * Many standalone password managers support TOTP codes, read more in our 
+[Password Managers](safety-and-security/pw-managers) guide
 
 ## Hardware tokens
 Hardware tokens are typically keyfobs, USB devices, or smartcards. For the purpose of this guide we will only talk about keyfobs and USB devices, since smartcards almost never are used by consumers. 
