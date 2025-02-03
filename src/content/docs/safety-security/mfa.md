@@ -39,7 +39,7 @@ We recommend using something that can be backed up or synchronized instead of a 
     * A popular open source multi platform TOTP app with cloud backup and multi device syncing
 * A Password Manager
     * Many standalone password managers support TOTP codes, read more in our 
-[Password Managers](safety-and-security/pw-managers) guide
+[Password Managers](/safety-and-security/pw-managers) guide
 
 ## Hardware tokens
 Hardware tokens are typically keyfobs, USB devices, or smartcards. For the purpose of this guide we will only talk about keyfobs and USB devices, since smartcards almost never are used by consumers. 
