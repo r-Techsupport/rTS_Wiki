@@ -39,17 +39,25 @@ We recommend using something that can be backed up or synchronized instead of a 
     * A popular open source cross platform TOTP app with cloud backup and multi device syncing.
 * A Password Manager
     * Many standalone password managers support TOTP codes, read more in our 
-[Password Managers](/safety-security/pw-managers) guide.
+[Password Managers](/safety-security/pw-managers/) guide.
 
 ## Passkeys
-Passkeys are used to sign in instead of a password and MFA while offering better security and phishing resistance. Passkeys can only be used on the site where they were created and require both devices to be in the same physical location. 
-
-We recommend storing passkeys in your password manager so they sync across all your devices. For more information on supported devices check the W3C/FIDO [passkeys.dev](https://passkeys.dev/docs/reference/) documentation. To check which sites support Passkeys refer to the [passkeys.directory](https://passkeys.directory/) refrence. If you want to see how Passkeys work on your device, use the [Google Passkeys](https://passkeys-demo.appspot.com/) demo.
+Passkeys are used to sign in instead of a password and MFA while offering better security and phishing resistance. Passkeys can only be used on the site where they were created and require both devices to be in the same physical location. While they can be setup on a device or PSK we reccomend keeping them in a standalone password manager for multi device syncing.
 
 ## Hardware tokens
 Hardware tokens also called PSKs (Physical Security Keys) are typically USB Devices, NFC Fobs, or SmartCards. This guide will ignore SmartCards as they are rarely used by consumers.
 
-PSKs are usually used directly via FIDO or as a Passkey. Some passkeys also offer biometrics like fingerprint regocnition for additional security.`
-We reccomend using multiple PSKs or a diffrent MFA technology as these small devices are easy to lose.
+PSKs are can be used used directly via FIDO or as a Passkey. Some passkeys also offer biometrics like fingerprint regocnition for additional security.
+We reccomend using a second MFA technology as these small devices are easy to break or lose.
 
 Advanced users will be most familiar with USB devices such as Yubikeys and generic U2F/FIDO devices. These are typically plugged into a PC or tapped on a Phone for authentication.
+
+## Useful Resources
+| Link | Notes | Site |
+| --- | --- | --- |
+| [2FA Directory](https://2fa.directory/) | List of sites that support 2FA | 1Password | 
+| [Passkeys Directory](https://passkeys.directory/) | List of sites that support Passkeys | 1Password |
+| [Supported Devices](https://passkeys.dev/device-support/) | List of devices that support Passkeys | W3C/FIDO |
+| [Passkeys Demo](https://passkeys-demo.appspot.com/) | See how Passkeys work on your device | Google |
+| [Password Managers](/safety-security/pw-managers/) | Wiki article on Password Managers | RTS |
+---
