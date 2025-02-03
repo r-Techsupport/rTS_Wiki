@@ -20,7 +20,7 @@ The method to obtain this code can vary, in most cases the code is coming from a
 As the world moves to be more secure more and more responsibility is being put on the user. When setting up MFA most sites will give you 10 backup codes. **These must be retained**. In a perfect world you **will** lose all access to your account should your MFA and backup tokens be lost.
 
 ## SMS
-SMS MFA is considered insecure, since it is vulnerable to [SIM Jacking](https://nakedsecurity.sophos.com/2020/03/17/europol-busts-up-two-sim-swapping-hacking-rings/). It is also the least portable solution, requiring you to keep the same phone number forever and having cell reception whenever you want to use it.
+SMS MFA is considered insecure, since it is vulnerable to [SIM Jacking](https://nakedsecurity.sophos.com/2020/03/17/europol-busts-up-two-sim-swapping-hacking-rings/). It is also the least portable solution, requiring you to keep the same phone number forever and having cell reception whenever you want to use it. SMS codes usually show up as notifications which is an even bigger security risk.
 
 ## TOTP
 Time based One Time Password (TOTP) is the most recommended method of MFA. The most prevalent example of MFA in a standard user's life is using Google Authenticator, Steam Authenticator or Blizzzard Authenticator.
@@ -31,7 +31,7 @@ These apps make a 6 digit code every 30 seconds. This code is being generated wi
 If the time on your device is off by a few seconds, you will see that codes are not accurate for the entire 30 seconds, and if your time drifts by more than 30 seconds your codes will never work.
 
 ### Setup
-These are all mobile based applications, and while Google Authenticator can be used for many different sites or apps, it is not portable and is an issue to backup or transfer.
+These are all mobile based applications, and while Google Authenticator can be used for many different sites or apps, it cannot be backed up or transfered to other devices.
 
 We recommend using something that can be backed up or synchronized instead of a basic static TOTP application.
 
@@ -45,8 +45,9 @@ We recommend using something that can be backed up or synchronized instead of a 
 Passkeys are a new MFA technology typically stored in a password manager, device, or hardware token. Passkeys are more secure than many other forms of MFA and can be used to replace a password entirely. For more information about supported devices consult the [Passkeys.dev](https://passkeys.dev/docs/reference/) Documentation.
 
 ## Hardware tokens
-Hardware tokens are typically USB devices, NFC Fobs, or smartcards. For the purpose of this guide we will only talk about keyfobs and USB devices, since smartcards almost never are used by consumers. 
+Hardware tokens also called PSKs (Physical Security Keys) are typically USB Devices, NFC Fobs, or SmartCards. This guide will ignore SmartCards as they are rarely used by consumers.
 
-In the keyfob form, a hardware token is typically generating a 6 digit code, much like a TOTP application. The most popular consumer application of these would be DUO.
+PSKs are usually used directly via FIDO or as a Passkey. Some passkeys also offer biometrics like fingerprint regocnition for additional security.`
+We reccomend using multiple PSKs or a diffrent MFA technology as these small devices are easy to lose.
 
-Advanced users will be most familiar with USB devices such as Yubikeys and generic U2F/FIDO devices. These are typically inserted into a machine for authentication.
+Advanced users will be most familiar with USB devices such as Yubikeys and generic U2F/FIDO devices. These are typically plugged into a PC or tapped on a Phone for authentication.
