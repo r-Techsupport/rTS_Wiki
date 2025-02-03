@@ -55,9 +55,9 @@ Advanced users will be most familiar with USB devices such as Yubikeys and gener
 ## Useful Resources
 | Link | Notes | Site |
 | --- | --- | --- |
-| [2FA Directory](https://2fa.directory/) | List of sites with 2FA | 1Password | 
-| [Passkeys Directory](https://passkeys.directory/) | List of sites with Passkeys | 1Password |
+| [2FA Directory](https://2fa.directory/) | List of sites that support 2FA | 1Password | 
+| [Passkeys Directory](https://passkeys.directory/) | List of sites that support Passkeys | 1Password |
 | [Supported Devices](https://passkeys.dev/device-support/) | List of devices that support Passkeys | FIDO |
-| [Passkeys Demo](https://passkeys-demo.appspot.com/) | Try using a Passkey | Google |
-| [Password Managers](/safety-security/pw-managers/) | Article on Password Managers | RTS |
+| [Passkeys Demo](https://passkeys-demo.appspot.com/) | See how Passkeys work on your device | Google |
+| [Password Managers](/safety-security/pw-managers/) | Wiki article on Password Managers | RTS |
 ---
