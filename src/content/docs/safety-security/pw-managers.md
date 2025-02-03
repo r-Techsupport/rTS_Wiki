@@ -41,7 +41,7 @@ There is an asterisk there; it is OK to write down passwords *if they are secure
 ## Password Managers
 A password manager is a software that holds all your other credentials in a heavily encrypted box. You only need to keep track of one master password. which should be *extra secure and not guessable*, as it unlocks every other password you have saved.
 
-Password managers typically have browser extensions and mobile apps, which auto-fill everything and make life much easier. I never have to remember or type out long passwords, except occasionally my one master password.
+Password managers typically come in the form of a browser extensions but many offer desktop and mobile apps, which auto-fill everything and make life much easier. I never have to remember or type out long passwords, except occasionally my one master password.
 
 Password managers often generate long, complex passwords that, realistically, will never be guessed or brute forced. These are very complicated because they don't have to be remembered. For your master password, however, it is better to use a combination of words to make it a little easier to remember. Here is a comic from [XKCD](https://xkcd.com/) that explains why:
 ![[XKCD 936](https://xkcd.com/936/)](https://imgs.xkcd.com/comics/password_strength.png)
@@ -52,10 +52,10 @@ Below is a non-exhaustive list of just 3 popular password managers. The major ca
 | Product | Web | Notes |
 | --- | --- | --- |
 | Bitwarden | Online | A free open source web based solution with multi platform support. Bitwarden also offers paid plans with more features. |
-| Vaultwarden | Online | A free open source unofficial server replacement for bitwarden that can be self-hosted. Valutwarden uses the bitwarden client app and extension. |
-| 1Password | Online | A paid web based solution with multi platform support. 1Password generally has better Passkey and FIDO support. |
-| KeePassXC | Offline | A free open source offline solution with multi platform support. KeePassC requires plugins for MFA and syncing between devices.
-| Browser/Account | Online | Browser, Account, and Device based password managers like Google Passwords are often less secure and have limited feature support especially outside of their official ecosystems. |
+| Vaultwarden | Online | A free open source unofficial server replacement for bitwarden that can be self-hosted. Valutwarden uses the Bitwarden client app. |
+| 1Password | Online | A paid web based solution with multi platform support. 1Password generally has better support for Passkeys and PSKs. |
+| KeePassXC | Offline | A free open source offline solution with multi platform support. KeePassXC requires plugins for MFA and syncing between devices.
+| Browser | Online | Browser, Account, and Device based password managers such as Google and Apple Passwords are often less secure and have limited feature support, especially on 3rd party browsers and devices.|
 ---
 
 Check out our article on [MFA](/safety-security/mfa) for the next steps you can take in securing your accounts.
