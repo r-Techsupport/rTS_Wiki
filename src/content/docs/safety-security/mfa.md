@@ -36,14 +36,17 @@ These are all mobile based applications, and while Google Authenticator can be u
 We recommend using something that can be backed up or synchronized instead of a basic static TOTP application.
 
 * Ente Auth
-    * A popular open source multi platform TOTP app with cloud backup and multi device syncing
+    * A popular open source cross platform TOTP app with cloud backup and multi device syncing.
 * A Password Manager
     * Many standalone password managers support TOTP codes, read more in our 
-[Password Managers](/safety-and-security/pw-managers) guide
+[Password Managers](/safety-security/pw-managers) guide.
+
+## Passkeys
+Passkeys are a new MFA technology typically stored in a password manager, device, or hardware token. Passkeys are more secure than many other forms of MFA and can be used to replace a password entirely. For more information about supported devices consult the [Passkeys.dev](https://passkeys.dev/docs/reference/) Documentation.
 
 ## Hardware tokens
-Hardware tokens are typically keyfobs, USB devices, or smartcards. For the purpose of this guide we will only talk about keyfobs and USB devices, since smartcards almost never are used by consumers. 
+Hardware tokens are typically USB devices, NFC Fobs, or smartcards. For the purpose of this guide we will only talk about keyfobs and USB devices, since smartcards almost never are used by consumers. 
 
 In the keyfob form, a hardware token is typically generating a 6 digit code, much like a TOTP application. The most popular consumer application of these would be DUO.
 
-Advanced users will be most familiar with USB devices such as Yubi or the generic U2F/FIDO devices. These are typically inserted into a machine for authentication.
+Advanced users will be most familiar with USB devices such as Yubikeys and generic U2F/FIDO devices. These are typically inserted into a machine for authentication.
