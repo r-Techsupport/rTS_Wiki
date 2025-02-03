@@ -150,7 +150,7 @@ last_modified_date: 2022-06-30
 
 * A backup stored on the same drive doesn't count as a backup! Upload them to a cloud service or on an external HDD/network drive.
 
-* Not backing up your data is planning to loose your data. Data loss is rarely predictable. 
+* Not backing up your data is planning to lose your data. Data loss is rarely predictable. 
 
 ### Purchase Advice
 
