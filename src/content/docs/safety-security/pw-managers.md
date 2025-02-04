@@ -41,20 +41,23 @@ There is an asterisk there; it is OK to write down passwords *if they are secure
 ## Password Managers
 A password manager is a software that holds all your other credentials in a heavily encrypted box. You only need to keep track of one master password. which should be *extra secure and not guessable*, as it unlocks every other password you have saved.
 
-Password managers typically have browser extensions and mobile apps, which auto-fill everything and make life much easier. I never have to remember or type out long passwords, except occasionally my one master password.
+Password managers typically come in the form of a browser extensions but many offer desktop and mobile apps, which auto-fill everything and make life much easier. I never have to remember or type out long passwords, except occasionally my one master password.
 
 Password managers often generate long, complex passwords that, realistically, will never be guessed or brute forced. These are very complicated because they don't have to be remembered. For your master password, however, it is better to use a combination of words to make it a little easier to remember. Here is a comic from [XKCD](https://xkcd.com/) that explains why:
 ![[XKCD 936](https://xkcd.com/936/)](https://imgs.xkcd.com/comics/password_strength.png)
 
 ## Examples
-Below is a non-exhaustive list of just 3 popular password managers. The major categories and where you should start your research at are **online** and **offline** solutions. Online solutions will be web based, accessible anywhere on any device and normally have mobile apps as well as browser extensions to make use quick, easy, and universal. Offline solutions are deemed "safer" by some, but you will need to setup synchronization methods if you desire to use the same database one more than one device.
+Below is a list of a few popular password managers. The major categories and where you should start your research at are **online** and **offline** solutions. Online solutions are web based and can be accessed from anywhere. Offline solutions are deemed "safer" by some, but you will need to setup synchronization methods to use it on multiple devices.
 
-| Product | Online/Offline | Notes |
+If you're having touble exporting and disabling your existing password manager, review the [1Password Setup](https://support.1password.com/import/) documentation, this guide works with any password manager. To export password from iOS 18.2+ follow this [Apple Support](https://support.apple.com/guide/iphone/export-passwords-iphf28f2e93e/ios) article, older versions of iOS require Keychain Access or Apple Passwords on a Mac.
+
+| Product | Web | Notes |
 | --- | --- | --- |
-| Bitwarden/Vaultwarden | Online | An opensource web based solution that works via a webpanel, browser extensions and mobile apps. Bitwarden can also hold your [totp mfa](/safety-security/mfa#totp) tokens. Vaultwarden is self-hosted version of Bitwarden.
-| Lastpass | Online | A web based solution that is very popular but fell out of favor when they required payment for use on more than one platform (Desktop or Mobile) |
-| KeepassKeepassXC | Offline | A popular offline solution that can be extended to include [TOTP mfa](/safety-security/mfa#totp) and other functions via plugins. You are required to find your own synchronization method to share this across devices.
-
+| Bitwarden | Online | A free open source web based solution with multi platform support. Bitwarden also offers paid plans with more features. |
+| Vaultwarden | Online | A free open source unofficial server replacement for bitwarden that can be self-hosted. Valutwarden uses the Bitwarden client app. |
+| 1Password | Online | A paid web based solution with multi platform support. 1Password generally has better support for Passkeys and PSKs. |
+| KeePassXC | Offline | A free open source offline solution with multi platform support. KeePassXC requires plugins for MFA and syncing between devices. |
+| Browser | Online | Browser, Account, and Device based password managers are more convient than than standalone options but many sacrifice security and advanced features. |
 ---
 
 Check out our article on [MFA](/safety-security/mfa) for the next steps you can take in securing your accounts.
