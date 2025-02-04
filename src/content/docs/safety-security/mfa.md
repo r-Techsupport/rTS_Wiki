@@ -20,7 +20,7 @@ The method to obtain this code can vary, in most cases the code is coming from a
 As the world moves to be more secure more and more responsibility is being put on the user. When setting up MFA most sites will give you 10 backup codes. **These must be retained**. In a perfect world you **will** lose all access to your account should your MFA and backup tokens be lost.
 
 ## SMS
-SMS MFA is considered insecure since it is vulnerable to [SIM Swapping]([https://nakedsecurity.sophos.com/2020/03/17/europol-busts-up-two-sim-swapping-hacking-rings/](https://www.europol.europa.eu/media-press/newsroom/news/sim-highjackers-how-criminals-are-stealing-millions-highjacking-phone-numbers)). It is also the least portable solution, requiring you have cell reception and access to that phone number. SMS codes often show up as lock screen notifications which is an even bigger security risk.
+SMS MFA is considered insecure since it is vulnerable to [SIM Swapping](https://www.europol.europa.eu/media-press/newsroom/news/sim-highjackers-how-criminals-are-stealing-millions-highjacking-phone-numbers). It is also the least portable solution, requiring you have cell reception and access to that phone number. SMS codes often show up as lock screen notifications which is an even bigger security risk.
 
 ## TOTP
 Time based One Time Password (TOTP) is the most recommended method of MFA. The most prevalent example of MFA in a standard user's life is using Google Authenticator, Steam Guard, or DUO Mobile.
