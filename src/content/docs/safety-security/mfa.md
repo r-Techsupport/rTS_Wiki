@@ -9,10 +9,6 @@ last_modified_date: 2025-01-29
 redirect_from: /books/safety-and-security/page/mfa
 ---
 
-
-
-
-
 Multi-Factor Authentication (MFA), also called Two-Factor Authentication (2FA), is using 2 or more forms of authentication to gain access to an account or resource. In most cases the 1st form of authentication is your password, we then add a second in the form of a one time code.
 
 The method to obtain this code can vary, in most cases the code is coming from a text message (SMS), an application on your phone or computer, or a hardware token.
@@ -52,7 +48,8 @@ Advanced users will be most familiar with USB devices such as Yubikeys and gener
 ## Backup Codes
 Many sites, Password Managers, and TOTP applications will create backup/recovery/emergency/legacy codes during setup. These codes can be used to reset your password or 2FA in case you lose access to them.
 **DO NOT** store these codes on your device or in a Password Manager, we recommend printing them out and storing them in a secure location. 
--# We do not condone breaking into fort knox and or starting a country in pursuit of more secure backup code storage facilites.
+
+<p style="font-size: .75em">We do not condone breaking into fort knox and or starting a country in pursuit of more secure backup code storage facilites.<p>
 
 ## Useful Resources
 | Link | Notes | Site |
@@ -62,4 +59,3 @@ Many sites, Password Managers, and TOTP applications will create backup/recovery
 | [Supported Devices](https://passkeys.dev/device-support/) | List of devices that support Passkeys | FIDO |
 | [Passkeys Demo](https://passkeys-demo.appspot.com/) | See how Passkeys work on your device | Google |
 | [Password Managers](/safety-security/pw-managers/) | Wiki article on Password Managers | RTS |
----
