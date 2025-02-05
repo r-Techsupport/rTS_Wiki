@@ -10,6 +10,12 @@ th, td {
 .sl-markdown-content :is(th:first-child, td:first-child):not(:where(.not-content *)) {
     padding-inline-start: .75rem;
 }
+.sl-markdown-content table:not(:where(.not-content *)) {
+    display: table;
+}
+.sl-markdown-content :is(th:last-child, td:last-child):not(:where(.not-content *)) {
+    padding-inline-end: 1rem;
+}
 
 .sl-markdown-content table {
     box-shadow: 1px 2px rgba(0,0,0,0.12),0 3px 10px rgba(0,0,0,0.08);
