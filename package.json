@@ -14,10 +14,10 @@
   },
   "dependencies": {
     "@astrojs/starlight": "^0.31.1",
-    "astro": "^5.1.9",
-    "rehype-callouts": "^1.4.1",
+    "astro": "^5.2.3",
+    "rehype-callouts": "^2.0.1",
     "remark-obsidian-callout": "^1.5.1",
     "sharp": "^0.33.5",
-    "starlight-links-validator": "^0.14.1"
+    "starlight-links-validator": "^0.14.2"
   }
 }
