@@ -16,10 +16,10 @@ Many people re-use their passwords online, any hackers can use your ‘leaked’
 
 ## What can you do?
 ### Check for existing compromised credentials
-You can check if any of your credentials have already been compromised, on [haveibeenpwned](https://haveibeenpwned.com/). You can enter your email, and haveibeenpwned will tell you how many breaches it has been exposed to. The site will also tell you what was revealed in that breach, such as **passwords, names, addresses, social security numbers, and other personal information** that you care about. Looking at the front page of haveibeenpwned shows the magnitude of data breaches. The current count of compromised accounts known by the site is close to 12 billion.
+You can check if any of your credentials have already been compromised on [haveibeenpwned](https://haveibeenpwned.com/). You can enter your email, and haveibeenpwned will tell you how many breaches it has been exposed in. The site will also tell you what was revealed in that breach, such as **passwords, names, addresses, social security numbers, and other personal information** that you care about. Looking at the front page of haveibeenpwned shows the magnitude of data breaches. The current count of compromised accounts known by the site is over to 14 billion.
 
 ### Prevent future compromises from being as damaging
-**Unique passwords, every site, every time.**
+#### Unique passwords, every site, every time
 
 The first step is minimizing the impact of an account that has the password stolen, that event is inevitable, and you can do this by ensuring that all sites use unique passwords.
 
@@ -27,7 +27,7 @@ The first step is minimizing the impact of an account that has the password stol
 
 I have over 450 sets of credentials and remember 6; the key is writing them down. Yes, writing down passwords is OK.\*
 
-There is an asterisk there; it is OK to write down passwords *if they are secured*. A notebook in a locked cabinet is fine, while a sticky note on your monitor is not. We are in the modern age, so we don't use notebooks; we use password managers.
+There is an asterisk there; it is OK to write down passwords ***if they are secured***. A notebook in a locked cabinet is fine, while a sticky note on your monitor is not. We are in the modern age, so we don't use notebooks; we use password managers.
 
 ### Use a password manager
 A password manager is a software that holds all your other credentials in a heavily encrypted box. You only need to keep track of one master password. which should be *extra secure and not guessable*, as it unlocks every other password you have saved.
