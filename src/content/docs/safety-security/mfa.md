@@ -35,12 +35,12 @@ We recommend using something that can be backed up or synchronized rather than a
 [Password Managers](/safety-security/pw-managers/) guide.
 
 ## Passkeys
-Passkeys are used to sign in instead of a password and MFA while offering better security and phishing resistance. Passkeys can only be used on the site where they were created and require both devices to be in the same physical location. While they can be setup on a device or PSK we recommend keeping them in a standalone password manager for multi device syncing.
+Passkeys are used to sign in instead of a password and MFA while offering better security and phishing resistance. Passkeys can only be used on the site where they were created and require both devices to be in the same physical location. While they can be setup on a device or PSK (Physical Security Keys) we recommend keeping them in a standalone password manager for multi device syncing.
 
 ## Hardware tokens
 Hardware tokens also called PSKs (Physical Security Keys) are typically USB Devices, NFC Fobs, or SmartCards. This guide will ignore SmartCards as they are rarely used by consumers.
 
-PSKs are can be used used directly via FIDO or as a Passkey. Some passkeys also offer biometrics like fingerprint recognition for additional security.
+PSKs can be used used directly via FIDO or as a Passkey. Some passkeys also offer biometrics like fingerprint recognition for additional security.
 We recommend using a second MFA technology as these small devices are easy to break or lose.
 
 Advanced users will be most familiar with USB devices such as Yubikeys and generic U2F/FIDO devices. These are typically plugged into a PC or tapped on a Phone for authentication.
