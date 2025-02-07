@@ -49,8 +49,6 @@ Advanced users will be most familiar with USB devices such as Yubikeys and gener
 Many sites, Password Managers, and TOTP applications will create backup/recovery/emergency/legacy codes during setup. These codes can be used to reset your password or 2FA in case you lose access to them.
 **DO NOT** store these codes on your device or in a Password Manager, we recommend printing them out and storing them in a secure location. 
 
-<p style="font-size: .75em">We do not condone breaking into fort knox and or starting a country in pursuit of more secure backup code storage facilites.<p>
-
 ## Useful Resources
 | Link | Notes | Site |
 | --- | --- | --- |
