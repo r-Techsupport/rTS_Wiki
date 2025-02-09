@@ -58,7 +58,7 @@ If removing a non-essential component causes the computer to boot, that means on
 
 ## Step 4: Use only one RAM stick
 
-If the debug LED points to "DRAM", try removing all RAM sticks and only use one. You also want to try the other sticks and/or try using other RAM slots. If this solves the issue, it is very likely a HARDWARE ISSUE with either a faulty RAM stick or a dead RAM slot on the motherboard. 
+If the debug LED points to "DRAM", try removing all RAM sticks and only use one. The goal of this step is to determine if you have bad stick of RAM, or a bad motherboard RAM slot. Therefore, you will want to try a single stick of RAM in all slots, and if that does not work you can try a different stick of RAM in every slot, I would also suggest to [reset CMOS](#step-1-cmos-reset) a few times in the process to make sure. If this solves the issue, it is very likely a HARDWARE ISSUE with either a faulty RAM stick or a dead RAM slot on the motherboard. 
 
 ## Step 5: Try your CPU's iGPU
 
