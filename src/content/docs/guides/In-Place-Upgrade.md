@@ -42,3 +42,5 @@ last_modified_date: 2025-01-23
     - It may have a button labled "Reinstall now".
 
     ![method-2-steps.png](/src/assets/in-place-upgrade/method-2-steps.png)
+
+If there is no button labelled as such or you cannot select it (i.e., it is greyed out), please use Method 1 instead.
