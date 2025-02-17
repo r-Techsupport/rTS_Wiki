@@ -29,18 +29,18 @@ last_modified_date: 2025-01-23
 5. Follow the on-screen instructions to proceed with the in-place upgrade/install.
     - You may also be prompted to input a product key. You can select "I previously installed Windows 11 or Windows 10 on this PC" instead to bypass this.
 
-    ![method-1-steps.jpg](/src/assets/in-place-upgrade/method-1-steps.jpg)
+    ![method-1-steps.jpg](../../../assets/in-place-upgrade/method-1-steps.jpg)
 
 ## Method 2: Utilizing Recovery Settings
 
 > [!NOTE] This method will only work in Windows 11 24H2 and higher!
 >
-> Windows 11 23H2 or lower, or Windows 10 installs will not be able to utilize this method. [Please refer to method 1 instead](/guides/in-place-upgrade/#method-1-downloading-the-windows-iso-file).
+> Windows 11 23H2 or lower, or Windows 10 installs will not be able to utilize this method. [Please refer to method 1 instead](#method-1-downloading-the-windows-iso-file).
 
 1. Open up settings, and head to `System` -> `Recovery`.
 2. You will be met with multiple options, select "Fix problems using Windows Update."
     - It may have a button labled "Reinstall now".
 
-    ![method-2-steps.png](/src/assets/in-place-upgrade/method-2-steps.png)
+    ![method-2-steps.png](../../../assets/in-place-upgrade/method-2-steps.png)
 
-If there is no button labelled as such or you cannot select it (i.e., it is greyed out), please use Method 1 instead.
+If there is no button labelled as such or you cannot select it (i.e., it is greyed out), please use [Method 1](#method-1-downloading-the-windows-iso-file) instead.
