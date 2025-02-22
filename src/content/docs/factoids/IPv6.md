@@ -35,7 +35,7 @@ Turning off IPv6 can help troubleshoot internet issues.
 
 3. Test to see if the issue continues.
 
-## Turning IPv6 ON (PowerShell)
+## Turning On IPv6 (PowerShell)
 
 1. Right click on the start menu and run PowerShell (Windows Terminal) as admin.
 
