@@ -84,4 +84,4 @@ All 3 programs need to be running for at least 10 minutes, or until your PC cras
 
 If you are getting help from the discord, you can just upload the .csv file directly to discord.
 
-If you are getting help from the Reddit, or the CSV file is too large for discord, upload the csv to [https://www.catbox.moe/](https://www.mediafire.com/)
+If you are getting help from the Reddit, or the CSV file is too large for discord, upload the csv to [https://www.catbox.moe/](https://www.catbox.moe/)
