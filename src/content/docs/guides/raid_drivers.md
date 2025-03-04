@@ -94,6 +94,8 @@ Possible menus to disable RAID include:
 > [!NOTE] Information
 > Some MSI motherboards have a function called M.2/Optane Genie, which will automatically configure RAID even if RAID is manually disabled. Ensure that M.2/Optane Genie function is disabled as well.
 
+Option to change RAID option may be hidden. On select MSI notebook models it's possible to reveal them, by pressing `Shift+Ctrl+Alt+F2` in BIOS configuration screen.
+
 Possible menus to disable M.2/Optane Genie include:
 - (EZ Mode) M.2\Optane Genie => OFF
 - Advanced\Integrated Peripherals\M.2/Optane Genie => Disabled
@@ -101,10 +103,16 @@ Possible menus to disable M.2/Optane Genie include:
 Possible menus to disable RAID include:
 - Advanced\Integrated Peripherals\SATA Mode => AHCI Mode
 - Advanced\Integrated Peripherals\RAID Configuration (Intel VMD)\Enable RAID/Optane Function => Disabled
+- Advanced\Enable VMD Controller => Disabled (If grayed out, edit setting below)
+- Advanced\System Agent (SA) configuration\VMD setup menu\Enable VMD Controller => Disabled
 
 Below are helpful images for some MSI BIOS
 
 ![MSI RST VMD BIOS menu](../../../assets/intel-rst/msi_rst0.webp)
+![MSI RST VMD BIOS menu](../../../assets/intel-rst/msi_rst1.webp)
+![MSI RST VMD BIOS menu](../../../assets/intel-rst/msi_rst2.webp)
+![MSI RST VMD BIOS menu](../../../assets/intel-rst/msi_rst3.webp)
+
 
 ### Razer
 Possible menus to disable RAID include:
