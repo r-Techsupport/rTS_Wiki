@@ -10,13 +10,13 @@ During the installation of Windows 10 and Windows 11 you may encounter an error 
 
 If you are certain disk is plugged in, to resolve this issue you have two choices:
 - Easiest: [Disable Intel RST / AMD RaidXpert2 in BIOS](#disable-raid-in-bios)
-- If you want to use RAID: [Load a RAID Driver](#load-an-raid-driver)
+- If you want to use RAID: [Load a RAID Driver](#load-a-raid-driver)
 
 ## Disable RAID in BIOS
 > [!NOTE] Information
 >
 > Some laptops have RST or RaidXpert2 option permanently turned on and it's impossible to change. For this, installing drivers are the only known way to fix this.
-> Please head to [Load a RAID Driver](#load-an-raid-driver) for more information.
+> Please head to [Load a RAID Driver](#load-a-raid-driver) for more information.
 
 The easiest way to resolve this issue is to disable Intel RST or AMD RaidXpert2 in your BIOS. On many laptops and select motherboard, these are enabled by default.
 
