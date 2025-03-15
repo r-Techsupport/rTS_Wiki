@@ -5,7 +5,7 @@ sidebar:
 parent: Factoids
 has_children: false
 pagefind: true
-last_modified_date: 2024-11-05
+last_modified_date: 2025-03-15
 ---
 
 
@@ -23,9 +23,7 @@ last_modified_date: 2024-11-05
      > 
 	 > Some laptops may lack a dedicated CMOS battery but use the main battery for its functionality, other laptops may have the battery covered like this: ![laptop CMOS](../../../assets/cmos/cmos-laptop.jpg)
 	
-
-
-3. Press and hold PC power button for 30 seconds, this clears out any remaining charge in your PC.
+3. Press and hold PC power button for 60 seconds, this clears out any remaining charge in your PC.
 
 4. Reinsert the CMOS battery, reconnect power and try starting the machine.
 
@@ -40,4 +38,4 @@ The CMOS Clear pins are present on many desktop and even some laptop motherboard
 
 	![CMOS reset using screwdriver](../../../assets/factoids/cmos_screwdriver.webp)
 
-4. Hold the screwdriver in place for roughly 20-30 seconds. Press the power button multiple times while holding the screwdriver in place. Once the time expires, remove the screwdriver, reconnect power, and try restarting the machine.
+4. Hold the screwdriver in place for roughly 30-45 seconds. Press the power button multiple times while holding the screwdriver in place. Once the time expires, remove the screwdriver, reconnect power, and try restarting the machine.
