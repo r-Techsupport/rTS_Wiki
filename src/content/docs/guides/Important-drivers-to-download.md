@@ -38,7 +38,7 @@ If you are unaware of what your laptop/prebuilt model is, you can easily find it
     - Search up `System Information` in the Windows search bar, or `sysinfo`, select the first option. The laptop information will be displayed there in the `System Model name` field. If not displayed, refer to the next question.
     - Search up `dxdiag` in the search bar, run it (its alternate name is DirectX diagnostics tool), the first page will tell you the model of your laptop/prebuilt in the `System model` section.
 
-Another way is to look for the serial number (usually beneath the laptop labeled as SN or on the products packaging), then look up your manufacturer's support website and type it in there, for example a HP desktop can be looked up and found on https://support.hp.com/us-en/drivers/desktops 
+See [this page](/learning/computing-101/#support-sites) for more in-depth information on how to find them.
 
 ### System Integrators / Unknown motherboard:
 If you have a non-OEM prebuilt, particularly system integrators such as Origin PC, Build Redux, chances are they are utilizing standard commercial components in which case the motherboard model will yield results instead.
