@@ -100,6 +100,8 @@ You can also install the optional drivers that Windows provides, to check for op
 
 ![optdriv.webp](../../../assets/Basic-Computing/optdriv.webp)
 
+### Manufacturer drivers
+
 There might be a couple drivers Windows does not provide on their own, these can be found on their respective support sites. 
 
 Refer to the matrix below to identifier what product you need the drivers for, then check the next list to find the support site of the manufacturer.
@@ -114,6 +116,10 @@ Refer to the matrix below to identifier what product you need the drivers for, t
 | PCIe or USB WiFi     | Check the site for the brand of adapter in use |                     |
 | Built in Audio       | Motherboard or laptop manufacturer             | Audio               |
 | PCIe or USB Audio    | Check the site for the brand of adapter in use |                     |
+
+Once you've identified the type of driver you need, you can either use the links below or search on Google for the device in question. 
+
+For laptops and prebuilts, you can also use your serial number to search with; usually beneath the laptop labeled as SN or on the products packaging. For instance, an ASUS desktop can be looked up on [the support page](https://www.asus.com/us/support/) by switching the search to "Serial Number" in the dropdown menu.
 
 ### Support Sites
 - [Acer](https://www.acer.com/ac/en/US/content/support)
