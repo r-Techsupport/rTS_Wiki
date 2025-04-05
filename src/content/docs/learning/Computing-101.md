@@ -119,7 +119,7 @@ Refer to the matrix below to identifier what product you need the drivers for, t
 
 Once you've identified the type of driver you need, you can either use the links below or search on Google for the device in question. 
 
-For laptops and prebuilts, you can also use your serial number to search with; usually beneath the laptop labeled as SN or on the products packaging. For instance, an ASUS desktop can be looked up on [the support page](https://www.asus.com/us/support/) by switching the search to "Serial Number" in the dropdown menu.
+For laptops and prebuilts, you can also use your serial number to search with; usually beneath the laptop labeled as SN or on the products packaging. For instance, an ASUS desktop can be looked up on the support page by switching the search to "Serial Number" in the dropdown menu.
 
 ### Support Sites
 - [Acer](https://www.acer.com/ac/en/US/content/support)
