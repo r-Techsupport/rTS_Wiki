@@ -23,11 +23,7 @@ import DiskErrors from '../../../_includes/embeds/install-disk-errors.md';
 
 ## Creating installation media
 
-Please use one of the 3 methods below, MCT is recommended:
-
-<details markdown="1">
-
-    <summary>Media Creation Tool</summary>
+Using MCT to create the installation media
 
    1. Create a bootable USB flash drive using the [Create Windows 11 Installation Media download](https://www.microsoft.com/en-us/software-download/windows11) from Microsoft. This will also wipe any data stored on the USB flash drive.
     
@@ -55,7 +51,27 @@ Please use one of the 3 methods below, MCT is recommended:
 
      ![downl.png](../../../assets/install-11/downl.webp)
      8. After MCT says it finished, shutdown your PC.
+
+If MCT method failed, grab win11 ISO from microsoft ite and use one of the methods below:
+<details markdown="1">
+
+    <summary>Rufus</summary>
+
+import LinuxInstallMedia from '../../../_includes/embeds/create-linux-install-media.mdx';
+
+<LinuxInstallMedia />
+
 </details>
+
+<details markdown="1">
+
+    <summary>Ventoy</summary>
+
+Our guide for using [Ventoy](/installations/install-11)
+
+</details>
+
+
 
 
 ## Installing Windows
