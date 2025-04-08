@@ -5,7 +5,7 @@ sidebar:
 has_children: false
 parent: General Guides
 pagefind: true
-last_modified_date: 2023-12-10
+last_modified_date: 2025-04-08
 ---
 
 ## What is OCCT?
@@ -20,9 +20,7 @@ OCCT stands for Overclock Checking Tool. Its a stability testing suite as well a
 ## Downloading OCCT
 1. Download OCCT from the official OCCT website [here](https://www.ocbase.com/download).
 
-    ![download_occt]()
-
-    **Either version will work (Base vs Cooler Master), it is just a difference in the theme.**
+    ![occt_download](../../../assets/OCCT/occt_download.png)
 
 2. Once downloaded, you will need to run the program as administrator (automatic prompt usually, otherwise you must right click the application and select `Run as administrator`). Admin permissions are necessary for OCCT to collect the error logs.
 
