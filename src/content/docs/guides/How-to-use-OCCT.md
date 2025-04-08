@@ -5,7 +5,7 @@ sidebar:
 has_children: false
 parent: General Guides
 pagefind: true
-last_modified_date: 2023-12-10
+last_modified_date: 2025-04-08
 ---
 
 ## What is OCCT?
