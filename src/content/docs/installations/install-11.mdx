@@ -23,39 +23,47 @@ import DiskErrors from '../../../_includes/embeds/install-disk-errors.md';
 
 ## Creating installation media
 
-1. Create a bootable USB flash drive using the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/windows11) from Microsoft. It can be found under the headline "Create Windows 11 Installation Media"
+### Using MCT to create the installation media
 
-    > [!WARNING] Warning
-    > Save MCT to Desktop or Downloads folder. MCT must be saved and run from outside the USB flash drive. Just moving an ISO file to the USB flash drive will not make it bootable.
-
-2. Run MCT by double clicking it. You will be greeted with windows Terms Of Service, after reading it, press Accept.
+   1. Create a bootable USB flash drive using the [Create Windows 11 Installation Media download](https://www.microsoft.com/en-us/software-download/windows11) from Microsoft. It can be found under the headline "Create Windows 11 Installation Media"
+    
+> [!WARNING] Warning
+> Save MCT to Desktop or Downloads folder. MCT must be saved and run from outside the USB flash drive. Just moving an ISO file to the USB flash drive will not make it bootable.
+    
+    2. Run MCT by double clicking it. You will be greeted with windows Terms Of Service, after reading it, press Accept.
 
      ![wintos.png](../../../assets/install-11/wintos.webp)
-
-3. You can leave this to default, press next.
+    3. You can leave this to default, press next.
 
      ![kde.png](../../../assets/install-11/kde.webp)
+     4. Select create installation media for another PC, and then click next.
 
-4. Select create installation media for another PC, and then click next.
-
-     ![aPC.png](../../../assets/install-11/aPC.webp)
-
-5. Select USB flash drive, then press next.
+     ![aPC.png](../../../assets/install-11/aPC.webp)5. Select USB flash drive, then press next.
 
      ![USB.png](../../../assets/install-11/USB.webp)
-
-6. Select the USB you want to use, press next. 
+     6. Select the USB you want to use, press next. 
 
     > [!CAUTION] Caution
     >  This step will wipe the selected USB Flash drive, so ensure you have nothing important on the USB drive, and back up all important documents.
 
      ![select.png](../../../assets/install-11/select.webp)
-
-7. Wait until MCT finish its job. this may take some time.
+     7. Wait until MCT finish its job. this may take some time.
 
      ![downl.png](../../../assets/install-11/downl.webp)
+     8. After MCT says it finished, shutdown your PC.
 
-8. After MCT says it finished, shutdown your PC.
+If MCT method failed, grab win11 ISO from Microsoft site and use one of the methods below:
+
+<details markdown="1">
+
+<summary>Alternative methods</summary>
+
+import LinuxInstallMedia from '../../../_includes/embeds/create-linux-install-media.mdx';
+
+<LinuxInstallMedia />
+
+</details>
+
 
 ## BIOS and Setup
 
