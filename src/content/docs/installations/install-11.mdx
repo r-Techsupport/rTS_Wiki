@@ -66,13 +66,13 @@ import DiskErrors from '../../../_includes/embeds/install-disk-errors.md';
 
 2. Please make sure these settings are configured correctly.
  
-> - CSM is disabled
+* CSM is disabled
  
-> - Secure boot is enabled
+* Secure boot is enabled
  
-> - TPM is enabled
+* TPM is enabled
  
-> - The drive controller mode is set to AHCI/NVMe or RAID/VMD/IRST are disabled
+* The drive controller mode is set to AHCI/NVMe or RAID/VMD/IRST are disabled
 
 3. Boot into your USB which has the Windows 11 Media on it, to do this Change the BIOS boot order to have USB media as the first priority (this can usually be found under the boot tab), or simply look for the words "boot menu" when you see your BIOS boot screen, press the corresponding function key and choose the USB flash drive to boot from it.
 
@@ -100,7 +100,7 @@ import DiskErrors from '../../../_includes/embeds/install-disk-errors.md';
 5. Click on each partition of the target drive and select delete, once all the partitions are gone you will be left with unallocated space. At this point click `Next`.
 
     > [!CAUTION] Caution
-    > Ensure that you only have drive 0 partitions in this window before deleting, if you see any drive other than "Drive 0" as seen in our images, power down and unplug the extra drives that you don't want to install windows on.
+    > Ensure that you only have drive 0 partitions in this window before deleting. If you see any drive other than "Drive 0" as seen in our images, power down and unplug the extra drives that you don't want to install windows on.
 
     > [!WARNING] Warning
     > ***Each means ALL*** But do you mean ALL? ***Yes, All***. Once all the partitions are gone you will be left with unallocated space.
