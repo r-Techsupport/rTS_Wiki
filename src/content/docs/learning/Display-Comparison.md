@@ -31,7 +31,7 @@ TVs and monitors are electronic display devices that show images and videos. The
 | ---- | ---- | ---- |
 | Size | Typically smaller, with sizes ranging from 19 inches to 50 inches. Laptop screens range from 11 inches to 17 inches. | Generally larger, ranging from 30 inches to over 80 inches. |
 | PPI (pixels per inch) | Typically have higher density. | Usually have lower density. |
-| Refresh rate | Comes with higher rates such as 60, 144, 165, 240 and 360Hz | Commonly between 60-165Hz. |
+| Refresh rate | Comes with higher rates such as 60, 100, 144, 165, 240 and 360Hz | Commonly between 60-165Hz. |
 | Input ports | Fewer ports than TVs, being HDMI and DP (modern) or VGA and DVI (legacy) | More ports including HDMI, VGA, RCA connectors, YPbPr component video, DIN connector, S-Video, and RF connector (Coaxial connector). |
 | Latency | Generally lower than TVs. | Generally higher than monitors. |
 | Scaling/Resolutions | More limited support. | Better support. |
