@@ -5,7 +5,7 @@ sidebar:
 has_children: false
 parent: General Guides
 pagefind: true
-last_modified_date: 2025-04-13
+last_modified_date: 2025-04-12
 redirect_from: /books/how-to-and-guides/page/hwinfo-full-guide
 ---
 
