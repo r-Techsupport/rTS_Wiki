@@ -5,7 +5,7 @@ sidebar:
 has_children: false
 parent: General Guides
 pagefind: true
-last_modified_date: 2024-07-11
+last_modified_date: 2025-04-11
 ---
 
 
@@ -60,17 +60,21 @@ If removing a non-essential component causes the computer to boot, that means on
 
 If the debug LED points to "DRAM", try removing all RAM sticks and only use one. The goal of this step is to determine if you have bad stick of RAM, or a bad motherboard RAM slot. Therefore, you will want to try a single stick of RAM in all slots, and if that does not work you can try a different stick of RAM in every slot, I would also suggest to [reset CMOS](#step-1-cmos-reset) a few times in the process to make sure. If this solves the issue, it is very likely a HARDWARE ISSUE with either a faulty RAM stick or a dead RAM slot on the motherboard. 
 
-## Step 5: Try your CPU's iGPU
+## Step 5: Using Another Monitor or Video Cable
+
+Sometimes, the issue isn't with the PC but with the monitor or the cable. It is also possible that the port is what causing it, so switching from HDMI to DisplayPort and vice versa is a good idea. This can indicate that it is a HARDWARE ISSUE.
+
+## Step 6: Try your CPU's iGPU
 
 Some CPUs contain an iGPU, which is a less powerful graphics processor. If you have a CPU with one, its a good idea to try using it. Connect your video cable to the motherboard, instead of the GPU.
 
 Make sure that you unplug your dGPU first because some motherboards disable it when dGPU is detected. If this solves the issue, it is very likely a HARDWARE ISSUE with either the dGPU or the PCIE slot on the motherboard.
 
-## Step 6: Using Another Monitor or Video Cable
+## Step 7: Flashing BIOS
 
-Sometimes, the issue isn't with the PC but with the monitor or the cable. It is also possible that the port is what causing it, so switching from HDMI to DisplayPort and vice versa is a good idea. This can indicate that it is a HARDWARE ISSUE.
+Some motherboards have a dedicated BIOS flashing button, this allow you to update/replace it easily. lokup your motherboard manual and read [this article](/guides/bios-update/#method-2-using-the-onboard-bios-flashing-option) for more information about it.
 
-## Step 7: Replacing Parts
+## Step 8: Replacing Parts
 
 This is a HARDWARE ISSUE. This is the hardest to accept as fact. A part has failed and you need to replace it with another. It is also the only way to be sure which part is the one failing in some cases (e.g. CPU or motherboard failure). 
 
