@@ -5,7 +5,7 @@ sidebar:
 has_children: false
 parent: General Guides
 pagefind: true
-last_modified_date: 2022-06-28
+last_modified_date: 2025-04-12
 redirect_from: /books/how-to-and-guides/page/hwinfo-full-guide
 ---
 
@@ -82,6 +82,8 @@ All 3 programs need to be running for at least 10 minutes, or until your PC cras
 
 ## Results
 
-If you are getting help from the discord, you can just upload the .csv file directly to discord.
+If you are getting help from the discord, you can just upload the CSV file directly to discord.
 
-If you are getting help from the Reddit, or the CSV file is too large for discord, upload the csv to [https://www.catbox.moe/](https://www.mediafire.com/)
+If you are getting help from the Reddit, or the CSV file is too large for discord, upload the CSV to [https://www.catbox.moe/](https://catbox.moe/)
+
+You can view the .csv file HWiNFO generates using [HWGV](https://hw.47c.in/) or [Generic Log Viewer](https://www.hwinfo.com/forum/threads/logviewer-for-hwinfo-is-available.802/).

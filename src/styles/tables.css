@@ -2,13 +2,20 @@ th, td {
     border: 1px solid;
 }
 
-.sl-markdown-content th {
-    padding: .5rem .75rem !important;
+.sl-markdown-content table th,
+.sl-markdown-content table td {
+    padding: .75rem !important;
 }
 
 /* stupid specific to override */
 .sl-markdown-content :is(th:first-child, td:first-child):not(:where(.not-content *)) {
     padding-inline-start: .75rem;
+}
+.sl-markdown-content table:not(:where(.not-content *)) {
+    display: table;
+}
+.sl-markdown-content :is(th:last-child, td:last-child):not(:where(.not-content *)) {
+    padding-inline-end: 1rem;
 }
 
 .sl-markdown-content table {

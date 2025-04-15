@@ -146,5 +146,6 @@ export default defineConfig({
         "/books/troubleshooting-with-a-linux-live-session/page/wiping-disks": "/disks/disk-wipe",
         "/books/troubleshooting-with-a-live-session/chapter/linux-live-environment": "/live-sessions/linux-live-session",
         "/books/troubleshooting-with-a-live-session/chapter/windows-pe": "/live-sessions/windows-live-session",
+        "/guides/intel-rst": "/guides/raid_drivers",
     },
 })
