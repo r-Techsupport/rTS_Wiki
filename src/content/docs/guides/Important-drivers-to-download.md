@@ -53,7 +53,7 @@ Alternatively, running Specify will also tell you the necessary information: htt
 The following is a list of drivers you would need to install and where to find them:
 
 | Driver | Definition | Where to find them |
-| ------ | ---------- | ------------------ |
+| ---- | ------ | ------- |
 | Wi-Fi drivers | Sometimes referred to as wireless/network/LAN drivers, they enable you to have WiFi on your PC. Keep in mind not all motherboards are WiFi supported, so ensure the motherboard you have is the WiFi variant. If using a WiFi dongle, then windows update will take care of them, or you will have to manually install the drivers. | If motherboard is Wi-Fi variant, then from motherboard drivers page. Otherwise, if dongle, then from the dongle product support page (may be included with windows updates). |
 | Bluetooth drivers | May be included with the network drivers/wireless/LAN drivers, these allow you to connect your devices via Bluetooth, such as wireless headsets, controllers, etc. Same logic also applies with dongle.| If motherboard is Wi-Fi variant, then from motherboard drivers page. Otherwise, if dongle, then from the dongle product support page (may be included with windows updates). |
 | Chipset drivers | Drivers for chipset to allow features of CPU to integrate well with the OS and motherboard. | Motherboard drivers page. |
