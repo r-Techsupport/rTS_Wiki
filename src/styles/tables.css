@@ -2,32 +2,32 @@ th, td {
     border: 1px solid;
 }
 
+/* Add border-collapse for clean table lines */
+.sl-markdown-content table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
 .sl-markdown-content table th,
 .sl-markdown-content table td {
-    padding: .75rem !important;
+    padding: 0.75rem;
+    word-break: break-word;
+    white-space: normal;
+    max-width: 100%;
+    min-width: 5rem;
 }
 
-/* stupid specific to override */
-.sl-markdown-content :is(th:first-child, td:first-child):not(:where(.not-content *)) {
-    padding-inline-start: .75rem;
+
+/* Add left padding to the first column */
+.sl-markdown-content table th:first-child,
+.sl-markdown-content table td:first-child {
+    padding-inline-start: 0.75rem;
 }
-.sl-markdown-content table:not(:where(.not-content *)) {
-    display: table;
-}
-.sl-markdown-content :is(th:last-child, td:last-child):not(:where(.not-content *)) {
+
+/* Add right padding to the last column */
+.sl-markdown-content table th:last-child,
+.sl-markdown-content table td:last-child {
     padding-inline-end: 1rem;
 }
-
-.sl-markdown-content table {
-    box-shadow: 1px 2px rgba(0,0,0,0.12),0 3px 10px rgba(0,0,0,0.08);
-    table-layout: auto;
-    display: table;
-    padding-inline-end: none;
-}
-
-.sl-markdown-content tr > td:last-child,
-.sl-markdown-content tr > th:last-child {
-    white-space: normal;
-    word-break: break-word;
-    padding: .75rem;
-} 
