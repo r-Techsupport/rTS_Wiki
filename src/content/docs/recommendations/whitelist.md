@@ -22,6 +22,7 @@ This serves as a master list of recommended and permitted software that we permi
 || [Ventoy](https://rtech.support/books/how-to-and-guides/page/how-to-install-and-use-ventoy) | A multiboot solution for USBs.|
 | Other / Utilities | [WizTree](https://diskanalyzer.com/download) | This software is used to view all of the files on your computer. You can use it to locate files you may otherwise not be aware of, and see a map of how full your drive is based on what you have downloaded.
 || [Treesize Free](https://customers.jam-software.de/downloadTrial.php?language=EN&article_no=80) | This is another software similar to WizTree Free, and can be used to find what is taking up storage on your drives.
+|| [Baobab / Gnome Disk Usage Analyzer](https://apps.gnome.org/Baobab) | This is another software similar to WizTree Free, however it only works on Linux/GNU and MacOS.
 || [Display Driver Uninstaller (DDU)](https://www.guru3d.com/download/display-driver-uninstaller-download/) | Use this program to cleanly uninstall your display drivers.
 || [CpuZ](https://www.cpuid.com/downloads/cpu-z/cpu-z_1.98-en.exe) | Use this software to see advanced system information.
 || [Stress Test](https://rtech.support/books/how-to-and-guides/page/hwinfo-full-guide) | We have a complete guide for stress testing found [here](https://rtech.support/books/how-to-and-guides/page/hwinfo-full-guide).
