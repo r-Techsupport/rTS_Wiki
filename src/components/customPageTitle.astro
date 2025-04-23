@@ -1,10 +1,10 @@
 ---
-import type { Props } from '@astrojs/starlight/props';
+const { entry } = Astro.locals.starlightRoute;
 ---
 
-<h1 id="_top">{Astro.props.entry.data.title}</h1>
-{Astro.props.entry.data.description ? (
-    <p id="page-desc">{Astro.props.entry.data.description}</p>
+<h1 id="_top">{entry?.data?.title ?? 'Default Title'}</h1>
+{entry?.data?.description ? (
+    <p id="page-desc">{entry.data.description}</p>
 ) : null}
 
 <style>
