@@ -11,7 +11,7 @@ last_modified_date: 2022-10-31
 > [!CAUTION] Caution
 > Note that cleaning the disk **will remove any data stored on it.**
 
-Open Command Prompt or PowerShell as admin, then follow the steps below.
+Open Command Prompt or PowerShell as admin then follow the steps below.
 
 ```
 diskpart
@@ -33,11 +33,11 @@ sel disk #
 clean
 ```
 
-Follow the below steps as you want to partition and format the drive. You will want to do this unless otherwise instructed.
+Follow the below steps to you want to partition and format the drive. You will want to do this unless otherwise instructed.
 ```
 create partition=primary
 format quick fs=ntfs
 assign letter=E
 ```
 
-You can change the file system to a different one if so chooses, FAT32 or exFAT are examples. Furthermore, you can also change the letter to any letter that is **not in use**. 
+You can change the file type to a different one if so chooses, FAT32 or exFAT are examples. You can also change the letter to any letter that is *not in use*. 
