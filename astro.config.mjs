@@ -81,13 +81,13 @@ export default defineConfig({
                 collapsed: true,
             },
         ],
+        social: [
+            { icon: 'github', label: 'GitHub', href: 'https://github.com/r-techsupport/rts_wiki'},
+            { icon: 'discord', label: 'Discord', href: 'https://rtech.support/discord'},
+            { icon: 'reddit', label: 'Reddit', href: 'https://reddit.com/r/techsupport'},
+        ],
         editLink: {
             baseUrl: 'https://github.com/r-techsupport/rts_wiki/edit/master/',
-        },
-        social: {
-            github: 'https://github.com/r-techsupport/rts_wiki',
-            discord: 'https://rtech.support/discord',
-            reddit: 'https://reddit.com/r/techsupport',
         },
         plugins: [
             starlightLinksValidator({
