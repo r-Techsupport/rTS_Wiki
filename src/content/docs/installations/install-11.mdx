@@ -25,44 +25,39 @@ import DiskErrors from '../../../_includes/embeds/install-disk-errors.md';
 
 ### Using MCT to create the installation media
 
-   1. Create a bootable USB flash drive using the [Create Windows 11 Installation Media download](https://www.microsoft.com/en-us/software-download/windows11) from Microsoft. It can be found under the headline "Create Windows 11 Installation Media"
+1. Create a bootable USB flash drive using the [Create Windows 11 Installation Media download](https://www.microsoft.com/en-us/software-download/windows11) from Microsoft. It can be found under the headline "Create Windows 11 Installation Media"
     
 > [!WARNING] Warning
 > Save MCT to Desktop or Downloads folder. MCT must be saved and run from outside the USB flash drive. Just moving an ISO file to the USB flash drive will not make it bootable.
     
-    2. Run MCT by double clicking it. You will be greeted with windows Terms Of Service, after reading it, press Accept.
+2. Run MCT by double-clicking it. You will be greeted with windows Terms Of Service, after reading it, press Accept.
 
-     ![wintos.png](../../../assets/install-11/wintos.webp)
-    3. You can leave this to default, press next.
+![wintos.png](../../../assets/install-11/wintos.webp)
 
-     ![kde.png](../../../assets/install-11/kde.webp)
-     4. Select create installation media for another PC, and then click next.
+3. You can leave this to default, press next.
 
-     ![aPC.png](../../../assets/install-11/aPC.webp)5. Select USB flash drive, then press next.
+![kde.png](../../../assets/install-11/kde.webp)
 
-     ![USB.png](../../../assets/install-11/USB.webp)
-     6. Select the USB you want to use, press next. 
+4. Select create installation media for another PC, and then click next.
 
-    > [!CAUTION] Caution
-    >  This step will wipe the selected USB Flash drive, so ensure you have nothing important on the USB drive, and back up all important documents.
+![aPC.png](../../../assets/install-11/aPC.webp)
 
-     ![select.png](../../../assets/install-11/select.webp)
-     7. Wait until MCT finish its job. this may take some time.
+5. Select the option "USB flash drive", then press next.
 
-     ![downl.png](../../../assets/install-11/downl.webp)
-     8. After MCT says it finished, shutdown your PC.
+![USB.png](../../../assets/install-11/USB.webp)
 
-If MCT method failed, grab win11 ISO from Microsoft site and use one of the methods below:
+6. Select the USB drive you want to use, press next. 
 
-<details markdown="1">
+> [!CAUTION] Caution
+>  This step will wipe the selected USB Flash drive, so ensure you have nothing important on the USB drive, and back up all important documents.
 
-<summary>Alternative methods</summary>
+![select.png](../../../assets/install-11/select.webp)
 
-import LinuxInstallMedia from '../../../_includes/embeds/create-linux-install-media.mdx';
+7. Wait until MCT finishes its job. This may take some time.
 
-<LinuxInstallMedia />
+![downl.png](../../../assets/install-11/downl.webp)
 
-</details>
+8. After MCT says it finished, shutdown your PC.
 
 
 ## BIOS and Setup
@@ -73,14 +68,10 @@ import LinuxInstallMedia from '../../../_includes/embeds/create-linux-install-me
 > The following section occurs in your BIOS, you can enter your systems' BIOS by looking for the words "setup" when you see your BIOS boot screen then pressing the corresponding function key.
 
 2. Please make sure these settings are configured correctly.
- 
-* CSM is disabled
- 
-* Secure boot is enabled
- 
-* TPM is enabled (Intel® Platform Trust Technology (Intel® PTT)/ fTPM)
- 
-* The drive controller mode is set to AHCI/NVMe, and with RAID/VMD/IRST disabled
+   * CSM is disabled
+   * Secure boot is enabled
+   * TPM is enabled (Intel® Platform Trust Technology (Intel® PTT)/ fTPM)
+   * The drive controller mode is set to AHCI/NVMe, and with RAID/VMD/IRST disabled
 
 3. Boot into your USB which has the Windows 11 Media on it, to do this Change the BIOS boot order to have USB media as the first priority (this can usually be found under the boot tab), or simply look for the words "boot menu" when you see your BIOS boot screen, press the corresponding function key and choose the USB flash drive to boot from it.
 
@@ -105,13 +96,10 @@ import LinuxInstallMedia from '../../../_includes/embeds/create-linux-install-me
 
      ![Windows 11-2021-10-05-15-09-05.png](../../../assets/install-11/windows-11-2021-10-05-15-09-05.webp)
 
-5. Click on each partition of the target drive and select delete, once all the partitions are gone you will be left with unallocated space. At this point click `Next`.
+5. Click on each partition of the target drive and select delete, once all the partitions are gone you will be left with unallocated space. At this point, click `Next`. *****Each means ALL*** But do you mean ALL? ***Yes, All***. Once all the partitions are gone, you will be left with unallocated.**
 
     > [!CAUTION] Caution
     > Ensure that you only have drive 0 partitions in this window before deleting. If you see any drive other than "Drive 0" as seen in our images, power down and unplug the extra drives that you don't want to install windows on.
-
-    > [!WARNING] Warning
-    > ***Each means ALL*** But do you mean ALL? ***Yes, All***. Once all the partitions are gone you will be left with unallocated space.
 
     ![Windows 11-2021-10-05-15-20-37.png](../../../assets/install-11/windows-11-2021-10-05-15-20-37.webp)
 
@@ -126,4 +114,4 @@ import LinuxInstallMedia from '../../../_includes/embeds/create-linux-install-me
 > You have successfully installed Windows 11. Once the computer has rebooted, you will be greeted with the Out-of-the-Box Experience and you can start setting up your new installation of Windows. 
 
 ## Post-install setup guides
-If you need to setup Windows 11 without an internet connection or without a Microsoft account, follow this [article](/guides/bypass-11).
+If you need to set up Windows 11 without an internet connection or without a Microsoft account, follow this [article](/guides/bypass-11).
