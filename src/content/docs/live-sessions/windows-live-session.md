@@ -5,7 +5,7 @@ sidebar:
 has_children: false
 parent: Live Sessions
 pagefind: true
-last_modified_date: 2022-07-16
+last_modified_date: 2025-05-07
 redirect_from: /books/troubleshooting-with-a-live-session/chapter/windows-pe
 ---
 
@@ -23,7 +23,7 @@ Windows PE is small bootable Windows environment made for r/Techsupport. This PE
 ## Creating bootable media
 This will require a USB that is at least the size of the ISO you downloaded.
 
-import LinuxInstallMedia from '../../../_includes/embeds/create-linux-install-media.mdx';
+ import LinuxInstallMedia from '../../../_includes/embeds/create-linux-install-media.mdx';
 <LinuxInstallMedia />
 
 ## Boot the live media
