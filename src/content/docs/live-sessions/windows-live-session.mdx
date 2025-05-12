@@ -20,11 +20,30 @@ Windows PE is small bootable Windows environment made for r/Techsupport. This PE
 [Source files for rTS_WinPE](https://github.com/r-Techsupport/rTS_WinPe)
 
 ## Creating bootable media
+## Creating bootable media
 This will require a USB that is at least the size of the ISO you downloaded.
 
-import LinuxInstallMedia from '../../../_includes/embeds/create-linux-install-media.mdx';
+**All methods of creating boot media are destructive and will WIPE the USB flash drive or external disk.**
 
-<LinuxInstallMedia />
+### Windows
+
+1. Download and run [Rufus](https://rufus.ie/)
+2. Select “ISO Image” and then browse for the ISO image.
+3. Select which flash drive you want to put the installer on.
+4. Select the target system type, `GPT/UEFI` or `MBR/BIOS` 
+	* For modern systems `GPT/UEFI` is preferred. For legacy systems use `MBR/BIOS`
+5. Click “Start” and wait for it to finish.
+
+### MacOS
+
+1. Download and run [Etcher](https://www.balena.io/etcher/)
+2. Select your downloaded ISO
+3. Select your target drive
+4. Click "Flash" and wait for it to finish.
+
+### Ventoy (Windows and Linux)
+
+Follow our [Ventoy guide](/guides/ventoy) to make one flash drive that can boot multiple ISO files, this is a more advanced method but suitable for power users who may not have heard about it before.
 
 ## Boot the live media
 1. Press your `Boot override` key when you power on the machine to access your boot options.
