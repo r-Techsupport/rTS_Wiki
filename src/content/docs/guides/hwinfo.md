@@ -34,7 +34,7 @@ If you are specifically told to use HWInfo for game logging, ignore the steps pe
 
 4. Start HWiNFO and launch it in sensors only mode
 
-    ![hwinfo-1 .webp](../../../assets/hwinfo/hwinfo1.webp)
+    ![hwinfo-1.png](../../../assets/hwinfo/hwinfo1.png)
 
     **If you get a warning about an embedded EC sensor, just click "Do not monitor"**
 
