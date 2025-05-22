@@ -70,6 +70,7 @@ Possible menus to disable RAID include:
 - Settings\VMD setup menu\Enable VMD Controller => Disabled
 - Peripherals\SATA Mode Selection => AHCI
 - Peripherals\SATA Configuration\SATA Mode Selection => AHCI
+- Peripherals\Enable VMD Controller => Disabled
 
 Below are helpful images for some Gigabyte Aorus BIOS
 
