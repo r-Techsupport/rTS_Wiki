@@ -79,6 +79,7 @@ Below are helpful images for some Gigabyte Aorus BIOS
 ### HP 
 Possible menus to disable RAID include:
 - Advanced\System Options\Configure Storage Controller for RAID => Unchecked
+- Advanced\System Options\Configure Storage Controller for Intel Optane => Unchecked
 - Configuration\SATA Emulation => AHCI
 
 Below are helpful images for some HP BIOS
