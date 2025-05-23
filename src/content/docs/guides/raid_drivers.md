@@ -35,7 +35,7 @@ Possible menus to disable RAID include:
 - Advanced\System Agent (SA) Configuration\VMD setup menu\Enable VMD controller => Disabled
 
 <details>
- <summary>Below are helpful images for some Acer BIOS</summary>
+ <summary>Expand to see helpful images for some Acer BIOS</summary>
 
   ![Acer RST VMD BIOS menu](../../../assets/intel-rst/acer_rst0.webp)
   ![Acer RST VMD BIOS menu](../../../assets/intel-rst/acer_rst1.webp)
@@ -54,7 +54,7 @@ Possible menus to disable RAID include:
 > The same applies for AMD systems, except instead of searching for Intel RST, you are looking for StoreMi and RaidXpert2 instead.
 
 <details>
-  <summary>Below are helpful images for some ASUS BIOS</summary>
+  <summary>Expand to see helpful images for some ASUS BIOS</summary>
 
   ![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst0.webp)  
   ![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst1.webp)  
@@ -79,7 +79,7 @@ Possible menus to disable RAID include:
 - Peripherals\Enable VMD Controller => Disabled
 
 <details>
-  <summary>Below are helpful images for some Gigabyte Aorus BIOS</summary>
+  <summary>Expand to see helpful images for some Gigabyte Aorus BIOS</summary>
 
 ![Aorus RST VMD BIOS menu](../../../assets/intel-rst/aorus_rst0.webp)
 ![Aorus RST VMD BIOS menu](../../../assets/intel-rst/aorus_rst1.webp)
@@ -93,7 +93,7 @@ Possible menus to disable RAID include:
 - Configuration\SATA Emulation => AHCI
 
 <details>
-  <summary>Below are helpful images for some HP BIOS</summary>
+  <summary>Expand to see helpful images for some HP BIOS</summary>
 
 ![HP RST VMD BIOS menu](../../../assets/intel-rst/hp_rst0.webp)
 ![HP RST VMD BIOS menu](../../../assets/intel-rst/hp_rst1.webp)
@@ -121,7 +121,7 @@ Possible menus to disable RAID include:
 - Advanced\System Agent (SA) configuration\VMD setup menu\Enable VMD Controller => Disabled
 
 <details>
-  <summary>Below are helpful images for some MSI BIOS</summary>
+  <summary>Expand to see helpful images for some MSI BIOS</summary>
 
 ![MSI RST VMD BIOS menu](../../../assets/intel-rst/msi_rst0.webp)
 ![MSI RST VMD BIOS menu](../../../assets/intel-rst/msi_rst1.webp)
