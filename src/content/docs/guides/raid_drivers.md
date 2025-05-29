@@ -4,7 +4,7 @@ description: Resolving missing disk drives issues during Windows installation
 ---
 During the installation of Windows 10 and Windows 11 you may encounter an error message:
 
-> "We couldn't find any drives. To get a storage driver, click Load driver."
+"We couldn't find any drives. To get a storage driver, click Load driver."
 
 ![We couldnt find any drives](../../../assets/intel-rst/missing_drives.webp)
 
@@ -34,10 +34,13 @@ Option to change RAID option may be hidden. On select models it's possible to re
 Possible menus to disable RAID include:
 - Advanced\System Agent (SA) Configuration\VMD setup menu\Enable VMD controller => Disabled
 
-Below are helpful images for some Acer BIOS
+<details>
+ <summary>Expand to see helpful images for some Acer BIOS</summary>
 
-![Acer RST VMD BIOS menu](../../../assets/intel-rst/acer_rst0.webp)
-![Acer RST VMD BIOS menu](../../../assets/intel-rst/acer_rst1.webp)
+  ![Acer RST VMD BIOS menu](../../../assets/intel-rst/acer_rst0.webp)
+  ![Acer RST VMD BIOS menu](../../../assets/intel-rst/acer_rst1.webp)
+
+</details>
 
 ### Asus
 Possible menus to disable RAID include:
@@ -50,12 +53,15 @@ Possible menus to disable RAID include:
 > [!TIP] Tip
 > The same applies for AMD systems, except instead of searching for Intel RST, you are looking for StoreMi and RaidXpert2 instead.
 
-Below are helpful images for some ASUS BIOS
+<details>
+  <summary>Expand to see helpful images for some ASUS BIOS</summary>
 
-![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst0.webp)
-![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst1.webp)
-![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst2.webp)
-![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst3.webp)
+  ![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst0.webp)  
+  ![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst1.webp)  
+  ![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst2.webp)  
+  ![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst3.webp)
+
+</details>
 
 ### Dell
 Possible menus to disable RAID include:
@@ -70,21 +76,29 @@ Possible menus to disable RAID include:
 - Settings\VMD setup menu\Enable VMD Controller => Disabled
 - Peripherals\SATA Mode Selection => AHCI
 - Peripherals\SATA Configuration\SATA Mode Selection => AHCI
+- Peripherals\Enable VMD Controller => Disabled
 
-Below are helpful images for some Gigabyte Aorus BIOS
+<details>
+  <summary>Expand to see helpful images for some Gigabyte Aorus BIOS</summary>
 
 ![Aorus RST VMD BIOS menu](../../../assets/intel-rst/aorus_rst0.webp)
 ![Aorus RST VMD BIOS menu](../../../assets/intel-rst/aorus_rst1.webp)
 
+</details>
+
 ### HP 
 Possible menus to disable RAID include:
 - Advanced\System Options\Configure Storage Controller for RAID => Unchecked
+- Advanced\System Options\Configure Storage Controller for Intel Optane => Unchecked
 - Configuration\SATA Emulation => AHCI
 
-Below are helpful images for some HP BIOS
+<details>
+  <summary>Expand to see helpful images for some HP BIOS</summary>
 
 ![HP RST VMD BIOS menu](../../../assets/intel-rst/hp_rst0.webp)
 ![HP RST VMD BIOS menu](../../../assets/intel-rst/hp_rst1.webp)
+
+</details>
 
 ### Lenovo
 Possible menus to disable RAID include:
@@ -106,13 +120,15 @@ Possible menus to disable RAID include:
 - Advanced\Enable VMD Controller => Disabled (If grayed out, edit setting below)
 - Advanced\System Agent (SA) configuration\VMD setup menu\Enable VMD Controller => Disabled
 
-Below are helpful images for some MSI BIOS
+<details>
+  <summary>Expand to see helpful images for some MSI BIOS</summary>
 
 ![MSI RST VMD BIOS menu](../../../assets/intel-rst/msi_rst0.webp)
 ![MSI RST VMD BIOS menu](../../../assets/intel-rst/msi_rst1.webp)
 ![MSI RST VMD BIOS menu](../../../assets/intel-rst/msi_rst2.webp)
 ![MSI RST VMD BIOS menu](../../../assets/intel-rst/msi_rst3.webp)
 
+</details>
 
 ### Razer
 Possible menus to disable RAID include:
