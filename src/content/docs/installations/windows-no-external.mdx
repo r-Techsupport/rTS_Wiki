@@ -1,0 +1,139 @@
+---
+title: Installing Windows without external drives
+sidebar:
+    hidden: false
+    order: 2
+has_children: false
+parent: OS Install Guides
+pagefind: true
+last_modified_date: 2025-05-15
+---
+
+> [!CAUTION] Caution  
+>
+> This guide will help you install or reinstall Windows without needing a USB flash drive or DVD. It will involve deleting your primary Windows partition during installation. Back up any important data before continuing.
+
+## Prerequisites
+
+* A Windows ISO file downloaded from Microsoft such as [Windows 10](https://www.microsoft.com/software-download/windows10) or [Windows 11](https://www.microsoft.com/software-download/windows11).
+* A currently working Windows installation (even temporary).
+* At least **10 GB of free space** on your hard drive to create a temporary install partition.
+* Familiarity with Disk Management and Command Prompt/Terminal is a plus.
+
+---
+
+## Preparing the install partition
+
+1. Press your Windows+R and type diskmgmt.msc, then press enter.
+2. Right-click your main partition (usually C:) and select **Shrink Volume**.
+
+    ![1.png](../../../assets/windows-no-external/1.png)
+
+3. Shrink the volume by at least **10,000 MB** (~10 GB) to create enough space for the installer.
+
+    ![2.png](../../../assets/windows-no-external/2.png)
+
+4. After shrinking, a new block of unallocated space will appear. Right-click it, select **New Simple Volume**, format it as **NTFS**, and label it `INSTALL`.
+
+    ![3.png](../../../assets/windows-no-external/3.png)
+
+---
+
+## Mounting and extracting the Windows ISO
+
+1. Double-click the downloaded ISO to mount it (Windows mounts it as a virtual DVD).
+2. Copy **all files** from the mounted ISO to the new `INSTALL` partition.
+
+    > [!TIP] Tip  
+    >
+    > You can press `Ctrl + A` in the mounted ISO window and then `Ctrl + C`, then paste to the INSTALL drive.
+
+---
+
+## Creating a boot option for the installer
+
+1. Open **Command Prompt as Administrator**.
+2. Use `bcdboot` to ensure boot files are in place (optional for some systems):
+
+    ```cmd
+    bcdboot D:\Windows /s C: /f ALL
+    ```
+
+    Replace `D:` with the letter of your `INSTALL` partition, and `C:` with your boot drive if different.
+
+3. Create a new boot entry to load the Windows installer:
+
+    ```cmd
+    bcdedit /create /d "Windows Installer" /application bootsector
+    ```
+
+    You'll receive a GUID like `{9dea862c-5cdd-4e70-acc1-f32b344d4795}` — note it.
+
+4. Point the new boot entry to the INSTALL partition:
+
+    ```cmd
+    bcdedit /set {GUID} device partition=D:
+    bcdedit /set {GUID} path \bootmgr
+    bcdedit /displayorder {GUID} /addlast
+    bcdedit /timeout 10
+    ```
+
+    Replace `{GUID}` with the one you were given, and `D:` with the INSTALL partition's drive letter.
+
+---
+
+## Reboot into the installer
+
+1. Reboot your system.
+2. You should see a new boot option called **Windows Installer**.
+3. Select it to boot into Windows Setup.
+
+
+---
+
+## Installing Windows
+
+> [!CAUTION] Caution
+>
+> When you reach the partition selection screen, be sure **NOT** to delete the `INSTALL` partition until **after** the rest of Windows is installed. This will be the partition that shows up as 9.77GB in the list.
+
+1. Navigate the initial menus until you get to the screen asking which type of installation you want.
+2. Click "Custom: Install Windows only (advanced)"
+
+     ![Windows 11-2021-10-05-15-09-05.png](../../../assets/install-11/windows-11-2021-10-05-15-09-05.webp)
+
+
+3. Delete all partitions **except** the INSTALL partition on the target drive.
+4. Select the unallocated space, click **Next**, and let Windows install.
+
+> [!WARNING] Warning
+>
+> Ensure that you only have partitions with all the same drive nummber in this window before deleting. If you see any drive other than "Drive 0" as seen in our images, power down and unplug the extra drives that you don't want to install windows on.
+
+    ![Windows 11-2021-10-05-15-20-37.png](../../../assets/install-11/windows-11-2021-10-05-15-20-37.webp)
+
+(note that in the generic picture above, there is no 'Install' partition)
+
+    ![Windows 11-2021-10-05-15-11-30.png](../../../assets/install-11/windows-11-2021-10-05-15-11-30.webp)
+
+
+---
+
+## Final steps
+
+1. After installation completes and you land on the desktop, press `Win + R`, type `msconfig`, and go to the **Boot** tab.
+2. Delete the "Windows Installer" entry.
+
+    ![4.png](../../../assets/windows-no-external/4.png)
+
+3. Optionally, delete the `INSTALL` partition via Disk Management and extend your main partition to fill the drive.
+
+    ![5.png](../../../assets/windows-no-external/5.png)
+    ![6.png](../../../assets/windows-no-external/6.png)
+    ![7.png](../../../assets/windows-no-external/7.png)
+
+---
+
+> [!TIP] Congratulations!
+>
+> You've now installed Windows without external media, proving a multitude of otherwise helpful technicians wrong. This method can be reused any time you need to reset your PC without extra tools or drives, so long as you can still boot into Windows. Periodically updating the installation contents is advisable to avoid lengthy update sessions if you decide to use this as a reset tool.
