@@ -96,6 +96,7 @@ See [here](/recommendations/av) for our stance on AV Tools. It doesn't have to b
 | McAfee |
 | Norton |
 | Webroot |
+| 360 |
 
 ## Precompiled Windows PE
 Various PE distributions are illegal for various reasons such as distributing pirated/TOS breaking applications or requiring de facto payment prior to download.
@@ -105,9 +106,22 @@ Various PE distributions are illegal for various reasons such as distributing pi
 | Hirens |
 | Gandalf |
 
+## Third-party Keyboard Input Methods
+the native keyboard input methods of Windows 10 and later provide a comprehensive, secure, and user-friendly typing experience. Thied-party apps is not recommended anymore, some of apps also considered PUPs/Malware. 
+Most of Third-party Keyboard Input Methods apps are blacklisted, it doesn't have to be listed here. Except the native keyboard input methods in Windows 11/10, and Gboard in Android.
+
+| Name | Notes |
+| --- | --- | 
+| Sogou | Simplified Chinese |
+| Google Pinyin | Simplified Chinese, Not be confused with Gboard |
+| QQ | Simplified Chinese |
+| Baidu | Simplified Chinese |
+
 ## Vendors
 This list of vendors offer nothing to the community or make multiple products that are considered PUPs/Malware.
 
 | Name | Notes |
 | --- | --- |
+| Baidu | All products |
+| QiHu 360 | All products |
 | IOBit | All products |
