@@ -60,7 +60,8 @@ last_modified_date: 2025-05-15
     ```cmd
     bcdedit /create /d "Windows Installer" /application osloader
     ```
-    You'll receive a GUID like {9dea862c-5cdd-4e70-acc1-f32b344d4795}. Copy it for the next steps.
+
+    You'll receive a GUID like `{9dea862c-5cdd-4e70-acc1-f32b344d4795}`. Copy it for the next steps.
    
 
 3. Point the new boot entry to the UEFI setup loader from the ISO (located in \efi\boot\bootx64.efi):
@@ -72,7 +73,7 @@ last_modified_date: 2025-05-15
     bcdedit /displayorder {GUID} /addlast
     ```
 
-    Replace {GUID} with the one returned in step 2, and D: with your INSTALL partition’s actual drive letter.
+    Replace `{GUID}` with the one returned in step 2, and D: with your INSTALL partition’s actual drive letter.
 
 
 ## Reboot into the installer
