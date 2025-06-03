@@ -60,6 +60,8 @@ last_modified_date: 2025-05-15
 
 ## Method 2
 
+* After downloading the ISO from Microsoft Website:
+
 1. Double-click the downloaded ISO to mount it.
 
 2. Copy **all files** from the mounted ISO to the new `INSTALL` partition **except** a folder named `sources` .
@@ -84,7 +86,7 @@ last_modified_date: 2025-05-15
 
 > [!NOTE] Information
 >
-> You do this by entering your system BIOS to change the Boot Order, if you don't know the BIOS key, you can Google your motherboard manufacturer for the correspond key.
+> You do this by entering your system BIOS to change the Boot Order. Hold Shift key and click Restart to open WinRE. Click `Troubleshoot` then `UEFI Firmware Settings`, this will redirect you to BIOS.
 2. You should see a new boot option called **UEFI OS**.
 3. Select it to boot into Windows Setup.
 
@@ -119,7 +121,7 @@ last_modified_date: 2025-05-15
 
 ---
 
-## Final step
+## Final step (optional)
 
 1. After installation completes and you land on the desktop, press `Win + R`, type `diskmgmt.msc`, delete the `INSTALL` partition via Disk Management and extend your main partition to fill the drive.
 
