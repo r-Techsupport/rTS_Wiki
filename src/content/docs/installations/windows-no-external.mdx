@@ -18,7 +18,13 @@ last_modified_date: 2025-05-15
 * A Windows ISO file downloaded from Microsoft such as [Windows 10](https://www.microsoft.com/software-download/windows10) or [Windows 11](https://www.microsoft.com/software-download/windows11).
 * A currently working Windows installation (even temporary).
 * At least **10 GB of free space** on your hard drive to create a temporary install partition.
-* Familiarity with Disk Management and Command Prompt/Terminal is a plus.
+
+---
+
+> [!IMPORTANT] Important
+>
+> if you download the ISO using Microsoft Media Creation Tool (MCT) follow Method 1, if you download the ISO directly from Microsoft Website follow Method 2.
+
 
 ---
 
@@ -27,21 +33,23 @@ last_modified_date: 2025-05-15
 1. Press your Windows+R and type diskmgmt.msc, then press enter.
 2. Right-click your main partition (usually C:) and select **Shrink Volume**.
 
-    ![1.png](../../../assets/windows-no-external/1.png)
+    ![1.png](../../../assets/windows-no-external/8.png)
 
 3. Shrink the volume by at least **10,000 MB** (~10 GB) to create enough space for the installer.
 
-    ![2.png](../../../assets/windows-no-external/2.png)
+    ![2.png](../../../assets/windows-no-external/9.png)
 
-4. After shrinking, a new block of unallocated space will appear. Right-click it, select **New Simple Volume**, format it as **NTFS**, and label it `INSTALL`.
+4. After shrinking, a new block of unallocated space will appear. Right-click it, select **New Simple Volume**, format it as **FAT32**, and label it `INSTALL`.
 
-    ![3.png](../../../assets/windows-no-external/3.png)
+    ![3.png](../../../assets/windows-no-external/10.png)
 
 ---
 
-## Mounting and extracting the Windows ISO
+## Method 1
 
-1. Double-click the downloaded ISO to mount it (Windows mounts it as a virtual DVD).
+* After downloading the ISO using Media Creation Tool:
+
+1. Double-click the downloaded ISO to mount it.
 2. Copy **all files** from the mounted ISO to the new `INSTALL` partition.
 
     > [!TIP] Tip  
@@ -50,36 +58,36 @@ last_modified_date: 2025-05-15
 
 ---
 
-## Creating a boot option for the installer
+## Method 2
 
-1. Open **Command Prompt as Administrator**.
+* After downloading the ISO from Microsoft Website:
 
+1. Double-click the downloaded ISO to mount it.
 
-2. Create a new BCD boot entry for UEFI Windows Setup:
+2. Copy **all files** from the mounted ISO to the new `INSTALL` partition **except** a folder named `sources` .
 
-    ```cmd
-    bcdedit /create /d "Windows Installer" /application osloader
-    ```
+3. Copy the folder named `sources` from the mounted ISO to the C partition root. 
 
-    You'll receive a GUID like `{9dea862c-5cdd-4e70-acc1-f32b344d4795}`. Copy it for the next steps.
-   
+4. Open **Command Prompt as Administrator** then run the following command:
 
-3. Point the new boot entry to the UEFI setup loader from the ISO (located in \efi\boot\bootx64.efi):
+    ```Dism /Split-Image /ImageFile:C:\sources\install.wim /SWMFile:C:\sources\install.swm /FileSize:4700```
 
-    ```cmd
-    bcdedit /set {GUID} device partition=D:
-    bcdedit /set {GUID} path \efi\boot\bootx64.efi
-    bcdedit /set {GUID} description "INSTALL"
-    bcdedit /displayorder {GUID} /addlast
-    ```
+5. After splitting the Windows Image, delete it:
+    
+    ```del C:\sources\install.wim```
 
-    Replace `{GUID}` with the one returned in step 2, and D: with your INSTALL partition’s actual drive letter.
+6. Copy the file named `sources` from C partition to the new `INSTALL` partition then Shutdown your PC. 
 
+---
 
 ## Reboot into the installer
 
-1. Reboot your system.
-2. You should see a new boot option called **Windows Installer**.
+1. Boot into the new `INSTALL` partition
+
+> [!NOTE] Information
+>
+> You do this by entering your system BIOS to change the Boot Order. Hold Shift key and click Restart to open WinRE. Click `Troubleshoot` then `UEFI Firmware Settings`, this will redirect you to BIOS.
+2. You should see a new boot option called **UEFI OS**.
 3. Select it to boot into Windows Setup.
 
 
@@ -113,21 +121,15 @@ last_modified_date: 2025-05-15
 
 ---
 
-## Final steps
+## Final step (optional)
 
-1. After installation completes and you land on the desktop, press `Win + R`, type `msconfig`, and go to the **Boot** tab.
-2. Delete the "Windows Installer" entry.
+1. After installation completes and you land on the desktop, press `Win + R`, type `diskmgmt.msc`, delete the `INSTALL` partition via Disk Management and extend your main partition to fill the drive.
 
-    ![4.png](../../../assets/windows-no-external/4.png)
-
-3. Optionally, delete the `INSTALL` partition via Disk Management and extend your main partition to fill the drive.
-
-    ![5.png](../../../assets/windows-no-external/5.png)
-    ![6.png](../../../assets/windows-no-external/6.png)
-    ![7.png](../../../assets/windows-no-external/7.png)
+    ![6.png](../../../assets/windows-no-external/11.png)
+    ![7.png](../../../assets/windows-no-external/12.png)
 
 ---
 
 > [!TIP] Congratulations!
 >
-> You've now installed Windows without external media. This method can be reused any time you need to reset your PC without extra tools or drives, so long as you can still boot into Windows. Periodically updating the installation contents is advisable to avoid lengthy update sessions if you decide to use this as a reset tool.
+> You’ve now installed Windows without external media. This method can be reused any time you need to reset your PC without extra tools or drives, so long as you can still boot into Windows. Periodically updating the installation contents is advisable to avoid lengthy update sessions if you decide to use this as a reset tool.
