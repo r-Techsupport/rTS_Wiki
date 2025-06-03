@@ -53,34 +53,27 @@ last_modified_date: 2025-05-15
 ## Creating a boot option for the installer
 
 1. Open **Command Prompt as Administrator**.
-2. Use `bcdboot` to ensure boot files are in place (optional for some systems):
+
+
+2. Create a new BCD boot entry for UEFI Windows Setup:
 
     ```cmd
-    bcdboot D:\Windows /s C: /f ALL
+    bcdedit /create /d "Windows Installer" /application osloader
     ```
+    You'll receive a GUID like {9dea862c-5cdd-4e70-acc1-f32b344d4795}. Copy it for the next steps.
+   
 
-    Replace `D:` with the letter of your `INSTALL` partition, and `C:` with your boot drive if different.
-
-3. Create a new boot entry to load the Windows installer:
-
-    ```cmd
-    bcdedit /create /d "Windows Installer" /application bootsector
-    ```
-
-    You'll receive a GUID like `{9dea862c-5cdd-4e70-acc1-f32b344d4795}` — note it.
-
-4. Point the new boot entry to the INSTALL partition:
+3. Point the new boot entry to the UEFI setup loader from the ISO (located in \efi\boot\bootx64.efi):
 
     ```cmd
     bcdedit /set {GUID} device partition=D:
-    bcdedit /set {GUID} path \bootmgr
+    bcdedit /set {GUID} path \efi\boot\bootx64.efi
+    bcdedit /set {GUID} description "INSTALL"
     bcdedit /displayorder {GUID} /addlast
-    bcdedit /timeout 10
     ```
 
-    Replace `{GUID}` with the one you were given, and `D:` with the INSTALL partition's drive letter.
+    Replace {GUID} with the one returned in step 2, and D: with your INSTALL partition’s actual drive letter.
 
----
 
 ## Reboot into the installer
 
