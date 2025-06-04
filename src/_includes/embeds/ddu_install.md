@@ -9,7 +9,7 @@
 3. Double-click on the .exe in the newly extracted folder, then click "Extract" in the dialog.
 A new folder containing `Display Driver Uninstaller.exe` will be created.
 
-    ![dduextract.png](../../assets/factoids/dduextract.webp)
+    ![dduextract2.png](../../assets/factoids/dduextract2.png)
 
     > [!WARNING] Warning
     > Do _not_ move, modify, or delete any files associated with DDU
