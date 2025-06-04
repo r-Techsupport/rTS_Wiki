@@ -19,6 +19,6 @@ A new folder containing `Display Driver Uninstaller.exe` will be created.
 5. Open `Display Driver Uninstaller.exe` inside the newly created "DDU v18" subfolder from Step 3.
 
     > [!WARNING] Warning
-    > Some applications are inaccessible from the desktop. So if you get an "File Inaccessible" in Safe mode, try moving the extracted folder in Normal boot to a more direct folder, for example directly in the C drive.
+    > Some applications are inaccessible from the downloads folder. So if you get an "File Inaccessible" error message in Safe mode, try moving the extracted folder in Normal boot to a more direct folder like directly in the C drive.
 
     ![dduextract_Cdrive.png](../../assets/factoids/dduextract_Cdrive.webp)
