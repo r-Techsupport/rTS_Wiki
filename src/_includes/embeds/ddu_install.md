@@ -16,7 +16,7 @@ A new folder containing `Display Driver Uninstaller.exe` will be created.
 
 4. [**Boot in safe mode**](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode) 
 
-5. Open `Display Driver Uninstaller.exe` inside the newly created "DDU v18" subfolder from Step 3.
+5. Open `Display Driver Uninstaller.exe` inside the newly created "DDU vX.X" subfolder from Step 3.
 
     > [!WARNING] Warning
     > Some applications are inaccessible from the downloads folder. So if you get an "File Inaccessible" error message in Safe mode, try moving the extracted folder in Normal boot to a more direct folder like directly in the C drive.
