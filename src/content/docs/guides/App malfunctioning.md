@@ -1,5 +1,5 @@
 ---
-title: Phone's App malfunctioning
+title: Phone's App Malfunctioning
 description: This guide walk you through some simple steps you can try to fix a malfunction phone app!
 sidebar:
     hidden: false
