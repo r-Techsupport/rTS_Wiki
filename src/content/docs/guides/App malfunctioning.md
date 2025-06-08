@@ -61,7 +61,7 @@ This resets the app to how it was when you first installed it. **It removes all 
 
 - Find and select the app then tap `Clear Data` / Depends on the phone you may need to tap `Storage` then `Clear Data`
 
-### 5. Reinstall the App:
+### 5. Reinstall the App (*Android & iOS*):
 If nothing else works, try uninstalling and reinstalling the app.
 
 - Tap and hold the app icon, select `Uninstall`
