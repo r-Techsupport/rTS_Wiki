@@ -1,5 +1,5 @@
 ---
-title: Phone App malfunctioning
+title: Phone's App malfunctioning
 description:
 sidebar:
     hidden: false
