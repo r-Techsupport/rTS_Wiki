@@ -1,8 +1,14 @@
 ---
-title: App malfunctioning
-parent: General Guides
-search_exclude: false
-last_modified_date: 2025-6-8
+title: Phone App malfunctioning
+description:
+sidebar:
+    hidden: false
+pagefind: true
+tableOfContents: true
+template: doc
+prev: false
+next: false
+draft: false
 ---
 
 If your app is lagging, freezing, crashing, or not opening at all, here are some simple steps you can try to fix it. This guide explains what each step does and how to do it, for both Android and iOS devices.
