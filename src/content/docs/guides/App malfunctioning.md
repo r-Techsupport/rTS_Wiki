@@ -1,6 +1,6 @@
 ---
-title: Phone's App Malfunctioning
-description: This guide walk you through some simple steps you can try to fix a malfunction phone app!
+title: Phone Apps Malfunctioning
+description: This guide walks you through some simple steps you can try to fix malfunctioning phone apps!
 sidebar:
     hidden: false
 pagefind: true
