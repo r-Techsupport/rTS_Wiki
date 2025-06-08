@@ -32,7 +32,7 @@ Once updated, open the app again to check if the issue is resolved.
 
 If your device is running low on storage, it can slow down performance or cause apps to malfunction. Try freeing up space by deleting unnecessary files or apps. Aim to leave 20% of your storage free for optimal performance.
 
-### 3. Force Stop the App (*Android only*):
+### 3. Force Stop the App (*Android*):
 Sometimes an app continues running in the background even if you think you've closed it. If it's stuck or frozen, force stopping the app will shut it down completely and stop all background processes.
 
 - Go to Settings and tap `Apps` or `Apps & notifications`
@@ -58,7 +58,7 @@ To clear cache on iOS, you can offload the app instead. This deletes the app but
 
 - Tap on `Reinstall App`
 
-### 5. Clear App Data (*Android only*):
+### 5. Clear App Data (*Android*):
 This resets the app to how it was when you first installed it. **It removes all saved settings, preferences, accounts, and any other stored information** — which can be helpful if corrupted data is causing issues.
 
 - Go to Settings and tap `Apps` or `Apps & notifications`
