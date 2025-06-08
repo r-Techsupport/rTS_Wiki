@@ -1,6 +1,6 @@
 ---
 title: Phone's App malfunctioning
-description: some simple steps you can try to fix a malfunctioning phone app!
+description: some simple steps you can try to fix a malfunction phone app!
 sidebar:
     hidden: false
 pagefind: true
