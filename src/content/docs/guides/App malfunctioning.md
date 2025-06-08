@@ -17,43 +17,43 @@ If your app is lagging, freezing, crashing, or not opening at all, here are some
 
 ---
 
-> ### 1. Check for App Updates:
+### 1. Check for App Updates:
 An outdated version of the app might be causing bugs or performance problems. Updates often include bug fixes, performance improvements, and security patches.
 
->> - Open the `Google Play Store` / `App Store` and Search for the app
+- Open the `Google Play Store` / `App Store` and Search for the app
 
->> - If you see an Update button, tap it
+- If you see an Update button, tap it
 
->Once updated, open the app again to check if the issue is resolved
+Once updated, open the app again to check if the issue is resolved
 
-> ### 2. Force Stop the App (*Android only*):
+### 2. Force Stop the App (*Android only*):
 Sometimes an app continues running in the background even if you think you've closed it. If it's stuck or frozen, force stopping the app will shut it down completely and stop all background processes.
 
->> - Go to Settings and tap `Apps` or `Apps & notifications`
+- Go to Settings and tap `Apps` or `Apps & notifications`
 
->> - Find and select the app then tap `Force Stop`
+- Find and select the app then tap `Force Stop`
 
-> ### 3. Clear Cache (*Android only*):
+### 3. Clear Cache (*Android only*):
 Over time, apps store temporary files (called cache) to help them load faster. However, this cached data can become outdated or corrupted, which may cause the app to crash, slow down, or behave unpredictably.
 
->> - Go to Settings and tap `Apps` or `Apps & notifications`
+- Go to Settings and tap `Apps` or `Apps & notifications`
 
->> - Find and select the app then tap `Clear Cache` / Depends on the phone you may need to tap `Storage` then `Clear Cache`
+- Find and select the app then tap `Clear Cache` / Depends on the phone you may need to tap `Storage` then `Clear Cache`
 
 
-> ### 4. Clear App Data (*Android only*):
+### 4. Clear App Data (*Android only*):
 This resets the app to how it was when you first installed it. **It removes all saved settings, preferences, accounts, and any other stored information** — which can be helpful if corrupted data is causing issues.
 
->> - Go to Settings and tap `Apps` or `Apps & notifications`
+- Go to Settings and tap `Apps` or `Apps & notifications`
 
->> - Find and select the app then tap `Clear Data` / Depends on the phone you may need to tap `Storage` then `Clear Data`
+- Find and select the app then tap `Clear Data` / Depends on the phone you may need to tap `Storage` then `Clear Data`
 
-> ### 5. Reinstall the App:
+### 5. Reinstall the App:
 If nothing else works, try uninstalling and reinstalling the app.
 
->> - Tap and hold the app icon, select `Uninstall`
+- Tap and hold the app icon, select `Uninstall`
 
->> - Go to the `Google Play Store` / `App Store` and reinstall the app
+- Go to the `Google Play Store` / `App Store` and reinstall the app
 
 ---
 
