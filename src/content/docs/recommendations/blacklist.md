@@ -7,7 +7,7 @@ has_children: false
 parent: Software We Recommend
 description: This serves as a master list of banned software that we do not permit in the community.
 pagefind: true
-last_modified_date: 2024-08-18
+last_modified_date: 2025-06-18
 redirect_from: /books/software-we-recommend/page/blacklist
 ---
 ## EOL OS 
@@ -40,6 +40,20 @@ These break machines and are black boxes for troubleshooting. If you have an iss
 | Debloat-Windows-10 | W4RH4WK |
 | Tron Script | bmrf |
 
+## Browsers
+
+Any browsers listed below are blacklisted. Apart from the main 3: Chrome (including Edge, Opera, Vivaldi), Firefox and Safari, any other browser should be used with extreme caution. 
+
+| Name | Notes |
+| ---  | --- |
+| AVG Secure Browser | 
+| Avast Secure Browser |
+| UC Browser |
+| Baidu Browser |
+| Torch Browser |
+| Yandex | Uses its own DNS |
+
+
 ## Utilities
 | Name | Notes |
 | --- | --- |
@@ -71,6 +85,21 @@ All activators are blacklisted regardless of trust; it does not have to be liste
 | Name | Notes |
 | ---- | ----- |
 | KMSPico | Many malicious copies of this software exist. |
+| AAct | Bundled with many malicious Office installers | 
+
+## Freeware/Shareware sites
+These websites are notorious for installing malware and PUPs on your device. **You should always download software directly from the manufacturer or provider**.
+
+We never recommend freeware sites. They are all blacklisted even if they're not present on this list.
+
+| Name | Notes |
+| ---- | ----- |
+| Softonic (*.softonic.com) | 
+| CNET (*.cnet.com) | News articles present on its subdomains are most of the time bogus and fake |
+| FileHippo (*.filehippo.com) | 
+| Filehorse (*.filehorse.com) |
+| Softpedia (*.softpedia.com) |
+| Software informer (*.software.informer.com) | News articles present on its subdomains are most of the time bogus and fake |
 
 ## System cleaners/optimizers
 Cleaners have a long record of use in the Windows community but often times are abused, leading to broken systems and many wasted writes on an SSD. 
@@ -104,7 +133,7 @@ See [here](/recommendations/av) for our stance on AV Tools. It doesn't have to b
 | AVG |
 | Comodo |
 | Kaspersky |
-| McAfee |
+| McAfee | Bundled with malicious software and is a common topic for malicious websites | 
 | Norton | 360 versions are known cryptominers | 
 | Webroot |
 
