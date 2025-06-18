@@ -88,6 +88,9 @@ All activators are blacklisted regardless of trust; it does not have to be liste
 | AAct | Bundled with many malicious Office installers | 
 
 ## Freeware/Shareware sites
+
+This isn't software but the software on these website is almost always malicious. Any software downloaded from these websites are blacklisted.
+
 These websites are notorious for installing malware and PUPs on your device. **You should always download software directly from the manufacturer or provider**.
 
 We never recommend freeware sites. They are all blacklisted even if they're not present on this list.
