@@ -9,14 +9,25 @@ pagefind: true
 last_modified_date: 2025-6-29
 ---
 
-To enter safe mode, follow below steps.
+Windows has a troubleshooting mode called safe mode, where Windows will load only critical drivers and services necessary for proper function. It is especially useful when issues exist in normal mode or when uninstalling drivers used by Windows.
+All non-critical drivers and services will not be loaded. For example for graphics Windows will use a generic driver instead of one provided by vendor like Nvidia, AMD, Intel, etc. Services for gaming platforms, anti-cheats, peripheral controls, audio software wont run unless explicitly started.
+
+Windows in safe mode will have a limited resolution, black background, and will display `Safe mode` text in corners as well as build version on top of desktop.
+
+![Safe mode desktop](../../../assets/safe-mode-assets/safemode-4.png)
+
+To boot Windows into safe mode, follow below steps.
 
 ## Windows is bootable
+
+Following methods will set boot into safe mode from a working Windows system. Start with a first method and, if a method fails, move to next one.
 
    <details>
       <summary>Method 1: Using Windows Recovery Environment</summary>
 
     1. Open Start menu, press and hold Shift key, and click Restart.
+![Start menu restart with shift](../../../assets/safe-mode-assets/safemode-1.png)
+
     2. When Windows Recovery Environment shows with Choose an option, click Troubleshoot, then Advanced options, then Start-up Settings, then Restart. PC will reboot.
     3. After reboot Windows will present boot options. Press 5 on keyboard to start Windows in safe mode with networking.
 
@@ -32,6 +43,8 @@ To enter safe mode, follow below steps.
 
     1. Open Start menu, type msconfig and press Enter. A System Configuration window will open.
     2. Select Boot tab, check Safe boot and select Network. Click Apply and OK. Click Restart on following System Configuration dialog window. PC will reboot.
+![msconfig safemode](../../../assets/safe-mode-assets/safemode-2.png)
+
     3. After reboot Windows will boot into safe mode.
     4. Once all required tasks in safe mode are done, follow Exit safe mode steps below.
    </details>
@@ -58,29 +71,36 @@ bcdedit /set {current} safemode Network
 
 ## Windows fails to boot
 
+Following methods will set boot into safe mode outside of Windows system. Start with a first method and, if a method fails, move to next one.
+
    <details>
       <summary>Method 1: Trigger Windows Recovery Environment during boot</summary>
 
 Windows will automatically open recovery environment when it fails to boot 3 times. If Windows crashes during boot, skip to step 4. Otherwise, follow steps below:
-    1. Start PC and wait for Windows boot animation to show (spinning circle).
-    2. Use any of the following methods.
-     - Press reset button on PC case.
-     - Press power button for 5 seconds.
-     - Switch off or unplug power from power supply. Power on the power supply.
-     - If PC is a laptop and has removable battery, remove it. Plug battery back in.
-    3. Repeat step 1 until Windows shows Please wait or Preparing automatic repair during boot.
-    4. Wait until blue screen with Recovery or Automatic repair shows.
-    5. Click See advanced repair options, then Troubleshoot, then Advanced options, then Start-up Settings, then Restart. PC will reboot.
-    6. After reboot Windows will present boot options. Press 5 on keyboard to start Windows in safe mode with networking..
+
+     1. Start PC and wait for Windows boot animation to show (spinning circle).
+     2. Use any of the following methods.
+
+         - Press reset button on PC case.
+         - Press power button for 5 seconds.
+         - Switch off or unplug power from power supply. Power on the power supply.
+         - If PC is a laptop and has removable battery, remove it. Plug battery back in.
+
+     3. Repeat step 1 until Windows shows Please wait or Preparing automatic repair during boot.
+     4. Wait until blue screen with Recovery or Automatic repair shows.
+     5. Click See advanced repair options, then Troubleshoot, then Advanced options, then Start-up Settings, then Restart. PC will reboot.
+     6. After reboot Windows will present boot options. Press 5 on keyboard to start Windows in safe mode with networking..
 
    </details>
    <details>
       <summary>Method 2: Using bootable USB with Windows setup</summary>
 
 You can use a bootable USB with a Windows setup to run Windows in safe mode. Follow the Windows installation guide until you see Select setup option then follow steps below:
-    1. Select Repair my PC and click Next. Select keyboard layout when prompted.
-    2. Click Troubleshoot, then Advanced options, then Command Prompt.
-    3. Type the following command and press Enter. Command will confirm successful operation once ran.
+     1. Select Repair my PC and click Next. Select keyboard layout when prompted.
+![Setup repair PC](../../../assets/safe-mode-assets/safemode-3.png)
+
+     2. Click Troubleshoot, then Advanced options, then Command Prompt.
+     3. Type the following command and press Enter. Command will confirm successful operation once ran.
 ```
 bcdedit /set {default} safeboot Network
 ```
@@ -124,3 +144,8 @@ bcdedit /deletevalue {current} safeboot
     4. After reboot Windows will boot into safe mode.
     5. Once all required tasks in safe mode are done, follow Exit safe mode steps below.
 </details>
+
+## External guides
+
+- [Microsoft startup settings](https://support.microsoft.com/en-us/windows/windows-startup-settings-1af6ec8c-4d4a-4b23-adb7-e76eef0b847f)
+- [Dell guide](https://www.dell.com/support/kbdoc/en-us/000124344/how-to-boot-to-safe-mode-in-windows-10) (works also for non-Dell PCs)
