@@ -1,5 +1,6 @@
 ---
 title: Boot Windows into safe mode
+description: Guide on how to boot Windows into safe mode for troubleshooting
 sidebar:
     hidden: false
 has_children: false
@@ -24,7 +25,10 @@ To enter safe mode, follow below steps.
       <summary>Method 2: Using msconfig</summary>
 
  > [!CAUTION]
- > Follow the steps exactly as stated unless stated by otherwise a staff member. Changing other settings in msconfig may cause Windows to fail to boot.
+ > Follow the steps exactly as stated unless guided by a staff member. Changing other settings in msconfig may cause Windows to fail to boot.
+
+ > [!NOTE]
+ > After tasks in safe mode are done, make sure to follow exit safe mode steps below. Otherwise Windows will boot back into safe mode after rebooting.
 
     1. Open Start menu, type msconfig and press Enter. A System Configuration window will open.
     2. Select Boot tab, check Safe boot and select Network. Click Apply and OK. Click Restart on following System Configuration dialog window. PC will reboot.
@@ -35,8 +39,11 @@ To enter safe mode, follow below steps.
       <summary>Method 3: Using command prompt</summary>
 
  > [!CAUTION]
- > Follow the steps exactly as stated unless stated otherwise by a staff member.
+ > Follow the steps exactly as stated unless guided by a staff member.
  > Double-check typed commands with the guide. A mistype may cause Windows to fail to boot.
+
+ > [!NOTE]
+ > After tasks in safe mode are done, make sure to follow exit safe mode steps below. Otherwise Windows will boot back into safe mode after rebooting.
 
     1. Open Start menu, type cmd, confirm that Command Prompt is selected and press at the same time Control, Shift and Enter. Alternatively click Run as administrator. Confirm opening the app when prompted.
     2. Type the following command and press Enter. Command will confirm successful operation once ran.
@@ -95,9 +102,6 @@ To disable safe mode, use one of the following methods below.
  > [!CAUTION]
  > Follow the steps exactly as stated unless stated by otherwise a staff member. Changing other settings in msconfig may cause Windows to fail to boot.
 
- > [!NOTE]
- > Make sure to follow exit safe mode steps below. Otherwise Windows will boot back into safe mode after rebooting.
-
     1. Open Start menu, type msconfig and press Enter. A System Configuration window will open.
     2. Select Boot tab, uncheck Safe boot, then click Apply and OK. Click Restart on following System Configuration dialog window. PC will reboot.
     3. After reboot Windows will boot into safe mode.
@@ -110,9 +114,6 @@ To disable safe mode, use one of the following methods below.
  > [!CAUTION]
  > Follow the steps exactly as stated unless stated otherwise by a staff member.
  > Double-check typed commands with the guide. A mistype may cause Windows to fail to boot.
-
- > [!NOTE]
- > Make sure to follow exit safe mode steps below. Otherwise Windows will boot back into safe mode after rebooting.
 
     1. Open Start menu, type cmd, confirm that Command Prompt is selected and press at the same time Control, Shift and Enter. Alternatively click Run as administrator. Confirm opening the app when prompted.
     2. Type the following command and press Enter. Command will confirm successful operation once ran.
