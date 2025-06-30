@@ -6,7 +6,7 @@ sidebar:
 has_children: false
 parent: Factoids
 pagefind: true
-last_modified_date: 2025-6-29
+last_modified_date: 2025-6-30
 ---
 
 Windows has a troubleshooting mode called safe mode, where Windows will load only critical drivers and services necessary for proper function. It is especially useful when issues exist in normal mode or when uninstalling drivers used by Windows.
@@ -15,6 +15,9 @@ All non-critical drivers and services will not be loaded. For example for graphi
 Windows in safe mode will have a limited resolution, black background, and will display `Safe mode` text in corners as well as build version on top of desktop.
 
 ![Safe mode desktop](../../../assets/safe-mode-assets/safemode-4.png)
+
+ > [!NOTE]
+ > If Bitlocker is enabled on your PC, Windows may ask to enter BitLocker recovery key when booting into safe mode. If system drive is encrypted, it's necessary to enter the key. See [BitLocker wiki page](/disks/encryption/bitlocker/#finding-bitlocker-recovery-keys) for more information.
 
 To boot Windows into safe mode, follow below steps.
 
@@ -25,8 +28,11 @@ Following methods will set boot into safe mode from a working Windows system. St
    <details>
       <summary>Method 1: Using Windows Recovery Environment</summary>
 
-    1. Open Start menu, press and hold Shift key, and click Restart.
+    1. Open Start menu, press and hold Shift key, and click Restart. If you are on login screen, click power button, press and hold Shift key, and click Restart.
 ![Start menu restart with shift](../../../assets/safe-mode-assets/safemode-1.png)
+
+
+![Login screen restart with shift](../../../assets/safe-mode-assets/safemode-5.png)
 
     2. When Windows Recovery Environment shows with Choose an option, click Troubleshoot, then Advanced options, then Start-up Settings, then Restart. PC will reboot.
     3. After reboot Windows will present boot options. Press 5 on keyboard to start Windows in safe mode with networking.
@@ -95,7 +101,8 @@ Windows will automatically open recovery environment when it fails to boot 3 tim
    <details>
       <summary>Method 2: Using bootable USB with Windows setup</summary>
 
-You can use a bootable USB with a Windows setup to run Windows in safe mode. Follow the Windows installation guide until you see Select setup option then follow steps below:
+You can use a bootable USB with a Windows setup to run Windows in safe mode. Follow the [Windows installation guide](/installations/install-11/) until you see Select setup option then follow steps below:
+
      1. Select Repair my PC and click Next. Select keyboard layout when prompted.
 ![Setup repair PC](../../../assets/safe-mode-assets/safemode-3.png)
 
@@ -120,7 +127,7 @@ To disable safe mode, use one of the following methods below.
    <summary>Method 1: Using msconfig</summary>
 
  > [!CAUTION]
- > Follow the steps exactly as stated unless stated by otherwise a staff member. Changing other settings in msconfig may cause Windows to fail to boot.
+ > Follow the steps exactly as stated unless guided by a staff member. Changing other settings in msconfig may cause Windows to fail to boot. 
 
     1. Open Start menu, type msconfig and press Enter. A System Configuration window will open.
     2. Select Boot tab, uncheck Safe boot, then click Apply and OK. Click Restart on following System Configuration dialog window. PC will reboot.
