@@ -3,8 +3,8 @@ title: Audio Troubleshooting Basics
 description: Basic troubleshooting steps for Audio.
 sidebar:
     hidden: false
-has_children: false
 parent: Learning
+has_children: false
 pagefind: true
 last_modified_date: 2025-07-05
 ---
