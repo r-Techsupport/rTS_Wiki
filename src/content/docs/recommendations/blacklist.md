@@ -7,11 +7,11 @@ has_children: false
 parent: Software We Recommend
 description: This serves as a master list of banned software that we do not permit in the community.
 pagefind: true
-last_modified_date: 2024-08-18
+last_modified_date: 2025-06-18
 redirect_from: /books/software-we-recommend/page/blacklist
 ---
 ## EOL OS 
-Any EOL OS is unsupported, it does not need to be listed here, but here are some examples
+<ins>Any</ins> EOL OS is unsupported, it does not need to be listed here, but here are some examples
 
 | Name          | Notes                                                                                                                                                                                                           |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -40,11 +40,25 @@ These break machines and are black boxes for troubleshooting. If you have an iss
 | Debloat-Windows-10 | W4RH4WK |
 | Tron Script | bmrf |
 
-## Utilities
+## Browsers
 
+Any browsers listed below are blacklisted. Apart from the main 3: Chrome (including Edge, Opera, Vivaldi), Firefox and Safari, any other browser should be used with extreme caution. 
+
+| Name | Notes |
+| ---  | --- |
+| AVG Secure Browser | 
+| Avast Secure Browser |
+| UC Browser |
+| Baidu Browser |
+| Torch Browser |
+| Yandex | Uses its own DNS |
+
+
+## Utilities
 | Name | Notes |
 | --- | --- |
 | WinRAR | Use 7-Zip as a free alternative |
+| IOBit Unlocker | This utility can break system files | 
 
 ## Benchmark tools
 
@@ -53,13 +67,42 @@ These break machines and are black boxes for troubleshooting. If you have an iss
 | UserBenchMark | UserBenchMark is biased and untrusted |
 
 ## Driver finders
-[See here](/recommendations/maintenance) for our stance and instructions on drivers. All driver finders are blacklisted, it doesn't have to be listed here.
+[See here](/recommendations/maintenance) for our stance and instructions on drivers. Driver finders are most times malware. All driver finders are blacklisted, it doesn't have to be listed here.
 
 | Name | Notes |
 | --- | --- |
 | SnappyDriver Installer |
 | DriverBooster |
 | DriverEasy |
+
+## Activation Scripts
+Do not use activation scripts. They breach Microsoft's terms of service. We do not endorse piracy.
+
+**Please purchase your own Windows copy**
+
+All activators are blacklisted regardless of trust; it does not have to be listed here.
+
+| Name | Notes |
+| ---- | ----- |
+| KMSPico | Many malicious copies of this software exist. |
+| AAct | Bundled with many malicious Office installers | 
+
+## Freeware/Shareware sites
+
+This isn't software but the software on these website is almost always malicious. Any software downloaded from these websites are blacklisted.
+
+These websites are notorious for installing malware and PUPs on your device. **You should always download software directly from the manufacturer or provider**.
+
+We never recommend freeware sites. They are all blacklisted even if they're not present on this list.
+
+| Name | Notes |
+| ---- | ----- |
+| Softonic (*.softonic.com) | 
+| CNET (*.cnet.com) | News articles present on its subdomains are most of the time bogus and fake |
+| FileHippo (*.filehippo.com) | 
+| Filehorse (*.filehorse.com) |
+| Softpedia (*.softpedia.com) |
+| Software informer (*.software.informer.com) | News articles present on its subdomains are most of the time bogus and fake |
 
 ## System cleaners/optimizers
 Cleaners have a long record of use in the Windows community but often times are abused, leading to broken systems and many wasted writes on an SSD. 
@@ -76,7 +119,7 @@ All cleaners/optimizers are blacklisted, it doesn't have to be listed here.
 | Outbyte PC Repair | Outbyte |
 
 ## Audio manipulation programs
-Programs that use virtual cables often permanently damage Windows audio systems.
+Programs that use virtual cables sometimes permanently damage Windows audio systems. Sometimes software like this is required and is not always dangerous; just be careful with the knobs and buttons.
 
 | Name | Notes |
 | --- | --- | 
@@ -93,8 +136,8 @@ See [here](/recommendations/av) for our stance on AV Tools. It doesn't have to b
 | AVG |
 | Comodo |
 | Kaspersky |
-| McAfee |
-| Norton |
+| McAfee | Bundled with malicious software and is a common topic for malicious websites | 
+| Norton | 360 versions are known cryptominers | 
 | Webroot |
 
 ## Precompiled Windows PE
