@@ -12,23 +12,30 @@ redirect_from: /books/software-we-recommend/page/blacklist
 ---
 ## EOL OS 
 <ins>Any</ins> EOL OS is unsupported, it does not need to be listed here, but here are some examples
-
-| Name          | Notes                                                                                                                                                                                                           |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Windows XP    |                                                                                                                                                                                                                 |
-| Windows Vista |                                                                                                                                                                                                                 |
-| Windows 7     |                                                                                                                                                                                                                 |
-| Ubuntu 12.04  |                                                                                                                                                                                                                 |
-| Windows 10    | Any version prior to 22H2 is no longer supported. You can type "winver" into the start menu to see your current version.                                                                                        |
-| Windows 11    | [See here](https://docs.microsoft.com/en-us/lifecycle/products/windows-11-home-and-pro) to check which versions are currently supported. You can type "winver" into the start menu to see your current version. |
-| ETC           |                                                                                                                                                                                                                 |
+### Windows
+| Name          | Notes |
+| --- | ---|
+| Win9x |
+| Windows XP |                                                                                                                                                                                                  
+| Windows Vista |                                                                                                                                                                                                            
+| Windows 7     |                                                                                                                                                                                                            
+| Windows 10    | Any version prior to 22H2 is no longer supported. You can type `winver` into the start menu to see your current version. |
+| Windows 11    | [See here](https://docs.microsoft.com/en-us/lifecycle/products/windows-11-home-and-pro) to check which versions are currently supported. You can type `winver` into the start menu to see your current version. |
+### Linux
+Please check with the distro provider for the exact times. All versions of Linux prior to their 2012 release are considered unsupported.
+| Name | Notes|
+|--- | --- |
+| Ubuntu 12.04 and before  |
+| Fedora Linux 25 and before | Please [see here](https://docs.fedoraproject.org/en-US/releases/eol/) for unsupported Fedora versions | 
 
 ## Unsupported OS
 Any custom Windows ISO is unsupported. They are not endorsed by Microsoft and often remove or cripple important Windows features like Windows Update and Windows Defender. The developers of these ISOs can also decide whether or not to implement malware and put the user in danger. These unsupported OSs are not limited to but include the ones listed below.
-- AtlasOS
-- ReviOS
-- Tiny10
-- Tiny11
+| Name | Notes |
+| --- | ---| 
+| AtlasOS | 
+| ReviOS |
+| Tiny10 | This should be used for experimental use only and is not recommended for a live system |
+| Tiny11 | This should be used for experimental use only and is not recommended for a live system |
 
 ## Debloaters
 These break machines and are black boxes for troubleshooting. If you have an issue with an OS don't use it. Do not break it then expect help.
@@ -42,7 +49,7 @@ These break machines and are black boxes for troubleshooting. If you have an iss
 
 ## Browsers
 
-Any browsers listed below are blacklisted. Apart from the main 3: Chrome (including Edge, Opera, Vivaldi), Firefox and Safari, any other browser should be used with extreme caution. 
+Any browsers listed below are blacklisted. Apart from the main 3: Chrome (including Edge, Opera, Vivaldi), Firefox and Safari, any other browser should be used with extreme caution. Browsers included with antivirus are blacklisted no matter what.
 
 | Name | Notes |
 | ---  | --- |
@@ -55,6 +62,9 @@ Any browsers listed below are blacklisted. Apart from the main 3: Chrome (includ
 
 
 ## Utilities
+
+These are recommendations. This software __does__ have usecases where it might be needed, but those usecases are extreme.  
+
 | Name | Notes |
 | --- | --- |
 | WinRAR | Use 7-Zip as a free alternative |
@@ -86,6 +96,8 @@ All activators are blacklisted regardless of trust; it does not have to be liste
 | ---- | ----- |
 | KMSPico | Many malicious copies of this software exist. |
 | AAct | Bundled with many malicious Office installers | 
+| MAS (Microsoft Activation Scripts) | Not malware; just piracy issues [please note that other items provided by MAS may be fine; this is only talking about the activation scripts. |  
+
 
 ## Freeware/Shareware sites
 
@@ -124,11 +136,13 @@ Programs that use virtual cables sometimes permanently damage Windows audio syst
 | Name | Notes |
 | --- | --- | 
 | Voicemod |
-| Voicemeeter |
+| Voicemeeter | 
 | Clownfish |
 
 ## Third-party AVs
-See [here](/recommendations/av) for our stance on AV Tools. It doesn't have to be listed here to be blacklisted.
+See [here](/recommendations/av) for our stance on AV Tools. It doesn't have to be listed here to be blacklisted. Most antiviruses are considered PUPs.
+
+**The only accepted antivirus that is exempt from this list is Windows Defender; it is adequate for home environments and (most) businesses**
 
 | Name | Notes |
 | --- | --- | 
@@ -153,4 +167,23 @@ This list of vendors offer nothing to the community or make multiple products th
 
 | Name | Notes |
 | --- | --- |
-| IOBit | All products |
+| IOBit | Most products |
+
+## Powershell Oneliners
+Any powershell script that uses the following format is blacklisted:
+```
+irm <url> | iex
+```
+or 
+```
+iwr <url> | iex
+```
+
+It does not have to be listed here to be blacklisted. Below are some notable examples.
+
+| Name | Notes | 
+| --- | --- |
+| get.activated.win | 
+| *.keytool.cc | Malicious | 
+| *.wslm.net |
+| Many others |
