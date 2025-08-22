@@ -44,8 +44,8 @@ Your computer is a delicate machine that requires careful handling. Using the wr
 1. Shut down your computer and unplug it from the power source; this is a crucial step to avoid any electrical shock or damage to your computer.
 2. Go to a well-ventilated open area, such as a garage or outside.
 3. Remove the computer's case cover. Depending on your computer's model, you may need a screwdriver to remove the cover.
-4. Use a can of compressed air to blow away dust and debris from your computer's fans, power supply, and other components. Hold the can upright and spray in short bursts. Avoid spraying the compressed air too closely to the components, as it can cause damage. Remember to hold the fans in place with your hands or tape, as the rapid spinning from pressurized air can shorten their lifespan.
-5. Use a soft brush or cloth to remove any remaining dust. You can use a microfiber cloth or a soft-bristled brush to clean the components. Be gentle and avoid applying too much pressure on the components.
+4. Use a can of compressed air or a blower to blow away dust and debris from your computer's fans, power supply, and other components. Hold the can upright and spray in short bursts. Avoid spraying the compressed air too closely to the components, as it can cause damage. Remember to hold the fans in place with your hands or tape, as the rapid spinning from pressurized air can shorten their lifespan.
+5. You may use an ESD-safe soft-bristled brush and compressed air for motherboards, GPUs, and RAM. Microfiber cloths may be used for case panels or glass. Avoid wiping directly on circuit boards to prevent static buildup and cloth catching on small components.
 6. Clean the area around your computer with a vacuum cleaner with a brush attachment to help remove any dust or debris from the surrounding area.
 7. Clean the keyboard, mouse, and monitor using a soft cloth or a cleaning solution designed for these electronic devices.
 8. Reattach the case cover after cleaning and plug your computer into the outlet.
