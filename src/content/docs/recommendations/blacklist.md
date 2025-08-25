@@ -30,12 +30,10 @@ Please check with the distro provider for the exact times. All versions of Linux
 
 ## Unsupported OS
 Any custom Windows ISO is unsupported. They are not endorsed by Microsoft and often remove or cripple important Windows features like Windows Update and Windows Defender. The developers of these ISOs can also decide whether or not to implement malware and put the user in danger. These unsupported OSs are not limited to but include the ones listed below.
-| Name | Notes |
-| --- | ---| 
-| AtlasOS | 
-| ReviOS |
-| Tiny10 | This should be used for experimental use only and is not recommended for a live system |
-| Tiny11 | This should be used for experimental use only and is not recommended for a live system |
+* AtlasOS
+* ReviOS
+* Tiny10
+* Tiny11
 
 ## Debloaters
 These break machines and are black boxes for troubleshooting. If you have an issue with an OS don't use it. Do not break it then expect help.
@@ -60,16 +58,6 @@ Any browsers listed below are blacklisted. Apart from the main 3: Chrome (includ
 | Torch Browser |
 | Yandex | Uses its own DNS |
 
-
-## Utilities
-
-These are recommendations. This software __does__ have usecases where it might be needed, but those usecases are extreme.  
-
-| Name | Notes |
-| --- | --- |
-| WinRAR | Use 7-Zip as a free alternative |
-| IOBit Unlocker | This utility can break system files | 
-
 ## Benchmark tools
 
 | Name | Notes |
@@ -77,13 +65,10 @@ These are recommendations. This software __does__ have usecases where it might b
 | UserBenchMark | UserBenchMark is biased and untrusted |
 
 ## Driver finders
-[See here](/recommendations/maintenance) for our stance and instructions on drivers. Driver finders are most times malware. All driver finders are blacklisted, it doesn't have to be listed here.
-
-| Name | Notes |
-| --- | --- |
-| SnappyDriver Installer |
-| DriverBooster |
-| DriverEasy |
+[See here](/recommendations/maintenance#driver-finders) for our stance and instructions on drivers. Driver finders are most times malware. All driver finders are blacklisted, it doesn't have to be listed here.
+* SnappyDriver Installer
+* IObit DriverBooster
+* DriverEasy
 
 ## Activation Scripts
 Do not use activation scripts. They breach Microsoft's terms of service. We do not endorse piracy.
@@ -96,7 +81,7 @@ All activators are blacklisted regardless of trust; it does not have to be liste
 | ---- | ----- |
 | KMSPico | Many malicious copies of this software exist. |
 | AAct | Bundled with many malicious Office installers | 
-| MAS (Microsoft Activation Scripts) | Not malware; just piracy issues [please note that other items provided by MAS may be fine; this is only talking about the activation scripts. |  
+| MAS (Microsoft Activation Scripts) | Is against Microsoft's terms of service |  
 
 
 ## Freeware/Shareware sites
@@ -133,23 +118,19 @@ All cleaners/optimizers are blacklisted, it doesn't have to be listed here.
 ## Audio manipulation programs
 Programs that use virtual cables sometimes permanently damage Windows audio systems. Sometimes software like this is required and is not always dangerous; just be careful with the knobs and buttons.
 
-| Name | Notes |
-| --- | --- | 
-| Voicemod |
-| Voicemeeter | 
-| Clownfish |
+* Voicemod
+* Voicemeeter
+* Clownfish
 
 ## Third-party AVs
 See [here](/recommendations/av) for our stance on AV Tools. It doesn't have to be listed here to be blacklisted. Most antiviruses are considered PUPs.
-
-**The only accepted antivirus that is exempt from this list is Windows Defender; it is adequate for home environments and (most) businesses**
 
 | Name | Notes |
 | --- | --- | 
 | Avast |
 | AVG |
 | Comodo |
-| Kaspersky |
+| Kaspersky | Banned in a few countries across the world |
 | McAfee | Bundled with malicious software and is a common topic for malicious websites | 
 | Norton | 360 versions are known cryptominers | 
 | Webroot |
@@ -157,17 +138,15 @@ See [here](/recommendations/av) for our stance on AV Tools. It doesn't have to b
 ## Precompiled Windows PE
 Various PE distributions are illegal for various reasons such as distributing pirated/TOS breaking applications or requiring de facto payment prior to download.
 
-| Name | Notes |
-| --- | --- | 
-| Hirens |
-| Gandalf |
+* Hirens
+* Gandalf
 
 ## Vendors
 This list of vendors offer nothing to the community or make multiple products that are considered PUPs/Malware.
 
 | Name | Notes |
 | --- | --- |
-| IOBit | Most products |
+| IOBit | All products |
 
 ## Powershell Oneliners
 Any powershell script that uses the following format is blacklisted:
