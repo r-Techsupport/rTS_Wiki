@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@astrojs/starlight": "^0.35.2",
-    "astro": "^5.13.3",
+    "astro": "^5.13.5",
     "rehype-callouts": "^2.1.2",
     "remark-obsidian-callout": "^1.5.1",
     "sharp": "^0.34.3",
