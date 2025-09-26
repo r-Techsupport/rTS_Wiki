@@ -5,7 +5,7 @@ sidebar:
 has_children: false
 parent: Disks
 pagefind: true
-last_modified_date: 2024-02-23
+last_modified_date: 2025-09-26
 redirect_from: /books/troubleshooting-with-a-linux-live-session/page/wiping-disks
 ---
 
@@ -39,6 +39,18 @@ This relies on the application `nvme-cli`. It might not be included on all Linux
 3. Run `sudo nvme format -s2 /dev/nvmeX` where X is the location of your drive.
 	* Example: `sudo nvme format -s2 /dev/nvme0n1` **Choosing the wrong disk will cause data loss**
     * Some manufacturers lock their drives. If you get an invalid field error, you will have to use a tool from your SSDs manufacturer. When doing this, make sure you do a secure erase.
+
+## Wiping of disks in Windows
+To completely wipe disks and ensure that no data can be recovered from a Windows system—such as when preparing to sell a device with the disks still in place, simply removing partitions with `diskpart` isn't sufficient. While `diskpart` deletes partition entries, the underlying data often remains accessible and potentially recoverable.
+
+That's why the earlier methods are recommended. However, there's an alternative approach using BitLocker that can also achieve a secure wipe.
+
+To perform a thorough wipe comparable to tools like `nwipe`, follow these steps:
+
+1. [Enable BitLocker](/disks/encryption/bitlocker) on all drives.
+2. Use a Windows installation USB to install a fresh copy of Windows onto the encrypted drives.
+
+This process ensures that any data previously on the disks is effectively rendered unrecoverable. Once Windows is reinstalled, the system will be clean, and the prior data should be inaccessible.
 
 ## Physical destruction
 Physical destruction is a perfectly acceptable method to ensure data cannot be read from a disk. This can be accomplished by either smashing the disk with a hammer or opening it and placing it in salt water to rust.
