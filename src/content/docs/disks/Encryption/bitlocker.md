@@ -31,6 +31,14 @@ Here's how to set up BitLocker on Windows:
 >
 > If you are already "broken" please see [Finding BitLocker Recovery Keys](#finding-bitlocker-recovery-keys)
 
+### BitLocker Key Storage Best Practices
+When enabling BitLocker without a Microsoft account, you're given the option to save the recovery key, typically as a text file to a USB drive. **Never store this key on the same drive** it's meant to protect. If BitLocker locks the system and the key is inaccessible, you’ll be forced to reinstall Windows to utilize that drive again, which will result in complete data loss of that drive if it was not backed up.
+
+**Always store your recovery key** on external storage (e.g. USB drive) or in a secure password manager.
+
+> [!NOTE]
+> If BitLocker is enabled while signed in with a Microsoft account, the recovery key is automatically backed up to that account, making recovery easier if needed.
+
 ## How to put BitLocker into maintenance mode:
 
 1. Go to Control Panel and select System and Security.
