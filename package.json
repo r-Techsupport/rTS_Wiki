@@ -17,7 +17,7 @@
     "astro": "^5.13.3",
     "rehype-callouts": "^2.1.2",
     "remark-obsidian-callout": "^1.5.1",
-    "sharp": "^0.34.3",
+    "sharp": "^0.34.4",
     "starlight-links-validator": "^0.17.1"
   }
 }
