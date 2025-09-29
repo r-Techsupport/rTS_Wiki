@@ -41,7 +41,7 @@ This relies on the application `nvme-cli`. It might not be included on all Linux
     * Some manufacturers lock their drives. If you get an invalid field error, you will have to use a tool from your SSDs manufacturer. When doing this, make sure you do a secure erase.
 
 ## Wiping of disks in Windows
-To completely wipe disks and ensure that no data can be recovered from a Windows system—such as when preparing to sell a device with the disks still in place, simply removing partitions with `diskpart` isn't sufficient. While `diskpart` deletes partition entries, the underlying data often remains accessible and potentially recoverable.
+To completely wipe disks and ensure that no data can be recovered from a Windows system, such as when preparing to sell a device with the disks still in place, simply removing partitions with `diskpart` isn't sufficient. While `diskpart` deletes partition entries, the underlying data often remains accessible and potentially recoverable.
 
 That's why the earlier methods are recommended. However, there's an alternative approach using BitLocker that can also achieve a secure wipe.
 
