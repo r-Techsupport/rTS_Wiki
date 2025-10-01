@@ -25,6 +25,7 @@ Here's how to set up BitLocker on Windows:
 7. Start the encryption process and wait for it to complete. This process may take several hours, depending on the size of the drive.
 
 > [!WARNING] Hardware Change Warning
+>
 > **Changing your motherboard or CPU may "break" BitLocker and require recovery.**
 > 
 > BitLocker is designed to lock down in the event of hardware or firmware changes, to prevent unauthorized access to the encrypted data. However, there may be times when hardware or firmware changes are necessary, such as during routine maintenance or upgrades. In these cases, BitLocker can be put into maintenance mode, allowing the changes to be made and then resumed.
@@ -37,6 +38,7 @@ When enabling BitLocker without a Microsoft account, you're given the option to 
 **Always store your recovery key** on external storage (e.g. USB drive) or in a secure password manager.
 
 > [!NOTE] Information
+>
 > If BitLocker is enabled while signed in with a Microsoft account, the recovery key is automatically backed up to that account, making recovery easier if needed.
 
 ## How to put BitLocker into maintenance mode:
@@ -61,6 +63,7 @@ In order to use BitLocker, your computer must meet the following minimum require
 BitLocker to Go provides a convenient and secure way to encrypt external drives and protect sensitive data stored on them. While it does have some limitations, it is a useful tool for anyone who needs to store sensitive data on an external drive. Just be sure to always keep a backup of your data and store your password in a safe place to avoid data loss.
 
 > [!WARNING] Warning
+>
 > BitLocker to Go is compatible with Windows operating systems that support BitLocker with no additional software required, but it is **NOT compatible** with MacOS or Linux without the use of third-party tools.
 
 To encrypt an external drive using BitLocker to Go, follow these steps:
