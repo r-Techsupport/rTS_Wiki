@@ -36,7 +36,7 @@ When enabling BitLocker without a Microsoft account, you're given the option to 
 
 **Always store your recovery key** on external storage (e.g. USB drive) or in a secure password manager.
 
-> [!NOTE]
+> [!NOTE] Information
 > If BitLocker is enabled while signed in with a Microsoft account, the recovery key is automatically backed up to that account, making recovery easier if needed.
 
 ## How to put BitLocker into maintenance mode:
