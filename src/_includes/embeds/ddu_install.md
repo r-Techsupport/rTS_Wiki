@@ -14,7 +14,7 @@ A new folder containing `Display Driver Uninstaller.exe` will be created.
     > [!WARNING] Warning
     > Do _not_ move, modify, or delete any files associated with DDU
 
-4. [**Boot in safe mode**](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode) 
+4. [**Boot in safe mode**](https://rtech.support/factoids/safe-mode/) 
 
 5. Open `Display Driver Uninstaller.exe` inside the newly created "DDU vX.X" subfolder from Step 3.
 
