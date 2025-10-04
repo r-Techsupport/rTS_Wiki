@@ -172,7 +172,7 @@ bcdedit /deletevalue {current} safeboot
 ```
 1. Close Command prompt and reboot the PC.
 
-2. After reboot Windows will boot into safe mode.
+2. After reboot Windows will boot back into normal mode.
 
 3. Once all required tasks in safe mode are done, follow Exit safe mode steps below.
    
