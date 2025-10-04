@@ -14,9 +14,9 @@ A new folder containing `Display Driver Uninstaller.exe` will be created.
     > [!WARNING] Warning
     > Do _not_ move, modify, or delete any files associated with DDU
 
-4. [**Boot in safe mode**](../../factoids/safe-mode/) 
+1. [**Boot in safe mode**](../../content/docs/factoids/safe-mode/)
 
-5. Open `Display Driver Uninstaller.exe` inside the newly created "DDU vX.X" subfolder from Step 3.
+2. Open `Display Driver Uninstaller.exe` inside the newly created "DDU vX.X" subfolder from Step 3.
 
     > [!WARNING] Warning
     > Some applications are inaccessible from the downloads folder. So if you get an "File Inaccessible" error message in Safe mode, try moving the extracted folder in Normal boot to a more direct folder like directly in the C drive.
