@@ -150,7 +150,7 @@ To disable safe mode, use one of the following methods below.
 
 2. Select Boot tab, uncheck Safe boot, then click Apply and OK. Click Restart on following System Configuration dialog window. PC will reboot.
 
-3. After reboot Windows will boot into safe mode.
+3. After reboot Windows will boot back into normal mode.
 
 4. Once all required tasks in safe mode are done, follow Exit safe mode steps below.
 
