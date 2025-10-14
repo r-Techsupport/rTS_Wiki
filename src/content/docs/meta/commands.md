@@ -21,8 +21,8 @@ Comment any of the below commands to have automod print the relevant message as 
 
 3. Publish the results in a [Pastebin](https://pastebin.com/)
 
-### ?win10
-To reinstall Windows 10, follow [this guide](/installations/install-10)
+### ?win11
+To reinstall Windows 11, follow [this guide](/installations/install-11)
 
 ### ?speccy
 
