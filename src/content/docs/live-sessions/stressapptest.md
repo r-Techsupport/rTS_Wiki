@@ -1,7 +1,7 @@
 ---
 title: Stressful App Test
 sidebar:
-    hidden: true
+    hidden: false
 has_children: false
 grand_parent: General Guides
 parent: Memory Testing
@@ -15,7 +15,7 @@ Stressful Application Test is a memory testing tool, notably used by Google.
 
 ## Running the test
 1. After you boot into the media, click the Debian logo in the top-left corner, then click "Terminal Emulator" to open the terminal:
-![terminal](../../../../assets/stressapptest/terminal.webp)
+![terminal](../../../assets/stressapptest/terminal.webp)
 2. In the terminal, do the following:
     - Install StressAppTest via the terminal by typing: 
         ```bash
