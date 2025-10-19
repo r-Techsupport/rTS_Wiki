@@ -13,7 +13,9 @@ last_modified_date: 2022-10-31
 ## What is DDU?
 Display Driver Uninstaller is a program that can fully wipe display/audio drivers, to troubleshoot various issues.
 
-> DDU does not erase any personal files. It only wipes the selected driver(s), and any associated info, such as display color profiles, settings, etc.
+> [!NOTE] Note
+>
+> DDU does not erase any personal files. It only wipes the selected driver and associated software.
 
 ## Installing DDU
 import InstallDDU from '../../../_includes/embeds/ddu_install.md';
@@ -24,7 +26,7 @@ import InstallDDU from '../../../_includes/embeds/ddu_install.md';
 
 > [!WARNING] Warning
 > 
-> Make sure you are in [Safe Mode](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode) for the following steps.
+> Make sure you are in [Safe Mode](/factoids/safe-mode) for the following steps.
 
 >Your Display Resolution Will decrease because Windows will revert to the failsafe "MsDisplayAdapter Driver"
 
@@ -37,15 +39,16 @@ To wipe display drivers for laptops/devices with onboard graphics: Select the "G
 ### Desktops with a dedicated GPU
 To wipe display drivers from a dedicated GPU: Select the "GPU" device type from the drop-down list on the right, select the GPU driver you wish to uninstall, and click `Clean and restart`
 
-![ddunvidia.png](../../../assets/factoids/dduvideo.webp)
+![ddu2.png](../../../assets/factoids/ddu2.png)
 
 ## Reinstalling Display Drivers
   
 ### Custom-built desktops
-Go to the site of the GPU's manufacturer(s) ([NVIDIA](https://www.nvidia.com/Download/index.aspx), [AMD](https://www.amd.com/en/support), [Intel](https://www.intel.com/content/www/us/en/download-center/home.html)) and download the latest available display drivers.
+Go to your GPU manufacturer's website ([NVIDIA](https://www.nvidia.com/Download/index.aspx), [AMD](https://www.amd.com/en/support), [Intel](https://www.intel.com/content/www/us/en/search.html?ws=idsa-default#sort=relevancy&f:@tabfilter=[Downloads]&f:downloadtype=[Drivers]), or [Qualcomm](https://softwarecenter.qualcomm.com/catalog/item/Windows_Graphics_Driver)) and download the most recent GPU/VGA/Display driver for your device.
 
 ### Laptops/pre-built desktops
 Go to the model's support page on your manufacturer's site, and download the latest available display drivers.
 
-> [!WARNING] Warning
-> For devices with multiple GPUs, download both the integrated and dedicated GPU drivers. Install the integrated GPU drivers _first_, followed by the dedicated GPU drivers.
+> [!Important] Important
+>
+> For devices with multiple graphics processors, download both the integrated and dedicated GPU drivers. Install the integrated GPU drivers _first_, followed by the dedicated GPU drivers.

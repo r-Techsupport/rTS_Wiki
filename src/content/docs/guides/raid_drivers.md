@@ -4,38 +4,43 @@ description: Resolving missing disk drives issues during Windows installation
 ---
 During the installation of Windows 10 and Windows 11 you may encounter an error message:
 
-> "We couldn't find any drives. To get a storage driver, click Load driver."
+"We couldn't find any drives. To get a storage driver, click Load driver."
 
 ![We couldnt find any drives](../../../assets/intel-rst/missing_drives.webp)
 
 If you are certain disk is plugged in, to resolve this issue you have two choices:
-- Easiest: [Disable Intel RST in BIOS](#disable-intel-rst-in-bios)
-- If you want to use RAID: [Load an Intel RST Driver](#load-an-intel-rst-driver)
+- Easiest: [Disable Intel RST / AMD RaidXpert2 in BIOS](#disable-raid-in-bios)
+- If you want to use RAID: [Load a RAID Driver](#load-a-raid-driver)
 
-## Disable Intel RST in BIOS
-The easiest way to resolve this issue is to disable Intel RST in your BIOS. On many laptops and select motherboard, Intel RST is enabled by default.
+## Disable RAID in BIOS
+> [!NOTE] Information
+>
+> Some laptops have RST or RaidXpert2 option permanently turned on and it's impossible to change. For this, installing drivers are the only known way to fix this.
+> Please head to [Load a RAID Driver](#load-a-raid-driver) for more information.
+
+The easiest way to resolve this issue is to disable Intel RST or AMD RaidXpert2 in your BIOS. On many laptops and select motherboard, these are enabled by default.
 
 The menus vary between manufacturers and models, but the basic entries you want to find may be called "Storage" or "Disk" mode. 
 
 This field should currently be set to "RAID" and you want to change it to "AHCI".
 
-On some systems you may find a "VMD setup/controller" option, disabling this will have the same effect on RST.
+Disabling the "StoreMi" or "VMD setup/controller" option on some systems, which might also be called "Optane Memory," will have the same effect on RST and RaidXpert2.
 
 You can reboot and load back into the Windows install USB and complete the installation without issue.
 
 ### Acer 
-> [!NOTE] Information
-> Some Acer laptops have RST option permanently turned on and it's impossible to change. 
-
 Option to change RAID option may be hidden. On select models it's possible to reveal them, by pressing Ctrl+S in Advanced tab.
 
 Possible menus to disable RAID include:
 - Advanced\System Agent (SA) Configuration\VMD setup menu\Enable VMD controller => Disabled
 
-Below are helpful images for some Acer BIOS
+<details>
+ <summary>Expand to see helpful images for some Acer BIOS</summary>
 
-![Acer RST VMD BIOS menu](../../../assets/intel-rst/acer_rst0.webp)
-![Acer RST VMD BIOS menu](../../../assets/intel-rst/acer_rst1.webp)
+  ![Acer RST VMD BIOS menu](../../../assets/intel-rst/acer_rst0.webp)
+  ![Acer RST VMD BIOS menu](../../../assets/intel-rst/acer_rst1.webp)
+
+</details>
 
 ### Asus
 Possible menus to disable RAID include:
@@ -45,12 +50,18 @@ Possible menus to disable RAID include:
 - Advanced\Integrated Peripherals\RAID Configuration (Intel VMD)\Enable RAID/Optane Function => Disabled
 - Advanced\PCH Storage Configuration\SATA Mode selection => AHCI Mode
 
-Below are helpful images for some ASUS BIOS
+> [!TIP] Tip
+> The same applies for AMD systems, except instead of searching for Intel RST, you are looking for StoreMi and RaidXpert2 instead.
 
-![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst0.webp)
-![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst1.webp)
-![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst2.webp)
-![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst3.webp)
+<details>
+  <summary>Expand to see helpful images for some ASUS BIOS</summary>
+
+  ![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst0.webp)  
+  ![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst1.webp)  
+  ![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst2.webp)  
+  ![Asus RST BIOS menu](../../../assets/intel-rst/asus_rst3.webp)
+
+</details>
 
 ### Dell
 Possible menus to disable RAID include:
@@ -65,28 +76,32 @@ Possible menus to disable RAID include:
 - Settings\VMD setup menu\Enable VMD Controller => Disabled
 - Peripherals\SATA Mode Selection => AHCI
 - Peripherals\SATA Configuration\SATA Mode Selection => AHCI
+- Peripherals\Enable VMD Controller => Disabled
 
-Below are helpful images for some Gigabyte Aorus BIOS
+<details>
+  <summary>Expand to see helpful images for some Gigabyte Aorus BIOS</summary>
 
 ![Aorus RST VMD BIOS menu](../../../assets/intel-rst/aorus_rst0.webp)
 ![Aorus RST VMD BIOS menu](../../../assets/intel-rst/aorus_rst1.webp)
 
-### HP 
-> [!NOTE] Information
-> Some HP desktops/laptops have RST option permanently turned on and it's impossible to change.
+</details>
 
+### HP 
 Possible menus to disable RAID include:
 - Advanced\System Options\Configure Storage Controller for RAID => Unchecked
+- Advanced\System Options\Configure Storage Controller for Intel Optane => Unchecked
 - Configuration\SATA Emulation => AHCI
 
-Below are helpful images for some HP BIOS
+<details>
+  <summary>Expand to see helpful images for some HP BIOS</summary>
 
 ![HP RST VMD BIOS menu](../../../assets/intel-rst/hp_rst0.webp)
 ![HP RST VMD BIOS menu](../../../assets/intel-rst/hp_rst1.webp)
 
+</details>
+
 ### Lenovo
 Possible menus to disable RAID include:
-
 - Devices/ATA Drive setup/Configure SATA as => AHCI
 
 ### MSI
@@ -105,23 +120,24 @@ Possible menus to disable RAID include:
 - Advanced\Enable VMD Controller => Disabled (If grayed out, edit setting below)
 - Advanced\System Agent (SA) configuration\VMD setup menu\Enable VMD Controller => Disabled
 
-Below are helpful images for some MSI BIOS
+<details>
+  <summary>Expand to see helpful images for some MSI BIOS</summary>
 
 ![MSI RST VMD BIOS menu](../../../assets/intel-rst/msi_rst0.webp)
 ![MSI RST VMD BIOS menu](../../../assets/intel-rst/msi_rst1.webp)
 ![MSI RST VMD BIOS menu](../../../assets/intel-rst/msi_rst2.webp)
 ![MSI RST VMD BIOS menu](../../../assets/intel-rst/msi_rst3.webp)
 
+</details>
 
 ### Razer
 Possible menus to disable RAID include:
-
 - Chipset/SATA and RST Configuration/SATA Mode Selection => AHCI
 - Chipset/Intel VMD Technology => Disabled
 
 
-## Load an Intel RST Driver
-If you would like to use RAID and leave Intel RST on then you will need to download the Intel RST driver [from your motherboard or laptop manufacturers support page](/learning/computing-101/#support-sites), then put that on your Windows install USB.
+## Load a RAID Driver
+If you would like to use RAID and leave Intel RST / AMD RaidXpert2 on then you will need to download the following driver [from your motherboard or laptop manufacturers support page](/learning/computing-101/#support-sites), then put that on your Windows install USB.
 
 See below for some guides from various manufactures on this process.
 

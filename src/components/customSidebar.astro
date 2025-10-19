@@ -1,10 +1,10 @@
 ---
-import type { Props } from '@astrojs/starlight/props';
+const { sidebar } = Astro.locals.starlightRoute;
 import Default from '@astrojs/starlight/components/Sidebar.astro';
 ---
 
 <div class="sidebar-container">
-    <Default {...Astro.props}><slot /></Default>
+    <Default><slot /></Default>
 </div>
 
 <style>
