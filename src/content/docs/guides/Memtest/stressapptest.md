@@ -21,8 +21,8 @@ Stressful Application Test is a memory testing tool, notably used by Google.
         ```bash
         apt install stressapptest
         ```
-    - Run the application by typing `stressapptest -W -s <time>`. Replace `<time>` with the time in seconds that you want to run the test for.
-    - We suggest an hour, so the command would be `stressapptest -W -s 3600`. Then press Enter to actually run the command.
+    - Run the application by typing `stressapptest -W -s <time>`. Replace `<time>` with the time in seconds that you want to run the test for. We suggest an hour, so the command would be `stressapptest -W -s 3600`. Then press Enter to actually run the command.
+
         ```bash
         stressapptest -W -s 3600
         ```
