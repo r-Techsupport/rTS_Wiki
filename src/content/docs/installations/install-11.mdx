@@ -79,35 +79,39 @@ import DiskErrors from '../../../_includes/embeds/install-disk-errors.md';
  
 1. Follow the steps on screen to install Windows 11. 
  
-2. Click "Install now"
+2. Select Windows language, localization, then click "Next". Select keyboard settings, then click "Next".
 
-     > [!WARNING] Warning
-     > If you do not see an installer like the below screenshot, click next twice, then click "Previous version of Setup" near the bottom left corner of the installer window.
+     ![windows11-2-select-lang.webp](../../../assets/install-11/windows11-2-select-lang.webp)
 
-     ![Windows 11-2021-10-05-15-03-05.png](../../../assets/install-11/windows-11-2021-10-05-15-03-05.webp)
+3. Select "Install Windows 11" and select checkbox to agree to remove all files. Click "Next".
 
-3. Continue on until you hit the license key screen. Here you can either enter your license code, or if Windows has been installed to this computer before, click on the `I don't have a product key` link.
+     ![windows11-2-select-setup.webp](../../../assets/install-11/windows11-2-select-setup.webp)
 
-    ![Windows 11-2021-10-05-15-02-59.png](../../../assets/install-11/windows-11-2021-10-05-15-02-59.webp)
+4. If prompted, select Windows edition you want to install from the list, most commonly Windows 11 Home or Windows 11 Pro. 
 
-    ![Windows 11-2021-10-05-15-03-29.png](../../../assets/install-11/windows-11-2021-10-05-15-03-29.webp)
+    ![windows11-2-select-version.webp](../../../assets/install-11/windows11-2-select-version.webp)
 
-4.  Continue on until you reach the “Which type of installation do you want?” screen. Click "Custom". 
+5. Continue on until you hit the license key screen. Here you can either enter your license code, or if Windows has been installed to this computer before, click on the `I don't have a product key` link.
 
-     ![Windows 11-2021-10-05-15-09-05.png](../../../assets/install-11/windows-11-2021-10-05-15-09-05.webp)
 
-5. Click on each partition of the target drive and select delete, once all the partitions are gone you will be left with unallocated space. At this point, click `Next`. *****Each means ALL*** But do you mean ALL? ***Yes, All***. Once all the partitions are gone, you will be left with unallocated.**
+6. Click on each partition of the target drive and click "Delete partition". Once all the partitions are gone you will be left with unallocated space. Select the unallocated space and click `Next`. *****Each means ALL*** But do you mean ALL? ***Yes, All***. Once all the partitions are gone, you will be left with unallocated space.**
 
     > [!CAUTION] Caution
-    > Ensure that you only have drive 0 partitions in this window before deleting. If you see any drive other than "Drive 0" as seen in our images, power down and unplug the extra drives that you don't want to install windows on.
+    > Only disk 0 partitions should be visible in this window before deleting, except for partitions named "ESD-USB", "Ventoy" or any USB related disks. If you see any non-USB disk other as seen in our images, power down and unplug the extra drives that you don't want to install windows on.
 
-    ![Windows 11-2021-10-05-15-20-37.png](../../../assets/install-11/windows-11-2021-10-05-15-20-37.webp)
+    ![windows11-2-select-location-unalloc.webp](../../../assets/install-11/windows11-2-select-location-used.webp)
 
-    ![Windows 11-2021-10-05-15-11-30.png](../../../assets/install-11/windows-11-2021-10-05-15-11-30.webp)
+    ![windows11-2-select-location-unalloc.webp](../../../assets/install-11/windows11-2-select-location-unalloc.webp)
 
     <DiskErrors />
 
-6. Windows will now install. When it finishes it will automatically restart your machine, when your screen goes black pull out your installation USB drive.
+7. Confirm installing Windows 11 by clicking "Install".
+
+    ![windows11-2-ready-to-install.webp](../../../assets/install-11/windows11-2-ready-to-install.webp)
+
+7. Windows will now install. When it finishes it will automatically restart your machine. Remove your USB drive once you see Welcome screen.
+
+    ![windows11-2-installing.webp](../../../assets/install-11/windows11-2-installing.webp)
 
 > [!TIP] Congratulations!
 >
