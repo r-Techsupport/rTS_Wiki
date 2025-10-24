@@ -5,7 +5,7 @@ sidebar:
 has_children: false
 parent: General Guides
 pagefind: true
-last_modified_date: 2023-05-22
+last_modified_date: 2025-10-24
 ---
 # User cannot log into Windows
 In the event the user is unable to log into Windows via pin or Windows Hello, and using a password does not work, nor does resetting the pin work, follow the steps below to reset the login screen prompt.
