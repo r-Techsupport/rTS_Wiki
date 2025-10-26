@@ -131,7 +131,7 @@ If keyboard commands aren't working:
     - Wait for download and installation (15-45 minutes)
 
 > [!TIP] Tip
-> Downloading the .ipsw restore image from the [Apple Developer Portal](https://developer.apple.com/download/os/) or a 3rd party site may be faster. after downloading the file drag and drop it to the center of the DFU icon and click restore.
+> Downloading the .ipsw restore image from the [Apple Developer Portal](https://developer.apple.com/download/os/) or a 3rd party site like [Apple DB](https://appledb.dev/device-selection/Macs.html) may be faster. after downloading the file drag and drop it to the center of the DFU icon and click restore.
 
 3. Mac will automatically restart when complete
 
