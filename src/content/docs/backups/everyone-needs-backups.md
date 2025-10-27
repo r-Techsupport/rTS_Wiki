@@ -9,7 +9,6 @@ pagefind: true
 last_modified_date: 2025-10-27
 ---
 
-
 ## I have no backups.
 Most people do not have any form of backup for their data. Many people do not see this as a necessity. This book covers:
 * Understanding the importance of backups
