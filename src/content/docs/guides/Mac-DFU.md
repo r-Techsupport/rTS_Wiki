@@ -15,7 +15,7 @@ last_modified_date: 2025-10-18
 - A second Mac running macOS 10.15.6 or newer
 - Active Apple ID and App Store access
 - Stable broadband internet connection
-- 32GB free storage space for download and extraction
+- At least 32GB of free storage space for download and extraction
 - Both computers should be fully charged
 - Compatible connection:
     - USB-C to USB-C cable (Apple charging cable works fine)
@@ -131,7 +131,7 @@ If keyboard commands aren't working:
     - Wait for download and installation (15-45 minutes)
 
 > [!TIP] Tip
-> Downloading the .ipsw restore image from the [Apple Developer Portal](https://developer.apple.com/download/os/) or a 3rd party site like [Apple DB](https://appledb.dev/device-selection/Macs.html) may be faster. after downloading the file drag and drop it to the center of the DFU icon and click restore.
+> Downloading the .ipsw restore image from the [Apple Developer Portal](https://developer.apple.com/download/os/) or a 3rd party site like [Apple DB](https://appledb.dev/device-selection/Macs.html) may be faster. After downloading the file drag and drop it to the center of the DFU icon and click restore.
 
 3. Mac will automatically restart when complete
 
