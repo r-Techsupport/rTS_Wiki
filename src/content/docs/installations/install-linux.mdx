@@ -6,7 +6,7 @@ sidebar:
 has_children: false
 parent: OS Install Guides
 pagefind: true
-last_modified_date: 2022-06-29
+last_modified_date: 2025-10-29
 redirect_from: /books/how-to-and-guides/page/linux-installation-guide
 ---
 
@@ -16,9 +16,9 @@ This Linux installation guide may seem long, but it’s not very difficult. It c
 
 You should **ALWAYS** [backup](/backups) your important files before installing a new operating system, regardless of the OS. In the rare case that the installer messes up, you will lose your data if you don’t back it up.
 
-Figuring out if your system supports GPT/UEFI, as Legacy/BIOS/MBR systems can't boot from GPT/UEFI installation media. The best way to check is on your motherboard's specifications. An alternative solution (albeit not as effective) for Windows, is to check what your **current** partition table is by running `$env:firmware_type` in PowerShell. 
+Determine if your system supports UEFI, as legacy BIOS systems can't boot from UEFI-only installation media. The best way is to check your motherboard's specifications. An alternative solution (albeit not as effective) for Windows, is to check what your **current** partition table is by running `$env:firmware_type` in PowerShell. A legacy BIOS install will use an MBR partition table. A UEFI mode installation will use a GPT partition table.
 
-If your current OS is installed with MBR, your motherboard may still support GPT, with Windows just not being installed properly. GPT is typically preferred, so you should check your motherboard's specifications if possible.
+If your current OS is installed with MBR, your motherboard may still support UEFI, with Windows just not being installed properly. UEFI is typically preferred, so you should check your motherboard's specifications if possible.
 
 ## Step 1: Picking a Distro
 
@@ -40,8 +40,8 @@ There are many reasons you may want to pick one distro over another. Some distro
 The rest of this guide will be focusing mostly on Ubuntu and its derivatives (such as Xubuntu). Things may be a little different if you’re using another distribution of Linux, such as Debian/Fedora/Mint, but many concepts will still apply.
 
 Additional tips:
-* Use a 64-bit version of the distro you choose whenever possible. Ubuntu no longer makes 32-bit releases, even though the flavors still do. 32-bit OS's only support a maximum of just under 4 GB of RAM (no, PAE is not a magic solution to this problem). Many pieces of software, such as Google Chrome, only have a 64-bit version. There are no compatibility issues, since 64-bit computers can also run 32-bit software. Most computers made in 2007 or later are 64-bit systems. If your computer is only 32-bit, at this point it's getting too old to be useful, so consider recycling it.
-* Use the LTS version of your distro, if applicable. Ubuntu numbers their releases YY.MM, or the 2-digit Year and then the Month (16.10, 17.04, etc). They are released every 6 months in April and October, and most are supported for 9 months. However, even-numbered years with April as the month are Long-Term Support releases (16.04, 18.04, 20.04, etc). These LTS versions, released every 2 years, are supported for 5 years, and thus are more stable.
+* Use a 64-bit version of the distro you choose whenever possible. 32-bit OS's only support a maximum of just under 4 GB of RAM (no, PAE is not a magic solution to this problem). Many pieces of software, such as Google Chrome, only have a 64-bit version. There are no compatibility issues, since 64-bit computers can also run 32-bit software. Most computers made in 2007 or later are 64-bit systems. If your computer is only 32-bit, at this point it's getting too old to be useful, so consider recycling it.
+* Use the LTS version of your distro, if applicable. Ubuntu numbers their releases YY.MM, or the 2-digit Year and then the Month (25.04, 25.10, etc). They are released every 6 months in April and October, and most are supported for 9 months. However, even-numbered years with April as the month are Long-Term Support releases (20.04, 22.04, 24.04, etc). These LTS versions, released every 2 years, are supported for 5 years, and thus are more stable.
 * Linux does not need to be installed on your storage drive. A “live session” can run directly off a flash drive with the installation files on it, which is good for trying it out before you decide to install it. Live sessions don't save your files after a reboot, but flash drives with Linux installed can be made persistent, so that changes can be saved.
 
 ## Step 2: Creating Installation Media
