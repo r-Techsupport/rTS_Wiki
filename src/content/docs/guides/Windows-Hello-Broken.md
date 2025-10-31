@@ -93,30 +93,30 @@ You will have to look for the following folders/hives, look for the "Start" key,
 
 **Manual startup (Start = 3) services:**
 
-| **Key** | **Description** | **Start Value** |
-|---|---|---|
-| `lmhosts` | TCP/IP NetBIOS Helper | 3 |
-| `Netman` | Network Connections | 3 |
-| `Netlogon` | Secure Channel between Domain Controller and Client | 3 |
-| `seclogon` | Secondary Logon (Run As) | 3 |
-| `VaultSvc` | Credential Manager | 3 |
-| `Wecsvc` | Windows Event Collector | 3 |
-| `WbioSrvc` | Windows Biometric Serviced | 3 |
-| `wlidsvc` | Microsoft Account Sign-in Assistant | 3 |
-| `KeyIso` | CNG Key (Cryptographic Key Process) Isolation | 3 |
+| **Key**    | **Description**                                     | **Start Value** |
+|------------|-----------------------------------------------------|-----------------|
+| `lmhosts`  | TCP/IP NetBIOS Helper                               | 3               |
+| `Netman`   | Network Connections                                 | 3               |
+| `Netlogon` | Secure Channel between Domain Controller and Client | 3               |
+| `seclogon` | Secondary Logon (Run As)                            | 3               |
+| `VaultSvc` | Credential Manager                                  | 3               |
+| `Wecsvc`   | Windows Event Collector                             | 3               |
+| `WbioSrvc` | Windows Biometric Serviced                          | 3               |
+| `wlidsvc`  | Microsoft Account Sign-in Assistant                 | 3               |
+| `KeyIso`   | CNG Key (Cryptographic Key Process) Isolation       | 3               |
 
 **Automatic startup (Start = 2) services:**
 
-| **Key** | **Description** | **Start Value** |
-|---|---|---|
-| `Dhcp` | DHCP Client | 2 |
-| `EventLog` | Windows Event Log | 2 |
-| `EventSystem` | COM+ Event System | 2 |
-| `LanmanServer` | Server | 2 |
-| `LanmanWorkstation` | Workstation | 2 |
-| `NlaSvc` | Network Location Awareness | 2 |
-| `nsi` | Network Store Interface Service | 2 |
-| `SamSs` | Security Accounts Manager | 2 |
+| **Key**             | **Description**                 | **Start Value** |
+|---------------------|---------------------------------|-----------------|
+| `Dhcp`              | DHCP Client                     | 2               |
+| `EventLog`          | Windows Event Log               | 2               |
+| `EventSystem`       | COM+ Event System               | 2               |
+| `LanmanServer`      | Server                          | 2               |
+| `LanmanWorkstation` | Workstation                     | 2               |
+| `NlaSvc`            | Network Location Awareness      | 2               |
+| `nsi`               | Network Store Interface Service | 2               |
+| `SamSs`             | Security Accounts Manager       | 2               |
 
 ### Solution 2: Disable Windows Hello completely
 
