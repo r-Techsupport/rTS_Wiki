@@ -6,7 +6,7 @@ last_modified: 2022-06-25
 ---
 
 # Highlighted Content
-* How to clean install [Windows](/windows)
+* How to clean install [Windows](/installations/install-11)
 * Believe you are infected? View our recommendations for dealing with [malware](/docs/safety-security/malware-guide)
 * Improve your cyber hygiene with [MFA](/docs/safety-security/mfa) and a [personal backup plan](/docs/backups)
 
