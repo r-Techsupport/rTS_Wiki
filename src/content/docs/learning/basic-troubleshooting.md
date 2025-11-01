@@ -106,7 +106,7 @@ last_modified_date: 2022-06-30
 
 * Format and reload is always more thorough and often faster than manually trying to clean up a messy infection.
 
-* The built-in reset tools are not a full reinstall of Windows. See our [disambiguation page](/windows) for a guide on doing a proper clean install.
+* The built-in reset tools are not a full reinstall of Windows. See our [disambiguation page](/installations/install-11) for a guide on doing a proper clean install.
 
 * Defragging your drive is an outdated and unnecessary ritual. Modern operating systems will avoid disk fragmentation automatically.
 

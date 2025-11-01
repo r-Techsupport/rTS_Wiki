@@ -38,7 +38,7 @@ Windows used to perform two annual updates before 2022, named accordingly `2xHx`
 
 For versions not listed here, check out the lifecycle information from Microsoft: [Windows 8.1](https://docs.microsoft.com/en-us/lifecycle/products/windows-81), [Windows 10](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro), [Windows 11](https://docs.microsoft.com/en-us/lifecycle/products/windows-11-home-and-pro-version-21h2)
 
-If you need help installing a newer version of Windows, check out [our guide](/windows).
+If you need help installing a newer version of Windows, check out [our guide](/installations/install-11).
 ## Switch to a Linux distro
 
 These days, Linux distros are truly a great alternative to Windows. Linux is very stable and secure, and does everything an average user wants, whether that be Facebook or writing essays. If you are a gamer, Linux has thousands of native games and many more are available via Steam's [ProtonDB](https://www.protondb.com/). Proton's support is getting expanded daily, Battleye and EAC support has been released  recently, meaning you will soon be able to play almost all of the current AAA games natively. However, you can play the majority of games on Steam on Linux with no hassle by just switching on the Proton compatibility layer.

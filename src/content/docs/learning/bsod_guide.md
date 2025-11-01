@@ -284,7 +284,7 @@ I am not here to explain how to solve every software issue that causes BSODs. If
 
 Sometimes there is a way to determine the exact cause of the fault, and you might get away with a registry change or disabling/enabling a system service, but we would not be exploring that in this guide. The overwhelmingly the best course of action in the case of a software-caused BSOD is to reinstall the faulting module. 
 
-If the faulting module is part of the Windows system, run the [DISM/SFC commands](/guides/dism-sfc) and, when those do nothing, [reinstall windows](/windows).
+If the faulting module is part of the Windows system, run the [DISM/SFC commands](/guides/dism-sfc) and, when those do nothing, [reinstall windows](/installations/install-11).
 
 You may choose to spend time looking for solutions online, and maybe you get lucky and find a forum post with a solution that solves the issue, but in most cases you are simply wasting your time. No need to give it your all. ***Just reinstall.***
 
