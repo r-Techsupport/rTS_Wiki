@@ -20,7 +20,7 @@ This guide is to quickly set up your Windows desktop after installation of Windo
 
 > [!NOTE] Reinstalling Windows
 > 
-> For installing/reinstalling Windows, please refer to [this guide](/windows).
+> For installing/reinstalling Windows, please refer to [this guide](/installations/install-11).
 
 ## Drivers/Applications you need to download:
 
@@ -91,7 +91,7 @@ These drivers are optional and mainly for RGB control purposes, or custom button
     - Tron Script
     - AtlasOS
 
-    If you utilized these tools, it is highly recommended you reinstall Windows (again) by following [this guide](/windows).
+    If you utilized these tools, it is highly recommended you reinstall Windows (again) by following [this guide](/installations/install-11).
 
 - **Driver finders:**
 
