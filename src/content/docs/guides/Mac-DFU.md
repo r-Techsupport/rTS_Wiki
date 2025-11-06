@@ -142,14 +142,6 @@ If keyboard commands aren't working:
 > [!TIP] Success
 > When restoration completes successfully, your Mac should turn on and display the Hello screen.
 
-> [!NOTE] Information
-> If having trouble entering DFU mode:
-> - Try multiple attempts with precise timing
-> - Ensure using correct ports
-> - Verify cable supports data transfer
-> - If using adapters, try different connection methods
-> - Try the alternative DFU Blaster method above
-
 ## Common Issues
 
 If restore fails, check:
