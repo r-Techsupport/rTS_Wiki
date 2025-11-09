@@ -4,7 +4,7 @@ title: Mac DFU
 has_children: false
 parent: General Guides
 search_exclude: false
-last_modified_date: 2025-01-03
+last_modified_date: 2025-10-18
 ---
 
 > [!CAUTION] Caution
@@ -15,7 +15,7 @@ last_modified_date: 2025-01-03
 - A second Mac running macOS 10.15.6 or newer
 - Active Apple ID and App Store access
 - Stable broadband internet connection
-- 32GB free storage space for download and extraction
+- At least 32GB of free storage space for download and extraction
 - Both computers should be fully charged
 - Compatible connection:
     - USB-C to USB-C cable (Apple charging cable works fine)
@@ -27,7 +27,7 @@ last_modified_date: 2025-01-03
 1. Download [Apple Configurator](https://apps.apple.com/app/id1037126344) from the App Store
 2. Run Apple Configurator
 
-{: .warning .warning-icon }
+> [!IMPORTANT] Important
 > While Finder can sometimes be used for restoration, Apple Configurator is more reliable and recommended.
 
 ## Apple Silicon MacBook Instructions
@@ -99,6 +99,9 @@ last_modified_date: 2025-01-03
     - Continue holding for 3-5 seconds
     - Look for DFU icon in Apple Configurator
 
+> [!NOTE] Information
+> The screen on the target device will stay off while in DFU mode.
+
 ## Alternative Method: DFU Blaster
 
 If keyboard commands aren't working:
@@ -108,13 +111,16 @@ If keyboard commands aren't working:
 3. Install and run the app
 4. Follow on-screen instructions to enter DFU mode
 
+> [!TIP] Tip
+> DFU Blaster may work better with the target device in recovery mode.
+
 > [!CAUTION] Caution
 > DFU Blaster is a third-party tool. Review its licensing terms before use.
 
 ## Restore Process
 
 > [!CAUTION] Caution
-> Unplugging the cable during restoration will result in data loss and may leave your computer in an unrecoverable state.
+> Unplugging the cable or either device losing power during restoration will result in data loss and may leave your computer in an unrecoverable state.
 
 1. Once in DFU mode, open Apple Configurator
 
@@ -124,18 +130,17 @@ If keyboard commands aren't working:
     - Confirm the warning
     - Wait for download and installation (15-45 minutes)
 
+> [!TIP] Tip
+>
+> Downloading the .ipsw restore image from the [Apple Developer Portal](https://developer.apple.com/download/os/) or a 3rd party site like [Apple DB](https://appledb.dev/device-selection/Macs.html) may be faster. After downloading the file drag and drop it to the center of the DFU icon and click restore.
+
 3. Mac will automatically restart when complete
+
+> [!NOTE] Information
+> Various progress bars may appear during restoration, these are completely innacurate.
 
 > [!TIP] Success
 > When restoration completes successfully, your Mac should turn on and display the Hello screen.
-
-> [!NOTE] Information
-> If having trouble entering DFU mode:
-> - Try multiple attempts with precise timing
-> - Ensure using correct ports
-> - Verify cable supports data transfer
-> - If using adapters, try different connection methods
-> - Try the alternative DFU Blaster method above
 
 ## Common Issues
 
