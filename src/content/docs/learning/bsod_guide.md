@@ -1147,4 +1147,25 @@ ffffe502`de44fb60 00000000`00000000     : ffffe502`de450000 ffffe502`de449000 00
 
 Nothing mind-blowing here; Windows does something that needs the NVMe drive to "reset", the drive fails to do so, tells storport that it failed and storport tells windows there is a fatal error in the NVMe drive and forces the bugcheck. It is a very clear-cut NVMe failure.
 
-It is very important to note that a WHEA Machine Check Exception is not the same as the BugCheck `MACHINE_CHECK_EXCEPTION` (`0x9C`). If you are seeing a `MACHINE_CHECK_EXCEPTION` BSOD, you are either getting a WHEA error as Windows is booting, and it can be anything a WHEA error can be, or it is happening after boot and something is causing Windows to think you are getting an MCE without the CPU agreeing, which is typically due to Windows corruption.
+It is very important to note that a WHEA Machine Check Exception is not the same as the BugCheck `MACHINE_CHECK_EXCEPTION` (`0x9C`). If you are seeing a `MACHINE_CHECK_EXCEPTION` BSOD, you are either 
+getting a WHEA error as Windows is booting, and it can be anything a WHEA error can be, or it is happening after boot and something is causing Windows to think you are getting an MCE without the CPU agreeing, which is typically due to Windows corruption.
+
+### `HYPERVISOR_ERROR` (`0x20001`)
+When the stack mentions `NmiInterrupt` 90-95% of the time, it's the CPU. Validate temperatures and revert any voltage or clock changes.
+
+```
+STACK_TEXT:
+ffffda80`d7338ca8 fffff805`9bf84dfa : 00000000`00020001 00000000`00000028 00000000`00000002 65000000`00000000 : nt!KeBugCheckEx
+ffffda80`d7338cb0 fffff805`9bfb1711 : ffff9287`ac540fb0 fffff805`9bfc4136 ffffda80`d7349990 ffffda80`d7338d30 : nt!HvlSkCrashdumpCallbackRoutine+0x8a
+ffffda80`d7338cf0 fffff805`9c0aa9c2 : 00000000`00000100 ffffda80`d7338ef0 00000000`00000000 00000000`00000000 : nt!KiProcessNMI+0xb1
+ffffda80`d7338d30 fffff805`9c0aa72e : 00000000`00000000 00000000`00000100 ffffda80`d7338ef0 00000000`00000000 : nt!KxNmiInterrupt+0x82
+ffffda80`d7338e70 fffff805`2b600003 : fffff805`9bd52b1b fffff08e`f2c4f500 00000000`00000000 ffffda80`d72aa180 : nt!KiNmiInterrupt+0x26e
+fffff08e`f2c4f1f8 fffff805`9bd52b1b : fffff08e`f2c4f500 00000000`00000000 ffffda80`d72aa180 fffff805`9bfb3517 : 0xfffff805`2b600003
+fffff08e`f2c4f200 fffff805`9bf83ea6 : 00000000`00000000 ffffda80`d72aa180 00000000`3310cc7b 00000000`00000000 : nt!HvcallInitiateHypercall+0x6b
+fffff08e`f2c4f290 fffff805`75c0630d : 00000000`000100de 00000000`00000000 00000000`390ecee9 00000000`00000000 : nt!HvlRequestProcessorHalt+0x26
+fffff08e`f2c4f2c0 fffff805`75c0e171 : fffff08e`f2c4f460 fffff805`9be2a673 ffffb446`56c361d2 fffff805`9bea990c : amdppm!HvRequestIdle+0x2d
+fffff08e`f2c4f310 fffff805`9bee3a81 : 00000000`00000000 fffff08e`00000000 ffff9287`b3796000 ffffda80`d72aa180 : amdppm!LpiIdleExecute+0xb1
+fffff08e`f2c4f360 fffff805`9be42240 : ffffda80`d72aa180 ffffda80`d72aa180 fffff08e`f2c4f559 ffffda80`d72b29c0 : nt!PpmIdleExecuteTransition+0x5a9
+fffff08e`f2c4f4f0 fffff805`9c09fa24 : ffffda80`d72aa180 ffffda80`d72aa100 ffff9287`00000000 ffff9287`c27ae000 : nt!PoIdle+0x1c0
+fffff08e`f2c4f5c0 00000000`00000000 : fffff08e`f2c50000 fffff08e`f2c49000 00000000`00000000 00000000`00000000 : nt!KiIdleLoop+0x54
+```
