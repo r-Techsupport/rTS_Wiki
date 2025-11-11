@@ -1151,7 +1151,7 @@ It is very important to note that a WHEA Machine Check Exception is not the same
 getting a WHEA error as Windows is booting, and it can be anything a WHEA error can be, or it is happening after boot and something is causing Windows to think you are getting an MCE without the CPU agreeing, which is typically due to Windows corruption.
 
 ### `HYPERVISOR_ERROR` (`0x20001`)
-When the stack mentions `NmiInterrupt` 90-95% of the time, it's the CPU. Validate temperatures and revert any voltage or clock changes.
+When the stack mentions `NmiInterrupt` 90-95% of the time, it's the CPU. Validate temperatures and revert any voltage or clock changes. The only component you can be pretty sure it isn't is RAM (When showing an NMI, if you see kernel code corruption it can be RAM). Unless it's ECC RAM as ECC RAM can send NMIs.
 
 ```
 STACK_TEXT:
