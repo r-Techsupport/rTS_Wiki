@@ -16,7 +16,7 @@ BIOS stands for Basic Input Output System. It is the firmware of the motherboard
 
 > For the purposes of this guide, we will refer to both as BIOS. For more advanced booting, if both the OS and your system support UEFI, it might be a better idea to install using UEFI mode (disabling CSM).
 
-> CSM, or Compatibility Support Module, is a sub system in the BIOS which appears on the BIOS/UEFI options, and is used for OS that do not support UEFI, i.e. Legacy BIOS (Note that Windows 10 support both UEFI and legacy, but Windows 11 will only boot with UEFI). For more information, you can refer to here: https://en.wikipedia.org/wiki/UEFI and head to the CSM section.
+> CSM, or Compatibility Support Module, is a sub system in the BIOS which appears on the BIOS/UEFI options, and is used for OS that do not support UEFI, i.e. Legacy BIOS (Note that Windows 11 will only boot with UEFI). For more information, you can refer to here: https://en.wikipedia.org/wiki/UEFI and head to the CSM section.
 
 Different BIOS versions support different CPUs, so if you are doing a CPU upgrade, a BIOS update may be necessary to ensure the CPU will work properly. Without it, the PC will not even boot.
 

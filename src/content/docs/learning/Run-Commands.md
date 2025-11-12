@@ -84,7 +84,7 @@ last_modified_date: 2023-01-17
 | Remote Desktop                                                   | mstsc                                      |
 | Resource Monitor                                                 | resmon                                     |
 | Resultant Set of Policy                                          | rsop.msc                                   |
-| Settings (Windows 10)                                            | ms-settings:                               |
+| Settings (Windows 11)                                            | ms-settings:                               |
 | Scheduled Tasks                                                  | control schedtasks                         |
 | Screenshot Snipping Tool                                         | snippingtool                               |
 | Security Center                                                  | wscui.cpl                                  |

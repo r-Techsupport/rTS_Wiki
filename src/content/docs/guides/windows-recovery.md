@@ -76,10 +76,10 @@ A
 
 ### 4. Go Back to the Previous Version
 
-- **Purpose:** Reverts to the previous version of Windows 10 (available after an upgrade).
+- **Purpose:** Reverts to the previous version of Windows 11 (available after an upgrade).
 - **How to use:** 
   - Access Windows Recovery.
-  - Navigate to "Go back to the previous version of Windows 10" in the "Recovery" section.
+  - Navigate to "Go back to the previous version of Windows 11" in the "Recovery" section.
   - Follow on-screen instructions to revert to the previous Windows version.
 - **When to use:** 
   - If you recently upgraded and experience compatibility issues or system instability.

@@ -19,7 +19,7 @@ redirect_from: /books/software-we-recommend/page/blacklist
 | Windows XP |                                                                                                                                                                                                  
 | Windows Vista |                                                                                                                                                                                                            
 | Windows 7     |                                                                                                                                                                                                            
-| Windows 10    | Any version prior to 22H2 is no longer supported. You can type `winver` into the start menu to see your current version. |
+| Windows 10    | Windows 10 has lost product support as a whole. See [Windows 10 EOL](/installations/install-10) for more information. |
 | Windows 11    | [See here](https://docs.microsoft.com/en-us/lifecycle/products/windows-11-home-and-pro) to check which versions are currently supported. You can type `winver` into the start menu to see your current version. |
 ### Linux
 Please check with the distro provider for the exact times. All versions of Linux prior to their 2012 release are considered unsupported.
