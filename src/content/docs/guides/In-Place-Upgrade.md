@@ -16,12 +16,11 @@ last_modified_date: 2025-01-23
 >
 > Please refer to our [official malware](/safety-security/malware-guide) guide below to see how to deal with malware.
 
+There are 2 methods to do an In-Place Installation, either method will work.
+
 ## Method 1: Downloading the Windows ISO file
-1. Download the Windows ISO file from Microsoft's official website:
-    - Windows 11: https://www.microsoft.com/en-us/software-download/windows11
-        - Scroll all the way to the bottom to get the direct link to download the ISO.
-    - Windows 10: https://www.microsoft.com/en-us/software-download/windows10
-        - Follow the instructions provided on the page to see how you can download the ISO file using the Media Creation Tool.
+1. Download the Windows ISO file from Microsoft's official website: https://www.microsoft.com/en-us/software-download/windows11
+    - Scroll all the way to the bottom to get the direct link to download the ISO.
 2. Double click the downloaded ISO file to mount it.
     - You may get a User Account Control (UAC) dialogue, you may click Open anyways.
 3. Head to the mounted drive by double clicking it.
