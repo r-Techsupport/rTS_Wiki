@@ -31,7 +31,7 @@ These questions might even help you solve your issue yourself. If not, include a
 ## Step 2: Gather Information
 Gather general information about your system or device. These are extremely important for a tech to know. Not all details are relevant to your problem, but adding as much information to your post as you can doesn't hurt:
 
-Operating System (Windows 10, Android, MacOS, which version is it?)
+Operating System (Windows, Android, MacOS, which version is it?)
 Device (Smartphone, Computer, Laptop, which model is it?)
 Application (one application? multiple? Which version do you have?)
 Specs (System specs like RAM, CPU, GPU, etc, include even if you include the device model)
@@ -40,7 +40,7 @@ Please refer to our [System Dossier article](/guides/making-a-system-dossier) fo
 ## Step 3: Choose a title
 Your title should be descriptive. Here are some examples of really bad titles: “I have a problem”, “help”, “I’ve been trying for hours and this problem is still here oh no I’m running out of characte”
 
-Examples of good titles are: “Windows 10 shows ‘unable to boot from hard drive’ “, “Android has red icon on top left corner”, “Outlook doesn't sync anymore”.
+Examples of good titles are: “Windows 11 shows ‘unable to boot from hard drive’ “, “Android has red icon on top left corner”, “Outlook doesn't sync anymore”.
 
 The title should be a tiny summary of your post. Just enough that a tech will know what it is roughly about.
 

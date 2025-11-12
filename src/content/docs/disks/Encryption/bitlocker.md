@@ -55,7 +55,7 @@ When enabling BitLocker without a Microsoft account, you're given the option to 
 
 In order to use BitLocker, your computer must meet the following minimum requirements:
 
-* Windows 10 Pro or newer Pro edition Windows
+* Windows 11 Pro or newer Pro edition Windows
 * An enabled Trusted Platform Module (TPM) version 1.2 or later
 
 ## Setting up BitLocker to Go for detachable or Portable Storage

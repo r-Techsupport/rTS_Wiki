@@ -41,7 +41,7 @@ If you want to stop syncing OneDrive on your computer because you are on a meter
 
 ## Hiding OneDrive
 OneDrive is built in to some versions of Windows and can't be uninstalled. But you can hide it and stop the sync process, so it stays hidden. To do this, turn off all the OneDrive settings and remove the OneDrive folder from File Explorer.
-### Windows 10/11:
+### Windows 11:
 1. Select the white or blue OneDrive cloud icon in the notification area, at the far right of the taskbar.This icon may be under the "show hidden icons"tab on your taskbar.
 2. Select  ![settingsicon.webp](../../../assets/One-Drive/settingsicon.webp)  > Settings.
 
@@ -58,7 +58,8 @@ OneDrive is built in to some versions of Windows and can't be uninstalled. But y
 
 ## Uninstalling OneDrive
 You won't lose files or data by uninstalling OneDrive from your computer. You can always access your files by signing in to [OneDrive online](https://onedrive.com/)
-### Windows 10
+
+### Windows 11
 1. Select the Start button, type Programs in the search box, and then select Add or remove programs in the list of results.
 2. Under Apps & features, find and select Microsoft OneDrive, and then select Uninstall. If you're prompted for an administrator password or confirmation, type the password or provide confirmation.
 

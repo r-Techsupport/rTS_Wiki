@@ -2,7 +2,7 @@
 title: Windows cannot be installed on this disk
 description: Resolving Windows installation errors related to MBR disks
 ---
-During the instalaltion of Windows 10 and Windows 11 you may encounter an error message:
+During the installation of  Windows 11 you may encounter an error message:
 
 > Windows cannot be installed on this disk. The selected disk has an MBR partition table
 

@@ -46,7 +46,7 @@ In CMD or PowerShell run:
 ---
 ## Using DISM with a source WIM (from an ISO)
 
-DISM normally uses an Online source to repair your system, sometimes this leads to errors. You can use a Windows 10 ISO to get a 'clean' source locally. Download the ISO using the [Windows media creation tool](https://www.microsoft.com/en-us/software-download/windows10)
+DISM normally uses an Online source to repair your system, sometimes this leads to errors. You can use a Windows 11 ISO to get a 'clean' source locally. Download the ISO using the [Windows media creation tool](https://www.microsoft.com/en-us/software-download/windows11)
 
 Double click the downloaded ISO to mount it and note its drive letter in 'This PC'
 
