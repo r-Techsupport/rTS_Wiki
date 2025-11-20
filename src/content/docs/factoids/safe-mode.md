@@ -6,7 +6,7 @@ sidebar:
 has_children: false
 parent: Factoids
 pagefind: true
-last_modified_date: 2025-6-30
+last_modified_date: 2025-11-20
 ---
 
 Windows has a troubleshooting mode called safe mode, where Windows will load only critical drivers and services necessary for proper function. It is especially useful when issues exist in normal mode or when uninstalling drivers used by Windows.
@@ -84,40 +84,37 @@ bcdedit /set {current} safemode Network
 
 ## Windows fails to boot
 
-The following methods will set boot into safe mode outside of Windows system. Start with a first method and, if a method fails, move to the next one.
+It is possible to boot into safe mode from recovery environment when Windows doesnt boot properly. Use list below how to open recovery environment in different situations:
 
-   <details>
-      <summary>Method 1: Trigger Windows Recovery Environment during boot</summary>
+* Display shows **We couldn't repair your device automatically at this time** or **Couldn't connect to the network**:
+   * Press **Enter** to open options.
 
-Windows will automatically open a recovery environment when it fails to boot 3 times. If Windows crashes during boot, skip to step 4. Otherwise, follow steps below:
+* Display shows blue screen with **Recovery** or **Automatic repair**:
+   * Click **Advanced options** or **See advanced repair options** button.
 
-1. Start PC and wait for Windows boot animation to show (spinning circle).
+* PC repeatedly restarts during booting:
+   * As soon as Windows boot animation (spinning circle) shows up, shut down your PC using any of the following methods:
+       - Press reset button on PC case.
+       - Press power button for 5 seconds. Power PC back on.
+       - Switch off or unplug power from power supply. Power on the power supply and power PC back on.
+       - If the PC is a laptop and has a removable battery, remove it. Plug battery back in and power it back on.
+   * Repeat process at least 3 times until you see blue screen with **Recovery** or **Automatic repair**.
+   * Click **Advanced options** or **See advanced repair options** button.
 
-2. Use any of the following methods.
+* Display shows **Your PC/Device needs to be repaired** or black screen with **Windows Boot Manager**:
+   * A bootable USB with Windows installation media is required. See guide below.
 
-    - Press reset button on PC case.
-    - Press power button for 5 seconds.
-    - Switch off or unplug power from power supply. Power on the power supply.
-    - If the PC is a laptop and has a removable battery, remove it. Plug battery back in.
 
-3. Repeat step 1 until Windows shows, Please wait or preparing automatic repair during boot.
+Once **Advanced repair options** menu is displayed, click **Troubleshoot**, then **Advanced options**, then **Start-up Settings**, then **Restart**. After reboot, Windows will present boot options. Press **5** on keyboard to start Windows in safe mode with networking.
 
-4. Wait until blue screen with Recovery or Automatic repair shows.
-
-5. Click See advanced repair options, then Troubleshoot, then Advanced options, then Start-up Settings, then Restart. PC will reboot.
-
-6. After reboot, Windows will present boot options. Press 5 on keyboard to start Windows in safe mode with networking…
-
-   </details>
-   <details>
-      <summary>Method 2: Using bootable USB with Windows setup</summary>
+### Using bootable USB with Windows setup
 
 You can use a bootable USB with a Windows setup to run Windows in safe mode. Follow the [Windows installation guide](/installations/install-11/) until you see Select setup option, then follow steps below:
 
 1. Select Repair my PC and click Next. Select keyboard layout when prompted.
 ![Setup repair PC](../../../assets/safe-mode-assets/safemode-3.png)
 
-2. Click Troubleshoot, then Advanced options, then Command Prompt.
+2. Click **Troubleshoot**, then Advanced options, then Command Prompt.
 
 3. Type the following command and press Enter. Command will confirm successful operation once ran.
 ```
@@ -128,7 +125,6 @@ bcdedit /set {default} safeboot Network
 2. After reboot, Windows will boot into safe mode.
 
 3. Once all required tasks in safe mode are done, follow Exit safe mode steps below.
-   </details>
 
 
 ## Exit safe mode
