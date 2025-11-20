@@ -84,7 +84,7 @@ bcdedit /set {current} safemode Network
 
 ## Windows fails to boot
 
-It is possible to boot into safe mode from recovery environment when Windows doesnt boot properly. Use list below how to open recovery environment in different situations:
+It is possible to boot into safe mode from recovery environment when Windows doesnt boot properly. Use list below how to open recovery environment menu in different situations:
 
 * Display shows **We couldn't repair your device automatically at this time** or **Couldn't connect to the network**:
    * Press **Enter** to open options.
@@ -92,7 +92,7 @@ It is possible to boot into safe mode from recovery environment when Windows doe
 * Display shows blue screen with **Recovery** or **Automatic repair**:
    * Click **Advanced options** or **See advanced repair options** button.
 
-* PC repeatedly restarts during booting:
+* PC repeatedly restarts or freezes during booting:
    * As soon as Windows boot animation (spinning circle) shows up, shut down your PC using any of the following methods:
        - Press reset button on PC case.
        - Press power button for 5 seconds. Power PC back on.
@@ -101,8 +101,8 @@ It is possible to boot into safe mode from recovery environment when Windows doe
    * Repeat process at least 3 times until you see blue screen with **Recovery** or **Automatic repair**.
    * Click **Advanced options** or **See advanced repair options** button.
 
-* Display shows **Your PC/Device needs to be repaired** or black screen with **Windows Boot Manager**:
-   * A bootable USB with Windows installation media is required. See guide below.
+* Display shows **Your PC/Device needs to be repaired**, black screen with **Windows Boot Manager**, or PC keeps booting into BIOS menu:
+   * A bootable USB with Windows installation media is required. See section below.
 
 
 Once **Advanced repair options** menu is displayed, click **Troubleshoot**, then **Advanced options**, then **Start-up Settings**, then **Restart**. After reboot, Windows will present boot options. Press **5** on keyboard to start Windows in safe mode with networking.
@@ -114,7 +114,7 @@ You can use a bootable USB with a Windows setup to run Windows in safe mode. Fol
 1. Select Repair my PC and click Next. Select keyboard layout when prompted.
 ![Setup repair PC](../../../assets/safe-mode-assets/safemode-3.png)
 
-2. Click **Troubleshoot**, then Advanced options, then Command Prompt.
+2. Click **Troubleshoot**, then **Advanced options**, then **Command Prompt**.
 
 3. Type the following command and press Enter. Command will confirm successful operation once ran.
 ```
