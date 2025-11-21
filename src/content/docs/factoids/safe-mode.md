@@ -117,21 +117,21 @@ As soon as Windows boot animation (spinning circle) shows up, shut down your PC 
 
 Repeat process until you see **Please wait** or **Preparing automatic repair**, then wait for a blue screen with **Recovery** or **Automatic repair**, then click **Advanced options** or **See advanced repair options** button, then proceed [here](#open-safe-mode-in-recovery-environment). Process requires at most 3 restarts to work.
 
-If above steps dont work, a bootable USB with Windows installation media is required. See [related section](#using-bootable-USB-with-Windows-setup) below.
+If above steps dont work, a bootable USB with Windows installation media is required. See [related section](#using-bootable-usb-with-windows-setup) below.
 
 </details>
 <details>
 <summary>Display shows "Your PC/Device needs to be repaired", black screen with "Windows Boot Manager", or PC keeps booting into BIOS menu:</summary>
 
-A bootable USB with Windows installation media is required. See [related section](#using-bootable-USB-with-Windows-setup) below.
+A bootable USB with Windows installation media is required. See [related section](#using-bootable-usb-with-windows-setup) below.
 
 </details>
 
-#### [Open safe mode in recovery environment](#open-safe-mode-in-recovery-environment)
+#### Open safe mode in recovery environment
 
 Once **Advanced repair options** menu is displayed, click **Troubleshoot**, then **Advanced options**, then **Start-up Settings**, then **Restart**. After reboot, Windows will present boot options. Press **5** on keyboard to start Windows in safe mode with networking.
 
-### [Using bootable USB with Windows setup](#using-bootable-USB-with-Windows-setup)
+### Using bootable USB with Windows setup
 
 You can use a bootable USB with a Windows setup to run Windows in safe mode. Follow the [Windows installation guide](/installations/install-11/) until you see Select setup option, then follow steps below:
 
