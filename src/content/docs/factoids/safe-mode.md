@@ -6,7 +6,7 @@ sidebar:
 has_children: false
 parent: Factoids
 pagefind: true
-last_modified_date: 2025-6-30
+last_modified_date: 2025-11-21
 ---
 
 Windows has a troubleshooting mode called safe mode, where Windows will load only critical drivers and services necessary for proper function. It is especially useful when issues exist in normal mode or when uninstalling drivers used by Windows.
@@ -84,40 +84,61 @@ bcdedit /set {current} safemode Network
 
 ## Windows fails to boot
 
-The following methods will set boot into safe mode outside of Windows system. Start with a first method and, if a method fails, move to the next one.
+It is possible to boot into safe mode from recovery environment menu when Windows doesnt boot properly. 
 
-   <details>
-      <summary>Method 1: Trigger Windows Recovery Environment during boot</summary>
+#### Common scenarios
+Use list below how to open recovery environment menu in different situations:
+<details>
+<summary>Display shows "We couldn't repair your device automatically at this time" or "Couldn't connect to the network":</summary>
 
-Windows will automatically open a recovery environment when it fails to boot 3 times. If Windows crashes during boot, skip to step 4. Otherwise, follow steps below:
+Press **Enter** to open options, then proceed [here](#open-safe-mode-in-recovery-environment).
 
-1. Start PC and wait for Windows boot animation to show (spinning circle).
+</details>
 
-2. Use any of the following methods.
+<details>
+<summary>Display shows blue screen with "Recovery" or "Automatic repair":</summary>
 
-    - Press reset button on PC case.
-    - Press power button for 5 seconds.
-    - Switch off or unplug power from power supply. Power on the power supply.
-    - If the PC is a laptop and has a removable battery, remove it. Plug battery back in.
+Click **Advanced options** or **See advanced repair options** button, then proceed [here](#open-safe-mode-in-recovery-environment).
 
-3. Repeat step 1 until Windows shows, Please wait or preparing automatic repair during boot.
+</details>
 
-4. Wait until blue screen with Recovery or Automatic repair shows.
+<details>
+<summary>Display shows spinning circle animation, but PC repeatedly restarts or freezes during booting:</summary>
 
-5. Click See advanced repair options, then Troubleshoot, then Advanced options, then Start-up Settings, then Restart. PC will reboot.
+As soon as Windows boot animation (spinning circle) shows up, shut down your PC using any of the following methods:
 
-6. After reboot, Windows will present boot options. Press 5 on keyboard to start Windows in safe mode with networking…
+   - Press reset button on PC case.
+> OR
+   - Press power button for 5 seconds. Power PC back on.
+> OR
+   - Switch off or unplug power from power supply. Power on the power supply and power PC back on.
+> OR
+   - If the PC is a laptop and has a removable battery, remove it. Plug battery back in and power it back on.
 
-   </details>
-   <details>
-      <summary>Method 2: Using bootable USB with Windows setup</summary>
+Repeat process until you see **Please wait** or **Preparing automatic repair**, then wait for a blue screen with **Recovery** or **Automatic repair**, then click **Advanced options** or **See advanced repair options** button, then proceed [here](#open-safe-mode-in-recovery-environment). Process requires at most 3 restarts to work.
+
+If above steps dont work, a bootable USB with Windows installation media is required. See [related section](#using-bootable-usb-with-windows-setup) below.
+
+</details>
+<details>
+<summary>Display shows "Your PC/Device needs to be repaired", black screen with "Windows Boot Manager", or PC keeps booting into BIOS menu:</summary>
+
+A bootable USB with Windows installation media is required. See [related section](#using-bootable-usb-with-windows-setup) below.
+
+</details>
+
+#### Open safe mode in recovery environment
+
+Once **Advanced repair options** menu is displayed, click **Troubleshoot**, then **Advanced options**, then **Start-up Settings**, then **Restart**. After reboot, Windows will present boot options. Press **5** on keyboard to start Windows in safe mode with networking.
+
+### Using bootable USB with Windows setup
 
 You can use a bootable USB with a Windows setup to run Windows in safe mode. Follow the [Windows installation guide](/installations/install-11/) until you see Select setup option, then follow steps below:
 
 1. Select Repair my PC and click Next. Select keyboard layout when prompted.
 ![Setup repair PC](../../../assets/safe-mode-assets/safemode-3.png)
 
-2. Click Troubleshoot, then Advanced options, then Command Prompt.
+2. Click **Troubleshoot**, then **Advanced options**, then **Command Prompt**.
 
 3. Type the following command and press Enter. Command will confirm successful operation once ran.
 ```
@@ -128,7 +149,6 @@ bcdedit /set {default} safeboot Network
 2. After reboot, Windows will boot into safe mode.
 
 3. Once all required tasks in safe mode are done, follow Exit safe mode steps below.
-   </details>
 
 
 ## Exit safe mode
