@@ -18,6 +18,6 @@
     "rehype-callouts": "^2.1.2",
     "remark-obsidian-callout": "^1.5.1",
     "sharp": "^0.34.5",
-    "starlight-links-validator": "^0.19.1"
+    "starlight-links-validator": "^0.19.2"
   }
 }
