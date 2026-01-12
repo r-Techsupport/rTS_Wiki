@@ -13,7 +13,7 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.37.1",
+    "@astrojs/starlight": "^0.37.2",
     "astro": "^5.16.8",
     "rehype-callouts": "^2.1.2",
     "remark-obsidian-callout": "^1.5.1",
