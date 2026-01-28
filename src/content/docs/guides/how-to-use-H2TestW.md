@@ -21,7 +21,7 @@ H2TestW is a program designed to help test the actual size of your storage devic
 ## Using H2TestW
 
 > [!CAUTION] Caution
-> You should ensure that you are not running H2testW on a drive with important data. The target drive should be empty.
+> You should ensure that you are not running H2TestW on a drive with important data. The target drive should be empty.
 
 1. Change the language to `English`, and then click on `Select target`.
 
@@ -37,6 +37,6 @@ H2TestW is a program designed to help test the actual size of your storage devic
 
 4. Click `Write + Verify` and wait until the program is completed. This may take some time depending on the speed of the drive.
 
-5. Once HW2TestW has finished verifying, a legitimate and healthy storage drive should return `Test finished without errors.`. If not you may have a faulty or counterfeit drive.
+5. Once H2TestW has finished verifying, a legitimate and healthy storage drive should return `Test finished without errors.`. If not you may have a faulty or counterfeit drive.
 
     ![H2TestW_4.webp](../../../assets/how-to-use-H2TestW/H2TestW_4.webp)
