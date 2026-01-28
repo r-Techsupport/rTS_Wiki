@@ -20,8 +20,8 @@ H2TestW is a program designed to help test the actual size of your storage devic
 
 ## Using H2TestW
 
-> [!CAUTION] Caution
-> You should ensure that you are not running H2TestW on a drive with important data. The target drive should be empty.
+> [!WARNING] Warning
+> Although the test is non-destructive (i.e., it won't touch existing files), you should make sure to remove any existing files from the drive. The volume must be completely empty (no files on it) for the test to provide reliable results. If you select a drive which is not empty, you'll be warned that it should be empty together with a list of files found.
 
 1. Change the language to `English`, and then click on `Select target`.
 
