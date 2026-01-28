@@ -21,7 +21,7 @@ H2TestW is a program designed to help test the actual size of your storage devic
 ## Using H2TestW
 
 > [!CAUTION] Caution
-> You should ensure that you are not running H2testW on a drive with sensetive information. The target drive should be empty.
+> You should ensure that you are not running H2testW on a drive with important data. The target drive should be empty.
 
 1. Change the language to `English`, and then click on `Select target`.
 
