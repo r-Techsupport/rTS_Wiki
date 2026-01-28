@@ -22,7 +22,7 @@ CapacityTester by c0xc tests whether a USB storage/flash drive is genuine, such 
 
 > [!WARNING] Warning
 > 
-> CapacityTester should **NOT** be used on a storage drive with already existing data (such as important documents, pictures, or other irreplaceable data) on it, as the Volume Test will overwrite and format the target drive. Otherwise, you should use [CrystalDiskInfo](https://rtech.support/factoids/cdi/), which can be used to check the S.M.A.R.T. data of any internal or external storage drives, or by using [`chkdsk`](https://rtech.support/disks/chkdsk/) in the command prompt. For further information, look [here](https://rtech.support/disks/disk-health/).
+> Avoid using CapacityTester on storage devices with existing, irreplaceable data, as the Volume Test will overwrite and format the target drive. Otherwise, we recommend using [CrystalDiskInfo](https://rtech.support/factoids/cdi/), to assess the device's [S.M.A.R.T](https://rtech.support/disks/disk-health/) data, or by running [`chkdsk`](https://rtech.support/disks/chkdsk/) in the command prompt if the device does not have any S.M.A.R.T data.
 
 1. Select the storage drive from the list below, and then click `Quick start`.
 
