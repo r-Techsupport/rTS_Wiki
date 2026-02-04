@@ -6,7 +6,7 @@ has_children: false
 grand_parent: General Guides
 parent: Memory Testing
 pagefind: false
-last_modified_date: 2022-07-16
+last_modified_date: 2026-02-03
 ---
 
 This article relies on the live media [created here](/live-sessions/linux-live-session).

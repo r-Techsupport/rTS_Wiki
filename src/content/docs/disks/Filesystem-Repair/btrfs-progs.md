@@ -18,7 +18,7 @@ This guide will go over the numerous tools this software suite has to offer, bas
 
 > [!NOTE] Information
 >
-> `btrfs-progs is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you may skip this section.
+> `btrfs-progs` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you may skip this section.
 
 **Ubuntu/Debian**: 
 ```sh
