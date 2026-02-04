@@ -46,8 +46,57 @@ import LinuxInstallMedia from '../../../_includes/embeds/create-linux-install-me
 3. Once it boots select 'Try' or 'Live'
 
 ## Things to do
+
+### Stress tests
+* stress-ng - Comprehensive system stress testing (CPU, memory, I/O, kernel)
+* stress - Simple CPU/memory/disk stress testing
+* sysbench - Database and application benchmarking
+* [Stressful Application Test](/guides/memtest/stressapptest) - Memory stress testing tool (requires installation if not using rTS media)
+
+### Disk benchmarking
+* bonnie++ - Filesystem benchmark (sequential I/O, random seeks, metadata operations)
+* fio - Advanced storage I/O benchmark (professional-grade, multi-threaded)
+
+### Filesystem support
+* [e2fsprogs](/disks/filesystem-repair/e2fsprogs) - Linux ext2/ext3/ext4 filesystem utilities (includes badblocks, debugfs, resize2fs)
+* [ntfs-3g](/disks/filesystem-repair/ntfs-3g) - Windows NTFS filesystem read/write support
+* [hfsprogs](/disks/filesystem-repair/hfsprogs) - Apple HFS/HFS+ filesystem utilities (Mac support)
+* [exfatprogs](/disks/filesystem-repair/exfatprogs) - exFAT filesystem support (modern cross-platform USB/SD cards)
+* [btrfs-progs](/disks/filesystem-repair/btrfs-progs) - Btrfs filesystem utilities (modern Linux filesystem)
+
+Additional information:
+* [Linux Filesystem Guide](/disks/filesystem-repair/linux-filesystem-overview) - Information on how the Linux filesystem works
+
+### Disk and data management
 * [Wipe disks](/disks/disk-wipe)
-* [Data Retrieval/Recovery](/disks/data-recovery/data-recovery)
 * [Disk Manipulation with Gparted](/disks/disk-management/gparted)
 * [Verify Disk Health](/disks/disk-health#smartmontools)
-* [Stressful Application Test](/guides/memtest/stressapptest)
+
+### File recovery tools
+* [Data Retrieval/Recovery](/disks/data-recovery/data-recovery) - Overview of data recovery tools and methods
+* [PhotoRec](/disks/data-recovery/photorec) - File recovery from various media types
+* [TestDisk](/disks/data-recovery/testdisk) - Partition recovery and repair tool
+* gddrescue - Disk imaging and data recovery from failing drives
+* clonezilla - Disk cloning and imaging
+* safecopy - Data recovery from damaged media
+
+### Encryption tools
+* cryptsetup - LUKS disk encryption management
+* dislocker - BitLocker encrypted drive access (Windows drive recovery)
+
+### Windows recovery
+* chntpw - Windows password reset and registry editing
+* libhivex-bin - Advanced Windows registry manipulation tools (hivexsh, hivexregedit)
+
+### Network tools
+* dnsutils - DNS lookup utilities (dig, nslookup, host)
+* traceroute - Network path tracing
+* [mtr-tiny](/networking/mtr/) - Network diagnostic tool combining ping and traceroute
+* gnome-nettool - GUI network diagnostic tool (ping, netstat, traceroute, port scan)
+* wireshark - Network protocol analyzer and packet capture
+
+### Hardware information
+* usbutils - USB device info (lsusb)
+* pciutils - PCI device info (lspci)
+* hardinfo - System profiler and hardware information GUI
+* inxi - Comprehensive hardware info
