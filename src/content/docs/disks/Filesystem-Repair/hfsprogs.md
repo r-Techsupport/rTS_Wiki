@@ -27,7 +27,7 @@ sudo apt update && sudo apt install hfsprogs
 
 **Fedora**: 
 ```sh
-sudo dnf upgrade && sudo dnf install hfsprogs
+sudo dnf install --refresh hfsprogs
 ```
 
 **Arch Linux**:

@@ -27,7 +27,7 @@ sudo apt update && sudo apt install e2fsprogs
 
 **Fedora**: 
 ```sh
-sudo dnf upgrade && sudo dnf install e2fsprogs
+sudo dnf install --refresh e2fsprogs
 ```
 
 **Arch Linux**: 

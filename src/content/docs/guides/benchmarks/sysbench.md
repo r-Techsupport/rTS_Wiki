@@ -25,7 +25,7 @@ sudo apt update && sudo apt install sysbench
 
 **Fedora**:
 ```sh
-sudo dnf upgrade && sudo dnf install sysbench
+sudo dnf install --refresh sysbench
 
 ```
 

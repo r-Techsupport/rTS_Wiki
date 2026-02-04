@@ -84,7 +84,7 @@ Ensure you have the following drivers/packs installed beforehand and ensure they
 To install these, simply enter the following into a terminal:
 
 ```bash
-sudo dnf install usbmuxd libimobiledevice6 libimobiledevice-utils
+sudo dnf install --refresh usbmuxd libimobiledevice6 libimobiledevice-utils
 ```
 
 > [!NOTE] What if I don't use DNF?

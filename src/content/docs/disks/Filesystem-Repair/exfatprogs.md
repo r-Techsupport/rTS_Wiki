@@ -27,7 +27,7 @@ sudo apt update && sudo apt install exfatprogs
 
 **Fedora**:
 ```sh
-sudo dnf upgrade && sudo dnf install exfatprogs
+sudo dnf install --refresh exfatprogs
 ```
 
 **Arch Linux**:
