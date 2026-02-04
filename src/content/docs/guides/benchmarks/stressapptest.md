@@ -4,7 +4,7 @@ sidebar:
     hidden: false
 has_children: false
 grand_parent: General Guides
-parent: Memory Testing
+parent: Benchmarks
 pagefind: false
 last_modified_date: 2026-02-03
 ---
