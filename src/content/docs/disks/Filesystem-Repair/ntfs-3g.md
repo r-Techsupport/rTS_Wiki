@@ -27,7 +27,7 @@ sudo apt update && sudo apt install ntfs-3g
 
 **Fedora**: 
 ```sh
-sudo dnf install --refresh ntfs-3g fuse
+sudo dnf install ntfs-3g fuse
 ```
 
 **Arch Linux**: 

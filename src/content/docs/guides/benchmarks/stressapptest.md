@@ -45,7 +45,7 @@ If you are utilizing a different distribution of Linux, you may utilize the foll
 
 **Fedora**:
 ```sh
-sudo dnf install --refresh stressapptest
+sudo dnf install stressapptest
 ```
 
 **Arch Linux**:

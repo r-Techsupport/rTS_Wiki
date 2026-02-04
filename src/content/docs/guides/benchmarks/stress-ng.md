@@ -28,7 +28,7 @@ sudo apt update && sudo apt install stress-ng
 
 **Fedora**:
 ```sh
-sudo dnf install --refresh stress-ng
+sudo dnf install stress-ng
 
 ```
 

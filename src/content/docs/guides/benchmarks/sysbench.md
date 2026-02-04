@@ -25,8 +25,7 @@ sudo apt update && sudo apt install sysbench
 
 **Fedora**:
 ```sh
-sudo dnf install --refresh sysbench
-
+sudo dnf install sysbench
 ```
 
 **Arch Linux**:
