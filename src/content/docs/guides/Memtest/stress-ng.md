@@ -13,7 +13,7 @@ Stress-ng is a system stress tool that hammers CPU, memory, I/O, kernel interfac
 
 > [!IMPORTANT] Important
 > 
-> Stresss-ng is best used with monitoring tools to observe system behavior under stress. It is highly recommended to utilize `top`, `htop`, temps (`sensors`), and logs (`dmesg -w`) while running stress-ng.
+> Stresss-ng is best used with monitoring tools to observe system behavior under stress. It is highly recommended to utilize `top`, `htop`, temps (`sensors`), and logs (`dmesg -w`) while running stress-ng. If you prefer a GUI, you may utilize hardinfo or gnome-system-monitor.
 
 ## Installing stress-ng
 
