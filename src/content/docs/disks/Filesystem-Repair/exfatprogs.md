@@ -27,12 +27,12 @@ sudo apt update && sudo apt install exfatprogs
 
 **Fedora**:
 ```sh
-sudo dnf install exfatprogs
+sudo dnf upgrade && sudo dnf install exfatprogs
 ```
 
 **Arch Linux**:
 ```sh
-sudo pacman -S exfatprogs
+sudo pacman -Syu exfatprogs
 ```
 
 ## Tools

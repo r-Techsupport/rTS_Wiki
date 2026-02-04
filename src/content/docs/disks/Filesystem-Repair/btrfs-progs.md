@@ -28,12 +28,13 @@ sudo apt update && sudo apt install btrfs-progs
 **Fedora**:
 More than likely pre-installed, but feel free to run the following:
 ```sh
-sudo dnf install btrfs-progs
+sudo dnf upgrade && sudo dnf install btrfs-progs
+
 ```
 
 **Arch Linux**:
 ```sh
-sudo pacman -S btrfs-progs
+sudo pacman -Syu btrfs-progs
 ```
 
 ## Tools

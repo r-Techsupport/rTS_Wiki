@@ -27,12 +27,12 @@ sudo apt update && sudo apt install ntfs-3g
 
 **Fedora**: 
 ```sh
-sudo dnf install ntfs-3g fuse
+sudo dnf upgrade && sudo dnf install ntfs-3g fuse
 ```
 
 **Arch Linux**: 
 ```sh
-sudo pacman -S ntfs-3g
+sudo pacman -Syu ntfs-3g
 ```
 
 ## Tools

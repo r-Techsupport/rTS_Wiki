@@ -20,8 +20,8 @@ Stressful Application Test is a memory testing tool, notably used by Google.
     - Install StressAppTest via the terminal by typing:
   
         ```bash
-        apt update
-        apt install stressapptest
+        sudo apt update
+        sudo apt install stressapptest
         ```
     - Run the application by typing `stressapptest -W -s <time>`. Replace `<time>` with the time in seconds that you want to run the test for. We suggest an hour, so the command would be `stressapptest -W -s 3600`. Then press Enter to actually run the command.
 
@@ -39,3 +39,16 @@ Stressful Application Test is a memory testing tool, notably used by Google.
 > ```bash
 > stressapptest -W -s 3600 -M 4G
 > ```
+
+### If not using a Debian distro
+If you are utilizing a different distribution of Linux, you may utilize the following methods instead to install StressAppTest. The application will work just as above.
+
+**Fedora**:
+```sh
+sudo dnf upgrade && sudo dnf install stressapptest
+```
+
+**Arch Linux**:
+```sh
+sudo pacman -Syu stressapptest
+```
