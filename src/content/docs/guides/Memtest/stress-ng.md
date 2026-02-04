@@ -83,6 +83,10 @@ sudo stress-ng --class all --seq 1 --timeout 30m --metrics-brief
 ```
 - Stresses a wide range of system components including CPU, memory, I/O, and kernel interfaces. Comprehensive but may be intensive. Monitor system temperature very closely.
 
+> [!CAUTION] WARNING
+>
+> Always monitor system temperatures and stability during these tests to avoid overheating or hardware stress.
+
 ## Usage guidelines
 This is a guide for making your own custom tests. When running stress-ng, you can specify the type of stress test, the number of workers, and the duration. Here are some common examples:
 
