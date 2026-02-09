@@ -19,9 +19,9 @@ For both editions, it is recommended to follow these steps at the beginning of t
 
 1. Press Shift + F10 to open a Command Prompt (a.k.a CMD) window.
      - You might need to click on the new window in order to focus the window and type in it.
-2. Type in `OOBE\BYPASSNRO` and press Enter.
+2. Type in `reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE /v BypassNRO /t REG_DWORD /d 1 /f` and press Enter.
 
-     ![win11-bypass1.webp](../../../assets/install-11/win11-bypass1.webp)
+     ![newbypass.webp](../../../assets/install-11/newbypass.web)
 
 4. The system will now reboot, and restart the OOBE process. 
 
