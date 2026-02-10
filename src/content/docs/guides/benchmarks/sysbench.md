@@ -13,7 +13,6 @@ Sysbench is a scriptable, multi-threaded benchmarking tool for evaluating Linux 
 
 ## Installing Sysbench
 
-
 > [!NOTE] Information
 >
 > `sysbench` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you may skip this section.

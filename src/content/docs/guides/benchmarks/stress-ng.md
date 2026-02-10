@@ -40,48 +40,41 @@ sudo pacman -Syu stress-ng
 ## Common tests to run
 Use the following if you are not aware of how to use stress-ng, or just want to run some common tests.
 
-**Full CPU and memory stress test (1 hour)**:
+**Full CPU and memory stress test (1 hour)**: Stresses all CPU cores and allocates 60% of RAM for memory stress.
 ```sh
 sudo stress-ng --cpu 0 --vm 1 --vm-bytes 60% --timeout 1h --metrics-brief
 ```
-- Stresses all CPU cores and allocates 60% of RAM for memory stress.
 
-**Network stress test (10 min)**:
+**Network stress test (10 min)**: Stresses TCP and UDP sockets.
 ```sh
 sudo stress-ng --sock 4 --udp 4 --timeout 10m --metrics-brief
 ```
-- Stresses TCP and UDP sockets.
 
-**Scheduler and context switching (10 min)**:
+**Scheduler and context switching (10 min)**: Stresses process scheduling, voluntary yields, and CPU affinity.
 ```sh
 sudo stress-ng --class os --seq 1 --timeout 10m --metrics-brief
 ```
-- Stresses process scheduling, voluntary yields, and CPU affinity.
 
-**Inter-process communication (IPC) (10 min)**:
+**Inter-process communication (IPC) (10 min)**: Stresses pipes, message queues, and semaphores.
 ```sh
 sudo stress-ng --pipe 8 --msg 4 --sem 4 --timeout 10m --metrics-brief
 ```
-- Stresses pipes, message queues, and semaphores.
 
-**Cache stress test (10 min)**:
+**Cache stress test (10 min)**: Stresses all CPU cache levels (L1, L2, LLC).
 ```sh
 sudo stress-ng --cache 0 --l1cache 0 --llc-cache 0 --timeout 10m --metrics-brief
 ```
-- Stresses all CPU cache levels (L1, L2, LLC).
 
-**Filesystem I/O stress test (10 min)**:
+**Filesystem I/O stress test (10 min)**: Stresses filesystem I/O using sequential read/write operations.
 ```sh
 cd /tmp  # or a dir with >50GB free space
 sudo stress-ng --class filesystem --seq 1 --timeout 10m --metrics-brief
 ```
-- Stresses filesystem I/O using sequential read/write operations.
 
-**Comprehensive system stress test (30 min)**:
+**Comprehensive system stress test (30 min)**: Stresses a wide range of system components including CPU, memory, I/O, and kernel interfaces. Comprehensive but may be intensive. Monitor system temperature very closely.
 ```sh
 sudo stress-ng --class all --seq 1 --timeout 30m --metrics-brief
 ```
-- Stresses a wide range of system components including CPU, memory, I/O, and kernel interfaces. Comprehensive but may be intensive. Monitor system temperature very closely.
 
 > [!CAUTION] WARNING
 >
@@ -91,22 +84,22 @@ sudo stress-ng --class all --seq 1 --timeout 30m --metrics-brief
 This is a guide for making your own custom tests. When running stress-ng, you can specify the type of stress test, the number of workers, and the duration. Here are some common examples:
 
 * Run a single CPU stressor on all cores for 60s:
-    ```
+    ```sh
     stress-ng --cpu 0 --timeout 60s --metrics-brief
     ```
 
 * RAM/virtual memory stress, all cores, 2 minutes:
-    ```
+    ```sh
     stress-ng --vm 0 --vm-bytes 80% --timeout 2m --metrics-brief
     ```
 
 * Filesystem I/O stress (temp files in current directory) for 2 minutes:
-    ```
+    ```sh
     stress-ng --hdd 4 --timeout 2m --metrics-brief
     ```
 
 * Run several types together:
-    ```
+    ```sh
     stress-ng --cpu 4 --vm 2 --io 2 --timeout 2m --metrics-brief
     ```
 
@@ -126,26 +119,25 @@ This walks through CPU, memory, and I/O stressors sequentially, 30 seconds each.
 Stress-ng calls each test a “stressor”. There are 300+; you won’t memorize them, so you discover and filter them:
 
 - List all stressors:
-    ```
+    ```sh
     stress-ng --stressors
     ```
 - List stressors that support --verify:
-    ```
+    ```sh
     stress-ng --verifiable
     ```
 
 - Show stressors by class, e.g. all CPU-related:
-    ```
+    ```sh
     stress-ng --class cpu\?
     ```
 
 - or all memory-related:
-    ```
+    ```sh
     stress-ng --class vm\?
     ```
 
-Each stressor has its own --name and optional --name-ops etc. A few common families:
-
+Each stressor has its own `--name` and optional `--name-ops` etc. A few common families.
 - CPU / compute: `--cpu`, `--matrix`, `--bitops`, `--crc32`, `--zlib`, vector/math variants.​
 - Memory / VM: `--vm`, `--bigheap`, `--brk`, `--mmap`, `--stack`, cache-related tests.​
 - Filesystem / I/O: `--hdd`, `--aio`, `--aiol`, `--dir`, `--dentry`, `--lockf`, many fs-specific tests.​
