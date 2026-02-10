@@ -1,0 +1,207 @@
+---
+title: Using Gddrescue to recover data
+sidebar:
+    hidden: false
+has_children: false
+parent: Data Recovery
+grand_parent: Disks
+pagefind: true
+last_modified_date: 2024-02-24
+---
+GNU ddrescue (package name `gddrescue` or `ddrescue` depending on distro-choice) is a command-line tool that copies data from a bad drive to an image or another drive while intelligently skipping and retrying bad sectors, making it much safer and more efficient than using plain dd on failing disks. It requires a Linux environment to run.
+
+## Installing Gddrescue
+> [!NOTE] Information
+>
+> `gddrescue` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you may skip this section.
+
+**Debian / Ubuntu / Linux Mint**: 
+```sh
+sudo apt update && sudo apt install gddrescue
+```
+
+**Fedora / RHEL / CentOS / AlmaLinux**:
+```sh
+sudo dnf install ddrescue
+```
+
+**Arch / Manjaro / CachyOS**:
+```sh
+sudo pacman -S ddrescue
+```
+
+> [!IMPORTANT] Important
+>
+> The command creates a `ddrescue` binary even though the package is called `gddrescue`. For the rest of the guide, we will refer to it as `ddrescue`.
+
+## Basic usage
+
+### What ddrescue does
+`ddrescue` reads from a source (failing disk or partition) and writes to a destination (image file or another disk) while recording everything in a logfile (mapfile).
+
+Basically, it works like this:
+- It automatically skips unreadable areas first and copies good data quickly, instead of getting stuck on the first bad sector.
+- The logfile tracks which blocks were good, bad, or untried so you can stop and resume later without losing progress.
+- You usually image the failing drive to a file, then work on the image with other tools (fsck, [testdisk](/disks/data-recovery/testdisk), [photorec](/disks/data-recovery/photorec), etc.), not on the dying drive.
+
+### Important warnings
+
+> [!CAUTION] Caution
+>
+> Read this section very carefully before using ddrescue! When dealing with a failing drive, being careful matters more than speed.
+>   - Always double-check which device is source and which is destination; mixing them up can destroy your only copy of the data.
+>   - Never write anything (mount, fsck, repairs) to the failing source disk; keep it read-only and only write to images or healthy disks.
+>   - Avoid repeatedly power-cycling it; each start/stop can make mechanical problems worse or degrade the drive controller further.
+>   - Do not start with aggressive retry options (like many -r retries), because this can make the drive hang for hours on bad areas before copying the good regions.
+>   - Ensure your destination (image file or clone disk) is at least as large as the source drive; otherwise the copy will not complete.
+
+A simple mental rule: “Source is always the sick or failing disk; destination is always the safe disk or image file.”
+
+### Identifying source and destination
+Before running ddrescue you must know the correct device names.
+
+#### 1. List disks: 
+`lsblk` or `sudo fdisk -l` (these show devices like `/dev/sda`, `/dev/sdb`, `/dev/nvme0n1`). If you want to understand what these names mean, check out our [linux filesystem guide](filesystem-repair/linux-filesystem-overview). Googling the names `sda`, `sdb`, etc. also will help in understanding.
+- If you see a disk that matches the size of your failing drive, that's likely your source.
+- If you see a disk that matches the size of your destination (like a new drive or a large empty disk), that's likely your destination.
+
+An example output of `lsblk` might look like this:
+```
+> lsblk
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+sda           8:0    1  14.3G  0 disk 
+└─sda1        8:1    1  14.3G  0 part 
+zram0       251:0    0   7.3G  0 disk [SWAP]
+nvme0n1     259:0    0 119.2G  0 disk 
+├─nvme0n1p1 259:1    0   600M  0 part /boot/efi
+├─nvme0n1p2 259:2    0     1G  0 part /boot
+└─nvme0n1p3 259:3    0 117.7G  0 part /home
+                                      /
+```
+An example output of `sudo fdisk -l` might look like this:
+```
+> sudo fdisk -l
+Disk /dev/nvme0n1: 119.24 GiB, 128035676160 bytes, 250069680 sectors
+Disk model: KBG40ZNS128G TOSHIBA MEMORY             
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 6780D963-0F0D-4D25-B7FD-D4F3DE833F9C
+
+Device           Start       End   Sectors   Size Type
+/dev/nvme0n1p1    2048   1230847   1228800   600M EFI System
+/dev/nvme0n1p2 1230848   3327999   2097152     1G Linux extended boot
+/dev/nvme0n1p3 3328000 250068991 246740992 117.7G Linux filesystem
+
+
+Disk /dev/zram0: 7.35 GiB, 7888437248 bytes, 1925888 sectors
+Units: sectors of 1 * 4096 = 4096 bytes
+Sector size (logical/physical): 4096 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/sda: 14.34 GiB, 15401484288 bytes, 30081024 sectors
+Disk model: Cruzer Blade    
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 94DBC5F2-AD50-47A0-9A53-A476F0166CB1
+
+Device     Start      End  Sectors  Size Type
+/dev/sda1   2048 30078975 30076928 14.3G Microsoft basic data
+```
+
+> [!TIP] Tip
+>
+> It might be preferable to utilize `sudo fdisk -l` to get more detailed information about the disks, including their sizes, partitions, and filesystem types.
+>
+> This can help confirm which disk is which if you do not understand the output of `lsblk` or if the disks have similar sizes. The output will show you the disk names (e.g., `/dev/sda`, `/dev/sdb`), their sizes, and any partitions they contain, which can help you identify the source and destination more confidently.
+
+In addition, you can also use `dmesg | tail` after plugging in the failing drive to see the latest kernel messages. This can help confirm which device name corresponds to the failing drive, especially if it shows errors or warnings related to that device.
+
+#### 2: Unmount failing drive partitions:
+If the failing drive has any partitions that are currently mounted, you must unmount them before using ddrescue. You can do this with `umount`:
+```sh
+sudo umount /dev/sdX1
+sudo umount /dev/sdX2
+```
+Replace `/dev/sdX1`, `/dev/sdX2`, etc. with the actual partition names of the failing drive. See part 1 for how to identify these.
+
+#### 3: Picking source and destination
+For the source, select the whole failing disk (e.g., `/dev/sdb`), not a partition (e.g., `/dev/sdb1`), because you want to copy everything including the partition table and all data.
+
+For the destination, you have two options:
+- **Image file**: This is safer because it doesn't risk overwriting any existing data on a disk. You would specify a path like `/path/to/image.img` as the destination.
+- **Another disk**: This is faster but riskier. You would specify the whole disk (e.g., `/dev/sdc`) as the destination, but be very careful to choose the correct one.
+
+### Running ddrescue: Basic first-pass imaging
+The canonical simple pattern is: first quick pass with no retries to grab all easy data, then optional later passes to retry bad areas.
+
+#### Step 1: Quick image to a file (no retries)
+Example: source `/dev/sdX`, destination image `/mnt/backup/disk.img`, logfile `/mnt/backup/disk.log`:
+```sh
+sudo ddrescue -n /dev/sdX /mnt/backup/disk.img /mnt/backup/disk.log
+```
+
+What this does:
+
+- `-n` tells ddrescue to avoid scraping and retries for now; it copies all readable blocks as quickly as possible, skipping areas that cause errors.
+- The logfile `disk.log` records which blocks are good, bad, or pending so you can resume later.
+
+You can stop this with Ctrl+C; ddrescue will save progress to the logfile so you can run the same command again and it will continue.
+
+#### Step 2: Optional retries on bad areas
+Once the quick pass finishes, you can attempt to recover more data from the problematic areas:
+```sh
+sudo ddrescue -d -r3 /dev/sdX /mnt/backup/disk.img /mnt/backup/disk.log
+```
+
+- `-d` uses “direct” disk access, bypassing the kernel cache, which can help with some failing drives.
+- `-r3` tells ddrescue to retry bad sectors up to 3 times; you can adjust the number, but extremely high retry counts can be risky and very slow.
+- It reuses the same logfile so it only works on previously failed or unfinished blocks.
+
+If the disk is in very bad shape, you might prefer `-r1` or even no retries at all to minimize stress.
+
+### Running ddrescue: Cloning directly disk-to-disk
+Sometimes you want a clone on another physical drive rather than an image file. The command is similar, but the destination is a disk instead of an image:
+
+Example: source failing disk `/dev/sdX`, destination healthy blank disk `/dev/sdY` (must be same size or larger):
+
+#### Step 1: Quick pass, no retries:
+```sh
+sudo ddrescue -n /dev/sdX /dev/sdY clone.log
+```
+#### Step 2: Optional retries:
+```sh
+sudo ddrescue -d -r3 /dev/sdX /dev/sdY clone.log
+```
+
+> [!WARNING] WARNING
+>
+> - You must be absolutely sure `/dev/sdY` is the target you are willing to overwrite completely. This command will destroy any data on `/dev/sdY`.
+> - Some guides recommend using `-f` when the destination is a block device to force overwriting; on some systems ddrescue will refuse to write to a block device without `-f`.
+
+Once again, disk-to-image is generally safer. You can always write the image back to a new disk later if needed.
+
+### Importance of the logfile (mapfile)
+The logfile (often called mapfile) is a critical part of ddrescue's operation. It tracks the status of each block of data.
+
+- You must specify the same logfile every time you work on a given source-destination pair.
+- The logfile records which blocks are finished, failed, or pending; ddrescue uses this to avoid re-reading good areas and to focus on bad regions.
+- If the system crashes or you stop ddrescue, you can simply rerun the last command and it resumes from where it left off using the logfile.
+- Tools like [ddrescueview](https://sourceforge.net/projects/ddrescueview/) can graphically show you which parts of the disk were recovered successfully.
+
+Always keep the logfile on a healthy disk (for example, next to the image file).
+
+### After imaging: Working with the image
+Once you have an image, you generally stop touching the failing disk and work only on the image. You can mount the image, run filesystem checks, or use recovery tools like [testdisk](/disks/data-recovery/testdisk) or [photorec](/disks/data-recovery/photorec) on the image file to try to recover files.
+
+Typical next steps (examples, not full tutorials):
+1. Try to mount the image read-only (for a whole-disk image):
+    - Create a loop device and maybe use `kpartx` or `losetup` to expose partitions, then mount the relevant partition read-only.
+2. Run filesystem checks (`fsck`) on the cloned disk or on a copy of the image, not on the original.
+3. Use file recovery tools ([testdisk](/disks/data-recovery/testdisk) or [photorec](/disks/data-recovery/photorec)) on the image file to try to recover files.
+
+Basically the pattern to follow is "ddrescue -> image file -> run other recovery tools on that image".

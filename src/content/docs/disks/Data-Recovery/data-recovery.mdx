@@ -18,7 +18,8 @@ import DataRecoveryWarning from '../../../../_includes/embeds/data-recovery-warn
 > If you are seeing "cyclic redundancy check" anywhere, you will not be able to attempt recovery at home and should seek professional data recovery services.
 
 ## Scenarios
-### A readable disk
+
+### A readable disk (Live Linux Session)
 A small obstacle preventing you from using your computer like normal such as:
 - My computer won't turn on for some reason
 - My computer is BSODing when I turn it on so I cannot get to Windows like normal.
@@ -27,17 +28,27 @@ A small obstacle preventing you from using your computer like normal such as:
 
 For these issues, you can [recover files by attaching your disk to another computer](/disks/data-recovery/drive-dock) or [recover files with a Live Linux Session](/disks/data-recovery/reading-linux).
 
-### My disk is visible but inaccessible
+### My disk is physically failing (Gddrescue)
+Your disk is showing signs of hardware failure and you need to create a safe copy before attempting any other recovery methods. This may be because:
+- Your disk is making clicking, grinding, or beeping sounds
+- You are seeing "bad sectors" or "read errors" in event logs or SMART data
+- Your disk keeps disconnecting or is not detected consistently
+- File transfers from the disk are extremely slow or freeze
+- The disk is showing signs of physical damage or deterioration
+
+For these issues, use [Gddrescue](/disks/data-recovery/gddrescue) to create an image of the failing disk before attempting any other recovery methods.
+
+### My disk is visible but inaccessible (Testdisk)
 You have a drive that is visible in Windows but it has no data on it. This may be because:
-- I deleted partitions on the wrong disk (But did not make new ones)
-- I turned my computer on and it says my disk needs to be "initialized"
-- My disk is "RAW" in disk management
-- My disk is "unknown" in disk management
-- My disk is "unallocated" in disk management
+- You deleted partitions on the wrong disk (But did not make new ones)
+- You turned your computer on and it says your disk needs to be "initialized"
+- Your disk is "RAW" in disk management
+- Your disk is "unknown" in disk management
+- Your disk is "unallocated" in disk management
 
 For these issues, use [Testdisk](/disks/data-recovery/testdisk) to recover your partition table.
 
-### I accidentally changed data on my disk
+### I accidentally changed data on my disk (Photorec)
 You had data on your disk, and it had new data written to it, replacing the old data.
 - You formatted the wrong disk
 - You installed Windows on the wrong disk
