@@ -1,0 +1,51 @@
+---
+title: Using Clonezilla to recover data
+sidebar:
+    hidden: false
+has_children: false
+parent: Data Recovery
+grand_parent: Disks
+pagefind: true
+last_modified_date: 2026-02-11
+---
+
+Clonezilla is a free, open-source tool for disk imaging and cloning, ideal for backing up data from a failing drive before it fails completely. 
+
+It can create an image of the entire drive or clone it to another drive, and it intelligently handles bad sectors to maximize data recovery. Clonezilla runs from a bootable live media, so you will need to create a bootable USB or CD/DVD with Clonezilla to use it. Alternatively, you may utilize the rTS Debian live media created in [this guide](/live-sessions/linux-live-session) which already comes with Clonezilla pre-installed.
+
+## Installing Clonezilla
+> [!NOTE] Information
+>
+> `clonezilla` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you may skip this section.
+
+**Debian / Ubuntu / Linux Mint**: 
+```sh
+sudo apt update && sudo apt install clonezilla
+```
+
+**Fedora / RHEL / CentOS / AlmaLinux**: Clonezilla is not available in the default repositories for these distros, so you will need to add the add the external repository:
+```sh
+sudo dnf update
+sudo dnf install dnf-plugins-core
+sudo dnf copr enable sergiomb/clonezilla
+sudo dnf install clonezilla --skip-broken
+```
+
+**Arch / Manjaro / CachyOS**:
+```sh
+sudo pacman -Syu clonezilla
+```
+
+## Using Clonezilla
+Run `sudo clonezilla` to launch the text-based menu. Choose "device-device" for direct disk/partition cloning (e.g., failing drive to healthy one) or "device-image" for imaging. 
+
+![Clonezilla Main Menu](../../../../assets/data-recovery/clonezilla.png)
+
+It is recommended you select beginner mode if you have not used Clonezilla before, identify drives carefully with labels or lsblk, and use "-rescue" for bad sectors on failing drives. Images save to a mounted target directory; restore similarly.
+
+## Limitations of Clonezilla and when to use other tools
+The installed Clonezilla frontend cannot clone mounted or running system partitions reliably—unmount them first or use Live mode. Risk overwriting wrong drives; always verify source/target twice. 
+
+> [!IMPORTANT] Important
+> 
+> For failing drives, expect partial reads; supplement with [ddrescue](/disks/data-recovery/gddrescue) if needed. Clonezilla is not suitable for network/PXE cloning (use [DRBL](https://drbl.org/)/[Clonezilla SE](https://clonezilla.org/clonezilla-SE/) for that).
