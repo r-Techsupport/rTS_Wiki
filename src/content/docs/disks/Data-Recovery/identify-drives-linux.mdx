@@ -30,7 +30,7 @@ A simple mental rule: “Source is always the sick or failing disk; destination 
 Before running any data recovery software you must know the correct device names.
 
 #### 1. List disks: 
-`lsblk` or `sudo fdisk -l` (these show devices like `/dev/sda`, `/dev/sdb`, `/dev/nvme0n1`). If you want to understand what these names mean, check out our [linux filesystem guide](filesystem-repair/linux-filesystem-overview). Googling the names `sda`, `sdb`, etc. also will help in understanding.
+`lsblk` or `sudo fdisk -l` (these show devices like `/dev/sda`, `/dev/sdb`, `/dev/nvme0n1`). If you want to understand what these names mean, check out our [linux filesystem guide](/disks/filesystem-repair/linux-filesystem-overview/). Googling the names `sda`, `sdb`, etc. also will help in understanding.
 - If you see a disk that matches the size of your failing drive, that's likely your source.
 - If you see a disk that matches the size of your destination (like a new drive or a large empty disk), that's likely your destination.
 
