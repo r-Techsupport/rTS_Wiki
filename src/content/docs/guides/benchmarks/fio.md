@@ -89,7 +89,7 @@ If you have a dedicated set of tests you want to create for reuse later, you wil
 - **Advanced**: `rwmixread=80` (read % in mixed), `ramp_time=10s` (warmup), `stonewall` (pause between jobs).
 
 An example job file would look like so:
-```json
+```ini
 [global]
 ioengine=libaio
 direct=1
