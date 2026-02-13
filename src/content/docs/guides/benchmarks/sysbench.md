@@ -76,7 +76,7 @@ This is a guide for making your own custom tests. Sysbench includes these built-
 Lua scripts like `oltp_read_write` add database benchmarks (requires MySQL/PostgreSQL). For more information, please refer to [the official Sysbench documentation](https://github.com/akopytov/sysbench/blob/master/README.md#general-command-line-options).
 
 ### Creating a test
-Run sysbench `[test]` help for test-specific options. Common commands: `prepare` (setup), `run` (benchmark), `cleanup` (teardown). Use `--threads=N` (e.g., CPU cores), -`-time=60` for duration (in seconds).​
+Run sysbench `[test]` help for test-specific options. Common commands: `prepare` (setup), `run` (benchmark), `cleanup` (teardown). Use `--threads=N` (e.g., CPU cores), `--time=60` for duration (in seconds).​
 
 An example structure would be:
 
@@ -86,4 +86,4 @@ sysbench [test] --threads=4 --time=60 run
 sysbench [test] cleanup
 ```
 
-Key options: `--time=N` (seconds), `--threads=N`, -`-report-interval=10` (periodic stats).
+Key options: `--time=N` (seconds), `--threads=N`, `--report-interval=10` (periodic stats).

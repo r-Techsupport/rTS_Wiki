@@ -34,6 +34,10 @@ sudo pacman -Syu fio
 
 ## Common tests to run
 
+> [!WARNING] Warning
+>
+> Running fio on a mounted filesystem or active block device **can cause data loss**. Always ensure you are targeting the correct device and have backups before running tests!
+
 **Mixed read/write test**: Real-world read/write-heavy apps.
 ```sh
 sudo fio --name=mixed --filename=/dev/nvme0n1 --rw=randrw --bs=4k --rwmixread=70 --iodepth=32 --ioengine=libaio --direct=1 --size=10G --time_based --runtime=60 --group_reporting

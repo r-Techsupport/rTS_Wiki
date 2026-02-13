@@ -14,7 +14,7 @@ last_modified_date: 2025-12-22
 
 This guide will go over the numerous tools this software suite has to offer, basic and advanced filesystem and recovery options.
 
-## Installing e2fsprogs
+## Installing btrfs-progs
 
 > [!NOTE] Information
 >

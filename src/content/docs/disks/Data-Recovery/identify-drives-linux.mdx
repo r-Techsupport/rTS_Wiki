@@ -13,8 +13,6 @@ When working with failing drives, it's crucial to correctly identify the drive y
 
 We will be using `lsblk` and `fdisk` in this guide, but you can also use other tools like `parted`, `gparted`, or `disks` (GNOME Disk Utility) if you prefer a graphical interface.
 
-### Important warnings
-
 > [!CAUTION] Caution
 >
 > Read this section very carefully before using any form of data recovery software! When dealing with a failing drive, being careful matters more than speed.
@@ -24,7 +22,9 @@ We will be using `lsblk` and `fdisk` in this guide, but you can also use other t
 >   - Do not start with aggressive retry options (like many -r retries) for certain data recovery software, because this can make the drive hang for hours on bad areas before copying the good regions.
 >   - Ensure your destination (image file or clone disk) is at least as large as the source drive; otherwise the copy will not complete.
 
-A simple mental rule: “Source is always the sick or failing disk; destination is always the safe disk or image file.”
+> [!TIP] Tip
+> 
+> A simple mental rule: “Source is always the sick or failing disk; destination is always the safe disk or image file.”
 
 ### Identifying source and destination
 Before running any data recovery software you must know the correct device names.
