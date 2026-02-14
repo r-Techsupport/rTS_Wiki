@@ -1,5 +1,6 @@
 ---
 title: Fio
+description: Fio is a flexible I/O benchmark tool that generates synthetic disk workloads (sequential, random, mixed) so you can measure throughput, latency, and IOPS of drives, filesystems, or block devices on Linux and other OSes
 sidebar:
     hidden: false
 has_children: false
@@ -9,28 +10,33 @@ pagefind: false
 last_modified_date: 2026-02-09
 ---
 
-Fio is a flexible I/O benchmark tool that generates synthetic disk workloads (sequential, random, mixed) so you can measure throughput, latency, and IOPS of drives, filesystems, or block devices on Linux and other OSes
-
-## Installing Fio
-
 > [!NOTE] Information
 >
-> `fio` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you may skip this section.
+> `fio` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you can skip the installation section.
 
-**Ubuntu/Debian**: 
+
+<details markdown='1'>
+  <summary>Installing fio</summary>
+
+Refer below for installation instructions if you are not using our live image or want to install it on your own system.
+
+**Debian / Ubuntu / Linux Mint**:
 ```sh
 sudo apt update && sudo apt install fio
 ```
 
-**Fedora**:
+**Fedora / RHEL / CentOS / AlmaLinux**:
 ```sh
 sudo dnf install fio
+
 ```
 
-**Arch Linux**:
+**Arch / Manjaro / CachyOS**:
 ```sh
 sudo pacman -Syu fio
 ```
+</details>
+
 
 ## Common tests to run
 

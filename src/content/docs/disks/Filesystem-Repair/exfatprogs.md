@@ -1,5 +1,6 @@
 ---
 title: ExfatProgs Utility
+description: exfatprogs supplies utilities for the exFAT filesystem used in cross-platform USB/SD cards, including mkfs.exfat for creation, fsck.exfat for repair, and tune.exfat for labeling.
 sidebar:
     hidden: false
 has_children: false
@@ -10,30 +11,30 @@ pagefind: true
 last_modified_date: 2025-12-22
 ---
 
-`exfatprogs` supplies utilities for the exFAT filesystem used in cross-platform USB/SD cards, including mkfs.exfat for creation, fsck.exfat for repair, and tune.exfat for labeling.
-
 This guide will go over the numerous tools this software suite has to offer, basic and advanced filesystem and recovery options.
-
-## Installing exfatprogs
 
 > [!NOTE] Information
 >
-> `exfatprogs` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you may skip this section.
+> `exfatprogs` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you can skip the installation section.
 
-**Ubuntu/Debian**: 
+<details markdown='1'>
+  <summary>Installing exfatprogs</summary>
+
+**Debian / Ubuntu / Linux Mint**:
 ```sh
 sudo apt update && sudo apt install exfatprogs
 ```
 
-**Fedora**:
+**Fedora / RHEL / CentOS / AlmaLinux**:
 ```sh
 sudo dnf install exfatprogs
 ```
 
-**Arch Linux**:
+**Arch / Manjaro / CachyOS**:
 ```sh
 sudo pacman -Syu exfatprogs
 ```
+</details>
 
 ## Tools
 

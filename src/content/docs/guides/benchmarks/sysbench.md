@@ -1,5 +1,6 @@
 ---
 title: Sysbench
+description: Sysbench is a scriptable, multi-threaded benchmarking tool for evaluating Linux system performance, especially for databases but also CPU, memory, file I/O, and more. It's ideal for quick hardware tests without complex setups.
 sidebar:
     hidden: false
 has_children: false
@@ -9,28 +10,30 @@ pagefind: false
 last_modified_date: 2026-02-04
 ---
 
-Sysbench is a scriptable, multi-threaded benchmarking tool for evaluating Linux system performance, especially for databases but also CPU, memory, file I/O, and more. It's ideal for quick hardware tests without complex setups.
-
-## Installing Sysbench
-
 > [!NOTE] Information
 >
-> `sysbench` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you may skip this section.
+> `sysbench` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you can skip the installation section.
 
-**Ubuntu/Debian**: 
+<details markdown='1'>
+  <summary>Installing sysbench</summary>
+
+Refer below for installation instructions if you are not using our live image or want to install it on your own system.
+
+**Debian / Ubuntu / Linux Mint**:
 ```sh
 sudo apt update && sudo apt install sysbench
 ```
 
-**Fedora**:
+**Fedora / RHEL / CentOS / AlmaLinux**:
 ```sh
 sudo dnf install sysbench
 ```
 
-**Arch Linux**:
+**Arch / Manjaro / CachyOS**:
 ```sh
 sudo pacman -Syu sysbench
 ```
+</details>
 
 ## Common tests to run
 Use the following if you are not aware of how to use sysbench, or just want to run some common tests.

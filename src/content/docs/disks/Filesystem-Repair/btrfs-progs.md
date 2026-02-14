@@ -1,5 +1,6 @@
 ---
 title: BTRFS-Progs Utility
+description: btrfs-progs delivers management tools for the Btrfs filesystem, featuring mkfs.btrfs for creation, btrfs subvolume operations, scrub for integrity checks, and snapshot support.​
 sidebar:
     hidden: false
 has_children: false
@@ -10,32 +11,34 @@ pagefind: true
 last_modified_date: 2025-12-22
 ---
 
-`btrfs-progs` delivers management tools for the Btrfs filesystem, featuring mkfs.btrfs for creation, btrfs subvolume operations, scrub for integrity checks, and snapshot support.​
-
 This guide will go over the numerous tools this software suite has to offer, basic and advanced filesystem and recovery options.
-
-## Installing btrfs-progs
 
 > [!NOTE] Information
 >
-> `btrfs-progs` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you may skip this section.
+> `btrfs-progs` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you can skip the installation section.
 
-**Ubuntu/Debian**: 
+<details markdown='1'>
+  <summary>Installing btrfs-progs</summary>
+
+Refer below for installation instructions if you are not using our live image or want to install it on your own system.
+
+**Debian / Ubuntu / Linux Mint**:
 ```sh
 sudo apt update && sudo apt install btrfs-progs
 ```
 
-**Fedora**:
-More than likely pre-installed, but feel free to run the following:
+**Fedora / RHEL / CentOS / AlmaLinux**:
+More than likely pre-installed, but feel free to run the following to ensure you have it.
 ```sh
 sudo dnf install btrfs-progs
 
 ```
 
-**Arch Linux**:
+**Arch / Manjaro / CachyOS**:
 ```sh
 sudo pacman -Syu btrfs-progs
 ```
+</details>
 
 ## Tools
 

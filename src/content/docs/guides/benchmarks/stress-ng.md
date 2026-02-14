@@ -1,5 +1,6 @@
 ---
 title: Stress-ng
+description: Stress-ng is a system stress tool that hammers CPU, memory, I/O, kernel interfaces, and more so you can shake out hardware faults, thermal issues, and kernel bugs. This is not meant to function as a precise benchmark.
 sidebar:
     hidden: false
 has_children: false
@@ -9,33 +10,35 @@ pagefind: false
 last_modified_date: 2026-02-03
 ---
 
-Stress-ng is a system stress tool that hammers CPU, memory, I/O, kernel interfaces, and more so you can shake out hardware faults, thermal issues, and kernel bugs. This is not meant to function as a precise benchmark. 
-
 > [!IMPORTANT] Important
 > 
 > stress-ng is best used with monitoring tools to observe system behavior under stress. It is highly recommended to utilize `top`, `htop`, temps (`sensors`), and logs (`dmesg -w`) while running stress-ng. If you prefer a GUI, you may utilize hardinfo or gnome-system-monitor.
 
-## Installing stress-ng
-
 > [!NOTE] Information
 >
-> `stress-ng` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you may skip this section.
+> `stress-ng` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you can skip the installation section.
 
-**Ubuntu/Debian**: 
+<details markdown='1'>
+  <summary>Installing stress-ng</summary>
+
+Refer below for installation instructions if you are not using our live image or want to install it on your own system.
+
+**Debian / Ubuntu / Linux Mint**:
 ```sh
 sudo apt update && sudo apt install stress-ng
 ```
 
-**Fedora**:
+**Fedora / RHEL / CentOS / AlmaLinux**:
 ```sh
 sudo dnf install stress-ng
 
 ```
 
-**Arch Linux**:
+**Arch / Manjaro / CachyOS**:
 ```sh
 sudo pacman -Syu stress-ng
 ```
+</details>
 
 ## Common tests to run
 Use the following if you are not aware of how to use stress-ng, or just want to run some common tests.

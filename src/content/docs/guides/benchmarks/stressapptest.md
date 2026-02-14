@@ -43,12 +43,12 @@ Stressful Application Test is a memory testing tool, notably used by Google.
 ### If not using a Debian distro
 If you are utilizing a different distribution of Linux, you may utilize the following methods instead to install StressAppTest. The application will work just as above.
 
-**Fedora**:
+**Fedora / RHEL / CentOS / AlmaLinux**:
 ```sh
 sudo dnf install stressapptest
 ```
 
-**Arch Linux**:
+**Arch / Manjaro / CachyOS**:
 ```sh
 sudo pacman -Syu stressapptest
 ```

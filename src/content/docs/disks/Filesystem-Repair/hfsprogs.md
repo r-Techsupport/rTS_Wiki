@@ -1,5 +1,6 @@
 ---
 title: HFSProgs Utility
+description: hfsprogs offers tools for Apple's HFS and HFS+ filesystems, such as mkfs.hfsplus for formatting and fsck.hfsplus for checking, aiding Mac-Linux file exchange.
 sidebar:
     hidden: false
 has_children: false
@@ -10,31 +11,31 @@ pagefind: true
 last_modified_date: 2025-12-22
 ---
 
-`hfsprogs` offers tools for Apple's HFS and HFS+ filesystems, such as mkfs.hfsplus for formatting and fsck.hfsplus for checking, aiding Mac-Linux file exchange.
-
 This guide will go over the numerous tools this software suite has to offer, basic and advanced filesystem and recovery options.
-
-## Installing hfsprogs
 
 > [!NOTE] Information
 >
-> `hfsprogs` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you may skip this section.
+> `hfsprogs` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you can skip the installation section.
 
-**Ubuntu/Debian**: 
+<details markdown='1'>
+  <summary>Installing hfsprogs</summary>
+
+**Debian / Ubuntu / Linux Mint**:
 ```sh
 sudo apt update && sudo apt install hfsprogs
 ```
 
-**Fedora**: 
+**Fedora / RHEL / CentOS / AlmaLinux**: 
 ```sh
 sudo dnf install hfsprogs
 ```
 
-**Arch Linux**:
+**Arch / Manjaro / CachyOS**:
 Install from AUR or similar AUR helper.
 ```sh
 yay -Syu hfsprogs
 ```
+</details>
 
 ## Tools
 

@@ -1,5 +1,6 @@
 ---
 title: Ext2 File System Programs
+description: e2fsprogs provides essential utilities for managing ext2, ext3, and ext4 filesystems (which are used by many Linux distros), including tools like e2fsck for checking, resize2fs for resizing, badblocks for scanning bad sectors, and debugfs for debugging.
 sidebar:
     hidden: false
 has_children: false
@@ -10,30 +11,31 @@ pagefind: true
 last_modified_date: 2025-12-22
 ---
 
-`e2fsprogs` provides essential utilities for managing ext2, ext3, and ext4 filesystems (which are used by many Linux distros), including tools like e2fsck for checking, resize2fs for resizing, badblocks for scanning bad sectors, and debugfs for debugging.
-
 This guide will go over the numerous tools this software suite has to offer, basic and advanced filesystem and recovery options.
-
-## Installing e2fsprogs
 
 > [!NOTE] Information
 >
-> `e2fsprogs` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you may skip this section.
+> `e2fsprogs` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you can skip the installation section.
 
-**Ubuntu/Debian**: 
+<details markdown='1'>
+  <summary>Installing e2fsprogs</summary>
+
+**Debian / Ubuntu / Linux Mint**:
 ```sh
 sudo apt update && sudo apt install e2fsprogs
 ```
 
-**Fedora**: 
+**Fedora / RHEL / CentOS / AlmaLinux**: 
 ```sh
 sudo dnf install e2fsprogs
 ```
 
-**Arch Linux**: 
+**Arch / Manjaro / CachyOS**: 
 ```sh
 sudo pacman -Syu e2fsprogs
 ```
+
+</details>
 
 ## Tools
 

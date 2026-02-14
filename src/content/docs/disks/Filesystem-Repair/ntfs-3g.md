@@ -1,5 +1,6 @@
 ---
 title: NTFS-3G Utility
+description: ntfs-3g enables read/write access to Windows NTFS filesystems on Linux via FUSE, supporting mounting, permissions, and compression.
 sidebar:
     hidden: false
 has_children: false
@@ -10,30 +11,32 @@ pagefind: true
 last_modified_date: 2025-12-22
 ---
 
-`ntfs-3g` enables read/write access to Windows NTFS filesystems on Linux via FUSE, supporting mounting, permissions, and compression.
-
 This guide will go over the numerous tools this software suite has to offer, basic and advanced filesystem and recovery options.
-
-## Installing ntfs-3g
 
 > [!NOTE] Information
 >
-> `ntfs-3g` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you may skip this section.
+> `ntfs-3g` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you may skip the installation section.
 
-**Ubuntu/Debian**: 
+<details markdown='1'>
+  <summary>Installing ntfs-3g</summary>
+
+Refer below for installation instructions if you are not using our live image or want to install it on your own system.
+
+**Debian / Ubuntu / Linux Mint**:
 ```sh
 sudo apt update && sudo apt install ntfs-3g
 ```
 
-**Fedora**: 
+**Fedora / RHEL / CentOS / AlmaLinux**: 
 ```sh
 sudo dnf install ntfs-3g fuse
 ```
 
-**Arch Linux**: 
+**Arch / Manjaro / CachyOS**: 
 ```sh
 sudo pacman -Syu ntfs-3g
 ```
+</details>
 
 ## Tools
 

@@ -13,29 +13,33 @@ last_modified_date: 2024-11-05
 >
 > No sensitive information is included in the report, we will not ask you to share private information. You can view an example hw-probe report [here](https://linux-hardware.org/?probe=2080287906).
 
-## Installing hw-probe
-
 > [!NOTE] Information
 >
-> `hw-probe` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you may skip this section.
+> `hw-probe` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you can skip the installation section.
 
-**Ubuntu/Debian**: 
+<details markdown='1'>
+  <summary>Installing hw-probe</summary>
+
+Refer below for installation instructions if you are not using our live image or want to install it on your own system.
+
+**Debian / Ubuntu / Linux Mint**:
 ```sh
 sudo apt update && sudo apt install hw-probe
 ```
 
-**Fedora**:
+**Fedora / RHEL / CentOS / AlmaLinux**:
 ```sh
 sudo dnf install hw-probe
 
 ```
 
-**Arch Linux**:
+**Arch / Manjaro / CachyOS**:
 ```sh
 sudo pacman -Syu hw-probe
 ```
 
-More detailed alternative methods of installing hw-probe can be found on the [GitHub repository](https://github.com/linuxhw/hw-probe?tab=readme-ov-file)
+More detailed alternative methods of installing hw-probe can be found on the [official website](https://linux-hardware.org/?view=howto)
+</details>
 
 ## Using hw-probe
 To generate a hardware report, open a terminal and run the following command:
