@@ -209,32 +209,32 @@ and to other pages with
 If you want the content to be collapsible, add:
 
 ```md
-Add collapsible section:
-   <details markdown="1">
-      <summary>Title of the collapsible section</summary>
+<details markdown="1">
+   <summary>Title of the collapsible section</summary>
 
  > [!CAUTION] Caution
  >
  > Example Alert
 
 Content example:
-`bcdedit /set {current} safemode Network` 
-(You can also use the triple backtick (`) as well for code blocks)
-   </details>
+\```
+bcdedit /set {current} safemode Network
+\```
+</details>
 ```
 
-Add collapsible section:
-   <details markdown="1">
-      <summary>Title of the collapsible section</summary>
+<details markdown="1">
+   <summary>Title of the collapsible section</summary>
 
  > [!CAUTION] Caution
  >
  > Example Alert
 
 Content example:
-`bcdedit /set {current} safemode Network` 
-(You can also use the triple backtick (`) as well for code blocks)
-   </details>
+```
+bcdedit /set {current} safemode Network
+```
+</details>
 
 ## Directory or index pages
 Use a `.mdx` file in the root of any directory, named the same as the directory. This is `backups.mdx`:
