@@ -55,7 +55,7 @@ Probe for hardware ... Ok
 Reading logs ... Ok
 Uploaded to DB, Thank you!
 
-Probe URL: https://linux-hardware.org/?probe=[URL HERE]
+Probe URL: https://linux-hardware.org/?probe=[Probe ID here]
 ```
 
 You can then share the generated URL with support personnel or on the r/techsupport reddit/discord to help diagnose hardware issues or get recommendations for drivers and configurations.
