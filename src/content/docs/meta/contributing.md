@@ -217,7 +217,7 @@ If you want the content to be collapsible, add:
  > Example Alert
 
 Content example:
-\```
+\```sh
 bcdedit /set {current} safemode Network
 \```
 </details>
@@ -231,7 +231,7 @@ bcdedit /set {current} safemode Network
  > Example Alert
 
 Content example:
-```
+```sh
 bcdedit /set {current} safemode Network
 ```
 </details>
