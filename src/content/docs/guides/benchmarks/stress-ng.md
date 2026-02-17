@@ -18,27 +18,29 @@ last_modified_date: 2026-02-03
 >
 > `stress-ng` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you can skip the installation section.
 
-<details markdown='1'>
-  <summary>Installing stress-ng</summary>
-
-Refer below for installation instructions if you are not using our live image or want to install it on your own system.
-
-**Debian / Ubuntu / Linux Mint**:
-```sh
-sudo apt update && sudo apt install stress-ng
-```
-
-**Fedora / RHEL / CentOS / AlmaLinux**:
-```sh
-sudo dnf install stress-ng
-
-```
-
-**Arch / Manjaro / CachyOS**:
-```sh
-sudo pacman -Syu stress-ng
-```
-</details>
+> [!TIP] How to install stress-ng
+>
+> Refer below for installation instructions if you are not using our live image or want to install it on your own system.
+> 
+> <details markdown='1'>
+>   <summary>Installing stress-ng</summary>
+> 
+> **Debian / Ubuntu / Linux Mint**:
+> ```sh
+> sudo apt update && sudo apt install stress-ng
+> ```
+> 
+> **Fedora / RHEL / CentOS / AlmaLinux**:
+> ```sh
+> sudo dnf install stress-ng
+> 
+> ```
+> 
+> **Arch / Manjaro / CachyOS**:
+> ```sh
+> sudo pacman -Syu stress-ng
+> ```
+> </details>
 
 ## Common tests to run
 Use the following if you are not aware of how to use stress-ng, or just want to run some common tests.

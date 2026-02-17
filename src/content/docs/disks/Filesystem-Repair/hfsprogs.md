@@ -17,25 +17,29 @@ This guide will go over the numerous tools this software suite has to offer, bas
 >
 > `hfsprogs` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you can skip the installation section.
 
-<details markdown='1'>
-  <summary>Installing hfsprogs</summary>
-
-**Debian / Ubuntu / Linux Mint**:
-```sh
-sudo apt update && sudo apt install hfsprogs
-```
-
-**Fedora / RHEL / CentOS / AlmaLinux**: 
-```sh
-sudo dnf install hfsprogs
-```
-
-**Arch / Manjaro / CachyOS**:
-Install from AUR or similar AUR helper.
-```sh
-yay -Syu hfsprogs
-```
-</details>
+> [!TIP] How to install hfsprogs
+>
+> Refer below for installation instructions if you are not using our live image or want to install it on your own system.
+>
+> <details markdown='1'>
+>   <summary>Installing hfsprogs</summary>
+>
+> **Debian / Ubuntu / Linux Mint**:
+> ```sh
+> sudo apt update && sudo apt install hfsprogs
+> ```
+> 
+> **Fedora / RHEL / CentOS / AlmaLinux**: 
+> ```sh
+> sudo dnf install hfsprogs
+> ```
+> 
+> **Arch / Manjaro / CachyOS**:
+> Install from AUR or similar AUR helper.
+> ```sh
+> yay -Syu hfsprogs
+> ```
+> </details>
 
 ## Tools
 

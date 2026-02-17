@@ -17,26 +17,30 @@ This guide will go over the numerous tools this software suite has to offer, bas
 >
 > `ntfs-3g` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you may skip the installation section.
 
-<details markdown='1'>
-  <summary>Installing ntfs-3g</summary>
-
-Refer below for installation instructions if you are not using our live image or want to install it on your own system.
-
-**Debian / Ubuntu / Linux Mint**:
-```sh
-sudo apt update && sudo apt install ntfs-3g
-```
-
-**Fedora / RHEL / CentOS / AlmaLinux**: 
-```sh
-sudo dnf install ntfs-3g fuse
-```
-
-**Arch / Manjaro / CachyOS**: 
-```sh
-sudo pacman -Syu ntfs-3g
-```
-</details>
+> [!TIP] How to install ntfs-3g
+>
+> Refer below for installation instructions if you are not using our live image or want to install it on your own system.
+>
+> <details markdown='1'>
+>   <summary>Installing ntfs-3g</summary>
+>
+> Refer below for installation instructions if you are not using our live image or want to install it on your own system.
+>
+> **Debian / Ubuntu / Linux Mint**:
+> ```sh
+> sudo apt update && sudo apt install ntfs-3g
+> ```
+> 
+> **Fedora / RHEL / CentOS / AlmaLinux**: 
+> ```sh
+> sudo dnf install ntfs-3g fuse
+> ```
+> 
+> **Arch / Manjaro / CachyOS**:
+> ```sh
+> sudo pacman -Syu ntfs-3g
+> ```
+> </details>
 
 ## Tools
 

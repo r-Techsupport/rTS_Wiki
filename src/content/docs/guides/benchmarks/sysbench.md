@@ -14,26 +14,28 @@ last_modified_date: 2026-02-04
 >
 > `sysbench` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you can skip the installation section.
 
-<details markdown='1'>
-  <summary>Installing sysbench</summary>
-
-Refer below for installation instructions if you are not using our live image or want to install it on your own system.
-
-**Debian / Ubuntu / Linux Mint**:
-```sh
-sudo apt update && sudo apt install sysbench
-```
-
-**Fedora / RHEL / CentOS / AlmaLinux**:
-```sh
-sudo dnf install sysbench
-```
-
-**Arch / Manjaro / CachyOS**:
-```sh
-sudo pacman -Syu sysbench
-```
-</details>
+> [!TIP] How to install sysbench
+>
+> Refer below for installation instructions if you are not using our live image or want to install it on your own system.
+>
+> <details markdown='1'>
+>   <summary>Installing sysbench</summary>
+>
+> **Debian / Ubuntu / Linux Mint**:
+> ```sh
+> sudo apt update && sudo apt install sysbench
+> ```
+> 
+> **Fedora / RHEL / CentOS / AlmaLinux**:
+> ```sh
+> sudo dnf install sysbench
+> ```
+> 
+> **Arch / Manjaro / CachyOS**:
+> ```sh
+> sudo pacman -Syu sysbench
+> ```
+> </details>
 
 ## Common tests to run
 Use the following if you are not aware of how to use sysbench, or just want to run some common tests.

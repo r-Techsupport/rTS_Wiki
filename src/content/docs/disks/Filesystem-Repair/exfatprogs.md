@@ -17,24 +17,28 @@ This guide will go over the numerous tools this software suite has to offer, bas
 >
 > `exfatprogs` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you can skip the installation section.
 
-<details markdown='1'>
-  <summary>Installing exfatprogs</summary>
-
-**Debian / Ubuntu / Linux Mint**:
-```sh
-sudo apt update && sudo apt install exfatprogs
-```
-
-**Fedora / RHEL / CentOS / AlmaLinux**:
-```sh
-sudo dnf install exfatprogs
-```
-
-**Arch / Manjaro / CachyOS**:
-```sh
-sudo pacman -Syu exfatprogs
-```
-</details>
+> [!TIP] How to install exfatprogs
+>
+> Refer below for installation instructions if you are not using our live image or want to install it on your own system.
+>
+> <details markdown='1'>
+>   <summary>Installing exfatprogs</summary>
+>
+> **Debian / Ubuntu / Linux Mint**:
+> ```sh
+> sudo apt update && sudo apt install exfatprogs
+> ```
+> 
+> **Fedora / RHEL / CentOS / AlmaLinux**:
+> ```sh
+> sudo dnf install exfatprogs
+> ```
+> 
+> **Arch / Manjaro / CachyOS**:
+> ```sh
+> sudo pacman -Syu exfatprogs
+> ```
+> </details>
 
 ## Tools
 

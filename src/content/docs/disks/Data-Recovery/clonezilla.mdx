@@ -10,29 +10,37 @@ pagefind: true
 last_modified_date: 2026-02-11
 ---
 
-Clonezilla is best run from a bootable live media, so you will need to create a bootable USB or CD/DVD with [Clonezilla](https://clonezilla.org/clonezilla-live.php) to use it. Alternatively, you may utilize the rTS Debian live media created in [this guide](/live-sessions/linux-live-session) which already comes with Clonezilla pre-installed.
+> [!NOTE] Information
+>
+> Clonezilla is best run from a bootable live media, so you will need to create a bootable USB or CD/DVD with [Clonezilla](https://clonezilla.org/clonezilla-live.php) to use it. 
+> 
+> Alternatively, you may utilize the rTS Debian live media created in [this guide](/live-sessions/linux-live-session) which already comes with Clonezilla pre-installed.
 
-<details markdown='1'>
-  <summary>Installing Clonezilla</summary>
-
-**Debian / Ubuntu / Linux Mint**: 
-```sh
-sudo apt update && sudo apt install clonezilla
-```
-
-**Fedora / RHEL / CentOS / AlmaLinux**: Clonezilla is not available in the default repositories for these distros, so you will need to add the external repository:
-```sh
-sudo dnf install dnf-plugins-core
-sudo dnf copr enable sergiomb/clonezilla
-sudo dnf install clonezilla
-```
-
-**Arch / Manjaro / CachyOS**:
-```sh
-sudo pacman -Syu clonezilla
-```
-
-</details>
+> [!TIP] How to install Clonezilla
+>
+> Refer below for installation instructions if you are not using our live image or want to install it on your own system.
+>
+> <details markdown='1'>
+>   <summary>Installing Clonezilla</summary>
+> 
+> **Debian / Ubuntu / Linux Mint**: 
+> ```sh
+> sudo apt update && sudo apt install clonezilla
+> ```
+> 
+> **Fedora / RHEL / CentOS / AlmaLinux**: Clonezilla is not available in the default repositories for these distros, so you will need to add the external repository:
+> ```sh
+> sudo dnf install dnf-plugins-core
+> sudo dnf copr enable sergiomb/clonezilla
+> sudo dnf install clonezilla
+> ```
+> 
+> **Arch / Manjaro / CachyOS**:
+> ```sh
+> sudo pacman -Syu clonezilla
+> ```
+> 
+> </details>
 
 ## Using Clonezilla
 Run `sudo clonezilla` to launch the text-based menu. Choose "device-device" for direct disk/partition cloning (e.g., failing drive to healthy one) or "device-image" for imaging. 
