@@ -13,7 +13,7 @@ last_modified_date: 2025-03-15
 ## Method 1: Removing the CMOS battery
 
 
-1. Unplug PSU power cable from wall, this ensures no power is going to the PC. If on laptop, disconnect the battery from the motherboard as well.
+1. Unplug PSU power cable from wall and turn off the PSU power switch (if present). This ensures no power is going to the PC. If on laptop, disconnect the battery from the motherboard as well.
 
 2. Remove CMOS battery. This is a small 'watch battery' in your motherboard (see below).
 
