@@ -206,7 +206,7 @@ and to other pages with
 
 ### Collapsible Sections
 
-If you want the content to be collapsible, add:
+If you want the content to be collapsible, add the content inside a `<details>` tag. You can also add an optional `markdown="1"` attribute to the `<details>` tag to allow markdown formatting in the summary and content:
 
 ```md
 <details markdown="1">
@@ -235,6 +235,28 @@ Content example:
 bcdedit /set {current} safemode Network
 ```
 </details>
+
+You can also add collapsible section in callouts too to bring more attention to the collapsible section:
+
+```md
+> [!TIP] Here is a callout
+> 
+> And here is a collapsible section inside the callout
+>
+> <details>
+>      <summary>Collapsible section title</summary>
+> Content of the collapsible section
+> </details>
+```
+
+> [!TIP] Here is a callout
+> 
+> And here is a collapsible section inside the callout
+>
+> <details>
+>      <summary>Collapsible section title</summary>
+> Content of the collapsible section
+> </details>
 
 ## Directory or index pages
 Use a `.mdx` file in the root of any directory, named the same as the directory. This is `backups.mdx`:
