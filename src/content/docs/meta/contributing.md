@@ -63,7 +63,7 @@ The site may fail to build for a variety of reasons, you can click "Details" on 
 Here is the header for this specific page:
 
 ### Astro
-```
+```md
 ---
 title: Contributing to the Wiki
 description:
@@ -115,7 +115,7 @@ Includes (also called embeds or transcludes) are a way to embed one small note i
     - A `.mdx` file is a `.md` file that can contain JSX. All of your normal markdown text and Frontmatter will be used like normal in this file.
 3. Using a relative path to the file you want to embed use a block like below anywhere in the file that you want to insert the content of the embed note:
     - The white space between the import and `<>` statement is required.
-    ```
+    ```md
     import LinuxInstallMedia from '../../../_includes/embeds/create-linux-install-media.mdx';
 
     <LinuxInstallMedia />
@@ -137,7 +137,7 @@ The format to create an Alert is below. You can add additonal "quote" `>` lines 
 > [!IMPORTANT] Important
 > If you use a link in a callout, you must have an extra blank line between the title and your body as seen below
 
-```
+```md
 > [!WARNING] Warning
 > 
 > It is very important that you remember to **power-off the motherboard** and switch-off and unplug the PSU after each component test. Do this before you remove or install anything. [ExampleLink](https://contoso.com)
@@ -206,25 +206,57 @@ and to other pages with
 
 ### Collapsible Sections
 
-If you want the content to be collapsible, add:
+If you want the content to be collapsible, add the content inside a `<details>` tag. You can also add an optional `markdown="1"` attribute to the `<details>` tag to allow markdown formatting in the summary and content:
 
-```
+```md
 <details markdown="1">
+   <summary>Title of the collapsible section</summary>
 
-    <summary>The Title</summary>
+ > [!CAUTION] Caution
+ >
+ > Example Alert
 
-    The Content
-
+Content example:
+\```sh
+bcdedit /set {current} safemode Network
+\```
 </details>
 ```
 
 <details markdown="1">
+   <summary>Title of the collapsible section</summary>
 
-    <summary>The Title</summary>
+ > [!CAUTION] Caution
+ >
+ > Example Alert
 
-    The Content
-
+Content example:
+```sh
+bcdedit /set {current} safemode Network
+```
 </details>
+
+You can also add collapsible section in callouts too to bring more attention to the collapsible section:
+
+```md
+> [!TIP] Here is a callout
+> 
+> And here is a collapsible section inside the callout
+>
+> <details>
+>      <summary>Collapsible section title</summary>
+> Content of the collapsible section
+> </details>
+```
+
+> [!TIP] Here is a callout
+> 
+> And here is a collapsible section inside the callout
+>
+> <details>
+>      <summary>Collapsible section title</summary>
+> Content of the collapsible section
+> </details>
 
 ## Directory or index pages
 Use a `.mdx` file in the root of any directory, named the same as the directory. This is `backups.mdx`:
