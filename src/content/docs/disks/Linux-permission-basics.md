@@ -3,7 +3,7 @@ title: Permissions in Linux with chmod
 sidebar:
     hidden: false
 has_children: false
-parent: General Guides
+parent: Disks
 pagefind: true
 last_modified_date: 2024-01-30
 ---

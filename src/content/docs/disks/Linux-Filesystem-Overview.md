@@ -1,16 +1,14 @@
 ---
 title: Linux Filesystem Overview
+description: A basic introduction to how the Linux filesystem works, including devices, partitions, filesystems, and mounting.
 sidebar:
     hidden: false
 has_children: false
 has_toc: true
-grand_parent: Disks
-parent: Disk-Management
+parent: Disks
 pagefind: true
 last_modified_date: 2025-12-22
 ---
-
-This is a very short guide and basic intro to understanding how the Linux filesystem works.
 
 Linux filesystems are the way Linux organizes and accesses storage, similar to how Windows organizes drives and folders, but with a more flexible, device-and-partition oriented model.
 

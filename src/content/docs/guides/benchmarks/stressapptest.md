@@ -1,5 +1,6 @@
 ---
 title: Stressful App Test
+description: Stressful Application Test is a memory testing tool, notably used by Google.
 sidebar:
     hidden: false
 has_children: false
@@ -10,8 +11,6 @@ last_modified_date: 2026-02-03
 ---
 
 This article relies on the live media [created here](/live-sessions/linux-live-session).
-
-Stressful Application Test is a memory testing tool, notably used by Google.
 
 ## Running the test
 1. After you boot into the media, click the Debian logo in the top-left corner, then click "Terminal Emulator" to open the terminal:
