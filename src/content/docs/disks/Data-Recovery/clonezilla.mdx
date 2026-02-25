@@ -1,5 +1,5 @@
 ---
-title: Using Clonezilla to recover data
+title: Clonezilla
 description: Clonezilla is a free, open-source tool for disk imaging and cloning, ideal for backing up data from a failing drive before it fails completely. It can create an image of the entire drive or clone it to another drive, and it intelligently handles bad sectors to maximize data recovery.
 sidebar:
     hidden: false
@@ -50,7 +50,7 @@ Run `sudo clonezilla` to launch the text-based menu. Choose "device-device" for 
 It is recommended you select beginner mode if you have not used Clonezilla before, identify drives carefully with labels or lsblk, and use "-rescue" for bad sectors on failing drives. Images save to a mounted target directory; restore similarly.
 
 ### Identifying source and destination
-Before running Clonezilla, you must know the correct device names for the source (failing drive) and destination (healthy drive or image file). Refer to our guide on [how to identify failing drives in Linux](/disks/data-recovery/identify-drives-linux) for detailed instructions on listing and identifying your drives.
+Before running Clonezilla, you must know the correct device names for the source (failing drive) and destination (healthy drive or image file). Refer to our guide on [how to identify failing drives in Linux](/disks/identify-drives-linux) for detailed instructions on listing and identifying your drives.
 
 ## Limitations of Clonezilla and when to use other tools
 The installed Clonezilla frontend cannot clone mounted or running system partitions reliably—unmount them first or use Live mode. Risk overwriting wrong drives; always verify source/target twice. 
