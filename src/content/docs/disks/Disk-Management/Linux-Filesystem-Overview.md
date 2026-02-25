@@ -5,7 +5,7 @@ sidebar:
 has_children: false
 has_toc: true
 grand_parent: Disks
-parent: Filesystem-Repair
+parent: Disk-Management
 pagefind: true
 last_modified_date: 2025-12-22
 ---

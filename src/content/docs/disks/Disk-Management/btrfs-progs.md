@@ -6,7 +6,7 @@ sidebar:
 has_children: false
 has_toc: true
 grand_parent: Disks
-parent: Filesystem-Repair
+parent: Disk-Management
 pagefind: true
 last_modified_date: 2025-12-22
 ---
@@ -46,7 +46,7 @@ This guide will go over the numerous tools this software suite has to offer, bas
 
 ## Tools
 
-The rest of the guide will be going over the different methods and tools available. Note, it is best to have a basic understanding of what stuff like `/dev/sdb` and `/dev/sdb1` represent. A guide to understanding it can be found [here](/disks/filesystem-repair/linux-filesystem-overview/).
+The rest of the guide will be going over the different methods and tools available. Note, it is best to have a basic understanding of what stuff like `/dev/sdb` and `/dev/sdb1` represent. A guide to understanding it can be found [here](/disks/disk-management/linux-filesystem-overview/).
 
 ### Basic Repair Operations
 
