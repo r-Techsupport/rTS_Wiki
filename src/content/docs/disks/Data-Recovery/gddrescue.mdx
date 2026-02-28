@@ -1,5 +1,5 @@
 ---
-title: gddrescue
+title: GNU ddrescue
 description: GNU ddrescue is a command-line tool that copies data from a bad drive to an image or another drive while intelligently skipping and retrying bad sectors, making it much safer and more efficient than using plain dd on failing disks.
 sidebar:
     hidden: false
@@ -35,17 +35,16 @@ last_modified_date: 2026-02-11
 > ```sh
 > sudo pacman -Syu ddrescue
 > ```
-> 
-> > [!IMPORTANT] Important
-> >
-> > The command creates a `ddrescue` binary even though the package is called `gddrescue`. For the rest of the guide, we will refer to it as `ddrescue`.
-> 
 > </details>
+
+> [!IMPORTANT] Important
+>
+> The command may point to a `ddrescue` binary even though the application is called gddrescue. For the rest of the guide, we will refer to the package as `ddrescue`.
 
 ## Basic usage
 
-### What ddrescue does
-`ddrescue` reads from a source (failing disk or partition) and writes to a destination (image file or another disk) while recording everything in a logfile (mapfile).
+### What gddrescue does
+GNU ddrescue (package `ddrescue`) reads from a source (failing disk or partition) and writes to a destination (image file or another disk) while recording everything in a logfile (mapfile).
 
 Basically, it works like this:
 - It automatically skips unreadable areas first and copies good data quickly, instead of getting stuck on the first bad sector.
@@ -60,9 +59,9 @@ Basically, it works like this:
 
 Please refer to this guide on how to identify your drives in Linux: [How to identify failing drives in Linux](/disks/identify-drives-linux). 
 
-Always double-check which drive is source and which is destination before running ddrescue, because mixing them up can destroy your only copy of the data.
+Always double-check which drive is source and which is destination before running gddrescue, because mixing them up can destroy your only copy of the data.
 
-### Running ddrescue: Clone to image file
+### Running gddrescue: Clone to image file
 The canonical simple pattern is: first quick pass with no retries to grab all easy data, then optional later passes to retry bad areas.
 
 #### Step 1: Quick image to a file (no retries)
@@ -85,12 +84,12 @@ sudo ddrescue -d -r3 /dev/sdX /mnt/backup/disk.img /mnt/backup/disk.log
 ```
 
 - `-d` uses “direct” disk access, bypassing the kernel cache, which can help with some failing drives.
-- `-r3` tells ddrescue to retry bad sectors up to 3 times; you can adjust the number, but extremely high retry counts can be risky and very slow.
+- `-r3` tells gddrescue to retry bad sectors up to 3 times; you can adjust the number, but extremely high retry counts can be risky and very slow.
 - It reuses the same logfile so it only works on previously failed or unfinished blocks.
 
 If the disk is in very bad shape, you might prefer `-r1` or even no retries at all to minimize stress.
 
-### Running ddrescue: Cloning directly disk-to-disk
+### Running gddrescue: Cloning directly disk-to-disk
 Sometimes you want a clone on another physical drive rather than an image file. The command is similar, but the destination is a disk instead of an image:
 
 Example: source failing disk `/dev/sdX`, destination healthy blank disk `/dev/sdY` (must be same size or larger):
@@ -112,11 +111,11 @@ sudo ddrescue -d -r3 /dev/sdX /dev/sdY clone.log
 Once again, disk-to-image is generally safer. You can always write the image back to a new disk later if needed.
 
 ### Importance of the logfile (mapfile)
-The logfile (often called mapfile) is a critical part of ddrescue's operation. It tracks the status of each block of data.
+The logfile (often called mapfile) is a critical part of gddrescue's operation. It tracks the status of each block of data.
 
 - You must specify the same logfile every time you work on a given source-destination pair.
-- The logfile records which blocks are finished, failed, or pending; ddrescue uses this to avoid re-reading good areas and to focus on bad regions.
-- If the system crashes or you stop ddrescue, you can simply rerun the last command and it resumes from where it left off using the logfile.
+- The logfile records which blocks are finished, failed, or pending; gddrescue uses this to avoid re-reading good areas and to focus on bad regions.
+- If the system crashes or you stop gddrescue, you can simply rerun the last command and it resumes from where it left off using the logfile.
 - Tools like [ddrescueview](https://sourceforge.net/projects/ddrescueview/) can graphically show you which parts of the disk were recovered successfully.
 
 Always keep the logfile on a healthy disk (for example, next to the image file).
@@ -130,4 +129,4 @@ Typical next steps (examples, not full tutorials):
 2. Run filesystem checks (`fsck`) on the cloned disk or on a copy of the image, not on the original.
 3. Use file recovery tools ([testdisk](/disks/data-recovery/testdisk) or [photorec](/disks/data-recovery/photorec)) on the image file to try to recover files.
 
-Basically the pattern to follow is "ddrescue -> image file -> run other recovery tools on that image".
+Basically the pattern to follow is "gddrescue -> image file -> run other recovery tools on that image".
