@@ -1,5 +1,6 @@
 ---
 title: Using an adapter to read a disk
+description: A guide to using a USB adapter to read a disk from another computer for data recovery purposes.
 sidebar:
     hidden: false
 has_children: false

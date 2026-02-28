@@ -1,5 +1,6 @@
 ---
 title: Linux Live Session
+description: Guide to using a Linux live session for troubleshooting and data recovery.
 sidebar:
     hidden: false
 pagefind: true
@@ -28,7 +29,7 @@ A Linux ISO has been made for r/Techsupport that has many of the proper tools pr
 **The username and password for the media is `user` and `live`**
 
 ### Official XUbuntu Media
-You may also use the official XUbuntu ISO and load your own tools as needed.
+You may also use the official XUbuntu ISO and load your own tools as needed. It is Ubuntu-based, so follow standard Ubuntu (or Ubuntu/Debian apt) instructions for installing additional tools. 
 
 [Download](https://xubuntu.org/download/)
 
@@ -46,8 +47,49 @@ import LinuxInstallMedia from '../../../_includes/embeds/create-linux-install-me
 3. Once it boots select 'Try' or 'Live'
 
 ## Things to do
+
+### Stress tests
+* [Stress-ng](/guides/benchmarks/stress-ng) - Comprehensive system stress testing
+* [Sysbench](/guides/benchmarks/sysbench) - Database and application benchmarking
+* [Stressful Application Test](/guides/benchmarks/stressapptest) - Memory stress testing tool (requires installation)
+* [fio](/guides/benchmarks/fio) - Advanced storage I/O benchmark (professional-grade, multi-threaded)
+
+### Filesystem support
+* [e2fsprogs](/disks/disk-management/e2fsprogs) - Linux ext2/ext3/ext4 filesystem utilities (includes badblocks, debugfs, resize2fs)
+* [ntfs-3g](/disks/disk-management/ntfs-3g) - Windows NTFS filesystem read/write support
+* [hfsprogs](/disks/disk-management/hfsprogs) - Apple HFS/HFS+ filesystem utilities (Mac support)
+* [exfatprogs](/disks/disk-management/exfatprogs) - exFAT filesystem support (modern cross-platform USB/SD cards)
+* [btrfs-progs](/disks/disk-management/btrfs-progs) - Btrfs filesystem utilities (modern Linux filesystem)
+
+Additional information:
+* [Linux Filesystem Guide](/disks/linux-filesystem-overview) - Information on how the Linux filesystem works
+* [Identifying Drives in Linux](/disks/identify-drives-linux) - Guide to identifying disks and partitions in Linux
+* [Linux permission basics](/disks/linux-permission-basics) - Overview of Linux file permissions and ownership
+
+### Disk and data management
 * [Wipe disks](/disks/disk-wipe)
-* [Data Retrieval/Recovery](/disks/data-recovery/data-recovery)
 * [Disk Manipulation with Gparted](/disks/disk-management/gparted)
 * [Verify Disk Health](/disks/disk-health#smartmontools)
-* [Stressful Application Test](/guides/memtest/stressapptest)
+
+### File recovery tools
+* [Data Retrieval/Recovery](/disks/data-recovery/data-recovery) - Overview of data recovery tools and methods
+* [gddrescue](/disks/data-recovery/gddrescue) - Disk imaging and data recovery from failing drives
+* [PhotoRec](/disks/data-recovery/photorec) - File recovery from various media types
+* [TestDisk](/disks/data-recovery/testdisk) - Partition recovery and repair tool
+* [Clonezilla](/disks/data-recovery/clonezilla) - Disk cloning and imaging
+* [safecopy](/disks/data-recovery/safecopy) - Data recovery from damaged media
+
+### Encryption tools
+* [cryptsetup](/disks/encryption/luks) - LUKS disk encryption management
+* [dislocker](/disks/encryption/dislocker) - BitLocker encrypted drive access (Windows drive recovery)
+
+### Network tools
+* [dnsutils](https://manpages.debian.org/jessie/dnsutils) - DNS lookup utilities (dig, nslookup, host)
+* [mtr-tiny](/networking/mtr) - Network diagnostic tool combining ping and traceroute
+* gnome-nettool - GUI network diagnostic tool (ping, netstat, traceroute, port scan)
+* [wireshark](https://www.wireshark.org/docs/wsug_html_chunked) - Network protocol analyzer and packet capture
+
+### Hardware information
+* [hw-probe](/factoids/hw-probe) - Comprehensive hardware probing and reporting (Think Specify but Linux)
+* hardinfo - System profiler and hardware information GUI
+* inxi - Comprehensive hardware information script (CPU, GPU, RAM, disks, network, sensors)

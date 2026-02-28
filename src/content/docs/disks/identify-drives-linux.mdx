@@ -1,0 +1,106 @@
+---
+title: How to identify drives in Linux
+description: A guide to identifying disks and partitions in Linux using tools like lsblk and fdisk, crucial for safe data recovery.
+sidebar:
+    hidden: false
+has_children: false
+parent: Disks
+pagefind: true
+last_modified_date: 2026-02-11
+---
+
+When working with failing drives, it's crucial to correctly identify the drive you want to recover data from to avoid accidentally writing to it and causing further damage. In Linux, you can use several tools to list and identify your drives.
+
+We will be using `lsblk` and `fdisk` in this guide, but you can also use other tools like `parted`, `gparted`, or `disks` (GNOME Disk Utility) if you prefer a graphical interface.
+
+> [!CAUTION] Caution
+>
+> Read this section very carefully before using any form of data recovery software! When dealing with a failing drive, being careful matters more than speed.
+>   - Always double-check which device is source and which is destination; mixing them up can destroy your only copy of the data.
+>   - Never write anything (mount, fsck, repairs) to the failing source disk; keep it read-only and only write to images or healthy disks.
+>   - Avoid repeatedly power-cycling it; each start/stop can make mechanical problems worse or degrade the drive controller further.
+>   - Do not start with aggressive retry options (like many -r retries) for certain data recovery software, because this can make the drive hang for hours on bad areas before copying the good regions.
+>   - Ensure your destination (image file or clone disk) is at least as large as the source drive; otherwise the copy will not complete.
+
+> [!TIP] Tip
+> 
+> A simple mental rule: “Source is always the sick or failing disk; destination is always the safe disk or image file.”
+
+### Identifying source and destination
+Before running any data recovery software you must know the correct device names.
+
+#### 1. List disks: 
+`lsblk` or `sudo fdisk -l` (these show devices like `/dev/sda`, `/dev/sdb`, `/dev/nvme0n1`). If you want to understand what these names mean, check out our [linux filesystem guide](/disks/linux-filesystem-overview/). Googling the names `sda`, `sdb`, etc. also will help in understanding.
+- If you see a disk that matches the size of your failing drive, that's likely your source.
+- If you see a disk that matches the size of your destination (like a new drive or a large empty disk), that's likely your destination.
+
+An example output of `lsblk` might look like this:
+```
+> lsblk
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+sda           8:0    1  14.3G  0 disk 
+└─sda1        8:1    1  14.3G  0 part 
+zram0       251:0    0   7.3G  0 disk [SWAP]
+nvme0n1     259:0    0 119.2G  0 disk 
+├─nvme0n1p1 259:1    0   600M  0 part /boot/efi
+├─nvme0n1p2 259:2    0     1G  0 part /boot
+└─nvme0n1p3 259:3    0 117.7G  0 part /home
+                                      /
+```
+An example output of `sudo fdisk -l` might look like this:
+```
+> sudo fdisk -l
+Disk /dev/nvme0n1: 119.24 GiB, 128035676160 bytes, 250069680 sectors
+Disk model: KBG40ZNS128G TOSHIBA MEMORY             
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 6780D963-0F0D-4D25-B7FD-D4F3DE833F9C
+
+Device           Start       End   Sectors   Size Type
+/dev/nvme0n1p1    2048   1230847   1228800   600M EFI System
+/dev/nvme0n1p2 1230848   3327999   2097152     1G Linux extended boot
+/dev/nvme0n1p3 3328000 250068991 246740992 117.7G Linux filesystem
+
+
+Disk /dev/zram0: 7.35 GiB, 7888437248 bytes, 1925888 sectors
+Units: sectors of 1 * 4096 = 4096 bytes
+Sector size (logical/physical): 4096 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/sda: 14.34 GiB, 15401484288 bytes, 30081024 sectors
+Disk model: Cruzer Blade    
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 94DBC5F2-AD50-47A0-9A53-A476F0166CB1
+
+Device     Start      End  Sectors  Size Type
+/dev/sda1   2048 30078975 30076928 14.3G Microsoft basic data
+```
+
+> [!TIP] Tip
+>
+> It might be preferable to utilize `sudo fdisk -l` to get more detailed information about the disks, including their sizes, partitions, and filesystem types.
+>
+> This can help confirm which disk is which if you do not understand the output of `lsblk` or if the disks have similar sizes. The output will show you the disk names (e.g., `/dev/sda`, `/dev/sdb`), their sizes, and any partitions they contain, which can help you identify the source and destination more confidently.
+
+In addition, you can also use `dmesg | tail` after plugging in the failing drive to see the latest kernel messages. This can help confirm which device name corresponds to the failing drive, especially if it shows errors or warnings related to that device.
+
+#### 2: Unmount failing drive partitions:
+If the failing drive has any partitions that are currently mounted, you must unmount them before using any data recovery software. You can do this with `umount`:
+```sh
+sudo umount /dev/sdX1
+sudo umount /dev/sdX2
+```
+Replace `/dev/sdX1`, `/dev/sdX2`, etc. with the actual partition names of the failing drive. See part 1 for how to identify these.
+
+#### 3: Picking source and destination
+For the source, select the whole failing disk (e.g., `/dev/sdb`), not a partition (e.g., `/dev/sdb1`), because you want to copy everything including the partition table and all data.
+
+For the destination, most data recovery software will typically allow you to choose either an image file or another disk:
+- **Image file**: This is safer because it doesn't risk overwriting any existing data on a disk. You would specify a path like `/path/to/image.img` as the destination.
+- **Another disk**: This is faster but riskier. You would specify the whole disk (e.g., `/dev/sdc`) as the destination, but be very careful to choose the correct one.
