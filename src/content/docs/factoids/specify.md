@@ -3,10 +3,7 @@ title: Using Specify
 description: Specify is an open-source windows applications that gathers various data to help us troubleshoot your computer.
 sidebar:
     hidden: true
-parent: Factoids
-has_children: false
-pagefind: true
-last_modified_date: 2024-11-05
+pagefind: false
 ---
 
 > [!IMPORTANT] Important
