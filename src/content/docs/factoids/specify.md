@@ -8,7 +8,7 @@ pagefind: false
 
 > [!WARNING] Warning
 >
-> This version of specify is no longer supported as the Winring0 driver is deprecated. Please utilize the no-ring 0 version of specify, which can be found [here](/docs/factoids/specify-nr).
+> This version of specify is no longer supported as the Winring0 driver is deprecated. Please utilize the no-ring 0 version of specify, which can be found [here](/factoids/specify-nr).
 
 > [!IMPORTANT] Important
 >
