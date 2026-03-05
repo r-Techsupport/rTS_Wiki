@@ -6,6 +6,10 @@ sidebar:
 pagefind: false
 ---
 
+> [!WARNING] Warning
+>
+> This legacy Specify build that uses the WinRing0 driver is no longer supported. Please use the Specify No-Ring 0 version instead, which can be found [here](/factoids/specify-nr).
+
 > [!IMPORTANT] Important
 >
 > No sensitive information is included in the report, we will not ask you to share private information. You can vew an example specify report [here](https://spec-ify.com/profile/demo1).
