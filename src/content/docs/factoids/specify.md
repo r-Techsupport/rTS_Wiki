@@ -4,10 +4,6 @@ description: Specify is an open-source windows applications that gathers various
 sidebar:
     hidden: true
 pagefind: false
-parent: Factoids
-has_children: false
-pagefind: true
-last_modified_date: 2024-11-05
 ---
 
 > [!IMPORTANT] Important
