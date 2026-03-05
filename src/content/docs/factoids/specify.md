@@ -6,6 +6,10 @@ sidebar:
 pagefind: false
 ---
 
+> [!WARNING] Warning
+>
+> This version of specify is no longer supported as the Winring0 driver is deprecated. Please utilize the no-ring 0 version of specify, which can be found [here](/docs/factoids/specify-nr).
+
 > [!IMPORTANT] Important
 >
 > No sensitive information is included in the report, we will not ask you to share private information. You can vew an example specify report [here](https://spec-ify.com/profile/demo1).
