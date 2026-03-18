@@ -32,7 +32,7 @@ The built in solution for AV in Windows is more than adequate for consumers. Thi
 
 ## Free Alternatives
 
-All free alternatives are considered PUPs. They will sell you as their product and provide more a more troublesome experience. We do not recommend Avast, AVG, Kaspersky, McAfee or any other alternative AV.
+All free alternatives are considered PUPs. They will sell you as their product and provide a more troublesome experience. We do not recommend Avast, AVG, Kaspersky, McAfee or any other alternative AV.
 
 ## Paid AV Suites
 
