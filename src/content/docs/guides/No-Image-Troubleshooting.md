@@ -72,7 +72,7 @@ Make sure that you unplug your dGPU first because some motherboards disable it w
 
 ## Step 7: Flashing BIOS
 
-Some motherboards have a dedicated BIOS flashing button, this allow you to update/replace it easily. lokup your motherboard manual and read [this article](/guides/bios-update/#method-2-using-the-onboard-bios-flashing-option) for more information about it.
+Some motherboards have a dedicated BIOS flashing button, this allow you to update/replace it easily. lookup your motherboard manual and read [this article](/guides/bios-update/#method-2-using-the-onboard-bios-flashing-option) for more information about it.
 
 ## Step 8: Replacing Parts
 
