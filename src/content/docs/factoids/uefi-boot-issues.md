@@ -30,3 +30,6 @@ Enabling CSM can cause boot problems or weaken UEFI security features, so it is 
 CSM settings are typically found in the UEFI firmware settings under the "Boot" or "Advanced" sections. The exact location and naming can vary depending on the motherboard manufacturer and UEFI version. 
 
 Look for options related to "Boot Mode," "Legacy Support," or "CSM" to enable or disable CSM.
+
+## Secureboot Issues
+Secure Boot is a security feature built into UEFI firmware that ensures only trusted, digitally signed software can run during the boot process, blocking unauthorized or malicious code (like boot‑level rootkits) from loading before the OS starts.
