@@ -45,12 +45,12 @@ Windows 11 requires TPM 2.0 for installation and operation, so if your system do
 ### Where to Find TPM Settings
 TPM settings are typically found in the UEFI firmware settings under the "Security" or "Advanced" sections. Look for options related to "TPM," "Security Device," or "Trusted Platform Module" to enable or disable TPM.
 
-## Secureboot Issues
+## Secure Boot Issues
 Secure Boot is a security feature built into UEFI firmware that ensures only trusted, digitally signed software can run during the boot process, blocking unauthorized or malicious code (like boot‑level rootkits) from loading before the OS starts.
 
 It checks digital signatures of the firmware, bootloader, and OS components, allowing only those signed by trusted authorities (such as Microsoft or the device manufacturer).
 
-> [!INFORMATION] Note
+> [!NOTE] Information
 >
 > **Having [Secure Boot on is mandatory on Windows 11](https://support.microsoft.com/en-us/windows/windows-11-and-secure-boot-a8ff1202-c0d9-42f5-940f-843abef64fad).** Many anti-cheats and DRM protections used by apps and games also require it.
 
@@ -59,7 +59,7 @@ Secure Boot settings are typically found in the UEFI firmware settings under the
 
 Look for options related to "Secure Boot," "Secure Boot Control," or "Secure Boot Mode" to enable or disable Secure Boot.
 
-Some boards also have a “OS Type” or “OS Type / Secure Boot OS” dropdown where you must select “Windows UEFI mode” for Secure Boot to work correctly with Windows 11.
+Some boards also have an “OS Type” or “OS Type / Secure Boot OS” dropdown where you must select “Windows UEFI mode” for Secure Boot to work correctly with Windows 11.
 
 > [!IMPORTANT] Important
 >
@@ -70,7 +70,7 @@ UEFI firmware typically requires the boot drive to be partitioned using the GPT 
 
 GPT was introduced as a successor to MBR and offers several advantages, including support for larger drives and more partitions. If your drive is partitioned with MBR, you may encounter boot issues when trying to boot in UEFI mode. 
 
-> [!INFORMATION] Note
+> [!NOTE] Information
 >
 > In the case of Windows 11, the installer will not even allow you to proceed with the installation if the drive is not GPT‑formatted.
 
@@ -85,4 +85,4 @@ During installation of Windows 10/11, if you encounter an error about the drive 
 > 
 > If you are upgrading from Windows 10 to Windows 11 but you are using a MBR drive, the recommended way is to [clean install Windows 11](/installations/install-11) via USB and convert the drive to GPT during installation instead of relying on the `mbr2gpt` tool.
 >
-> The tool, while advertised by Microsoft as a "safe" way to convert drives is considered dangerous or high risk as it deals with low-level partition table manipulation. If something goes wrong during this process, it can lead to complete data loss, as well as result in a non-bootable system that may require a full reinstall of the OS to fix.
+> The tool, while advertised by Microsoft as a "safe" way to convert drives is considered dangerous or high risk as it deals with low-level partition table manipulation. If something goes wrong during this process, it can lead to complete data loss, and also may result in a non-bootable system that may require a full reinstall of the OS to fix.
