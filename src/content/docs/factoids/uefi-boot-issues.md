@@ -63,7 +63,7 @@ Some boards also have a “OS Type” or “OS Type / Secure Boot OS” dropdown
 
 > [!IMPORTANT] Important
 >
-> Sometimes enabling Secure Boot can cause a black screen to occur. Please find more information about it [here](../../docs/guides/blackscreen-after-secureboot).
+> Sometimes enabling Secure Boot can cause a black screen to occur. Please find more information about it [here](/guides/blackscreen-after-secureboot).
 
 ## GPT vs MBR Issues
 UEFI firmware typically requires the boot drive to be partitioned using the GPT (GUID Partition Table) scheme, while older BIOS systems use the MBR (Master Boot Record) scheme. 
@@ -75,7 +75,7 @@ GPT was introduced as a successor to MBR and offers several advantages, includin
 > In the case of Windows 11, the installer will not even allow you to proceed with the installation if the drive is not GPT‑formatted.
 
 ### Converting MBR to GPT during installation
-During installation of Windows 10/11, if you encounter an error about the drive being MBR when trying to install in UEFI mode, you can convert the drive to GPT using diskpart by following the guide linked [here](../../docs/factoids/diskpart-gpt/).
+During installation of Windows 10/11, if you encounter an error about the drive being MBR when trying to install in UEFI mode, you can convert the drive to GPT using diskpart by following the guide linked [here](/factoids/diskpart-gpt).
 
 > [!WARNING] Converting MBR to GPT
 >
@@ -83,6 +83,6 @@ During installation of Windows 10/11, if you encounter an error about the drive 
 
 > [!CAUTION] Using mbr2gpt.exe
 > 
-> If you are upgrading from Windows 10 to Windows 11 but you are using a MBR drive, the recommended way is to [clean install Windows 11](../../docs/installations/install-11) via USB and convert the drive to GPT during installation instead of relying on the `mbr2gpt` tool.
+> If you are upgrading from Windows 10 to Windows 11 but you are using a MBR drive, the recommended way is to [clean install Windows 11](/installations/install-11) via USB and convert the drive to GPT during installation instead of relying on the `mbr2gpt` tool.
 >
 > The tool, while advertised by Microsoft as a "safe" way to convert drives is considered dangerous or high risk as it deals with low-level partition table manipulation. If something goes wrong during this process, it can lead to complete data loss, as well as result in a non-bootable system that may require a full reinstall of the OS to fix.
