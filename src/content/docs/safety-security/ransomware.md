@@ -19,7 +19,7 @@ Crypto-ransomware is a large threat today and is only expected to get worse. The
 ## You have several options:
 1. If you have backups you can just nuke your install and start fresh, but if you are here it can be assumed you do not have backups.
 2. Try a decryptor, several exist and can be found below:
-    * [Kapersky](https://noransom.kaspersky.com/) 
+    * [Kaspersky](https://noransom.kaspersky.com/) 
     * [Avast](https://www.avast.com/en-gb/ransomware-decryption-tools)
     * [Emsisoft](https://www.emsisoft.com/ransomware-decryption-tools/) 
     * [NoMoreRansom](https://www.nomoreransom.org/en/decryption-tools.html)
