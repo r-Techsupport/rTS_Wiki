@@ -9,7 +9,7 @@ pagefind: true
 last_modified_date: 2025-04-12
 ---
 
-This guide provides step-by-step instructions on how to clear the shader cache for both NVIDIA and AMD graphics cards.
+This guide provides step-by-step instructions on how to clear the shader cache for NVIDIA, AMD, and Intel graphics cards.
 
 ## Using Display Driver Uninstaller (DDU)
 This method works on both AMD and NVIDIA graphics cards and is the easiest way to clear the shader cache.
