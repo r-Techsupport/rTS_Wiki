@@ -43,7 +43,7 @@ Follow the instructions in our [DDU guide](/factoids/ddu#cleaning-shader-cache-o
 
 ### For Intel Users
 1. **Delete Shader Cache Folders:**
-    - Press `Win + R`, type `%localappdata%low\Intel\ShaderCache`, and press Enter.
+    - Press `Win + R`, type `%userprofile%\AppData\LocalLow\Intel\ShaderCache`, and press Enter.
     - Delete all folders and files inside the `ShaderCache` directory.
 2. **Run Disk Cleanup:**
     - Press `Win + S`, type `Disk Cleanup`, and open it.
