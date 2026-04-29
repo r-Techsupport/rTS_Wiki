@@ -26,7 +26,8 @@ Follow the instructions in our [DDU guide](/factoids/ddu#cleaning-shader-cache-o
 2. **Delete Shader Cache Folders:**
     - Press `Win + R`, type `%localappdata%`, and press Enter.
     - Navigate to `NVIDIA` > `GLCache` and delete all folders inside.
-    - Navigate back to `AppData\LocalLow\NVIDIA\PerDriverVersion\DXCache` and delete everything there as well.
+    - Press `Win + R`, type `%localappdata%\..\LocalLow\NVIDIA\PerDriverVersion\DXCache`, and press Enter.
+    - Delete everything in the `DXCache` folder as well.
 3. **Run Disk Cleanup:**
     - Press `Win + S`, type `Disk Cleanup`, and open it.
     - Select your system drive (usually C:), check **DirectX Shader Cache**, and click **OK** to clear it.
