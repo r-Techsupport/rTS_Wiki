@@ -13,7 +13,7 @@ last_modified_date: 2023-01-10
 Before running `chkdsk`, make sure you have appropriate backups first. Guide on proper backup practices can be found here: https://rtech.support/backups/everyone-needs-backups/
 
 > [!CAUTION] Caution
-> If system has a suspected failing disk or RAM, do not run chkdsk. Doing so may further corrupt data on the disk and make data permanently irrecoverable. Move data to a healthy disk or solve RAM problem respectively.
+> If system has a suspected failing disk or RAM, do not run chkdsk, doing so may further corrupt data on the disk and make data permanently irrecoverable. Either move data to a healthy disk or solve the RAM problem.
 
 > [!IMPORTANT] Important
 > Interrupting chkdsk is not recommended. However, canceling or interrupting chkdsk should not leave the volume any more corrupt than it was before chkdsk was run. Running chkdsk again checks and should repair any remaining corruption on the volume.
