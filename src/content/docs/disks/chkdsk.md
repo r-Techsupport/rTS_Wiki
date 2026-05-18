@@ -10,12 +10,14 @@ last_modified_date: 2023-01-10
 
 `chkdsk` is a utility to check and repair issues with the filesystems in Windows. Windows will run it automatically, if Windows detects potentially corrupted files on the volume, however it can be run manually if needed.
 
-Before running `chkdsk`, make sure you have appropriate backups first. Guide on proper backup practices can be found here: https://rtech.support/backups/everyone-needs-backups/
+Before running `chkdsk`, make sure you have appropriate backups first. Guide on proper backup practices can be found here: [backups](/backups/everyone-needs-backups/)
 
 > [!CAUTION] Caution
+>
 > If system has a suspected failing disk or RAM, do not run chkdsk, doing so may further corrupt data on the disk and make data permanently irrecoverable. Either move data to a healthy disk or solve the RAM problem.
 
 > [!IMPORTANT] Important
+>
 > Interrupting chkdsk is not recommended. However, canceling or interrupting chkdsk should not leave the volume any more corrupt than it was before chkdsk was run. Running chkdsk again checks and should repair any remaining corruption on the volume.
 
 If chkdsk cannot work on the drive, a message appears that asks you if you want to check the drive the next time you restart the computer.
@@ -53,4 +55,5 @@ Locates bad sectors and attempts to recover readable information.
 `/r` includes the functionality of `/f`, with the additional analysis of physical disk errors.
 
 > [!CAUTION] Caution
+>
 >`chkdsk c: /r` can and will delete files that are corrupted, this is not a tool to be ran on a drive that has unique data.
