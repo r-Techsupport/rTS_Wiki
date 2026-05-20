@@ -26,60 +26,60 @@ export default defineConfig({
         ],
         sidebar: [
             {
-                label: 'Information',
-                autogenerate: { directory: 'meta' },
+                label: "Information",
                 collapsed: true,
+                items: [{ autogenerate: { directory: "meta" } }]
             },
             {
-                label: 'Software We Recommend',
-                autogenerate: { directory: 'recommendations' },
+                label: "Software We Recommend",
                 collapsed: true,
+                items: [{ autogenerate: { directory: "recommendations" } }]
             },
             {
-                label: 'OS Install Guides',
-                autogenerate: { directory: 'installations' },
+                label: "OS Install Guides",
                 collapsed: true,
+                items: [{ autogenerate: { directory: "installations" } }]
             },
             {
-                label: 'General Guides',
-                autogenerate: { directory: 'guides' },
+                label: "General Guides",
                 collapsed: true,
+                items: [{ autogenerate: { directory: "guides" } }]
             },
             {
-                label: 'Learning',
-                autogenerate: { directory: 'learning' },
+                label: "Learning",
                 collapsed: true,
+                items: [{ autogenerate: { directory: "learning" } }]
             },
             {
-                label: 'Safety & Security',
-                autogenerate: { directory: 'safety-security' },
+                label: "Safety & Security",
                 collapsed: true,
+                items: [{ autogenerate: { directory: "safety-security" } }]
             },
             {
-                label: 'Backups',
-                autogenerate: { directory: 'backups' },
+                label: "Backups",
                 collapsed: true,
+                items: [{ autogenerate: { directory: "backups" } }]
             },
             {
-                label: 'Networking',
-                autogenerate: { directory: 'networking' },
+                label: "Networking",
                 collapsed: true,
+                items: [{ autogenerate: { directory: "networking" } }]
             },
             {
-                label: 'Disks',
-                autogenerate: { directory: 'disks' },
+                label: "Disks",
                 collapsed: true,
+                items: [{ autogenerate: { directory: "disks" } }]
             },
             {
-                label: 'Live Sessions',
-                autogenerate: { directory: 'live-sessions' },
+                label: "Live Sessions",
                 collapsed: true,
+                items: [{ autogenerate: { directory: "live-sessions" } }]
             },
             {
-                label: 'Factoids',
-                autogenerate: { directory: 'factoids' },
+                label: "Factoids",
                 collapsed: true,
-            },
+                items: [{ autogenerate: { directory: "factoids" } }]
+            }
         ],
         social: [
             { icon: 'github', label: 'GitHub', href: 'https://github.com/r-techsupport/rts_wiki'},
