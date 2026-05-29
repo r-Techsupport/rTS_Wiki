@@ -18,9 +18,9 @@ If you are specifically told to use HWInfo for game logging, ignore the steps pe
 >
 > ***<u class="blink">Read the entirety of step 1 and 2 before complaining that downloads aren't working.</u>***
 
-1. Download HWiNFO from [here](https://www.fosshub.com/HWiNFO.html)
+1. Download HWiNFO from [here](https://cfhcable.dl.sourceforge.net/project/hwinfo/Windows_Portable/hwi_834.zip?viasf=1&fid=35de6ee481f39630)
 
-    **All versions will work the same. You won't have to install the portable version.**
+    **Unzip the folder and run HWINFO64**
 
 2. Download Prime95 from [here (64-bit)](https://www.mersenne.org/ftp_root/gimps/p95v308b9.win64.zip) or [here (32-bit)](https://www.mersenne.org/ftp_root/gimps/p95v307b9.win32.zip)
 
