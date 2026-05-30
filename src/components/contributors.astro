@@ -8,7 +8,7 @@ const { repo, file } = Astro.props;
 // Build an API URL that gets the 100 most recent commits for the specified file.
 // See https://docs.github.com/en/rest/commits/commits?apiVersion=2022-11-28#list-commits
 const url = new URL(`https://api.github.com/repos/${repo}/commits`);
-url.searchParams.set('per_page', 1000);
+url.searchParams.set('per_page', 100);
 
 // Fetch commits from the GitHub API
 const commits = await fetch(url, {
