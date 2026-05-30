@@ -19,7 +19,11 @@ const commits = await fetch(url, {
 }).then((res) => res.json());
 
 function removeDuplicates(commits) {
-  if (!commits) return [];
+  if (!Array.isArray(commits)) {
+    throw new Error(
+      `GitHub API did not return a commits array. This is likely a rate limit or auth issue; Re-run the build.\nAPI response: ${JSON.stringify(commits)}`
+    );
+  }
   const map = new Map();
   for (const commit of commits) {
     const author = commit.author;
