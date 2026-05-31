@@ -5,38 +5,44 @@ interface Props {
 }
 const { repo, file } = Astro.props;
 
-// Build an API URL that gets the 100 most recent commits for the overall repo.
-// See https://docs.github.com/en/rest/commits/commits?apiVersion=2022-11-28#list-commits
-const url = new URL(`https://api.github.com/repos/${repo}/commits`);
+// Use the contributors endpoint instead of commits: returns all unique
+// contributors across the full repo history, already deduplicated.
+// See https://docs.github.com/en/rest/repos/repos#list-repository-contributors
+const url = new URL(`https://api.github.com/repos/${repo}/contributors`);
 url.searchParams.set('per_page', 100);
 
-// Fetch commits from the GitHub API
-const commits = await fetch(url, {
-  headers: {
-    Accept: 'application/vnd.github+json',
-    'User-Agent': 'starlight-contributors/1.0',
-  },
-}).then((res) => res.json());
+async function fetchAllContributors(url) {
+  const allContributors = [];
+  let nextUrl = url.toString();
 
-function removeDuplicates(commits) {
-  if (!Array.isArray(commits)) {
-    throw new Error(
-      `GitHub API did not return a commits array. Check the repo name, authentication, and rate limits.\nAPI response: ${JSON.stringify(commits)}`
-    );
-  }
-  const map = new Map();
-  for (const commit of commits) {
-    const author = commit.author;
-    if (author) {
-      // Deduplicate based on author.id
-      map.set(author.id, { login: author.login, id: author.id });
+  while (nextUrl) {
+    const res = await fetch(nextUrl, {
+      headers: {
+        Accept: 'application/vnd.github+json',
+        'User-Agent': 'starlight-contributors/1.0',
+      },
+    });
+
+    const data = await res.json();
+
+    if (!Array.isArray(data)) {
+      throw new Error(
+        `GitHub API did not return a contributors array. Check the repo name, authentication, and rate limits.\nAPI response: ${JSON.stringify(data)}`
+      );
     }
+
+    allContributors.push(...data);
+
+    // Follow the Link header for pagination if there are more pages
+    const linkHeader = res.headers.get('link');
+    const match = linkHeader?.match(/<([^>]+)>;\s*rel="next"/);
+    nextUrl = match ? match[1] : null;
   }
-  return Array.from(map.values());
+
+  return allContributors.filter(c => c.type !== 'Bot');
 }
 
-// Remove any duplicate commit authors.
-const uniqueAuthors = removeDuplicates(commits);
+const uniqueAuthors = await fetchAllContributors(url);
 ---
 
 {/*
