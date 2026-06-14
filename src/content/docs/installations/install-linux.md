@@ -26,16 +26,18 @@ Unlike Windows or macOS, there are many variants/distributions of Linux called â
 
 There are many reasons you may want to pick one distro over another. Some distros are designed to be very easy to use, some are designed to be very stable, and some are designed to be bleeding-edge and offer the utmost customizability.
 
+
 | Distro | Description |
 | ------ | ----------- |
-| [Ubuntu](https://ubuntu.com/download/desktop) and [its flavors](https://ubuntu.com/desktop/flavours) | Arguably the most popular distros, designed to be easy to use. |
-| [Mint](https://linuxmint.com/download.php) | Another easy to use distro based on Ubuntu. |
-| [ElementaryOS](https://elementary.io/) | An Ubuntu-based distro designed to mimic macOS (to download for free, set custom donation amount to 0). |
-| [Debian](https://www.debian.org/download) | A very stable distro, which Ubuntu and many other distros are based on. |
-| [Arch](https://archlinux.org/download) | A bleeding-edge distro meant for advanced Linux users, *not for new users*. EndavourOS and many other distros are based on it. |
-| [EndavourOS](https://endeavouros.com/latest-release/) | A bleeding-edge distro  based on Arch that aims to remain relatively easy-to-use. |
-| [Fedora](https://getfedora.org/) | An easy to use desktop OS that is popular with Linux professionals. |
-| [Bazzite](https://bazzite.gg//) | An immutable Fedora-based distro focused on gaming with out of the box support for nvidia gpus (steam gaming mode is optional). |
+|[Ubuntu](https://ubuntu.com/download/desktop) and [its flavors](https://ubuntu.com/desktop/flavours) | Arguably the most popular distros, designed to be easy to use.|
+|[Mint](https://linuxmint.com/download.php) | Another easy to use distro based on Ubuntu.|
+|[ElementaryOS](https://elementary.io/) | An Ubuntu-based distro designed to mimic macOS (to download for free, set custom donation amount to 0).|
+|[Debian](https://www.debian.org/download) | A very stable distro, which Ubuntu and many other distros are based on.|
+|[Arch](https://archlinux.org/download) | A bleeding-edge distro meant for advanced Linux users, *not for new users*. EndavourOS and many other distros are based on it.|
+|[EndavourOS](https://endeavouros.com/latest-release/) | A bleeding-edge distro  based on Arch that aims to remain relatively easy-to-use.|
+|[Fedora](https://getfedora.org/) | An easy to use desktop OS that is popular with Linux professionals.|
+|[Bazzite](https://bazzite.gg//) | An immutable Fedora-based distro focused on gaming with out of the box support for nvidia gpus (steam gaming mode is optional).|
+
 
 The rest of this guide will be focusing mostly on Ubuntu and its derivatives (such as Xubuntu). Things may be a little different if youâ€™re using another distribution of Linux, such as Debian/Fedora/Mint, but many concepts will still apply.
 
