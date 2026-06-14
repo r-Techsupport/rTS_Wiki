@@ -16,6 +16,6 @@ r/TechSupport requires you to have Embeds enabled to see our rules and other use
 
     ![Discord Setting Icon](../../../assets/Discord_Embeds/DiscordEmbedSettingIcon.webp)
 
-2. Select the "Text & Images" Tab. And enable "Embeds and Link Previews"
+2. Select the "Appearance" tab, click Messages, then enable "Show embeds and link previews".
 
     ![Discord Chat Settings](../../../assets/Discord_Embeds/DiscordChatSetting.webp)
