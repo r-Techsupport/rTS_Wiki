@@ -12,7 +12,7 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 
 
 > [!CAUTION] Caution
-> 
+>
 > All files on the drive you plan to install Windows to will be **deleted** if you follow this guide - this is intended. Please ensure you have an adequate [backup policy](/backups) in place before proceeding if you have files of value.
 
 ## Prerequisites
@@ -26,49 +26,52 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 ### Using MCT to create the installation media
 
 1. Create a bootable USB flash drive using the [Create Windows 11 Installation Media download](https://www.microsoft.com/en-us/software-download/windows11) from Microsoft. It can be found under the headline "Create Windows 11 Installation Media"
-    
-> [!WARNING] Warning
-> Save MCT to Desktop or Downloads folder. MCT must be saved and run from outside the USB flash drive. Just moving an ISO file to the USB flash drive will not make it bootable.
 
-> [!NOTE] Information
-> As of October 2025, due to a bug the MCT may do nothing when ran. If this is the case, download Windows ISO instead and use [Rufus](/factoids/rufus) or [Ventoy](/guides/ventoy) to create a bootable media, then continue at [BIOS and Setup](#bios-and-setup) section.
-    
+    > [!WARNING] Warning
+    >
+    > Save MCT to Desktop or Downloads folder. MCT must be saved and run from outside the USB flash drive. Just moving an ISO file to the USB flash drive will not make it bootable.
+
+    > [!NOTE] Information
+    >
+    > As of October 2025, due to a bug the MCT may do nothing when ran. If this is the case, download Windows ISO instead and use [Rufus](/factoids/rufus) or [Ventoy](/guides/ventoy) to create a bootable media, then continue at [BIOS and Setup](#bios-and-setup) section.
+
 2. Run MCT by double-clicking it. You will be greeted with windows Terms Of Service, after reading it, press Accept.
 
-![wintos.png](../../../assets/install-11/wintos.webp)
+    ![wintos.png](../../../assets/install-11/wintos.webp)
 
 3. You can leave this to default, press next.
 
-![kde.png](../../../assets/install-11/kde.webp)
+    ![kde.png](../../../assets/install-11/kde.webp)
 
 4. Select create installation media for another PC, and then click next.
 
-![aPC.png](../../../assets/install-11/aPC.webp)
+    ![aPC.png](../../../assets/install-11/aPC.webp)
 
 5. Select the option "USB flash drive", then press next.
 
-![USB.png](../../../assets/install-11/USB.webp)
+    ![USB.png](../../../assets/install-11/USB.webp)
 
-6. Select the USB drive you want to use, press next. 
+6. Select the USB drive you want to use, press next.
 
-> [!CAUTION] Caution
->  This step will wipe the selected USB Flash drive, so ensure you have nothing important on the USB drive, and back up all important documents.
+   > [!CAUTION] Caution
+   >
+   > This step will wipe the selected USB Flash drive, so ensure you have nothing important on the USB drive, and back up all important documents.
 
-![select.png](../../../assets/install-11/select.webp)
+   ![select.png](../../../assets/install-11/select.webp)
 
 7. Wait until MCT finishes its job. This may take some time.
 
-![downl.png](../../../assets/install-11/downl.webp)
+   ![downl.png](../../../assets/install-11/downl.webp)
 
 8. After MCT says it finished, shutdown your PC.
-
 
 ## BIOS and Setup
 
 1. Disconnect all storage disks except from the main (C Drive) disk from the computer before installing Windows 11. Not doing so can accidentally wipe other disks or result in the installer choosing the wrong disk as the boot drive and putting actual windows on another drive.
 
-> [!NOTE] Information
-> The following section occurs in your BIOS, you can enter your systems' BIOS by looking for the words "setup" when you see your BIOS boot screen then pressing the corresponding function key.
+   > [!NOTE] Information
+   >
+   > The following section occurs in your BIOS, you can enter your systems' BIOS by looking for the words "setup" when you see your BIOS boot screen then pressing the corresponding function key.
 
 2. Please make sure these settings are configured correctly.
    * CSM is disabled
@@ -79,9 +82,9 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 3. Boot into your USB which has the Windows 11 Media on it, to do this Change the BIOS boot order to have USB media as the first priority (this can usually be found under the boot tab), or simply look for the words "boot menu" when you see your BIOS boot screen, press the corresponding function key and choose the USB flash drive to boot from it.
 
 ## Installing Windows
- 
-1. Follow the steps on screen to install Windows 11. 
- 
+
+1. Follow the steps on screen to install Windows 11.
+
 2. Select Windows language, localization, then click "Next". Select keyboard settings, then click "Next".
 
      ![windows11-2-select-lang.webp](../../../assets/install-11/windows11-2-select-lang.webp)
@@ -90,12 +93,11 @@ redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 
      ![windows11-2-select-setup.webp](../../../assets/install-11/windows11-2-select-setup.webp)
 
-4. If prompted, select Windows edition you want to install from the list, most commonly Windows 11 Home or Windows 11 Pro. 
+4. If prompted, select Windows edition you want to install from the list, most commonly Windows 11 Home or Windows 11 Pro.
 
     ![windows11-2-select-version.webp](../../../assets/install-11/windows11-2-select-version.webp)
 
 5. Continue on until you hit the license key screen. Here you can either enter your license code, or if Windows has been installed to this computer before, click on the `I don't have a product key` link.
-
 
 6. Click on each partition of the target drive and click "Delete partition". Once all the partitions are gone you will be left with unallocated space. Select the unallocated space and click `Next`. *****Each means ALL*** But do you mean ALL? ***Yes, All***. Once all the partitions are gone, you will be left with unallocated space.**
 
@@ -127,10 +129,10 @@ import DiskErrors from '../../../_includes/embeds/install-disk-errors.md';
 
     Let the installation process continue from here. It will take several minutes until you see the welcome screen.
 
-
 > [!TIP] Congratulations!
 >
-> You have successfully installed Windows 11. Once the computer has rebooted, you will be greeted with the Out-of-the-Box Experience and you can start setting up your new installation of Windows. 
+> You have successfully installed Windows 11. Once the computer has rebooted, you will be greeted with the Out-of-the-Box Experience and you can start setting up your new installation of Windows.
 
 ## Post-install setup guides
+
 If you need to set up Windows 11 without an internet connection or without a Microsoft account, follow this [article](/guides/bypass-11).
