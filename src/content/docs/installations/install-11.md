@@ -9,6 +9,7 @@ pagefind: true
 last_modified_date: 2025-03-15
 redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 ---
+
 import DiskErrors from '../../../_includes/embeds/install-disk-errors.md';
 
 > [!CAUTION] Caution
