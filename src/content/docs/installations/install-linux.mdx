@@ -8,6 +8,7 @@ parent: OS Install Guides
 pagefind: true
 last_modified_date: 2025-10-29
 redirect_from: /books/how-to-and-guides/page/linux-installation-guide
+description: A how to guide on install linux to your computer. This page also gives some suggestions for which distro is best for the use case. In addition, it gives some pointers after the operating system is installed.
 ---
 
 This Linux installation guide may seem long, but it’s not very difficult. It covers as many common cases as possible, and also aims to be informative.
@@ -22,26 +23,25 @@ If your current OS is installed with MBR, your motherboard may still support UEF
 
 ## Step 1: Picking a Distro
 
-Unlike Windows or macOS, there are many variants/distributions of Linux called “distros.”
+Unlike Windows or macOS, there are many variants/distributions of Linux called "distros."
 
 There are many reasons you may want to pick one distro over another. Some distros are designed to be very easy to use, some are designed to be very stable, and some are designed to be bleeding-edge and offer the utmost customizability.
 
-
 | Distro | Description |
-| ------ | ----------- |
-|[Ubuntu](https://ubuntu.com/download/desktop) and [its flavors](https://ubuntu.com/desktop/flavours) | Arguably the most popular distros, designed to be easy to use.|
-|[Mint](https://linuxmint.com/download.php) | Another easy to use distro based on Ubuntu.|
-|[ElementaryOS](https://elementary.io/) | An Ubuntu-based distro designed to mimic macOS (to download for free, set custom donation amount to 0).|
-|[Debian](https://www.debian.org/download) | A very stable distro, which Ubuntu and many other distros are based on.|
-|[Arch](https://archlinux.org/download) | A bleeding-edge distro meant for advanced Linux users, *not for new users*. EndavourOS and many other distros are based on it.|
-|[EndavourOS](https://endeavouros.com/latest-release/) | A bleeding-edge distro  based on Arch that aims to remain relatively easy-to-use.|
-|[Fedora](https://getfedora.org/) | An easy to use desktop OS that is popular with Linux professionals.|
-|[Bazzite](https://bazzite.gg//) | An immutable Fedora-based distro focused on gaming with out of the box support for nvidia gpus (steam gaming mode is optional).|
-
+| ------- | ----------- |
+| [Ubuntu](https://ubuntu.com/download/desktop) and [its flavors](https://ubuntu.com/desktop/flavours) | Arguably the most popular distros, designed to be easy to use. |
+| [Mint](https://linuxmint.com/download.php) | Another easy to use distro based on Ubuntu. |
+| [ElementaryOS](https://elementary.io/) | An Ubuntu-based distro designed to mimic macOS (to download for free, set custom donation amount to 0). |
+| [Debian](https://www.debian.org/download) | A very stable distro, which Ubuntu and many other distros are based on. |
+| [Arch](https://archlinux.org/download) | A bleeding-edge distro meant for advanced Linux users, *not for new users*. EndavourOS and many other distros are based on it. |
+| [EndavourOS](https://endeavouros.com/latest-release/) | A bleeding-edge distro based on Arch that aims to remain relatively easy-to-use. |
+| [Fedora](https://getfedora.org/) | An easy to use desktop OS that is popular with Linux professionals. |
+| [Bazzite](https://bazzite.gg//) | An immutable Fedora-based distro focused on gaming with out of the box support for nvidia gpus (steam gaming mode is optional). |
 
 The rest of this guide will be focusing mostly on Ubuntu and its derivatives (such as Xubuntu). Things may be a little different if you’re using another distribution of Linux, such as Debian/Fedora/Mint, but many concepts will still apply.
 
 Additional tips:
+
 * Use a 64-bit version of the distro you choose whenever possible. 32-bit OS's only support a maximum of just under 4 GB of RAM (no, PAE is not a magic solution to this problem). Many pieces of software, such as Google Chrome, only have a 64-bit version. There are no compatibility issues, since 64-bit computers can also run 32-bit software. Most computers made in 2007 or later are 64-bit systems. If your computer is only 32-bit, at this point it's getting too old to be useful, so consider recycling it.
 * Use the LTS version of your distro, if applicable. Ubuntu numbers their releases YY.MM, or the 2-digit Year and then the Month (25.04, 25.10, etc). They are released every 6 months in April and October, and most are supported for 9 months. However, even-numbered years with April as the month are Long-Term Support releases (20.04, 22.04, 24.04, etc). These LTS versions, released every 2 years, are supported for 5 years, and thus are more stable.
 * Linux does not need to be installed on your storage drive. A “live session” can run directly off a flash drive with the installation files on it, which is good for trying it out before you decide to install it. Live sessions don't save your files after a reboot, but flash drives with Linux installed can be made persistent, so that changes can be saved.
@@ -88,6 +88,7 @@ Since the package manager manages software, you can easily keep your system upda
 Use the 64-bit versions of software whenever possible. It saves you disk space due to not having to have 32-bit versions of libraries, and 64-bit packages will generally work better.
 
 Most common software is compatible with Linux. If you need to use software that only natively runs on a different OS, you’ll have to do one of the following:
+
 * Find an alternative application
 * Run a VM with the needed OS
 * Dual-boot Windows
