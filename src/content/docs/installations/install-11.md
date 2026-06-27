@@ -10,7 +10,6 @@ last_modified_date: 2025-03-15
 redirect_from: /books/how-to-and-guides/page/clean-installing-windows-11
 ---
 
-import DiskErrors from '../../../_includes/embeds/install-disk-errors.md';
 
 > [!CAUTION] Caution
 > 
@@ -101,11 +100,14 @@ import DiskErrors from '../../../_includes/embeds/install-disk-errors.md';
 6. Click on each partition of the target drive and click "Delete partition". Once all the partitions are gone you will be left with unallocated space. Select the unallocated space and click `Next`. *****Each means ALL*** But do you mean ALL? ***Yes, All***. Once all the partitions are gone, you will be left with unallocated space.**
 
     > [!CAUTION] Caution
+    >
     > Only disk 0 partitions should be visible in this window before deleting, except for partitions named "ESD-USB", "Ventoy" or any USB related disks. If you see any non-USB disk other as seen in our images, power down and unplug the extra drives that you don't want to install windows on.
 
     ![windows11-2-select-location-unalloc.webp](../../../assets/install-11/windows11-2-select-location-used.webp)
 
     ![windows11-2-select-location-unalloc.webp](../../../assets/install-11/windows11-2-select-location-unalloc.webp)
+
+import DiskErrors from '../../../_includes/embeds/install-disk-errors.md';
 
     <DiskErrors />
 
