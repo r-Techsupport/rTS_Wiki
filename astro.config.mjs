@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import remarkObsidianCallout from "remark-obsidian-callout";
 import starlightLinksValidator from 'starlight-links-validator';
+import remarkGfm from 'remark-gfm';
 
 // https://astro.build/config
 export default defineConfig({
@@ -100,7 +101,8 @@ export default defineConfig({
     }),
     ],
     markdown: {
-        remarkPlugins: [ 
+        remarkPlugins: [
+            remarkGfm,
             // @ts-ignore
             [ remarkObsidianCallout, {
                 callouts: {
