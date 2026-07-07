@@ -6,16 +6,43 @@ sidebar:
 has_children: false
 parent: Disks
 pagefind: true
-last_modified_date: 2024-06-28
+last_modified_date: 2026-07-06
 ---
 
-import UseLLCD from '../../../../_includes/embeds/use-linux-live-session.md';
+> [!NOTE] Information
+>
+> `Gparted` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you can skip the installation section.
 
-<UseLLCD />
+> [!TIP] How to install gparted
+>
+> Refer below for installation instructions if you are not using our live image or want to install it on your own system.
+>
+> <details markdown='1'>
+>   <summary>Installing gparted</summary>
+>
+> **Debian / Ubuntu / Linux Mint**:
+> ```sh
+> sudo apt update && sudo apt install gparted
+> ```
+> 
+> **Fedora / RHEL / CentOS / AlmaLinux**:
+> ```sh
+> sudo dnf install gparted
+> ```
+> 
+> **Arch / Manjaro / CachyOS**:
+> ```sh
+> sudo pacman -Syu gparted
+> ```
+> </details>
 
 ## Working with a new disk
 ### Create partition table
 A disk needs a partition table made as the first step in formatting. This is generally an `MBR`/`msdos` or `GPT` table. `GPT` is preferred for all modern applications.
+
+> [!IMPORTANT] Important
+> 
+> MBR partition table has a limitation of a maximum of 2 TB per partition, so keep that in mind when using it.
 
 Select a disk in Gparted from the drop-down in the top right
 
