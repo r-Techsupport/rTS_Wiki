@@ -1,0 +1,295 @@
+<style is:global>
+  :root{
+    --bg:#12151A;
+    --panel:#1A1E25;
+    --panel-2:#20242C;
+    --line:#2A2F3A;
+    --line-soft:#232833;
+    --amber:#E8A33D;
+    --amber-dim:#8A6626;
+    --cyan:#5FA8D3;
+    --text:#D9DCE3;
+    --text-dim:#8B92A3;
+    --text-faint:#565D6D;
+    --mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+    --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:var(--sans);}
+  body{min-height:100vh;}
+
+  .wrap{max-width:980px;margin:0 auto;padding:28px 20px 80px;}
+
+  header.top{
+    position:sticky;top:0;z-index:20;
+    background:var(--bg);
+    padding:20px 0 14px;
+    margin-bottom:6px;
+    box-shadow:0 8px 12px -8px rgba(0,0,0,0.5);
+  }
+  .title-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:14px;}
+  .bot-dot{width:9px;height:9px;border-radius:50%;background:var(--amber);box-shadow:0 0 8px var(--amber);flex:none;}
+  h1{
+    font-family:var(--mono);
+    font-size:19px;
+    font-weight:600;
+    color:var(--text);
+    margin:0;
+    letter-spacing:0.2px;
+  }
+  h1 span{color:var(--amber);}
+  .subtitle{font-size:12.5px;color:var(--text-faint);margin:0;font-family:var(--mono);}
+
+  .search-row{display:flex;gap:8px;margin-bottom:12px;}
+  .search-box{
+    flex:1;
+    position:relative;
+  }
+  .search-box input{
+    width:100%;
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:8px;
+    color:var(--text);
+    font-family:var(--mono);
+    font-size:14px;
+    padding:11px 14px 11px 32px;
+    outline:none;
+    transition:border-color .15s;
+  }
+  .search-box input:focus{border-color:var(--amber-dim);}
+  .search-box::before{
+    content:"?";
+    position:absolute;left:12px;top:50%;transform:translateY(-50%);
+    color:var(--text-faint);font-family:var(--mono);font-size:14px;pointer-events:none;
+  }
+  .count-badge{
+    font-family:var(--mono);font-size:12px;color:var(--text-faint);
+    display:flex;align-items:center;padding:0 14px;white-space:nowrap;
+    background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  }
+  .count-badge b{color:var(--amber);font-weight:600;margin-right:4px;}
+
+  .pills{display:flex;flex-wrap:wrap;gap:6px;padding-bottom:2px;}
+  .pill{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:64px;
+    font-family:var(--mono);
+    font-size:11.5px;
+    padding:5px 14px;
+    border-radius:8px;
+    border:1px solid var(--line);
+    background:var(--panel);
+    color:var(--text-dim);
+    cursor:pointer;
+    user-select:none;
+    transition:all .12s;
+    white-space:nowrap;
+  }
+  .pill:hover{border-color:var(--amber-dim);color:var(--text);}
+  .pill.active{background:var(--amber);border-color:var(--amber);color:#1A1305;font-weight:600;}
+  .pill .n{opacity:0.65;margin-left:5px;}
+
+  .cat-group{margin-top:26px;}
+  .cat-head{
+    display:flex;align-items:center;gap:10px;
+    margin-bottom:10px;
+    padding-bottom:8px;
+    border-bottom:1px solid var(--line-soft);
+  }
+  .cat-head h2{
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    color:var(--cyan);
+    font-weight:600;
+    margin:0;
+    font-family:var(--mono);
+  }
+  .cat-head .cat-count{
+    font-family:var(--mono);font-size:11px;color:var(--text-faint);
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:1px 8px;
+  }
+
+  .grid{display:flex;flex-direction:column;gap:8px;}
+
+  .card{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-left:3px solid var(--amber-dim);
+    border-radius:6px;
+    padding:12px 14px;
+    transition:border-color .12s, background .12s;
+  }
+  .card:hover{border-left-color:var(--amber);background:var(--panel-2);}
+
+  .card-head{
+    display:flex;
+    align-items:baseline;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-bottom:5px;
+  }
+  .cmd{
+    font-family:var(--mono);
+    font-weight:600;
+    font-size:14.5px;
+    color:var(--amber);
+  }
+  .cmd::before{content:"?";color:var(--amber-dim);}
+  .aliases{
+    display:flex;flex-wrap:wrap;gap:4px;
+  }
+  .alias-tag{
+    font-family:var(--mono);
+    font-size:10.5px;
+    color:var(--cyan);
+    background:rgba(95,168,211,0.08);
+    border:1px solid rgba(95,168,211,0.2);
+    border-radius:4px;
+    padding:1px 6px;
+  }
+  .desc{
+    font-size:13.5px;
+    line-height:1.55;
+    color:var(--text-dim);
+  }
+  .desc b, .desc strong{color:var(--text);}
+
+  .empty-state{
+    text-align:center;
+    padding:60px 20px;
+    color:var(--text-faint);
+    font-family:var(--mono);
+    font-size:13px;
+  }
+
+  footer{
+    margin-top:50px;
+    padding-top:20px;
+    border-top:1px solid var(--line-soft);
+    font-family:var(--mono);
+    font-size:11px;
+    color:var(--text-faint);
+    text-align:center;
+  }
+
+  ::-webkit-scrollbar{width:10px;}
+  ::-webkit-scrollbar-track{background:var(--bg);}
+  ::-webkit-scrollbar-thumb{background:var(--line);border-radius:5px;}
+  ::-webkit-scrollbar-thumb:hover{background:var(--text-faint);}
+
+  @media (max-width:600px){
+    h1{font-size:16px;}
+    .search-row{flex-direction:column;}
+    .count-badge{align-self:flex-start;}
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="top">
+    <div class="title-row">
+      <span class="bot-dot"></span>
+      <h1>TechSupport<span>Bot</span> — Factoid Reference</h1>
+    </div>
+    <p class="subtitle">// searchable index of r/TechSupport's ?commands, aliases &amp; canned replies</p>
+
+    <div class="search-row">
+      <div class="search-box">
+        <input id="search" type="text" placeholder="search command, alias, or keyword…" autocomplete="off">
+      </div>
+      <div class="count-badge"><b id="count">0</b> shown</div>
+    </div>
+
+    <div class="pills" id="pills"></div>
+  </header>
+
+  <div id="results"></div>
+
+  <footer>parsed from the r/TechSupport Discord factoid database · reference only</footer>
+</div>
+
+<script is:inline>
+const FACTOIDS = [{"cmd": "0x129", "aliases": ["13thgen", "14thgen", "gen13", "gen14", "microcode"], "desc": "13th/14th-gen Intel CPUs have a known defect causing irreparable degradation from excessive idle voltage. Update BIOS to include 0x12B microcode. Not guaranteed to prevent failure. Intel offers extended warranties for affected models.", "cat": "RAM / CPU / Motherboard"}, {"cmd": "2fa", "aliases": ["mfa"], "desc": "Learn about account Multi-Factor Authentication (MFA/2FA).", "cat": "Antivirus / Malware / Security"}, {"cmd": "7z", "aliases": ["7zip"], "desc": "Download 7-Zip (free, open-source archiver).", "cat": "Other"}, {"cmd": "acc", "aliases": ["account"], "desc": "Account issues can only be solved by the company hosting the account.", "cat": "Other"}, {"cmd": "adapter", "aliases": [], "desc": "Change network adapter properties via ncpa.cpl (Win+R).", "cat": "Networking"}, {"cmd": "adb", "aliases": [], "desc": "Download universal ADB drivers for Windows; reboot after install.", "cat": "Other"}, {"cmd": "ahci", "aliases": ["irst", "raid", "rst", "vmd"], "desc": "Guide for missing storage devices / storage drivers in Windows Setup.", "cat": "Other"}, {"cmd": "ai", "aliases": ["chatgpt", "llm", "noai"], "desc": "Don't paste AI-generated responses as support — they get removed.", "cat": "Other"}, {"cmd": "airflow", "aliases": ["casefans", "fanorientation"], "desc": "Diagram for correct case fan orientation/airflow.", "cat": "Misc / Hardware"}, {"cmd": "amd", "aliases": [], "desc": "Latest AMD display/chipset drivers — note current Adrenalin stability issues, see ?amd26.", "cat": "Drivers / GPU"}, {"cmd": "amd26", "aliases": ["amdproblem", "amdproblems"], "desc": "Latest AMD drivers unstable — fall back to Adrenalin 25.9.2, wipe old drivers with DDU first.", "cat": "Drivers / GPU"}, {"cmd": "anticheat", "aliases": [], "desc": "Anti-cheat (BattleEye, EAC, FACEIT, Riot Vanguard) often causes instability, false driver blocks, BSODs.", "cat": "Bad / Blacklisted Software"}, {"cmd": "antivirus", "aliases": ["av"], "desc": "Guidance on what antivirus to use.", "cat": "Antivirus / Malware / Security"}, {"cmd": "appeal", "aliases": [], "desc": "Ban/mute appeal process link.", "cat": "Server Rules / Etiquette"}, {"cmd": "applebeta", "aliases": ["beta", "insider", "preview"], "desc": "No support for beta/unstable OS (Windows Insider, Android/Apple Beta) — report bugs to the vendor.", "cat": "EOL / Unsupported Systems"}, {"cmd": "appmalfunctioning", "aliases": ["fixapps"], "desc": "General guide to troubleshooting malfunctioning mobile apps.", "cat": "Other"}, {"cmd": "ask", "aliases": ["hello", "tips", "welcome"], "desc": "Server tips: ask directly, give details, don't cross-post, follow rules.", "cat": "Server Rules / Etiquette"}, {"cmd": "atlasos", "aliases": ["customiso", "customos", "revios", "tiny10", "tiny11"], "desc": "No support for damage from custom OS builds (AtlasOS, Tiny10/11, ReviOS, GhostSpectre, NexusLite, XOS). Reinstall Windows instead.", "cat": "Bad / Blacklisted Software"}, {"cmd": "autoruns", "aliases": [], "desc": "Autoruns (Sysinternals) shows startup items — reference only, disabling things can break boot.", "cat": "Windows Install / Repair"}, {"cmd": "avast", "aliases": ["avpr"], "desc": "Avast product removal tool.", "cat": "Antivirus / Malware / Security"}, {"cmd": "avg", "aliases": ["avgpr"], "desc": "AVG product removal tool.", "cat": "Antivirus / Malware / Security"}, {"cmd": "avremove", "aliases": ["avremover", "avremovers", "avuninstall", "avuninstaller"], "desc": "List of third-party AV removal tools.", "cat": "Antivirus / Malware / Security"}, {"cmd": "backup", "aliases": ["backups", "bak", "makebackups"], "desc": "Always back up irreplaceable files — computers are unpredictable.", "cat": "Backup / Data Recovery"}, {"cmd": "bags", "aliases": [], "desc": "Bluetooth headset mic quality drop — fix by disabling Handsfree Telephony + Bluetooth Audio Gateway Service.", "cat": "Audio / Peripherals"}, {"cmd": "ban", "aliases": ["dontping", "ping"], "desc": "Don't ping volunteers unless following up with someone who already helped you.", "cat": "Server Rules / Etiquette"}, {"cmd": "bao", "aliases": ["baobab"], "desc": "Install Baobab (GNOME Disk Usage Analyzer) via Flathub/Homebrew.", "cat": "Linux / Mac / Other OS"}, {"cmd": "battery", "aliases": ["batteryhealth", "batteryreport", "batterytest"], "desc": "Generate a battery health report via 'powercfg -batteryreport'.", "cat": "Misc / Hardware"}, {"cmd": "bcdedit", "aliases": [], "desc": "Guide to manipulating boot loader entries with BCDEdit.", "cat": "BIOS / Boot / POST"}, {"cmd": "beep", "aliases": ["nopost", "post", "whatispost", "whatspost"], "desc": "POST failure = serious hardware instability. Symptoms: no display/USB power, error LED, beep codes.", "cat": "BIOS / Boot / POST"}, {"cmd": "benchmark", "aliases": ["benchmarks", "gamefps"], "desc": "Benchmarks/FPS scores are rough estimates, not proof of a system issue.", "cat": "Misc / Hardware"}, {"cmd": "benchtest", "aliases": ["breadboard", "breadboarding"], "desc": "Guide to testing hardware outside the case (\"breadboarding\").", "cat": "Misc / Hardware"}, {"cmd": "bios", "aliases": ["enterbios", "uefi"], "desc": "Enter BIOS via elevated cmd: shutdown.exe /r /fw /t 0", "cat": "BIOS / Boot / POST"}, {"cmd": "biosupdate", "aliases": ["updatebios"], "desc": "Guide to updating your BIOS/firmware.", "cat": "BIOS / Boot / POST"}, {"cmd": "bitlocker", "aliases": [], "desc": "BitLocker disk encryption overview — guard your Recovery Key carefully.", "cat": "Backup / Data Recovery"}, {"cmd": "bitsum", "aliases": ["bloat", "debloat", "tron", "tronscript", "tweak", "tweaker", "tweaks"], "desc": "No support for damage from debloat scripts (TronScript, telemetry removers) — irreversible low-level changes, considered scams. Reinstall Windows.", "cat": "Bad / Blacklisted Software"}, {"cmd": "biz", "aliases": ["business"], "desc": "No business/enterprise IT support in most cases — consult your own IT dept.", "cat": "Server Rules / Etiquette"}, {"cmd": "blacklist", "aliases": [], "desc": "Link to the software blacklist.", "cat": "Bad / Blacklisted Software"}, {"cmd": "bluescreenview", "aliases": ["bsodreader", "bsodreaders", "bsodviewer", "whocrashed"], "desc": "Don't use BlueScreenView/WhoCrashed (inaccurate) — use WinDbg or the official online BSOD viewer.", "cat": "BSOD / Crash Diagnostics"}, {"cmd": "bottleneck", "aliases": ["bottlenecking"], "desc": "Article explaining hardware bottlenecking.", "cat": "Other"}, {"cmd": "brew", "aliases": ["homebrew"], "desc": "Install Homebrew on macOS via .pkg + add to PATH.", "cat": "Linux / Mac / Other OS"}, {"cmd": "bridge", "aliases": [], "desc": "Discord is bridged to legacy IRC — recommend moving to Discord.", "cat": "Server Rules / Etiquette"}, {"cmd": "brokenlinux", "aliases": ["fixlinux", "linuxfix", "repairlinux"], "desc": "General guide to fixing a broken Linux install.", "cat": "Linux / Mac / Other OS"}, {"cmd": "bsod", "aliases": ["dump", "dumps", "jim", "minidump", "minidumps"], "desc": "Guide to obtaining BSOD minidumps.", "cat": "BSOD / Crash Diagnostics"}, {"cmd": "bsodguide", "aliases": ["dumpguide"], "desc": "Guide to reading/understanding BSODs.", "cat": "BSOD / Crash Diagnostics"}, {"cmd": "cat", "aliases": ["catbox"], "desc": "Use Catbox.moe for files over Discord's size limit.", "cat": "Server Rules / Etiquette"}, {"cmd": "ccleaner", "aliases": ["cleaner", "cleaners", "optimize", "optimizer"], "desc": "\"Cleaner/optimizer\" apps (CCleaner, IObit ASC, iolo, Outbyte) are PUPs/malware — can permanently corrupt Windows. Uninstalling doesn't undo damage.", "cat": "Bad / Blacklisted Software"}, {"cmd": "cdi", "aliases": ["crystaldiskinfo"], "desc": "Check drive health with CrystalDiskInfo.", "cat": "Diagnostic Tools"}, {"cmd": "cdm", "aliases": ["crystaldiskmark", "diskmark", "ssdbenchmark"], "desc": "CrystalDiskMark for drive speed benchmarking (not health — that's CDI).", "cat": "Diagnostic Tools"}, {"cmd": "changedns", "aliases": ["dns"], "desc": "Guide to changing your DNS server.", "cat": "Networking"}, {"cmd": "cheat", "aliases": ["cheating", "cheats", "fitgirl", "hacks", "illegal", "piracy", "pirate", "spoofer", "termsofservice", "tos"], "desc": "No help with cheating, piracy, ban evasion, HWID changers, bypassing restrictions, or ToS violations. These are common malware vectors — recommend removal.", "cat": "Bad / Blacklisted Software"}, {"cmd": "checkdisk", "aliases": ["chkdisk", "chkdsk"], "desc": "chkdsk fixes filesystem corruption only, not physical drive failure.", "cat": "Disks / Storage"}, {"cmd": "chrome", "aliases": ["chromium", "dwm", "electron", "fixdwm"], "desc": "Registry fix + DWM restart for Chromium app visual glitches. Registry edits carry risk — back up first.", "cat": "Other"}, {"cmd": "chromemalware", "aliases": ["chromemw"], "desc": "Guide to removing Chrome malware/rogue extensions.", "cat": "Antivirus / Malware / Security"}, {"cmd": "clean", "aliases": ["diskpart"], "desc": "Guide to cleaning disks with diskpart.", "cat": "Disks / Storage"}, {"cmd": "cleanboot", "aliases": [], "desc": "Clean Boot guide — disables 3rd-party startup only, not a reinstall.", "cat": "Windows Install / Repair"}, {"cmd": "cleaning", "aliases": [], "desc": "Guide to properly cleaning/maintaining Windows.", "cat": "Windows Install / Repair"}, {"cmd": "clearcmos", "aliases": ["cmos"], "desc": "Guide to clearing CMOS.", "cat": "BIOS / Boot / POST"}, {"cmd": "clock", "aliases": ["timeserver"], "desc": "Change Windows time server via control timedate.cpl.", "cat": "Other"}, {"cmd": "clocks", "aliases": ["oc", "overclock", "overclocking", "undervolt", "uv"], "desc": "Overclocking/undervolting risks instability or damage — done at your own risk, unsupported here.", "cat": "RAM / CPU / Motherboard"}, {"cmd": "clone", "aliases": ["cloning"], "desc": "Cloning OS drives risks corruption/data loss — clean install recommended instead.", "cat": "Windows Install / Repair"}, {"cmd": "clownfish", "aliases": ["vm", "voice", "voicechanger", "voicechangers", "voicemeeter", "voicemeter", "voicemod"], "desc": "Virtual audio tools (Voicemod, Voicemeeter, Clownfish) can break Windows audio — may need a reinstall if DDU doesn't fix it.", "cat": "Bad / Blacklisted Software"}, {"cmd": "com", "aliases": ["community", "offt", "ont", "otc"], "desc": "Take off-topic chat to community channels.", "cat": "Server Rules / Etiquette"}, {"cmd": "componentusage", "aliases": ["cpuusage", "gpuusage", "highusage", "taskmgr", "usage", "usagepercent"], "desc": "Task Manager % is \"busy time,\" not \"load\" — high usage alone isn't proof of a bottleneck.", "cat": "Server Rules / Etiquette"}, {"cmd": "compromised", "aliases": [], "desc": "If compromised: reset passwords (unique per site), enable 2FA, use a password manager; persistent issues → malware guide.", "cat": "Antivirus / Malware / Security"}, {"cmd": "connectdisplay", "aliases": ["display", "gpu", "igpu"], "desc": "Connect your display to the discrete GPU, not onboard/integrated graphics.", "cat": "Misc / Hardware"}, {"cmd": "connectors", "aliases": ["ports"], "desc": "Comprehensive list of connectors/ports.", "cat": "Misc / Hardware"}, {"cmd": "coop", "aliases": ["nocoop"], "desc": "We've tried to help — can't continue if advice isn't followed. Please don't re-ask.", "cat": "Server Rules / Etiquette"}, {"cmd": "cost", "aliases": ["costs", "estimate", "estimates", "price", "prices"], "desc": "No cost estimates given — too variable by region. Contact a local shop.", "cat": "Server Rules / Etiquette"}, {"cmd": "cpuz", "aliases": [], "desc": "Download CPU-Z for detailed CPU info.", "cat": "Diagnostic Tools"}, {"cmd": "crc", "aliases": [], "desc": "CRC errors = data corrupted in transit, usually a bad SATA cable. Low/non-increasing counts are negligible.", "cat": "Diagnostic Tools"}, {"cmd": "crop", "aliases": [], "desc": "Don't crop/edit screenshots — can hide important context.", "cat": "Server Rules / Etiquette"}, {"cmd": "cross", "aliases": ["crosspost"], "desc": "Keep your issue in one channel, don't cross-post.", "cat": "Server Rules / Etiquette"}, {"cmd": "cru", "aliases": ["cus", "customres", "stretched", "stretchedres", "stretchres"], "desc": "Custom/stretched resolutions unsupported — CRU tool can cause a black screen on boot. Use native resolution.", "cat": "Bad / Blacklisted Software"}, {"cmd": "data", "aliases": ["delete", "erase", "rd", "removedata"], "desc": "Confirmation that a recommended action will delete data — back up first.", "cat": "Backup / Data Recovery"}, {"cmd": "data-recovery", "aliases": ["dr", "recovery"], "desc": "Guide to best data recovery practices.", "cat": "Disks / Storage"}, {"cmd": "dban", "aliases": ["wipe"], "desc": "Guide to securely wiping storage devices.", "cat": "Disks / Storage"}, {"cmd": "dcsupport", "aliases": ["discordsupport"], "desc": "Not affiliated with Discord — use the official Discord support form.", "cat": "Server Rules / Etiquette"}, {"cmd": "ddr", "aliases": ["mhz"], "desc": "RAM reported at half speed = MHz vs MT/s (DDR transfers per clock edge). e.g. 1600MHz shown = 3200MT/s actual.", "cat": "RAM / CPU / Motherboard"}, {"cmd": "ddu", "aliases": [], "desc": "Guide to uninstalling display drivers with DDU. Note: NVIDIA 570-branch is currently problematic.", "cat": "Drivers / GPU"}, {"cmd": "ddua", "aliases": ["dduaudio"], "desc": "Guide to uninstalling audio drivers with DDU.", "cat": "Audio / Peripherals"}, {"cmd": "devicemanager", "aliases": ["devmgmt"], "desc": "Open Device Manager via devmgmt.msc — screenshot uncropped.", "cat": "Other"}, {"cmd": "dfu", "aliases": ["ipsw"], "desc": "Restore an Apple device via iTunes + IPSW + Shift-click \"Restore iPhone.\"", "cat": "Other"}, {"cmd": "disablefaststartup", "aliases": ["fastboot", "fastbootdisable", "fastbootoff", "faststartdisable", "faststartup", "faststartupoff"], "desc": "Boot fails then succeeds on 2nd try = Fastboot(BIOS)/Fast Startup(Windows) — disable both.", "cat": "BIOS / Boot / POST"}, {"cmd": "discord", "aliases": ["invite"], "desc": "r/TechSupport Discord invite link.", "cat": "Server Rules / Etiquette"}, {"cmd": "discordscam", "aliases": ["scam"], "desc": "\"Someone reported my account\" is a common phishing scam — support never DMs first or asks for codes/credentials.", "cat": "Antivirus / Malware / Security"}, {"cmd": "disk", "aliases": ["disks"], "desc": "Guide to disk/partition management.", "cat": "Disks / Storage"}, {"cmd": "diskman", "aliases": ["diskmanagement", "diskmanager", "diskmgmt", "diskmgr"], "desc": "Open Disk Management via diskmgmt.msc — screenshot uncropped.", "cat": "Disks / Storage"}, {"cmd": "diskspace", "aliases": ["fulldrive", "ssdfull", "ssdspace"], "desc": "Don't fill SSDs past 80-85% — needed for wear leveling/garbage collection.", "cat": "Disks / Storage"}, {"cmd": "dislocker", "aliases": [], "desc": "Guide to recovering BitLocker drives via Dislocker + recovery key.", "cat": "Disks / Storage"}, {"cmd": "dism", "aliases": ["dismsfc", "sfc", "sfcdism"], "desc": "Repair corrupted Windows files via 'dism /online /cleanup-image /restorehealth && sfc /scannow' (elevated). Not guaranteed — fallback to in-place upgrade or clean install.", "cat": "Windows Install / Repair"}, {"cmd": "displayport", "aliases": ["dp", "dpchart", "hdmi", "hdmichart"], "desc": "Connector comparison chart (DisplayPort/HDMI).", "cat": "Misc / Hardware"}, {"cmd": "dnsflush", "aliases": ["flushdns", "ipreset", "netreset", "networkreset", "winsock"], "desc": "Elevated cmd: ipconfig /flushdns, netsh int ip reset, netsh winsock reset, then reboot.", "cat": "Networking"}, {"cmd": "docp", "aliases": ["expo", "xmp"], "desc": "XMP/DOCP/EXPO overclocks RAM to advertised speed above stock JEDEC — considered overclocking, can cause instability on some configs.", "cat": "RAM / CPU / Motherboard"}, {"cmd": "doesntwork", "aliases": ["dontwork", "dw", "notwork"], "desc": "\"It doesn't work\" isn't enough — explain what you did, expected, and actually got.", "cat": "Server Rules / Etiquette"}, {"cmd": "donate", "aliases": ["donation", "donations", "dono", "eff", "reward"], "desc": "No donations accepted for help — donate elsewhere instead.", "cat": "Server Rules / Etiquette"}, {"cmd": "downgrade", "aliases": ["upgrade"], "desc": "Major Windows version upgrades/downgrades can corrupt the OS — fresh install recommended for Win11.", "cat": "Windows Install / Repair"}, {"cmd": "driver", "aliases": ["driverbooster", "drivereasy", "drivers", "driverupdate"], "desc": "Third-party driver installers (Driver Easy, IObit Driver Booster, Snappy) are PUPs — Windows Update handles drivers automatically.", "cat": "Bad / Blacklisted Software"}, {"cmd": "dualboot", "aliases": [], "desc": "Single-drive dual-booting is risky (boot issues, BitLocker triggers, partition corruption) — use separate physical drives instead.", "cat": "Windows Install / Repair"}, {"cmd": "dumpfix", "aliases": ["fixdump", "fixdumps"], "desc": "Enable full minidumps via SystemPropertiesAdvanced. Won't fix absence caused by hardware failure/BitLocker/OneDrive/low disk space.", "cat": "BSOD / Crash Diagnostics"}, {"cmd": "dust", "aliases": ["dusting", "pcclean", "pcdust"], "desc": "Guide to cleaning computer hardware (dust removal).", "cat": "Misc / Hardware"}, {"cmd": "editbios", "aliases": [], "desc": "Be careful in BIOS — bad changes can cause instability or failure to POST. Clear CMOS or reflash to recover.", "cat": "BIOS / Boot / POST"}, {"cmd": "editpagefile", "aliases": ["pagefile", "swap", "sysdm", "viewpagefile", "virtualmemory", "vmem"], "desc": "View pagefile/virtual memory config via SystemPropertiesPerformance. Risky to modify incorrectly.", "cat": "Other"}, {"cmd": "endoflife", "aliases": ["eol"], "desc": "No support for EOL software/hardware — major security risk. Update or contact vendor.", "cat": "EOL / Unsupported Systems"}, {"cmd": "enter", "aliases": ["return"], "desc": "Send messages as one block, not line-by-line spam (risk of mute).", "cat": "Server Rules / Etiquette"}, {"cmd": "enterprise", "aliases": ["ltsc"], "desc": "No support for Enterprise/LTSC/IoT Windows — unsuitable and often unlicensable for home use.", "cat": "Windows Install / Repair"}, {"cmd": "eraser", "aliases": ["rubber"], "desc": "Don't use erasers on RAM/components — damages contacts, causes static risk.", "cat": "Misc / Hardware"}, {"cmd": "eset", "aliases": ["esetav"], "desc": "ESET product removal tool.", "cat": "Antivirus / Malware / Security"}, {"cmd": "esu", "aliases": ["w10", "win10", "win10alt", "win10eol", "win10esu", "windows10"], "desc": "Windows 10 is EOL (Oct 14 2025) — recommend Win11 upgrade; no support for ESU-enrolled devices or Win11 requirement bypasses.", "cat": "EOL / Unsupported Systems"}, {"cmd": "ev", "aliases": ["event", "eventlog", "eventlogs", "eventviewer", "eventviewerlogs"], "desc": "Don't dig through Event Viewer without an actual problem — many warnings are normal on healthy systems. Use Specify first.", "cat": "BSOD / Crash Diagnostics"}, {"cmd": "event41", "aliases": ["eventid41", "id41"], "desc": "PowerShell command to pull last 10 \"Unexpected Shutdown\" (Event ID 41) log entries.", "cat": "BSOD / Crash Diagnostics"}, {"cmd": "evtx", "aliases": [], "desc": "Elevated cmd to export System/Application event logs to .evtx for sharing.", "cat": "BSOD / Crash Diagnostics"}, {"cmd": "extensions", "aliases": [], "desc": "Enable file extensions: Folder View > Show > File name extensions.", "cat": "Windows Install / Repair"}, {"cmd": "failure", "aliases": ["failures", "fault"], "desc": "Failures aren't binary — partial failures happen constantly.", "cat": "Misc / Meta"}, {"cmd": "fixcleanboot", "aliases": ["fixwinhello", "winhellobroken"], "desc": "Guide to fixing a broken Windows Hello login (incl. after clean boot repair).", "cat": "Other"}, {"cmd": "fortnite", "aliases": [], "desc": "Fortnite perf issues since Ch5S1 — try higher settings/resolution, or minimum GPU clock (AMD). Report to Epic if it persists.", "cat": "Misc / Hardware"}, {"cmd": "fpanel", "aliases": ["frontpanel", "jumpstart", "powerpins"], "desc": "Jump-start a PC: disconnect F_PANEL cables, bridge power pins with a metal tool.", "cat": "BIOS / Boot / POST"}, {"cmd": "g2a", "aliases": ["greymarket", "winkey", "winkeys"], "desc": "No support for illegitimately activated Windows — grey market keys, pre-activated images, cracks/activators.", "cat": "Bad / Blacklisted Software"}, {"cmd": "gaminglaptop", "aliases": ["lapthermals", "laptop", "laptoptemps", "laptopthermal", "laptopthermals", "thermal", "thermals"], "desc": "Laptops throttle by design — clean dust, reapply paste, don't block vents, consider a cooling pad.", "cat": "Misc / Hardware"}, {"cmd": "gb", "aliases": ["gib", "mib", "tib"], "desc": "Drive makers use GB(1000MB); Windows uses GiB(1024MiB) — explains a 1TB drive showing as ~931GB.", "cat": "Disks / Storage"}, {"cmd": "gentoo", "aliases": [], "desc": "Gentoo Linux install guide.", "cat": "Linux / Mac / Other OS"}, {"cmd": "gesp", "aliases": ["getspecs"], "desc": "Legacy diagnostic tool — archived, fallback only if Specify (?sfy) fails.", "cat": "Diagnostic Tools"}, {"cmd": "gnu", "aliases": ["gnulinux"], "desc": "The classic \"GNU/Linux\" naming copypasta.", "cat": "Linux / Mac / Other OS"}, {"cmd": "goxlr", "aliases": [], "desc": "Warning: GoXLR scam sites/malware — only official source is tc-helicon.com.", "cat": "Antivirus / Malware / Security"}, {"cmd": "gpart", "aliases": ["gparted"], "desc": "GParted for partition manipulation.", "cat": "Disks / Storage"}, {"cmd": "gpt", "aliases": ["mbr"], "desc": "Guide to converting a disk's partition table to GPT via diskpart.", "cat": "Disks / Storage"}, {"cmd": "gpupin", "aliases": ["gpupins", "pciepin", "pciepins", "pcipins"], "desc": "PCIe cards have 2 intentionally shorter pins for hot-plug detection — normal.", "cat": "RAM / CPU / Motherboard"}, {"cmd": "gpuz", "aliases": [], "desc": "Download GPU-Z for GPU info.", "cat": "Diagnostic Tools"}, {"cmd": "gsrt", "aliases": [], "desc": "Xbox Gaming Services repair tool download.", "cat": "Diagnostic Tools"}, {"cmd": "h2testw", "aliases": [], "desc": "H2testw checks true USB drive capacity (detects fake/counterfeit drives).", "cat": "Diagnostic Tools"}, {"cmd": "hacked", "aliases": [], "desc": "Feeling hacked/targeted is usually not actually true.", "cat": "Misc / Meta"}, {"cmd": "hardwareinfo", "aliases": ["hwinfo", "stress", "stresstest"], "desc": "Guide to logging/stress testing with HWiNFO.", "cat": "Diagnostic Tools"}, {"cmd": "helper", "aliases": ["helpers"], "desc": "Anyone can help without a role — active, quality helpers make stronger staff applicants.", "cat": "Server Rules / Etiquette"}, {"cmd": "helpmycomputerisoverheating", "aliases": ["hightemp", "hightemps", "temps", "throttle"], "desc": "CPUs/GPUs usually don't throttle below 80-90C, safe idling up to 50-60C — check your specific spec sheet.", "cat": "Misc / Hardware"}, {"cmd": "hibernate", "aliases": [], "desc": "Guide to toggling hibernation in Windows.", "cat": "Windows Install / Repair"}, {"cmd": "howtoask", "aliases": ["hta"], "desc": "Guide to describing a technical problem well.", "cat": "Server Rules / Etiquette"}, {"cmd": "hpcaps", "aliases": ["hpcapslock", "hpupdate"], "desc": "Disable HP's on-screen Caps Lock indicator via ending \"HP System Event Utility\" in Task Manager.", "cat": "Audio / Peripherals"}, {"cmd": "hwpic", "aliases": ["hwpics", "pcpics", "picguide"], "desc": "Guide to taking useful PC hardware photos.", "cat": "Other"}, {"cmd": "hypo", "aliases": ["if", "whatif"], "desc": "Only real, troubleshootable issues — no hypotheticals.", "cat": "Server Rules / Etiquette"}, {"cmd": "iconcache", "aliases": [], "desc": "Guide to rebuilding the Windows icon cache.", "cat": "Windows Install / Repair"}, {"cmd": "image", "aliases": ["pic", "pics", "picture", "vid", "video"], "desc": "Media-only questions aren't descriptive enough — text should carry the question.", "cat": "Server Rules / Etiquette"}, {"cmd": "influencer", "aliases": ["influencers", "j2c", "ltt", "youtubers", "ztt"], "desc": "Tech influencers (LTT, Zach's Tech Turf, CarterPCs, MetaPCs, Bobby Olejnik, Chris Titus Tech, ThioJoe) are entertainment, not reliable advice.", "cat": "Bad / Blacklisted Software"}, {"cmd": "inplace", "aliases": ["inplaceinstall", "inplaceupgrade", "ipu"], "desc": "An in-place upgrade can fix many Windows issues without a full reinstall.", "cat": "Windows Install / Repair"}, {"cmd": "iobit", "aliases": [], "desc": "No IObit products recommended — considered PUPs/malware.", "cat": "Bad / Blacklisted Software"}, {"cmd": "ip", "aliases": ["mac"], "desc": "No need to blur IP/MAC/ports — not identifying/sensitive, sharing helps diagnosis.", "cat": "Other"}, {"cmd": "ipconfig", "aliases": [], "desc": "Run 'ipconfig /all' in cmd, screenshot the output.", "cat": "Networking"}, {"cmd": "ipv6", "aliases": ["v6"], "desc": "Guide to disabling IPv6.", "cat": "Networking"}, {"cmd": "kali", "aliases": [], "desc": "\"Should I use Kali Linux?\" docs.", "cat": "Linux / Mac / Other OS"}, {"cmd": "kaspersky", "aliases": ["kpr", "krt", "kvpr"], "desc": "Kaspersky removal tool — note US FCC blacklisted it as a security risk.", "cat": "Antivirus / Malware / Security"}, {"cmd": "kernelreports", "aliases": ["lkr"], "desc": "Check C:\\Windows\\LiveKernelReports for .dmp files, zip and share.", "cat": "Diagnostic Tools"}, {"cmd": "killer", "aliases": [], "desc": "Guide to replacing Killer network drivers.", "cat": "Drivers / GPU"}, {"cmd": "latencymon", "aliases": [], "desc": "LatencyMon — monitor for audio crackling, screenshot window when it occurs.", "cat": "Diagnostic Tools"}, {"cmd": "lghub", "aliases": [], "desc": "Guide to uninstalling/reinstalling Logitech G HUB.", "cat": "Audio / Peripherals"}, {"cmd": "linkspeed", "aliases": [], "desc": "PowerShell command to check network adapter link speed.", "cat": "Networking"}, {"cmd": "linus", "aliases": ["linux"], "desc": "Guide to installing Linux.", "cat": "Linux / Mac / Other OS"}, {"cmd": "liveusb", "aliases": ["llcd", "llusb"], "desc": "Guide to creating a Linux live/recovery USB.", "cat": "Linux / Mac / Other OS"}, {"cmd": "localacc", "aliases": ["localaccount", "localuser", "user"], "desc": "Guide to creating a local (non-Microsoft) Windows account.", "cat": "Windows Install / Repair"}, {"cmd": "macwin", "aliases": ["winmac"], "desc": "Guide to running Windows software on macOS.", "cat": "Linux / Mac / Other OS"}, {"cmd": "mal", "aliases": ["malware", "malwareguide", "mw"], "desc": "Official malware removal guide.", "cat": "Antivirus / Malware / Security"}, {"cmd": "maxpath", "aliases": ["pathlength"], "desc": "Article on Windows max file path length limits.", "cat": "Windows Install / Repair"}, {"cmd": "mb", "aliases": ["mbps"], "desc": "Mbps(bits) is 1/8 of MBps(bytes) — ISPs advertise bits, Steam etc. show bytes.", "cat": "Networking"}, {"cmd": "mbr2gpt", "aliases": [], "desc": "mbr2gpt tools are unreliable — high risk of corruption/data loss. Back up + keep a Windows USB ready.", "cat": "Bad / Blacklisted Software"}, {"cmd": "mcafee", "aliases": ["mcpr"], "desc": "McAfee product removal tool.", "cat": "Antivirus / Malware / Security"}, {"cmd": "medal", "aliases": [], "desc": "Medal's overlay causes game crashes — update/clear cache, or uninstall. Alternatives: ShadowPlay, ReLive.", "cat": "Bad / Blacklisted Software"}, {"cmd": "memoryinfo", "aliases": ["raminfo"], "desc": "PowerShell command to identify installed RAM specs.", "cat": "RAM / CPU / Motherboard"}, {"cmd": "memtest", "aliases": ["memtest86", "memtest86+"], "desc": "Guide to diagnosing RAM with Memtest86+.", "cat": "Diagnostic Tools"}, {"cmd": "mentalhealthresources", "aliases": ["suicideprevention"], "desc": "Suicide/crisis hotline resource link.", "cat": "Misc / Meta"}, {"cmd": "mismatch", "aliases": ["mixram"], "desc": "Mismatched RAM sticks can cause instability — use a matched set from the motherboard's QVL.", "cat": "RAM / CPU / Motherboard"}, {"cmd": "model", "aliases": [], "desc": "Give exact hardware model/part numbers, not vague specs like \"32GB RAM\" or \"i5.\"", "cat": "Misc / Hardware"}, {"cmd": "monitor", "aliases": [], "desc": "Guide comparing monitor panel types.", "cat": "Misc / Hardware"}, {"cmd": "moreram", "aliases": [], "desc": "Guide to determining if more RAM would actually help you.", "cat": "RAM / CPU / Motherboard"}, {"cmd": "msvc", "aliases": ["vcredist"], "desc": "Latest MS Visual C++ Redistributable download + network-error fix.", "cat": "Other"}, {"cmd": "mwanalogy", "aliases": [], "desc": "The \"dog mess in a coffee mug\" analogy for why reinstalling beats \"cleaning\" malware.", "cat": "Antivirus / Malware / Security"}, {"cmd": "mwrd", "aliases": [], "desc": "Confirmed malware = wipe all drives, restore from a known-clean backup. Don't back up now — files may be infected.", "cat": "Antivirus / Malware / Security"}, {"cmd": "networkguide", "aliases": [], "desc": "Guide to troubleshooting internet/network issues.", "cat": "Networking"}, {"cmd": "newdisk", "aliases": ["newdrive", "newssd"], "desc": "New drive not showing = initialize + new volume via diskmgmt.msc. OS drive swap = clone (?clone) or fresh install (?win).", "cat": "Disks / Storage"}, {"cmd": "nodisplay", "aliases": ["noimage", "nosignal", "novideo"], "desc": "Guide to troubleshooting no display output — may indicate POST failure.", "cat": "BIOS / Boot / POST"}, {"cmd": "norton", "aliases": ["nrnr", "nrpr"], "desc": "Norton product removal tool.", "cat": "Antivirus / Malware / Security"}, {"cmd": "note", "aliases": ["notes"], "desc": "\"Notes\" role = support notes tracked on your profile for future helpers.", "cat": "Server Rules / Etiquette"}, {"cmd": "notq", "aliases": [], "desc": "Not a question — read what was already said.", "cat": "Server Rules / Etiquette"}, {"cmd": "nousb", "aliases": ["winnoexternal", "winnousb"], "desc": "Last-resort guide to reinstalling Win11 without external media.", "cat": "Windows Install / Repair"}, {"cmd": "nro", "aliases": ["oobe", "oobebypass"], "desc": "Guide to bypassing Win11 network/account setup (not hardware requirements — unsupported).", "cat": "Windows Install / Repair"}, {"cmd": "nvidia", "aliases": [], "desc": "Latest NVIDIA drivers. Note: 570-branch currently problematic — use 566.36 studio or 555.99.", "cat": "Drivers / GPU"}, {"cmd": "nvidiaproblem", "aliases": ["nvidiaproblems"], "desc": "NVIDIA 591-branch has a voltage-limitation perf bug — upgrade to 596-branch.", "cat": "Drivers / GPU"}, {"cmd": "nvme", "aliases": ["sticker"], "desc": "Don't remove NVMe stickers — often voids warranty and doubles as a heatsink.", "cat": "Disks / Storage"}, {"cmd": "occt", "aliases": [], "desc": "Guide to stress testing with OCCT.", "cat": "Diagnostic Tools"}, {"cmd": "offtopic", "aliases": ["ot", "supportchannel"], "desc": "Community channels aren't for support — ask in a support channel.", "cat": "Server Rules / Etiquette"}, {"cmd": "onedrive", "aliases": [], "desc": "Guide to uninstalling/unsyncing OneDrive.", "cat": "Windows Install / Repair"}, {"cmd": "openpsu", "aliases": ["psudanger", "shouldiopenupmypsu"], "desc": "NEVER open a PSU — capacitors store lethal charge even unplugged. Replace instead.", "cat": "BIOS / Boot / POST"}, {"cmd": "outlets", "aliases": [], "desc": "Faulty outlets can cause power issues/hardware damage — test another outlet, get an electrician, consider a UPS.", "cat": "Misc / Hardware"}, {"cmd": "overscan", "aliases": [], "desc": "Guide to overscan/underscan display issues.", "cat": "Misc / Hardware"}, {"cmd": "paperclip", "aliases": [], "desc": "Guide to paperclip-testing a PSU.", "cat": "BIOS / Boot / POST"}, {"cmd": "pass", "aliases": ["password", "pw"], "desc": "No help recovering/bypassing passwords (abuse risk) — use a password manager.", "cat": "Antivirus / Malware / Security"}, {"cmd": "passwordmanager", "aliases": ["pwm", "pwmanager", "pwmanagers", "pwmgr"], "desc": "Guide to using a password manager.", "cat": "Antivirus / Malware / Security"}, {"cmd": "pciwhea", "aliases": [], "desc": "Identify a PCI WHEA error's source via Device Manager > Devices by connection.", "cat": "Diagnostic Tools"}, {"cmd": "photorec", "aliases": [], "desc": "Guide to file recovery with Photorec.", "cat": "Disks / Storage"}, {"cmd": "pingplotter", "aliases": [], "desc": "Guide to diagnosing connections with Pingplotter.", "cat": "Diagnostic Tools"}, {"cmd": "portforward", "aliases": [], "desc": "Guide to troubleshooting port forwarding.", "cat": "Networking"}, {"cmd": "power", "aliases": ["powerplan"], "desc": "Set power plan to \"Balanced\" via powercfg.cpl — High/Ultimate plans raise idle draw with no perf gain.", "cat": "Other"}, {"cmd": "powercalc", "aliases": ["psucalc", "psuwat", "psuwatt", "psuwattage", "watt", "wattage"], "desc": "PSU wattage = CPU+GPU TDP + ~100W, kept to ~2/3-80% of PSU capacity.", "cat": "Misc / Hardware"}, {"cmd": "programcrash", "aliases": [], "desc": "Guide to retrieving program crash dumps — less useful than BSOD minidumps.", "cat": "BSOD / Crash Diagnostics"}, {"cmd": "proton", "aliases": ["protonvpn"], "desc": "ProtonVPN's Kill Switch can break connectivity even when disconnected — fix by fully uninstalling ProtonVPN.", "cat": "Networking"}, {"cmd": "psu", "aliases": ["psulist", "psutier", "psutierlist"], "desc": "PSU tier list spreadsheet (look for Tier A/B).", "cat": "Misc / Hardware"}, {"cmd": "psutest", "aliases": [], "desc": "Guide to PSU info and testing.", "cat": "Misc / Hardware"}, {"cmd": "ram", "aliases": [], "desc": "Task Manager RAM% includes idle/standby cache — can look high without being a real problem. Use RAMMap for accuracy.", "cat": "RAM / CPU / Motherboard"}, {"cmd": "ramcycle", "aliases": ["ramtest", "ramtesting", "testram"], "desc": "Physical RAM test procedure: one stick per slot at a time to isolate a faulty stick/slot.", "cat": "RAM / CPU / Motherboard"}, {"cmd": "rammap", "aliases": [], "desc": "RAMMap (Sysinternals) for accurate memory assessment.", "cat": "RAM / CPU / Motherboard"}, {"cmd": "ransomware", "aliases": [], "desc": "Ransomware info guide.", "cat": "Antivirus / Malware / Security"}, {"cmd": "rar", "aliases": ["winrar"], "desc": "Don't use WinRAR (trialware/closed-source) — use 7-Zip instead.", "cat": "Bad / Blacklisted Software"}, {"cmd": "rawaccel", "aliases": [], "desc": "RawAccel linked to cursor-disappearance + Automatic Repair loop bugs — avoid for now.", "cat": "Bad / Blacklisted Software"}, {"cmd": "readonly", "aliases": ["writelock"], "desc": "Guide to removing a disk write-lock.", "cat": "Disks / Storage"}, {"cmd": "rec", "aliases": ["recommend", "recommendation", "recommendations", "recs", "req", "whynorec", "whynorecs", "whynoreq", "whynotrec"], "desc": "Server-wide policy: no recommendations of any kind (hardware, software, communities) — troubleshooting only, brand-neutral.", "cat": "Bad / Blacklisted Software"}, {"cmd": "recwiki", "aliases": [], "desc": "Software whitelist/blacklist wiki page.", "cat": "Bad / Blacklisted Software"}, {"cmd": "regedit", "aliases": ["registry"], "desc": "Registry cleaners/tweaks can irreversibly damage Windows — don't edit the registry yourself.", "cat": "Bad / Blacklisted Software"}, {"cmd": "reset", "aliases": ["whynoreset"], "desc": "Windows Reset ≠ reinstall — carries over issues, can't remove malware, can damage the OS further. Use a clean install instead.", "cat": "Windows Install / Repair"}, {"cmd": "revo", "aliases": ["whatsrevo"], "desc": "Revo Uninstaller removes leftover files/registry traces — a troubleshooting tool, not a standard uninstall replacement.", "cat": "Other"}, {"cmd": "rice", "aliases": [], "desc": "(link is about the rice-for-water-damage myth — unrelated to \"PC ricing\"/UI mods; no dedicated UI-mod factoid currently exists in this database)", "cat": "Other"}, {"cmd": "riot", "aliases": ["valorant", "vanguard"], "desc": "Valorant/Riot Vanguard prone to bugs/instability; Vanguard needs kernel access, can cause BSODs/false driver blocks.", "cat": "Bad / Blacklisted Software"}, {"cmd": "rma", "aliases": [], "desc": "RMA (Return Merchandise Authorization) explainer.", "cat": "Misc / Hardware"}, {"cmd": "rufus", "aliases": [], "desc": "Guide to flashing an ISO to USB with Rufus.", "cat": "Other"}, {"cmd": "ryzen", "aliases": [], "desc": "Ryzen is picky about RAM — verify it's on the motherboard's QVL.", "cat": "RAM / CPU / Motherboard"}, {"cmd": "safe", "aliases": ["safeboot", "safemode"], "desc": "Guide to booting into Safe Mode.", "cat": "BIOS / Boot / POST"}, {"cmd": "sbv", "aliases": ["secbootfix", "secbootrecovery", "securebootfix", "securebootrecovery"], "desc": "Recovery steps for a \"Secure Boot violation\" screen via SecureBootRecovery.efi on a FAT32 USB — temporary fix, update BIOS properly after.", "cat": "BIOS / Boot / POST"}, {"cmd": "sc", "aliases": ["screenshot", "ss"], "desc": "How to screenshot: Win+Shift+S, or Alt+PrintScr; phone photo as fallback.", "cat": "Other"}, {"cmd": "scc", "aliases": ["staticcore", "staticcorecount", "staticcores"], "desc": "Set a static CPU core count via msconfig > Boot > Advanced options.", "cat": "RAM / CPU / Motherboard"}, {"cmd": "school", "aliases": [], "desc": "No support for school-issued devices — contact school IT.", "cat": "Server Rules / Etiquette"}, {"cmd": "sd", "aliases": [], "desc": "SD Association Speed Class standards explainer.", "cat": "Misc / Hardware"}, {"cmd": "secboot", "aliases": ["secureboot"], "desc": "Enabling Secure Boot can irreparably break boot, sometimes surviving a CMOS reset — toggle only if necessary.", "cat": "BIOS / Boot / POST"}, {"cmd": "secrant", "aliases": [], "desc": "Rant on why running EOL software is a major security risk.", "cat": "EOL / Unsupported Systems"}, {"cmd": "serial", "aliases": ["serialnumber", "sn"], "desc": "PowerShell command to get a laptop/prebuilt's serial number (not sensitive).", "cat": "Other"}, {"cmd": "sfy", "aliases": ["spec", "specify", "specs"], "desc": "MAIN diagnostic tool: download & run Specify, paste the generated link. Offline mode saves a local JSON file.", "cat": "Diagnostic Tools"}, {"cmd": "sfynightly", "aliases": [], "desc": "Unstable/nightly build of Specify — testing only, if specifically requested.", "cat": "Diagnostic Tools"}, {"cmd": "shadercache", "aliases": [], "desc": "Guide to clearing the DirectX shader cache.", "cat": "Windows Install / Repair"}, {"cmd": "smart", "aliases": [], "desc": "Explainer on S.M.A.R.T. drive health attributes.", "cat": "Diagnostic Tools"}, {"cmd": "smartscreen", "aliases": [], "desc": "\"Windows protected your PC\" = SmartScreen reputation check, not a virus alert — More info > Run anyway for trusted community tools.", "cat": "Diagnostic Tools"}, {"cmd": "spacesniffer", "aliases": [], "desc": "SpaceSniffer for visualizing disk space usage.", "cat": "Diagnostic Tools"}, {"cmd": "speedtest", "aliases": [], "desc": "Run a speed test and share results.", "cat": "Diagnostic Tools"}, {"cmd": "ssdhealth", "aliases": [], "desc": "SSD health scores reflect NAND wear only, not actual function — can show \"Good\" while failing. Raw SMART data is still useful.", "cat": "Diagnostic Tools"}, {"cmd": "storecache", "aliases": ["storereset", "wsreset"], "desc": "Clear Microsoft Store cache via 'wsreset -i'.", "cat": "Windows Install / Repair"}, {"cmd": "support", "aliases": [], "desc": "\"Support\" definition: help, patching, security, stuff working.", "cat": "Server Rules / Etiquette"}, {"cmd": "swollenbattery", "aliases": [], "desc": "Swollen batteries are a fire/health hazard — don't handle if unsure.", "cat": "Misc / Hardware"}, {"cmd": "tcpreset", "aliases": [], "desc": "Elevated cmd to reset global TCP settings.", "cat": "Networking"}, {"cmd": "tcpshow", "aliases": [], "desc": "Elevated cmd to view current global TCP settings.", "cat": "Networking"}, {"cmd": "teredo", "aliases": [], "desc": "Guide/explainer on Teredo networking.", "cat": "Networking"}, {"cmd": "terms", "aliases": [], "desc": "Terminology guide: Restart vs Reset vs Reinstall vs Update/Upgrade vs Reseat.", "cat": "Windows Install / Repair"}, {"cmd": "testdisk", "aliases": [], "desc": "TestDisk for partition recovery.", "cat": "Disks / Storage"}, {"cmd": "tether", "aliases": ["tethering", "usbtethering"], "desc": "Guide to USB tethering setup.", "cat": "Networking"}, {"cmd": "tpm", "aliases": [], "desc": "TPM explainer — Intel 8th-gen+/AMD Ryzen usually built-in (PTT/fTPM); required for Win11, can't be safely bypassed.", "cat": "Misc / Hardware"}, {"cmd": "treesize", "aliases": [], "desc": "TreeSize for disk space analysis.", "cat": "Diagnostic Tools"}, {"cmd": "ubm", "aliases": ["userbenchmark"], "desc": "Don't use UserBenchMark — biased scoring, banned on r/Intel, r/Hardware, r/AMD.", "cat": "Diagnostic Tools"}, {"cmd": "ubuntu", "aliases": [], "desc": "Guide to creating a live Ubuntu USB.", "cat": "Linux / Mac / Other OS"}, {"cmd": "ufile", "aliases": [], "desc": "UFile for uploading files exceeding Discord's size limit.", "cat": "Server Rules / Etiquette"}, {"cmd": "update", "aliases": ["win11eol", "winupdate"], "desc": "Windows 11 23H2 is EOL (Nov 11 2025) — update via Installation Assistant, in-place upgrade, or reinstall.", "cat": "Windows Install / Repair"}, {"cmd": "updatecache", "aliases": ["updatereset", "winupdatecache", "winupdatereset", "wureset"], "desc": "Guide to clearing the Windows Update cache.", "cat": "Windows Install / Repair"}, {"cmd": "usbtree", "aliases": ["usbtreeview"], "desc": "UsbTreeView for analyzing connected USB devices.", "cat": "Diagnostic Tools"}, {"cmd": "ventoy", "aliases": [], "desc": "Guide to making a bootable USB with Ventoy.", "cat": "Other"}, {"cmd": "virustotal", "aliases": ["vt"], "desc": "VirusTotal is for devs checking false-positives, not a standalone malware scanner.", "cat": "Antivirus / Malware / Security"}, {"cmd": "vol", "aliases": ["volunteer", "volunteers", "volwork"], "desc": "Open forum — ask fully in one message; seek a local business for guaranteed/immediate help.", "cat": "Server Rules / Etiquette"}, {"cmd": "w11", "aliases": ["win", "win11", "windows", "windows11", "winusb"], "desc": "Guide to reinstalling Windows 11 (needs 8GB+ USB, wipes target drive).", "cat": "Windows Install / Repair"}, {"cmd": "whatspagefile", "aliases": ["whatsswap"], "desc": "Pagefile/swap explainer — don't disable it, causes severe slowdowns when RAM runs out.", "cat": "Other"}, {"cmd": "whitelist", "aliases": [], "desc": "Software whitelist used for troubleshooting.", "cat": "Other"}, {"cmd": "whyno11", "aliases": ["whynot11", "whynotwin11"], "desc": "WhyNotWin11 tool checks detailed Windows 11 compatibility.", "cat": "Windows Install / Repair"}, {"cmd": "win10archive", "aliases": [], "desc": "Guide to reinstalling Windows 10 (EOL Oct 14 2025).", "cat": "Windows Install / Repair"}, {"cmd": "win7", "aliases": ["win8", "win81", "wineol", "winxp"], "desc": "No support for EOL Windows versions (7 and earlier, 8/8.1, 10, 11 23H2 or earlier). Recommend upgrading, or Linux/ChromeOS Flex on legacy hardware.", "cat": "EOL / Unsupported Systems"}, {"cmd": "winget", "aliases": ["winpm"], "desc": "Package manager list: Chocolatey, Scoop, Winget, Winstall.", "cat": "Windows Install / Repair"}, {"cmd": "winhdd", "aliases": [], "desc": "Running Windows on an HDD causes 100% drive usage, unresponsive UI, slow boots — use an SSD.", "cat": "Disks / Storage"}, {"cmd": "winpe", "aliases": [], "desc": "Guide to creating a Windows PE bootable USB.", "cat": "BIOS / Boot / POST"}, {"cmd": "winre", "aliases": [], "desc": "Guide to entering WinRE from a black/blank screen.", "cat": "BIOS / Boot / POST"}, {"cmd": "winver", "aliases": [], "desc": "Check Windows version via 'winver' — screenshot, blur license/email if visible.", "cat": "Misc / Hardware"}, {"cmd": "wiztree", "aliases": [], "desc": "WizTree for disk space analysis.", "cat": "Diagnostic Tools"}, {"cmd": "xy", "aliases": ["xyproblem"], "desc": "Describe the actual problem, not your proposed fix — avoids the XY problem.", "cat": "Server Rules / Etiquette"}, {"cmd": "youtube", "aliases": ["yt"], "desc": "Shady/unknown YouTube guides can be damaging, malicious, or useless — avoid untrusted sources.", "cat": "Other"}];
+
+// derive category list + counts, ordered by frequency
+const catCounts = {};
+FACTOIDS.forEach(f => catCounts[f.cat] = (catCounts[f.cat]||0)+1);
+const CATS = Object.keys(catCounts).sort((a,b) => catCounts[b]-catCounts[a]);
+
+let activeCat = null;
+
+function escapeHtml(s){
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function renderPills(){
+  const pillsEl = document.getElementById('pills');
+  let html = `<div class="pill${activeCat===null?' active':''}" data-cat="">All <span class="n">${FACTOIDS.length}</span></div>`;
+  CATS.forEach(c => {
+    html += `<div class="pill${activeCat===c?' active':''}" data-cat="${escapeHtml(c)}">${escapeHtml(c)} <span class="n">${catCounts[c]}</span></div>`;
+  });
+  pillsEl.innerHTML = html;
+  pillsEl.querySelectorAll('.pill').forEach(p => {
+    p.addEventListener('click', () => {
+      const c = p.getAttribute('data-cat');
+      activeCat = c === '' ? null : c;
+      renderPills();
+      renderResults();
+    });
+  });
+}
+
+function matches(f, q){
+  if(!q) return true;
+  const hay = (f.cmd + ' ' + f.aliases.join(' ') + ' ' + f.desc).toLowerCase();
+  return hay.includes(q);
+}
+
+function renderResults(){
+  const q = document.getElementById('search').value.trim().toLowerCase().replace(/^\?/,'');
+  const resultsEl = document.getElementById('results');
+  let filtered = FACTOIDS.filter(f => matches(f,q) && (activeCat===null || f.cat===activeCat));
+
+  document.getElementById('count').textContent = filtered.length;
+
+  if(filtered.length === 0){
+    resultsEl.innerHTML = `<div class="empty-state">// no factoids match "${escapeHtml(q)}"</div>`;
+    return;
+  }
+
+  // group by category, preserving CATS order
+  const byCat = {};
+  filtered.forEach(f => { (byCat[f.cat] = byCat[f.cat]||[]).push(f); });
+
+  let html = '';
+  const order = activeCat ? [activeCat] : CATS.filter(c => byCat[c]);
+  order.forEach(cat => {
+    const items = byCat[cat];
+    if(!items || !items.length) return;
+    html += `<div class="cat-group">
+      <div class="cat-head"><h2>${escapeHtml(cat)}</h2><span class="cat-count">${items.length}</span></div>
+      <div class="grid">`;
+    items.forEach(f => {
+      html += `<div class="card">
+        <div class="card-head">
+          <span class="cmd">${escapeHtml(f.cmd)}</span>
+          ${f.aliases.length ? `<div class="aliases">${f.aliases.map(a=>`<span class="alias-tag">${escapeHtml(a)}</span>`).join('')}</div>` : ''}
+        </div>
+        <div class="desc">${escapeHtml(f.desc)}</div>
+      </div>`;
+    });
+    html += `</div></div>`;
+  });
+
+  resultsEl.innerHTML = html;
+}
+
+document.getElementById('search').addEventListener('input', renderResults);
+renderPills();
+renderResults();
+</script>
