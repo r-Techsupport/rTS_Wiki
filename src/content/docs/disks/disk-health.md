@@ -6,7 +6,7 @@ sidebar:
 has_children: false
 parent: Disks
 pagefind: true
-last_modified_date: 2024-02-21
+last_modified_date: 2026-07-21
 ---
 
 
@@ -75,18 +75,66 @@ The basics are color coded; if a disk shows up as Yellow/'Caution' or Red/'Bad' 
 
 You can check SMART in Linux using smartmonTools. The quick steps to get a report in Ubuntu are: (replace X with your desired disk)
 
-```
-sudo apt install smartmontools
-sudo smartctl -a -d ata /dev/sdX
-```
+> [!NOTE] Information
+>
+> `Smartmontools` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session) as well as many other modern distributions. If you are using this live image, you can skip the installation section.
+
+> [!TIP] How to install smartmontools
+>
+> Refer below for installation instructions if you are not using our live image or want to install it on your own system.
+>
+> <details markdown='1'>
+>   <summary>Installing smartmontools</summary>
+>
+> **Debian / Ubuntu / Linux Mint**:
+> ```sh
+> sudo apt update && sudo apt install smartmontools
+> ```
+> 
+> **Fedora / RHEL / CentOS / AlmaLinux**:
+> ```sh
+> sudo dnf install smartmontools
+> ```
+> 
+> **Arch / Manjaro / CachyOS**:
+> ```sh
+> sudo pacman -Syu smartmontools
+> ```
+> </details>
+
+
+Open a terminal and run `sudo smartctl -a -d ata /dev/sdX`. that will output info about `/dev/sdX` drive where X is a letter (example: `/dev/sdb`). 
 
 [More Info](https://help.ubuntu.com/community/Smartmontools)
 
 ### GSmartControl (GUI method)
 
-```
-sudo apt install gsmartcontrol
-```
+> [!NOTE] Information
+>
+> `GSmartControl` is one of the preinstalled packages for our [r/Techsupport Rescue Media](/live-sessions/linux-live-session). If you are using this live image, you can skip the installation section.
+
+> [!TIP] How to install GSmartControl
+>
+> Refer below for installation instructions if you are not using our live image or want to install it on your own system.
+>
+> <details markdown='1'>
+>   <summary>Installing gsmartcontrol</summary>
+>
+> **Debian / Ubuntu / Linux Mint**:
+> ```sh
+> sudo apt update && sudo apt install gsmartcontrol
+> ```
+> 
+> **Fedora / RHEL / CentOS / AlmaLinux**:
+> ```sh
+> sudo dnf install gsmartcontrol
+> ```
+> 
+> **Arch / Manjaro / CachyOS**:
+> ```sh
+> sudo pacman -Syu gsmartcontrol
+> ```
+> </details>
 
 1. Open `gsmartcontrol` from the application menu
 2. Select your disk once the application is opened
