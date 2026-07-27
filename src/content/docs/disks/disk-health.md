@@ -3,6 +3,7 @@ title: Verifying Disk Health
 sidebar:
     hidden: false
     order: 2
+description: An article that helps verify the disk health by S.M.A.R.T. values. Important values are outlined and what they mean. In addition, gives a couple of programs on multiple operating systems to pull S.M.A.R.T. data off the disk. 
 has_children: false
 parent: Disks
 pagefind: true
@@ -27,11 +28,9 @@ Current Pending Sector Count
 
 When a sector is detected as bad it will be counted and the disk will attempt to move it. This value can go up and down as the disk moves or recovers sectors.
 
-
 ### Reallocated Sectors Count
 
 When detected as bad your disk will attempt to move a sector. If it is moved successfully this count will go up.
-
 
 ### Uncorrectable Sector Count
 
@@ -42,7 +41,7 @@ This count goes up when the disk is not able to recover and move a sector. This 
 This count goes up when the disk is being read with unstable sectors on the disk. They are a precursor to Reallocated Sectors, which cause lost of data.
 
 > [!NOTE] Information
-> 
+>
 > For more info about those attributes, read [Wikipedia](https://en.wikipedia.org/wiki/Self-Monitoring%2C_Analysis_and_Reporting_Technology) and [Backblaze](https://www.backblaze.com/blog/what-smart-stats-indicate-hard-drive-failures/) articles.
 
 ## Crystal Disk Info
@@ -52,6 +51,7 @@ Crystal disk is the simplest way to get a reading on SMART within Windows. Downl
 For directions on using CDI please see [our factoid](/factoids/cdi) about it.
 
 ### Reading CDI
+
 The basics are color coded; if a disk shows up as Yellow/'Caution' or Red/'Bad' we recommend replacing it. 
 
 ## Hard Disk Sentinel
@@ -61,6 +61,7 @@ The basics are color coded; if a disk shows up as Yellow/'Caution' or Red/'Bad' 
 ## SEAGATE (SeaTools)
 
 ### Bootable
+
 [Info](https://www.seagate.com/manuals/software/seatools-bootable/introduction/)
 
 [Download](https://www.seagate.com/files/old-support-files/seatools/USBbootSetup-SeaToolsBootable.zip)
@@ -87,23 +88,26 @@ You can check SMART in Linux using smartmonTools. The quick steps to get a repor
 >   <summary>Installing smartmontools</summary>
 >
 > **Debian / Ubuntu / Linux Mint**:
+>
 > ```sh
 > sudo apt update && sudo apt install smartmontools
 > ```
-> 
+>
 > **Fedora / RHEL / CentOS / AlmaLinux**:
+>
 > ```sh
 > sudo dnf install smartmontools
 > ```
-> 
+>
 > **Arch / Manjaro / CachyOS**:
+>
 > ```sh
 > sudo pacman -Syu smartmontools
 > ```
+>
 > </details>
 
-
-Open a terminal and run `sudo smartctl -a -d ata /dev/sdX`. that will output info about `/dev/sdX` drive where X is a letter (example: `/dev/sdb`). 
+Open a terminal and run `sudo smartctl -a -d ata /dev/sdX`. that will output info about `/dev/sdX` drive where X is a letter (example: `/dev/sdb`).
 
 [More Info](https://help.ubuntu.com/community/Smartmontools)
 
@@ -121,19 +125,23 @@ Open a terminal and run `sudo smartctl -a -d ata /dev/sdX`. that will output inf
 >   <summary>Installing gsmartcontrol</summary>
 >
 > **Debian / Ubuntu / Linux Mint**:
+>
 > ```sh
 > sudo apt update && sudo apt install gsmartcontrol
 > ```
-> 
+>
 > **Fedora / RHEL / CentOS / AlmaLinux**:
+>
 > ```sh
 > sudo dnf install gsmartcontrol
 > ```
-> 
+>
 > **Arch / Manjaro / CachyOS**:
+>
 > ```sh
 > sudo pacman -Syu gsmartcontrol
 > ```
+>
 > </details>
 
 1. Open `gsmartcontrol` from the application menu
