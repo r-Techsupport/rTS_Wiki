@@ -43,12 +43,12 @@ Below is a list of a few popular password managers. The major categories and whe
 If you're having touble exporting and disabling your existing password manager, review the [1Password Setup](https://support.1password.com/import/) documentation, this guide works with any password manager. To export password from iOS 18.2+ follow this [Apple Support](https://support.apple.com/guide/iphone/export-passwords-iphf28f2e93e/ios) article, older versions of iOS require Keychain Access or Apple Passwords on a Mac.
 
 | Product | Web | Notes |
-| --- | --- | --- |
+| :---: | --- | --- |
 | Bitwarden | Online | A free open source web based solution with multi platform support. Bitwarden also offers paid plans with more features. |
 | Vaultwarden | Online | A free open source unofficial server replacement for bitwarden that can be self-hosted. Valutwarden uses the Bitwarden client app. |
 | 1Password | Online | A paid web based solution with multi platform support. 1Password generally has better support for Passkeys and PSKs. |
 | KeePassXC | Offline | A free open source offline solution with multi platform support. KeePassXC requires plugins for MFA and syncing between devices. |
-| Browser | Online | Browser, Account, and Device based password managers are more convient than than standalone options but many sacrifice security and advanced features. |
+| Browser | Online | Browser, Account, and Device based password managers are more convenient than standalone options but many sacrifice security and advanced features. |
 ---
 
 Check out our article on [MFA](/safety-security/mfa) for the next steps you can take in securing your accounts.
