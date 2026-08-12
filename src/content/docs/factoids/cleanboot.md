@@ -26,6 +26,6 @@ This step identifies if the issue is with Windows itself, or a third-party progr
 ![Cleanboot](../../../assets/factoids/cleanboot.gif)
 
 > [!CAUTION] Caution
-> WARNING: Please ensure that "Hide all Microsoft services" is ticked on as seen in the GIF. Accidentally disabling Microsoft services will prevent you from typing in your password or PIN during login, locking you out of your OS. 
+> Please ensure that "Hide all Microsoft services" is ticked on as seen in the GIF. Accidentally disabling Microsoft services will prevent you from typing in your password or PIN during login, locking you out of your OS. 
 
 In the event of a failed Cleanboot, where you may have disabled all Microsoft services, follow [this guide](/guides/windows-hello-broken/) to fix it.
