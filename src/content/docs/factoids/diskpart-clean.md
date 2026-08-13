@@ -5,11 +5,11 @@ sidebar:
 parent: Factoids
 has_children: false
 pagefind: true
-last_modified_date: 2022-10-31
+last_modified_date: 2026-08-13
 ---
 
 > [!CAUTION] Caution
-> Note that cleaning the disk **will remove any data stored on it.**
+> Cleaning the disk **will remove any data stored on it.**
 
 Open Command Prompt or PowerShell as admin, then follow the steps below.
 
