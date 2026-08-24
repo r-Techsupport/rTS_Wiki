@@ -101,6 +101,8 @@ Posts and comments containing (but not limited to) the following will be removed
 
 Please stick to the issue being addressed in the post. If not you might get a ban.
 
+No AI, if the user wanted AI they would ask ChatGPT themselves.
+
 ## No Posts/Comments by a Company or an Employee on Behalf of a Company
 Employees of companies with social media presences for marketing or damage control are not allowed. Violations will be dealt with harshly.
 
