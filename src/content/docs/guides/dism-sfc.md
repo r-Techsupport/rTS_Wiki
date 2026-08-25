@@ -5,18 +5,12 @@ sidebar:
 has_children: false
 parent: General Guides
 pagefind: true
-last_modified_date: 2022-06-29
+last_modified_date: 2026-08-25
 redirect_from: /books/how-to-and-guides/page/dism-and-sfc
 ---
 
-
-
-
-#### **All commands require an admin CMD or PowerShell**
-
-*Note: DISM should be used to repair the OS files before using SFC to repair the OS.*
-
-
+> [!IMPORTANT] All commands require an admin CMD or PowerShell
+> DISM should be used to repair the OS files before using SFC to repair the OS.
 
 ## Using DISM without a source
 DISM is a higher level command compared to SFC that aims to do more than just to fix broken system files, instead fixing the OS image.
