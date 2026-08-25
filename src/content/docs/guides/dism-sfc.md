@@ -9,7 +9,7 @@ last_modified_date: 2026-08-25
 redirect_from: /books/how-to-and-guides/page/dism-and-sfc
 ---
 
-> [!IMPORTANT] All commands require an admin CMD or PowerShell
+> [!WARNING] All commands require an admin CMD or PowerShell
 > DISM should be used to repair the OS files before using SFC to repair the OS.
 
 ## Using DISM without a source
