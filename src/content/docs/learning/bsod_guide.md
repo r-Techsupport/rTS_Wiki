@@ -9,6 +9,7 @@ pagefind: true
 last_modified_date: 2023-07-09
 redirect_from: /docs/guides/bsod_guide
 tableOfContents: true
+description: This is a basic guide for how to read minidumps created by Blue Screen of Death on Windows.
 ---
 
 Everyone who has used a computer for more than a brief period of time has experienced what is known as the Blue Screen of Death (BSOD). The computer suddenly stops working, and you are met with an ominous `:( "Something went wrong!"` with a few vague words that don't actually make sense to those who don't know how to interpret it. 
