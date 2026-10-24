@@ -13,11 +13,11 @@
     "node": ">=24.0.0"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.41.6",
-    "astro": "^7.2.0",
+    "@astrojs/starlight": "^0.42.7",
+    "astro": "^7.4.2",
     "rehype-callouts": "^2.2.0",
     "remark-obsidian-callout": "^1.5.1",
-    "sharp": "^0.35.3",
+    "sharp": "^0.35.4",
     "starlight-links-validator": "^0.25.2"
   }
 }
