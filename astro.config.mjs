@@ -1,9 +1,10 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import remarkObsidianCallout from "remark-obsidian-callout";
-import starlightLinksValidator from 'starlight-links-validator';
+import { unified } from '@astrojs/markdown-remark';
 import remarkGfm from 'remark-gfm';
+import remarkObsidianCallout from 'remark-obsidian-callout';
+import starlightLinksValidator from 'starlight-links-validator';
 
 // https://astro.build/config
 export default defineConfig({
