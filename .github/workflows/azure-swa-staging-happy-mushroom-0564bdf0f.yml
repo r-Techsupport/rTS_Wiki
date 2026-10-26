@@ -9,8 +9,26 @@ env:
   PAGES_REPO_NWO: "r-Techsupport/rTS_Wiki"
 
 jobs:
+  build_job:
+    if: github.event_name == 'pull_request' && github.event.action != 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v6
+        with:
+          submodules: true
+          lfs: false
+
+      - name: Build Project
+        run: |
+          npm ci
+          npm run build
   build_and_deploy_job:
-    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+    # a buttload of checks to check if this step even needs to run at all for the given PR context
+    if: |
+        github.event.pull_request.head.repo.full_name == github.repository &&
+        contains(fromJSON('["MEMBER", "OWNER"]'), github.event.pull_request.author_association) &&
+        github.event.action != 'closed'
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     permissions:
@@ -34,11 +52,11 @@ jobs:
           output_location: "dist" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
 
-  close_pr:
-    if: github.event_name == 'pull_request' && github.actor == 'dependabot[bot]' 
+  auto_merge_dependabot:
+    if: github.event_name == 'pull_request' && github.actor == 'dependabot[bot]'
     runs-on: ubuntu-latest
-    needs: 
-      - build_and_deploy_job
+    needs:
+      - build_job
     permissions:
       contents: write
       pull-requests: write
