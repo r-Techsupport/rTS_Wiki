@@ -32,7 +32,7 @@ Do note that simply dropping the ISO file into the USB will not make it bootable
 >
 > This procedure will wipe the USB Flash drive, so ensure you have nothing important on the USB drive, and back up all important documents.
 
-## Creating the installation media
+## Creating and preparing the installation media
 
 ### Flashing the ISO file using WinDiskWriter
 
@@ -50,5 +50,7 @@ Do note that simply dropping the ISO file into the USB will not make it bootable
     > [!IMPORTANT] Important
     >
     > Make sure that both "Patch Installer Requirements" and "Install Legacy BIOS Boot Sector" options **are NOT checked**!
+
+## Post Windows Install Media creation steps
 
 Once the flashing is complete, you can now insert it into the target computer to install Windows to. Continue on from the step in [Installing Windows 11 page](../install-11/#bios-and-setup) after creating the MCT.
