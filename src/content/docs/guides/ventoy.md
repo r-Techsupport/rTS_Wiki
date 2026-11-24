@@ -22,22 +22,44 @@ Ventoy is an useful tool that can create USB drives which can have more than one
 
 ### Windows
 
-1. Go to [Ventoy's GitHub page](https://github.com/ventoy/Ventoy/releases)
-2. Click on `ventoy-1.0.xx-windows.zip`
-3. Extract the downloaded zip and open `Ventoy2Disk.exe`
-4. If your machine supports GPT/UEFI, click on options and select GPT as partition style, if your machine requires Secure Boot, select "Secure boot support"
+1. Go to [Ventoy's GitHub page](https://github.com/ventoy/Ventoy/releases).
+
+2. Click on `ventoy-1.0.xx-windows.zip`.
+
+3. Extract the downloaded zip and open `Ventoy2Disk.exe`.
+
+4. If your machine supports GPT/UEFI, click on options and select GPT as partition style, if your machine requires Secure Boot, select "Secure boot support".
+
 5. Choose your USB drive from the dropdown menu and hit install. **All data on it will be wiped.**
 
 ### Linux
 
 1. Open your web browser, go to the [Ventoy's GitHub page](https://github.com/ventoy/Ventoy/releases) and click on the `.tar.gz` file. Wait for the downloads to finish.
+
 2. Open Terminal, find your USB's directory by looking at the size. In this case the USB drive is 16GB, labeled `sda`:
 ![linux-0](../../../assets/ventoy/linux-0.webp)
 
 3. Run `cd ~/Downloads` followed by `tar -xf ventoy-1.0.xx-linux.tar.gz`.
 
-4. Run `cd ./ventoy-1.0.xx`, followed by `sudo ./Ventoy2Disk.sh /dev/sdX -i`. **This will delete everything on the target drive**. Type `y` if prompted with a warning.
-   * Replace 'sdX' with your flash drives label. If your computer supports UEFI, add the '-g' switch. If it requires secure boot, also add the '-s' switch. 
+4. Run `cd ./ventoy-1.0.xx` to enter the extracted folder.
+
+You now have two options: Use the WebUI (identical to Windows instance) or use the terminal.
+
+#### Method 1: WebUI
+
+1. Run `sudo bash VentoyWeb.sh`. This will start the WebUI instance of Ventoy.
+
+2. On your web browser, visit `http://127.0.0.1:24680`. This is the WebUI instance.
+
+3. If your machine supports GPT/UEFI, click on options and select GPT as partition style, if your machine requires Secure Boot, select "Secure boot support".
+
+4. Choose your USB drive from the dropdown menu and hit install. **All data on it will be wiped.**
+
+#### Method 2: Terminal
+
+Run `sudo ./Ventoy2Disk.sh /dev/sdX -i`. **This will delete everything on the target drive**. Type `y` if prompted with a warning.
+
+Replace 'sdX' with your flash drives label. If your computer supports UEFI, add the '-g' switch. If it requires secure boot, also add the '-s' switch.
 
 ## Usage
 
