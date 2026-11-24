@@ -45,6 +45,14 @@ npm run dev
 
 The site should be viewable at [http://localhost:4321/](http://localhost:4321/)
 
+#### Building locally
+
+In dev mode, a few items aren't loaded actively, namely `link validator`. To ensure your links work locally, run the build command in the root of the project:
+
+```bash
+npm.cmd run build
+```
+
 ### Creating the pull request
 
 Once your changes are complete you can [open a pull request (PR)](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) to the master branch.

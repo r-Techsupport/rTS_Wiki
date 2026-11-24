@@ -12,7 +12,7 @@ description: A guide for how to create a Windows 11 install USB on a Linux devic
 
 > [!IMPORTANT] Important
 >
-> This guide only covers creating the Windows install USB! For the installation steps, continue on from the step in [Installing Windows 11 page](../install-11/#bios-and-setup) after creating the MCT!
+> This guide only covers creating the Windows install USB! For the installation steps, continue on from the step in [Installing Windows 11 page](/installations/install-11/#bios-and-setup) after creating the MCT!
 
 ## Prerequisites
 
@@ -51,7 +51,7 @@ Once this is done, there are numerous ways of flashing the ISO to the USB drive.
 
 ### Method 1: Using Ventoy (Easy Method)
 
-Follow the [Linux instructions of our Ventoy guide](../../guides/ventoy/#linux) to create the bootable Environment. Then follow the usage section in order to understand how to use it.
+Follow the [Linux instructions of our Ventoy guide](/guides/ventoy/#linux) to create the bootable Environment. Then follow the usage section in order to understand how to use it.
 
 ### Method 2: Manual flashing
 
@@ -96,7 +96,7 @@ Follow the [Linux instructions of our Ventoy guide](../../guides/ventoy/#linux) 
 
     > [!TIP] How to format and wipe the USB to FAT32
     >
-    > Follow the [How to identify drives in Linux](../../disks/identify-drives-linux) guide if you are unsure about the drive you are formatting.
+    > Follow the [How to identify drives in Linux](/disks/identify-drives-linux/) guide if you are unsure about the drive you are formatting.
     >
     > <details markdown='1'>
     >   <summary>Selecting and formatting USB to FAT32</summary>
@@ -169,4 +169,4 @@ Follow the [Linux instructions of our Ventoy guide](../../guides/ventoy/#linux) 
 
 ## Post Windows Install Media creation steps
 
-Once the flashing is complete, you can now insert it into the target computer to install Windows to. Continue on from the step in [Installing Windows 11 page](../install-11/#bios-and-setup) after creating the MCT.
+Once the flashing is complete, you can now insert it into the target computer to install Windows to. Continue on from the step in [Installing Windows 11 page](/installations/install-11/#bios-and-setup) after creating the MCT.

@@ -12,7 +12,7 @@ description: A guide for how to create a Windows 11 install USB on a Mac device.
 
 > [!IMPORTANT] Important
 >
-> This guide only covers creating the Windows install USB! For the installation steps, continue on from the step in [Installing Windows 11 page](../install-11/#bios-and-setup) after creating the MCT!
+> This guide only covers creating the Windows install USB! For the installation steps, continue on from the step in [Installing Windows 11 page](/installations/install-11/#bios-and-setup) after creating the MCT!
 
 ## Prerequisites
 
@@ -53,4 +53,4 @@ Do note that simply dropping the ISO file into the USB will not make it bootable
 
 ## Post Windows Install Media creation steps
 
-Once the flashing is complete, you can now insert it into the target computer to install Windows to. Continue on from the step in [Installing Windows 11 page](../install-11/#bios-and-setup) after creating the MCT.
+Once the flashing is complete, you can now insert it into the target computer to install Windows to. Continue on from the step in [Installing Windows 11 page](/installations/install-11/#bios-and-setup) after creating the MCT.
