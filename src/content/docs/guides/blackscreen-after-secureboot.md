@@ -43,7 +43,7 @@ If changing the display connection does not help, try supported integrated graph
 
 1. Shut down the computer, switch off the power supply, and unplug the power cable.
 2. If necessary, remove the dedicated graphics card so the system uses integrated graphics.
-   - **Note:** On some motherboards, having a graphics card may result in the integrated graphics to be disabled, and simply removing it will not revert the changes. In this scenario, a [CMOS reset](../factoids/cmos) is required to restore integrated graphics functionality.
+   - **Note:** On some motherboards, having a graphics card may result in the integrated graphics to be disabled, and simply removing it will not revert the changes. In this scenario, a [CMOS reset](/factoids/cmos) is required to restore integrated graphics functionality.
 3. Connect the monitor to a motherboard display output.
 4. Start the computer and enter the BIOS.
 
