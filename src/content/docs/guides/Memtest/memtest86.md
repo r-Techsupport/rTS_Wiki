@@ -22,7 +22,11 @@ You may also use the [official Memtest86+ ISO](https://www.memtest.org/download/
 ## 2. Creating bootable media
 This will require a USB that is at least the size of the ISO you downloaded.
 
+If you downloaded the ISO file:
+
 Follow the [Linux media guide](/installations/install-linux#step-2-creating-installation-media) to create the install media. **If you use Rufus, make sure to select MBR/Legacy/BIOS even if your system supports GPT/UEFI.**
+
+If you downloaded the Install Tool for Windows, open the executable file and it should automatically make the USB flash drive bootable.
 
 ## Run Memtest86+
 
